@@ -1,0 +1,51 @@
+version: 2
+updates:
+  - package-ecosystem: npm
+    directory: /
+    schedule:
+      interval: weekly
+      day: monday
+      time: '04:00'
+      timezone: Europe/Istanbul
+    open-pull-requests-limit: 5
+    versioning-strategy: increase
+    commit-message:
+      prefix: chore
+      include: scope
+    groups:
+      nextjs:
+        patterns:
+          - next
+          - react
+          - react-dom
+      ui:
+        patterns:
+          - '@base-ui/*'
+          - class-variance-authority
+          - lucide-react
+          - next-themes
+          - shadcn
+          - tailwind-merge
+          - tw-animate-css
+      tooling:
+        patterns:
+          - '@biomejs/*'
+          - '@commitlint/*'
+          - '@tailwindcss/*'
+          - '@types/*'
+          - husky
+          - lint-staged
+          - tailwindcss
+          - typescript
+
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: weekly
+      day: monday
+      time: '04:30'
+      timezone: Europe/Istanbul
+    open-pull-requests-limit: 5
+    commit-message:
+      prefix: chore
+      include: scope

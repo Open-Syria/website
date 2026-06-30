@@ -1,0 +1,38 @@
+name: Accessibility Issue
+description: Report an accessibility problem with the website.
+title: 'a11y: '
+labels:
+  - accessibility
+body:
+  - type: textarea
+    id: location
+    attributes:
+      label: Location
+      description: Which page, component, or interaction is affected?
+      placeholder: /, navigation menu, theme toggle, dataset card
+    validations:
+      required: true
+  - type: textarea
+    id: issue
+    attributes:
+      label: Issue
+      description: Describe the barrier or accessibility problem.
+    validations:
+      required: true
+  - type: textarea
+    id: assistive-tech
+    attributes:
+      label: Assistive Technology or Browser
+      description: Include screen reader, keyboard-only, browser, OS, or viewport details when relevant.
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected Behavior
+      description: What should happen instead?
+  - type: checkboxes
+    id: confirmations
+    attributes:
+      label: Confirmations
+      options:
+        - label: I did not include private, personal, restricted, or sensitive information.
+          required: true
