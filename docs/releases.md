@@ -70,6 +70,18 @@ ci: update workflow permissions
 
 The workflow falls back to `GITHUB_TOKEN`.
 
+For `GITHUB_TOKEN` to open release pull requests, the repository or organization
+must allow GitHub Actions to create pull requests:
+
+```text
+Settings -> Actions -> General -> Workflow permissions
+```
+
+Enable **Allow GitHub Actions to create and approve pull requests**. The workflow
+already requests `contents: write`, `issues: write`, and `pull-requests: write`,
+but GitHub's repository or organization setting can still block pull request
+creation.
+
 If release-please pull requests need CI checks to run automatically under branch protection, add a repository secret named:
 
 ```text
