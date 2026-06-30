@@ -34,7 +34,7 @@ importers:
         version: 19.2.4(react@19.2.4)
       shadcn:
         specifier: ^4.12.0
-        version: 4.12.0(typescript@5.9.3)
+        version: 4.12.0(typescript@6.0.3)
       tailwind-merge:
         specifier: ^3.6.0
         version: 3.6.0
@@ -47,7 +47,7 @@ importers:
         version: 2.5.1
       '@commitlint/cli':
         specifier: 21.1.0
-        version: 21.1.0(@types/node@20.19.43)(conventional-commits-parser@6.4.0)(typescript@5.9.3)
+        version: 21.1.0(@types/node@26.0.1)(conventional-commits-parser@6.4.0)(typescript@6.0.3)
       '@commitlint/config-conventional':
         specifier: 21.1.0
         version: 21.1.0
@@ -55,8 +55,8 @@ importers:
         specifier: 4.3.1
         version: 4.3.1
       '@types/node':
-        specifier: ^20
-        version: 20.19.43
+        specifier: ^26
+        version: 26.0.1
       '@types/react':
         specifier: ^19
         version: 19.2.17
@@ -73,8 +73,8 @@ importers:
         specifier: 4.3.1
         version: 4.3.1
       typescript:
-        specifier: ^5
-        version: 5.9.3
+        specifier: ^6
+        version: 6.0.3
 
 packages:
 
@@ -770,8 +770,8 @@ packages:
   '@ts-morph/common@0.27.0':
     resolution: {integrity: sha512-Wf29UqxWDpc+i61k3oIOzcUfQt79PIT9y/MWfAGlrkjg6lBC1hwDECLXPVJAhWjiGbfBCxZd65F/LIZF3+jeJQ==}
 
-  '@types/node@20.19.43':
-    resolution: {integrity: sha512-6oYBAi5ikg4Pl+kGsoYtawUMBT2zZMCvPNF7pVLnHZfd1zf38DRiWn/gT01RYCdUqkv7Fhr+C9ot4/tb+2sVvA==}
+  '@types/node@26.0.1':
+    resolution: {integrity: sha512-fc3KiUoBt6kie0N9bIW3E47vZsuaMf0PM2AaUpLCLT0s/LvX1nxAim6Fc049cNxODPpGm6qRAuUOB86SkRuPQw==}
 
   '@types/react-dom@19.2.3':
     resolution: {integrity: sha512-jp2L/eY6fn+KgVVQAOqYItbF0VY/YApe5Mz2F0aykSO8gx31bYCZyvSeYxCHKvzHG5eZjc+zyaS5BrBWya2+kQ==}
@@ -2081,13 +2081,13 @@ packages:
     resolution: {integrity: sha512-faYHw0anBbc/kWF3zFTEnxSFOAGUX9GFbOBthvDdLsIlEoWOFOtS0zgCiQYwIskL9iGXZL3kAXD8OoZ4GmMATA==}
     engines: {node: '>= 18'}
 
-  typescript@5.9.3:
-    resolution: {integrity: sha512-jl1vZzPDinLr9eUt3J/t7V6FgNEw9QjvBPdysz9KfQDD41fQrC2Y4vKQdiaUpFT4bXlb1RHhLpp8wtm6M5TgSw==}
+  typescript@6.0.3:
+    resolution: {integrity: sha512-y2TvuxSZPDyQakkFRPZHKFm+KKVqIisdg9/CZwm9ftvKXLP8NRWj38/ODjNbr43SsoXqNuAisEf1GdCxqWcdBw==}
     engines: {node: '>=14.17'}
     hasBin: true
 
-  undici-types@6.21.0:
-    resolution: {integrity: sha512-iwDZqg0QAGrg9Rav5H4n0M64c3mkR59cJ6wQp+7C4nI0gsmExaedaYLNO44eT4AtBBwjbTiGPMlt2Md0T9H9JQ==}
+  undici-types@8.3.0:
+    resolution: {integrity: sha512-j375ScV60dom+YkPFIfTLcOiPxkN/buHz5GobjLhixFuANaNs3C9l4GmrWqejgXWJ7BbJcFYpTEUkS1Ge8bpZQ==}
 
   undici@7.28.0:
     resolution: {integrity: sha512-cRZYrTDwWznlnRiPjggAGxZXanty6M8RV1ff8Wm4LWXBp7/IG8v5DnOm74DtUBp9OONpK75YlPnIjQqX0dBDtA==}
@@ -2438,12 +2438,12 @@ snapshots:
   '@biomejs/cli-win32-x64@2.5.1':
     optional: true
 
-  '@commitlint/cli@21.1.0(@types/node@20.19.43)(conventional-commits-parser@6.4.0)(typescript@5.9.3)':
+  '@commitlint/cli@21.1.0(@types/node@26.0.1)(conventional-commits-parser@6.4.0)(typescript@6.0.3)':
     dependencies:
       '@commitlint/config-conventional': 21.1.0
       '@commitlint/format': 21.1.0
       '@commitlint/lint': 21.1.0
-      '@commitlint/load': 21.1.0(@types/node@20.19.43)(typescript@5.9.3)
+      '@commitlint/load': 21.1.0(@types/node@26.0.1)(typescript@6.0.3)
       '@commitlint/read': 21.1.0(conventional-commits-parser@6.4.0)
       '@commitlint/types': 21.1.0
       tinyexec: 1.2.4
@@ -2488,14 +2488,14 @@ snapshots:
       '@commitlint/rules': 21.1.0
       '@commitlint/types': 21.1.0
 
-  '@commitlint/load@21.1.0(@types/node@20.19.43)(typescript@5.9.3)':
+  '@commitlint/load@21.1.0(@types/node@26.0.1)(typescript@6.0.3)':
     dependencies:
       '@commitlint/config-validator': 21.1.0
       '@commitlint/execute-rule': 21.0.1
       '@commitlint/resolve-extends': 21.1.0
       '@commitlint/types': 21.1.0
-      cosmiconfig: 9.0.2(typescript@5.9.3)
-      cosmiconfig-typescript-loader: 6.3.0(@types/node@20.19.43)(cosmiconfig@9.0.2(typescript@5.9.3))(typescript@5.9.3)
+      cosmiconfig: 9.0.2(typescript@6.0.3)
+      cosmiconfig-typescript-loader: 6.3.0(@types/node@26.0.1)(cosmiconfig@9.0.2(typescript@6.0.3))(typescript@6.0.3)
       es-toolkit: 1.49.0
       is-plain-obj: 4.1.0
       picocolors: 1.1.1
@@ -2867,9 +2867,9 @@ snapshots:
       minimatch: 10.2.5
       path-browserify: 1.0.1
 
-  '@types/node@20.19.43':
+  '@types/node@26.0.1':
     dependencies:
-      undici-types: 6.21.0
+      undici-types: 8.3.0
 
   '@types/react-dom@19.2.3(@types/react@19.2.17)':
     dependencies:
@@ -3058,21 +3058,21 @@ snapshots:
       object-assign: 4.1.1
       vary: 1.1.2
 
-  cosmiconfig-typescript-loader@6.3.0(@types/node@20.19.43)(cosmiconfig@9.0.2(typescript@5.9.3))(typescript@5.9.3):
+  cosmiconfig-typescript-loader@6.3.0(@types/node@26.0.1)(cosmiconfig@9.0.2(typescript@6.0.3))(typescript@6.0.3):
     dependencies:
-      '@types/node': 20.19.43
-      cosmiconfig: 9.0.2(typescript@5.9.3)
+      '@types/node': 26.0.1
+      cosmiconfig: 9.0.2(typescript@6.0.3)
       jiti: 2.6.1
-      typescript: 5.9.3
+      typescript: 6.0.3
 
-  cosmiconfig@9.0.2(typescript@5.9.3):
+  cosmiconfig@9.0.2(typescript@6.0.3):
     dependencies:
       env-paths: 2.2.1
       import-fresh: 3.3.1
       js-yaml: 4.3.0
       parse-json: 5.2.0
     optionalDependencies:
-      typescript: 5.9.3
+      typescript: 6.0.3
 
   cross-spawn@7.0.6:
     dependencies:
@@ -3900,7 +3900,7 @@ snapshots:
 
   setprototypeof@1.2.0: {}
 
-  shadcn@4.12.0(typescript@5.9.3):
+  shadcn@4.12.0(typescript@6.0.3):
     dependencies:
       '@babel/core': 7.29.7
       '@babel/parser': 7.29.7
@@ -3911,7 +3911,7 @@ snapshots:
       '@types/validate-npm-package-name': 4.0.2
       browserslist: 4.28.4
       commander: 14.0.3
-      cosmiconfig: 9.0.2(typescript@5.9.3)
+      cosmiconfig: 9.0.2(typescript@6.0.3)
       dedent: 1.7.2
       deepmerge: 4.3.1
       diff: 8.0.4
@@ -4109,9 +4109,9 @@ snapshots:
       media-typer: 1.1.0
       mime-types: 3.0.2
 
-  typescript@5.9.3: {}
+  typescript@6.0.3: {}
 
-  undici-types@6.21.0: {}
+  undici-types@8.3.0: {}
 
   undici@7.28.0: {}
 
