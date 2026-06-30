@@ -67,8 +67,20 @@ const fontMono = Geist_Mono({
   variable: "--font-code",
 })
 
-const googleTagManagerId = process.env.NEXT_PUBLIC_GOOGLE_TAG_MANAGER_ID?.trim()
-const hasGoogleTagManagerId = /^GTM-[A-Z0-9]+$/i.test(googleTagManagerId ?? "")
+const googleTagId = process.env.NEXT_PUBLIC_GOOGLE_TAG_MANAGER_ID?.trim()
+const googleTagType = getGoogleTagType(googleTagId)
+
+function getGoogleTagType(tagId?: string) {
+  if (/^GTM-[A-Z0-9]+$/i.test(tagId ?? "")) {
+    return "tag-manager"
+  }
+
+  if (/^(G|GT|AW|DC)-[A-Z0-9]+$/i.test(tagId ?? "")) {
+    return "google-tag"
+  }
+
+  return null
+}
 
 function getGoogleTagManagerSnippet(gtmId: string) {
   return `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -76,6 +88,13 @@ new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
 j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','${gtmId}');`
+}
+
+function getGoogleTagSnippet(tagId: string) {
+  return `window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', '${tagId}');`
 }
 
 type LocaleLayoutProps = Readonly<{
@@ -116,22 +135,37 @@ export default async function LocaleLayout({
         "font-sans"
       )}
     >
-      {hasGoogleTagManagerId && googleTagManagerId ? (
+      {googleTagId && googleTagType ? (
         <head>
-          <script
-            // biome-ignore lint/security/noDangerouslySetInnerHtml: Google Tag Manager requires its official bootstrap snippet in the document head.
-            dangerouslySetInnerHTML={{
-              __html: getGoogleTagManagerSnippet(googleTagManagerId),
-            }}
-          />
+          {googleTagType === "tag-manager" ? (
+            <script
+              // biome-ignore lint/security/noDangerouslySetInnerHtml: Google Tag Manager requires its official bootstrap snippet in the document head.
+              dangerouslySetInnerHTML={{
+                __html: getGoogleTagManagerSnippet(googleTagId),
+              }}
+            />
+          ) : (
+            <>
+              <script
+                async
+                src={`https://www.googletagmanager.com/gtag/js?id=${googleTagId}`}
+              />
+              <script
+                // biome-ignore lint/security/noDangerouslySetInnerHtml: Google tag requires its official bootstrap snippet in the document head.
+                dangerouslySetInnerHTML={{
+                  __html: getGoogleTagSnippet(googleTagId),
+                }}
+              />
+            </>
+          )}
         </head>
       ) : null}
       <body>
-        {hasGoogleTagManagerId && googleTagManagerId ? (
+        {googleTagType === "tag-manager" && googleTagId ? (
           <noscript>
             {/* biome-ignore lint/a11y/useIframeTitle: Google Tag Manager's official noscript snippet uses a hidden iframe without a title. */}
             <iframe
-              src={`https://www.googletagmanager.com/ns.html?id=${googleTagManagerId}`}
+              src={`https://www.googletagmanager.com/ns.html?id=${googleTagId}`}
               height="0"
               width="0"
               style={{ display: "none", visibility: "hidden" }}

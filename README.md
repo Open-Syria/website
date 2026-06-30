@@ -83,9 +83,9 @@ cp .env.example .env.local
 | --- | --- | --- |
 | `NEXT_PUBLIC_SITE_URL` | Local only | Canonical site URL for local testing |
 | `NEXT_PUBLIC_DATASETS_API_URL` | Local only | API origin for future website/API integration |
-| `NEXT_PUBLIC_GOOGLE_TAG_MANAGER_ID` | Production | Google Tag Manager container ID |
+| `NEXT_PUBLIC_GOOGLE_TAG_MANAGER_ID` | Production | Real Google tag ID, such as `GT-WPDWW3NR`, or Tag Manager container ID, such as `GTM-ABC1234` |
 
-The GTM ID is public by design. Production passes it at Docker build time and writes it into the runtime environment.
+The Google tag ID is public by design. Production passes it at Docker build time and writes it into the runtime environment. Use the real ID from Google, not a placeholder such as `GTM-...` or `GTM-XXXXXXX`.
 
 ## Internationalization
 

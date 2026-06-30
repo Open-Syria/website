@@ -94,11 +94,15 @@ jobs:
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Validate Google Tag Manager variable
+      - name: Validate Google tag variable
         shell: bash
         env:
           NEXT_PUBLIC_GOOGLE_TAG_MANAGER_ID: ${{ vars.NEXT_PUBLIC_GOOGLE_TAG_MANAGER_ID }}
-        run: test -n "$NEXT_PUBLIC_GOOGLE_TAG_MANAGER_ID"
+        run: |
+          if [[ ! "$NEXT_PUBLIC_GOOGLE_TAG_MANAGER_ID" =~ ^(GTM|GT|G|AW|DC)-[A-Za-z0-9]+$ ]]; then
+            echo "::error::Set production variable NEXT_PUBLIC_GOOGLE_TAG_MANAGER_ID to a real Google tag ID, such as GT-WPDWW3NR, or a Tag Manager container ID, such as GTM-ABC1234. Do not use placeholders like GTM-... or GTM-XXXXXXX."
+            exit 1
+          fi
 
       - name: Build and push runtime image
         uses: docker/build-push-action@v6
@@ -269,3 +273,17 @@ jobs:
             -o StrictHostKeyChecking=yes \
             "${DEPLOY_USER}@${DEPLOY_HOST}" \
             'cd /srv/opensyria/website && bin/check.sh'
+
+      - name: Verify Google tag source
+        shell: bash
+        env:
+          NEXT_PUBLIC_GOOGLE_TAG_MANAGER_ID: ${{ vars.NEXT_PUBLIC_GOOGLE_TAG_MANAGER_ID }}
+        run: |
+          html="$(curl -fsSL --retry 5 --retry-delay 3 https://opensyria.org/)"
+          if [[ "$NEXT_PUBLIC_GOOGLE_TAG_MANAGER_ID" =~ ^GTM- ]]; then
+            grep -Fq "googletagmanager.com/gtm.js" <<<"$html"
+            grep -Fq "googletagmanager.com/ns.html?id=${NEXT_PUBLIC_GOOGLE_TAG_MANAGER_ID}" <<<"$html"
+          else
+            grep -Fq "googletagmanager.com/gtag/js?id=${NEXT_PUBLIC_GOOGLE_TAG_MANAGER_ID}" <<<"$html"
+            grep -Fq "gtag('config', '${NEXT_PUBLIC_GOOGLE_TAG_MANAGER_ID}')" <<<"$html"
+          fi

@@ -59,8 +59,13 @@ Required environment variables:
 ```text
 DEPLOY_HOST=<tailscale host or IP>
 DEPLOY_USER=opensyria
-NEXT_PUBLIC_GOOGLE_TAG_MANAGER_ID=GTM-...
+NEXT_PUBLIC_GOOGLE_TAG_MANAGER_ID=<real Google tag ID, such as GT-WPDWW3NR>
 ```
+
+`NEXT_PUBLIC_GOOGLE_TAG_MANAGER_ID` can be either a Google tag ID such as
+`GT-WPDWW3NR`, `G-...`, or `AW-...`, or a Tag Manager container ID such as
+`GTM-ABC1234`. Do not paste placeholder examples such as `GTM-...` or
+`GTM-XXXXXXX`.
 
 Required environment secrets:
 
@@ -198,7 +203,7 @@ NODE_ENV=production
 NEXT_TELEMETRY_DISABLED=1
 HOSTNAME=0.0.0.0
 PORT=3000
-NEXT_PUBLIC_GOOGLE_TAG_MANAGER_ID=<production GTM ID>
+NEXT_PUBLIC_GOOGLE_TAG_MANAGER_ID=<real production Google tag or Tag Manager ID>
 WEBSITE_PROXY_PORT=3100
 WEBSITE_BLUE_HOST_PORT=3101
 WEBSITE_GREEN_HOST_PORT=3102
