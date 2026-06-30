@@ -29,6 +29,11 @@ Use the relevant dataset repository for:
 
 For geography data, use the `data-geography` repository.
 
+For university data, use the `data-universities` repository.
+
+Public API documentation is available at <https://api.opensyria.org/docs>.
+The production website is available at <https://opensyria.org>.
+
 ## Security
 
 Do not report security vulnerabilities in public issues. Follow [SECURITY.md](SECURITY.md).

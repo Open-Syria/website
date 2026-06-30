@@ -1,27 +1,126 @@
 # OpenSyria Website
 
-This is the Next.js application for opensyria.org.
+[![Deploy Production](https://github.com/Open-Syria/website/actions/workflows/deploy-production.yml/badge.svg)](https://github.com/Open-Syria/website/actions/workflows/deploy-production.yml)
+[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+[![Node.js 24+](https://img.shields.io/badge/node-%3E%3D24-339933?logo=node.js&logoColor=white)](package.json)
+[![pnpm 11](https://img.shields.io/badge/pnpm-11-F69220?logo=pnpm&logoColor=white)](package.json)
 
-## Repository
+Public website for [OpenSyria](https://opensyria.org), a public data commons for reliable Syrian datasets, API access, and civic intelligence.
 
-- [Contributing](CONTRIBUTING.md)
-- [Code of Conduct](CODE_OF_CONDUCT.md)
-- [Security Policy](SECURITY.md)
-- [Support](SUPPORT.md)
-- [Changelog](CHANGELOG.md)
-- [Supply Chain Security](docs/supply-chain-security.md)
+The website is intentionally small: a localized landing page, SEO metadata, social images, contributor attribution, theme and language controls, and links into the public API documentation and GitHub organization.
 
-## Development
+## Public URLs
+
+| URL | Purpose |
+| --- | --- |
+| <https://opensyria.org> | Public website |
+| <https://api.opensyria.org/docs> | API documentation |
+| <https://github.com/Open-Syria> | GitHub organization |
+
+## Stack
+
+- Next.js 16 App Router with Cache Components enabled
+- React 19
+- next-intl with `localePrefix: "as-needed"`
+- shadcn Base UI components
+- Tailwind CSS 4
+- Biome for formatting and linting
+- pnpm 11 with supply-chain protections
+- Docker standalone Next.js runtime
+- GitHub Actions deployment to `opensyria-prod`
+
+## Repository Layout
+
+```text
+src/app/[locale]/        Localized app routes and metadata
+src/components/          Website UI components
+src/components/ui/       shadcn/Base UI primitives
+src/i18n/                next-intl routing, navigation, and request config
+src/lib/                 Site config and GitHub data helpers
+messages/                English and Arabic translations
+public/                  Public static assets
+deploy/website/          Server runtime files copied during deployment
+docs/                    Contributor and operational documentation
+```
+
+## Local Development
+
+Requirements:
+
+- Node.js 24+
+- pnpm 11+
+
+Install dependencies:
 
 ```bash
 corepack enable pnpm
 pnpm install
+```
+
+Start the development server:
+
+```bash
 pnpm dev
+```
+
+Open:
+
+```text
+http://localhost:3000
 ```
 
 Application source code lives under `src/`.
 
+## Environment
+
+Copy `.env.example` when local environment values are needed:
+
+```bash
+cp .env.example .env.local
+```
+
+| Variable | Required | Purpose |
+| --- | --- | --- |
+| `NEXT_PUBLIC_SITE_URL` | Local only | Canonical site URL for local testing |
+| `NEXT_PUBLIC_DATASETS_API_URL` | Local only | API origin for future website/API integration |
+| `NEXT_PUBLIC_GOOGLE_TAG_MANAGER_ID` | Production | Google Tag Manager container ID |
+
+The GTM ID is public by design. Production passes it at Docker build time and writes it into the runtime environment.
+
+## Internationalization
+
+The site supports English and Arabic.
+
+- English is the default locale and renders at `/`.
+- Arabic renders at `/ar`.
+- Locale prefixes use next-intl `as-needed` routing.
+- The HTML `dir` attribute and Base UI `DirectionProvider` are both driven from `src/i18n/routing.ts`.
+
+Translations live in `messages/en.json` and `messages/ar.json`.
+
+## Analytics
+
+Google Tag Manager is integrated through `@next/third-parties/google`.
+
+Tracked CTA events use:
+
+```text
+event=cta_click
+cta_id=docs
+cta_id=github_stars
+```
+
+The implementation keeps the landing page server-rendered and uses a small client boundary only for tracked links.
+
 ## Checks
+
+Run all CI checks:
+
+```bash
+pnpm verify
+```
+
+Focused commands:
 
 ```bash
 pnpm check
@@ -29,30 +128,65 @@ pnpm typecheck
 pnpm build
 ```
 
-Run all CI checks with:
+Apply Biome formatting and safe fixes:
 
 ```bash
-pnpm verify
+pnpm check:write
 ```
 
-The repository uses pnpm workspace supply-chain protections in
-`pnpm-workspace.yaml`, including release-age checks and explicit dependency
-build-script approvals. See [Supply Chain Security](docs/supply-chain-security.md).
+## Deployment
 
-## Adding components
+Production deployment is handled by `.github/workflows/deploy-production.yml`.
 
-To add components to your app, run the following command:
+The workflow:
 
-```bash
-pnpm dlx shadcn@latest add button
+1. Runs `pnpm verify`.
+2. Builds a Linux ARM64 Docker image from the `runtime` target.
+3. Pushes SHA and `main` tags to GitHub Container Registry.
+4. Joins the Tailscale network.
+5. Copies `deploy/website` to `/srv/opensyria/website`.
+6. Writes the server `.env`.
+7. Runs the blue/green deployment script.
+
+Runtime image tags:
+
+```text
+ghcr.io/open-syria/website:sha-<short-sha>
+ghcr.io/open-syria/website:main
 ```
 
-This will place UI components under `src/components`.
+See [docs/deployment.md](docs/deployment.md) and [deploy/website/README.md](deploy/website/README.md).
 
-## Using components
+## Production Routing
 
-To use the components in your app, import them as follows:
+Cloudflare should route:
 
-```tsx
-import { Button } from "@/components/ui/button";
+```text
+opensyria.org     -> http://website-proxy:80
+api.opensyria.org -> http://proxy:80
 ```
+
+Keep `opensyria.org` as the canonical host. Redirect `http://opensyria.org`, `http://www.opensyria.org`, and `https://www.opensyria.org` to `https://opensyria.org` in one Cloudflare redirect rule to avoid redirect chains.
+
+## Repository Documents
+
+- [Contributing](CONTRIBUTING.md)
+- [Code of Conduct](CODE_OF_CONDUCT.md)
+- [Security Policy](SECURITY.md)
+- [Support](SUPPORT.md)
+- [Changelog](CHANGELOG.md)
+- [Pull Request Workflow](docs/pull-request-workflow.md)
+- [Supply Chain Security](docs/supply-chain-security.md)
+- [Deployment](docs/deployment.md)
+
+## Contribution Model
+
+The website is public for transparency, auditability, and reuse, but broad implementation work is maintainer-led.
+
+Good public contributions here include documentation corrections, broken links, accessibility fixes, reproducible website bugs, deployment/tooling fixes, and maintainer-requested changes.
+
+Dataset corrections belong in the relevant dataset repository.
+
+## License
+
+Website code is licensed under MIT. See [LICENSE](LICENSE).

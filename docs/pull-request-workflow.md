@@ -24,7 +24,7 @@ Before opening a PR:
 
 - make sure the change belongs in `website`,
 - keep the change focused,
-- update docs when commands, configuration, routes, content, or deployment steps change,
+- update docs when commands, configuration, routes, content, analytics, or deployment steps change,
 - include screenshots or notes for visual changes,
 - consider keyboard, screen-reader, focus, contrast, and responsive behavior,
 - do not commit secrets, local `.env` files, private data, or generated local artifacts,
@@ -45,6 +45,12 @@ pnpm check
 pnpm typecheck
 pnpm build
 ```
+
+Use `pnpm check:write` for Biome formatting and safe fixes. Use
+`pnpm check:write:unsafe` only when intentionally accepting unsafe Biome fixes.
+
+Deployment changes should also update [Deployment](deployment.md) and, when the
+server runtime files change, [deploy/website/README.md](../deploy/website/README.md).
 
 ## Commit Messages
 
