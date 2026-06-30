@@ -1,0 +1,16 @@
+node_modules
+.next
+out
+coverage
+.git
+.github
+.husky
+.env
+.env.*
+!.env.example
+*.log
+*.tsbuildinfo
+Dockerfile
+README.md
+docs
+deploy

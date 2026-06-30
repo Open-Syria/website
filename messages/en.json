@@ -1,0 +1,17 @@
+{
+  "Hero": {
+    "contributionCount": "{count, plural, one {# contribution} other {# contributions}}",
+    "contributors": "Contributors",
+    "docs": "Read docs",
+    "eyebrow": "Open civic intelligence",
+    "github": "GitHub",
+    "githubWithStars": "{count} stars",
+    "name": "OpenSyria",
+    "slogan": "A public data commons for a clearer, more accountable Syria."
+  },
+  "Controls": {
+    "switchLanguage": "Switch language to {locale}",
+    "switchThemeDark": "Switch to dark theme",
+    "switchThemeLight": "Switch to light theme"
+  }
+}

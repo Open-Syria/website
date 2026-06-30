@@ -1,0 +1,17 @@
+{
+  "Hero": {
+    "contributionCount": "{count, plural, one {مساهمة واحدة} two {مساهمتان} few {# مساهمات} many {# مساهمة} other {# مساهمة}}",
+    "contributors": "من يطوّرون المشروع",
+    "docs": "التوثيق",
+    "eyebrow": "معرفة عامة قابلة للاستخدام",
+    "github": "GitHub",
+    "githubWithStars": "{count} نجوم",
+    "name": "OpenSyria",
+    "slogan": "بيانات سورية موثوقة ومفتوحة، لفهم أوضح ومساءلة أقوى."
+  },
+  "Controls": {
+    "switchLanguage": "بدّل اللغة إلى {locale}",
+    "switchThemeDark": "فعّل الوضع الداكن",
+    "switchThemeLight": "فعّل الوضع الفاتح"
+  }
+}
