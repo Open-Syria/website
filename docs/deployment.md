@@ -31,6 +31,10 @@ The workflow runs on pushes to `main` and can also be started manually with `wor
 
 Pushes whose commit message contains `[skip ci]` or `[ci skip]` skip the deployment workflow.
 
+The `build` and `deploy` jobs both use the GitHub `production` environment.
+This is required because `NEXT_PUBLIC_GOOGLE_TAG_MANAGER_ID` is a production
+environment variable and must be available while building the Docker image.
+
 The deployment flow:
 
 1. Install dependencies with the pinned pnpm version.
