@@ -1,27 +1,100 @@
 # OpenSyria Website
 
-This is the Next.js application for opensyria.org.
+[![Deploy Production](https://github.com/Open-Syria/website/actions/workflows/deploy-production.yml/badge.svg)](https://github.com/Open-Syria/website/actions/workflows/deploy-production.yml)
+[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+[![Node.js 24+](https://img.shields.io/badge/node-%3E%3D24-339933?logo=node.js&logoColor=white)](package.json)
+[![pnpm 11](https://img.shields.io/badge/pnpm-11-F69220?logo=pnpm&logoColor=white)](package.json)
 
-## Repository
+Public website for [OpenSyria](https://opensyria.org), a public data commons for reliable Syrian datasets, API access, and civic intelligence.
 
-- [Contributing](CONTRIBUTING.md)
-- [Code of Conduct](CODE_OF_CONDUCT.md)
-- [Security Policy](SECURITY.md)
-- [Support](SUPPORT.md)
-- [Changelog](CHANGELOG.md)
-- [Supply Chain Security](docs/supply-chain-security.md)
+The website is intentionally small: a localized landing page, SEO metadata, social images, contributor attribution, theme and language controls, and links into the public API documentation and GitHub organization.
 
-## Development
+## Public URLs
+
+| URL | Purpose |
+| --- | --- |
+| <https://opensyria.org> | Public website |
+| <https://api.opensyria.org/docs> | API documentation |
+| <https://github.com/Open-Syria> | GitHub organization |
+
+## Stack
+
+## Repository Layout
+
+```text
+src/app/[locale]/        Localized app routes and metadata
+src/components/          Website UI components
+src/components/ui/       shadcn/Base UI primitives
+src/i18n/                next-intl routing, navigation, and request config
+src/lib/                 Site config and GitHub data helpers
+messages/                English and Arabic translations
+public/                  Public static assets
+deploy/website/          Server runtime files copied during deployment
+docs/                    Contributor and operational documentation
+```
+
+## Local Development
+
+Requirements:
+
+- Node.js 24+
+- pnpm 11+
+
+Install dependencies:
 
 ```bash
 corepack enable pnpm
 pnpm install
+```
+
+Start the development server:
+
+```bash
 pnpm dev
+```
+
+Open:
+
+```text
+http://localhost:3000
 ```
 
 Application source code lives under `src/`.
 
+## Internationalization
+
+The site supports English and Arabic.
+
+- English is the default locale and renders at `/`.
+- Arabic renders at `/ar`.
+- Locale prefixes use next-intl `as-needed` routing.
+- The HTML `dir` attribute and Base UI `DirectionProvider` are both driven from `src/i18n/routing.ts`.
+
+Translations live in `messages/en.json` and `messages/ar.json`.
+
+## Analytics
+
+Google Tag Manager is integrated through `@next/third-parties/google`.
+
+Tracked CTA events use:
+
+```text
+event=cta_click
+cta_id=docs
+cta_id=github_stars
+```
+
+The implementation keeps the landing page server-rendered and uses a small client boundary only for tracked links.
+
 ## Checks
+
+Run all CI checks:
+
+```bash
+pnpm verify
+```
+
+Focused commands:
 
 ```bash
 pnpm check
@@ -29,30 +102,31 @@ pnpm typecheck
 pnpm build
 ```
 
-Run all CI checks with:
+Apply Biome formatting and safe fixes:
 
 ```bash
-pnpm verify
+pnpm check:write
 ```
 
-The repository uses pnpm workspace supply-chain protections in
-`pnpm-workspace.yaml`, including release-age checks and explicit dependency
-build-script approvals. See [Supply Chain Security](docs/supply-chain-security.md).
+## Repository Documents
 
-## Adding components
+- [Contributing](CONTRIBUTING.md)
+- [Code of Conduct](CODE_OF_CONDUCT.md)
+- [Security Policy](SECURITY.md)
+- [Support](SUPPORT.md)
+- [Changelog](CHANGELOG.md)
+- [Pull Request Workflow](docs/pull-request-workflow.md)
+- [Supply Chain Security](docs/supply-chain-security.md)
+- [Deployment](docs/deployment.md)
 
-To add components to your app, run the following command:
+## Contribution Model
 
-```bash
-pnpm dlx shadcn@latest add button
-```
+The website is public for transparency, auditability, and reuse, but broad implementation work is maintainer-led.
 
-This will place UI components under `src/components`.
+Good public contributions here include documentation corrections, broken links, accessibility fixes, reproducible website bugs, deployment/tooling fixes, and maintainer-requested changes.
 
-## Using components
+Dataset corrections belong in the relevant dataset repository.
 
-To use the components in your app, import them as follows:
+## License
 
-```tsx
-import { Button } from "@/components/ui/button";
-```
+Website code is licensed under MIT. See [LICENSE](LICENSE).

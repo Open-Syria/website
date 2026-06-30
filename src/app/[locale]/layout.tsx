@@ -7,6 +7,7 @@ import { setRequestLocale } from "next-intl/server"
 
 import "../globals.css"
 import { ThemeProvider } from "@/components/theme-provider"
+import { DirectionProvider } from "@/components/ui/direction"
 import { localeDirections, routing } from "@/i18n/routing"
 import { siteConfig } from "@/lib/site"
 import { cn } from "@/lib/utils"
@@ -91,11 +92,12 @@ export default async function LocaleLayout({
   }
 
   setRequestLocale(locale)
+  const direction = localeDirections[locale]
 
   return (
     <html
       lang={locale}
-      dir={localeDirections[locale]}
+      dir={direction}
       suppressHydrationWarning
       className={cn(
         "antialiased",
@@ -111,7 +113,9 @@ export default async function LocaleLayout({
       ) : null}
       <body>
         <NextIntlClientProvider>
-          <ThemeProvider>{children}</ThemeProvider>
+          <DirectionProvider direction={direction}>
+            <ThemeProvider>{children}</ThemeProvider>
+          </DirectionProvider>
         </NextIntlClientProvider>
       </body>
     </html>
