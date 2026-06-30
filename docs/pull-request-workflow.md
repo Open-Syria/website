@@ -62,3 +62,7 @@ fix: correct navigation focus state
 docs: update contribution notes
 chore: update dependencies
 ```
+
+Release automation reads Conventional Commits from `main`. Release-worthy
+changes such as `feat:`, `fix:`, `perf:`, and breaking changes are collected by
+release-please into a release pull request. See [Releases](releases.md).

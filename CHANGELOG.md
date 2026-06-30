@@ -9,3 +9,4 @@
 - Add Google Tag Manager support for page analytics and CTA click events.
 - Add standalone Docker runtime, blue/green deployment files, and production GitHub Actions workflow.
 - Add production-ready repository and deployment documentation.
+- Add release-please version and changelog automation.
