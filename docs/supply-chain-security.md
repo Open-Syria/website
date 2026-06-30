@@ -33,6 +33,8 @@ Dependency build scripts are denied by default. Only packages listed under
 
 Approved:
 
+- `@parcel/watcher`
+- `@swc/core`
 - `sharp`
 - `unrs-resolver`
 

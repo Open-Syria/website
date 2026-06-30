@@ -5,8 +5,10 @@
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
-  --font-heading: var(--font-sans);
-  --font-sans: var(--font-sans);
+  --color-background-light: var(--background-light);
+  --font-heading: var(--font-display);
+  --font-sans: var(--font-body);
+  --font-mono: var(--font-code);
   --color-sidebar-ring: var(--sidebar-ring);
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
@@ -48,72 +50,74 @@
 }
 
 :root {
-  --background: oklch(1 0 0);
-  --foreground: oklch(0.145 0 0);
-  --card: oklch(1 0 0);
-  --card-foreground: oklch(0.145 0 0);
-  --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.145 0 0);
-  --primary: oklch(0.205 0 0);
-  --primary-foreground: oklch(0.985 0 0);
-  --secondary: oklch(0.97 0 0);
-  --secondary-foreground: oklch(0.205 0 0);
-  --muted: oklch(0.97 0 0);
-  --muted-foreground: oklch(0.556 0 0);
-  --accent: oklch(0.97 0 0);
-  --accent-foreground: oklch(0.205 0 0);
+  --background: oklch(0.994 0.004 95);
+  --background-light: oklch(0.968 0.018 106);
+  --foreground: oklch(0.24 0.022 135);
+  --card: oklch(0.992 0.005 96);
+  --card-foreground: oklch(0.24 0.022 135);
+  --popover: oklch(0.992 0.005 96);
+  --popover-foreground: oklch(0.24 0.022 135);
+  --primary: oklch(0.48 0.11 172);
+  --primary-foreground: oklch(0.985 0.01 98);
+  --secondary: oklch(0.945 0.04 84);
+  --secondary-foreground: oklch(0.31 0.025 72);
+  --muted: oklch(0.962 0.015 108);
+  --muted-foreground: oklch(0.48 0.03 125);
+  --accent: oklch(0.946 0.032 122);
+  --accent-foreground: oklch(0.28 0.03 138);
   --destructive: oklch(0.577 0.245 27.325);
-  --border: oklch(0.922 0 0);
-  --input: oklch(0.922 0 0);
-  --ring: oklch(0.708 0 0);
+  --border: oklch(0.89 0.02 112);
+  --input: oklch(0.89 0.02 112);
+  --ring: oklch(0.66 0.1 170);
   --chart-1: oklch(0.87 0 0);
   --chart-2: oklch(0.556 0 0);
   --chart-3: oklch(0.439 0 0);
   --chart-4: oklch(0.371 0 0);
   --chart-5: oklch(0.269 0 0);
   --radius: 0.625rem;
-  --sidebar: oklch(0.985 0 0);
-  --sidebar-foreground: oklch(0.145 0 0);
-  --sidebar-primary: oklch(0.205 0 0);
-  --sidebar-primary-foreground: oklch(0.985 0 0);
-  --sidebar-accent: oklch(0.97 0 0);
-  --sidebar-accent-foreground: oklch(0.205 0 0);
-  --sidebar-border: oklch(0.922 0 0);
-  --sidebar-ring: oklch(0.708 0 0);
+  --sidebar: oklch(0.986 0.006 96);
+  --sidebar-foreground: oklch(0.24 0.022 135);
+  --sidebar-primary: var(--primary);
+  --sidebar-primary-foreground: var(--primary-foreground);
+  --sidebar-accent: var(--accent);
+  --sidebar-accent-foreground: var(--accent-foreground);
+  --sidebar-border: var(--border);
+  --sidebar-ring: var(--ring);
 }
 
 .dark {
-  --background: oklch(0.145 0 0);
-  --foreground: oklch(0.985 0 0);
-  --card: oklch(0.205 0 0);
-  --card-foreground: oklch(0.985 0 0);
-  --popover: oklch(0.205 0 0);
-  --popover-foreground: oklch(0.985 0 0);
-  --primary: oklch(0.922 0 0);
-  --primary-foreground: oklch(0.205 0 0);
-  --secondary: oklch(0.269 0 0);
-  --secondary-foreground: oklch(0.985 0 0);
-  --muted: oklch(0.269 0 0);
-  --muted-foreground: oklch(0.708 0 0);
-  --accent: oklch(0.269 0 0);
-  --accent-foreground: oklch(0.985 0 0);
+  --background: oklch(0.155 0.007 102);
+  --background-light: oklch(0.185 0.011 104);
+  --foreground: oklch(0.965 0.012 93);
+  --card: oklch(0.205 0.012 104);
+  --card-foreground: oklch(0.965 0.012 93);
+  --popover: oklch(0.205 0.012 104);
+  --popover-foreground: oklch(0.965 0.012 93);
+  --primary: oklch(0.72 0.115 170);
+  --primary-foreground: oklch(0.16 0.017 164);
+  --secondary: oklch(0.32 0.035 82);
+  --secondary-foreground: oklch(0.965 0.012 93);
+  --muted: oklch(0.245 0.014 102);
+  --muted-foreground: oklch(0.78 0.028 92);
+  --accent: oklch(0.32 0.06 150);
+  --accent-foreground: oklch(0.965 0.012 93);
   --destructive: oklch(0.704 0.191 22.216);
-  --border: oklch(1 0 0 / 10%);
-  --input: oklch(1 0 0 / 15%);
-  --ring: oklch(0.556 0 0);
+  --border: oklch(0.91 0.018 96 / 13%);
+  --input: oklch(0.91 0.018 96 / 16%);
+  --ring: oklch(0.72 0.105 170);
   --chart-1: oklch(0.87 0 0);
   --chart-2: oklch(0.556 0 0);
   --chart-3: oklch(0.439 0 0);
   --chart-4: oklch(0.371 0 0);
   --chart-5: oklch(0.269 0 0);
-  --sidebar: oklch(0.205 0 0);
-  --sidebar-foreground: oklch(0.985 0 0);
-  --sidebar-primary: oklch(0.488 0.243 264.376);
-  --sidebar-primary-foreground: oklch(0.985 0 0);
-  --sidebar-accent: oklch(0.269 0 0);
-  --sidebar-accent-foreground: oklch(0.985 0 0);
-  --sidebar-border: oklch(1 0 0 / 10%);
-  --sidebar-ring: oklch(0.556 0 0);
+  --sidebar: oklch(0.19 0.012 104);
+  --sidebar-foreground: oklch(0.965 0.012 93);
+  --sidebar-primary: var(--primary);
+  --sidebar-primary-foreground: var(--primary-foreground);
+  --sidebar-accent: var(--accent);
+  --sidebar-accent-foreground: var(--accent-foreground);
+  --sidebar-border: var(--border);
+  --sidebar-ring: var(--ring);
 }
 
 @layer base {
@@ -129,5 +133,187 @@
   }
   html {
     @apply font-sans;
+  }
+  html[dir="rtl"] {
+    font-family: var(--font-arabic), var(--font-body), sans-serif;
+  }
+}
+
+.hero-map-wrap {
+  display: none;
+  position: relative;
+  min-height: 34rem;
+}
+
+.hero-slogan {
+  width: min(100%, 20rem);
+  margin-inline: auto;
+  text-wrap: pretty;
+}
+
+.rtl-icon-mirror {
+  transform-box: fill-box;
+  transform-origin: center;
+}
+
+html[dir="rtl"] .rtl-icon-mirror {
+  transform: scaleX(-1);
+}
+
+@media (min-width: 40rem) {
+  .hero-slogan {
+    width: min(100%, 42rem);
+  }
+}
+
+@media (min-width: 64rem) {
+  .hero-slogan {
+    margin-inline: 0;
+  }
+}
+
+.hero-map {
+  --hero-map-fill: color-mix(in oklab, var(--primary) 76%, var(--background));
+  --hero-map-boundary: color-mix(
+    in oklab,
+    var(--primary-foreground) 82%,
+    white
+  );
+  --hero-map-scan: color-mix(in oklab, var(--primary) 68%, white);
+
+  position: relative;
+  width: min(48vw, 42rem);
+  margin-inline-start: auto;
+  pointer-events: none;
+  aspect-ratio: 670.92236 / 590.26318;
+  isolation: isolate;
+}
+
+.dark .hero-map {
+  --hero-map-fill: oklch(0.63 0.105 168);
+  --hero-map-boundary: oklch(0.91 0.028 94 / 82%);
+  --hero-map-scan: oklch(0.79 0.105 174);
+}
+
+.hero-map__svg,
+.hero-map__scan {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.hero-map__svg {
+  overflow: visible;
+}
+
+.hero-map__fill {
+  color: var(--hero-map-fill);
+  fill: var(--hero-map-fill);
+  stroke: transparent;
+  filter: drop-shadow(0 2rem 3rem oklch(0.24 0.04 135 / 12%));
+  animation: map-breathe 12s ease-in-out infinite;
+}
+
+.dark .hero-map__fill {
+  filter: drop-shadow(0 2rem 4rem oklch(0 0 0 / 28%))
+    drop-shadow(0 0 2.75rem oklch(0.72 0.12 170 / 16%));
+}
+
+.hero-map__boundaries {
+  fill: transparent;
+  stroke: var(--hero-map-boundary);
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 0.74;
+  opacity: 0.72;
+  mix-blend-mode: screen;
+}
+
+.dark .hero-map__boundaries {
+  stroke-width: 0.95;
+  opacity: 0.9;
+  mix-blend-mode: normal;
+}
+
+.hero-map__scan {
+  z-index: 3;
+  background:
+    linear-gradient(
+      90deg,
+      transparent 0%,
+      color-mix(in oklab, var(--hero-map-scan) 34%, transparent) 44%,
+      color-mix(in oklab, var(--hero-map-scan) 18%, transparent) 54%,
+      transparent 70%
+    ),
+    linear-gradient(
+      to bottom,
+      transparent 0,
+      color-mix(in oklab, var(--hero-map-scan) 16%, transparent) 1px,
+      transparent 1px
+    ),
+    linear-gradient(
+      to right,
+      transparent 0,
+      color-mix(in oklab, var(--hero-map-scan) 10%, transparent) 1px,
+      transparent 1px
+    );
+  background-size:
+    34% 100%,
+    100% 1.1rem,
+    1.1rem 100%;
+  background-position:
+    -38% 0,
+    0 0,
+    0 0;
+  opacity: 0.5;
+  -webkit-mask: url("/sy.svg") center / contain no-repeat;
+  mask: url("/sy.svg") center / contain no-repeat;
+  mix-blend-mode: soft-light;
+  animation: map-scan 6.8s cubic-bezier(0.5, 0, 0.2, 1) infinite;
+}
+
+.dark .hero-map__scan {
+  opacity: 0.34;
+  mix-blend-mode: screen;
+}
+
+@media (min-width: 1024px) {
+  .hero-map-wrap {
+    display: block;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-map__scan,
+  .hero-map__fill {
+    animation: none;
+  }
+}
+
+@keyframes map-breathe {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+  50% {
+    transform: translate3d(0, -0.35rem, 0) scale(1.006);
+  }
+}
+
+@keyframes map-scan {
+  0%,
+  18% {
+    background-position:
+      -38% 0,
+      0 0,
+      0 0;
+  }
+  74%,
+  100% {
+    background-position:
+      138% 0,
+      0 0,
+      0 0;
   }
 }
