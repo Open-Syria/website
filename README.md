@@ -178,6 +178,7 @@ Keep `opensyria.org` as the canonical host. Redirect `http://opensyria.org`, `ht
 - [Pull Request Workflow](docs/pull-request-workflow.md)
 - [Supply Chain Security](docs/supply-chain-security.md)
 - [Deployment](docs/deployment.md)
+- [Releases](docs/releases.md)
 
 ## Contribution Model
 
