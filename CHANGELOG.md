@@ -1,5 +1,18 @@
 # Changelog
 
+## [0.1.0](https://github.com/Open-Syria/website/compare/v0.0.2...v0.1.0) (2026-07-01)
+
+
+### Features
+
+* add branded robots route [skip ci] ([6242c99](https://github.com/Open-Syria/website/commit/6242c992959d204777158706f0e5ce254c88d386))
+* refine hero github button and robots branding ([98ab38b](https://github.com/Open-Syria/website/commit/98ab38be0c74236bc25842b88921243ab0c6a729))
+
+
+### Bug Fixes
+
+* restore static robots file [skip ci] ([71c184c](https://github.com/Open-Syria/website/commit/71c184c9b6eceb27c2307be11e9d6581b661a105))
+
 ## [0.0.2](https://github.com/Open-Syria/website/compare/v0.0.1...v0.0.2) (2026-06-30)
 
 
