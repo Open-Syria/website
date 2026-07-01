@@ -5,6 +5,8 @@ import { getLocale, getTranslations } from "next-intl/server"
 
 import { TrackedLink } from "@/components/tracked-link"
 import { buttonVariants } from "@/components/ui/button"
+import { GithubDark } from "@/components/ui/svgs/githubDark"
+import { GithubLight } from "@/components/ui/svgs/githubLight"
 import { Link } from "@/i18n/navigation"
 import { getGithubOverview } from "@/lib/github"
 import { siteLinks } from "@/lib/site"
@@ -26,12 +28,16 @@ export async function LandingHero() {
     notation: "compact",
   })
 
-  const starsLabel =
+  const githubStarsLabel =
     github.stars === null
-      ? t("github")
+      ? null
       : t("githubWithStars", {
           count: numberFormatter.format(github.stars),
         })
+  const githubButtonLabel =
+    githubStarsLabel === null
+      ? t("github")
+      : `${t("github")} - ${githubStarsLabel}`
 
   return (
     <main className="min-h-svh overflow-hidden bg-background-light text-foreground">
@@ -91,7 +97,7 @@ export async function LandingHero() {
                 gtmEvent={{
                   cta_href: siteLinks.githubOrganization,
                   cta_id: "github_stars",
-                  cta_label: starsLabel,
+                  cta_label: githubButtonLabel,
                   event: "cta_click",
                   github_stars: github.stars,
                 }}
@@ -100,8 +106,18 @@ export async function LandingHero() {
                 rel="noreferrer"
                 target="_blank"
               >
-                <Star aria-hidden="true" />
-                <span>{starsLabel}</span>
+                <GithubLight className="size-5 dark:hidden" />
+                <GithubDark className="hidden size-5 dark:block" />
+                <span>{t("github")}</span>
+                {githubStarsLabel === null ? null : (
+                  <span className="ms-1 inline-flex items-center gap-1 border-border/70 border-s ps-2 text-muted-foreground">
+                    <Star
+                      aria-hidden="true"
+                      className="size-3.5 fill-primary/20 text-primary"
+                    />
+                    <span>{githubStarsLabel}</span>
+                  </span>
+                )}
               </TrackedLink>
             </div>
 
