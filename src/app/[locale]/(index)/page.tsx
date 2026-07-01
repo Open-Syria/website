@@ -1,0 +1,27 @@
+import { setRequestLocale } from "next-intl/server"
+import { siteConfig } from "@/lib/site"
+import { LandingHero } from "./_components/landing-hero"
+import { type LocalePageProps, resolveLocale } from "./_utils/locale"
+import { getStructuredData, toJsonLd } from "./_utils/structured-data"
+
+export { generateMetadata } from "./_utils/metadata"
+
+export default async function Page({ params }: LocalePageProps) {
+  const locale = await resolveLocale(params)
+
+  setRequestLocale(locale)
+
+  return (
+    <>
+      <meta property="og:logo" content={siteConfig.logo} />
+      <LandingHero />
+      <script
+        type="application/ld+json"
+        // biome-ignore lint/security/noDangerouslySetInnerHtml: JSON-LD follows the official Next.js guide and escapes '<' before injection.
+        dangerouslySetInnerHTML={{
+          __html: toJsonLd(getStructuredData(locale)),
+        }}
+      />
+    </>
+  )
+}

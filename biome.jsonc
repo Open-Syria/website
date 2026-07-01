@@ -16,6 +16,8 @@
       "!out",
       "!build",
       "!coverage",
+      "!.agents",
+      "!.claude",
       "!public",
       "!src/app/icon*.svg",
       "!pnpm-lock.yaml"

@@ -3,12 +3,12 @@ import { cacheLife } from "next/cache"
 import Image from "next/image"
 import { getLocale, getTranslations } from "next-intl/server"
 
-import { HeroControls } from "@/components/hero-controls"
 import { TrackedLink } from "@/components/tracked-link"
 import { buttonVariants } from "@/components/ui/button"
 import { Link } from "@/i18n/navigation"
 import { getGithubOverview } from "@/lib/github"
 import { siteLinks } from "@/lib/site"
+import { HeroControls } from "./hero-controls"
 
 export async function LandingHero() {
   "use cache"
