@@ -1,0 +1,4 @@
+interface:
+  display_name: "Frontend Conventions"
+  short_description: "Domain-driven Next.js frontend rules"
+  default_prompt: "Use $frontend-conventions to implement this Open Syria website frontend change using route-local components and utilities."

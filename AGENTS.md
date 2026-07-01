@@ -5,6 +5,7 @@ This repository uses current Next.js APIs that may differ from older training da
 Before changing framework behavior, routing, metadata, caching, or deployment code:
 
 - prefer the checked-in patterns in this repository,
+- use `.agents/skills/frontend-conventions` before adding, moving, or refactoring frontend routes, page-local components, page-local utilities, metadata, or code-splitting boundaries,
 - read the relevant local Next.js docs in `node_modules/next/dist/docs/` when available,
 - keep source code under `src/`,
 - keep localization wired through `next-intl`,
