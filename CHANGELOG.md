@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.1](https://github.com/Open-Syria/website/compare/v0.1.0...v0.1.1) (2026-07-01)
+
+
+### Bug Fixes
+
+* render robots flag as ascii ([b6f6552](https://github.com/Open-Syria/website/commit/b6f65525a785ff740adb32a5366040cc72ce2868))
+
 ## [0.1.0](https://github.com/Open-Syria/website/compare/v0.0.2...v0.1.0) (2026-07-01)
 
 
