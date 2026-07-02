@@ -3,11 +3,11 @@
     "contributionCount": "{count, plural, one {مساهمة واحدة} two {مساهمتان} few {# مساهمات} many {# مساهمة} other {# مساهمة}}",
     "contributors": "من يطوّرون المشروع",
     "docs": "التوثيق",
-    "eyebrow": "معرفة عامة قابلة للاستخدام",
+    "eyebrow": "بيانات سورية مفتوحة",
     "github": "GitHub",
     "githubWithStars": "{count} نجوم",
     "name": "OpenSyria",
-    "slogan": "بيانات سورية موثوقة ومفتوحة، لفهم أوضح ومساءلة أقوى."
+    "slogan": "نبني المعرفة معاً: بيانات سورية بأيادي مجتمعها"
   },
   "Controls": {
     "switchLanguage": "بدّل اللغة إلى {locale}",
