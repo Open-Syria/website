@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.1.2](https://github.com/Open-Syria/website/compare/v0.1.1...v0.1.2) (2026-07-02)
+
+
+### Bug Fixes
+
+* harden website tracking query handling ([72c9915](https://github.com/Open-Syria/website/commit/72c9915815775e88df76c11cf323cff61a6c8c1d))
+* improve Arabic website copy ([78a7be1](https://github.com/Open-Syria/website/commit/78a7be19a566e225c83f024cf306645517e68c23))
+
 ## [0.1.1](https://github.com/Open-Syria/website/compare/v0.1.0...v0.1.1) (2026-07-01)
 
 
