@@ -9,7 +9,7 @@ import {
   getDatasetPath,
   getDatasetsPath,
 } from "@/lib/datasets"
-import { siteConfig } from "@/lib/site"
+import { siteConfig, socialPreviewImages } from "@/lib/site"
 import {
   type DatasetParams,
   type LocaleParams,
@@ -58,6 +58,7 @@ async function generateDatasetCatalogMetadata({
         .filter((alternateLocale) => alternateLocale !== locale)
         .map((alternateLocale) => siteConfig.locales[alternateLocale].ogLocale),
       description: seo.description,
+      images: [socialPreviewImages.openGraph],
       locale: siteConfig.locales[locale].ogLocale,
       siteName: siteConfig.name,
       title: seo.title,
@@ -70,6 +71,7 @@ async function generateDatasetCatalogMetadata({
     twitter: {
       card: "summary_large_image",
       description: seo.description,
+      images: [socialPreviewImages.twitter],
       title: seo.title,
     },
   }
@@ -106,6 +108,7 @@ async function generateDatasetMetadata({
         .filter((alternateLocale) => alternateLocale !== locale)
         .map((alternateLocale) => siteConfig.locales[alternateLocale].ogLocale),
       description,
+      images: [socialPreviewImages.openGraph],
       locale: siteConfig.locales[locale].ogLocale,
       siteName: siteConfig.name,
       title,
@@ -118,6 +121,7 @@ async function generateDatasetMetadata({
     twitter: {
       card: "summary_large_image",
       description,
+      images: [socialPreviewImages.twitter],
       title,
     },
   }

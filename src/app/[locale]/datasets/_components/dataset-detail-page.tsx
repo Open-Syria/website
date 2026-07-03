@@ -22,7 +22,6 @@ import {
   pageHeroSectionClassName,
 } from "@/lib/layout"
 import { trustedExternalLinkRel } from "@/lib/links"
-import { siteLinks } from "@/lib/site"
 import { cn } from "@/lib/utils"
 import { DatasetPageHeader } from "./dataset-page-header"
 
@@ -41,7 +40,7 @@ export async function DatasetDetailPage({
 
   return (
     <>
-      <DatasetPageHeader />
+      <DatasetPageHeader apiDocsHref={dataset.apiDocsUrl} />
 
       <main
         className="min-h-svh bg-background-light text-foreground"
@@ -98,7 +97,7 @@ export async function DatasetDetailPage({
                 </a>
                 <a
                   className={buttonVariants({ size: "lg", variant: "outline" })}
-                  href={siteLinks.docs}
+                  href={dataset.apiDocsUrl}
                   rel={trustedExternalLinkRel}
                   target="_blank"
                 >

@@ -1,7 +1,7 @@
 import type { Metadata } from "next"
 
 import { routing } from "@/i18n/routing"
-import { getLocalePath, siteConfig } from "@/lib/site"
+import { getLocalePath, siteConfig, socialPreviewImages } from "@/lib/site"
 import { type LocalePageProps, resolveLocale } from "./locale"
 
 async function generateMetadata({
@@ -25,6 +25,7 @@ async function generateMetadata({
         .filter((alternateLocale) => alternateLocale !== locale)
         .map((alternateLocale) => siteConfig.locales[alternateLocale].ogLocale),
       description: seo.description,
+      images: [socialPreviewImages.openGraph],
       locale: seo.ogLocale,
       siteName: siteConfig.name,
       title: seo.title,
@@ -37,6 +38,7 @@ async function generateMetadata({
     twitter: {
       card: "summary_large_image",
       description: seo.description,
+      images: [socialPreviewImages.twitter],
       title: seo.title,
     },
   }

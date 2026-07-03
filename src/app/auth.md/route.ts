@@ -10,6 +10,14 @@ OpenSyria public website and dataset API access is read-only and does not requir
 
 Agents can access public dataset pages, release artifacts, and read-only API endpoints without registration or credentials.
 
+## Agent Registration
+
+Agent registration is not required or available for OpenSyria public resources.
+
+There is no registration endpoint, client credential flow, claim endpoint, or revocation endpoint because public dataset discovery, release files, and read-only API access are unauthenticated.
+
+If OpenSyria introduces protected APIs in the future, this file will point agents to the relevant OAuth/OIDC discovery metadata and registration process.
+
 Use these public resources:
 
 - API documentation: ${siteLinks.docs}

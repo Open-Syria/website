@@ -17,6 +17,16 @@ The website is intentionally small: a localized landing page, SEO metadata, soci
 | <https://api.opensyria.org/docs> | API documentation |
 | <https://github.com/Open-Syria> | GitHub organization |
 
+## Agent Discovery
+
+The site publishes public, read-only discovery metadata for agents:
+
+- `/llms.txt` and `/index.md` describe the project and link to the main public resources.
+- `/auth.md` explains that public website and dataset API access does not require registration, OAuth, API keys, or credentials.
+- `/.well-known/api-catalog` links to the public API documentation, OpenAPI description, health endpoint, and dataset pages.
+- `/.well-known/agent-skills/index.json` lists the available OpenSyria agent skills.
+- OAuth/OIDC and MCP well-known routes return explicit `404 application/problem+json` responses until OpenSyria offers protected auth flows or a public MCP server. Both `/.well-known/mcp/server-card.json` and the scanner-compatible plural alias `/.well-known/mcp/server-cards.json` use that unsupported response.
+
 ## Stack
 
 - Next.js 16 App Router with Cache Components enabled
@@ -97,6 +107,15 @@ The site supports English and Arabic.
 - The HTML `dir` attribute and Base UI `DirectionProvider` are both driven from `src/i18n/routing.ts`.
 
 Translations live in `messages/en.json` and `messages/ar.json`.
+
+## Social Previews
+
+Open Graph and Twitter preview metadata explicitly reference the root social images:
+
+- `/opengraph-image.png`
+- `/twitter-image.png`
+
+Keep these images aligned with the current OpenSyria logo and visual theme so crawlers do not fall back to contributor avatars or other page images.
 
 ## Analytics
 
