@@ -23,6 +23,16 @@ Before handing off changes, run the smallest relevant command and prefer `pnpm v
 
 Do not commit local `.env` files, SSH keys, Cloudflare tokens, Tailscale credentials, generated local artifacts, or private infrastructure details.
 
+## Documentation Freshness
+
+- Treat this `AGENTS.md` as living agent documentation. When adding, removing, or renaming a repo-local skill under `.agents/skills`, update the `Local Skill Selection` list in this file in the same change.
+- When public routes, dataset pages, agent discovery endpoints, metadata files, sitemap/robots behavior, or website capabilities change, update `README.md` sections for public URLs, repository layout, environment, checks, deployment, production routing, and repository documents as needed.
+- When changing SEO, metadata, Open Graph/Twitter images, canonical URLs, structured data, `src/app/sitemap.ts`, `src/app/robots.txt`, or copy in `src/lib/site.ts`, also check route-local metadata helpers under `src/app/[locale]/**/_utils`, `messages/*.json`, and the relevant README/docs wording.
+- When adding, removing, or renaming datasets shown by the website, update `src/lib/datasets.ts`, localized messages, dataset page metadata/structured data, `README.md`, and any public discovery links in `src/lib/agent-discovery.ts` that should mention the dataset.
+- When changing agent-facing discovery surfaces such as `/auth.md`, `/index.md`, `/llms.txt`, `/.well-known/api-catalog`, `/.well-known/agent-skills/**`, OAuth/OIDC placeholders, or MCP-related paths, update `src/lib/agent-discovery.ts`, `README.md`, and any scanner-facing route docs in the same change.
+- When deployment behavior, Docker Compose files, nginx config, Cloudflare Tunnel assumptions, health checks, ports, or environment variables change, update `docs/deployment.md`, `deploy/website/README.md`, `.env.example`, and the relevant deploy scripts together.
+- When release flow, CI, provenance, or dependency/security posture changes, update `docs/releases.md`, `docs/pull-request-workflow.md`, `docs/supply-chain-security.md`, and `CHANGELOG.md` when the change is release-visible.
+
 ## Local Skill Selection
 
 Repo-local skills live in `.agents/skills/<skill-name>/SKILL.md`. When a task
