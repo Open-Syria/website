@@ -111,24 +111,24 @@ ${siteConfig.defaultDescription}
 
 ## Agent Discovery
 
-- API catalog: ${siteConfig.url}/.well-known/api-catalog
-- Agent skills: ${siteConfig.url}/.well-known/agent-skills/index.json
-- API documentation: ${siteLinks.docs}
-- OpenAPI description: ${siteLinks.openApi}
-- API health: ${siteLinks.datasetsApi}/health
+- [API catalog](${siteConfig.url}/.well-known/api-catalog)
+- [Agent skills](${siteConfig.url}/.well-known/agent-skills/index.json)
+- [API documentation](${siteLinks.docs})
+- [OpenAPI description](${siteLinks.openApi})
+- [API health](${siteLinks.datasetsApi}/health)
 
 ## Datasets
 
-- Dataset catalog: ${siteConfig.url}/datasets
-- Geography dataset: ${siteConfig.url}/datasets/geography
-- Universities dataset: ${siteConfig.url}/datasets/universities
+- [Dataset catalog](${siteConfig.url}/datasets)
+- [Geography dataset](${siteConfig.url}/datasets/geography)
+- [Universities dataset](${siteConfig.url}/datasets/universities)
 
 ## Repositories
 
-- OpenSyria GitHub organization: ${siteLinks.githubOrganization}
-- Geography data repository: ${siteLinks.geographyRepository}
-- Universities data repository: ${siteLinks.universitiesRepository}
-- Datasets API repository: ${siteLinks.apiRepository}
+- [OpenSyria GitHub organization](${siteLinks.githubOrganization})
+- [Geography data repository](${siteLinks.geographyRepository})
+- [Universities data repository](${siteLinks.universitiesRepository})
+- [Datasets API repository](${siteLinks.apiRepository})
 `
 }
 
