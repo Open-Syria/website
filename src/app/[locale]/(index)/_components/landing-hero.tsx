@@ -1,25 +1,31 @@
 import { ArrowUpRight, BookOpenText, Database, Star } from "lucide-react"
 import { cacheLife } from "next/cache"
 import Image from "next/image"
-import { getLocale, getTranslations } from "next-intl/server"
+import NextLink from "next/link"
+import { getTranslations } from "next-intl/server"
 
+import { SiteControls } from "@/components/site-controls"
 import { TrackedLink } from "@/components/tracked-link"
 import { buttonVariants } from "@/components/ui/button"
 import { GithubDark } from "@/components/ui/svgs/githubDark"
 import { GithubLight } from "@/components/ui/svgs/githubLight"
-import { Link } from "@/i18n/navigation"
+import { getPathname } from "@/i18n/navigation"
+import type { Locale } from "@/i18n/routing"
 import { getGithubOverview } from "@/lib/github"
 import { siteLinks } from "@/lib/site"
-import { HeroControls } from "./hero-controls"
+import { DatasetHighlights } from "./dataset-highlights"
 
-export async function LandingHero() {
+type LandingHeroProps = Readonly<{
+  locale: Locale
+}>
+
+export async function LandingHero({ locale }: LandingHeroProps) {
   "use cache"
 
   cacheLife("hours")
 
-  const [t, locale, github] = await Promise.all([
-    getTranslations("Hero"),
-    getLocale(),
+  const [t, github] = await Promise.all([
+    getTranslations({ locale, namespace: "Hero" }),
     getGithubOverview(),
   ])
 
@@ -38,6 +44,7 @@ export async function LandingHero() {
     githubStarsLabel === null
       ? t("github")
       : `${t("github")} - ${githubStarsLabel}`
+  const datasetsHref = getPathname({ href: "/datasets", locale })
 
   return (
     <main className="min-h-svh overflow-hidden bg-background-light text-foreground">
@@ -45,7 +52,7 @@ export async function LandingHero() {
         aria-labelledby="hero-title"
         className="relative isolate flex min-h-svh items-center overflow-hidden border-b bg-background-light px-4 py-10 sm:px-8 lg:px-12"
       >
-        <HeroControls />
+        <SiteControls className="absolute top-4 left-1/2 z-10 -translate-x-1/2 sm:top-6 lg:top-8 lg:right-10 lg:left-auto lg:translate-x-0" />
 
         <div
           className="pointer-events-none absolute inset-0 -z-20"
@@ -74,9 +81,16 @@ export async function LandingHero() {
               {t("slogan")}
             </p>
 
-            <div className="mt-8 flex flex-row items-center justify-center gap-2 sm:gap-3 lg:justify-start">
-              <TrackedLink
+            <div className="mt-8 flex flex-row flex-wrap items-center justify-center gap-2 sm:gap-3 lg:justify-start">
+              <NextLink
                 className={buttonVariants({ size: "lg" })}
+                href={datasetsHref}
+              >
+                <Database aria-hidden="true" />
+                {t("datasets")}
+              </NextLink>
+              <TrackedLink
+                className={buttonVariants({ size: "lg", variant: "outline" })}
                 gtmEvent={{
                   cta_href: siteLinks.docs,
                   cta_id: "docs",
@@ -132,11 +146,10 @@ export async function LandingHero() {
 
                     return (
                       <li key={contributor.login}>
-                        <Link
+                        <a
                           aria-label={`${contributor.login}, ${contributionLabel}`}
                           className="group relative block size-12 overflow-hidden rounded-md bg-background shadow-sm ring-1 ring-border transition duration-200 hover:-translate-y-0.5 hover:shadow-foreground/5 hover:shadow-lg hover:ring-primary/30 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
                           href={contributor.url}
-                          prefetch={false}
                           rel="noreferrer"
                           target="_blank"
                           title={`${contributor.login} - ${contributionLabel}`}
@@ -150,7 +163,7 @@ export async function LandingHero() {
                             unoptimized
                             width="48"
                           />
-                        </Link>
+                        </a>
                       </li>
                     )
                   })}
@@ -182,6 +195,7 @@ export async function LandingHero() {
           </div>
         </div>
       </section>
+      <DatasetHighlights locale={locale} />
     </main>
   )
 }

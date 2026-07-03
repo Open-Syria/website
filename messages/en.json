@@ -2,6 +2,7 @@
   "Hero": {
     "contributionCount": "{count, plural, one {# contribution} other {# contributions}}",
     "contributors": "Contributors",
+    "datasets": "Explore data",
     "docs": "Read docs",
     "eyebrow": "Open civic intelligence",
     "github": "GitHub",
@@ -13,5 +14,47 @@
     "switchLanguage": "Switch language to {locale}",
     "switchThemeDark": "Switch to dark theme",
     "switchThemeLight": "Switch to light theme"
+  },
+  "HomeDatasets": {
+    "description": "Download source-backed datasets or use the public API for Syrian administrative geography, localities, universities, and reusable civic reference data.",
+    "eyebrow": "Current datasets",
+    "openDataset": "Open dataset",
+    "records": "Records",
+    "release": "Release",
+    "title": "Syrian datasets for maps, research, journalism, and civic tools"
+  },
+  "Datasets": {
+    "apiDocs": "API docs",
+    "apiEndpoints": "API endpoints",
+    "catalogDescription": "Browse OpenSyria datasets for Syrian cities, governorates, districts, subdistricts, localities, universities, and other public reference data. Each dataset links to its GitHub repository, release downloads, and documented API routes.",
+    "catalogEyebrow": "Dataset catalog",
+    "catalogTitle": "Syrian public datasets for maps, research, and civic tools",
+    "contains": "What this dataset contains",
+    "downloadFiles": "Download files",
+    "formats": "Formats",
+    "githubRepository": "GitHub repository",
+    "home": "Home",
+    "keywords": "Related search topics",
+    "latestRelease": "Latest release",
+    "openDataset": "Open dataset",
+    "openData": "Open data",
+    "records": "Records",
+    "reuseDescription": "OpenSyria publishes public, non-personal, source-backed reference data. Check each repository license before reusing release artifacts in production.",
+    "reuseTitle": "Source and reuse policy",
+    "sourceBacked": "Source-backed",
+    "summary": "Summary",
+    "viewCatalog": "View all datasets"
+  },
+  "NotFoundPage": {
+    "datasets": "Browse datasets",
+    "description": "We could not find that OpenSyria page. The dataset catalog and homepage are still available.",
+    "home": "Go home",
+    "title": "This page is not available"
+  },
+  "Error": {
+    "description": "The page hit an unexpected problem. You can try loading it again or return home.",
+    "home": "Go home",
+    "retry": "Try again",
+    "title": "Something went wrong"
   }
 }

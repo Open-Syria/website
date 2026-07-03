@@ -6,7 +6,7 @@ import { useTheme } from "next-themes"
 import * as React from "react"
 
 import { buttonVariants } from "@/components/ui/button"
-import { Link } from "@/i18n/navigation"
+import { Link, usePathname } from "@/i18n/navigation"
 import { type Locale, routing } from "@/i18n/routing"
 import { cn } from "@/lib/utils"
 
@@ -15,20 +15,25 @@ const localeLabels: Record<Locale, string> = {
   en: "EN",
 }
 
-function HeroControls() {
+type SiteControlsProps = {
+  className?: string
+}
+
+function SiteControls({ className }: SiteControlsProps) {
   const t = useTranslations("Controls")
   const locale = useLocale() as Locale
+  const pathname = usePathname()
   const otherLocale = routing.locales.find((item) => item !== locale) ?? "ar"
   const languageLabel = t("switchLanguage", {
     locale: localeLabels[otherLocale],
   })
 
   return (
-    <div className="absolute top-4 left-1/2 z-10 flex -translate-x-1/2 items-center gap-2 sm:top-6 lg:top-8 lg:right-10 lg:left-auto lg:translate-x-0">
+    <div className={cn("flex items-center gap-2", className)}>
       <Link
         aria-label={languageLabel}
         className={cn(buttonVariants({ size: "icon", variant: "outline" }))}
-        href="/"
+        href={pathname}
         locale={otherLocale}
         title={languageLabel}
       >
@@ -67,4 +72,4 @@ function ThemeToggle() {
   )
 }
 
-export { HeroControls }
+export { SiteControls }

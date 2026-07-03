@@ -14,7 +14,7 @@ export default async function Page({ params }: LocalePageProps) {
   return (
     <>
       <meta property="og:logo" content={siteConfig.logo} />
-      <LandingHero />
+      <LandingHero locale={locale} />
       <script
         type="application/ld+json"
         // biome-ignore lint/security/noDangerouslySetInnerHtml: JSON-LD follows the official Next.js guide and escapes '<' before injection.
