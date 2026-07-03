@@ -20,13 +20,13 @@ import {
 const catalogSeo: Record<Locale, { description: string; title: string }> = {
   ar: {
     description:
-      "تصفح بيانات سورية مفتوحة عن المدن والمحافظات والمناطق والنواحي والمحلات والجامعات مع روابط GitHub وتنزيلات JSON وCSV وواجهات API.",
-    title: "مجموعات بيانات سورية مفتوحة للمدن والمناطق والجامعات",
+      "تصفح بيانات سورية مفتوحة وواجهات API للمطورين والخرائط والبحث والصحافة والأدوات المدنية، بما في ذلك المدن والمناطق والمحلات والجامعات.",
+    title: "مجموعات بيانات سورية للمطورين والخرائط وواجهات API",
   },
   en: {
     description:
-      "Browse open Syrian datasets for cities, governorates, districts, subdistricts, localities, universities, GitHub releases, JSON/CSV downloads, and API access.",
-    title: "Syrian Datasets for Cities, Districts, Universities and APIs",
+      "Browse open Syrian datasets and APIs for developers, maps, research, journalism, and civic tools, including cities, districts, localities, and universities.",
+    title: "Syrian Datasets for Developers, Maps, Research and APIs",
   },
 }
 
