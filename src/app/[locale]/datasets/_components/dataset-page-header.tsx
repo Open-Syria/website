@@ -1,11 +1,9 @@
-import { BookOpenText } from "lucide-react"
 import { getTranslations } from "next-intl/server"
 
 import { SiteControls } from "@/components/site-controls"
-import { buttonVariants } from "@/components/ui/button"
 import { OpenSyriaHorizontalLogo } from "@/components/ui/svgs/openSyriaHorizontalLogo"
 import { Link } from "@/i18n/navigation"
-import { siteLinks } from "@/lib/site"
+import { DatasetPageNavigation } from "./dataset-page-navigation"
 
 export async function DatasetPageHeader() {
   const t = await getTranslations("Datasets")
@@ -22,26 +20,11 @@ export async function DatasetPageHeader() {
         </Link>
 
         <div className="flex items-center gap-2">
-          <nav
-            aria-label={t("summary")}
-            className="hidden items-center gap-1 sm:flex"
-          >
-            <Link
-              className={buttonVariants({ size: "sm", variant: "ghost" })}
-              href="/datasets"
-            >
-              {t("openData")}
-            </Link>
-            <a
-              className={buttonVariants({ size: "sm", variant: "ghost" })}
-              href={siteLinks.docs}
-              rel="noreferrer"
-              target="_blank"
-            >
-              <BookOpenText aria-hidden="true" />
-              {t("apiDocs")}
-            </a>
-          </nav>
+          <DatasetPageNavigation
+            apiDocsLabel={t("apiDocs")}
+            ariaLabel={t("summary")}
+            openDataLabel={t("openData")}
+          />
           <SiteControls />
         </div>
       </div>
