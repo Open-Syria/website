@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.2.1](https://github.com/Open-Syria/website/compare/v0.2.0...v0.2.1) (2026-07-03)
+
+
+### Bug Fixes
+
+* clarify agent discovery metadata ([9aa5283](https://github.com/Open-Syria/website/commit/9aa52833bf160ba3199b4fb530dba59f20f7c72a))
+* format llms markdown links ([cfcc7e2](https://github.com/Open-Syria/website/commit/cfcc7e2acd3f73208d297b4b23c6cf73019ac755))
+
 ## [0.2.0](https://github.com/Open-Syria/website/compare/v0.1.1...v0.2.0) (2026-07-03)
 
 
