@@ -18,5 +18,7 @@
 User-agent: *
 Allow: /
 
+Content-Signal: ai-train=no, search=yes, ai-input=yes
+
 Host: https://opensyria.org
 Sitemap: https://opensyria.org/sitemap.xml
