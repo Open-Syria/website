@@ -12,6 +12,7 @@ import { getPathname } from "@/i18n/navigation"
 import type { Locale } from "@/i18n/routing"
 import { getGithubOverview } from "@/lib/github"
 import { pageContainerClassName, pageGutterClassName } from "@/lib/layout"
+import { trustedExternalLinkRel } from "@/lib/links"
 import { siteLinks } from "@/lib/site"
 import { cn } from "@/lib/utils"
 import { DatasetHighlights } from "./dataset-highlights"
@@ -109,7 +110,7 @@ export async function LandingHero({ locale }: LandingHeroProps) {
                 }}
                 href={siteLinks.docs}
                 prefetch={false}
-                rel="noreferrer"
+                rel={trustedExternalLinkRel}
                 target="_blank"
               >
                 <BookOpenText aria-hidden="true" />
@@ -127,7 +128,7 @@ export async function LandingHero({ locale }: LandingHeroProps) {
                 }}
                 href={siteLinks.githubOrganization}
                 prefetch={false}
-                rel="noreferrer"
+                rel={trustedExternalLinkRel}
                 target="_blank"
               >
                 <GithubLight className="size-5 dark:hidden" />
@@ -160,7 +161,7 @@ export async function LandingHero({ locale }: LandingHeroProps) {
                           aria-label={`${contributor.login}, ${contributionLabel}`}
                           className="group relative block size-12 overflow-hidden rounded-md bg-background shadow-sm ring-1 ring-border transition duration-200 hover:-translate-y-0.5 hover:shadow-foreground/5 hover:shadow-lg hover:ring-primary/30 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
                           href={contributor.url}
-                          rel="noreferrer"
+                          rel={trustedExternalLinkRel}
                           target="_blank"
                           title={`${contributor.login} - ${contributionLabel}`}
                         >

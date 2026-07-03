@@ -7,6 +7,7 @@ import { Link } from "@/i18n/navigation"
 import type { Locale } from "@/i18n/routing"
 import { getGithubProjectDirectory } from "@/lib/github"
 import { pageContainerClassName, pageGutterClassName } from "@/lib/layout"
+import { trustedExternalLinkRel } from "@/lib/links"
 import { siteLinks } from "@/lib/site"
 import { cn } from "@/lib/utils"
 
@@ -63,7 +64,7 @@ export async function SiteFooter({ locale }: SiteFooterProps) {
                   <a
                     className={footerLinkClassName}
                     href={siteLinks.docs}
-                    rel="noreferrer"
+                    rel={trustedExternalLinkRel}
                     target="_blank"
                   >
                     {t("apiDocs")}
@@ -77,7 +78,7 @@ export async function SiteFooter({ locale }: SiteFooterProps) {
                   <a
                     className={footerLinkClassName}
                     href={siteLinks.openApi}
-                    rel="noreferrer"
+                    rel={trustedExternalLinkRel}
                     target="_blank"
                   >
                     {t("openApi")}
@@ -96,7 +97,7 @@ export async function SiteFooter({ locale }: SiteFooterProps) {
                       <a
                         className="group block rounded-md text-sm transition hover:text-primary focus-visible:outline-none focus-visible:ring-3 focus-visible:ring-ring/50"
                         href={repository.url}
-                        rel="noreferrer"
+                        rel={trustedExternalLinkRel}
                         target="_blank"
                       >
                         <span className="flex items-center gap-1.5 font-medium">
@@ -122,7 +123,7 @@ export async function SiteFooter({ locale }: SiteFooterProps) {
                   <a
                     className={footerLinkClassName}
                     href={github.organization.url}
-                    rel="noreferrer"
+                    rel={trustedExternalLinkRel}
                     target="_blank"
                   >
                     <GithubDark aria-hidden="true" className="size-4" />
@@ -133,7 +134,7 @@ export async function SiteFooter({ locale }: SiteFooterProps) {
                   <a
                     className={footerLinkClassName}
                     href={siteLinks.linkedIn}
-                    rel="noreferrer"
+                    rel={trustedExternalLinkRel}
                     target="_blank"
                   >
                     {t("linkedIn")}
