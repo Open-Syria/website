@@ -21,6 +21,7 @@ import {
   pageGutterClassName,
   pageHeroSectionClassName,
 } from "@/lib/layout"
+import { trustedExternalLinkRel } from "@/lib/links"
 import { siteLinks } from "@/lib/site"
 import { cn } from "@/lib/utils"
 import { DatasetPageHeader } from "./dataset-page-header"
@@ -89,7 +90,7 @@ export async function DatasetDetailPage({
                 <a
                   className={buttonVariants({ size: "lg" })}
                   href={dataset.repositoryUrl}
-                  rel="noreferrer"
+                  rel={trustedExternalLinkRel}
                   target="_blank"
                 >
                   <GithubDark className="size-5" />
@@ -98,7 +99,7 @@ export async function DatasetDetailPage({
                 <a
                   className={buttonVariants({ size: "lg", variant: "outline" })}
                   href={siteLinks.docs}
-                  rel="noreferrer"
+                  rel={trustedExternalLinkRel}
                   target="_blank"
                 >
                   <BookOpenText aria-hidden="true" />
@@ -111,7 +112,7 @@ export async function DatasetDetailPage({
                 <a
                   className={buttonVariants({ size: "lg", variant: "outline" })}
                   href={dataset.distributions[0]?.url}
-                  rel="noreferrer"
+                  rel={trustedExternalLinkRel}
                   target="_blank"
                 >
                   <Download aria-hidden="true" />
@@ -207,7 +208,10 @@ export async function DatasetDetailPage({
               <ul className="mt-5 grid gap-2">
                 {dataset.apiRoutes.map((route) => (
                   <li key={route}>
-                    <code className="block break-all rounded-md border bg-background px-3 py-2 text-sm">
+                    <code
+                      className="block break-all rounded-md border bg-background px-3 py-2 text-left text-sm"
+                      dir="ltr"
+                    >
                       {route}
                     </code>
                   </li>
@@ -247,7 +251,7 @@ export async function DatasetDetailPage({
                       <a
                         className="flex items-center justify-between gap-3 rounded-md border bg-background px-3 py-2 text-sm transition hover:border-primary/50 hover:text-primary focus-visible:border-ring focus-visible:outline-none focus-visible:ring-[3px] focus-visible:ring-ring/50"
                         href={distribution.url}
-                        rel="noreferrer"
+                        rel={trustedExternalLinkRel}
                         target="_blank"
                       >
                         <span className="break-all font-medium">

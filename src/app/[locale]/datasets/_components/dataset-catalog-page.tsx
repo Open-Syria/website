@@ -13,6 +13,7 @@ import {
   pageGutterClassName,
   pageHeroSectionClassName,
 } from "@/lib/layout"
+import { trustedExternalLinkRel } from "@/lib/links"
 import { cn } from "@/lib/utils"
 import { DatasetPageHeader } from "./dataset-page-header"
 
@@ -132,7 +133,7 @@ export async function DatasetCatalogPage({
                         variant: "outline",
                       })}
                       href={dataset.repositoryUrl}
-                      rel="noreferrer"
+                      rel={trustedExternalLinkRel}
                       target="_blank"
                     >
                       <GithubLight className="size-5 dark:hidden" />
@@ -145,7 +146,7 @@ export async function DatasetCatalogPage({
                         variant: "outline",
                       })}
                       href={dataset.distributions[0]?.url}
-                      rel="noreferrer"
+                      rel={trustedExternalLinkRel}
                       target="_blank"
                     >
                       <Download aria-hidden="true" />

@@ -10,6 +10,7 @@ import {
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu"
 import { Link } from "@/i18n/navigation"
+import { trustedExternalLinkRel } from "@/lib/links"
 import { siteLinks } from "@/lib/site"
 
 type DatasetPageNavigationProps = {
@@ -38,7 +39,11 @@ export function DatasetPageNavigation({
           <NavigationMenuLink
             className={navigationMenuTriggerStyle()}
             render={
-              <a href={siteLinks.docs} rel="noreferrer" target="_blank" />
+              <a
+                href={siteLinks.docs}
+                rel={trustedExternalLinkRel}
+                target="_blank"
+              />
             }
           >
             <BookOpenText aria-hidden="true" />
