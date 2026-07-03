@@ -25,6 +25,7 @@ export type DatasetCatalogItem = {
   formats: readonly string[]
   id: string
   keywords: readonly string[]
+  apiDocsUrl: string
   licenseUrl: string
   openApiUrl: string
   recordGroups: readonly DatasetRecordGroup[]
@@ -310,6 +311,7 @@ function buildDatasetCatalogItem(
     formats: getFormats(artifacts),
     id: summary.id ?? manifest?.dataset?.id ?? `opensyria-${slug}`,
     keywords: descriptor?.keywords ?? [],
+    apiDocsUrl: getDatasetApiDocsUrl(slug),
     licenseUrl: `${repositoryUrl}/blob/main/LICENSE.md`,
     openApiUrl: `${getDatasetsApiBase()}/openapi/${slug}.json`,
     recordGroups,
@@ -562,6 +564,10 @@ function getReleaseDownloadUrl(
 
 function getRepositoryUrl(repositoryName: string) {
   return `${siteLinks.githubOrganization}/${repositoryName}`
+}
+
+function getDatasetApiDocsUrl(slug: string) {
+  return `${siteLinks.docs}#tag/${encodeURIComponent(slug)}`
 }
 
 function getArtifactFileName(artifact: DatasetReleaseArtifact) {

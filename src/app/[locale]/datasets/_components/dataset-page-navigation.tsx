@@ -11,15 +11,16 @@ import {
 } from "@/components/ui/navigation-menu"
 import { Link } from "@/i18n/navigation"
 import { trustedExternalLinkRel } from "@/lib/links"
-import { siteLinks } from "@/lib/site"
 
 type DatasetPageNavigationProps = {
+  apiDocsHref: string
   apiDocsLabel: string
   ariaLabel: string
   openDataLabel: string
 }
 
 export function DatasetPageNavigation({
+  apiDocsHref,
   apiDocsLabel,
   ariaLabel,
   openDataLabel,
@@ -40,7 +41,7 @@ export function DatasetPageNavigation({
             className={navigationMenuTriggerStyle()}
             render={
               <a
-                href={siteLinks.docs}
+                href={apiDocsHref}
                 rel={trustedExternalLinkRel}
                 target="_blank"
               />

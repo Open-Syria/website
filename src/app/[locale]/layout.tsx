@@ -9,7 +9,7 @@ import { SiteFooter } from "@/components/site-footer"
 import { ThemeProvider } from "@/components/theme-provider"
 import { DirectionProvider } from "@/components/ui/direction"
 import { localeDirections, routing } from "@/i18n/routing"
-import { siteConfig } from "@/lib/site"
+import { siteConfig, socialPreviewImages } from "@/lib/site"
 import { cn } from "@/lib/utils"
 
 export const metadata: Metadata = {
@@ -28,6 +28,11 @@ export const metadata: Metadata = {
   },
   manifest: "/manifest.json",
   metadataBase: new URL(siteConfig.url),
+  openGraph: {
+    images: [socialPreviewImages.openGraph],
+    siteName: siteConfig.name,
+    type: "website",
+  },
   publisher: siteConfig.name,
   referrer: "origin-when-cross-origin",
   robots: {
@@ -44,6 +49,10 @@ export const metadata: Metadata = {
   title: {
     default: siteConfig.defaultTitle,
     template: `%s | ${siteConfig.name}`,
+  },
+  twitter: {
+    card: "summary_large_image",
+    images: [socialPreviewImages.twitter],
   },
 }
 
