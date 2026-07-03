@@ -16,8 +16,8 @@ function getDatasetCatalogStructuredData(locale: Locale) {
   const pageUrl = getAbsoluteUrl(getDatasetsPath(locale))
   const description =
     locale === "ar"
-      ? "فهرس OpenSyria لمجموعات البيانات السورية المفتوحة عن الجغرافيا الإدارية والجامعات والتنزيلات وواجهات API."
-      : "OpenSyria catalog of open Syrian datasets for administrative geography, universities, downloads, and API access."
+      ? "فهرس OpenSyria لمجموعات بيانات سورية مفتوحة وواجهات API للمطورين والخرائط والبحث والصحافة والأدوات المدنية."
+      : "OpenSyria catalog of open Syrian datasets and APIs for developers, maps, research, journalism, and civic tools."
 
   return {
     "@context": "https://schema.org",

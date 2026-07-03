@@ -2,13 +2,15 @@ export const siteConfig = {
   name: "OpenSyria",
   url: "https://opensyria.org",
   logo: "https://opensyria.org/web-app-manifest-512x512.png",
-  defaultTitle: "OpenSyria | Syrian Cities, Districts and Open Data",
+  defaultTitle: "OpenSyria | Syrian Open Data and APIs",
   defaultDescription:
-    "OpenSyria publishes source-backed Syrian datasets for cities, governorates, districts, subdistricts, localities, universities and API access.",
+    "OpenSyria publishes source-backed Syrian datasets and APIs for developers, maps, research, journalism, civic tools, and apps built for Syria.",
   keywords: [
     "OpenSyria",
     "Syria data",
     "Syrian datasets",
+    "Syria data for developers",
+    "Syrian API for developers",
     "Syrian cities dataset",
     "Syria governorates dataset",
     "Syria districts data",
@@ -16,6 +18,7 @@ export const siteConfig = {
     "Syria localities",
     "Syrian administrative divisions",
     "Syrian universities dataset",
+    "Syria app data",
     "Syria CSV data",
     "Syria JSON data",
     "Syria API",
@@ -26,15 +29,15 @@ export const siteConfig = {
   locales: {
     ar: {
       description:
-        "OpenSyria ينشر بيانات سورية مفتوحة وموثقة عن المدن والمحافظات والمناطق والنواحي والبلدات والجامعات مع تنزيلات وواجهات API.",
+        "OpenSyria ينشر مجموعات بيانات سورية موثقة وواجهات API للمطورين والخرائط والبحث والصحافة والأدوات المدنية والتطبيقات المبنية لسوريا.",
       ogLocale: "ar_SY",
-      title: "OpenSyria | بيانات المدن والمناطق السورية المفتوحة",
+      title: "OpenSyria | بيانات سورية مفتوحة وواجهات API",
     },
     en: {
       description:
-        "OpenSyria publishes source-backed Syrian datasets for cities, governorates, districts, subdistricts, localities, universities and API access.",
+        "OpenSyria publishes source-backed Syrian datasets and APIs for developers, maps, research, journalism, civic tools, and apps built for Syria.",
       ogLocale: "en_US",
-      title: "OpenSyria | Syrian Cities, Districts and Open Data",
+      title: "OpenSyria | Syrian Open Data and APIs",
     },
   },
 } as const
