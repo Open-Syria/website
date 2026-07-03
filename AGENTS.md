@@ -1,4 +1,9 @@
-# Agent Notes
+# AGENTS.md
+
+This file is the repo-root guide for coding agents working on the OpenSyria
+website. Treat it as the agent-facing companion to `README.md`: read it before
+changing code, then read the closest nested `AGENTS.md` if one exists for the
+files you touch.
 
 This repository uses current Next.js APIs that may differ from older training data.
 
@@ -18,9 +23,17 @@ Before handing off changes, run the smallest relevant command and prefer `pnpm v
 
 Do not commit local `.env` files, SSH keys, Cloudflare tokens, Tailscale credentials, generated local artifacts, or private infrastructure details.
 
-## Local Skills
+## Local Skill Selection
 
-Read the matching `SKILL.md` before using a local skill.
+Repo-local skills live in `.agents/skills/<skill-name>/SKILL.md`. When a task
+matches a skill below, read that `SKILL.md` before editing. Prefer the most
+specific skill that covers the task, and combine skills only when the work spans
+multiple areas. For example, metadata changes usually need `seo`; a dataset page
+layout change may need `frontend-design`, `react-best-practices`, and
+`tailwind-css-patterns`; a route handler change may need `next-best-practices`
+and `nodejs-backend-patterns`.
+
+Use these local skills as follows:
 
 - `accessibility`: use for accessibility audits, WCAG work, keyboard navigation, focus management, semantic HTML, ARIA, color contrast, or screen reader support.
 - `composition-patterns`: use when refactoring React component APIs, reducing boolean prop sprawl, designing compound components, render props, context providers, or reusable component architecture.
