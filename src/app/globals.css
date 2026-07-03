@@ -135,6 +135,9 @@
     @apply font-sans;
   }
   html[dir="rtl"] {
+    --font-heading: var(--font-arabic);
+    --font-sans: var(--font-arabic);
+
     font-family: var(--font-arabic), var(--font-body), sans-serif;
   }
 }
