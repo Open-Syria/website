@@ -1,7 +1,7 @@
 import type { SVGProps } from "react"
 
 const logoStyles =
-  ".cls-1{fill:var(--opensyria-logo-foreground,currentColor);}.cls-2,.cls-3,.cls-4,.cls-5,.cls-6,.cls-7,.cls-8,.cls-9,.cls-10,.cls-11,.cls-12,.cls-13,.cls-14,.cls-15,.cls-16,.cls-17,.cls-18,.cls-19,.cls-20,.cls-21,.cls-22,.cls-23,.cls-24,.cls-25,.cls-26,.cls-27,.cls-28,.cls-29,.cls-30,.cls-31,.cls-32,.cls-33,.cls-34,.cls-35,.cls-36,.cls-37{fill:var(--opensyria-logo-primary,currentColor);}.cls-37{fill:var(--opensyria-logo-primary,currentColor);}"
+  ".cls-1{fill:var(--opensyria-logo-foreground,currentColor);}.cls-2,.cls-3,.cls-4,.cls-5,.cls-20,.cls-21,.cls-22,.cls-23,.cls-24,.cls-25,.cls-26,.cls-27,.cls-28,.cls-29,.cls-30,.cls-31,.cls-32,.cls-33,.cls-34,.cls-35,.cls-36,.cls-37{fill:var(--opensyria-logo-primary,currentColor);}.cls-6,.cls-7,.cls-8,.cls-9,.cls-10,.cls-11,.cls-12,.cls-13,.cls-14,.cls-15,.cls-16,.cls-17,.cls-18,.cls-19{fill:url(#opensyria-map-gradient);}.cls-37{fill:var(--opensyria-logo-primary,currentColor);}"
 
 function OpenSyriaHorizontalLogo(props: SVGProps<SVGSVGElement>) {
   return (
@@ -14,6 +14,23 @@ function OpenSyriaHorizontalLogo(props: SVGProps<SVGSVGElement>) {
       {...props}
     >
       <defs>
+        <linearGradient
+          gradientUnits="userSpaceOnUse"
+          id="opensyria-map-gradient"
+          x1="-1001.24"
+          x2="-825.19"
+          y1="-317.94"
+          y2="-317.94"
+        >
+          <stop
+            offset="0"
+            stopColor="var(--opensyria-logo-map-gradient-start,#007156)"
+          />
+          <stop
+            offset="1"
+            stopColor="var(--opensyria-logo-map-gradient-end,#000)"
+          />
+        </linearGradient>
         <style>{logoStyles}</style>
       </defs>
       <path
