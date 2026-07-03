@@ -4,6 +4,7 @@ import Image from "next/image"
 import NextLink from "next/link"
 import { getTranslations } from "next-intl/server"
 
+import { SiteControls } from "@/components/site-controls"
 import { TrackedLink } from "@/components/tracked-link"
 import { buttonVariants } from "@/components/ui/button"
 import { GithubDark } from "@/components/ui/svgs/githubDark"
@@ -60,6 +61,17 @@ export async function LandingHero({ locale }: LandingHeroProps) {
           pageGutterClassName
         )}
       >
+        <div
+          className={cn(
+            "absolute inset-x-0 top-4 z-20 sm:top-5",
+            pageGutterClassName
+          )}
+        >
+          <div className={cn(pageContainerClassName, "flex justify-end")}>
+            <SiteControls />
+          </div>
+        </div>
+
         <div
           className="pointer-events-none absolute inset-0 -z-20"
           aria-hidden="true"
