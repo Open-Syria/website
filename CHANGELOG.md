@@ -1,5 +1,25 @@
 # Changelog
 
+## [0.2.0](https://github.com/Open-Syria/website/compare/v0.1.1...v0.2.0) (2026-07-03)
+
+
+### Features
+
+* add branded dataset home surface [skip ci] ([1817621](https://github.com/Open-Syria/website/commit/181762101ca71aa7eacf39d124413f235eb1f809))
+* add dataset catalog pages [skip ci] ([39e26d9](https://github.com/Open-Syria/website/commit/39e26d941f2fa76897fb873b6e6b83909c9e95a0))
+* add website agent discovery ([df285bf](https://github.com/Open-Syria/website/commit/df285bf849231000de8c2371af656a6ce105d510))
+* refresh website experience [skip ci] ([2d068e4](https://github.com/Open-Syria/website/commit/2d068e4d8ca93ad913a7f76d9af820f553dca6ec))
+* use base ui navigation menu [skip ci] ([f11e3d0](https://github.com/Open-Syria/website/commit/f11e3d09abf11ce8983afea0449c241a16a7c9f6))
+
+
+### Bug Fixes
+
+* add localized error routes [skip ci] ([9350f02](https://github.com/Open-Syria/website/commit/9350f028b4b138bb45645b9aa11e5f40af3fddc4))
+* harden website tracking query handling ([72c9915](https://github.com/Open-Syria/website/commit/72c9915815775e88df76c11cf323cff61a6c8c1d))
+* improve Arabic website copy ([78a7be1](https://github.com/Open-Syria/website/commit/78a7be19a566e225c83f024cf306645517e68c23))
+* polish external links and RTL API routes ([7769244](https://github.com/Open-Syria/website/commit/77692441af4b9238c9e61554bdd509edbba46dc8))
+* restore homepage controls ([afa4d05](https://github.com/Open-Syria/website/commit/afa4d05585c036f7db4fea15bc4704bd9e890dfb))
+
 ## [0.1.1](https://github.com/Open-Syria/website/compare/v0.1.0...v0.1.1) (2026-07-01)
 
 
