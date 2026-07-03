@@ -4,6 +4,8 @@ import { Home, RefreshCw } from "lucide-react"
 import { useTranslations } from "next-intl"
 
 import { Link } from "@/i18n/navigation"
+import { narrowPageContainerClassName, pageGutterClassName } from "@/lib/layout"
+import { cn } from "@/lib/utils"
 
 type ErrorPageProps = Readonly<{
   error: Error & { digest?: string }
@@ -14,10 +16,25 @@ export default function ErrorPage({ reset }: ErrorPageProps) {
   const t = useTranslations("Error")
 
   return (
-    <main className="flex min-h-svh items-center bg-background-light px-4 py-16 text-foreground sm:px-8 lg:px-12">
-      <section className="mx-auto w-full max-w-2xl border-border/80 border-t pt-8">
+    <main
+      className={cn(
+        "flex min-h-svh items-center bg-background-light py-16 text-foreground",
+        pageGutterClassName
+      )}
+      id="main-content"
+    >
+      <section
+        aria-labelledby="error-title"
+        className={cn(
+          narrowPageContainerClassName,
+          "border-border/80 border-t pt-8"
+        )}
+      >
         <p className="font-medium text-primary text-sm">OpenSyria</p>
-        <h1 className="mt-4 text-balance font-heading font-semibold text-4xl leading-tight sm:text-5xl">
+        <h1
+          className="mt-4 text-balance font-heading font-semibold text-4xl leading-tight sm:text-5xl"
+          id="error-title"
+        >
           {t("title")}
         </h1>
         <p className="mt-4 max-w-xl text-base text-muted-foreground leading-7">

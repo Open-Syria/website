@@ -15,6 +15,28 @@
     "switchThemeDark": "Switch to dark theme",
     "switchThemeLight": "Switch to light theme"
   },
+  "Navigation": {
+    "apiDocs": "API docs",
+    "datasets": "Datasets",
+    "primary": "Primary navigation",
+    "skipToContent": "Skip to main content"
+  },
+  "Footer": {
+    "apiDocs": "API documentation",
+    "communityTitle": "Community",
+    "copyright": "© OpenSyria",
+    "datasets": "Dataset catalog",
+    "description": "OpenSyria is an open source public data commons for reliable Syrian datasets, API access, and civic intelligence.",
+    "github": "GitHub organization",
+    "home": "Home",
+    "licenseNote": "Each repository defines its own license.",
+    "linkedIn": "LinkedIn",
+    "navigationLabel": "Footer navigation",
+    "openApi": "OpenAPI document",
+    "platformTitle": "Platform",
+    "principle": "Public, non-personal, source-backed reference data only.",
+    "repositoriesTitle": "Repositories"
+  },
   "HomeDatasets": {
     "description": "Download source-backed datasets or use the public API for Syrian apps, maps, research, journalism, civic tools, and reusable reference data.",
     "eyebrow": "Current datasets",
@@ -28,6 +50,7 @@
     "apiEndpoints": "API endpoints",
     "catalogDescription": "Browse OpenSyria datasets for developers building Syria-focused apps, maps, and civic tools, plus researchers and journalists who need reliable reference data. Current datasets include Syrian cities, governorates, districts, localities, universities, GitHub releases, downloads, and API routes.",
     "catalogEyebrow": "Dataset catalog",
+    "catalogList": "Available datasets",
     "catalogTitle": "Syrian datasets for developers, maps, research, and civic tools",
     "contains": "What this dataset contains",
     "downloadFiles": "Download files",
@@ -36,6 +59,7 @@
     "home": "Home",
     "keywords": "Related search topics",
     "latestRelease": "Latest release",
+    "navigation": "Dataset navigation",
     "openDataset": "Open dataset",
     "openData": "Open data",
     "records": "Records",

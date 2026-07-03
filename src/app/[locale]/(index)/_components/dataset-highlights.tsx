@@ -6,7 +6,9 @@ import { getTranslations } from "next-intl/server"
 import { buttonVariants } from "@/components/ui/button"
 import { getPathname } from "@/i18n/navigation"
 import type { Locale } from "@/i18n/routing"
-import { datasetCatalog } from "@/lib/datasets"
+import { getDatasetCatalog } from "@/lib/datasets"
+import { pageContainerClassName, pageGutterClassName } from "@/lib/layout"
+import { cn } from "@/lib/utils"
 
 type DatasetHighlightsProps = Readonly<{
   locale: Locale
@@ -18,14 +20,20 @@ export async function DatasetHighlights({ locale }: DatasetHighlightsProps) {
   cacheLife("hours")
 
   const t = await getTranslations({ locale, namespace: "HomeDatasets" })
+  const datasets = await getDatasetCatalog()
   const numberFormatter = new Intl.NumberFormat(locale)
 
   return (
     <section
       aria-labelledby="home-datasets-title"
-      className="bg-background px-4 py-16 sm:px-8 lg:px-12"
+      className={cn("bg-background py-16", pageGutterClassName)}
     >
-      <div className="mx-auto grid max-w-7xl gap-10 lg:grid-cols-[0.75fr_1.25fr] lg:items-start">
+      <div
+        className={cn(
+          pageContainerClassName,
+          "grid gap-10 lg:grid-cols-[0.75fr_1.25fr] lg:items-start"
+        )}
+      >
         <div>
           <p className="inline-flex items-center gap-2 rounded-md border border-border bg-background-light px-3 py-1.5 font-medium text-sm">
             <Database aria-hidden="true" className="size-4 text-primary" />
@@ -43,7 +51,7 @@ export async function DatasetHighlights({ locale }: DatasetHighlightsProps) {
         </div>
 
         <div className="grid gap-4 md:grid-cols-2">
-          {datasetCatalog.map((dataset) => (
+          {datasets.map((dataset) => (
             <article
               className="flex h-full flex-col rounded-md border bg-card p-5 text-card-foreground shadow-sm"
               key={dataset.id}

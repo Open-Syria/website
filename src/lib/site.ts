@@ -29,7 +29,7 @@ export const siteConfig = {
   locales: {
     ar: {
       description:
-        "OpenSyria ينشر مجموعات بيانات سورية موثقة وواجهات API للمطورين والخرائط والبحث والصحافة والأدوات المدنية والتطبيقات المبنية لسوريا.",
+        "OpenSyria تنشر مجموعات بيانات سورية موثقة وواجهات API للمطورين والخرائط والبحث والصحافة والأدوات المدنية والتطبيقات المبنية لسوريا.",
       ogLocale: "ar_SY",
       title: "OpenSyria | بيانات سورية مفتوحة وواجهات API",
     },
@@ -44,12 +44,20 @@ export const siteConfig = {
 
 export const siteLinks = {
   apiRepository: "https://github.com/Open-Syria/datasets-api",
+  contactEmail: "info@opensyria.org",
   datasetsApi: "https://api.opensyria.org",
   docs: "https://api.opensyria.org/docs",
   geographyRepository: "https://github.com/Open-Syria/data-geography",
   githubOrganization: "https://github.com/Open-Syria",
+  linkedIn: "https://www.linkedin.com/company/OpenSyria",
+  openApi: "https://api.opensyria.org/openapi.json",
   universitiesRepository: "https://github.com/Open-Syria/data-universities",
 }
+
+export const organizationSameAsLinks = [
+  siteLinks.githubOrganization,
+  siteLinks.linkedIn,
+] as const
 
 export function getLocalePath(locale: keyof typeof siteConfig.locales) {
   return locale === "en" ? "/" : `/${locale}`

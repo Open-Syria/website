@@ -2,22 +2,23 @@ import type { MetadataRoute } from "next"
 
 import { type Locale, routing } from "@/i18n/routing"
 import {
-  datasetCatalog,
   getAbsoluteUrl,
+  getDatasetCatalog,
   getDatasetPath,
   getDatasetsPath,
   getLocalizedPath,
 } from "@/lib/datasets"
 
-const lastModified = new Date("2026-07-03")
-
 type SitemapRoute = {
   changeFrequency: MetadataRoute.Sitemap[number]["changeFrequency"]
+  getLastModified?: () => Date
   getPath: (locale: Locale) => string
   priority: number
 }
 
-export default function sitemap(): MetadataRoute.Sitemap {
+export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
+  const datasets = await getDatasetCatalog()
+  const defaultLastModified = new Date()
   const routes: SitemapRoute[] = [
     {
       changeFrequency: "weekly",
@@ -29,8 +30,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
       getPath: getDatasetsPath,
       priority: 0.95,
     },
-    ...datasetCatalog.map((dataset) => ({
+    ...datasets.map((dataset) => ({
       changeFrequency: "weekly" as const,
+      getLastModified: () => getDateOrFallback(dataset.updatedAt),
       getPath: (locale: Locale) => getDatasetPath(locale, dataset.slug),
       priority: 0.9,
     })),
@@ -52,7 +54,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
         languages,
       },
       changeFrequency: route.changeFrequency,
-      lastModified,
+      lastModified: route.getLastModified?.() ?? defaultLastModified,
       priority:
         locale === routing.defaultLocale
           ? route.priority
@@ -60,4 +62,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
       url: getAbsoluteUrl(route.getPath(locale)),
     }))
   })
+}
+
+function getDateOrFallback(value: string | null) {
+  if (!value) {
+    return new Date()
+  }
+
+  const date = new Date(value)
+
+  return Number.isNaN(date.getTime()) ? new Date() : date
 }
