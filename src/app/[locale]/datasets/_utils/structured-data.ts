@@ -1,188 +1,149 @@
+import type { DataCatalog, DataDownload, Dataset, Graph } from "schema-dts"
+
 import type { Locale } from "@/i18n/routing"
 import {
   type DatasetCatalogItem,
-  datasetCatalog,
   getAbsoluteUrl,
   getDatasetPath,
   getDatasetsPath,
 } from "@/lib/datasets"
-import { siteConfig, siteLinks } from "@/lib/site"
+import {
+  createJsonLdGraph,
+  getCommonPageJsonLd,
+  organizationJsonLdId,
+  schemaReference,
+  toJsonLd,
+} from "@/lib/json-ld"
+import { siteConfig } from "@/lib/site"
 
-const organizationId = `${siteConfig.url}/#organization`
-const websiteId = `${siteConfig.url}/#website`
 const catalogId = `${siteConfig.url}/datasets#catalog`
 
-function getDatasetCatalogStructuredData(locale: Locale) {
+const catalogStructuredDataText: Record<
+  Locale,
+  { description: string; title: string }
+> = {
+  ar: {
+    description:
+      "فهرس OpenSyria لمجموعات بيانات سورية مفتوحة وواجهات API للمطورين والخرائط والبحث والصحافة والأدوات المدنية.",
+    title: "فهرس مجموعات بيانات OpenSyria",
+  },
+  en: {
+    description:
+      "OpenSyria catalog of open Syrian datasets and APIs for developers, maps, research, journalism, and civic tools.",
+    title: "OpenSyria Dataset Catalog",
+  },
+}
+
+function getDatasetCatalogStructuredData(
+  locale: Locale,
+  datasets: readonly DatasetCatalogItem[]
+): Graph {
   const pageUrl = getAbsoluteUrl(getDatasetsPath(locale))
-  const description =
-    locale === "ar"
-      ? "فهرس OpenSyria لمجموعات بيانات سورية مفتوحة وواجهات API للمطورين والخرائط والبحث والصحافة والأدوات المدنية."
-      : "OpenSyria catalog of open Syrian datasets and APIs for developers, maps, research, journalism, and civic tools."
-
-  return {
-    "@context": "https://schema.org",
-    "@graph": [
-      ...getCommonGraph({
-        description,
-        locale,
-        pageId: `${pageUrl}#webpage`,
-        pageUrl,
-        title:
-          locale === "ar"
-            ? "فهرس مجموعات بيانات OpenSyria"
-            : "OpenSyria Dataset Catalog",
-      }),
-      {
-        "@id": catalogId,
-        "@type": "DataCatalog",
-        dataset: datasetCatalog.map((dataset) => ({
-          "@id": getDatasetId(dataset),
-        })),
-        description,
-        inLanguage: locale,
-        name:
-          locale === "ar"
-            ? "فهرس مجموعات بيانات OpenSyria"
-            : "OpenSyria Dataset Catalog",
-        publisher: {
-          "@id": organizationId,
-        },
-        url: pageUrl,
-      },
-    ],
+  const { description, title } = catalogStructuredDataText[locale]
+  const catalog: DataCatalog = {
+    "@id": catalogId,
+    "@type": "DataCatalog",
+    dataset: datasets.map((dataset) => schemaReference(getDatasetId(dataset))),
+    description,
+    inLanguage: locale,
+    name: title,
+    publisher: schemaReference(organizationJsonLdId),
+    url: pageUrl,
   }
-}
 
-function getDatasetStructuredData(locale: Locale, dataset: DatasetCatalogItem) {
-  const pageUrl = getAbsoluteUrl(getDatasetPath(locale, dataset.slug))
-  const datasetId = getDatasetId(dataset)
-
-  return {
-    "@context": "https://schema.org",
-    "@graph": [
-      ...getCommonGraph({
-        description: dataset.description[locale],
-        locale,
-        pageId: `${pageUrl}#webpage`,
-        pageUrl,
-        title: dataset.title[locale],
-      }),
-      {
-        "@id": catalogId,
-        "@type": "DataCatalog",
-        name:
-          locale === "ar"
-            ? "فهرس مجموعات بيانات OpenSyria"
-            : "OpenSyria Dataset Catalog",
-        publisher: {
-          "@id": organizationId,
-        },
-        url: getAbsoluteUrl(getDatasetsPath(locale)),
-      },
-      {
-        "@id": datasetId,
-        "@type": "Dataset",
-        creator: {
-          "@id": organizationId,
-        },
-        description: dataset.description[locale],
-        distribution: dataset.distributions.map((distribution) => ({
-          "@type": "DataDownload",
-          contentUrl: distribution.url,
-          encodingFormat: distribution.encodingFormat,
-          fileFormat: distribution.format,
-          name: distribution.name,
-        })),
-        identifier: dataset.id,
-        includedInDataCatalog: {
-          "@id": catalogId,
-        },
-        inLanguage: ["en", "ar"],
-        isAccessibleForFree: true,
-        keywords: dataset.keywords.join(", "),
-        license: dataset.licenseUrl,
-        name: dataset.title[locale],
-        publisher: {
-          "@id": organizationId,
-        },
-        sameAs: dataset.repositoryUrl,
-        spatialCoverage: {
-          "@type": "Place",
-          name: locale === "ar" ? "سوريا" : "Syria",
-        },
-        url: pageUrl,
-        variableMeasured: dataset.recordGroups.map((group) => ({
-          "@type": "PropertyValue",
-          name: group.name[locale],
-          value: group.count,
-        })),
-      },
-    ],
-  }
-}
-
-function getCommonGraph({
-  description,
-  locale,
-  pageId,
-  pageUrl,
-  title,
-}: {
-  description: string
-  locale: Locale
-  pageId: string
-  pageUrl: string
-  title: string
-}) {
-  return [
-    {
-      "@id": organizationId,
-      "@type": "Organization",
-      description: siteConfig.locales[locale].description,
-      logo: siteConfig.logo,
-      name: siteConfig.name,
-      sameAs: [
-        siteLinks.githubOrganization,
-        siteLinks.geographyRepository,
-        siteLinks.universitiesRepository,
-        siteLinks.apiRepository,
-      ],
-      url: siteConfig.url,
-    },
-    {
-      "@id": websiteId,
-      "@type": "WebSite",
-      description: siteConfig.locales[locale].description,
-      inLanguage: locale,
-      name: siteConfig.name,
-      publisher: {
-        "@id": organizationId,
-      },
-      url: siteConfig.url,
-    },
-    {
-      "@id": pageId,
-      "@type": "WebPage",
-      about: {
-        "@id": organizationId,
-      },
+  return createJsonLdGraph([
+    ...getCommonPageJsonLd({
       description,
-      inLanguage: locale,
-      isPartOf: {
-        "@id": websiteId,
-      },
-      name: title,
-      url: pageUrl,
+      locale,
+      pageId: `${pageUrl}#webpage`,
+      pageUrl,
+      title,
+    }),
+    catalog,
+  ])
+}
+
+function getDatasetStructuredData(
+  locale: Locale,
+  dataset: DatasetCatalogItem
+): Graph {
+  const pageUrl = getAbsoluteUrl(getDatasetPath(locale, dataset.slug))
+  const catalog = getDatasetCatalogJsonLd(locale)
+  const datasetJsonLd = getDatasetJsonLd({ dataset, locale, pageUrl })
+
+  return createJsonLdGraph([
+    ...getCommonPageJsonLd({
+      description: dataset.description[locale],
+      locale,
+      pageId: `${pageUrl}#webpage`,
+      pageUrl,
+      title: dataset.title[locale],
+    }),
+    catalog,
+    datasetJsonLd,
+  ])
+}
+
+function getDatasetCatalogJsonLd(locale: Locale): DataCatalog {
+  return {
+    "@id": catalogId,
+    "@type": "DataCatalog",
+    name: catalogStructuredDataText[locale].title,
+    publisher: schemaReference(organizationJsonLdId),
+    url: getAbsoluteUrl(getDatasetsPath(locale)),
+  }
+}
+
+function getDatasetJsonLd({
+  dataset,
+  locale,
+  pageUrl,
+}: {
+  dataset: DatasetCatalogItem
+  locale: Locale
+  pageUrl: string
+}): Dataset {
+  return {
+    "@id": getDatasetId(dataset),
+    "@type": "Dataset",
+    creator: schemaReference(organizationJsonLdId),
+    dateModified: dataset.updatedAt ?? undefined,
+    description: dataset.description[locale],
+    distribution: getDatasetDistributions(dataset),
+    identifier: dataset.id,
+    includedInDataCatalog: schemaReference(catalogId),
+    inLanguage: ["en", "ar"],
+    isAccessibleForFree: true,
+    keywords: dataset.keywords,
+    license: dataset.licenseUrl,
+    name: dataset.title[locale],
+    publisher: schemaReference(organizationJsonLdId),
+    sameAs: dataset.repositoryUrl,
+    spatialCoverage: {
+      "@type": "Place",
+      name: locale === "ar" ? "سوريا" : "Syria",
     },
-  ]
+    url: pageUrl,
+    variableMeasured: dataset.recordGroups.map((group) => ({
+      "@type": "PropertyValue",
+      name: group.name[locale],
+      value: group.count,
+    })),
+    version: dataset.releaseTag,
+  }
+}
+
+function getDatasetDistributions(dataset: DatasetCatalogItem): DataDownload[] {
+  return dataset.distributions.map((distribution) => ({
+    "@type": "DataDownload",
+    contentUrl: distribution.url,
+    encodingFormat: distribution.encodingFormat,
+    name: distribution.name,
+  }))
 }
 
 function getDatasetId(dataset: DatasetCatalogItem) {
   return `${siteConfig.url}/datasets/${dataset.slug}#dataset`
-}
-
-function toJsonLd(value: unknown) {
-  return JSON.stringify(value).replace(/</g, "\\u003c")
 }
 
 export { getDatasetCatalogStructuredData, getDatasetStructuredData, toJsonLd }

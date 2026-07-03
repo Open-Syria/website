@@ -3,9 +3,9 @@ import { notFound } from "next/navigation"
 
 import { type Locale, routing } from "@/i18n/routing"
 import {
-  datasetCatalog,
   getAbsoluteUrl,
   getDatasetBySlug,
+  getDatasetCatalog,
   getDatasetPath,
   getDatasetsPath,
 } from "@/lib/datasets"
@@ -36,6 +36,7 @@ async function generateDatasetCatalogMetadata({
   params: LocaleParams
 }): Promise<Metadata> {
   const locale = await resolvePageLocale(params)
+  const datasets = await getDatasetCatalog()
   const seo = catalogSeo[locale]
   const pageUrl = getAbsoluteUrl(getDatasetsPath(locale))
 
@@ -49,7 +50,7 @@ async function generateDatasetCatalogMetadata({
     description: seo.description,
     keywords: [
       ...siteConfig.keywords,
-      ...datasetCatalog.flatMap((dataset) => dataset.keywords),
+      ...datasets.flatMap((dataset) => dataset.keywords),
     ],
     metadataBase: new URL(siteConfig.url),
     openGraph: {
@@ -80,7 +81,7 @@ async function generateDatasetMetadata({
   params: DatasetParams
 }): Promise<Metadata> {
   const { locale, slug } = await resolveDatasetParams(params)
-  const dataset = getDatasetBySlug(slug)
+  const dataset = await getDatasetBySlug(slug)
 
   if (!dataset) {
     notFound()

@@ -1,12 +1,26 @@
-import { cacheLife } from "next/cache"
+import { cacheLife, cacheTag } from "next/cache"
 
 const GITHUB_ORGANIZATION = "Open-Syria"
 const GITHUB_API_BASE = "https://api.github.com"
 const EXCLUDED_REPOSITORY_NAMES = new Set([".github"])
 
 type GitHubRepository = {
+  archived?: boolean
+  description?: string | null
+  fork?: boolean
+  html_url?: string
   name?: string
   stargazers_count?: number
+  updated_at?: string | null
+}
+
+type GitHubOrganization = {
+  blog?: string | null
+  email?: string | null
+  html_url?: string
+  location?: string | null
+  login?: string
+  name?: string | null
 }
 
 type GitHubContributor = {
@@ -29,10 +43,26 @@ export type GitHubOverview = {
   stars: number | null
 }
 
+export type GitHubProjectDirectory = {
+  organization: {
+    email: string | null
+    location: string | null
+    name: string
+    url: string
+    websiteUrl: string | null
+  }
+  repositories: {
+    description: string | null
+    name: string
+    url: string
+  }[]
+}
+
 export async function getGithubOverview(): Promise<GitHubOverview> {
   "use cache"
 
   cacheLife("hours")
+  cacheTag("github-overview")
 
   try {
     const repositories = await getPublicRepositories()
@@ -88,6 +118,56 @@ export async function getGithubOverview(): Promise<GitHubOverview> {
   }
 }
 
+export async function getGithubProjectDirectory(): Promise<GitHubProjectDirectory> {
+  "use cache"
+
+  cacheLife("hours")
+  cacheTag("github-project-directory")
+
+  try {
+    const [organization, repositories] = await Promise.all([
+      getOrganization(),
+      getPublicRepositories(),
+    ])
+
+    return {
+      organization: {
+        email: organization.email ?? null,
+        location: organization.location ?? null,
+        name: organization.name ?? organization.login ?? "OpenSyria",
+        url:
+          organization.html_url ?? `https://github.com/${GITHUB_ORGANIZATION}`,
+        websiteUrl: organization.blog ?? null,
+      },
+      repositories: repositories
+        .filter(isDirectoryRepository)
+        .sort(sortRepositoriesByUpdate)
+        .map((repository) => ({
+          description: repository.description ?? null,
+          name: repository.name,
+          url: repository.html_url,
+        })),
+    }
+  } catch {
+    return fallbackProjectDirectory()
+  }
+}
+
+async function getOrganization() {
+  const response = await fetch(
+    `${GITHUB_API_BASE}/orgs/${GITHUB_ORGANIZATION}`,
+    {
+      headers: githubHeaders(),
+    }
+  )
+
+  if (!response.ok) {
+    throw new Error("Failed to fetch GitHub organization")
+  }
+
+  return (await response.json()) as GitHubOrganization
+}
+
 async function getPublicRepositories() {
   const repositories: GitHubRepository[] = []
 
@@ -115,11 +195,29 @@ async function getPublicRepositories() {
 
 function isVisibleRepository(
   repository: GitHubRepository
-): repository is Required<GitHubRepository> {
+): repository is GitHubRepository & {
+  name: string
+  stargazers_count: number
+} {
   return (
     typeof repository.name === "string" &&
     !EXCLUDED_REPOSITORY_NAMES.has(repository.name) &&
     typeof repository.stargazers_count === "number"
+  )
+}
+
+function isDirectoryRepository(
+  repository: GitHubRepository
+): repository is GitHubRepository & {
+  html_url: string
+  name: string
+} {
+  return (
+    typeof repository.name === "string" &&
+    typeof repository.html_url === "string" &&
+    !EXCLUDED_REPOSITORY_NAMES.has(repository.name) &&
+    repository.archived !== true &&
+    repository.fork !== true
   )
 }
 
@@ -148,4 +246,30 @@ function fallbackOverview(): GitHubOverview {
     contributors: [],
     stars: null,
   }
+}
+
+function fallbackProjectDirectory(): GitHubProjectDirectory {
+  return {
+    organization: {
+      email: null,
+      location: null,
+      name: "OpenSyria",
+      url: `https://github.com/${GITHUB_ORGANIZATION}`,
+      websiteUrl: null,
+    },
+    repositories: [],
+  }
+}
+
+function sortRepositoriesByUpdate(
+  first: GitHubRepository,
+  second: GitHubRepository
+) {
+  const firstDate = Date.parse(first.updated_at ?? "")
+  const secondDate = Date.parse(second.updated_at ?? "")
+
+  return (
+    (Number.isNaN(secondDate) ? 0 : secondDate) -
+    (Number.isNaN(firstDate) ? 0 : firstDate)
+  )
 }

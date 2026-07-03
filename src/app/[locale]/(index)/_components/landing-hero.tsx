@@ -4,7 +4,6 @@ import Image from "next/image"
 import NextLink from "next/link"
 import { getTranslations } from "next-intl/server"
 
-import { SiteControls } from "@/components/site-controls"
 import { TrackedLink } from "@/components/tracked-link"
 import { buttonVariants } from "@/components/ui/button"
 import { GithubDark } from "@/components/ui/svgs/githubDark"
@@ -12,7 +11,9 @@ import { GithubLight } from "@/components/ui/svgs/githubLight"
 import { getPathname } from "@/i18n/navigation"
 import type { Locale } from "@/i18n/routing"
 import { getGithubOverview } from "@/lib/github"
+import { pageContainerClassName, pageGutterClassName } from "@/lib/layout"
 import { siteLinks } from "@/lib/site"
+import { cn } from "@/lib/utils"
 import { DatasetHighlights } from "./dataset-highlights"
 
 type LandingHeroProps = Readonly<{
@@ -47,13 +48,17 @@ export async function LandingHero({ locale }: LandingHeroProps) {
   const datasetsHref = getPathname({ href: "/datasets", locale })
 
   return (
-    <main className="min-h-svh overflow-hidden bg-background-light text-foreground">
+    <main
+      className="min-h-svh overflow-hidden bg-background-light text-foreground"
+      id="main-content"
+    >
       <section
         aria-labelledby="hero-title"
-        className="relative isolate flex min-h-svh items-center overflow-hidden border-b bg-background-light px-4 py-10 sm:px-8 lg:px-12"
+        className={cn(
+          "relative isolate flex min-h-svh items-center overflow-hidden border-b bg-background-light py-10",
+          pageGutterClassName
+        )}
       >
-        <SiteControls className="absolute top-4 left-1/2 z-10 -translate-x-1/2 sm:top-6 lg:top-8 lg:right-10 lg:left-auto lg:translate-x-0" />
-
         <div
           className="pointer-events-none absolute inset-0 -z-20"
           aria-hidden="true"
@@ -63,7 +68,12 @@ export async function LandingHero({ locale }: LandingHeroProps) {
           <div className="absolute inset-x-0 bottom-0 h-px bg-border" />
         </div>
 
-        <div className="mx-auto grid w-full max-w-7xl gap-12 lg:grid-cols-[minmax(0,0.86fr)_minmax(460px,1fr)] lg:items-center">
+        <div
+          className={cn(
+            pageContainerClassName,
+            "grid w-full gap-12 lg:grid-cols-[minmax(0,0.86fr)_minmax(460px,1fr)] lg:items-center"
+          )}
+        >
           <div className="mx-auto flex w-full max-w-3xl flex-col items-center text-center lg:mx-0 lg:items-start lg:text-start">
             <p className="inline-flex items-center gap-2 rounded-md border border-border/70 bg-background/85 px-3 py-1.5 font-medium text-foreground text-sm shadow-sm backdrop-blur">
               <Database aria-hidden="true" className="size-4 text-primary" />
@@ -136,7 +146,7 @@ export async function LandingHero({ locale }: LandingHeroProps) {
             </div>
 
             {github.contributors.length > 0 ? (
-              <aside className="mt-12 w-full max-w-2xl border-border/80 border-t pt-5 lg:text-start">
+              <aside className="mt-12 w-full max-w-2xl lg:text-start">
                 <p className="font-medium text-sm">{t("contributors")}</p>
                 <ul className="mt-5 flex flex-wrap justify-center gap-2 lg:justify-start">
                   {github.contributors.map((contributor, index) => {
