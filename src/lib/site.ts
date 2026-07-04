@@ -1,4 +1,4 @@
-const brandAssetVersion = "20260704-brand"
+const brandAssetVersion = "20260704-brand-wordmark"
 
 export const siteConfig = {
   name: "OpenSyria",
