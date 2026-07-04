@@ -122,20 +122,25 @@ const RELEASE_MANIFEST_FILE = "release-manifest.json"
 const datasetDescriptors = [
   {
     description: {
-      ar: "مجموعة بيانات مفتوحة وموثقة للجغرافيا الإدارية السورية، متوفرة عبر JSON وCSV وصيغ أخرى وواجهات API موثقة.",
-      en: "A source-backed open dataset for Syrian administrative geography, available through JSON, CSV, other export formats, and documented API endpoints.",
+      ar: "نزّل بيانات المدن والمحافظات والمناطق والنواحي والبلدات والقرى والمحلات السورية مع الإحداثيات وملفات JSON وCSV للخرائط والبحث.",
+      en: "Download Syrian cities, governorates, districts, subdistricts, towns, villages, localities, coordinates, and JSON/CSV files for maps and research.",
     },
     keywords: [
       "Syrian cities dataset",
+      "Syrian cities CSV",
+      "Syrian cities JSON",
       "Syria governorates",
+      "Syria governorates dataset",
       "Syria districts",
+      "Syria districts data",
       "Syria subdistricts",
       "Syria localities",
       "Syrian towns and villages",
       "Syrian administrative divisions",
       "Syria places CSV",
-      "Syria geography API",
+      "Syria maps data",
       "بيانات المدن السورية",
+      "بيانات المحافظات السورية",
       "محافظات سوريا",
       "مناطق سوريا",
       "نواحي سوريا",
@@ -162,8 +167,8 @@ const datasetDescriptors = [
     },
     slug: "geography",
     title: {
-      ar: "بيانات المدن والمحافظات والمناطق السورية",
-      en: "Syrian Cities, Governorates, Districts and Localities Dataset",
+      ar: "بيانات المدن والمحافظات والمحلات السورية",
+      en: "Syrian Cities, Governorates and Localities Data",
     },
     totalRecordArtifacts: [
       "governorates",
@@ -174,17 +179,30 @@ const datasetDescriptors = [
   },
   {
     description: {
-      ar: "مجموعة بيانات مفتوحة للجامعات والمعاهد العليا السورية تتضمن الأسماء العربية والإنجليزية، نوع المؤسسة، الحالة التشغيلية، الموقع العام، المواقع الرسمية، المعرفات الخارجية، الأصول العامة، ولقطات التصنيف المعتمدة.",
-      en: "An open dataset for Syrian universities and higher institutes, including English and Arabic names, institution type, operating status, public location fields, official websites, external identifiers, approved public assets, and ranking snapshots.",
+      ar: "نزّل بيانات الجامعات السورية: الجامعات العامة والخاصة، المعاهد العليا، المواقع الرسمية، المحافظات، التصنيفات، وملفات JSON وCSV.",
+      en: "Download Syrian university and higher education data with public and private universities, locations, official websites, rankings, and JSON/CSV files.",
     },
     keywords: [
       "Syrian universities dataset",
       "Syria universities",
+      "Syrian universities list",
       "Syrian higher education data",
-      "Syria university API",
       "Syrian university rankings",
+      "Syria public universities",
+      "Syria private universities",
+      "Syria universities CSV",
+      "Syria universities JSON",
+      "Damascus University data",
+      "Syrian higher education dataset",
+      "Syrian university data download",
       "جامعات سوريا",
       "بيانات الجامعات السورية",
+      "قائمة الجامعات السورية",
+      "الجامعات الحكومية السورية",
+      "الجامعات الخاصة السورية",
+      "تصنيفات الجامعات السورية",
+      "بيانات التعليم العالي السوري",
+      "تحميل بيانات الجامعات السورية",
     ],
     recordGroupLabels: {
       assets: { ar: "أصل شعار معتمد", en: "Approved logo assets" },
@@ -202,8 +220,8 @@ const datasetDescriptors = [
     },
     slug: "universities",
     title: {
-      ar: "بيانات الجامعات والمعاهد السورية",
-      en: "Syrian Universities and Higher Education Dataset",
+      ar: "بيانات الجامعات السورية والتصنيفات والتنزيلات",
+      en: "Syrian Universities Data, Rankings and Downloads",
     },
     totalRecordArtifacts: ["universities"],
   },
@@ -304,8 +322,8 @@ function buildDatasetCatalogItem(
     apiRoutes: summary.apiEndpoints ?? [],
     category: summary.category ?? manifest?.dataset?.category ?? "dataset",
     description:
-      apiDescription ??
       descriptor?.description ??
+      apiDescription ??
       getFallbackLocalizedText(titleFromSlug(slug)),
     distributions,
     formats: getFormats(artifacts),
@@ -323,14 +341,14 @@ function buildDatasetCatalogItem(
     repositoryName,
     repositoryUrl,
     shortDescription:
-      apiDescription ??
       descriptor?.shortDescription ??
+      apiDescription ??
       getFallbackLocalizedText(titleFromSlug(slug)),
     slug,
     title:
+      descriptor?.title ??
       apiTitle ??
       manifestTitle ??
-      descriptor?.title ??
       getFallbackLocalizedText(titleFromSlug(slug)),
     totalRecords: getTotalRecords(artifacts, descriptor),
     updatedAt:

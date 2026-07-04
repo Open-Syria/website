@@ -38,20 +38,20 @@
     "repositoriesTitle": "Repositories"
   },
   "HomeDatasets": {
-    "description": "Download source-backed datasets or use the public API for Syrian apps, maps, research, journalism, civic tools, and reusable reference data.",
+    "description": "Download source-backed Syrian datasets for cities, governorates, universities, maps, research, journalism, civic tools, and reusable reference data.",
     "eyebrow": "Current datasets",
     "openDataset": "Open dataset",
     "records": "Records",
     "release": "Release",
-    "title": "Syrian datasets for developers, maps, research, journalism, and civic tools"
+    "title": "Syrian datasets for maps, research, journalism, and downloads"
   },
   "Datasets": {
     "apiDocs": "API docs",
     "apiEndpoints": "API endpoints",
-    "catalogDescription": "Browse OpenSyria datasets for developers building Syria-focused apps, maps, and civic tools, plus researchers and journalists who need reliable reference data. Current datasets include Syrian cities, governorates, districts, localities, universities, GitHub releases, downloads, and API routes.",
+    "catalogDescription": "Browse OpenSyria datasets for Syrian cities, governorates, districts, localities, universities, maps, research, journalism, and JSON/CSV downloads.",
     "catalogEyebrow": "Dataset catalog",
     "catalogList": "Available datasets",
-    "catalogTitle": "Syrian datasets for developers, maps, research, and civic tools",
+    "catalogTitle": "Syrian datasets for maps, research, and downloads",
     "contains": "What this dataset contains",
     "downloadFiles": "Download files",
     "formats": "Formats",

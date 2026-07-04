@@ -24,13 +24,13 @@ const catalogStructuredDataText: Record<
 > = {
   ar: {
     description:
-      "فهرس OpenSyria لمجموعات بيانات سورية مفتوحة وواجهات API للمطورين والخرائط والبحث والصحافة والأدوات المدنية.",
-    title: "فهرس مجموعات بيانات OpenSyria",
+      "فهرس OpenSyria لبيانات المدن والمحافظات والمناطق والمحلات والجامعات السورية، مع ملفات JSON وCSV للخرائط والبحث والصحافة.",
+    title: "بيانات سورية للخرائط والبحث والتنزيل",
   },
   en: {
     description:
-      "OpenSyria catalog of open Syrian datasets and APIs for developers, maps, research, journalism, and civic tools.",
-    title: "OpenSyria Dataset Catalog",
+      "OpenSyria catalog of Syrian cities, governorates, districts, localities, universities, maps, research data, and JSON/CSV downloads.",
+    title: "Syrian Datasets for Maps, Research and Downloads",
   },
 }
 
