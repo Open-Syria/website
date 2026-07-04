@@ -84,11 +84,13 @@ function mapLayer(mapGroup, { opacity, scale, x, y }) {
 
 function socialSvg({ height, mapGroup }) {
   const isTwitter = height === 600
-  const titleY = isTwitter ? 280 : 292
-  const subtitleY = isTwitter ? 362 : 378
+  const titleY = isTwitter ? 260 : 274
+  const subtitleY = isTwitter ? 336 : 354
   const domainY = height - 76
-  const mapY = isTwitter ? 72 : 88
+  const mapY = isTwitter ? 70 : 86
   const circleY = isTwitter ? 300 : 320
+  const mapScale = isTwitter ? 0.54 : 0.55
+  const mapX = isTwitter ? 810 : 814
 
   return `
     <svg
@@ -103,9 +105,9 @@ function socialSvg({ height, mapGroup }) {
       <circle cx="968" cy="${circleY}" r="318" fill="${colors.primary}" opacity="0.075" />
       <circle cx="968" cy="${circleY}" r="206" fill="none" stroke="${colors.primary}" stroke-opacity="0.18" stroke-width="1.5" />
       ${mapLayer(mapGroup, {
-        opacity: "0.72",
-        scale: 0.58,
-        x: 760,
+        opacity: "0.7",
+        scale: mapScale,
+        x: mapX,
         y: mapY,
       })}
 
@@ -113,7 +115,7 @@ function socialSvg({ height, mapGroup }) {
         <rect
           x="84"
           y="78"
-          width="270"
+          width="302"
           height="54"
           rx="12"
           fill="${colors.background}"
@@ -125,7 +127,7 @@ function socialSvg({ height, mapGroup }) {
           y="113"
           fill="${colors.primary}"
           font-family="Inter, Arial, sans-serif"
-          font-size="22"
+          font-size="21"
           font-weight="700"
         >Open civic intelligence</text>
       </g>
@@ -143,11 +145,12 @@ function socialSvg({ height, mapGroup }) {
         y="${subtitleY}"
         fill="${colors.muted}"
         font-family="Inter, Arial, sans-serif"
-        font-size="36"
+        font-size="34"
         font-weight="500"
       >
-        <tspan x="88" dy="0">Syrian open data and APIs for developers,</tspan>
-        <tspan x="88" dy="50">maps, research, journalism, and civic tools.</tspan>
+        <tspan x="88" dy="0">Syrian open data and APIs</tspan>
+        <tspan x="88" dy="46">for developers, maps, research,</tspan>
+        <tspan x="88" dy="46">journalism, and civic tools.</tspan>
       </text>
       <text
         x="88"
@@ -176,21 +179,22 @@ function iconSvg({ mapGroup, size }) {
       <circle cx="500" cy="500" r="365" fill="${colors.primary}" opacity="0.08" />
       <circle cx="500" cy="500" r="275" fill="none" stroke="${colors.primary}" stroke-opacity="0.18" stroke-width="4" />
       ${mapLayer(mapGroup, {
-        opacity: "0.28",
-        scale: 0.86,
-        x: 210,
-        y: 138,
+        opacity: "0.2",
+        scale: 0.76,
+        x: 244,
+        y: 128,
       })}
       <text
         x="500"
-        y="575"
-        fill="${colors.foreground}"
+        y="565"
         font-family="Sora, Inter, Arial, sans-serif"
-        font-size="270"
+        font-size="124"
         font-weight="800"
         text-anchor="middle"
-      >OS</text>
-      <path d="M 274 662 H 726" stroke="url(#accentGradient)" stroke-linecap="round" stroke-width="26" />
+      >
+        <tspan fill="${colors.foreground}">Open</tspan><tspan fill="${colors.primary}">Syria</tspan>
+      </text>
+      <path d="M 266 638 H 734" stroke="url(#accentGradient)" stroke-linecap="round" stroke-width="22" />
     </svg>
   `
 }

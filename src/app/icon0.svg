@@ -30,12 +30,12 @@
 
     <g
       fill="url(#mapGradient)"
-      opacity="0.28"
+      opacity="0.2"
       stroke="#fbfaf3"
       stroke-linecap="round"
       stroke-linejoin="round"
-      stroke-width="1.627906976744186"
-      transform="translate(210 138) scale(0.86)"
+      stroke-width="1.8421052631578947"
+      transform="translate(244 128) scale(0.76)"
     >
       <g
      id="geoBoundaries-SYR-ADM1"
@@ -89,12 +89,13 @@
 
       <text
         x="500"
-        y="575"
-        fill="#1b2217"
+        y="565"
         font-family="Sora, Inter, Arial, sans-serif"
-        font-size="270"
+        font-size="124"
         font-weight="800"
         text-anchor="middle"
-      >OS</text>
-      <path d="M 274 662 H 726" stroke="url(#accentGradient)" stroke-linecap="round" stroke-width="26" />
+      >
+        <tspan fill="#1b2217">Open</tspan><tspan fill="#007156">Syria</tspan>
+      </text>
+      <path d="M 266 638 H 734" stroke="url(#accentGradient)" stroke-linecap="round" stroke-width="22" />
     </svg>
