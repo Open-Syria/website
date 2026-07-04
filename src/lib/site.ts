@@ -1,7 +1,9 @@
+const brandAssetVersion = "20260704-brand"
+
 export const siteConfig = {
   name: "OpenSyria",
   url: "https://opensyria.org",
-  logo: "https://opensyria.org/web-app-manifest-512x512.png",
+  logo: `https://opensyria.org/web-app-manifest-512x512.png?v=${brandAssetVersion}`,
   defaultTitle: "OpenSyria | Syrian Open Data and APIs",
   defaultDescription:
     "OpenSyria publishes source-backed Syrian datasets and APIs for developers, maps, research, journalism, civic tools, and apps built for Syria.",
@@ -63,13 +65,13 @@ export const socialPreviewImages = {
   openGraph: {
     alt: "OpenSyria social preview showing the OpenSyria wordmark and Syria map.",
     height: 630,
-    url: `${siteConfig.url}/opengraph-image.png`,
+    url: `${siteConfig.url}/opengraph-image.png?v=${brandAssetVersion}`,
     width: 1200,
   },
   twitter: {
     alt: "OpenSyria social preview showing the OpenSyria wordmark and Syria map.",
     height: 600,
-    url: `${siteConfig.url}/twitter-image.png`,
+    url: `${siteConfig.url}/twitter-image.png?v=${brandAssetVersion}`,
     width: 1200,
   },
 } as const
