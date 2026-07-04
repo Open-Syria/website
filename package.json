@@ -12,6 +12,7 @@
     "check:write:unsafe": "biome check --write --unsafe .",
     "dev": "next dev",
     "format": "biome format --write .",
+    "images:brand": "node scripts/generate-brand-images.mjs",
     "lint": "biome lint .",
     "prepare": "husky",
     "start": "next start",
@@ -44,6 +45,7 @@
     "husky": "^9.1.7",
     "lint-staged": "^17.0.8",
     "schema-dts": "^2.0.0",
+    "sharp": "0.34.5",
     "tailwindcss": "4.3.1",
     "typescript": "^6"
   },
