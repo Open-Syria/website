@@ -34,7 +34,7 @@ export async function SiteFooter({ locale }: SiteFooterProps) {
           <div>
             <Link
               aria-label="OpenSyria"
-              className="inline-flex h-10 items-center text-foreground"
+              className="inline-flex h-10 items-center text-foreground [--opensyria-logo-foreground:currentColor] [--opensyria-logo-map-gradient-end:currentColor] [--opensyria-logo-map-gradient-highlight-end:var(--accent-foreground)] [--opensyria-logo-map-gradient-highlight-start:var(--primary)] [--opensyria-logo-map-gradient-start:var(--primary)] [--opensyria-logo-primary:var(--primary)]"
               href="/"
             >
               <OpenSyriaHorizontalLogo className="h-9 w-auto max-w-44" />
