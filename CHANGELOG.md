@@ -1,5 +1,21 @@
 # Changelog
 
+## [0.3.0](https://github.com/Open-Syria/website/compare/v0.2.1...v0.3.0) (2026-07-04)
+
+
+### Features
+
+* improve website discovery and previews ([5afd533](https://github.com/Open-Syria/website/commit/5afd5338c76d4d5398cee3018b24ffcab9cbde3d))
+
+
+### Bug Fixes
+
+* bust social preview caches ([99070f0](https://github.com/Open-Syria/website/commit/99070f0073867fb6a4ffa8629076bc875da7b3d1))
+* improve dataset SEO metadata ([34068d1](https://github.com/Open-Syria/website/commit/34068d115521b9e04776bb914d915d01b2d14c83))
+* refine brand preview layout ([cba45e5](https://github.com/Open-Syria/website/commit/cba45e564298e2f85252a98d815f7590b639950f))
+* refresh OpenSyria brand previews ([d8d8e7e](https://github.com/Open-Syria/website/commit/d8d8e7ee585a371358a1e84dcd774eb07d32512c))
+* restore website logo component ([00e8f60](https://github.com/Open-Syria/website/commit/00e8f6098daed1919f2686a5e189fd22b1bd8190))
+
 ## [0.2.1](https://github.com/Open-Syria/website/compare/v0.2.0...v0.2.1) (2026-07-03)
 
 
