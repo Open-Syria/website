@@ -20,13 +20,13 @@ import {
 const catalogSeo: Record<Locale, { description: string; title: string }> = {
   ar: {
     description:
-      "تصفح بيانات سورية مفتوحة وواجهات API للمطورين والخرائط والبحث والصحافة والأدوات المدنية، بما في ذلك المدن والمناطق والمحلات والجامعات.",
-    title: "مجموعات بيانات سورية للمطورين والخرائط وواجهات API",
+      "تصفح بيانات OpenSyria للمدن والمحافظات والمناطق والمحلات والجامعات السورية، مع ملفات JSON وCSV للخرائط والبحث والصحافة.",
+    title: "بيانات سورية للخرائط والبحث والتنزيل",
   },
   en: {
     description:
-      "Browse open Syrian datasets and APIs for developers, maps, research, journalism, and civic tools, including cities, districts, localities, and universities.",
-    title: "Syrian Datasets for Developers, Maps, Research and APIs",
+      "Browse OpenSyria datasets for Syrian cities, governorates, districts, localities, universities, maps, research, journalism, and JSON/CSV downloads.",
+    title: "Syrian Datasets for Maps, Research and Downloads",
   },
 }
 
@@ -48,10 +48,10 @@ async function generateDatasetCatalogMetadata({
       ),
     },
     description: seo.description,
-    keywords: [
+    keywords: getUniqueKeywords([
       ...siteConfig.keywords,
       ...datasets.flatMap((dataset) => dataset.keywords),
-    ],
+    ]),
     metadataBase: new URL(siteConfig.url),
     openGraph: {
       alternateLocale: routing.locales
@@ -101,7 +101,7 @@ async function generateDatasetMetadata({
       ),
     },
     description,
-    keywords: [...siteConfig.keywords, ...dataset.keywords],
+    keywords: getUniqueKeywords([...siteConfig.keywords, ...dataset.keywords]),
     metadataBase: new URL(siteConfig.url),
     openGraph: {
       alternateLocale: routing.locales
@@ -134,6 +134,10 @@ function getAlternateLanguages(getPath: (locale: Locale) => string) {
     ),
     "x-default": getAbsoluteUrl(getPath(routing.defaultLocale)),
   }
+}
+
+function getUniqueKeywords(keywords: readonly string[]) {
+  return Array.from(new Set(keywords))
 }
 
 export { generateDatasetCatalogMetadata, generateDatasetMetadata }
