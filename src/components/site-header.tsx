@@ -26,7 +26,7 @@ export function SiteHeader({ children, className }: SiteHeaderProps) {
       >
         <Link
           aria-label="OpenSyria"
-          className="inline-flex h-10 shrink-0 items-center text-foreground [--opensyria-logo-foreground:currentColor] [--opensyria-logo-map-gradient-end:currentColor] [--opensyria-logo-map-gradient-highlight-end:var(--accent-foreground)] [--opensyria-logo-map-gradient-highlight-start:var(--primary)] [--opensyria-logo-map-gradient-start:var(--primary)] [--opensyria-logo-primary:var(--primary)]"
+          className="inline-flex h-10 shrink-0 items-center text-foreground"
           href="/"
         >
           <OpenSyriaHorizontalLogo className="h-8 w-auto max-w-36 sm:h-9 sm:max-w-44" />

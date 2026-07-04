@@ -49,6 +49,7 @@ src/i18n/                next-intl routing, navigation, and request config
 src/lib/                 Site config and GitHub data helpers
 messages/                English and Arabic translations
 public/                  Public static assets
+scripts/                 Reproducible asset generation scripts
 deploy/website/          Server runtime files copied during deployment
 docs/                    Contributor and operational documentation
 ```
@@ -116,6 +117,12 @@ Open Graph and Twitter preview metadata explicitly reference the root social ima
 - `/twitter-image.png`
 
 Keep these images aligned with the current OpenSyria logo and visual theme so crawlers do not fall back to contributor avatars or other page images.
+
+Regenerate social preview and app icon assets after brand changes:
+
+```bash
+pnpm images:brand
+```
 
 ## Analytics
 

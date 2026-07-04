@@ -61,13 +61,13 @@ export const organizationSameAsLinks = [
 
 export const socialPreviewImages = {
   openGraph: {
-    alt: "OpenSyria social preview showing the OpenSyria logo and open civic intelligence message.",
+    alt: "OpenSyria social preview showing the OpenSyria wordmark and Syria map.",
     height: 630,
     url: `${siteConfig.url}/opengraph-image.png`,
     width: 1200,
   },
   twitter: {
-    alt: "OpenSyria social preview showing the OpenSyria logo and open civic intelligence message.",
+    alt: "OpenSyria social preview showing the OpenSyria wordmark and Syria map.",
     height: 600,
     url: `${siteConfig.url}/twitter-image.png`,
     width: 1200,
