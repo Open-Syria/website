@@ -165,40 +165,6 @@ function socialSvg({ height, mapGroup }) {
   `
 }
 
-function iconSvg({ mapGroup, size }) {
-  return `
-    <svg
-      width="${size}"
-      height="${size}"
-      viewBox="0 0 1000 1000"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      ${defs()}
-      <rect width="1000" height="1000" fill="${colors.background}" />
-      <rect width="1000" height="1000" fill="url(#grid)" opacity="0.72" />
-      <circle cx="500" cy="500" r="365" fill="${colors.primary}" opacity="0.08" />
-      <circle cx="500" cy="500" r="275" fill="none" stroke="${colors.primary}" stroke-opacity="0.18" stroke-width="4" />
-      ${mapLayer(mapGroup, {
-        opacity: "0.2",
-        scale: 0.76,
-        x: 244,
-        y: 128,
-      })}
-      <text
-        x="500"
-        y="565"
-        font-family="Sora, Inter, Arial, sans-serif"
-        font-size="124"
-        font-weight="800"
-        text-anchor="middle"
-      >
-        <tspan fill="${colors.foreground}">Open</tspan><tspan fill="${colors.primary}">Syria</tspan>
-      </text>
-      <path d="M 266 638 H 734" stroke="url(#accentGradient)" stroke-linecap="round" stroke-width="22" />
-    </svg>
-  `
-}
-
 async function renderPng(svg, outputPath, size) {
   await mkdir(path.dirname(outputPath), { recursive: true })
   await sharp(Buffer.from(svg))
@@ -211,24 +177,17 @@ async function main() {
   const mapGroup = await getSyriaMapGroup()
   const openGraph = normalizeSvg(socialSvg({ height: 630, mapGroup }))
   const twitter = normalizeSvg(socialSvg({ height: 600, mapGroup }))
-  const icon = normalizeSvg(iconSvg({ mapGroup, size: 1000 }))
 
   const outputs = [
     ["src/app/opengraph-image.png", openGraph, undefined],
     ["src/app/[locale]/opengraph-image.png", openGraph, undefined],
     ["src/app/twitter-image.png", twitter, undefined],
     ["src/app/[locale]/twitter-image.png", twitter, undefined],
-    ["public/web-app-manifest-192x192.png", icon, 192],
-    ["public/web-app-manifest-512x512.png", icon, 512],
-    ["src/app/icon1.png", icon, 96],
-    ["src/app/apple-icon.png", icon, 180],
   ]
 
   for (const [relativePath, svg, size] of outputs) {
     await renderPng(svg, path.join(root, relativePath), size)
   }
-
-  await writeFile(path.join(root, "src/app/icon0.svg"), icon)
 
   for (const relativePath of [
     "src/app/opengraph-image.alt.txt",
