@@ -118,7 +118,7 @@ Open Graph and Twitter preview metadata explicitly reference the root social ima
 
 Keep these images aligned with the current OpenSyria logo and visual theme so crawlers do not fall back to contributor avatars or other page images. When replacing the image content, bump the brand asset version in `src/lib/site.ts` so social crawlers request the refreshed URLs.
 
-Regenerate social preview and app icon assets after brand changes:
+Regenerate social preview assets after brand changes:
 
 ```bash
 pnpm images:brand
