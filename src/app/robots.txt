@@ -20,5 +20,5 @@ Allow: /
 
 Content-Signal: ai-train=no, search=yes, ai-input=yes
 
-Host: https://opensyria.org
+Host: opensyria.org
 Sitemap: https://opensyria.org/sitemap.xml
