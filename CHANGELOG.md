@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.3.1](https://github.com/Open-Syria/website/compare/v0.3.0...v0.3.1) (2026-07-05)
+
+
+### Bug Fixes
+
+* restore favicon assets ([a47fdd5](https://github.com/Open-Syria/website/commit/a47fdd53b112405d6174d21108ce83842231c015))
+
 ## [0.3.0](https://github.com/Open-Syria/website/compare/v0.2.1...v0.3.0) (2026-07-04)
 
 
