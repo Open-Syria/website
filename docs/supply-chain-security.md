@@ -26,6 +26,11 @@ CI uses the same pnpm version.
 - `trustPolicy: no-downgrade` to guard against dependency trust regressions,
 - `verifyDepsBeforeRun: install` so pnpm checks dependency state before scripts run.
 
+Automated npm updates are grouped into a single weekly Dependabot pull request.
+This keeps `package.json` and `pnpm-lock.yaml` synchronized and avoids lockfile
+merge races between separate dependency PRs. GitHub Actions updates remain
+separate because they do not rewrite the pnpm lockfile.
+
 ## Build Scripts
 
 Dependency build scripts are denied by default. Only packages listed under

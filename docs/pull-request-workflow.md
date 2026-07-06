@@ -52,6 +52,17 @@ Use `pnpm check:write` for Biome formatting and safe fixes. Use
 Deployment changes should also update [Deployment](deployment.md) and, when the
 server runtime files change, [deploy/website/README.md](../deploy/website/README.md).
 
+## Dependency Updates
+
+Dependabot groups npm updates into one weekly pull request so `package.json` and
+`pnpm-lock.yaml` are reviewed as one dependency graph. Do not merge dependency
+pull requests until `pnpm install --frozen-lockfile` and `pnpm verify` pass on
+the pull request branch.
+
+If dependency pull requests are manually combined, regenerate the lockfile with
+the pinned pnpm version before merging. A manifest-only bump will fail CI and
+should not be pushed to `main`.
+
 ## Commit Messages
 
 Use Conventional Commits:
