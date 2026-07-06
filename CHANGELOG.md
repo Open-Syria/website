@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.3.3](https://github.com/Open-Syria/website/compare/v0.3.2...v0.3.3) (2026-07-06)
+
+
+### Bug Fixes
+
+* repair pnpm lockfile ([b51cd44](https://github.com/Open-Syria/website/commit/b51cd44601baeeff4feae020735cbd1a11f496a0))
+
 ## [0.3.2](https://github.com/Open-Syria/website/compare/v0.3.1...v0.3.2) (2026-07-06)
 
 
