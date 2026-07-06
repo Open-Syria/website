@@ -14,11 +14,6 @@ import { GithubDark } from "@/components/ui/svgs/githubDark"
 import { Link } from "@/i18n/navigation"
 import type { Locale } from "@/i18n/routing"
 import type { DatasetCatalogItem } from "@/lib/datasets"
-import {
-  pageBodySectionClassName,
-  pageFooterSectionClassName,
-  pageHeroSectionClassName,
-} from "@/lib/layout"
 import { trustedExternalLinkRel } from "@/lib/links"
 import { cn } from "@/lib/utils"
 import { DatasetPageHeader } from "./dataset-page-header"
@@ -44,10 +39,7 @@ export async function DatasetDetailPage({
         className="min-h-svh bg-background-light text-foreground"
         id="main-content"
       >
-        <section
-          aria-labelledby="dataset-title"
-          className={pageHeroSectionClassName}
-        >
+        <section aria-labelledby="dataset-title" className="page-hero-section">
           <div
             className={cn(
               "page-content",
@@ -157,7 +149,7 @@ export async function DatasetDetailPage({
           </div>
         </section>
 
-        <div className={pageBodySectionClassName}>
+        <div className="page-body-section">
           <div
             className={cn("page-content", "grid gap-5 lg:grid-cols-[1fr_1fr]")}
           >
@@ -288,7 +280,7 @@ export async function DatasetDetailPage({
 
         <section
           aria-labelledby="dataset-keywords"
-          className={pageFooterSectionClassName}
+          className="page-footer-section"
         >
           <div
             className={cn(

@@ -64,6 +64,23 @@
   }
 }
 
+@utility page-hero-section {
+  border-bottom: 1px solid var(--border);
+  padding-block: 3rem;
+
+  @media (width >= 40rem) {
+    padding-block: 3.5rem;
+  }
+}
+
+@utility page-body-section {
+  padding-block: 2.5rem;
+}
+
+@utility page-footer-section {
+  padding-bottom: 3.5rem;
+}
+
 :root {
   --background: oklch(0.994 0.004 95);
   --background-light: oklch(0.968 0.018 106);
