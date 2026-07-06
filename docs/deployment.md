@@ -29,7 +29,11 @@ Production deployment is handled by `.github/workflows/deploy-production.yml`.
 
 The workflow runs on pushes to `main` and can also be started manually with `workflow_dispatch`.
 
-Pushes whose commit message contains `[skip ci]` or `[ci skip]` skip the deployment workflow.
+Before deployment jobs run, the workflow resolves a deploy policy for the pushed
+commit. Pushes whose commit message contains `[skip ci]` or `[ci skip]` skip the
+deployment workflow. Pushes associated with pull requests opened by
+`dependabot[bot]` also skip deployment, while normal CI can still run. Manual
+`workflow_dispatch` runs remain deployable.
 
 The `build` and `deploy` jobs both use the GitHub `production` environment.
 This is required because `NEXT_PUBLIC_GOOGLE_TAG_MANAGER_ID` is a production
