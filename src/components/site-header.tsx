@@ -1,7 +1,6 @@
 import { SiteControls } from "@/components/site-controls"
 import { OpenSyriaHorizontalLogo } from "@/components/ui/svgs/openSyriaHorizontalLogo"
 import { Link } from "@/i18n/navigation"
-import { pageContainerClassName, pageGutterClassName } from "@/lib/layout"
 import { cn } from "@/lib/utils"
 
 type SiteHeaderProps = Readonly<{
@@ -14,13 +13,12 @@ export function SiteHeader({ children, className }: SiteHeaderProps) {
     <header
       className={cn(
         "border-b bg-background/95 py-3 text-foreground backdrop-blur",
-        pageGutterClassName,
         className
       )}
     >
       <div
         className={cn(
-          pageContainerClassName,
+          "page-content",
           "flex items-center justify-between gap-4"
         )}
       >

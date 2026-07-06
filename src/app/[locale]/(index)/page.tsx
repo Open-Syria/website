@@ -8,6 +8,7 @@ export { generateMetadata } from "./_utils/metadata"
 
 export default async function Page({ params }: LocalePageProps) {
   const locale = await resolveLocale(params)
+  const structuredData = await getStructuredData(locale)
 
   setRequestLocale(locale)
 
@@ -19,7 +20,7 @@ export default async function Page({ params }: LocalePageProps) {
         type="application/ld+json"
         // biome-ignore lint/security/noDangerouslySetInnerHtml: JSON-LD follows the official Next.js guide and escapes '<' before injection.
         dangerouslySetInnerHTML={{
-          __html: toJsonLd(getStructuredData(locale)),
+          __html: toJsonLd(structuredData),
         }}
       />
     </>
