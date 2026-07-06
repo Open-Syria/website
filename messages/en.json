@@ -45,6 +45,37 @@
     "release": "Release",
     "title": "Syrian datasets for maps, research, journalism, and downloads"
   },
+  "HomeFaq": {
+    "description": "Short answers about OpenSyria data, downloads, API access, licensing, and contribution paths.",
+    "eyebrow": "FAQ",
+    "items": {
+      "apiAccess": {
+        "answer": "Yes. The read-only datasets API exposes dataset discovery, release metadata, geography endpoints, university endpoints, source attribution, and OpenAPI documentation.",
+        "question": "Can I use an API instead of downloading files?"
+      },
+      "availableDatasets": {
+        "answer": "The current catalog focuses on Syrian administrative geography and Syrian universities. Planned areas may expand only when source quality, licensing, and safety requirements are clear.",
+        "question": "Which datasets are available now?"
+      },
+      "contributeCorrections": {
+        "answer": "Open an issue or pull request in the dataset repository that owns the record. Good corrections are focused, source-backed, and include links or citations that maintainers can review.",
+        "question": "How can I suggest a correction?"
+      },
+      "outOfScope": {
+        "answer": "OpenSyria does not collect personal data, private addresses, student records, security or surveillance datasets, unsourced political claims, or restricted/proprietary data.",
+        "question": "What data does OpenSyria avoid?"
+      },
+      "reuseLicense": {
+        "answer": "OpenSyria publishes public, non-personal reference data for reuse. Check each dataset repository license before using release artifacts in production.",
+        "question": "Is the data free to use?"
+      },
+      "whatIsOpenSyria": {
+        "answer": "OpenSyria is an open source public data commons that publishes reliable, source-backed Syrian reference datasets for developers, researchers, journalists, students, and civic projects.",
+        "question": "What is OpenSyria?"
+      }
+    },
+    "title": "What should you know before using OpenSyria?"
+  },
   "Datasets": {
     "apiDocs": "API docs",
     "apiEndpoints": "API endpoints",

@@ -1,4 +1,11 @@
-import type { DataCatalog, DataDownload, Dataset, Graph } from "schema-dts"
+import type {
+  CreativeWork,
+  DataCatalog,
+  DataDownload,
+  Dataset,
+  Graph,
+  Organization,
+} from "schema-dts"
 
 import type { Locale } from "@/i18n/routing"
 import {
@@ -40,10 +47,17 @@ function getDatasetCatalogStructuredData(
 ): Graph {
   const pageUrl = getAbsoluteUrl(getDatasetsPath(locale))
   const { description, title } = catalogStructuredDataText[locale]
+  const datasetNodes = datasets.map((dataset) =>
+    getDatasetJsonLd({
+      dataset,
+      locale,
+      pageUrl: getAbsoluteUrl(getDatasetPath(locale, dataset.slug)),
+    })
+  )
   const catalog: DataCatalog = {
     "@id": catalogId,
     "@type": "DataCatalog",
-    dataset: datasets.map((dataset) => schemaReference(getDatasetId(dataset))),
+    dataset: datasetNodes,
     description,
     inLanguage: locale,
     name: title,
@@ -85,10 +99,14 @@ function getDatasetStructuredData(
 }
 
 function getDatasetCatalogJsonLd(locale: Locale): DataCatalog {
+  const { description, title } = catalogStructuredDataText[locale]
+
   return {
     "@id": catalogId,
     "@type": "DataCatalog",
-    name: catalogStructuredDataText[locale].title,
+    description,
+    inLanguage: locale,
+    name: title,
     publisher: schemaReference(organizationJsonLdId),
     url: getAbsoluteUrl(getDatasetsPath(locale)),
   }
@@ -106,7 +124,7 @@ function getDatasetJsonLd({
   return {
     "@id": getDatasetId(dataset),
     "@type": "Dataset",
-    creator: schemaReference(organizationJsonLdId),
+    creator: getDatasetCreatorJsonLd(),
     dateModified: dataset.updatedAt ?? undefined,
     description: dataset.description[locale],
     distribution: getDatasetDistributions(dataset),
@@ -115,7 +133,7 @@ function getDatasetJsonLd({
     inLanguage: ["en", "ar"],
     isAccessibleForFree: true,
     keywords: dataset.keywords,
-    license: dataset.licenseUrl,
+    license: getDatasetLicenseJsonLd(dataset),
     name: dataset.title[locale],
     publisher: schemaReference(organizationJsonLdId),
     sameAs: dataset.repositoryUrl,
@@ -130,6 +148,23 @@ function getDatasetJsonLd({
       value: group.count,
     })),
     version: dataset.releaseTag,
+  }
+}
+
+function getDatasetCreatorJsonLd(): Organization {
+  return {
+    "@id": organizationJsonLdId,
+    "@type": "Organization",
+    name: siteConfig.name,
+    url: siteConfig.url,
+  }
+}
+
+function getDatasetLicenseJsonLd(dataset: DatasetCatalogItem): CreativeWork {
+  return {
+    "@type": "CreativeWork",
+    name: `${siteConfig.name} dataset repository license`,
+    url: dataset.licenseUrl,
   }
 }
 
