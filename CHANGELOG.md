@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.3.2](https://github.com/Open-Syria/website/compare/v0.3.1...v0.3.2) (2026-07-06)
+
+
+### Bug Fixes
+
+* add landing faq and dataset schema metadata ([112bb1b](https://github.com/Open-Syria/website/commit/112bb1b07cae516be7b80dcfbad2cf9f244a3fcd))
+* normalize robots host directive ([9734a6f](https://github.com/Open-Syria/website/commit/9734a6fb36bd655075d8191af27e92d909ccd5ef))
+
 ## [0.3.1](https://github.com/Open-Syria/website/compare/v0.3.0...v0.3.1) (2026-07-05)
 
 
