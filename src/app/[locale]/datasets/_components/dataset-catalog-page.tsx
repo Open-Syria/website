@@ -7,10 +7,6 @@ import { GithubLight } from "@/components/ui/svgs/githubLight"
 import { Link } from "@/i18n/navigation"
 import type { Locale } from "@/i18n/routing"
 import type { DatasetCatalogItem } from "@/lib/datasets"
-import {
-  pageBodySectionClassName,
-  pageHeroSectionClassName,
-} from "@/lib/layout"
 import { trustedExternalLinkRel } from "@/lib/links"
 import { cn } from "@/lib/utils"
 import { DatasetPageHeader } from "./dataset-page-header"
@@ -37,7 +33,7 @@ export async function DatasetCatalogPage({
       >
         <section
           aria-labelledby="dataset-catalog-title"
-          className={pageHeroSectionClassName}
+          className="page-hero-section"
         >
           <div className="page-content">
             <p className="inline-flex items-center gap-2 rounded-md border border-border bg-background px-3 py-1.5 font-medium text-sm shadow-sm">
@@ -58,7 +54,7 @@ export async function DatasetCatalogPage({
 
         <section
           aria-labelledby="dataset-catalog-list"
-          className={pageBodySectionClassName}
+          className="page-body-section"
         >
           <div className={cn("page-content", "grid gap-5 md:grid-cols-2")}>
             <h2 className="sr-only" id="dataset-catalog-list">
