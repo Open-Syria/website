@@ -54,8 +54,8 @@
         "question": "Can I use an API instead of downloading files?"
       },
       "availableDatasets": {
-        "answer": "The current catalog focuses on Syrian administrative geography and Syrian universities. Planned areas may expand only when source quality, licensing, and safety requirements are clear.",
-        "question": "Which datasets are available now?"
+        "answer": "Use the dataset catalog as the current source of truth. Each dataset page explains the scope, release version, download files, API links, source notes, and reuse information.",
+        "question": "How do I find the current datasets?"
       },
       "contributeCorrections": {
         "answer": "Open an issue or pull request in the dataset repository that owns the record. Good corrections are focused, source-backed, and include links or citations that maintainers can review.",

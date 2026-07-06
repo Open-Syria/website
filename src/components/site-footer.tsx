@@ -6,7 +6,6 @@ import { OpenSyriaHorizontalLogo } from "@/components/ui/svgs/openSyriaHorizonta
 import { Link } from "@/i18n/navigation"
 import type { Locale } from "@/i18n/routing"
 import { getGithubProjectDirectory } from "@/lib/github"
-import { pageContainerClassName, pageGutterClassName } from "@/lib/layout"
 import { trustedExternalLinkRel } from "@/lib/links"
 import { siteLinks } from "@/lib/site"
 import { cn } from "@/lib/utils"
@@ -23,13 +22,8 @@ export async function SiteFooter({ locale }: SiteFooterProps) {
   const contactEmail = github.organization.email ?? siteLinks.contactEmail
 
   return (
-    <footer
-      className={cn(
-        "border-t bg-background py-10 text-foreground sm:py-12",
-        pageGutterClassName
-      )}
-    >
-      <div className={cn(pageContainerClassName, "grid gap-9")}>
+    <footer className="border-t bg-background py-10 text-foreground sm:py-12">
+      <div className={cn("page-content", "grid gap-9")}>
         <div className="grid gap-8 lg:grid-cols-[minmax(0,0.9fr)_minmax(0,1.4fr)]">
           <div>
             <Link

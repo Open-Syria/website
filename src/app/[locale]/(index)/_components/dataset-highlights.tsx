@@ -7,7 +7,6 @@ import { buttonVariants } from "@/components/ui/button"
 import { getPathname } from "@/i18n/navigation"
 import type { Locale } from "@/i18n/routing"
 import { getDatasetCatalog } from "@/lib/datasets"
-import { pageContainerClassName, pageGutterClassName } from "@/lib/layout"
 import { cn } from "@/lib/utils"
 
 type DatasetHighlightsProps = Readonly<{
@@ -26,11 +25,11 @@ export async function DatasetHighlights({ locale }: DatasetHighlightsProps) {
   return (
     <section
       aria-labelledby="home-datasets-title"
-      className={cn("bg-background py-16", pageGutterClassName)}
+      className="bg-background py-16"
     >
       <div
         className={cn(
-          pageContainerClassName,
+          "page-content",
           "grid gap-10 lg:grid-cols-[0.75fr_1.25fr] lg:items-start"
         )}
       >

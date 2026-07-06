@@ -9,8 +9,6 @@ import type { Locale } from "@/i18n/routing"
 import type { DatasetCatalogItem } from "@/lib/datasets"
 import {
   pageBodySectionClassName,
-  pageContainerClassName,
-  pageGutterClassName,
   pageHeroSectionClassName,
 } from "@/lib/layout"
 import { trustedExternalLinkRel } from "@/lib/links"
@@ -39,9 +37,9 @@ export async function DatasetCatalogPage({
       >
         <section
           aria-labelledby="dataset-catalog-title"
-          className={cn(pageHeroSectionClassName, pageGutterClassName)}
+          className={pageHeroSectionClassName}
         >
-          <div className={pageContainerClassName}>
+          <div className="page-content">
             <p className="inline-flex items-center gap-2 rounded-md border border-border bg-background px-3 py-1.5 font-medium text-sm shadow-sm">
               <Search aria-hidden="true" className="size-4 text-primary" />
               {t("catalogEyebrow")}
@@ -60,11 +58,9 @@ export async function DatasetCatalogPage({
 
         <section
           aria-labelledby="dataset-catalog-list"
-          className={cn(pageBodySectionClassName, pageGutterClassName)}
+          className={pageBodySectionClassName}
         >
-          <div
-            className={cn(pageContainerClassName, "grid gap-5 md:grid-cols-2")}
-          >
+          <div className={cn("page-content", "grid gap-5 md:grid-cols-2")}>
             <h2 className="sr-only" id="dataset-catalog-list">
               {t("catalogList")}
             </h2>
