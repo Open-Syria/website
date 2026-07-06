@@ -14,13 +14,6 @@ import { GithubDark } from "@/components/ui/svgs/githubDark"
 import { Link } from "@/i18n/navigation"
 import type { Locale } from "@/i18n/routing"
 import type { DatasetCatalogItem } from "@/lib/datasets"
-import {
-  pageBodySectionClassName,
-  pageContainerClassName,
-  pageFooterSectionClassName,
-  pageGutterClassName,
-  pageHeroSectionClassName,
-} from "@/lib/layout"
 import { trustedExternalLinkRel } from "@/lib/links"
 import { cn } from "@/lib/utils"
 import { DatasetPageHeader } from "./dataset-page-header"
@@ -46,13 +39,10 @@ export async function DatasetDetailPage({
         className="min-h-svh bg-background-light text-foreground"
         id="main-content"
       >
-        <section
-          aria-labelledby="dataset-title"
-          className={cn(pageHeroSectionClassName, pageGutterClassName)}
-        >
+        <section aria-labelledby="dataset-title" className="page-hero-section">
           <div
             className={cn(
-              pageContainerClassName,
+              "page-content",
               "grid gap-8 lg:grid-cols-[1fr_22rem] lg:items-start"
             )}
           >
@@ -159,12 +149,9 @@ export async function DatasetDetailPage({
           </div>
         </section>
 
-        <div className={cn(pageBodySectionClassName, pageGutterClassName)}>
+        <div className="page-body-section">
           <div
-            className={cn(
-              pageContainerClassName,
-              "grid gap-5 lg:grid-cols-[1fr_1fr]"
-            )}
+            className={cn("page-content", "grid gap-5 lg:grid-cols-[1fr_1fr]")}
           >
             <section
               aria-labelledby="dataset-contains"
@@ -293,11 +280,11 @@ export async function DatasetDetailPage({
 
         <section
           aria-labelledby="dataset-keywords"
-          className={cn(pageFooterSectionClassName, pageGutterClassName)}
+          className="page-footer-section"
         >
           <div
             className={cn(
-              pageContainerClassName,
+              "page-content",
               "rounded-md border bg-card p-5 shadow-sm"
             )}
           >

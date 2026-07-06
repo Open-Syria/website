@@ -7,7 +7,7 @@
 
 Public website for [OpenSyria](https://opensyria.org), a public data commons for reliable Syrian datasets, API access, and civic intelligence.
 
-The website is intentionally small: a localized landing page, SEO metadata, social images, contributor attribution, theme and language controls, and links into the public API documentation and GitHub organization.
+The website is intentionally small: a localized landing page, FAQ content, SEO metadata, social images, contributor attribution, theme and language controls, and links into the public API documentation and GitHub organization.
 
 ## Public URLs
 
@@ -136,7 +136,7 @@ cta_id=docs
 cta_id=github_stars
 ```
 
-The implementation keeps the landing page server-rendered and uses a small client boundary only for tracked links.
+The implementation keeps the landing page server-rendered and uses small client boundaries for tracked links and interactive FAQ controls.
 
 ## Checks
 

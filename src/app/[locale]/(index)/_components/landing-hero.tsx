@@ -12,11 +12,11 @@ import { GithubLight } from "@/components/ui/svgs/githubLight"
 import { getPathname } from "@/i18n/navigation"
 import type { Locale } from "@/i18n/routing"
 import { getGithubOverview } from "@/lib/github"
-import { pageContainerClassName, pageGutterClassName } from "@/lib/layout"
 import { trustedExternalLinkRel } from "@/lib/links"
 import { siteLinks } from "@/lib/site"
 import { cn } from "@/lib/utils"
 import { DatasetHighlights } from "./dataset-highlights"
+import { LandingFaq } from "./landing-faq"
 
 type LandingHeroProps = Readonly<{
   locale: Locale
@@ -56,18 +56,10 @@ export async function LandingHero({ locale }: LandingHeroProps) {
     >
       <section
         aria-labelledby="hero-title"
-        className={cn(
-          "relative isolate flex min-h-svh items-center overflow-hidden border-b bg-background-light py-10",
-          pageGutterClassName
-        )}
+        className="relative isolate flex min-h-svh items-center overflow-hidden border-b bg-background-light py-10"
       >
-        <div
-          className={cn(
-            "absolute inset-x-0 top-4 z-20 sm:top-5",
-            pageGutterClassName
-          )}
-        >
-          <div className={cn(pageContainerClassName, "flex justify-end")}>
+        <div className="absolute inset-x-0 top-4 z-20 sm:top-5">
+          <div className={cn("page-content", "flex justify-end")}>
             <SiteControls />
           </div>
         </div>
@@ -83,7 +75,7 @@ export async function LandingHero({ locale }: LandingHeroProps) {
 
         <div
           className={cn(
-            pageContainerClassName,
+            "page-content",
             "grid w-full gap-12 lg:grid-cols-[minmax(0,0.86fr)_minmax(460px,1fr)] lg:items-center"
           )}
         >
@@ -219,6 +211,7 @@ export async function LandingHero({ locale }: LandingHeroProps) {
         </div>
       </section>
       <DatasetHighlights locale={locale} />
+      <LandingFaq locale={locale} />
     </main>
   )
 }
