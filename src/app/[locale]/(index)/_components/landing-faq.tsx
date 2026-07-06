@@ -8,7 +8,6 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion"
 import type { Locale } from "@/i18n/routing"
-import { pageContainerClassName, pageGutterClassName } from "@/lib/layout"
 import { cn } from "@/lib/utils"
 import { getLandingFaqContent } from "../_utils/faq"
 
@@ -27,11 +26,11 @@ export async function LandingFaq({ locale }: LandingFaqProps) {
   return (
     <section
       aria-labelledby="home-faq-title"
-      className={cn("bg-background-light py-16 sm:py-20", pageGutterClassName)}
+      className="bg-background-light py-16 sm:py-20"
     >
       <div
         className={cn(
-          pageContainerClassName,
+          "page-content",
           "grid gap-10 lg:grid-cols-[0.72fr_1.28fr] lg:items-start"
         )}
       >

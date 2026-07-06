@@ -16,9 +16,7 @@ import type { Locale } from "@/i18n/routing"
 import type { DatasetCatalogItem } from "@/lib/datasets"
 import {
   pageBodySectionClassName,
-  pageContainerClassName,
   pageFooterSectionClassName,
-  pageGutterClassName,
   pageHeroSectionClassName,
 } from "@/lib/layout"
 import { trustedExternalLinkRel } from "@/lib/links"
@@ -48,11 +46,11 @@ export async function DatasetDetailPage({
       >
         <section
           aria-labelledby="dataset-title"
-          className={cn(pageHeroSectionClassName, pageGutterClassName)}
+          className={pageHeroSectionClassName}
         >
           <div
             className={cn(
-              pageContainerClassName,
+              "page-content",
               "grid gap-8 lg:grid-cols-[1fr_22rem] lg:items-start"
             )}
           >
@@ -159,12 +157,9 @@ export async function DatasetDetailPage({
           </div>
         </section>
 
-        <div className={cn(pageBodySectionClassName, pageGutterClassName)}>
+        <div className={pageBodySectionClassName}>
           <div
-            className={cn(
-              pageContainerClassName,
-              "grid gap-5 lg:grid-cols-[1fr_1fr]"
-            )}
+            className={cn("page-content", "grid gap-5 lg:grid-cols-[1fr_1fr]")}
           >
             <section
               aria-labelledby="dataset-contains"
@@ -293,11 +288,11 @@ export async function DatasetDetailPage({
 
         <section
           aria-labelledby="dataset-keywords"
-          className={cn(pageFooterSectionClassName, pageGutterClassName)}
+          className={pageFooterSectionClassName}
         >
           <div
             className={cn(
-              pageContainerClassName,
+              "page-content",
               "rounded-md border bg-card p-5 shadow-sm"
             )}
           >
