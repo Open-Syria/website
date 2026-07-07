@@ -1,6 +1,5 @@
 # OpenSyria Website
 
-[![Deploy Production](https://github.com/Open-Syria/website/actions/workflows/deploy-production.yml/badge.svg)](https://github.com/Open-Syria/website/actions/workflows/deploy-production.yml)
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![Node.js 24+](https://img.shields.io/badge/node-%3E%3D24-339933?logo=node.js&logoColor=white)](package.json)
 [![pnpm 11](https://img.shields.io/badge/pnpm-11-F69220?logo=pnpm&logoColor=white)](package.json)
@@ -36,8 +35,6 @@ The site publishes public, read-only discovery metadata for agents:
 - Tailwind CSS 4
 - Biome for formatting and linting
 - pnpm 11 with supply-chain protections
-- Docker standalone Next.js runtime
-- GitHub Actions deployment to `opensyria-prod`
 
 ## Repository Layout
 
@@ -94,9 +91,9 @@ cp .env.example .env.local
 | --- | --- | --- |
 | `NEXT_PUBLIC_SITE_URL` | Local only | Canonical site URL for local testing |
 | `NEXT_PUBLIC_DATASETS_API_URL` | Local only | API origin for future website/API integration |
-| `NEXT_PUBLIC_GOOGLE_TAG_MANAGER_ID` | Production | Real Google tag ID, such as `GT-WPDWW3NR`, or Tag Manager container ID, such as `GTM-ABC1234` |
+| `NEXT_PUBLIC_GOOGLE_TAG_MANAGER_ID` | Optional | Google tag or Tag Manager ID for analytics-enabled deployments |
 
-The Google tag ID is public by design. Production passes it at Docker build time and writes it into the runtime environment. Use the real ID from Google, not a placeholder such as `GTM-...` or `GTM-XXXXXXX`.
+The Google tag ID is public by design. Use a real Google tag ID, such as `GT-WPDWW3NR`, or Tag Manager container ID, such as `GTM-ABC1234`.
 
 ## Internationalization
 
@@ -162,37 +159,7 @@ pnpm check:write
 
 ## Deployment
 
-Production deployment is handled by `.github/workflows/deploy-production.yml`.
-
-The workflow:
-
-1. Runs `pnpm verify`.
-2. Builds a Linux ARM64 Docker image from the `runtime` target.
-3. Pushes SHA and `main` tags to GitHub Container Registry.
-4. Joins the Tailscale network.
-5. Copies `deploy/website` to `/srv/opensyria/website`.
-6. Writes the server `.env`.
-7. Runs the blue/green deployment script.
-
-Runtime image tags:
-
-```text
-ghcr.io/open-syria/website:sha-<short-sha>
-ghcr.io/open-syria/website:main
-```
-
-See [docs/deployment.md](docs/deployment.md) and [deploy/website/README.md](deploy/website/README.md).
-
-## Production Routing
-
-Cloudflare should route:
-
-```text
-opensyria.org     -> http://website-proxy:80
-api.opensyria.org -> http://proxy:80
-```
-
-Keep `opensyria.org` as the canonical host. Redirect `http://opensyria.org`, `http://www.opensyria.org`, and `https://www.opensyria.org` to `https://opensyria.org` in one Cloudflare redirect rule to avoid redirect chains.
+Maintainers deploy the website through protected automation. Operational deployment details live in [docs/deployment.md](docs/deployment.md).
 
 ## Repository Documents
 
