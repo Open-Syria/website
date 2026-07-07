@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.3.4](https://github.com/Open-Syria/website/compare/v0.3.3...v0.3.4) (2026-07-07)
+
+
+### Bug Fixes
+
+* align dataset keyword card ([a4a1fcf](https://github.com/Open-Syria/website/commit/a4a1fcf8f50f6de66132d4ae3bee96ec0dc14523))
+
 ## [0.3.3](https://github.com/Open-Syria/website/compare/v0.3.2...v0.3.3) (2026-07-06)
 
 
