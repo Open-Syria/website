@@ -1,6 +1,5 @@
 # OpenSyria Website
 
-[![Deploy Production](https://github.com/Open-Syria/website/actions/workflows/deploy-production.yml/badge.svg)](https://github.com/Open-Syria/website/actions/workflows/deploy-production.yml)
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![Node.js 24+](https://img.shields.io/badge/node-%3E%3D24-339933?logo=node.js&logoColor=white)](package.json)
 [![pnpm 11](https://img.shields.io/badge/pnpm-11-F69220?logo=pnpm&logoColor=white)](package.json)
@@ -28,6 +27,14 @@ The site publishes public, read-only discovery metadata for agents:
 - OAuth/OIDC and MCP well-known routes return explicit `404 application/problem+json` responses until OpenSyria offers protected auth flows or a public MCP server. Both `/.well-known/mcp/server-card.json` and the scanner-compatible plural alias `/.well-known/mcp/server-cards.json` use that unsupported response.
 
 ## Stack
+
+- Next.js 16 App Router with Cache Components enabled
+- React 19
+- next-intl with `localePrefix: "as-needed"`
+- shadcn Base UI components
+- Tailwind CSS 4
+- Biome for formatting and linting
+- pnpm 11 with supply-chain protections
 
 ## Repository Layout
 
