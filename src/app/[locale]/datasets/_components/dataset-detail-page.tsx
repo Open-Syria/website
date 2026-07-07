@@ -282,28 +282,25 @@ export async function DatasetDetailPage({
           aria-labelledby="dataset-keywords"
           className="page-footer-section"
         >
-          <div
-            className={cn(
-              "page-content",
-              "rounded-md border bg-card p-5 shadow-sm"
-            )}
-          >
-            <h2
-              className="font-heading font-semibold text-xl"
-              id="dataset-keywords"
-            >
-              {t("keywords")}
-            </h2>
-            <ul className="mt-4 flex flex-wrap gap-2">
-              {dataset.keywords.map((keyword) => (
-                <li
-                  className="rounded-md border bg-background px-2.5 py-1 text-muted-foreground text-sm"
-                  key={keyword}
-                >
-                  {keyword}
-                </li>
-              ))}
-            </ul>
+          <div className="page-content">
+            <div className="rounded-md border bg-card p-5 shadow-sm">
+              <h2
+                className="font-heading font-semibold text-xl"
+                id="dataset-keywords"
+              >
+                {t("keywords")}
+              </h2>
+              <ul className="mt-4 flex flex-wrap gap-2">
+                {dataset.keywords.map((keyword) => (
+                  <li
+                    className="rounded-md border bg-background px-2.5 py-1 text-muted-foreground text-sm"
+                    key={keyword}
+                  >
+                    {keyword}
+                  </li>
+                ))}
+              </ul>
+            </div>
           </div>
         </section>
       </main>
