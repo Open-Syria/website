@@ -22,6 +22,11 @@ import {
   toJsonLd,
 } from "@/lib/json-ld"
 import { siteConfig } from "@/lib/site"
+import {
+  getBreadcrumbStructuredData,
+  getDatasetBreadcrumbs,
+  getDatasetCatalogBreadcrumbs,
+} from "./breadcrumbs"
 
 const catalogId = `${siteConfig.url}/datasets#catalog`
 
@@ -47,6 +52,7 @@ function getDatasetCatalogStructuredData(
 ): Graph {
   const pageUrl = getAbsoluteUrl(getDatasetsPath(locale))
   const { description, title } = catalogStructuredDataText[locale]
+  const breadcrumbs = getDatasetCatalogBreadcrumbs(locale)
   const datasetNodes = datasets.map((dataset) =>
     getDatasetJsonLd({
       dataset,
@@ -73,6 +79,7 @@ function getDatasetCatalogStructuredData(
       pageUrl,
       title,
     }),
+    getBreadcrumbStructuredData(breadcrumbs),
     catalog,
   ])
 }
@@ -83,6 +90,7 @@ function getDatasetStructuredData(
 ): Graph {
   const pageUrl = getAbsoluteUrl(getDatasetPath(locale, dataset.slug))
   const catalog = getDatasetCatalogJsonLd(locale)
+  const breadcrumbs = getDatasetBreadcrumbs(locale, dataset)
   const datasetJsonLd = getDatasetJsonLd({ dataset, locale, pageUrl })
 
   return createJsonLdGraph([
@@ -93,6 +101,7 @@ function getDatasetStructuredData(
       pageUrl,
       title: dataset.title[locale],
     }),
+    getBreadcrumbStructuredData(breadcrumbs),
     catalog,
     datasetJsonLd,
   ])

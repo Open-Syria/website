@@ -1,4 +1,4 @@
-import { ArrowUpRight, Database, Download, Search } from "lucide-react"
+import { ArrowUpRight, Database, Download } from "lucide-react"
 import { getTranslations } from "next-intl/server"
 
 import { buttonVariants } from "@/components/ui/button"
@@ -9,6 +9,8 @@ import type { Locale } from "@/i18n/routing"
 import type { DatasetCatalogItem } from "@/lib/datasets"
 import { trustedExternalLinkRel } from "@/lib/links"
 import { cn } from "@/lib/utils"
+import { getDatasetCatalogBreadcrumbs } from "../_utils/breadcrumbs"
+import { DatasetBreadcrumbs } from "./dataset-breadcrumbs"
 import { DatasetPageHeader } from "./dataset-page-header"
 
 type DatasetCatalogPageProps = {
@@ -22,6 +24,7 @@ export async function DatasetCatalogPage({
 }: DatasetCatalogPageProps) {
   const t = await getTranslations("Datasets")
   const numberFormatter = new Intl.NumberFormat(locale)
+  const breadcrumbs = getDatasetCatalogBreadcrumbs(locale)
 
   return (
     <>
@@ -36,12 +39,9 @@ export async function DatasetCatalogPage({
           className="page-hero-section"
         >
           <div className="page-content">
-            <p className="inline-flex items-center gap-2 rounded-md border border-border bg-background px-3 py-1.5 font-medium text-sm shadow-sm">
-              <Search aria-hidden="true" className="size-4 text-primary" />
-              {t("catalogEyebrow")}
-            </p>
+            <DatasetBreadcrumbs items={breadcrumbs} />
             <h1
-              className="mt-6 max-w-4xl text-balance font-heading font-semibold text-4xl leading-tight sm:text-5xl"
+              className="max-w-4xl text-balance font-heading font-semibold text-4xl leading-tight sm:text-5xl"
               id="dataset-catalog-title"
             >
               {t("catalogTitle")}
