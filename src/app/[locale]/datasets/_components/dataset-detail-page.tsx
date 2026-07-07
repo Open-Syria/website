@@ -1,21 +1,15 @@
-import {
-  ArrowLeft,
-  ArrowUpRight,
-  BookOpenText,
-  Database,
-  Download,
-  ListTree,
-} from "lucide-react"
+import { ArrowUpRight, BookOpenText, Download, ListTree } from "lucide-react"
 import { getTranslations } from "next-intl/server"
 
 import { buttonVariants } from "@/components/ui/button"
 import { ScrollArea } from "@/components/ui/scroll-area"
 import { GithubDark } from "@/components/ui/svgs/githubDark"
-import { Link } from "@/i18n/navigation"
 import type { Locale } from "@/i18n/routing"
 import type { DatasetCatalogItem } from "@/lib/datasets"
 import { trustedExternalLinkRel } from "@/lib/links"
 import { cn } from "@/lib/utils"
+import { getDatasetBreadcrumbs } from "../_utils/breadcrumbs"
+import { DatasetBreadcrumbs } from "./dataset-breadcrumbs"
 import { DatasetPageHeader } from "./dataset-page-header"
 
 type DatasetDetailPageProps = {
@@ -30,6 +24,7 @@ export async function DatasetDetailPage({
   const t = await getTranslations("Datasets")
   const numberFormatter = new Intl.NumberFormat(locale)
   const hasScrollableDownloads = dataset.distributions.length > 8
+  const breadcrumbs = getDatasetBreadcrumbs(locale, dataset)
 
   return (
     <>
@@ -47,26 +42,9 @@ export async function DatasetDetailPage({
             )}
           >
             <div>
-              <div className="flex flex-wrap items-center gap-3">
-                <Link
-                  className={buttonVariants({ size: "sm", variant: "ghost" })}
-                  href="/datasets"
-                >
-                  <ArrowLeft aria-hidden="true" className="rtl-icon-mirror" />
-                  {t("viewCatalog")}
-                </Link>
-
-                <p className="inline-flex items-center gap-2 rounded-md border border-border bg-background px-3 py-1.5 font-medium text-sm shadow-sm">
-                  <Database
-                    aria-hidden="true"
-                    className="size-4 text-primary"
-                  />
-                  {dataset.repositoryName}
-                </p>
-              </div>
-
+              <DatasetBreadcrumbs items={breadcrumbs} />
               <h1
-                className="mt-6 max-w-4xl text-balance font-heading font-semibold text-4xl leading-tight sm:text-5xl"
+                className="max-w-4xl text-balance font-heading font-semibold text-4xl leading-tight sm:text-5xl"
                 id="dataset-title"
               >
                 {dataset.title[locale]}
