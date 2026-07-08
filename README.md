@@ -127,7 +127,10 @@ pnpm images:brand
 
 ## Analytics
 
-Google Tag Manager is integrated through `@next/third-parties/google`.
+Analytics is loaded through the locale layout with the official Google tag or
+Google Tag Manager snippets. `NEXT_PUBLIC_GOOGLE_TAG_MANAGER_ID` accepts either
+a Google tag ID such as `GT-...`, `G-...`, `AW-...`, or `DC-...`, or a Tag
+Manager container ID such as `GTM-...`.
 
 Tracked CTA events use:
 
