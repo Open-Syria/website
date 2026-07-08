@@ -54,10 +54,10 @@ The deployment flow:
 11. Reload `website-proxy` to the new slot.
 12. Stop the old slot after a short drain.
 
-Dataset catalog and dataset detail pages render dynamically at runtime. They
-still use the application-level dataset cache, but they are not prerendered into
-the Docker image. This prevents API-backed dataset listings from being frozen by
-Docker layer reuse or a build that ran before a new dataset release was deployed.
+Dataset catalog and dataset detail pages use the application-level dataset
+cache and can be prerendered into the Docker image. After a dataset release,
+either deploy the website or wait for the configured cache lifetime when short
+catalog staleness is acceptable.
 
 ## GitHub Production Environment
 
