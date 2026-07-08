@@ -1,5 +1,8 @@
+import { connection } from "next/server"
 import { setRequestLocale } from "next-intl/server"
+import { Suspense } from "react"
 
+import type { Locale } from "@/i18n/routing"
 import { getDatasetCatalog } from "@/lib/datasets"
 import { DatasetCatalogPage } from "./_components/dataset-catalog-page"
 import type { LocaleParams } from "./_utils/locale"
@@ -17,9 +20,19 @@ type PageProps = {
 
 export default async function Page({ params }: PageProps) {
   const locale = await resolvePageLocale(params)
-  const datasets = await getDatasetCatalog()
-
   setRequestLocale(locale)
+
+  return (
+    <Suspense fallback={null}>
+      <DatasetCatalogRuntime locale={locale} />
+    </Suspense>
+  )
+}
+
+async function DatasetCatalogRuntime({ locale }: { locale: Locale }) {
+  await connection()
+
+  const datasets = await getDatasetCatalog()
 
   return (
     <>
