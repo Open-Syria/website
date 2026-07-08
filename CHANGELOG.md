@@ -7,6 +7,15 @@
 * add the transport dataset to the catalog, SEO metadata, and agent discovery surfaces
 * include API-backed seed datasets in public dataset catalog routing
 
+## [0.4.1](https://github.com/Open-Syria/website/compare/v0.4.0...v0.4.1) (2026-07-08)
+
+
+### Bug Fixes
+
+* render dataset pages with runtime catalog data ([33f0abd](https://github.com/Open-Syria/website/commit/33f0abd663eae6745944fe4cc5e80dd262c82ce9))
+* restore stable dataset page rendering ([c71bc76](https://github.com/Open-Syria/website/commit/c71bc7610387123e713d5b1fd50835023d459ffe))
+* simplify footer repository links ([420f0bf](https://github.com/Open-Syria/website/commit/420f0bf0b392fe32ff75c3f4b89f745dc089694a))
+
 ## [0.4.0](https://github.com/Open-Syria/website/compare/v0.3.4...v0.4.0) (2026-07-08)
 
 
