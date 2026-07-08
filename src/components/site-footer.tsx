@@ -132,11 +132,11 @@ export async function SiteFooter({ locale }: SiteFooterProps) {
             <h2 className="font-heading font-semibold text-sm">
               {t("repositoriesTitle")}
             </h2>
-            <ul className="mt-4 grid list-none gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+            <ul className="mt-4 grid list-none gap-x-9 gap-y-5 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
               {github.repositories.map((repository) => (
                 <li key={repository.name} className="min-w-0">
                   <a
-                    className="group block h-full rounded-md border border-border/70 bg-background-light/35 p-3 text-sm transition hover:border-primary/50 hover:text-primary focus-visible:outline-none focus-visible:ring-3 focus-visible:ring-ring/50"
+                    className="group block rounded-sm text-sm transition hover:text-primary focus-visible:outline-none focus-visible:ring-3 focus-visible:ring-ring/50"
                     href={repository.url}
                     rel={trustedExternalLinkRel}
                     target="_blank"
@@ -149,7 +149,7 @@ export async function SiteFooter({ locale }: SiteFooterProps) {
                       />
                     </span>
                     {repository.description ? (
-                      <span className="mt-1 line-clamp-2 block text-muted-foreground text-xs leading-5">
+                      <span className="mt-1 line-clamp-2 block max-w-72 text-muted-foreground text-xs leading-5">
                         {repository.description}
                       </span>
                     ) : null}
