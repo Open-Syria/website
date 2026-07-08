@@ -3,6 +3,7 @@ import { Geist_Mono, Inter, Noto_Sans_Arabic, Sora } from "next/font/google"
 import { notFound } from "next/navigation"
 import { hasLocale, NextIntlClientProvider } from "next-intl"
 import { getTranslations, setRequestLocale } from "next-intl/server"
+import { Suspense } from "react"
 
 import "../globals.css"
 import { SiteFooter } from "@/components/site-footer"
@@ -185,16 +186,20 @@ export default async function LocaleLayout({
         ) : null}
         <NextIntlClientProvider>
           <DirectionProvider direction={direction}>
-            <ThemeProvider>
-              <a
-                className="sr-only fixed top-4 left-4 z-50 rounded-md bg-background px-3 py-2 font-medium text-foreground text-sm shadow-lg ring-1 ring-border focus:not-sr-only focus:outline-none focus:ring-3 focus:ring-ring/50"
-                href="#main-content"
-              >
-                {t("skipToContent")}
-              </a>
-              {children}
-              <SiteFooter locale={locale} />
-            </ThemeProvider>
+            <Suspense fallback={null}>
+              <ThemeProvider>
+                <a
+                  className="sr-only fixed top-4 left-4 z-50 rounded-md bg-background px-3 py-2 font-medium text-foreground text-sm shadow-lg ring-1 ring-border focus:not-sr-only focus:outline-none focus:ring-3 focus:ring-ring/50"
+                  href="#main-content"
+                >
+                  {t("skipToContent")}
+                </a>
+                {children}
+                <Suspense fallback={null}>
+                  <SiteFooter locale={locale} />
+                </Suspense>
+              </ThemeProvider>
+            </Suspense>
           </DirectionProvider>
         </NextIntlClientProvider>
       </body>
