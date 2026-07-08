@@ -146,9 +146,10 @@ export default async function LocaleLayout({
         "font-sans"
       )}
     >
-      {googleTagId && googleTagType ? (
-        <head>
-          {googleTagType === "tag-manager" ? (
+      <head>
+        <meta property="og:logo" content={siteConfig.logo} />
+        {googleTagId && googleTagType ? (
+          googleTagType === "tag-manager" ? (
             <script
               // biome-ignore lint/security/noDangerouslySetInnerHtml: Google Tag Manager requires its official bootstrap snippet in the document head.
               dangerouslySetInnerHTML={{
@@ -168,9 +169,9 @@ export default async function LocaleLayout({
                 }}
               />
             </>
-          )}
-        </head>
-      ) : null}
+          )
+        ) : null}
+      </head>
       <body>
         {googleTagType === "tag-manager" && googleTagId ? (
           <noscript>
