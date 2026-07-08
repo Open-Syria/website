@@ -122,7 +122,7 @@ const RELEASE_MANIFEST_FILE = "release-manifest.json"
 const datasetDescriptors = [
   {
     description: {
-      ar: "نزّل بيانات المدن والمحافظات والمناطق والنواحي والبلدات والقرى والمحلات السورية مع الإحداثيات وملفات JSON وCSV للخرائط والبحث.",
+      ar: "حمّل بيانات المدن والمحافظات والمناطق والنواحي والبلدات والقرى والمحلات السورية مع الإحداثيات وملفات JSON وCSV للخرائط والبحث.",
       en: "Download Syrian cities, governorates, districts, subdistricts, towns, villages, localities, coordinates, and JSON/CSV files for maps and research.",
     },
     keywords: [
@@ -179,7 +179,7 @@ const datasetDescriptors = [
   },
   {
     description: {
-      ar: "نزّل بيانات الجامعات السورية: الجامعات العامة والخاصة، المعاهد العليا، المواقع الرسمية، المحافظات، التصنيفات، وملفات JSON وCSV.",
+      ar: "حمّل بيانات الجامعات السورية: الجامعات العامة والخاصة، المعاهد العليا، المواقع الرسمية، المحافظات، التصنيفات، وملفات JSON وCSV.",
       en: "Download Syrian university and higher education data with public and private universities, locations, official websites, rankings, and JSON/CSV files.",
     },
     keywords: [
@@ -227,7 +227,7 @@ const datasetDescriptors = [
   },
   {
     description: {
-      ar: "نزّل بيانات مواقع النقل السورية: المطارات والموانئ والمعابر الحدودية ومحطات السكك والطرق، مع لقطات حالة مؤرخة وملفات JSON وCSV.",
+      ar: "حمّل بيانات مواقع النقل السورية: المطارات والموانئ والمعابر الحدودية ومحطات السكك والطرق، مع لقطات حالة مؤرخة وملفات JSON وCSV.",
       en: "Download Syrian transport reference data with public airports, seaports, border crossings, road terminals, rail terminals, dated status snapshots, and JSON/CSV files.",
     },
     keywords: [
@@ -707,11 +707,7 @@ function isPublicDatasetSummary(summary: DatasetApiSummary) {
     return false
   }
 
-  if (summary.status === "released") {
-    return true
-  }
-
-  return summary.status === "seed" && (summary.apiEndpoints?.length ?? 0) > 0
+  return summary.status === "released"
 }
 
 function isDatasetApiSummary(value: DatasetApiSummary | undefined) {

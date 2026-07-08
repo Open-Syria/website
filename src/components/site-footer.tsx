@@ -24,7 +24,7 @@ export async function SiteFooter({ locale }: SiteFooterProps) {
   return (
     <footer className="border-t bg-background py-10 text-foreground sm:py-12">
       <div className={cn("page-content", "grid gap-9")}>
-        <div className="grid gap-8 lg:grid-cols-[minmax(0,0.9fr)_minmax(0,1.4fr)]">
+        <div className="grid gap-8 lg:grid-cols-[minmax(0,1fr)_minmax(24rem,0.8fr)]">
           <div>
             <Link
               aria-label="OpenSyria"
@@ -42,7 +42,7 @@ export async function SiteFooter({ locale }: SiteFooterProps) {
           </div>
 
           <nav aria-label={t("navigationLabel")}>
-            <div className="grid gap-7 sm:grid-cols-3">
+            <div className="grid gap-7 sm:grid-cols-2">
               <FooterLinkGroup title={t("platformTitle")}>
                 <li>
                   <Link className={footerLinkClassName} href="/">
@@ -84,34 +84,6 @@ export async function SiteFooter({ locale }: SiteFooterProps) {
                 </li>
               </FooterLinkGroup>
 
-              {github.repositories.length > 0 ? (
-                <FooterLinkGroup title={t("repositoriesTitle")}>
-                  {github.repositories.map((repository) => (
-                    <li key={repository.name}>
-                      <a
-                        className="group block rounded-md text-sm transition hover:text-primary focus-visible:outline-none focus-visible:ring-3 focus-visible:ring-ring/50"
-                        href={repository.url}
-                        rel={trustedExternalLinkRel}
-                        target="_blank"
-                      >
-                        <span className="flex items-center gap-1.5 font-medium">
-                          {repository.name}
-                          <ArrowUpRight
-                            aria-hidden="true"
-                            className="rtl-icon-mirror size-3.5 text-muted-foreground transition group-hover:text-primary"
-                          />
-                        </span>
-                        {repository.description ? (
-                          <span className="mt-1 block text-muted-foreground text-xs leading-5">
-                            {repository.description}
-                          </span>
-                        ) : null}
-                      </a>
-                    </li>
-                  ))}
-                </FooterLinkGroup>
-              ) : null}
-
               <FooterLinkGroup title={t("communityTitle")}>
                 <li>
                   <a
@@ -151,6 +123,42 @@ export async function SiteFooter({ locale }: SiteFooterProps) {
             </div>
           </nav>
         </div>
+
+        {github.repositories.length > 0 ? (
+          <section
+            aria-label={t("repositoriesTitle")}
+            className="border-border/70 border-t pt-7"
+          >
+            <h2 className="font-heading font-semibold text-sm">
+              {t("repositoriesTitle")}
+            </h2>
+            <ul className="mt-4 grid list-none gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+              {github.repositories.map((repository) => (
+                <li key={repository.name} className="min-w-0">
+                  <a
+                    className="group block h-full rounded-md border border-border/70 bg-background-light/35 p-3 text-sm transition hover:border-primary/50 hover:text-primary focus-visible:outline-none focus-visible:ring-3 focus-visible:ring-ring/50"
+                    href={repository.url}
+                    rel={trustedExternalLinkRel}
+                    target="_blank"
+                  >
+                    <span className="flex min-w-0 items-center gap-1.5 font-medium">
+                      <span className="truncate">{repository.name}</span>
+                      <ArrowUpRight
+                        aria-hidden="true"
+                        className="rtl-icon-mirror size-3.5 shrink-0 text-muted-foreground transition group-hover:text-primary"
+                      />
+                    </span>
+                    {repository.description ? (
+                      <span className="mt-1 line-clamp-2 block text-muted-foreground text-xs leading-5">
+                        {repository.description}
+                      </span>
+                    ) : null}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </section>
+        ) : null}
 
         <div className="flex flex-col gap-2 border-border/70 border-t pt-5 text-muted-foreground text-xs sm:flex-row sm:items-center sm:justify-between">
           <p>{t("copyright")}</p>
