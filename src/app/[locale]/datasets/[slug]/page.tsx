@@ -1,9 +1,8 @@
 import { notFound } from "next/navigation"
-import { connection } from "next/server"
 import { setRequestLocale } from "next-intl/server"
-import { Suspense } from "react"
 
-import { getDatasetBySlug } from "@/lib/datasets"
+import { routing } from "@/i18n/routing"
+import { getDatasetBySlug, getDatasetSlugs } from "@/lib/datasets"
 import { DatasetDetailPage } from "../_components/dataset-detail-page"
 import type { DatasetParams } from "../_utils/locale"
 import { resolveDatasetParams } from "../_utils/locale"
@@ -15,22 +14,17 @@ type PageProps = {
   params: DatasetParams
 }
 
-export default async function Page({ params }: PageProps) {
-  const { locale, slug } = await resolveDatasetParams(params)
-  setRequestLocale(locale)
+export async function generateStaticParams() {
+  const datasetSlugs = await getDatasetSlugs()
 
-  return (
-    <Suspense fallback={null}>
-      <DatasetDetailRuntime locale={locale} slug={slug} />
-    </Suspense>
+  return routing.locales.flatMap((locale) =>
+    datasetSlugs.map((slug) => ({ locale, slug }))
   )
 }
 
-async function DatasetDetailRuntime({
-  locale,
-  slug,
-}: Awaited<ReturnType<typeof resolveDatasetParams>>) {
-  await connection()
+export default async function Page({ params }: PageProps) {
+  const { locale, slug } = await resolveDatasetParams(params)
+  setRequestLocale(locale)
 
   const dataset = await getDatasetBySlug(slug)
 
