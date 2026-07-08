@@ -81,6 +81,7 @@ Start here:
 - Dataset catalog: ${siteConfig.url}/datasets
 - Geography dataset: ${siteConfig.url}/datasets/geography
 - Universities dataset: ${siteConfig.url}/datasets/universities
+- Transport dataset: ${siteConfig.url}/datasets/transport
 - GitHub organization: ${siteLinks.githubOrganization}
 - API documentation: ${siteLinks.docs}
 `
@@ -122,12 +123,14 @@ ${siteConfig.defaultDescription}
 - [Dataset catalog](${siteConfig.url}/datasets)
 - [Geography dataset](${siteConfig.url}/datasets/geography)
 - [Universities dataset](${siteConfig.url}/datasets/universities)
+- [Transport dataset](${siteConfig.url}/datasets/transport)
 
 ## Repositories
 
 - [OpenSyria GitHub organization](${siteLinks.githubOrganization})
 - [Geography data repository](${siteLinks.geographyRepository})
 - [Universities data repository](${siteLinks.universitiesRepository})
+- [Transport data repository](${siteLinks.transportRepository})
 - [Datasets API repository](${siteLinks.apiRepository})
 `
 }

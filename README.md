@@ -6,13 +6,17 @@
 
 Public website for [OpenSyria](https://opensyria.org), a public data commons for reliable Syrian datasets, API access, and civic intelligence.
 
-The website is intentionally small: a localized landing page, FAQ content, SEO metadata, breadcrumb navigation and structured data, social images, contributor attribution, theme and language controls, and links into the public API documentation and GitHub organization.
+The website is intentionally small: a localized landing page, dataset catalog and detail pages, FAQ content, SEO metadata, breadcrumb navigation and structured data, social images, contributor attribution, theme and language controls, and links into the public API documentation and GitHub organization.
 
 ## Public URLs
 
 | URL | Purpose |
 | --- | --- |
 | <https://opensyria.org> | Public website |
+| <https://opensyria.org/datasets> | Dataset catalog |
+| <https://opensyria.org/datasets/geography> | Geography dataset page |
+| <https://opensyria.org/datasets/universities> | Universities dataset page |
+| <https://opensyria.org/datasets/transport> | Transport dataset page |
 | <https://api.opensyria.org/docs> | API documentation |
 | <https://github.com/Open-Syria> | GitHub organization |
 

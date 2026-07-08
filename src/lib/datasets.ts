@@ -225,6 +225,58 @@ const datasetDescriptors = [
     },
     totalRecordArtifacts: ["universities"],
   },
+  {
+    description: {
+      ar: "نزّل بيانات مواقع النقل السورية: المطارات والموانئ والمعابر الحدودية ومحطات السكك والطرق، مع لقطات حالة مؤرخة وملفات JSON وCSV.",
+      en: "Download Syrian transport reference data with public airports, seaports, border crossings, road terminals, rail terminals, dated status snapshots, and JSON/CSV files.",
+    },
+    keywords: [
+      "Syrian transport dataset",
+      "Syria transport data",
+      "Syria airports dataset",
+      "Syrian airports data",
+      "Syria ports data",
+      "Syria border crossings dataset",
+      "Syria border crossings data",
+      "Syria rail stations data",
+      "Syria road terminals",
+      "Syria transport CSV",
+      "Syria transport JSON",
+      "Syrian logistics data",
+      "Damascus airport data",
+      "Aleppo airport data",
+      "بيانات النقل السورية",
+      "مطارات سوريا",
+      "موانئ سوريا",
+      "المعابر الحدودية في سوريا",
+    ],
+    recordGroupLabels: {
+      locations: {
+        ar: "موقع نقل",
+        en: "Transport locations",
+      },
+      "route-snapshots": {
+        ar: "لقطة مسار",
+        en: "Route snapshots",
+      },
+      "status-snapshots": {
+        ar: "لقطة حالة",
+        en: "Status snapshots",
+      },
+    },
+    recordGroupOrder: ["locations", "status-snapshots", "route-snapshots"],
+    repository: "data-transport",
+    shortDescription: {
+      ar: "مواقع نقل عامة ولقطات حالة ومسارات مؤرخة وموثقة بالمصادر.",
+      en: "Public transport locations with dated status and route snapshots, source-backed coordinates, and identifiers.",
+    },
+    slug: "transport",
+    title: {
+      ar: "بيانات مواقع النقل السورية واللقطات المؤرخة",
+      en: "Syrian Transport Locations, Status and Route Data",
+    },
+    totalRecordArtifacts: ["locations", "status-snapshots", "route-snapshots"],
+  },
 ] as const satisfies readonly DatasetDescriptor[]
 
 const datasetDescriptorBySlug: ReadonlyMap<string, DatasetDescriptor> = new Map(

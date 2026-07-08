@@ -41,7 +41,7 @@ const catalogStructuredDataText: Record<
   },
   en: {
     description:
-      "OpenSyria catalog of Syrian cities, governorates, districts, localities, universities, maps, research data, and JSON/CSV downloads.",
+      "OpenSyria catalog of Syrian cities, governorates, districts, localities, universities, transport, maps, research data, and JSON/CSV downloads.",
     title: "Syrian Datasets for Maps, Research and Downloads",
   },
 }
