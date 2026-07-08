@@ -1,5 +1,4 @@
 import { setRequestLocale } from "next-intl/server"
-import { siteConfig } from "@/lib/site"
 import { LandingHero } from "./_components/landing-hero"
 import { type LocalePageProps, resolveLocale } from "./_utils/locale"
 import { getStructuredData, toJsonLd } from "./_utils/structured-data"
@@ -14,7 +13,6 @@ export default async function Page({ params }: LocalePageProps) {
 
   return (
     <>
-      <meta property="og:logo" content={siteConfig.logo} />
       <LandingHero locale={locale} />
       <script
         type="application/ld+json"
