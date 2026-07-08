@@ -301,10 +301,10 @@ export async function getDatasetCatalog(): Promise<DatasetCatalogItem[]> {
   cacheTag("dataset-catalog")
 
   const apiSummaries = await getDatasetApiSummaries()
-  const releasedSummaries = apiSummaries.filter(isReleasedDatasetSummary)
+  const publicSummaries = apiSummaries.filter(isPublicDatasetSummary)
   const sources =
-    releasedSummaries.length > 0
-      ? releasedSummaries
+    publicSummaries.length > 0
+      ? publicSummaries
       : datasetDescriptors.map((descriptor) => ({
           repository: descriptor.repository,
           slug: descriptor.slug,
@@ -702,8 +702,16 @@ function getGitHubOrganizationName() {
   )
 }
 
-function isReleasedDatasetSummary(summary: DatasetApiSummary) {
-  return summary.status === "released" && Boolean(summary.repository)
+function isPublicDatasetSummary(summary: DatasetApiSummary) {
+  if (!summary.repository) {
+    return false
+  }
+
+  if (summary.status === "released") {
+    return true
+  }
+
+  return summary.status === "seed" && (summary.apiEndpoints?.length ?? 0) > 0
 }
 
 function isDatasetApiSummary(value: DatasetApiSummary | undefined) {
