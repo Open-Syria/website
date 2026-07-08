@@ -1,5 +1,11 @@
 # Changelog
 
+## Unreleased
+
+### Features
+
+* add the transport dataset to the catalog, SEO metadata, and agent discovery surfaces
+
 ## [0.3.4](https://github.com/Open-Syria/website/compare/v0.3.3...v0.3.4) (2026-07-07)
 
 

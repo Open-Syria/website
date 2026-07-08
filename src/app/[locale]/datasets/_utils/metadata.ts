@@ -25,7 +25,7 @@ const catalogSeo: Record<Locale, { description: string; title: string }> = {
   },
   en: {
     description:
-      "Browse OpenSyria datasets for Syrian cities, governorates, districts, localities, universities, maps, research, journalism, and JSON/CSV downloads.",
+      "Browse OpenSyria datasets for Syrian cities, governorates, districts, localities, universities, transport, maps, research, journalism, and JSON/CSV downloads.",
     title: "Syrian Datasets for Maps, Research and Downloads",
   },
 }
