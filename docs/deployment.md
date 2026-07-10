@@ -23,6 +23,10 @@ opensyria-prod
 
 The website proxy has a distinct Docker service name, `website-proxy`, so it does not collide with the datasets API `proxy` service on the Cloudflare Tunnel network.
 
+The nginx proxy uses a larger response-header buffer than the image default so
+agent discovery `Link` headers can coexist with Next.js preload `Link` headers
+without causing `upstream sent too big header` 502 responses.
+
 ## Workflow
 
 Production deployment is handled by `.github/workflows/deploy-production.yml`.

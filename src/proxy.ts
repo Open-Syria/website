@@ -84,9 +84,28 @@ function isMarkdownNegotiablePath(request: NextRequest) {
 }
 
 function withAgentDiscoveryHeaders(response: NextResponse) {
-  appendHeader(response, "Link", agentDiscoveryLinkHeader)
+  appendUniqueHeader(response, "Link", agentDiscoveryLinkHeader)
 
   return response
+}
+
+function appendUniqueHeader(
+  response: NextResponse,
+  name: string,
+  value: string
+) {
+  const currentValue = response.headers.get(name)
+
+  if (!currentValue) {
+    response.headers.set(name, value)
+    return
+  }
+
+  if (currentValue.includes(value)) {
+    return
+  }
+
+  response.headers.set(name, `${currentValue}, ${value}`)
 }
 
 function appendHeader(response: NextResponse, name: string, value: string) {

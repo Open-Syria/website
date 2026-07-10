@@ -14,6 +14,10 @@ It contains the Docker Compose runtime, nginx proxy config, blue/green deploymen
 
 The datasets API uses `proxy`, `api-blue`, and `api-green` in a separate Compose project. The website proxy is named `website-proxy` to avoid collisions when Cloudflare Tunnel joins both Docker networks.
 
+The nginx proxy config raises the response-header buffer above the nginx image
+default so the website can return agent discovery `Link` headers alongside
+Next.js preload `Link` headers without tripping `upstream sent too big header`.
+
 ## Cloudflare Tunnel
 
 The existing Cloudflare Tunnel container can be reused.
