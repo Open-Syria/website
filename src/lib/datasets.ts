@@ -42,6 +42,7 @@ export type DatasetCatalogItem = {
 export type DatasetSlug = string
 
 type DatasetDescriptor = {
+  apiRoutes?: readonly string[]
   description?: LocalizedText
   keywords?: readonly string[]
   recordGroupLabels?: Record<string, LocalizedText>
@@ -119,6 +120,40 @@ type ReleaseData = {
 const GITHUB_API_BASE = "https://api.github.com"
 const RELEASE_MANIFEST_FILE = "release-manifest.json"
 
+const datasetApiRoutes = {
+  geography: [
+    "/api/v1/geography/governorates",
+    "/api/v1/geography/governorates/{governorateId}",
+    "/api/v1/geography/districts",
+    "/api/v1/geography/districts/{districtId}",
+    "/api/v1/geography/subdistricts",
+    "/api/v1/geography/subdistricts/{subdistrictId}",
+    "/api/v1/geography/localities",
+    "/api/v1/geography/localities/{localityId}",
+  ],
+  telecom: [
+    "/api/v1/telecom/country-numbering-plans",
+    "/api/v1/telecom/country-numbering-plans/{countryNumberingPlanId}",
+    "/api/v1/telecom/operators",
+    "/api/v1/telecom/operators/{operatorId}",
+    "/api/v1/telecom/fixed-area-codes",
+    "/api/v1/telecom/fixed-area-codes/{fixedAreaCodeId}",
+    "/api/v1/telecom/mobile-prefixes",
+    "/api/v1/telecom/mobile-prefixes/{mobilePrefixId}",
+    "/api/v1/telecom/number-ranges",
+    "/api/v1/telecom/number-ranges/{numberRangeId}",
+  ],
+  transport: [
+    "/api/v1/transport/locations",
+    "/api/v1/transport/locations/{locationId}",
+    "/api/v1/transport/status-snapshots",
+    "/api/v1/transport/status-snapshots/{statusSnapshotId}",
+    "/api/v1/transport/route-snapshots",
+    "/api/v1/transport/route-snapshots/{routeSnapshotId}",
+  ],
+  universities: ["/api/v1/universities", "/api/v1/universities/{universityId}"],
+} as const
+
 const datasetDescriptors = [
   {
     description: {
@@ -160,6 +195,7 @@ const datasetDescriptors = [
       "subdistricts",
       "localities",
     ],
+    apiRoutes: datasetApiRoutes.geography,
     repository: "data-geography",
     shortDescription: {
       ar: "محافظات ومناطق ونواح ومدن وبلدات وقرى ومحلات سورية.",
@@ -213,6 +249,7 @@ const datasetDescriptors = [
       },
     },
     recordGroupOrder: ["universities", "assets", "rankings"],
+    apiRoutes: datasetApiRoutes.universities,
     repository: "data-universities",
     shortDescription: {
       ar: "جامعات ومعاهد سورية مع أسماء ومواقع ومعرفات وأصول عامة.",
@@ -265,6 +302,7 @@ const datasetDescriptors = [
       },
     },
     recordGroupOrder: ["locations", "status-snapshots", "route-snapshots"],
+    apiRoutes: datasetApiRoutes.transport,
     repository: "data-transport",
     shortDescription: {
       ar: "مواقع نقل عامة ولقطات حالة ومسارات مؤرخة وموثقة بالمصادر.",
@@ -329,6 +367,7 @@ const datasetDescriptors = [
       "mobile-prefixes",
       "number-ranges",
     ],
+    apiRoutes: datasetApiRoutes.telecom,
     repository: "data-telecom",
     shortDescription: {
       ar: "رموز اتصال وبادئات ومشغلون ونطاقات ترقيم سورية موثقة بالمصادر.",
@@ -463,7 +502,10 @@ function buildDatasetCatalogItem(
   const recordGroups = getRecordGroups(artifacts, descriptor)
 
   return {
-    apiRoutes: summary.apiEndpoints ?? [],
+    apiRoutes:
+      summary.apiEndpoints && summary.apiEndpoints.length > 0
+        ? summary.apiEndpoints
+        : (descriptor?.apiRoutes ?? []),
     category: summary.category ?? manifest?.dataset?.category ?? "dataset",
     description:
       descriptor?.description ??
