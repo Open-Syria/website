@@ -38,7 +38,7 @@
     "repositoriesTitle": "Repositories"
   },
   "HomeDatasets": {
-    "description": "Download source-backed Syrian datasets for cities, governorates, universities, transport, maps, research, journalism, civic tools, and reusable reference data.",
+    "description": "Download source-backed Syrian datasets for cities, governorates, universities, transport, telecom, maps, research, journalism, civic tools, and reusable reference data.",
     "eyebrow": "Current datasets",
     "openDataset": "Open dataset",
     "records": "Records",
@@ -50,7 +50,7 @@
     "eyebrow": "FAQ",
     "items": {
       "apiAccess": {
-        "answer": "Yes. The read-only datasets API exposes dataset discovery, release metadata, geography endpoints, university endpoints, transport endpoints, source attribution, and OpenAPI documentation.",
+        "answer": "Yes. The read-only datasets API exposes dataset discovery, release metadata, geography endpoints, university endpoints, transport endpoints, telecom endpoints, source attribution, and OpenAPI documentation.",
         "question": "Can I use an API instead of downloading files?"
       },
       "availableDatasets": {
@@ -79,7 +79,7 @@
   "Datasets": {
     "apiDocs": "API docs",
     "apiEndpoints": "API endpoints",
-    "catalogDescription": "Browse OpenSyria datasets for Syrian cities, governorates, districts, localities, universities, transport, maps, research, journalism, and JSON/CSV downloads.",
+    "catalogDescription": "Browse OpenSyria datasets for Syrian cities, governorates, districts, localities, universities, transport, telecom, maps, research, journalism, and JSON/CSV downloads.",
     "catalogList": "Available datasets",
     "catalogTitle": "Syrian datasets for maps, research, and downloads",
     "contains": "What this dataset contains",

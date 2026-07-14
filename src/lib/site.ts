@@ -6,7 +6,7 @@ export const siteConfig = {
   logo: `https://opensyria.org/web-app-manifest-512x512.png?v=${brandAssetVersion}`,
   defaultTitle: "OpenSyria | Syrian Datasets, Maps and Research Data",
   defaultDescription:
-    "OpenSyria publishes source-backed Syrian datasets for cities, governorates, universities, transport, maps, research, journalism, civic tools, and Syria-focused apps.",
+    "OpenSyria publishes source-backed Syrian datasets for cities, governorates, universities, transport, telecom, maps, research, journalism, civic tools, and Syria-focused apps.",
   keywords: [
     "OpenSyria",
     "Syria data",
@@ -29,6 +29,9 @@ export const siteConfig = {
     "Syria airports dataset",
     "Syria border crossings data",
     "Syria ports data",
+    "Syrian telecom dataset",
+    "Syria telecom numbering data",
+    "Syria mobile prefixes",
     "Syria maps data",
     "Syria app data",
     "Syria CSV data",
@@ -52,7 +55,7 @@ export const siteConfig = {
     },
     en: {
       description:
-        "OpenSyria publishes source-backed Syrian datasets for cities, governorates, universities, transport, maps, research, journalism, civic tools, and Syria-focused apps.",
+        "OpenSyria publishes source-backed Syrian datasets for cities, governorates, universities, transport, telecom, maps, research, journalism, civic tools, and Syria-focused apps.",
       ogLocale: "en_US",
       title: "OpenSyria | Syrian Datasets, Maps and Research Data",
     },
@@ -68,6 +71,7 @@ export const siteLinks = {
   githubOrganization: "https://github.com/Open-Syria",
   linkedIn: "https://www.linkedin.com/company/OpenSyria",
   openApi: "https://api.opensyria.org/openapi.json",
+  telecomRepository: "https://github.com/Open-Syria/data-telecom",
   transportRepository: "https://github.com/Open-Syria/data-transport",
   universitiesRepository: "https://github.com/Open-Syria/data-universities",
 }

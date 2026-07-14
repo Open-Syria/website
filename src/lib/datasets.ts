@@ -277,6 +277,76 @@ const datasetDescriptors = [
     },
     totalRecordArtifacts: ["locations", "status-snapshots", "route-snapshots"],
   },
+  {
+    description: {
+      ar: "حمّل بيانات ترقيم الاتصالات السورية مع رمز الدولة، رموز المناطق الثابتة، بادئات الهاتف المحمول، المشغلين، ونطاقات الأرقام العامة مع نسب المصادر وملفات JSON وCSV.",
+      en: "Download Syrian telecom numbering metadata with country code, fixed area codes, mobile prefixes, operators, public numbering ranges, source attribution, and JSON/CSV files.",
+    },
+    keywords: [
+      "Syrian telecom dataset",
+      "Syria phone numbering data",
+      "Syria country code 963",
+      "Syria area codes dataset",
+      "Syrian fixed area codes",
+      "Syria mobile prefixes",
+      "Syriatel prefixes",
+      "MTN Syria prefixes",
+      "WAFA Telecom prefixes",
+      "Syria telecom CSV",
+      "Syria telecom JSON",
+      "Syrian numbering plan",
+      "بيانات الاتصالات السورية",
+      "رموز الهاتف في سوريا",
+      "رمز سوريا الدولي 963",
+      "بادئات الهاتف المحمول في سوريا",
+    ],
+    recordGroupLabels: {
+      "country-numbering-plans": {
+        ar: "خطة ترقيم وطنية",
+        en: "Country numbering plans",
+      },
+      "fixed-area-codes": {
+        ar: "رمز منطقة ثابتة",
+        en: "Fixed area codes",
+      },
+      "mobile-prefixes": {
+        ar: "بادئة هاتف محمول",
+        en: "Mobile prefixes",
+      },
+      "number-ranges": {
+        ar: "نطاق ترقيم عام",
+        en: "Number ranges",
+      },
+      operators: {
+        ar: "مشغل أو جهة ترقيم",
+        en: "Operators",
+      },
+    },
+    recordGroupOrder: [
+      "country-numbering-plans",
+      "operators",
+      "fixed-area-codes",
+      "mobile-prefixes",
+      "number-ranges",
+    ],
+    repository: "data-telecom",
+    shortDescription: {
+      ar: "رموز اتصال وبادئات ومشغلون ونطاقات ترقيم سورية موثقة بالمصادر.",
+      en: "Syrian dialing codes, prefixes, operators, and public numbering ranges with source attribution.",
+    },
+    slug: "telecom",
+    title: {
+      ar: "بيانات ترقيم الاتصالات السورية والتنزيلات",
+      en: "Syrian Telecom Numbering Data and Downloads",
+    },
+    totalRecordArtifacts: [
+      "country-numbering-plans",
+      "operators",
+      "fixed-area-codes",
+      "mobile-prefixes",
+      "number-ranges",
+    ],
+  },
 ] as const satisfies readonly DatasetDescriptor[]
 
 const datasetDescriptorBySlug: ReadonlyMap<string, DatasetDescriptor> = new Map(
