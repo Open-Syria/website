@@ -372,14 +372,7 @@ export async function getDatasetCatalog(): Promise<DatasetCatalogItem[]> {
 
   const apiSummaries = await getDatasetApiSummaries()
   const publicSummaries = apiSummaries.filter(isPublicDatasetSummary)
-  const sources =
-    publicSummaries.length > 0
-      ? publicSummaries
-      : datasetDescriptors.map((descriptor) => ({
-          repository: descriptor.repository,
-          slug: descriptor.slug,
-          status: "released",
-        }))
+  const sources = getDatasetCatalogSources(publicSummaries)
 
   const catalog = await Promise.all(
     sources.map(async (summary) => {
@@ -393,6 +386,35 @@ export async function getDatasetCatalog(): Promise<DatasetCatalogItem[]> {
   return catalog.sort((first, second) =>
     first.title.en.localeCompare(second.title.en)
   )
+}
+
+function getDatasetCatalogSources(publicSummaries: DatasetApiSummary[]) {
+  const sources: DatasetApiSummary[] = [...publicSummaries]
+  const publicKeys = new Set(
+    publicSummaries.flatMap((summary) => [
+      summary.repository ? `repository:${summary.repository}` : "",
+      summary.slug ? `slug:${summary.slug}` : "",
+    ])
+  )
+
+  for (const descriptor of datasetDescriptors) {
+    const descriptorKeys = [
+      descriptor.repository ? `repository:${descriptor.repository}` : "",
+      `slug:${descriptor.slug}`,
+    ]
+
+    if (descriptorKeys.some((key) => publicKeys.has(key))) {
+      continue
+    }
+
+    sources.push({
+      repository: descriptor.repository,
+      slug: descriptor.slug,
+      status: "released",
+    })
+  }
+
+  return sources
 }
 
 export async function getDatasetBySlug(slug: string) {
