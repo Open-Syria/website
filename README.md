@@ -17,6 +17,7 @@ The website is intentionally small: a localized landing page, dataset catalog an
 | <https://opensyria.org/datasets/geography> | Geography dataset page |
 | <https://opensyria.org/datasets/universities> | Universities dataset page |
 | <https://opensyria.org/datasets/transport> | Transport dataset page |
+| <https://opensyria.org/datasets/telecom> | Telecom dataset page |
 | <https://api.opensyria.org/docs> | API documentation |
 | <https://github.com/Open-Syria> | GitHub organization |
 

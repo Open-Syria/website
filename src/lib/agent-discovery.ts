@@ -82,6 +82,7 @@ Start here:
 - Geography dataset: ${siteConfig.url}/datasets/geography
 - Universities dataset: ${siteConfig.url}/datasets/universities
 - Transport dataset: ${siteConfig.url}/datasets/transport
+- Telecom dataset: ${siteConfig.url}/datasets/telecom
 - GitHub organization: ${siteLinks.githubOrganization}
 - API documentation: ${siteLinks.docs}
 `
@@ -124,6 +125,7 @@ ${siteConfig.defaultDescription}
 - [Geography dataset](${siteConfig.url}/datasets/geography)
 - [Universities dataset](${siteConfig.url}/datasets/universities)
 - [Transport dataset](${siteConfig.url}/datasets/transport)
+- [Telecom dataset](${siteConfig.url}/datasets/telecom)
 
 ## Repositories
 
@@ -131,6 +133,7 @@ ${siteConfig.defaultDescription}
 - [Geography data repository](${siteLinks.geographyRepository})
 - [Universities data repository](${siteLinks.universitiesRepository})
 - [Transport data repository](${siteLinks.transportRepository})
+- [Telecom data repository](${siteLinks.telecomRepository})
 - [Datasets API repository](${siteLinks.apiRepository})
 `
 }
