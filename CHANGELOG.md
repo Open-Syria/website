@@ -7,6 +7,22 @@
 * add the transport dataset to the catalog, SEO metadata, and agent discovery surfaces
 * include API-backed seed datasets in public dataset catalog routing
 
+## [0.5.0](https://github.com/Open-Syria/website/compare/v0.4.1...v0.5.0) (2026-07-14)
+
+
+### Features
+
+* add telecom dataset to website ([18632c9](https://github.com/Open-Syria/website/commit/18632c92e82add0744df2081daacc82795cd7a4d))
+
+
+### Bug Fixes
+
+* cache GitHub metadata requests ([1c76148](https://github.com/Open-Syria/website/commit/1c7614864c3934648813de06cacd497c451e083c))
+* include local dataset descriptors in catalog ([bc342d3](https://github.com/Open-Syria/website/commit/bc342d3dc842f8be71b3646a7bf203761dd6d016))
+* keep dataset endpoint routes in fallback catalog ([2bd2850](https://github.com/Open-Syria/website/commit/2bd2850bdbd068b6f0a829978baa26cfa44fa241))
+* move og logo metadata to layout ([2b698b6](https://github.com/Open-Syria/website/commit/2b698b63e10ffc1b00e85ae2978b28fae7e5d577))
+* prevent oversized proxy headers ([dfbd10b](https://github.com/Open-Syria/website/commit/dfbd10bd5883a16c6c2bb9329b51ff01805bb5d4))
+
 ## [0.4.1](https://github.com/Open-Syria/website/compare/v0.4.0...v0.4.1) (2026-07-08)
 
 
