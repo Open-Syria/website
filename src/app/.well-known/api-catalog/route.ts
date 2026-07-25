@@ -1,4 +1,7 @@
-import { agentDiscoveryLinkHeader } from "@/lib/agent-discovery"
+import {
+  agentDiscoveryLinkHeader,
+  datasetDiscoveryItems,
+} from "@/lib/agent-discovery"
 import { siteConfig, siteLinks } from "@/lib/site"
 
 export function GET() {
@@ -27,19 +30,7 @@ export function GET() {
       },
       {
         anchor: `${siteConfig.url}/datasets`,
-        item: [
-          {
-            href: `${siteConfig.url}/datasets/geography`,
-            title:
-              "Syrian Cities, Governorates, Districts and Localities Dataset",
-            type: "text/html",
-          },
-          {
-            href: `${siteConfig.url}/datasets/universities`,
-            title: "Syrian Universities and Higher Education Dataset",
-            type: "text/html",
-          },
-        ],
+        item: datasetDiscoveryItems,
       },
     ],
   }

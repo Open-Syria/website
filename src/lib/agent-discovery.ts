@@ -6,6 +6,35 @@ type DiscoveryLink = Readonly<{
   type?: string
 }>
 
+type DatasetDiscoveryItem = Readonly<{
+  href: string
+  title: string
+  type: "text/html"
+}>
+
+export const datasetDiscoveryItems = [
+  {
+    href: `${siteConfig.url}/datasets/geography`,
+    title: "Syrian Cities, Governorates, Districts and Localities Dataset",
+    type: "text/html",
+  },
+  {
+    href: `${siteConfig.url}/datasets/universities`,
+    title: "Syrian Universities and Higher Education Dataset",
+    type: "text/html",
+  },
+  {
+    href: `${siteConfig.url}/datasets/transport`,
+    title: "Syrian Transport Locations and Routes Dataset",
+    type: "text/html",
+  },
+  {
+    href: `${siteConfig.url}/datasets/telecom`,
+    title: "Syrian Telecom Dialing Metadata Dataset",
+    type: "text/html",
+  },
+] as const satisfies readonly DatasetDiscoveryItem[]
+
 export const agentDiscoveryLinks = [
   {
     href: "/.well-known/api-catalog",

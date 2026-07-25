@@ -27,7 +27,9 @@ The site publishes public, read-only discovery metadata for agents:
 
 - `/llms.txt` and `/index.md` describe the project and link to the main public resources.
 - `/auth.md` explains that public website and dataset API access does not require registration, OAuth, API keys, or credentials.
-- `/.well-known/api-catalog` links to the public API documentation, OpenAPI description, health endpoint, and dataset pages.
+- `/.well-known/api-catalog` links to the public API documentation, OpenAPI
+  description, health endpoint, and the shared geography, universities,
+  transport, and telecom discovery list.
 - `/.well-known/agent-skills/index.json` lists the available OpenSyria agent skills.
 - OAuth/OIDC and MCP well-known routes return explicit `404 application/problem+json` responses until OpenSyria offers protected auth flows or a public MCP server. Both `/.well-known/mcp/server-card.json` and the scanner-compatible plural alias `/.well-known/mcp/server-cards.json` use that unsupported response.
 
@@ -157,6 +159,7 @@ Focused commands:
 pnpm check
 pnpm typecheck
 pnpm build
+pnpm run audit:dependencies
 ```
 
 Apply Biome formatting and safe fixes:
