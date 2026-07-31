@@ -222,6 +222,10 @@ jobs:
     needs:
       - deploy-policy
       - build
+    if: >-
+      always() &&
+      needs.deploy-policy.result == 'success' &&
+      needs.build.result == 'success'
     runs-on: ubuntu-24.04
     timeout-minutes: 30
     environment:
