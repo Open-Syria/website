@@ -149,6 +149,8 @@ validation.
 6. Export runtime configuration from Infisical on the host.
 7. Pull the digest and prepare the inactive slot.
 8. Require Docker health and an exact commit version from the slot's `/health`.
+   A failure before pending state is committed removes the attempt-owned nginx
+   rollback backup so the next safe deployment is not blocked by an orphan.
 9. Atomically switch the shared nginx include and run private Host-header smoke
    checks through `infra-nginx`.
 10. Optionally verify the public health version, release marker in HTML, and an
