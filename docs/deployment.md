@@ -90,8 +90,9 @@ DEPLOY_SSH_KNOWN_HOSTS
 ```
 
 `GITHUB_TOKEN` provides temporary GHCR access. The deployment sends it to
-`docker login --password-stdin` and uses a temporary Docker configuration that
-is removed before the command exits.
+`docker login --password-stdin`. The host captures it before invoking any child
+CLI that could read standard input, and the temporary Docker configuration is
+removed before the command exits.
 
 ## Host-Side Infisical
 
