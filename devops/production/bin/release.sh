@@ -27,6 +27,8 @@ PUBLIC_HOST="opensyria.org"
 EDGE_NETWORK="syr-staging-edge"
 HEALTH_TIMEOUT_SECONDS="${HEALTH_TIMEOUT_SECONDS:-180}"
 DRAIN_SECONDS="${DRAIN_SECONDS:-30}"
+NGINX_LOCK_TIMEOUT_SECONDS="${NGINX_LOCK_TIMEOUT_SECONDS:-300}"
+NGINX_ROUTE_TIMEOUT_SECONDS="${NGINX_ROUTE_TIMEOUT_SECONDS:-15}"
 DOCKER_CONFIG_DIR=""
 RUNTIME_ENV_TEMP_FILE=""
 PREPARE_CLEANUP_SERVICE=""
@@ -43,7 +45,7 @@ readonly COMPOSE_ENV_FILE RUNTIME_ENV_FILE RUNTIME_ENV_VALIDATOR
 readonly INFISICAL_CONFIG_FILE STATE_DIR ACTIVE_COLOR_FILE
 readonly ACTIVE_VERSION_FILE PENDING_FILE PREVIOUS_UPSTREAM_FILE DEPLOY_LOCK_FILE
 readonly NGINX_DEPLOY_LOCK_FILE NGINX_ACTIVE_INCLUDE NGINX_CONTAINER PUBLIC_HOST
-readonly EDGE_NETWORK
+readonly EDGE_NETWORK NGINX_LOCK_TIMEOUT_SECONDS NGINX_ROUTE_TIMEOUT_SECONDS
 
 umask 077
 
@@ -374,23 +376,32 @@ verify_direct_version() {
 
 verify_private_route() {
   local expected_version="$1"
-  local body
+  local body started_at now
 
-  body="$(
-    docker_cmd exec "${NGINX_CONTAINER}" \
-      wget -qO- \
-      --header="Host: ${PUBLIC_HOST}" \
-      http://127.0.0.1/health
-  )"
-  if ! grep -Fq "\"version\":\"${expected_version}\"" <<< "${body}"; then
-    echo "Private ${PUBLIC_HOST} health response did not report ${expected_version}" >&2
-    return 1
-  fi
+  started_at="$(date +%s)"
+  while true; do
+    body=""
+    if body="$(
+      docker_cmd exec "${NGINX_CONTAINER}" \
+        wget -qO- \
+        --header="Host: ${PUBLIC_HOST}" \
+        http://127.0.0.1/health 2>/dev/null
+    )" \
+      && grep -Fq "\"version\":\"${expected_version}\"" <<< "${body}" \
+      && docker_cmd exec "${NGINX_CONTAINER}" \
+        wget -q --spider \
+        --header="Host: ${PUBLIC_HOST}" \
+        http://127.0.0.1/ 2>/dev/null; then
+      return 0
+    fi
 
-  docker_cmd exec "${NGINX_CONTAINER}" \
-    wget -q --spider \
-    --header="Host: ${PUBLIC_HOST}" \
-    http://127.0.0.1/
+    now="$(date +%s)"
+    if ((now - started_at >= NGINX_ROUTE_TIMEOUT_SECONDS)); then
+      echo "Private ${PUBLIC_HOST} route did not stabilize on ${expected_version} within ${NGINX_ROUTE_TIMEOUT_SECONDS}s" >&2
+      return 1
+    fi
+    sleep 1
+  done
 }
 
 verify_previous_private_route() {
@@ -966,6 +977,10 @@ main() {
     || fail "HEALTH_TIMEOUT_SECONDS must be between 1 and 9999"
   [[ "${DRAIN_SECONDS}" =~ ^[0-9]{1,4}$ ]] \
     || fail "DRAIN_SECONDS must be between 0 and 9999"
+  [[ "${NGINX_LOCK_TIMEOUT_SECONDS}" =~ ^[1-9][0-9]{0,3}$ ]] \
+    || fail "NGINX_LOCK_TIMEOUT_SECONDS must be between 1 and 9999"
+  [[ "${NGINX_ROUTE_TIMEOUT_SECONDS}" =~ ^[1-9][0-9]{0,3}$ ]] \
+    || fail "NGINX_ROUTE_TIMEOUT_SECONDS must be between 1 and 9999"
 
   ensure_private_directory "${STATE_DIR}" 700
   if [[ -e "${DEPLOY_LOCK_FILE}" || -L "${DEPLOY_LOCK_FILE}" ]]; then
@@ -984,8 +999,8 @@ main() {
   exec 8>"${NGINX_DEPLOY_LOCK_FILE}"
   chmod 600 "${NGINX_DEPLOY_LOCK_FILE}"
   require_private_regular_file "${NGINX_DEPLOY_LOCK_FILE}"
-  flock -n 8 \
-    || fail "Another deployment holds the shared nginx lock ${NGINX_DEPLOY_LOCK_FILE}"
+  flock -w "${NGINX_LOCK_TIMEOUT_SECONDS}" 8 \
+    || fail "Timed out waiting for the shared nginx lock ${NGINX_DEPLOY_LOCK_FILE}"
 
   validate_release_bundle_links
   require_regular_file "${RUNTIME_ENV_VALIDATOR}"

@@ -46,7 +46,9 @@ Shared nginx selects the active slot through:
 
 The include contains exactly one upstream assignment. `release.sh` preserves it,
 writes replacements atomically, validates nginx, reloads `infra-nginx`, and
-restores the prior include when a cutover check fails.
+restores the prior include when a cutover check fails. Cross-application nginx
+changes wait on a shared lock, and private checks retry briefly so a request that
+reaches a draining worker during graceful reload does not reject a healthy slot.
 
 ## GitHub Production Environment
 
