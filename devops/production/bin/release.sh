@@ -32,6 +32,7 @@ NGINX_ROUTE_TIMEOUT_SECONDS="${NGINX_ROUTE_TIMEOUT_SECONDS:-15}"
 DOCKER_CONFIG_DIR=""
 RUNTIME_ENV_TEMP_FILE=""
 PREPARE_CLEANUP_SERVICE=""
+PREPARE_CREATED_UPSTREAM_BACKUP=""
 PHASE=""
 CURRENT_COLOR=""
 TARGET_COLOR=""
@@ -750,6 +751,7 @@ prepare_release() {
 
   DEPLOYMENT_VERSION="${version}"
   install -m 600 -- "${NGINX_ACTIVE_INCLUDE}" "${PREVIOUS_UPSTREAM_FILE}"
+  PREPARE_CREATED_UPSTREAM_BACKUP="true"
   previous_upstream_color >/dev/null
   write_compose_env "${TARGET_COLOR}" "${image}" "${version}"
   compose config --quiet
@@ -770,6 +772,7 @@ prepare_release() {
 
   write_pending_state prepared
   PREPARE_CLEANUP_SERVICE=""
+  PREPARE_CREATED_UPSTREAM_BACKUP=""
   echo "Prepared ${TARGET_COLOR} deployment ${version}; shared nginx still routes ${routed_color}."
 }
 
@@ -943,6 +946,15 @@ cleanup() {
       :
     else
       echo "Leaving ${PREPARE_CLEANUP_SERVICE} running because no verified prior route is available." >&2
+    fi
+  fi
+
+  if [[ "${PREPARE_CREATED_UPSTREAM_BACKUP}" == "true" \
+    && ! -e "${PENDING_FILE}" && ! -L "${PENDING_FILE}" ]]; then
+    if [[ -f "${PREVIOUS_UPSTREAM_FILE}" && ! -L "${PREVIOUS_UPSTREAM_FILE}" ]]; then
+      rm -f -- "${PREVIOUS_UPSTREAM_FILE}"
+    else
+      echo "Refusing to remove an unsafe prepare-time nginx backup." >&2
     fi
   fi
 

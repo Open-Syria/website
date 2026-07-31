@@ -58,7 +58,8 @@ bin/release.sh rollback
 
 `prepare` captures the one-time registry token before launching any child tool,
 exports Infisical secrets, pulls the digest, starts the target slot, and verifies
-its exact version without changing routing.
+its exact version without changing routing. If preparation fails before pending
+state is committed, it removes only the rollback backup created by that attempt.
 
 The shared platform `infisical-login` helper obtains a short-lived Universal
 Auth token for that export. Neither the token nor CLI login state is persisted.
