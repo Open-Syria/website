@@ -2,10 +2,11 @@
 
 The website uses release-please to automate version bumps, changelog updates, Git tags, and GitHub Releases.
 
-Production deployment still uses SHA-pinned Docker images:
+Production deployment tags the image with the full commit SHA, then deploys the
+immutable manifest digest:
 
 ```text
-ghcr.io/open-syria/website:sha-<short-sha>
+ghcr.io/open-syria/website@sha256:<manifest-digest>
 ```
 
 `package.json` versions and GitHub Releases are human-facing release metadata, not the deployment selector.
