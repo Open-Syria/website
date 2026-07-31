@@ -56,8 +56,9 @@ bin/release.sh finalize
 bin/release.sh rollback
 ```
 
-`prepare` exports Infisical secrets, pulls the digest, starts the target slot,
-and verifies its exact version without changing routing.
+`prepare` captures the one-time registry token before launching any child tool,
+exports Infisical secrets, pulls the digest, starts the target slot, and verifies
+its exact version without changing routing.
 
 The shared platform `infisical-login` helper obtains a short-lived Universal
 Auth token for that export. Neither the token nor CLI login state is persisted.

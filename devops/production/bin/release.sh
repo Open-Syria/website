@@ -718,6 +718,9 @@ prepare_release() {
     || fail "A pending rollout already exists; finalize or roll it back first"
   [[ ! -e "${PREVIOUS_UPSTREAM_FILE}" && ! -L "${PREVIOUS_UPSTREAM_FILE}" ]] \
     || fail "A stale or unsafe nginx backup exists without pending rollout state"
+  IFS= read -r registry_token \
+    || fail "Registry token must be supplied on standard input"
+  [[ -n "${registry_token}" ]] || fail "Registry token is empty"
 
   docker_cmd network inspect "${EDGE_NETWORK}" >/dev/null \
     || fail "External Docker network ${EDGE_NETWORK} is missing"
@@ -751,10 +754,6 @@ prepare_release() {
   write_compose_env "${TARGET_COLOR}" "${image}" "${version}"
   compose config --quiet
 
-  if ! IFS= read -r registry_token && [[ -z "${registry_token}" ]]; then
-    fail "Registry token must be supplied on standard input"
-  fi
-  [[ -n "${registry_token}" ]] || fail "Registry token is empty"
   login_registry "${registry_username}" "${registry_token}"
   registry_token=""
   docker_cmd pull "${image}"
