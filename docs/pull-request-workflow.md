@@ -50,7 +50,7 @@ Use `pnpm check:write` for Biome formatting and safe fixes. Use
 `pnpm check:write:unsafe` only when intentionally accepting unsafe Biome fixes.
 
 Deployment changes should also update [Deployment](deployment.md) and, when the
-server runtime files change, [deploy/website/README.md](../deploy/website/README.md).
+server runtime files change, [devops/production/README.md](../devops/production/README.md).
 
 ## Dependency Updates
 

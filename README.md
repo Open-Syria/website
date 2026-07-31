@@ -54,7 +54,7 @@ src/lib/                 Site config and GitHub data helpers
 messages/                English and Arabic translations
 public/                  Public static assets
 scripts/                 Reproducible asset generation scripts
-deploy/website/          Server runtime files copied during deployment
+devops/production/       Production app bundle and blue/green lifecycle
 docs/                    Contributor and operational documentation
 ```
 
@@ -96,11 +96,18 @@ cp .env.example .env.local
 
 | Variable | Required | Purpose |
 | --- | --- | --- |
-| `NEXT_PUBLIC_SITE_URL` | Local only | Canonical site URL for local testing |
-| `NEXT_PUBLIC_DATASETS_API_URL` | Local only | API origin for future website/API integration |
-| `NEXT_PUBLIC_GOOGLE_TAG_MANAGER_ID` | Optional | Google tag or Tag Manager ID for analytics-enabled deployments |
+| `NEXT_PUBLIC_SITE_URL` | Build time | Canonical site URL; production must use the OpenSyria apex |
+| `NEXT_PUBLIC_DATASETS_API_URL` | Build time | Dataset API origin used by prerendering and cache refreshes |
+| `NEXT_PUBLIC_GOOGLE_TAG_MANAGER_ID` | Production build | Google tag or Tag Manager ID for analytics-enabled deployments |
+| `DEPLOYMENT_VERSION` | Runtime/build time | Non-secret commit SHA exposed by `/health` and used for Next.js deployment skew protection |
 
 The Google tag ID is public by design. Use a real Google tag ID, such as `GT-WPDWW3NR`, or Tag Manager container ID, such as `GTM-ABC1234`.
+
+Production automation requires `https://opensyria.org`,
+`https://api.opensyria.org`, and `GT-WPDWW3NR` for the three public build
+values. The host-side Infisical `/website` export mirrors those values plus
+`NODE_ENV=production` and `NEXT_TELEMETRY_DISABLED=1`; it must not contain
+`DEPLOYMENT_VERSION` because the release SHA is injected per slot.
 
 ## Internationalization
 
@@ -150,6 +157,15 @@ The implementation keeps the landing page server-rendered and uses small client 
 Run all CI checks:
 
 ```bash
+pnpm verify:ci
+```
+
+CI intentionally runs only static formatting/lint checks, TypeScript, and the
+dependency audit. It does not run tests or a Next.js build.
+
+Run the complete local release check, including a production build:
+
+```bash
 pnpm verify
 ```
 
@@ -170,7 +186,7 @@ pnpm check:write
 
 ## Deployment
 
-Maintainers deploy the website through protected automation. Operational deployment details live in [docs/deployment.md](docs/deployment.md).
+Maintainers deploy one prebuilt `linux/amd64` image digest through protected automation. The production host never builds application source. Operational deployment details live in [docs/deployment.md](docs/deployment.md).
 
 ## Repository Documents
 

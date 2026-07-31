@@ -1,9 +1,12 @@
 const brandAssetVersion = "20260704-brand-wordmark"
+const productionSiteUrl = "https://opensyria.org"
+const siteUrl =
+  process.env.NEXT_PUBLIC_SITE_URL?.replace(/\/+$/, "") || productionSiteUrl
 
 export const siteConfig = {
   name: "OpenSyria",
-  url: "https://opensyria.org",
-  logo: `https://opensyria.org/web-app-manifest-512x512.png?v=${brandAssetVersion}`,
+  url: siteUrl,
+  logo: `${siteUrl}/web-app-manifest-512x512.png?v=${brandAssetVersion}`,
   defaultTitle: "OpenSyria | Syrian Datasets, Maps and Research Data",
   defaultDescription:
     "OpenSyria publishes source-backed Syrian datasets for cities, governorates, universities, transport, telecom, maps, research, journalism, civic tools, and Syria-focused apps.",

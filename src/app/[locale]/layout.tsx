@@ -136,6 +136,7 @@ export default async function LocaleLayout({
     <html
       lang={locale}
       dir={direction}
+      data-dpl-id={process.env.DEPLOYMENT_VERSION ?? "development"}
       suppressHydrationWarning
       className={cn(
         "antialiased",

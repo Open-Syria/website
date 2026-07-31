@@ -1,0 +1,78 @@
+name: opensyria-production-website
+
+x-website: &website
+  restart: unless-stopped
+  init: true
+  user: "1001:1001"
+  read_only: true
+  cap_drop:
+    - ALL
+  security_opt:
+    - no-new-privileges:true
+  env_file:
+    - .runtime.env
+  environment:
+    DEPLOYMENT_VERSION: ${DEPLOYMENT_VERSION:?DEPLOYMENT_VERSION is required}
+    HOSTNAME: 0.0.0.0
+    NEXT_TELEMETRY_DISABLED: "1"
+    NODE_ENV: production
+    PORT: "3000"
+  expose:
+    - "3000"
+  pull_policy: never
+  stop_grace_period: 30s
+  tmpfs:
+    - /tmp:rw,noexec,nosuid,size=64m,mode=1777
+    - /app/.next/cache:rw,nosuid,size=256m,uid=1001,gid=1001,mode=0750
+  healthcheck:
+    test:
+      - CMD
+      - node
+      - -e
+      - require('node:http').get('http://127.0.0.1:3000/health',r=>process.exit(r.statusCode===200?0:1)).on('error',()=>process.exit(1))
+    interval: 30s
+    timeout: 5s
+    retries: 5
+    start_period: 30s
+
+services:
+  website-blue:
+    <<: *website
+    image: ${WEBSITE_BLUE_IMAGE:?WEBSITE_BLUE_IMAGE is required}
+    environment:
+      DEPLOYMENT_VERSION: ${WEBSITE_BLUE_VERSION:?WEBSITE_BLUE_VERSION is required}
+      HOSTNAME: 0.0.0.0
+      NEXT_TELEMETRY_DISABLED: "1"
+      NODE_ENV: production
+      PORT: "3000"
+    labels:
+      org.opensyria.app: website
+      org.opensyria.environment: production
+      org.opensyria.slot: blue
+    networks:
+      edge:
+        aliases:
+          - opensyria-production-website-blue
+
+  website-green:
+    <<: *website
+    image: ${WEBSITE_GREEN_IMAGE:?WEBSITE_GREEN_IMAGE is required}
+    environment:
+      DEPLOYMENT_VERSION: ${WEBSITE_GREEN_VERSION:?WEBSITE_GREEN_VERSION is required}
+      HOSTNAME: 0.0.0.0
+      NEXT_TELEMETRY_DISABLED: "1"
+      NODE_ENV: production
+      PORT: "3000"
+    labels:
+      org.opensyria.app: website
+      org.opensyria.environment: production
+      org.opensyria.slot: green
+    networks:
+      edge:
+        aliases:
+          - opensyria-production-website-green
+
+networks:
+  edge:
+    external: true
+    name: syr-staging-edge

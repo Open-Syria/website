@@ -1,0 +1,8 @@
+.compose.env
+.compose.env.*
+.deploy.lock
+.docker-config.*
+.infisical.env
+.runtime.env
+.runtime.env.*
+.state/
