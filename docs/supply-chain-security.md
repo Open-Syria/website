@@ -15,6 +15,12 @@ pnpm install
 
 CI uses the same pnpm version.
 
+The production Dockerfile pins the Node.js base image by digest. Production
+automation publishes a commit-tagged image with provenance and an SBOM, then
+deploys the immutable registry digest rather than a mutable tag.
+Privileged build and deployment actions are pinned to reviewed commit SHAs, and
+the Tailscale client version is fixed rather than tracking `latest`.
+
 ## Dependency Resolution
 
 `pnpm-workspace.yaml` configures:

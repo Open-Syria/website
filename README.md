@@ -54,7 +54,7 @@ src/lib/                 Site config and GitHub data helpers
 messages/                English and Arabic translations
 public/                  Public static assets
 scripts/                 Reproducible asset generation scripts
-deploy/website/          Server runtime files copied during deployment
+devops/production/       Production app bundle and blue/green lifecycle
 docs/                    Contributor and operational documentation
 ```
 
@@ -132,6 +132,15 @@ The implementation keeps the landing page server-rendered and uses small client 
 ## Checks
 
 Run all CI checks:
+
+```bash
+pnpm verify:ci
+```
+
+CI intentionally runs only static formatting/lint checks, TypeScript, and the
+dependency audit. It does not run tests or a Next.js build.
+
+Run the complete local release check, including a production build:
 
 ```bash
 pnpm verify
