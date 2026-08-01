@@ -70,11 +70,14 @@ Every Docker operation uses the shared wrapper because the deployment user has
 no direct Docker socket access. The wrapper also preserves the temporary
 `DOCKER_CONFIG` across privileged pulls without persisting registry credentials.
 
-`switch` changes the shared nginx include, validates/reloads nginx, and checks
-`/health` plus `/` through `infra-nginx` with `Host: opensyria.org`. The private
-check retries briefly while a graceful nginx reload drains old workers. Shared
-nginx changes wait on the cross-application lock instead of failing when another
-OpenSyria rollout is finishing. The previous slot is retained.
+`prepare` also makes a real homepage GET against the candidate, rejects response
+headers above 8 KiB, and rejects repeated agent-discovery `Link` sets before the
+slot can be routed. `switch` changes the shared nginx include,
+validates/reloads nginx, and checks `/health` plus a GET of `/` through
+`infra-nginx` with `Host: opensyria.org`. The private check retries briefly while
+a graceful nginx reload drains old workers. Shared nginx changes wait on the
+cross-application lock instead of failing when another OpenSyria rollout is
+finishing. The previous slot is retained.
 
 `finalize` rechecks the private route, drains existing requests, stops the
 previous slot, and records the new active state.

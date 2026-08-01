@@ -357,22 +357,83 @@ verify_direct_version() {
   compose exec -T "${service}" node -e '
     const http = require("node:http");
     const expected = process.argv[1];
-    const request = http.get("http://127.0.0.1:3000/health", (response) => {
-      let body = "";
-      response.setEncoding("utf8");
-      response.on("data", (chunk) => { body += chunk; });
-      response.on("end", () => {
-        try {
-          const payload = JSON.parse(body);
-          process.exit(response.statusCode === 200 && payload.version === expected ? 0 : 1);
-        } catch {
-          process.exit(1);
-        }
+    const publicHost = process.argv[2];
+    const maxHeaderBytes = Number(process.argv[3]);
+
+    function get(path, collectBody = false) {
+      return new Promise((resolve, reject) => {
+        const request = http.get({
+          headers: { Host: publicHost },
+          host: "127.0.0.1",
+          path,
+          port: 3000,
+        }, (response) => {
+          let body = "";
+          if (collectBody) {
+            response.setEncoding("utf8");
+            response.on("data", (chunk) => { body += chunk; });
+          } else {
+            response.resume();
+          }
+          response.on("end", () => resolve({ body, response }));
+        });
+        request.on("error", reject);
+        request.setTimeout(5000, () => request.destroy(new Error(`Timed out requesting ${path}`)));
       });
+    }
+
+    function getRawHeaderBytes(response) {
+      let bytes = Buffer.byteLength(
+        `HTTP/${response.httpVersion} ${response.statusCode} ${response.statusMessage}\r\n`
+      );
+      for (let index = 0; index < response.rawHeaders.length; index += 2) {
+        bytes += Buffer.byteLength(
+          `${response.rawHeaders[index]}: ${response.rawHeaders[index + 1]}\r\n`
+        );
+      }
+      return bytes + 2;
+    }
+
+    function countDiscoveryLinks(response) {
+      let count = 0;
+      for (let index = 0; index < response.rawHeaders.length; index += 2) {
+        if (response.rawHeaders[index].toLowerCase() !== "link") continue;
+        count += response.rawHeaders[index + 1]
+          .split("/.well-known/api-catalog").length - 1;
+      }
+      return count;
+    }
+
+    (async () => {
+      const health = await get("/health", true);
+      const payload = JSON.parse(health.body);
+      if (health.response.statusCode !== 200 || payload.version !== expected) {
+        throw new Error(`Health endpoint did not report ${expected}`);
+      }
+
+      const homepage = await get("/");
+      if (homepage.response.statusCode !== 200) {
+        throw new Error(`Homepage returned HTTP ${homepage.response.statusCode}`);
+      }
+
+      const headerBytes = getRawHeaderBytes(homepage.response);
+      if (headerBytes > maxHeaderBytes) {
+        throw new Error(
+          `Homepage response headers use ${headerBytes} bytes; budget is ${maxHeaderBytes}`
+        );
+      }
+
+      const discoveryLinks = countDiscoveryLinks(homepage.response);
+      if (discoveryLinks > 1) {
+        throw new Error(
+          `Homepage repeats the agent discovery Link set ${discoveryLinks} times`
+        );
+      }
+    })().catch((error) => {
+      console.error(error.message);
+      process.exit(1);
     });
-    request.on("error", () => process.exit(1));
-    request.setTimeout(5000, () => request.destroy());
-  ' "${expected_version}"
+  ' "${expected_version}" "${PUBLIC_HOST}" "8192"
 }
 
 verify_private_route() {
@@ -390,7 +451,7 @@ verify_private_route() {
     )" \
       && grep -Fq "\"version\":\"${expected_version}\"" <<< "${body}" \
       && docker_cmd exec "${NGINX_CONTAINER}" \
-        wget -q --spider \
+        wget -qO /dev/null \
         --header="Host: ${PUBLIC_HOST}" \
         http://127.0.0.1/ 2>/dev/null; then
       return 0

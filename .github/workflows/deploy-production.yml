@@ -489,10 +489,11 @@ jobs:
         run: |
           health_headers="$(mktemp)"
           health_body="$(mktemp)"
+          html_headers="$(mktemp)"
           html_body="$(mktemp)"
           rsc_headers="$(mktemp)"
           rsc_body="$(mktemp)"
-          trap 'rm -f "$health_headers" "$health_body" "$html_body" "$rsc_headers" "$rsc_body"' EXIT
+          trap 'rm -f "$health_headers" "$health_body" "$html_headers" "$html_body" "$rsc_headers" "$rsc_body"' EXIT
 
           curl --fail --silent --show-error --retry 5 --retry-all-errors --retry-delay 5 \
             -H 'Cache-Control: no-cache' -D "$health_headers" -o "$health_body" \
@@ -501,8 +502,18 @@ jobs:
           grep -Eiq '^cache-control:[[:space:]]*no-store([[:space:]]|,|$)' "$health_headers"
 
           curl --fail --silent --show-error --location --retry 5 --retry-all-errors --retry-delay 5 \
-            -H 'Cache-Control: no-cache' -o "$html_body" https://opensyria.org/ar
+            -H 'Cache-Control: no-cache' -D "$html_headers" -o "$html_body" https://opensyria.org/
           grep -Fq "data-dpl-id=\"${RELEASE_SHA}\"" "$html_body"
+          discovery_link_count="$(
+            awk 'BEGIN { count = 0 } {
+              line = tolower($0)
+              while (match(line, /\/\.well-known\/api-catalog/)) {
+                count++
+                line = substr(line, RSTART + RLENGTH)
+              }
+            } END { print count }' "$html_headers"
+          )"
+          test "$discovery_link_count" -le 1
 
           rsc_key="deploy-${RELEASE_SHA:0:12}"
           curl --fail --silent --show-error --retry 5 --retry-all-errors --retry-delay 5 \
