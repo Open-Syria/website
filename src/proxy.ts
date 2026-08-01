@@ -3,7 +3,6 @@ import { NextResponse } from "next/server"
 import createMiddleware from "next-intl/middleware"
 
 import { routing } from "./i18n/routing"
-import { agentDiscoveryLinkHeader } from "./lib/agent-discovery"
 
 const intlMiddleware = createMiddleware(routing)
 const trackingSearchParamNames = new Set([
@@ -32,7 +31,7 @@ export default function proxy(request: NextRequest) {
   const cleanUrl = getCleanTrackingUrl(request)
 
   if (cleanUrl) {
-    return withAgentDiscoveryHeaders(NextResponse.redirect(cleanUrl, 308))
+    return NextResponse.redirect(cleanUrl, 308)
   }
 
   if (acceptsMarkdown(request) && isMarkdownNegotiablePath(request)) {
@@ -41,10 +40,10 @@ export default function proxy(request: NextRequest) {
     const response = NextResponse.rewrite(markdownUrl)
     appendHeader(response, "Vary", "Accept")
 
-    return withAgentDiscoveryHeaders(response)
+    return response
   }
 
-  return withAgentDiscoveryHeaders(intlMiddleware(request))
+  return intlMiddleware(request)
 }
 
 function getCleanTrackingUrl(request: NextRequest) {
@@ -81,31 +80,6 @@ function isMarkdownNegotiablePath(request: NextRequest) {
   const pathname = request.nextUrl.pathname.replace(/\/+$/, "") || "/"
 
   return pathname === "/" || pathname === "/en" || pathname === "/ar"
-}
-
-function withAgentDiscoveryHeaders(response: NextResponse) {
-  appendUniqueHeader(response, "Link", agentDiscoveryLinkHeader)
-
-  return response
-}
-
-function appendUniqueHeader(
-  response: NextResponse,
-  name: string,
-  value: string
-) {
-  const currentValue = response.headers.get(name)
-
-  if (!currentValue) {
-    response.headers.set(name, value)
-    return
-  }
-
-  if (currentValue.includes(value)) {
-    return
-  }
-
-  response.headers.set(name, `${currentValue}, ${value}`)
 }
 
 function appendHeader(response: NextResponse, name: string, value: string) {

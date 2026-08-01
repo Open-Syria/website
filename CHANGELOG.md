@@ -9,6 +9,7 @@
 
 ### Bug Fixes
 
+* prevent duplicated discovery response headers from taking the homepage offline
 * include transport and telecom in the well-known API catalog from the shared discovery list
 * honor `[skip ci]` consistently in the website CI workflow
 * update Next.js and the dependency graph to patched releases and enforce a full audit in verification
