@@ -15,6 +15,36 @@
 * honor `[skip ci]` consistently in the website CI workflow
 * update Next.js and the dependency graph to patched releases and enforce a full audit in verification
 
+## [0.5.0](https://github.com/Open-Syria/website/compare/v0.4.1...v0.5.0) (2026-08-03)
+
+
+### Features
+
+* add telecom dataset to website ([18632c9](https://github.com/Open-Syria/website/commit/18632c92e82add0744df2081daacc82795cd7a4d))
+* **deploy:** harden OpenSyria production website ([d13b47e](https://github.com/Open-Syria/website/commit/d13b47e96c29d0ea5e89a5698c7fd281ddc252da))
+* **deploy:** harden OpenSyria production website ([#34](https://github.com/Open-Syria/website/issues/34)) ([adeddc1](https://github.com/Open-Syria/website/commit/adeddc1a0ac9d518e17add13fb28ab09eb1b4447))
+
+
+### Bug Fixes
+
+* align dataset discovery and dependencies ([47c72e2](https://github.com/Open-Syria/website/commit/47c72e2e81febc7077f506b1fb728de91a6697b9))
+* cache GitHub metadata requests ([1c76148](https://github.com/Open-Syria/website/commit/1c7614864c3934648813de06cacd497c451e083c))
+* **ci:** allow automatic production deploy job ([4fed41e](https://github.com/Open-Syria/website/commit/4fed41e4030f0962e8c0279b344c111a53bbe2d4))
+* **ci:** run automatic production deploy after image build ([442a6c7](https://github.com/Open-Syria/website/commit/442a6c7cd54d9d8c59b669f462b9399c00dcc37c))
+* **deploy:** align production rollout with gateway ([557840c](https://github.com/Open-Syria/website/commit/557840c46841f6c23831dbe1f51f0680e9314e13))
+* **deploy:** capture registry token before child tools ([c741f40](https://github.com/Open-Syria/website/commit/c741f4080b2c84364dedf32ca65fe729d8939b9f))
+* **deploy:** capture registry token before child tools ([1887ba3](https://github.com/Open-Syria/website/commit/1887ba304ebe9effc6f596376e6313b7594fc4dc))
+* **deploy:** clean failed prepare rollback backup ([79bb522](https://github.com/Open-Syria/website/commit/79bb522e32bf865d0e1926b7fb5a6834296d099d))
+* **deploy:** clean failed prepare rollback backup ([772492b](https://github.com/Open-Syria/website/commit/772492b8e2206ad3a68d4b6d179733a259ff52b9))
+* **deploy:** serialize and stabilize nginx cutovers ([4d7a0da](https://github.com/Open-Syria/website/commit/4d7a0da0a4a0f831bb36db1b63de64b59855cfd3))
+* **deploy:** stabilize shared nginx cutovers ([4dd9f27](https://github.com/Open-Syria/website/commit/4dd9f2705f635df1524438c49e677257688dba27))
+* include local dataset descriptors in catalog ([bc342d3](https://github.com/Open-Syria/website/commit/bc342d3dc842f8be71b3646a7bf203761dd6d016))
+* keep dataset endpoint routes in fallback catalog ([2bd2850](https://github.com/Open-Syria/website/commit/2bd2850bdbd068b6f0a829978baa26cfa44fa241))
+* move og logo metadata to layout ([2b698b6](https://github.com/Open-Syria/website/commit/2b698b63e10ffc1b00e85ae2978b28fae7e5d577))
+* prevent oversized homepage response headers ([e77f641](https://github.com/Open-Syria/website/commit/e77f641a4e0ab0ab9f61e557a87b83829c2357b0))
+* prevent oversized homepage response headers ([056f260](https://github.com/Open-Syria/website/commit/056f260fb2192982393fafc9345680a792bde2c6))
+* prevent oversized proxy headers ([dfbd10b](https://github.com/Open-Syria/website/commit/dfbd10bd5883a16c6c2bb9329b51ff01805bb5d4))
+
 ## [0.4.1](https://github.com/Open-Syria/website/compare/v0.4.0...v0.4.1) (2026-07-08)
 
 
