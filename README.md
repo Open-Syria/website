@@ -31,6 +31,9 @@ The site publishes public, read-only discovery metadata for agents:
   description, health endpoint, and the shared geography, universities,
   transport, and telecom discovery list.
 - `/.well-known/agent-skills/index.json` lists the available OpenSyria agent skills.
+- Discovery and Markdown route responses carry the HTTP `Link` header directly.
+  Normal HTML responses expose the same public resources through those stable
+  routes without injecting a render-wide response header.
 - OAuth/OIDC and MCP well-known routes return explicit `404 application/problem+json` responses until OpenSyria offers protected auth flows or a public MCP server. Both `/.well-known/mcp/server-card.json` and the scanner-compatible plural alias `/.well-known/mcp/server-cards.json` use that unsupported response.
 
 ## Stack
