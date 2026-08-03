@@ -67,19 +67,22 @@ The host identity file is parsed with an exact key allowlist and is never
 executed as shell code.
 
 Every Docker operation uses the shared wrapper because the deployment user has
-no direct Docker socket access. The wrapper also preserves the temporary
-`DOCKER_CONFIG` across privileged pulls without persisting registry credentials.
+no direct Docker socket access. The release helper uses only the wrapper's typed
+network probe and fixed non-secret Compose status projection. Registry
+credentials live in an ephemeral private `DOCKER_CONFIG` that the wrapper copies
+for the privileged image pull and the release helper removes on exit.
 
-`prepare` also makes a real homepage GET against the candidate, rejects response
-headers above 8 KiB, and rejects repeated agent-discovery `Link` sets before the
-slot can be routed. `switch` changes the shared nginx include,
-validates/reloads nginx, and checks `/health` plus a GET of `/` through
-`infra-nginx` with `Host: opensyria.org`. The private check retries briefly while
-a graceful nginx reload drains old workers. Shared nginx changes wait on the
-cross-application lock instead of failing when another OpenSyria rollout is
-finishing. The previous slot is retained.
+`prepare` pulls and starts the candidate, then waits for its Docker healthcheck
+without changing routing. `switch` changes the shared nginx include atomically,
+validates/reloads nginx, and checks uncached public `/health` and homepage GETs.
+The routed homepage must stay within an 8 KiB response-header budget and must
+not repeat the agent-discovery `Link` set. A failed public check restores and
+verifies the previous route. Checks retry briefly while a graceful nginx reload
+drains old workers. Shared nginx changes wait on the cross-application lock
+instead of failing when another OpenSyria rollout is finishing. The previous
+slot is retained.
 
-`finalize` rechecks the private route, drains existing requests, stops the
+`finalize` rechecks the public route, drains existing requests, stops the
 previous slot, and records the new active state.
 
 `rollback` restores the backed-up nginx include and previous slot. If no prior

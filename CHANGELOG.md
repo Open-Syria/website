@@ -9,6 +9,7 @@
 
 ### Bug Fixes
 
+* align production rollout probes and registry authentication with the hardened Docker gateway
 * prevent duplicated discovery response headers from taking the homepage offline
 * include transport and telecom in the well-known API catalog from the shared discovery list
 * honor `[skip ci]` consistently in the website CI workflow

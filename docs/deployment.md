@@ -47,10 +47,12 @@ Shared nginx selects the active slot through:
 The include contains exactly one upstream assignment. `release.sh` preserves it,
 writes replacements atomically, validates nginx, reloads `infra-nginx`, and
 restores the prior include when a cutover check fails. Before cutover, the
-candidate must serve a homepage GET within an 8 KiB response-header budget and
-must not repeat the agent-discovery `Link` set. Cross-application nginx changes
-wait on a shared lock, and private GET checks retry briefly so a request that
-reaches a draining worker during graceful reload does not reject a healthy slot.
+candidate must pass its Docker healthcheck. After the atomic switch, uncached
+public `/health` and homepage GETs must report the expected release, stay within
+an 8 KiB response-header budget, and not repeat the agent-discovery `Link` set.
+Cross-application nginx changes wait on a shared lock, and public checks retry
+briefly so a request that reaches a draining worker during graceful reload does
+not reject a healthy slot.
 
 ## GitHub Production Environment
 
