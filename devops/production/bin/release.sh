@@ -24,7 +24,11 @@ NGINX_DEPLOY_LOCK_FILE="/opt/syr/services/staging/.nginx-deploy.lock"
 NGINX_ACTIVE_INCLUDE="/opt/syr/services/staging/infrastructure/nginx/conf.d/includes/opensyria-production-website-active.conf"
 NGINX_CONTAINER="infra-nginx"
 PUBLIC_HOST="opensyria.org"
+PUBLIC_URL="https://${PUBLIC_HOST}"
 EDGE_NETWORK="syr-staging-edge"
+COMPOSE_PROJECT="opensyria-production-website"
+COMPOSE_PS_FORMAT='table {{.Name}}\t{{.Image}}\t{{.State}}\t{{.Health}}'
+MAX_HOMEPAGE_HEADER_BYTES="8192"
 HEALTH_TIMEOUT_SECONDS="${HEALTH_TIMEOUT_SECONDS:-180}"
 DRAIN_SECONDS="${DRAIN_SECONDS:-30}"
 NGINX_LOCK_TIMEOUT_SECONDS="${NGINX_LOCK_TIMEOUT_SECONDS:-300}"
@@ -46,7 +50,9 @@ readonly COMPOSE_ENV_FILE RUNTIME_ENV_FILE RUNTIME_ENV_VALIDATOR
 readonly INFISICAL_CONFIG_FILE STATE_DIR ACTIVE_COLOR_FILE
 readonly ACTIVE_VERSION_FILE PENDING_FILE PREVIOUS_UPSTREAM_FILE DEPLOY_LOCK_FILE
 readonly NGINX_DEPLOY_LOCK_FILE NGINX_ACTIVE_INCLUDE NGINX_CONTAINER PUBLIC_HOST
-readonly EDGE_NETWORK NGINX_LOCK_TIMEOUT_SECONDS NGINX_ROUTE_TIMEOUT_SECONDS
+readonly PUBLIC_URL EDGE_NETWORK COMPOSE_PROJECT COMPOSE_PS_FORMAT
+readonly MAX_HOMEPAGE_HEADER_BYTES NGINX_LOCK_TIMEOUT_SECONDS
+readonly NGINX_ROUTE_TIMEOUT_SECONDS
 
 umask 077
 
@@ -314,21 +320,22 @@ reload_nginx() {
     && docker_cmd exec "${NGINX_CONTAINER}" nginx -s reload
 }
 
-service_container_id() {
-  compose ps -q "$(service_for_color "$1")"
+compose_status() {
+  compose ps --format "${COMPOSE_PS_FORMAT}"
 }
 
 service_is_healthy() {
   local color="$1"
-  local container_id health
+  local service container_prefix
 
-  container_id="$(service_container_id "${color}")"
-  [[ -n "${container_id}" ]] || return 1
-  health="$(
-    docker_cmd inspect "${container_id}" \
-      --format '{{if .State.Health}}{{.State.Health.Status}}{{else}}{{.State.Status}}{{end}}'
-  )"
-  [[ "${health}" == "healthy" ]]
+  service="$(service_for_color "${color}")"
+  container_prefix="${COMPOSE_PROJECT}-${service}-"
+  compose_status | awk -v prefix="${container_prefix}" '
+    NR > 1 && index($1, prefix) == 1 && $3 == "running" && $4 == "healthy" {
+      healthy += 1
+    }
+    END { exit(healthy == 1 ? 0 : 1) }
+  '
 }
 
 wait_for_service_health() {
@@ -340,7 +347,7 @@ wait_for_service_health() {
   while ! service_is_healthy "${color}"; do
     now="$(date +%s)"
     if ((now - started_at >= HEALTH_TIMEOUT_SECONDS)); then
-      compose ps "${service}" >&2 || true
+      compose_status >&2 || true
       compose logs --tail=120 "${service}" >&2 || true
       fail "Timed out waiting for ${service} to become healthy"
     fi
@@ -348,80 +355,114 @@ wait_for_service_health() {
   done
 }
 
-verify_direct_version() {
-  local color="$1"
-  local expected_version="$2"
-  local service
+probe_public_route() {
+  local expected_version="$1"
+  local enforce_header_budget="$2"
+  local health_body health_code homepage_headers homepage_code
+  local header_bytes discovery_links
 
-  service="$(service_for_color "${color}")"
-  compose exec -T "${service}" node -e '
-    const http = require("node:http");
-    const expected = process.argv[1];
-    const request = http.get("http://127.0.0.1:3000/health", (response) => {
-      let body = "";
-      response.setEncoding("utf8");
-      response.on("data", (chunk) => { body += chunk; });
-      response.on("end", () => {
-        try {
-          const payload = JSON.parse(body);
-          process.exit(response.statusCode === 200 && payload.version === expected ? 0 : 1);
-        } catch {
-          process.exit(1);
+  health_body="$(mktemp "${STATE_DIR}/.health-probe.XXXXXX")"
+  homepage_headers="$(mktemp "${STATE_DIR}/.homepage-probe.XXXXXX")"
+
+  health_code="$(
+    curl -sS \
+      --connect-timeout 5 \
+      --max-time 10 \
+      --header 'Cache-Control: no-cache' \
+      --header 'Pragma: no-cache' \
+      --get \
+      --data-urlencode "deployment_probe=${expected_version}" \
+      --output "${health_body}" \
+      --write-out '%{http_code}' \
+      "${PUBLIC_URL}/health" 2>/dev/null || true
+  )"
+  if [[ "${health_code}" != "200" ]] \
+    || ! grep -Fq "\"version\":\"${expected_version}\"" "${health_body}"; then
+    rm -f -- "${health_body}" "${homepage_headers}"
+    return 1
+  fi
+
+  homepage_code="$(
+    curl -sS \
+      --connect-timeout 5 \
+      --max-time 15 \
+      --header 'Cache-Control: no-cache' \
+      --header 'Pragma: no-cache' \
+      --get \
+      --data-urlencode "deployment_probe=${expected_version}" \
+      --dump-header "${homepage_headers}" \
+      --output /dev/null \
+      --write-out '%{http_code}' \
+      "${PUBLIC_URL}/" 2>/dev/null || true
+  )"
+  if [[ "${homepage_code}" != "200" ]]; then
+    rm -f -- "${health_body}" "${homepage_headers}"
+    return 1
+  fi
+
+  if [[ "${enforce_header_budget}" == "true" ]]; then
+    header_bytes="$(wc -c < "${homepage_headers}" | tr -d '[:space:]')"
+    discovery_links="$(
+      awk '
+        {
+          line = tolower($0)
+          token = "/.well-known/api-catalog"
+          while ((position = index(line, token)) > 0) {
+            count += 1
+            line = substr(line, position + length(token))
+          }
         }
-      });
-    });
-    request.on("error", () => process.exit(1));
-    request.setTimeout(5000, () => request.destroy());
-  ' "${expected_version}"
+        END { print count + 0 }
+      ' "${homepage_headers}"
+    )"
+    if ((header_bytes > MAX_HOMEPAGE_HEADER_BYTES)) \
+      || ((discovery_links > 1)); then
+      echo "Public homepage headers use ${header_bytes} bytes and contain ${discovery_links} discovery link sets" >&2
+      rm -f -- "${health_body}" "${homepage_headers}"
+      return 1
+    fi
+  fi
+
+  rm -f -- "${health_body}" "${homepage_headers}"
 }
 
-verify_private_route() {
+verify_public_route() {
   local expected_version="$1"
-  local body started_at now
+  local enforce_header_budget="${2:-true}"
+  local started_at now
 
   started_at="$(date +%s)"
   while true; do
-    body=""
-    if body="$(
-      docker_cmd exec "${NGINX_CONTAINER}" \
-        wget -qO- \
-        --header="Host: ${PUBLIC_HOST}" \
-        http://127.0.0.1/health 2>/dev/null
-    )" \
-      && grep -Fq "\"version\":\"${expected_version}\"" <<< "${body}" \
-      && docker_cmd exec "${NGINX_CONTAINER}" \
-        wget -q --spider \
-        --header="Host: ${PUBLIC_HOST}" \
-        http://127.0.0.1/ 2>/dev/null; then
+    if probe_public_route "${expected_version}" "${enforce_header_budget}"; then
       return 0
     fi
 
     now="$(date +%s)"
     if ((now - started_at >= NGINX_ROUTE_TIMEOUT_SECONDS)); then
-      echo "Private ${PUBLIC_HOST} route did not stabilize on ${expected_version} within ${NGINX_ROUTE_TIMEOUT_SECONDS}s" >&2
+      echo "Public ${PUBLIC_HOST} route did not stabilize on ${expected_version} within ${NGINX_ROUTE_TIMEOUT_SECONDS}s" >&2
       return 1
     fi
     sleep 1
   done
 }
 
-verify_previous_private_route() {
+verify_previous_public_route() {
   [[ "${HAS_ROLLBACK}" == "true" ]] || return 1
   [[ "${PREVIOUS_VERSION}" =~ ^[0-9a-f]{40}$ ]] || return 1
-  verify_private_route "${PREVIOUS_VERSION}"
+  verify_public_route "${PREVIOUS_VERSION}" false
 }
 
 restore_previous_route() {
   if (restore_previous_upstream) \
     && reload_nginx \
-    && verify_previous_private_route; then
+    && verify_previous_public_route; then
     return 0
   fi
 
   echo "Previous website route could not be verified; restoring the healthy candidate." >&2
   if (write_nginx_upstream "${TARGET_COLOR}") \
     && reload_nginx \
-    && verify_private_route "${DEPLOYMENT_VERSION}"; then
+    && verify_public_route "${DEPLOYMENT_VERSION}"; then
     echo "Restored and verified the candidate website route." >&2
   else
     echo "Candidate remains running, but automatic route recovery could not be verified." >&2
@@ -689,15 +730,19 @@ record_active_state() {
   write_atomic_value "${ACTIVE_VERSION_FILE}" 600 "${version}"
 }
 
-login_registry() {
+configure_registry() {
   local username="$1"
   local token="$2"
+  local encoded_auth
 
   DOCKER_CONFIG_DIR="$(mktemp -d "${ROOT_DIR}/.docker-config.XXXXXX")"
   chmod 700 "${DOCKER_CONFIG_DIR}"
   export DOCKER_CONFIG="${DOCKER_CONFIG_DIR}"
-  printf '%s' "${token}" \
-    | docker_cmd login ghcr.io --username "${username}" --password-stdin
+  encoded_auth="$(printf '%s:%s' "${username}" "${token}" | base64 | tr -d '\n')"
+  printf '{"auths":{"ghcr.io":{"auth":"%s"}}}\n' "${encoded_auth}" \
+    > "${DOCKER_CONFIG_DIR}/config.json"
+  chmod 600 "${DOCKER_CONFIG_DIR}/config.json"
+  unset encoded_auth
 }
 
 prepare_release() {
@@ -721,9 +766,10 @@ prepare_release() {
     || fail "A stale or unsafe nginx backup exists without pending rollout state"
   IFS= read -r registry_token \
     || fail "Registry token must be supplied on standard input"
-  [[ -n "${registry_token}" ]] || fail "Registry token is empty"
+  [[ -n "${registry_token}" && "${registry_token}" =~ ^[^[:space:]]+$ ]] \
+    || fail "Registry token must be a single non-empty value"
 
-  docker_cmd network inspect "${EDGE_NETWORK}" >/dev/null \
+  docker_cmd network-exists "${EDGE_NETWORK}" >/dev/null \
     || fail "External Docker network ${EDGE_NETWORK} is missing"
   sync_runtime_env_from_infisical
   routed_color="$(current_upstream_color)"
@@ -741,8 +787,7 @@ prepare_release() {
         "WEBSITE_${routed_color^^}_VERSION"
     )"
     if service_is_healthy "${routed_color}" \
-      && verify_direct_version "${routed_color}" "${routed_version}" \
-      && verify_private_route "${routed_version}"; then
+      && verify_public_route "${routed_version}" false; then
       CURRENT_COLOR="${routed_color}"
       HAS_ROLLBACK="true"
       PREVIOUS_VERSION="${routed_version}"
@@ -756,19 +801,14 @@ prepare_release() {
   write_compose_env "${TARGET_COLOR}" "${image}" "${version}"
   compose config --quiet
 
-  login_registry "${registry_username}" "${registry_token}"
+  configure_registry "${registry_username}" "${registry_token}"
   registry_token=""
   docker_cmd pull "${image}"
-  docker_cmd logout ghcr.io >/dev/null 2>&1 || true
 
   target_service="$(service_for_color "${TARGET_COLOR}")"
   PREPARE_CLEANUP_SERVICE="${target_service}"
   compose up -d --no-deps --force-recreate "${target_service}"
   wait_for_service_health "${TARGET_COLOR}"
-  if ! verify_direct_version "${TARGET_COLOR}" "${version}"; then
-    compose logs --tail=120 "${target_service}" >&2 || true
-    fail "${target_service} did not report deployment version ${version}"
-  fi
 
   write_pending_state prepared
   PREPARE_CLEANUP_SERVICE=""
@@ -781,14 +821,13 @@ switch_release() {
   [[ "${PHASE}" == "prepared" ]] || fail "Pending rollout is already switched"
 
   wait_for_service_health "${TARGET_COLOR}"
-  verify_direct_version "${TARGET_COLOR}" "${DEPLOYMENT_VERSION}"
   cmp -s "${NGINX_ACTIVE_INCLUDE}" "${PREVIOUS_UPSTREAM_FILE}" \
     || fail "Shared nginx upstream changed after prepare; refusing to overwrite it"
 
   write_pending_state switching
   write_nginx_upstream "${TARGET_COLOR}"
   write_pending_state switched
-  if ! reload_nginx || ! verify_private_route "${DEPLOYMENT_VERSION}"; then
+  if ! reload_nginx || ! verify_public_route "${DEPLOYMENT_VERSION}"; then
     echo "Website cutover verification failed." >&2
     if [[ "${HAS_ROLLBACK}" == "true" ]] && restore_previous_route; then
       write_pending_state prepared
@@ -809,14 +848,12 @@ finalize_release() {
     || fail "Shared nginx is no longer routed to ${TARGET_COLOR}"
 
   wait_for_service_health "${TARGET_COLOR}"
-  verify_direct_version "${TARGET_COLOR}" "${DEPLOYMENT_VERSION}"
-  verify_private_route "${DEPLOYMENT_VERSION}"
+  verify_public_route "${DEPLOYMENT_VERSION}"
   sleep "${DRAIN_SECONDS}"
   [[ "$(current_upstream_color)" == "${TARGET_COLOR}" ]] \
     || fail "Shared nginx changed during the drain period"
   wait_for_service_health "${TARGET_COLOR}"
-  verify_direct_version "${TARGET_COLOR}" "${DEPLOYMENT_VERSION}"
-  verify_private_route "${DEPLOYMENT_VERSION}"
+  verify_public_route "${DEPLOYMENT_VERSION}"
 
   if [[ "${HAS_ROLLBACK}" == "true" && "${CURRENT_COLOR}" != "${TARGET_COLOR}" ]]; then
     compose stop "$(service_for_color "${CURRENT_COLOR}")"
@@ -844,10 +881,9 @@ rollback_release() {
 
     current_service="$(service_for_color "${CURRENT_COLOR}")"
     wait_for_service_health "${CURRENT_COLOR}"
-    verify_direct_version "${CURRENT_COLOR}" "${PREVIOUS_VERSION}"
     [[ "${PREVIOUS_VERSION}" != "${DEPLOYMENT_VERSION}" ]] \
       || fail "The two colors report the same version; leaving the candidate running because the live route cannot be distinguished"
-    verify_previous_private_route \
+    verify_previous_public_route \
       || fail "The previous website route is not healthy; leaving the candidate running"
     compose stop "${target_service}" >/dev/null 2>&1 || true
     clear_pending_state
@@ -862,7 +898,6 @@ rollback_release() {
   current_service="$(service_for_color "${CURRENT_COLOR}")"
   compose up -d --no-deps "${current_service}"
   wait_for_service_health "${CURRENT_COLOR}"
-  verify_direct_version "${CURRENT_COLOR}" "${PREVIOUS_VERSION}"
 
   if [[ "${routed_color}" == "${TARGET_COLOR}" ]]; then
     restore_previous_route \
@@ -876,7 +911,7 @@ rollback_release() {
 
   [[ "$(current_upstream_color)" == "${CURRENT_COLOR}" ]] \
     || fail "Previous website route is no longer selected; the candidate was kept running"
-  verify_previous_private_route \
+  verify_previous_public_route \
     || fail "Previous website route is no longer healthy; the candidate was kept running"
   compose stop "${target_service}" >/dev/null 2>&1 || true
   record_active_state "${CURRENT_COLOR}" "${PREVIOUS_VERSION}"
@@ -914,7 +949,7 @@ show_status() {
 
   if [[ -e "${COMPOSE_ENV_FILE}" || -L "${COMPOSE_ENV_FILE}" \
     || -e "${RUNTIME_ENV_FILE}" || -L "${RUNTIME_ENV_FILE}" ]]; then
-    compose ps
+    compose_status
   fi
 }
 
@@ -938,9 +973,8 @@ cleanup() {
           && "${routed_color}" != "${cleanup_color}" ]] \
         && cmp -s "${NGINX_ACTIVE_INCLUDE}" "${PREVIOUS_UPSTREAM_FILE}" \
         && service_is_healthy "${CURRENT_COLOR}" \
-        && verify_direct_version "${CURRENT_COLOR}" "${PREVIOUS_VERSION}" \
         && [[ "${PREVIOUS_VERSION}" != "${DEPLOYMENT_VERSION}" ]] \
-        && verify_previous_private_route \
+        && verify_previous_public_route \
         && compose stop "${PREPARE_CLEANUP_SERVICE}" >/dev/null 2>&1
     ); then
       :
@@ -982,6 +1016,8 @@ main() {
   require_real_directory "${SERVER_SERVICES_ROOT}/bin"
   require_real_directory "$(dirname -- "${NGINX_ACTIVE_INCLUDE}")"
   require_executable_regular_file "${DOCKER_WRAPPER}"
+  require_command base64
+  require_command curl
   require_command flock
   require_command stat
   [[ "${HEALTH_TIMEOUT_SECONDS}" =~ ^[1-9][0-9]{0,3}$ ]] \

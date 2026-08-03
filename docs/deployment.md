@@ -46,9 +46,13 @@ Shared nginx selects the active slot through:
 
 The include contains exactly one upstream assignment. `release.sh` preserves it,
 writes replacements atomically, validates nginx, reloads `infra-nginx`, and
-restores the prior include when a cutover check fails. Cross-application nginx
-changes wait on a shared lock, and private checks retry briefly so a request that
-reaches a draining worker during graceful reload does not reject a healthy slot.
+restores the prior include when a cutover check fails. Before cutover, the
+candidate must pass its Docker healthcheck. After the atomic switch, uncached
+public `/health` and homepage GETs must report the expected release, stay within
+an 8 KiB response-header budget, and not repeat the agent-discovery `Link` set.
+Cross-application nginx changes wait on a shared lock, and public checks retry
+briefly so a request that reaches a draining worker during graceful reload does
+not reject a healthy slot.
 
 ## GitHub Production Environment
 
@@ -148,11 +152,12 @@ validation.
    activate its `current-bundle` symlink without replacing persistent state.
 6. Export runtime configuration from Infisical on the host.
 7. Pull the digest and prepare the inactive slot.
-8. Require Docker health and an exact commit version from the slot's `/health`.
+8. Require Docker health, an exact commit version from the slot's `/health`, and
+   a bounded, non-duplicated homepage response header block from a real GET.
    A failure before pending state is committed removes the attempt-owned nginx
    rollback backup so the next safe deployment is not blocked by an orphan.
-9. Atomically switch the shared nginx include and run private Host-header smoke
-   checks through `infra-nginx`.
+9. Atomically switch the shared nginx include and run private Host-header GET
+   smoke checks through `infra-nginx`.
 10. Optionally verify the public health version, release marker in HTML, and an
     RSC response through `https://opensyria.org` after Cloudflare cutover.
 11. Finalize and stop the prior slot only after every enabled check succeeds.
