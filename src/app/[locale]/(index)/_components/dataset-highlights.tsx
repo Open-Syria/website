@@ -103,14 +103,13 @@ export async function DatasetHighlights({ locale }: DatasetHighlightsProps) {
 
                   <NextLink
                     className={buttonVariants({
-                      className:
-                        "mt-5 h-auto min-h-10 w-full whitespace-normal py-2 text-center",
+                      className: "mt-5 w-full",
                       size: "lg",
                       variant: "outline",
                     })}
                     href={datasetHref}
                   >
-                    {t("openDataset")}: {dataset.title[locale]}
+                    {t("openDataset")}
                     <ArrowUpRight
                       aria-hidden="true"
                       className="rtl-icon-mirror"
