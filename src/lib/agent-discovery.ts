@@ -88,6 +88,7 @@ OpenSyria exposes public, read-only API access for Syrian datasets.
 
 Use these resources:
 
+- Developer guide: ${siteConfig.url}/api
 - API documentation: ${siteLinks.docs}
 - OpenAPI description: ${siteLinks.openApi}
 - API health: ${siteLinks.datasetsApi}/health
@@ -112,6 +113,7 @@ Start here:
 - Universities dataset: ${siteConfig.url}/datasets/universities
 - Transport dataset: ${siteConfig.url}/datasets/transport
 - Telecom dataset: ${siteConfig.url}/datasets/telecom
+- Developer API guide: ${siteConfig.url}/api
 - GitHub organization: ${siteLinks.githubOrganization}
 - API documentation: ${siteLinks.docs}
 `
@@ -142,6 +144,7 @@ ${siteConfig.defaultDescription}
 
 ## Agent Discovery
 
+- [Developer API guide](${siteConfig.url}/api)
 - [API catalog](${siteConfig.url}/.well-known/api-catalog)
 - [Agent skills](${siteConfig.url}/.well-known/agent-skills/index.json)
 - [API documentation](${siteLinks.docs})

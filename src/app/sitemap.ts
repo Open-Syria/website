@@ -10,31 +10,25 @@ import {
 } from "@/lib/datasets"
 
 type SitemapRoute = {
-  changeFrequency: MetadataRoute.Sitemap[number]["changeFrequency"]
-  getLastModified?: () => Date
   getPath: (locale: Locale) => string
-  priority: number
+  lastModified?: Date
 }
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const datasets = await getDatasetCatalog()
-  const defaultLastModified = new Date()
   const routes: SitemapRoute[] = [
     {
-      changeFrequency: "weekly",
       getPath: getLocalizedPath,
-      priority: 1,
     },
     {
-      changeFrequency: "weekly",
       getPath: getDatasetsPath,
-      priority: 0.95,
+    },
+    {
+      getPath: (locale) => getLocalizedPath(locale, "api"),
     },
     ...datasets.map((dataset) => ({
-      changeFrequency: "weekly" as const,
-      getLastModified: () => getDateOrFallback(dataset.updatedAt),
       getPath: (locale: Locale) => getDatasetPath(locale, dataset.slug),
-      priority: 0.9,
+      lastModified: getValidDate(dataset.updatedAt),
     })),
   ]
 
@@ -53,23 +47,18 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       alternates: {
         languages,
       },
-      changeFrequency: route.changeFrequency,
-      lastModified: route.getLastModified?.() ?? defaultLastModified,
-      priority:
-        locale === routing.defaultLocale
-          ? route.priority
-          : route.priority - 0.05,
+      ...(route.lastModified ? { lastModified: route.lastModified } : {}),
       url: getAbsoluteUrl(route.getPath(locale)),
     }))
   })
 }
 
-function getDateOrFallback(value: string | null) {
+function getValidDate(value: string | null) {
   if (!value) {
-    return new Date()
+    return undefined
   }
 
   const date = new Date(value)
 
-  return Number.isNaN(date.getTime()) ? new Date() : date
+  return Number.isNaN(date.getTime()) ? undefined : date
 }

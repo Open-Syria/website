@@ -35,17 +35,6 @@ export const metadata: Metadata = {
   },
   publisher: siteConfig.name,
   referrer: "origin-when-cross-origin",
-  robots: {
-    follow: true,
-    googleBot: {
-      follow: true,
-      index: true,
-      "max-image-preview": "large",
-      "max-snippet": -1,
-      "max-video-preview": -1,
-    },
-    index: true,
-  },
   title: {
     default: siteConfig.defaultTitle,
     template: `%s | ${siteConfig.name}`,
@@ -136,7 +125,6 @@ export default async function LocaleLayout({
     <html
       lang={locale}
       dir={direction}
-      data-dpl-id={process.env.DEPLOYMENT_VERSION ?? "development"}
       suppressHydrationWarning
       className={cn(
         "antialiased",

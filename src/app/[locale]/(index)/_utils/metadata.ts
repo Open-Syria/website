@@ -1,7 +1,12 @@
 import type { Metadata } from "next"
 
 import { routing } from "@/i18n/routing"
-import { getLocalePath, siteConfig, socialPreviewImages } from "@/lib/site"
+import {
+  getLocalePath,
+  indexableRobots,
+  siteConfig,
+  socialPreviewImages,
+} from "@/lib/site"
 import { type LocalePageProps, resolveLocale } from "./locale"
 
 async function generateMetadata({
@@ -18,7 +23,6 @@ async function generateMetadata({
       languages: getAlternateLanguages(),
     },
     description: seo.description,
-    keywords: [...siteConfig.keywords],
     metadataBase: new URL(siteConfig.url),
     openGraph: {
       alternateLocale: routing.locales
@@ -32,6 +36,7 @@ async function generateMetadata({
       type: "website",
       url: pageUrl,
     },
+    robots: indexableRobots,
     title: {
       absolute: seo.title,
     },

@@ -6,7 +6,7 @@
 
 Public website for [OpenSyria](https://opensyria.org), a public data commons for reliable Syrian datasets, API access, and civic intelligence.
 
-The website is intentionally small: a localized landing page, dataset catalog and detail pages, FAQ content, SEO metadata, breadcrumb navigation and structured data, social images, contributor attribution, theme and language controls, and links into the public API documentation and GitHub organization.
+The website is intentionally focused: a localized landing page, dataset catalog and detail pages, a developer API guide, FAQ content, SEO metadata, breadcrumb navigation and structured data, social images, contributor attribution, theme and language controls, and links into the public API documentation and GitHub organization.
 
 ## Public URLs
 
@@ -18,6 +18,7 @@ The website is intentionally small: a localized landing page, dataset catalog an
 | <https://opensyria.org/datasets/universities> | Universities dataset page |
 | <https://opensyria.org/datasets/transport> | Transport dataset page |
 | <https://opensyria.org/datasets/telecom> | Telecom dataset page |
+| <https://opensyria.org/api> | Syrian data API guide for developers |
 | <https://api.opensyria.org/docs> | API documentation |
 | <https://github.com/Open-Syria> | GitHub organization |
 
@@ -27,6 +28,9 @@ The site publishes public, read-only discovery metadata for agents:
 
 - `/llms.txt` and `/index.md` describe the project and link to the main public resources.
 - `/auth.md` explains that public website and dataset API access does not require registration, OAuth, API keys, or credentials.
+- These machine-readable discovery documents use `X-Robots-Tag: noindex, follow`
+  so search engines can follow their links without treating them as duplicate
+  landing pages.
 - `/.well-known/api-catalog` links to the public API documentation, OpenAPI
   description, health endpoint, and the shared geography, universities,
   transport, and telecom discovery list.
@@ -117,6 +121,8 @@ values. The host-side Infisical `/website` export mirrors those values plus
 The site supports English and Arabic.
 
 - English is the default locale and renders at `/`.
+- Explicit `/en` URLs permanently redirect to the equivalent canonical,
+  unprefixed English URL.
 - Arabic renders at `/ar`.
 - Locale prefixes use next-intl `as-needed` routing.
 - The HTML `dir` attribute and Base UI `DirectionProvider` are both driven from `src/i18n/routing.ts`.
