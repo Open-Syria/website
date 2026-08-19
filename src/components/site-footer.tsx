@@ -55,18 +55,9 @@ export async function SiteFooter({ locale }: SiteFooterProps) {
                   </Link>
                 </li>
                 <li>
-                  <a
-                    className={footerLinkClassName}
-                    href={siteLinks.docs}
-                    rel={trustedExternalLinkRel}
-                    target="_blank"
-                  >
+                  <Link className={footerLinkClassName} href="/api">
                     {t("apiDocs")}
-                    <ArrowUpRight
-                      aria-hidden="true"
-                      className="rtl-icon-mirror size-3.5"
-                    />
-                  </a>
+                  </Link>
                 </li>
                 <li>
                   <a

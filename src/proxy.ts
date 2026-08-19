@@ -28,6 +28,12 @@ const trackingSearchParamNames = new Set([
 const trackingSearchParamPrefixes = ["utm_", "hsa_", "mtm_", "pk_"] as const
 
 export default function proxy(request: NextRequest) {
+  const canonicalEnglishUrl = getCanonicalEnglishUrl(request)
+
+  if (canonicalEnglishUrl) {
+    return NextResponse.redirect(canonicalEnglishUrl, 308)
+  }
+
   const cleanUrl = getCleanTrackingUrl(request)
 
   if (cleanUrl) {
@@ -46,8 +52,27 @@ export default function proxy(request: NextRequest) {
   return intlMiddleware(request)
 }
 
+function getCanonicalEnglishUrl(request: NextRequest) {
+  const pathname = request.nextUrl.pathname
+
+  if (pathname !== "/en" && !pathname.startsWith("/en/")) {
+    return null
+  }
+
+  const url = request.nextUrl.clone()
+  url.pathname = pathname.slice(3) || "/"
+  removeTrackingSearchParams(url)
+
+  return url
+}
+
 function getCleanTrackingUrl(request: NextRequest) {
   const url = request.nextUrl.clone()
+
+  return removeTrackingSearchParams(url) ? url : null
+}
+
+function removeTrackingSearchParams(url: { searchParams: URLSearchParams }) {
   let hasTrackingParam = false
 
   for (const param of [...url.searchParams.keys()]) {
@@ -59,7 +84,7 @@ function getCleanTrackingUrl(request: NextRequest) {
     }
   }
 
-  return hasTrackingParam ? url : null
+  return hasTrackingParam
 }
 
 function isTrackingSearchParam(param: string) {
@@ -89,5 +114,5 @@ function appendHeader(response: NextResponse, name: string, value: string) {
 }
 
 export const config = {
-  matcher: "/((?!api|trpc|health|_next|_vercel|.*\\..*).*)",
+  matcher: "/((?!trpc|health|_next|_vercel|.*\\..*).*)",
 }

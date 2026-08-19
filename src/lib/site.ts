@@ -1,3 +1,5 @@
+import type { Metadata } from "next"
+
 const brandAssetVersion = "20260704-brand-wordmark"
 const productionSiteUrl = "https://opensyria.org"
 const siteUrl =
@@ -7,60 +9,21 @@ export const siteConfig = {
   name: "OpenSyria",
   url: siteUrl,
   logo: `${siteUrl}/web-app-manifest-512x512.png?v=${brandAssetVersion}`,
-  defaultTitle: "OpenSyria | Syrian Datasets, Maps and Research Data",
+  defaultTitle: "OpenSyria | Open, Source-Backed Data About Syria",
   defaultDescription:
-    "OpenSyria publishes source-backed Syrian datasets for cities, governorates, universities, transport, telecom, maps, research, journalism, civic tools, and Syria-focused apps.",
-  keywords: [
-    "OpenSyria",
-    "Syria data",
-    "Syrian datasets",
-    "Syria data for developers",
-    "Syrian cities dataset",
-    "Syrian cities data",
-    "Syrian cities CSV",
-    "Syria governorates dataset",
-    "Syria districts data",
-    "Syria subdistricts",
-    "Syria localities",
-    "Syrian administrative divisions",
-    "Syrian universities dataset",
-    "Syrian universities data",
-    "Syrian university rankings",
-    "Syrian higher education data",
-    "Syrian transport dataset",
-    "Syria transport data",
-    "Syria airports dataset",
-    "Syria border crossings data",
-    "Syria ports data",
-    "Syrian telecom dataset",
-    "Syria telecom numbering data",
-    "Syria mobile prefixes",
-    "Syria maps data",
-    "Syria app data",
-    "Syria CSV data",
-    "Syria JSON data",
-    "open data Syria",
-    "civic intelligence",
-    "public data commons",
-    "بيانات سوريا",
-    "بيانات سورية",
-    "بيانات المدن السورية",
-    "بيانات المحافظات السورية",
-    "بيانات الجامعات السورية",
-    "تصنيفات الجامعات السورية",
-  ],
+    "OpenSyria is a public data commons for reliable Syrian geography, universities, transport, and telecom data, with downloads, APIs, and cited sources.",
   locales: {
     ar: {
       description:
-        "OpenSyria تنشر بيانات سورية موثقة للمدن والمحافظات والمناطق والجامعات، مع تنزيلات JSON وCSV ومراجع للخرائط والبحث والصحافة.",
+        "OpenSyria مشروع بيانات عامة ينشر بيانات سورية موثقة للجغرافيا والجامعات والنقل والاتصالات، مع تنزيلات وواجهات API ومصادر مرجعية.",
       ogLocale: "ar_SY",
-      title: "OpenSyria | بيانات سورية للمدن والجامعات والخرائط",
+      title: "OpenSyria | بيانات سورية مفتوحة وموثقة بالمصادر",
     },
     en: {
       description:
-        "OpenSyria publishes source-backed Syrian datasets for cities, governorates, universities, transport, telecom, maps, research, journalism, civic tools, and Syria-focused apps.",
+        "OpenSyria is a public data commons for reliable Syrian geography, universities, transport, and telecom data, with downloads, APIs, and cited sources.",
       ogLocale: "en_US",
-      title: "OpenSyria | Syrian Datasets, Maps and Research Data",
+      title: "OpenSyria | Open, Source-Backed Data About Syria",
     },
   },
 } as const
@@ -83,6 +46,18 @@ export const organizationSameAsLinks = [
   siteLinks.githubOrganization,
   siteLinks.linkedIn,
 ] as const
+
+export const indexableRobots = {
+  follow: true,
+  googleBot: {
+    follow: true,
+    index: true,
+    "max-image-preview": "large",
+    "max-snippet": -1,
+    "max-video-preview": -1,
+  },
+  index: true,
+} as const satisfies Metadata["robots"]
 
 export const socialPreviewImages = {
   openGraph: {

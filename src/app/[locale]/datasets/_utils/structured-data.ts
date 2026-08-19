@@ -36,7 +36,7 @@ const catalogStructuredDataText: Record<
 > = {
   ar: {
     description:
-      "فهرس OpenSyria لبيانات المدن والمحافظات والمناطق والمحلات والجامعات السورية، مع ملفات JSON وCSV للخرائط والبحث والصحافة.",
+      "فهرس OpenSyria لبيانات المدن والمحافظات والمناطق والجامعات والنقل والاتصالات في سوريا، مع ملفات JSON وCSV وواجهات API للبحث والتطوير.",
     title: "بيانات سورية للخرائط والبحث والتنزيل",
   },
   en: {
@@ -141,7 +141,7 @@ function getDatasetJsonLd({
     includedInDataCatalog: schemaReference(catalogId),
     inLanguage: ["en", "ar"],
     isAccessibleForFree: true,
-    keywords: dataset.keywords,
+    keywords: dataset.keywords[locale],
     license: getDatasetLicenseJsonLd(dataset),
     name: dataset.title[locale],
     publisher: schemaReference(organizationJsonLdId),
