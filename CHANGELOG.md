@@ -15,6 +15,16 @@
 * honor `[skip ci]` consistently in the website CI workflow
 * update Next.js and the dependency graph to patched releases and enforce a full audit in verification
 
+## [0.5.1](https://github.com/Open-Syria/website/compare/v0.5.0...v0.5.1) (2026-08-19)
+
+
+### Bug Fixes
+
+* preserve GitHub metadata fallback during builds ([2eef306](https://github.com/Open-Syria/website/commit/2eef30626d0a88609c3599c175988b04eed37828))
+* preserve GitHub metadata fallback during builds ([c14a89f](https://github.com/Open-Syria/website/commit/c14a89fb814f77f06b369400ed02f9b45408ec71))
+* prevent dataset card action overflow ([e112ffd](https://github.com/Open-Syria/website/commit/e112ffd58fec94e654cc38ef980206921135d576))
+* prevent dataset card action overflow ([fcd7014](https://github.com/Open-Syria/website/commit/fcd701496c168da5ebff50a166ec8ed9fc7306be))
+
 ## [0.5.0](https://github.com/Open-Syria/website/compare/v0.4.1...v0.5.0) (2026-08-19)
 
 
