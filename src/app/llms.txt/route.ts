@@ -9,6 +9,7 @@ export function GET() {
       "Cache-Control": "public, max-age=3600",
       "Content-Type": "text/plain; charset=utf-8",
       Link: agentDiscoveryLinkHeader,
+      "X-Robots-Tag": "noindex, follow",
     },
   })
 }

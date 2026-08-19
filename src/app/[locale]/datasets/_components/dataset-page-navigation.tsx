@@ -1,6 +1,6 @@
 "use client"
 
-import { BookOpenText } from "lucide-react"
+import { Braces } from "lucide-react"
 
 import {
   NavigationMenu,
@@ -10,18 +10,15 @@ import {
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu"
 import { Link } from "@/i18n/navigation"
-import { trustedExternalLinkRel } from "@/lib/links"
 
 type DatasetPageNavigationProps = {
-  apiDocsHref: string
-  apiDocsLabel: string
+  apiGuideLabel: string
   ariaLabel: string
   openDataLabel: string
 }
 
 export function DatasetPageNavigation({
-  apiDocsHref,
-  apiDocsLabel,
+  apiGuideLabel,
   ariaLabel,
   openDataLabel,
 }: DatasetPageNavigationProps) {
@@ -39,16 +36,10 @@ export function DatasetPageNavigation({
         <NavigationMenuItem>
           <NavigationMenuLink
             className={navigationMenuTriggerStyle()}
-            render={
-              <a
-                href={apiDocsHref}
-                rel={trustedExternalLinkRel}
-                target="_blank"
-              />
-            }
+            render={<Link href="/api" />}
           >
-            <BookOpenText aria-hidden="true" />
-            {apiDocsLabel}
+            <Braces aria-hidden="true" />
+            {apiGuideLabel}
           </NavigationMenuLink>
         </NavigationMenuItem>
       </NavigationMenuList>

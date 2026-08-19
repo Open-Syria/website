@@ -71,7 +71,12 @@ export async function DatasetCatalogPage({
                       {dataset.repositoryName}
                     </p>
                     <h3 className="mt-2 text-balance font-heading font-semibold text-2xl leading-tight">
-                      {dataset.title[locale]}
+                      <Link
+                        className="rounded-sm transition hover:text-primary focus-visible:outline-none focus-visible:ring-3 focus-visible:ring-ring/50"
+                        href={`/datasets/${dataset.slug}`}
+                      >
+                        {dataset.title[locale]}
+                      </Link>
                     </h3>
                   </div>
                   <Database
@@ -110,10 +115,14 @@ export async function DatasetCatalogPage({
 
                   <div className="mt-6 flex flex-wrap gap-2">
                     <Link
-                      className={buttonVariants({ size: "lg" })}
+                      className={buttonVariants({
+                        className:
+                          "h-auto min-h-10 whitespace-normal py-2 text-center",
+                        size: "lg",
+                      })}
                       href={`/datasets/${dataset.slug}`}
                     >
-                      {t("openDataset")}
+                      {t("openDataset")}: {dataset.title[locale]}
                       <ArrowUpRight
                         aria-hidden="true"
                         className="rtl-icon-mirror"

@@ -1,4 +1,4 @@
-import { ArrowUpRight, BookOpenText, Database, Star } from "lucide-react"
+import { Braces, Database, Star } from "lucide-react"
 import { cacheLife } from "next/cache"
 import Image from "next/image"
 import NextLink from "next/link"
@@ -107,19 +107,15 @@ export async function LandingHero({ locale }: LandingHeroProps) {
               <TrackedLink
                 className={buttonVariants({ size: "lg", variant: "outline" })}
                 gtmEvent={{
-                  cta_href: siteLinks.docs,
-                  cta_id: "docs",
+                  cta_href: "/api",
+                  cta_id: "api_guide",
                   cta_label: t("docs"),
                   event: "cta_click",
                 }}
-                href={siteLinks.docs}
-                prefetch={false}
-                rel={trustedExternalLinkRel}
-                target="_blank"
+                href="/api"
               >
-                <BookOpenText aria-hidden="true" />
+                <Braces aria-hidden="true" />
                 {t("docs")}
-                <ArrowUpRight aria-hidden="true" className="rtl-icon-mirror" />
               </TrackedLink>
               <TrackedLink
                 className={buttonVariants({ size: "lg", variant: "outline" })}

@@ -5,11 +5,10 @@ import { type Locale, routing } from "@/i18n/routing"
 import {
   getAbsoluteUrl,
   getDatasetBySlug,
-  getDatasetCatalog,
   getDatasetPath,
   getDatasetsPath,
 } from "@/lib/datasets"
-import { siteConfig, socialPreviewImages } from "@/lib/site"
+import { indexableRobots, siteConfig, socialPreviewImages } from "@/lib/site"
 import {
   type DatasetParams,
   type LocaleParams,
@@ -20,12 +19,12 @@ import {
 const catalogSeo: Record<Locale, { description: string; title: string }> = {
   ar: {
     description:
-      "تصفح بيانات OpenSyria للمدن والمحافظات والمناطق والمحلات والجامعات السورية، مع ملفات JSON وCSV للخرائط والبحث والصحافة.",
+      "تصفح بيانات OpenSyria للمدن والمحافظات والمناطق والجامعات والنقل والاتصالات في سوريا، مع ملفات JSON وCSV وواجهات API للبحث والتطوير.",
     title: "بيانات سورية للخرائط والبحث والتنزيل",
   },
   en: {
     description:
-      "Browse OpenSyria datasets for Syrian cities, governorates, districts, localities, universities, transport, telecom, maps, research, journalism, and JSON/CSV downloads.",
+      "Browse source-backed Syrian datasets for cities, governorates, localities, universities, transport, and telecom, with JSON/CSV downloads and API access.",
     title: "Syrian Datasets for Maps, Research and Downloads",
   },
 }
@@ -36,7 +35,6 @@ async function generateDatasetCatalogMetadata({
   params: LocaleParams
 }): Promise<Metadata> {
   const locale = await resolvePageLocale(params)
-  const datasets = await getDatasetCatalog()
   const seo = catalogSeo[locale]
   const pageUrl = getAbsoluteUrl(getDatasetsPath(locale))
 
@@ -48,10 +46,6 @@ async function generateDatasetCatalogMetadata({
       ),
     },
     description: seo.description,
-    keywords: getUniqueKeywords([
-      ...siteConfig.keywords,
-      ...datasets.flatMap((dataset) => dataset.keywords),
-    ]),
     metadataBase: new URL(siteConfig.url),
     openGraph: {
       alternateLocale: routing.locales
@@ -65,6 +59,7 @@ async function generateDatasetCatalogMetadata({
       type: "website",
       url: pageUrl,
     },
+    robots: indexableRobots,
     title: {
       absolute: `${seo.title} | ${siteConfig.name}`,
     },
@@ -101,7 +96,6 @@ async function generateDatasetMetadata({
       ),
     },
     description,
-    keywords: getUniqueKeywords([...siteConfig.keywords, ...dataset.keywords]),
     metadataBase: new URL(siteConfig.url),
     openGraph: {
       alternateLocale: routing.locales
@@ -115,6 +109,7 @@ async function generateDatasetMetadata({
       type: "website",
       url: pageUrl,
     },
+    robots: indexableRobots,
     title: {
       absolute: `${title} | ${siteConfig.name}`,
     },
@@ -134,10 +129,6 @@ function getAlternateLanguages(getPath: (locale: Locale) => string) {
     ),
     "x-default": getAbsoluteUrl(getPath(routing.defaultLocale)),
   }
-}
-
-function getUniqueKeywords(keywords: readonly string[]) {
-  return Array.from(new Set(keywords))
 }
 
 export { generateDatasetCatalogMetadata, generateDatasetMetadata }
