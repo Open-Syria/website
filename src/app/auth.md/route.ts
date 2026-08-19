@@ -34,6 +34,7 @@ For questions about usage, contact info@opensyria.org.
       "Cache-Control": "public, max-age=3600",
       "Content-Type": "text/markdown; charset=utf-8",
       Link: agentDiscoveryLinkHeader,
+      "X-Robots-Tag": "noindex, follow",
     },
   })
 }

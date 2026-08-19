@@ -5,6 +5,16 @@ import { getLocalePath, siteConfig, siteLinks } from "@/lib/site"
 
 type LocalizedText = Record<Locale, string>
 
+type LocalizedList = Record<Locale, readonly string[]>
+
+type DatasetDetails = {
+  coverage: LocalizedText
+  intendedUses: LocalizedList
+  limitations: LocalizedText
+  provenance: LocalizedText
+  releaseContext: LocalizedText
+}
+
 type DatasetRecordGroup = {
   count: number
   name: LocalizedText
@@ -21,10 +31,11 @@ export type DatasetCatalogItem = {
   apiRoutes: readonly string[]
   category: string
   description: LocalizedText
+  details: DatasetDetails | null
   distributions: readonly DatasetDistribution[]
   formats: readonly string[]
   id: string
-  keywords: readonly string[]
+  keywords: LocalizedList
   apiDocsUrl: string
   licenseUrl: string
   openApiUrl: string
@@ -44,7 +55,8 @@ export type DatasetSlug = string
 type DatasetDescriptor = {
   apiRoutes?: readonly string[]
   description?: LocalizedText
-  keywords?: readonly string[]
+  details?: DatasetDetails
+  keywords?: LocalizedList
   recordGroupLabels?: Record<string, LocalizedText>
   recordGroupOrder?: readonly string[]
   repository?: string
@@ -119,6 +131,7 @@ type ReleaseData = {
 
 const GITHUB_API_BASE = "https://api.github.com"
 const RELEASE_MANIFEST_FILE = "release-manifest.json"
+const emptyLocalizedList: LocalizedList = { ar: [], en: [] }
 
 const datasetApiRoutes = {
   geography: [
@@ -160,26 +173,60 @@ const datasetDescriptors = [
       ar: "حمّل بيانات المدن والمحافظات والمناطق والنواحي والبلدات والقرى والمحلات السورية مع الإحداثيات وملفات JSON وCSV للخرائط والبحث.",
       en: "Download Syrian cities, governorates, districts, subdistricts, towns, villages, localities, coordinates, and JSON/CSV files for maps and research.",
     },
-    keywords: [
-      "Syrian cities dataset",
-      "Syrian cities CSV",
-      "Syrian cities JSON",
-      "Syria governorates",
-      "Syria governorates dataset",
-      "Syria districts",
-      "Syria districts data",
-      "Syria subdistricts",
-      "Syria localities",
-      "Syrian towns and villages",
-      "Syrian administrative divisions",
-      "Syria places CSV",
-      "Syria maps data",
-      "بيانات المدن السورية",
-      "بيانات المحافظات السورية",
-      "محافظات سوريا",
-      "مناطق سوريا",
-      "نواحي سوريا",
-    ],
+    details: {
+      coverage: {
+        ar: "تغطي البيانات المرجعية الإدارية المحافظات والمناطق والنواحي والمحلات، بما فيها المدن والبلدات والقرى وغيرها من التجمعات السكانية. وقد يتضمن السجل أسماء عربية وإنجليزية، وروابط التسلسل الإداري، والمراكز الجغرافية، والمساحة، وقياسات سكانية مؤرخة، ومعرفات عامة عندما يدعمها مصدر قابل لإعادة الاستخدام.",
+        en: "Administrative reference data spans governorates, districts, subdistricts, and localities, including cities, towns, villages, and other populated places. Records may include Arabic and English names, hierarchy links, centroids, area, dated population measurements, and public identifiers when a reusable source supports them.",
+      },
+      intendedUses: {
+        ar: [
+          "توحيد أسماء الأماكن السورية والعلاقات بين مستوياتها الإدارية.",
+          "ربط مجموعات البيانات العامة باستخدام معرفات OpenSyria أو P-code أو GeoNames أو Wikidata أو geoBoundaries عند توفرها.",
+          "إنشاء خرائط بحثية وأدلة وأدوات بحث وتحليلات صحفية اعتمادًا على بيانات مرجعية قابلة للتنزيل.",
+        ],
+        en: [
+          "Normalize Syrian place names and administrative relationships.",
+          "Join public datasets through stable OpenSyria, P-code, GeoNames, Wikidata, or geoBoundaries identifiers when present.",
+          "Build research maps, search tools, directories, and journalistic analyses from downloadable reference data.",
+        ],
+      },
+      limitations: {
+        ar: "هذه بيانات مرجعية، وليست خريطة مباشرة أو ضمانًا للاكتمال. قد تغيب بعض الأسماء البديلة أو الإحداثيات أو المساحة أو السكان أو المعرفات الخارجية. القيم السكانية قياسات تاريخية يجب قراءتها مع سنة المصدر، ولا تتضمن سجلات المحلات حاليًا بيانات سكانية.",
+        en: "This is reference data, not a live map or a guarantee of completeness. Optional names, aliases, coordinates, area, population, and external IDs can be missing. Subnational population values are historical measurements that must be read with their source year, and locality records do not currently include population.",
+      },
+      provenance: {
+        ar: "تُجمع السجلات من مصادر عامة معتمدة، منها HDX/OCHA وgeoBoundaries وGeoNames وWikidata وجداول مكتب الإحصاء الأميركي المنشورة عبر HDX. يربط كل سجل معرفات المصادر بمراجع مؤرخة، وتتحقق الاختبارات الآلية من التسلسل الإداري ونسب المصادر.",
+        en: "Records are compiled from approved public sources including HDX/OCHA, geoBoundaries, GeoNames, Wikidata, and U.S. Census Bureau tables distributed through HDX. Each record connects source IDs to dated source references, while automated validation checks hierarchy and attribution.",
+      },
+      releaseContext: {
+        ar: "تُتحقق البيانات الأساسية بصيغة JSON آليًا، ثم تُحول إلى إصدارات مرقمة بصيغ JSON وNDJSON وCSV وSQL وYAML وXML. ملفات الإصدار المنشور ثابتة، وتصدر التصحيحات في نسخة جديدة. تحتفظ قيم السكان بسنة مصدرها حتى لا تُعرض القياسات التاريخية بوصفها تقديرات حالية.",
+        en: "Canonical JSON is validated and converted into versioned JSON, NDJSON, CSV, SQL, YAML, and XML artifacts. Published release assets are immutable; fixes are issued in a new tagged release. Population values retain their source year so historical measurements are not presented as current estimates.",
+      },
+    },
+    keywords: {
+      ar: [
+        "بيانات المدن السورية",
+        "بيانات المحافظات السورية",
+        "محافظات سوريا",
+        "مناطق سوريا",
+        "نواحي سوريا",
+      ],
+      en: [
+        "Syrian cities dataset",
+        "Syrian cities CSV",
+        "Syrian cities JSON",
+        "Syria governorates",
+        "Syria governorates dataset",
+        "Syria districts",
+        "Syria districts data",
+        "Syria subdistricts",
+        "Syria localities",
+        "Syrian towns and villages",
+        "Syrian administrative divisions",
+        "Syria places CSV",
+        "Syria maps data",
+      ],
+    },
     recordGroupLabels: {
       districts: { ar: "منطقة", en: "Districts" },
       governorates: { ar: "محافظة", en: "Governorates" },
@@ -218,28 +265,62 @@ const datasetDescriptors = [
       ar: "حمّل بيانات الجامعات السورية: الجامعات العامة والخاصة، المعاهد العليا، المواقع الرسمية، المحافظات، التصنيفات، وملفات JSON وCSV.",
       en: "Download Syrian university and higher education data with public and private universities, locations, official websites, rankings, and JSON/CSV files.",
     },
-    keywords: [
-      "Syrian universities dataset",
-      "Syria universities",
-      "Syrian universities list",
-      "Syrian higher education data",
-      "Syrian university rankings",
-      "Syria public universities",
-      "Syria private universities",
-      "Syria universities CSV",
-      "Syria universities JSON",
-      "Damascus University data",
-      "Syrian higher education dataset",
-      "Syrian university data download",
-      "جامعات سوريا",
-      "بيانات الجامعات السورية",
-      "قائمة الجامعات السورية",
-      "الجامعات الحكومية السورية",
-      "الجامعات الخاصة السورية",
-      "تصنيفات الجامعات السورية",
-      "بيانات التعليم العالي السوري",
-      "تحميل بيانات الجامعات السورية",
-    ],
+    details: {
+      coverage: {
+        ar: "تشمل الملفات التعريفية الجامعات العامة والخاصة والافتراضية والمؤسسات التقنية والمعاهد العليا الواقعة ضمن نطاق الإنتاج المعتمد. وبحسب توفر المصادر، قد يتضمن الملف أسماء باللغتين، ونوع المؤسسة، وسنة التأسيس، والموقع الرسمي، والمكان العام، ومعرفات خارجية، وشعارًا معتمدًا، ولقطات تصنيف مؤرخة.",
+        en: "Profiles cover public, private, virtual, and technical or higher institutions within the approved production scope. Depending on available sources, a profile may include bilingual names, type, founding year, official website, public location, external IDs, an approved logo asset, and dated ranking snapshots.",
+      },
+      intendedUses: {
+        ar: [
+          "إنشاء أدلة موحدة للجامعات والمعاهد السورية بأسمائها ومعرفاتها العامة.",
+          "دراسة التوزع الجغرافي وأنواع المؤسسات بالاعتماد على الحقائق العامة المتاحة.",
+          "استخدام لقطات التصنيف المؤرخة في البحث مع الاحتفاظ باسم المزود وسنة اللقطة.",
+        ],
+        en: [
+          "Create normalized directories of Syrian universities and higher institutes with public names and identifiers.",
+          "Study the public geographic distribution and institution types represented in the approved scope.",
+          "Use dated ranking snapshots in research while retaining the provider name and snapshot year.",
+        ],
+      },
+      limitations: {
+        ar: "تبقى حالة التشغيل غير مؤكدة في الملفات الحالية، وقد تغيب بعض المواقع الرسمية أو معرفات Wikidata أو الإحداثيات الموثقة. تغطية التصنيفات جزئية ومرتبطة بزمن ومزود محددين، ولا يجب اعتبارها تقييمًا شاملًا أو آنيًا للجودة. لا تتضمن البيانات سجلات للطلاب أو العاملين.",
+        en: "Operating status remains unconfirmed in the current profiles, and some official websites, Wikidata IDs, or source-backed centroids are missing. Ranking coverage is partial and time-specific; it must not be treated as a complete or current quality assessment. The dataset contains no student or staff records.",
+      },
+      provenance: {
+        ar: "يجب أن تكون المؤسسة ضمن النطاق المعتمد، وأن يؤكد هويتها مصدر عام معتمد. تستشهد السجلات بمصادر مثل المواقع الرسمية للمؤسسات، وWikidata، والأدلة المرجعية القابلة لإعادة الاستخدام، ومزودي التصنيفات المسمّين. ويقترن كل مصدر بمرجع مؤرخ على مستوى السجل.",
+        en: "An institution must fall within the approved scope and be confirmed by an approved public source. Records cite sources such as official institution pages, Wikidata, reusable reference lists, and named ranking providers; every source is paired with a dated record-level reference.",
+      },
+      releaseContext: {
+        ar: "تُنشر هويات الجامعات وأصول الشعارات ولقطات التصنيف في ملفات منفصلة. وتبقى ملفات الكليات والبرامج فارغة عمدًا إلى أن تُراجع مصادر معتمدة قابلة لإعادة الاستخدام. ملفات النسخة المنشورة ثابتة، وتتطلب التصحيحات إصدار نسخة جديدة.",
+        en: "University identities, logo assets, and ranking snapshots are released as separate artifacts. Faculty and program artifacts remain intentionally empty until approved reusable sources are reviewed. Published version assets are immutable, and corrections require a new release.",
+      },
+    },
+    keywords: {
+      ar: [
+        "جامعات سوريا",
+        "بيانات الجامعات السورية",
+        "قائمة الجامعات السورية",
+        "الجامعات الحكومية السورية",
+        "الجامعات الخاصة السورية",
+        "تصنيفات الجامعات السورية",
+        "بيانات التعليم العالي السوري",
+        "تحميل بيانات الجامعات السورية",
+      ],
+      en: [
+        "Syrian universities dataset",
+        "Syria universities",
+        "Syrian universities list",
+        "Syrian higher education data",
+        "Syrian university rankings",
+        "Syria public universities",
+        "Syria private universities",
+        "Syria universities CSV",
+        "Syria universities JSON",
+        "Damascus University data",
+        "Syrian higher education dataset",
+        "Syrian university data download",
+      ],
+    },
     recordGroupLabels: {
       assets: { ar: "أصل شعار معتمد", en: "Approved logo assets" },
       rankings: { ar: "لقطة تصنيف", en: "Ranking snapshots" },
@@ -265,28 +346,62 @@ const datasetDescriptors = [
   {
     description: {
       ar: "حمّل بيانات مواقع النقل السورية: المطارات والموانئ والمعابر الحدودية ومحطات السكك والطرق، مع لقطات حالة مؤرخة وملفات JSON وCSV.",
-      en: "Download Syrian transport reference data with public airports, seaports, border crossings, road terminals, rail terminals, dated status snapshots, and JSON/CSV files.",
+      en: "Download source-backed Syrian transport data for airports, ports, border crossings, road and rail terminals, with dated status snapshots and JSON/CSV files.",
     },
-    keywords: [
-      "Syrian transport dataset",
-      "Syria transport data",
-      "Syria airports dataset",
-      "Syrian airports data",
-      "Syria ports data",
-      "Syria border crossings dataset",
-      "Syria border crossings data",
-      "Syria rail stations data",
-      "Syria road terminals",
-      "Syria transport CSV",
-      "Syria transport JSON",
-      "Syrian logistics data",
-      "Damascus airport data",
-      "Aleppo airport data",
-      "بيانات النقل السورية",
-      "مطارات سوريا",
-      "موانئ سوريا",
-      "المعابر الحدودية في سوريا",
-    ],
+    details: {
+      coverage: {
+        ar: "تغطي البيانات مواقع مرجعية عامة، منها المطارات المدنية، والموانئ، والمعابر الحدودية، ومحطات السكك الحديدية والطرق، مع إحداثيات ومعرفات عامة موثقة. وتُنشر ملاحظات الحالة والمسار على شكل لقطات تاريخية منفصلة عن هوية الموقع الثابتة.",
+        en: "Coverage includes public civil airports, seaports, border crossings, rail and road terminals, and trade locations with source-backed coordinates and public identifiers. Status and route observations are published as dated historical snapshots separate from stable location identity.",
+      },
+      intendedUses: {
+        ar: [
+          "البحث عن مواقع النقل العامة ومطابقة معرفاتها بين المصادر.",
+          "إنشاء خرائط وأدلة بحثية للمطارات والموانئ والمعابر والمحطات.",
+          "دراسة لقطات الحالة والمسار ضمن تاريخها ومصدرها المحددين.",
+        ],
+        en: [
+          "Look up public transport locations and match their identifiers across sources.",
+          "Build research maps and directories of airports, ports, crossings, and terminals.",
+          "Study status and route snapshots within their explicit date and source context.",
+        ],
+      },
+      limitations: {
+        ar: "لا توفر المجموعة مسارات أو جداول رحلات أو حالة تشغيل مباشرة. تبقى حالة التشغيل غير معروفة لمعظم المواقع، وقد تغيب بعض الأسماء العربية أو الروابط الإدارية أو المعرفات. لا تتضمن البيانات هندسة المسارات أو تفاصيل تكتيكية أو مواقع عسكرية أو نقاط تفتيش.",
+        en: "This dataset does not provide live routing, schedules, access, or operating conditions. Status remains unknown for most locations, and some Arabic names, administrative links, or external IDs are missing. Route geometry, tactical details, military locations, and checkpoints are excluded.",
+      },
+      provenance: {
+        ar: "تشمل المصادر العامة المراجعة OurAirports وUN/LOCODE وGeoNames وWikidata ومؤشر الموانئ العالمي وبيانات HIU/HDX العامة، مع روابط إدارية مراجعة من OpenSyria. وتستخدم مصادر Logistics Cluster فقط لإثبات اللقطات المؤرخة.",
+        en: "Reviewed public sources include OurAirports, UN/LOCODE, GeoNames, Wikidata, the World Port Index, public HIU/HDX data, and reviewed OpenSyria administrative links. Logistics Cluster sources are used only as evidence for dated status and route snapshots.",
+      },
+      releaseContext: {
+        ar: "تبقى هوية الموقع الثابتة منفصلة عن ملاحظات الحالة والمسار المؤرخة. يحمل كل سجل لقطة تاريخ الحالة ومرجع المصدر، وتبقى ملفات الإصدار المرقم ثابتة بعد نشرها.",
+        en: "Stable location identity is kept separate from dated status and route observations. Every snapshot carries an as-of date and source reference, while published versioned release assets remain immutable after publication.",
+      },
+    },
+    keywords: {
+      ar: [
+        "بيانات النقل السورية",
+        "مطارات سوريا",
+        "موانئ سوريا",
+        "المعابر الحدودية في سوريا",
+      ],
+      en: [
+        "Syrian transport dataset",
+        "Syria transport data",
+        "Syria airports dataset",
+        "Syrian airports data",
+        "Syria ports data",
+        "Syria border crossings dataset",
+        "Syria border crossings data",
+        "Syria rail stations data",
+        "Syria road terminals",
+        "Syria transport CSV",
+        "Syria transport JSON",
+        "Syrian logistics data",
+        "Damascus airport data",
+        "Aleppo airport data",
+      ],
+    },
     recordGroupLabels: {
       locations: {
         ar: "موقع نقل",
@@ -318,26 +433,60 @@ const datasetDescriptors = [
   {
     description: {
       ar: "حمّل بيانات ترقيم الاتصالات السورية مع رمز الدولة، رموز المناطق الثابتة، بادئات الهاتف المحمول، المشغلين، ونطاقات الأرقام العامة مع نسب المصادر وملفات JSON وCSV.",
-      en: "Download Syrian telecom numbering metadata with country code, fixed area codes, mobile prefixes, operators, public numbering ranges, source attribution, and JSON/CSV files.",
+      en: "Download source-backed Syrian telecom numbering data with country code, fixed area codes, mobile prefixes, operators, ranges, and JSON/CSV files.",
     },
-    keywords: [
-      "Syrian telecom dataset",
-      "Syria phone numbering data",
-      "Syria country code 963",
-      "Syria area codes dataset",
-      "Syrian fixed area codes",
-      "Syria mobile prefixes",
-      "Syriatel prefixes",
-      "MTN Syria prefixes",
-      "WAFA Telecom prefixes",
-      "Syria telecom CSV",
-      "Syria telecom JSON",
-      "Syrian numbering plan",
-      "بيانات الاتصالات السورية",
-      "رموز الهاتف في سوريا",
-      "رمز سوريا الدولي 963",
-      "بادئات الهاتف المحمول في سوريا",
-    ],
+    details: {
+      coverage: {
+        ar: "تغطي المجموعة رمز الدولة +963، وجهات التشغيل والمرجع، ورموز المناطق الثابتة المرتبطة بالمحافظات، وبادئات الهاتف المحمول، ونطاقات الترقيم العامة. هي بيانات وصفية عامة للترقيم، وليست بيانات اشتراكات.",
+        en: "Coverage includes Syria's +963 country code, public operator and reference entities, fixed area codes linked to governorates, assigned mobile prefixes, and public numbering ranges. It is numbering metadata, not subscriber data.",
+      },
+      intendedUses: {
+        ar: [
+          "التحقق من أنماط الأرقام السورية وتنسيقها باستخدام بيانات مرجعية عامة.",
+          "البحث المرجعي عن رموز المناطق وبادئات الهاتف المحمول وجهات الترقيم.",
+          "إنشاء أدلة مدنية وأدوات بحثية تحتفظ بنسب المصدر وتاريخه.",
+        ],
+        en: [
+          "Validate and format Syrian number patterns with public reference metadata.",
+          "Look up fixed area codes, mobile prefixes, and numbering entities.",
+          "Build civic directories and research tools that preserve source attribution and dates.",
+        ],
+      },
+      limitations: {
+        ar: "هذه السجلات ليست سجلًا آنيًا للتخصيصات أو الشبكات. لا تتضمن أرقامًا شخصية أو سجلات مشتركين أو أبراجًا أو تغطية أو أعطالًا. التسميات العربية غير مكتملة، وتبقى بادئة النفاذ الدولي دون قيمة إلى أن يؤكدها مصدر صريح.",
+        en: "These records are not a live assignment or network registry. They contain no personal numbers, subscriber records, towers, coverage, or outages. Arabic labels are incomplete, and the international access prefix remains unset until an explicit source confirms it.",
+      },
+      provenance: {
+        ar: "يعتمد الإصدار على مواد خطة الترقيم العامة التي تستضيفها المنظمة الدولية للاتصالات وأعلنتها الهيئة السورية الناظمة للاتصالات والبريد. وتوفر بيانات الجغرافيا من OpenSyria معرفات المحافظات فقط. يحمل كل سجل معرفات مصادر ومراجع مؤرخة، مع إظهار قيود إعادة الاستخدام.",
+        en: "The release is based on public ITU-hosted numbering-plan material announced by the Syrian telecommunications regulator. OpenSyria geography supplies governorate identifiers only. Every record carries source IDs and dated references, while source reuse limitations remain documented.",
+      },
+      releaseContext: {
+        ar: "تُنشر حقائق الترقيم على شكل لقطات مرجعية مؤرخة، وليس كحقيقة تشغيلية مباشرة. تُولد ملفات JSON وNDJSON وCSV وSQL وYAML وXML من البيانات الأساسية، وتصدر التصحيحات في نسخة مرقمة جديدة.",
+        en: "Numbering facts are published as dated reference snapshots, not live network truth. JSON, NDJSON, CSV, SQL, YAML, and XML artifacts are generated from canonical data, and corrections are issued in a new versioned release.",
+      },
+    },
+    keywords: {
+      ar: [
+        "بيانات الاتصالات السورية",
+        "رموز الهاتف في سوريا",
+        "رمز سوريا الدولي 963",
+        "بادئات الهاتف المحمول في سوريا",
+      ],
+      en: [
+        "Syrian telecom dataset",
+        "Syria phone numbering data",
+        "Syria country code 963",
+        "Syria area codes dataset",
+        "Syrian fixed area codes",
+        "Syria mobile prefixes",
+        "Syriatel prefixes",
+        "MTN Syria prefixes",
+        "WAFA Telecom prefixes",
+        "Syria telecom CSV",
+        "Syria telecom JSON",
+        "Syrian numbering plan",
+      ],
+    },
     recordGroupLabels: {
       "country-numbering-plans": {
         ar: "خطة ترقيم وطنية",
@@ -511,10 +660,11 @@ function buildDatasetCatalogItem(
       descriptor?.description ??
       apiDescription ??
       getFallbackLocalizedText(titleFromSlug(slug)),
+    details: descriptor?.details ?? null,
     distributions,
     formats: getFormats(artifacts),
     id: summary.id ?? manifest?.dataset?.id ?? `opensyria-${slug}`,
-    keywords: descriptor?.keywords ?? [],
+    keywords: descriptor?.keywords ?? emptyLocalizedList,
     apiDocsUrl: getDatasetApiDocsUrl(slug),
     licenseUrl: `${repositoryUrl}/blob/main/LICENSE.md`,
     openApiUrl: `${getDatasetsApiBase()}/openapi/${slug}.json`,

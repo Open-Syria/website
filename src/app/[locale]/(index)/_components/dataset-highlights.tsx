@@ -50,64 +50,76 @@ export async function DatasetHighlights({ locale }: DatasetHighlightsProps) {
         </div>
 
         <div className="grid gap-4 md:grid-cols-2">
-          {datasets.map((dataset) => (
-            <article
-              className="flex h-full flex-col rounded-md border bg-card p-5 text-card-foreground shadow-sm"
-              key={dataset.id}
-            >
-              <div className="flex items-start justify-between gap-4">
-                <div>
-                  <p className="font-medium text-muted-foreground text-sm">
-                    {dataset.repositoryName}
-                  </p>
-                  <h3 className="mt-2 text-balance font-heading font-semibold text-xl leading-tight">
-                    {dataset.title[locale]}
-                  </h3>
-                </div>
-                <FileDown
-                  aria-hidden="true"
-                  className="mt-1 size-5 shrink-0 text-primary"
-                />
-              </div>
+          {datasets.map((dataset) => {
+            const datasetHref = getPathname({
+              href: `/datasets/${dataset.slug}`,
+              locale,
+            })
 
-              <p className="mt-4 text-muted-foreground text-sm leading-6">
-                {dataset.shortDescription[locale]}
-              </p>
-
-              <div className="mt-auto pt-7">
-                <dl className="grid grid-cols-2 gap-3 text-sm">
+            return (
+              <article
+                className="flex h-full flex-col rounded-md border bg-card p-5 text-card-foreground shadow-sm"
+                key={dataset.id}
+              >
+                <div className="flex items-start justify-between gap-4">
                   <div>
-                    <dt className="text-muted-foreground">{t("records")}</dt>
-                    <dd className="mt-1 font-semibold">
-                      {numberFormatter.format(dataset.totalRecords)}
-                    </dd>
+                    <p className="font-medium text-muted-foreground text-sm">
+                      {dataset.repositoryName}
+                    </p>
+                    <h3 className="mt-2 text-balance font-heading font-semibold text-xl leading-tight">
+                      <NextLink
+                        className="rounded-sm transition hover:text-primary focus-visible:outline-none focus-visible:ring-3 focus-visible:ring-ring/50"
+                        href={datasetHref}
+                      >
+                        {dataset.title[locale]}
+                      </NextLink>
+                    </h3>
                   </div>
-                  <div>
-                    <dt className="text-muted-foreground">{t("release")}</dt>
-                    <dd className="mt-1 font-semibold">{dataset.releaseTag}</dd>
-                  </div>
-                </dl>
-
-                <NextLink
-                  className={buttonVariants({
-                    className: "mt-5 w-full",
-                    size: "lg",
-                    variant: "outline",
-                  })}
-                  href={getPathname({
-                    href: `/datasets/${dataset.slug}`,
-                    locale,
-                  })}
-                >
-                  {t("openDataset")}
-                  <ArrowUpRight
+                  <FileDown
                     aria-hidden="true"
-                    className="rtl-icon-mirror"
+                    className="mt-1 size-5 shrink-0 text-primary"
                   />
-                </NextLink>
-              </div>
-            </article>
-          ))}
+                </div>
+
+                <p className="mt-4 text-muted-foreground text-sm leading-6">
+                  {dataset.shortDescription[locale]}
+                </p>
+
+                <div className="mt-auto pt-7">
+                  <dl className="grid grid-cols-2 gap-3 text-sm">
+                    <div>
+                      <dt className="text-muted-foreground">{t("records")}</dt>
+                      <dd className="mt-1 font-semibold">
+                        {numberFormatter.format(dataset.totalRecords)}
+                      </dd>
+                    </div>
+                    <div>
+                      <dt className="text-muted-foreground">{t("release")}</dt>
+                      <dd className="mt-1 font-semibold">
+                        {dataset.releaseTag}
+                      </dd>
+                    </div>
+                  </dl>
+
+                  <NextLink
+                    className={buttonVariants({
+                      className:
+                        "mt-5 h-auto min-h-10 w-full whitespace-normal py-2 text-center",
+                      size: "lg",
+                      variant: "outline",
+                    })}
+                    href={datasetHref}
+                  >
+                    {t("openDataset")}: {dataset.title[locale]}
+                    <ArrowUpRight
+                      aria-hidden="true"
+                      className="rtl-icon-mirror"
+                    />
+                  </NextLink>
+                </div>
+              </article>
+            )
+          })}
         </div>
       </div>
     </section>

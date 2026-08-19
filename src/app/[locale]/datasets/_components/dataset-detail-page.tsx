@@ -1,4 +1,14 @@
-import { ArrowUpRight, BookOpenText, Download, ListTree } from "lucide-react"
+import {
+  ArrowUpRight,
+  BookOpenText,
+  CircleAlert,
+  Compass,
+  Database,
+  Download,
+  History,
+  ListTree,
+  MapPinned,
+} from "lucide-react"
 import { getTranslations } from "next-intl/server"
 
 import { buttonVariants } from "@/components/ui/button"
@@ -17,6 +27,23 @@ type DatasetDetailPageProps = {
   locale: Locale
 }
 
+function formatUpdatedAt(updatedAt: string | null, locale: Locale) {
+  if (!updatedAt) {
+    return null
+  }
+
+  const date = new Date(updatedAt)
+
+  if (Number.isNaN(date.getTime())) {
+    return null
+  }
+
+  return new Intl.DateTimeFormat(locale, {
+    dateStyle: "long",
+    timeZone: "UTC",
+  }).format(date)
+}
+
 export async function DatasetDetailPage({
   dataset,
   locale,
@@ -25,10 +52,11 @@ export async function DatasetDetailPage({
   const numberFormatter = new Intl.NumberFormat(locale)
   const hasScrollableDownloads = dataset.distributions.length > 8
   const breadcrumbs = getDatasetBreadcrumbs(locale, dataset)
+  const updatedAt = formatUpdatedAt(dataset.updatedAt, locale)
 
   return (
     <>
-      <DatasetPageHeader apiDocsHref={dataset.apiDocsUrl} />
+      <DatasetPageHeader />
 
       <main
         className="min-h-svh bg-background-light text-foreground"
@@ -106,6 +134,18 @@ export async function DatasetDetailPage({
                     {t("latestRelease")}
                   </dt>
                   <dd className="mt-1 font-semibold">{dataset.releaseTag}</dd>
+                </div>
+                <div>
+                  <dt className="text-muted-foreground text-sm">
+                    {t("lastUpdated")}
+                  </dt>
+                  <dd className="mt-1 font-semibold">
+                    {updatedAt && dataset.updatedAt ? (
+                      <time dateTime={dataset.updatedAt}>{updatedAt}</time>
+                    ) : (
+                      t("notAvailable")
+                    )}
+                  </dd>
                 </div>
                 <div>
                   <dt className="text-muted-foreground text-sm">
@@ -256,31 +296,101 @@ export async function DatasetDetailPage({
           </div>
         </div>
 
-        <section
-          aria-labelledby="dataset-keywords"
-          className="page-footer-section"
-        >
-          <div className="page-content">
-            <div className="rounded-md border bg-card p-5 shadow-sm">
-              <h2
-                className="font-heading font-semibold text-xl"
-                id="dataset-keywords"
-              >
-                {t("keywords")}
-              </h2>
-              <ul className="mt-4 flex flex-wrap gap-2">
-                {dataset.keywords.map((keyword) => (
-                  <li
-                    className="rounded-md border bg-background px-2.5 py-1 text-muted-foreground text-sm"
-                    key={keyword}
-                  >
-                    {keyword}
-                  </li>
-                ))}
-              </ul>
+        {dataset.details ? (
+          <section
+            aria-labelledby="dataset-details"
+            className="page-footer-section"
+          >
+            <div className="page-content">
+              <div className="max-w-3xl">
+                <h2
+                  className="text-balance font-heading font-semibold text-3xl"
+                  id="dataset-details"
+                >
+                  {t("detailsTitle")}
+                </h2>
+                <p className="mt-3 text-muted-foreground leading-7">
+                  {t("detailsDescription")}
+                </p>
+              </div>
+
+              <div className="mt-7 grid gap-px overflow-hidden rounded-md border bg-border shadow-sm lg:grid-cols-2">
+                <article className="bg-card p-5 sm:p-6">
+                  <h3 className="flex items-center gap-2 font-heading font-semibold text-xl">
+                    <MapPinned
+                      aria-hidden="true"
+                      className="size-5 shrink-0 text-primary"
+                    />
+                    {t("coverageTitle")}
+                  </h3>
+                  <p className="mt-4 text-muted-foreground leading-7">
+                    {dataset.details.coverage[locale]}
+                  </p>
+                </article>
+
+                <article className="bg-card p-5 sm:p-6">
+                  <h3 className="flex items-center gap-2 font-heading font-semibold text-xl">
+                    <Database
+                      aria-hidden="true"
+                      className="size-5 shrink-0 text-primary"
+                    />
+                    {t("provenanceTitle")}
+                  </h3>
+                  <p className="mt-4 text-muted-foreground leading-7">
+                    {dataset.details.provenance[locale]}
+                  </p>
+                </article>
+
+                <article className="bg-card p-5 sm:p-6">
+                  <h3 className="flex items-center gap-2 font-heading font-semibold text-xl">
+                    <Compass
+                      aria-hidden="true"
+                      className="size-5 shrink-0 text-primary"
+                    />
+                    {t("intendedUsesTitle")}
+                  </h3>
+                  <ul className="mt-4 grid gap-3 text-muted-foreground leading-7">
+                    {dataset.details.intendedUses[locale].map((use) => (
+                      <li className="flex gap-3" key={use}>
+                        <span
+                          aria-hidden="true"
+                          className="mt-3 size-1.5 shrink-0 rounded-full bg-primary"
+                        />
+                        <span>{use}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </article>
+
+                <article className="bg-card p-5 sm:p-6">
+                  <h3 className="flex items-center gap-2 font-heading font-semibold text-xl">
+                    <CircleAlert
+                      aria-hidden="true"
+                      className="size-5 shrink-0 text-primary"
+                    />
+                    {t("limitationsTitle")}
+                  </h3>
+                  <p className="mt-4 text-muted-foreground leading-7">
+                    {dataset.details.limitations[locale]}
+                  </p>
+                </article>
+              </div>
+
+              <aside className="mt-5 rounded-md border border-primary/20 bg-primary/5 p-5 sm:p-6">
+                <h3 className="flex items-center gap-2 font-heading font-semibold text-xl">
+                  <History
+                    aria-hidden="true"
+                    className="size-5 shrink-0 text-primary"
+                  />
+                  {t("releaseContextTitle")}
+                </h3>
+                <p className="mt-4 max-w-5xl text-muted-foreground leading-7">
+                  {dataset.details.releaseContext[locale]}
+                </p>
+              </aside>
             </div>
-          </div>
-        </section>
+          </section>
+        ) : null}
       </main>
     </>
   )

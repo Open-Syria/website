@@ -1,23 +1,15 @@
 import { getTranslations } from "next-intl/server"
 
 import { SiteHeader } from "@/components/site-header"
-import { siteLinks } from "@/lib/site"
 import { DatasetPageNavigation } from "./dataset-page-navigation"
 
-type DatasetPageHeaderProps = {
-  apiDocsHref?: string
-}
-
-export async function DatasetPageHeader({
-  apiDocsHref = siteLinks.docs,
-}: DatasetPageHeaderProps = {}) {
+export async function DatasetPageHeader() {
   const t = await getTranslations("Datasets")
 
   return (
     <SiteHeader>
       <DatasetPageNavigation
-        apiDocsHref={apiDocsHref}
-        apiDocsLabel={t("apiDocs")}
+        apiGuideLabel={t("apiGuide")}
         ariaLabel={t("navigation")}
         openDataLabel={t("openData")}
       />
