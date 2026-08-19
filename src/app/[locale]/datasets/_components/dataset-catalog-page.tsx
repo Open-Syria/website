@@ -115,14 +115,10 @@ export async function DatasetCatalogPage({
 
                   <div className="mt-6 flex flex-wrap gap-2">
                     <Link
-                      className={buttonVariants({
-                        className:
-                          "h-auto min-h-10 whitespace-normal py-2 text-center",
-                        size: "lg",
-                      })}
+                      className={buttonVariants({ size: "lg" })}
                       href={`/datasets/${dataset.slug}`}
                     >
-                      {t("openDataset")}: {dataset.title[locale]}
+                      {t("openDataset")}
                       <ArrowUpRight
                         aria-hidden="true"
                         className="rtl-icon-mirror"
