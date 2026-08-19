@@ -143,11 +143,6 @@ export async function getGithubProjectDirectory(): Promise<GitHubProjectDirector
 }
 
 async function getOrganization() {
-  "use cache"
-
-  cacheLife("hours")
-  cacheTag("github-organization")
-
   const response = await fetch(
     `${GITHUB_API_BASE}/orgs/${GITHUB_ORGANIZATION}`,
     {
@@ -163,11 +158,6 @@ async function getOrganization() {
 }
 
 async function getPublicRepositories() {
-  "use cache"
-
-  cacheLife("hours")
-  cacheTag("github-repositories")
-
   const repositories: GitHubRepository[] = []
 
   for (let page = 1; ; page += 1) {
@@ -193,11 +183,6 @@ async function getPublicRepositories() {
 }
 
 async function getRepositoryContributors(repositoryName: string) {
-  "use cache"
-
-  cacheLife("hours")
-  cacheTag("github-contributors", `github-contributors:${repositoryName}`)
-
   const response = await fetch(
     `${GITHUB_API_BASE}/repos/${GITHUB_ORGANIZATION}/${encodeURIComponent(repositoryName)}/contributors?per_page=100`,
     {
