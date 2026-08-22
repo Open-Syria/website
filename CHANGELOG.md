@@ -15,6 +15,13 @@
 * honor `[skip ci]` consistently in the website CI workflow
 * update Next.js and the dependency graph to patched releases and enforce a full audit in verification
 
+## [0.5.3](https://github.com/Open-Syria/website/compare/v0.5.2...v0.5.3) (2026-08-22)
+
+
+### Bug Fixes
+
+* **404:** hide agent markdown from browser pages ([9206c8d](https://github.com/Open-Syria/website/commit/9206c8d63451c6e10d68b65ed912ed4aa52ba73a))
+
 ## [0.5.2](https://github.com/Open-Syria/website/compare/v0.5.1...v0.5.2) (2026-08-22)
 
 
