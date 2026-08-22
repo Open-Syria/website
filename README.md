@@ -18,14 +18,22 @@ The website is intentionally focused: a localized landing page, dataset catalog 
 | <https://opensyria.org/datasets/universities> | Universities dataset page |
 | <https://opensyria.org/datasets/transport> | Transport dataset page |
 | <https://opensyria.org/datasets/telecom> | Telecom dataset page |
-| <https://opensyria.org/api> | Syrian data API guide for developers |
+| <https://opensyria.org/api> | OpenSyria developer resources and Syrian data API guide |
+| <https://opensyria.org/llms.txt> | Plain-text project and agent discovery guide |
+| <https://opensyria.org/index.md> | Markdown project and developer-resource index |
+| <https://opensyria.org/auth.md> | Authentication and public-access policy |
+| <https://opensyria.org/.well-known/api-catalog> | Machine-readable API catalog |
+| <https://opensyria.org/.well-known/agent-skills/index.json> | OpenSyria agent skills index |
 | <https://api.opensyria.org/docs> | API documentation |
+| <https://api.opensyria.org/openapi.json> | OpenAPI 3.1 description |
 | <https://github.com/Open-Syria> | GitHub organization |
 
 ## Agent Discovery
 
 The site publishes public, read-only discovery metadata for agents:
 
+- The server-rendered homepage includes a visible OpenSyria developer-resources
+  section linking to the guide, OpenAPI description, and agent discovery files.
 - `/llms.txt` and `/index.md` describe the project and link to the main public resources.
 - `/auth.md` explains that public website and dataset API access does not require registration, OAuth, API keys, or credentials.
 - These machine-readable discovery documents use `X-Robots-Tag: noindex, follow`
@@ -39,6 +47,15 @@ The site publishes public, read-only discovery metadata for agents:
   Normal HTML responses expose the same public resources through those stable
   routes without injecting a render-wide response header.
 - OAuth/OIDC and MCP well-known routes return explicit `404 application/problem+json` responses until OpenSyria offers protected auth flows or a public MCP server. Both `/.well-known/mcp/server-card.json` and the scanner-compatible plural alias `/.well-known/mcp/server-cards.json` use that unsupported response.
+- Unknown paths keep a real `404` status. Browsers receive semantic HTML with a
+  compact recovery index; clients sending `Accept: text/markdown` receive that
+  recovery index as a literal Markdown response pointing to the homepage,
+  datasets, developer guide, sitemap, and `llms.txt`.
+- `robots.txt` explicitly allows ChatGPT-User, GPTBot, ClaudeBot,
+  Google-Extended, DeepSeekBot, PerplexityBot, and ora-agent, followed by the
+  same allow policy for all other crawlers. The Cloudflare zone policy must
+  remain aligned with this published policy; WAF or bot controls can otherwise
+  override `robots.txt` before requests reach Next.js.
 
 ## Stack
 
@@ -169,8 +186,8 @@ Run all CI checks:
 pnpm verify:ci
 ```
 
-CI intentionally runs only static formatting/lint checks, TypeScript, and the
-dependency audit. It does not run tests or a Next.js build.
+CI runs formatting/lint checks, TypeScript, a production build, the agent
+readiness endpoint suite, and the dependency audit.
 
 Run the complete local release check, including a production build:
 
@@ -184,7 +201,19 @@ Focused commands:
 pnpm check
 pnpm typecheck
 pnpm build
+pnpm run test:agent-readiness
 pnpm run audit:dependencies
+```
+
+`test:agent-readiness` starts the built standalone server and verifies crawler
+reachability, raw server-rendered homepage content and heading structure,
+localized developer resources, real and recoverable 404s, `robots.txt`, the
+discovery files, unsupported MCP/OAuth responses, sitemap, website health, and
+the public API documentation, OpenAPI, and health endpoints. To check an
+already deployed website instead, set `AGENT_READINESS_BASE_URL`, for example:
+
+```bash
+AGENT_READINESS_BASE_URL=https://opensyria.org pnpm run test:agent-readiness
 ```
 
 Apply Biome formatting and safe fixes:

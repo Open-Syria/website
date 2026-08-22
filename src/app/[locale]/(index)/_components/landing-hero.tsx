@@ -16,6 +16,7 @@ import { trustedExternalLinkRel } from "@/lib/links"
 import { siteLinks } from "@/lib/site"
 import { cn } from "@/lib/utils"
 import { DatasetHighlights } from "./dataset-highlights"
+import { DeveloperResources } from "./developer-resources"
 import { LandingFaq } from "./landing-faq"
 
 type LandingHeroProps = Readonly<{
@@ -207,6 +208,7 @@ export async function LandingHero({ locale }: LandingHeroProps) {
         </div>
       </section>
       <DatasetHighlights locale={locale} />
+      <DeveloperResources locale={locale} />
       <LandingFaq locale={locale} />
     </main>
   )

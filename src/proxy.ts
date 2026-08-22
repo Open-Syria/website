@@ -1,10 +1,27 @@
 import type { NextRequest } from "next/server"
 import { NextResponse } from "next/server"
-import createMiddleware from "next-intl/middleware"
 
-import { routing } from "./i18n/routing"
-
-const intlMiddleware = createMiddleware(routing)
+const arabicLocalePrefix = "/ar"
+const englishLocalePrefix = "/en"
+const internalLocaleRewriteHeader = "x-opensyria-locale-rewrite"
+const directPublicPathPrefixes = ["/-/", "/.well-known/"] as const
+const directPublicPaths = new Set([
+  "/apple-icon.png",
+  "/auth.md",
+  "/health",
+  "/icon0.svg",
+  "/icon1.png",
+  "/index.md",
+  "/llms.txt",
+  "/manifest.json",
+  "/opengraph-image.png",
+  "/robots.txt",
+  "/sitemap.xml",
+  "/sy.svg",
+  "/twitter-image.png",
+  "/web-app-manifest-192x192.png",
+  "/web-app-manifest-512x512.png",
+])
 const trackingSearchParamNames = new Set([
   "_hsenc",
   "_hsmi",
@@ -28,6 +45,14 @@ const trackingSearchParamNames = new Set([
 const trackingSearchParamPrefixes = ["utm_", "hsa_", "mtm_", "pk_"] as const
 
 export default function proxy(request: NextRequest) {
+  if (request.headers.get(internalLocaleRewriteHeader) === "en") {
+    return NextResponse.next()
+  }
+
+  if (isDirectPublicPath(request.nextUrl.pathname)) {
+    return NextResponse.next()
+  }
+
   const canonicalEnglishUrl = getCanonicalEnglishUrl(request)
 
   if (canonicalEnglishUrl) {
@@ -49,18 +74,37 @@ export default function proxy(request: NextRequest) {
     return response
   }
 
-  return intlMiddleware(request)
+  if (isArabicPath(request.nextUrl.pathname)) {
+    return NextResponse.next()
+  }
+
+  const englishUrl = request.nextUrl.clone()
+  englishUrl.pathname =
+    request.nextUrl.pathname === "/"
+      ? englishLocalePrefix
+      : `${englishLocalePrefix}${request.nextUrl.pathname}`
+  const requestHeaders = new Headers(request.headers)
+  requestHeaders.set(internalLocaleRewriteHeader, "en")
+
+  return NextResponse.rewrite(englishUrl, {
+    request: {
+      headers: requestHeaders,
+    },
+  })
 }
 
 function getCanonicalEnglishUrl(request: NextRequest) {
   const pathname = request.nextUrl.pathname
 
-  if (pathname !== "/en" && !pathname.startsWith("/en/")) {
+  if (
+    pathname !== englishLocalePrefix &&
+    !pathname.startsWith(`${englishLocalePrefix}/`)
+  ) {
     return null
   }
 
   const url = request.nextUrl.clone()
-  url.pathname = pathname.slice(3) || "/"
+  url.pathname = pathname.slice(englishLocalePrefix.length) || "/"
   removeTrackingSearchParams(url)
 
   return url
@@ -107,6 +151,20 @@ function isMarkdownNegotiablePath(request: NextRequest) {
   return pathname === "/" || pathname === "/en" || pathname === "/ar"
 }
 
+function isArabicPath(pathname: string) {
+  return (
+    pathname === arabicLocalePrefix ||
+    pathname.startsWith(`${arabicLocalePrefix}/`)
+  )
+}
+
+function isDirectPublicPath(pathname: string) {
+  return (
+    directPublicPaths.has(pathname) ||
+    directPublicPathPrefixes.some((prefix) => pathname.startsWith(prefix))
+  )
+}
+
 function appendHeader(response: NextResponse, name: string, value: string) {
   const currentValue = response.headers.get(name)
 
@@ -114,5 +172,5 @@ function appendHeader(response: NextResponse, name: string, value: string) {
 }
 
 export const config = {
-  matcher: "/((?!trpc|health|_next|_vercel|.*\\..*).*)",
+  matcher: "/((?!trpc|_next|_vercel).*)",
 }

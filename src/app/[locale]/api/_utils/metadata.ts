@@ -9,12 +9,12 @@ const apiPageSeo: Record<Locale, { description: string; title: string }> = {
   ar: {
     description:
       "استخدم واجهة OpenSyria العامة لبيانات الجغرافيا والجامعات والنقل والاتصالات السورية، مع مسارات JSON وتوثيق OpenAPI وأمثلة جاهزة.",
-    title: "واجهة API للبيانات السورية للمطورين",
+    title: "موارد OpenSyria للمطورين وواجهة البيانات السورية",
   },
   en: {
     description:
       "Use the public OpenSyria Syrian data API for geography, universities, transport, and telecom, with JSON endpoints, OpenAPI docs, and examples.",
-    title: "Syrian Data API for Developers",
+    title: "OpenSyria Developer Resources & Syrian Data API",
   },
 }
 
@@ -56,7 +56,7 @@ async function generateMetadata({
     },
     robots: indexableRobots,
     title: {
-      absolute: `${seo.title} | ${siteConfig.name}`,
+      absolute: seo.title,
     },
     twitter: {
       card: "summary_large_image",

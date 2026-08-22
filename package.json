@@ -17,9 +17,10 @@
     "lint": "biome lint .",
     "prepare": "husky",
     "start": "next start",
+    "test:agent-readiness": "node scripts/test-agent-readiness.mjs",
     "typecheck": "tsc --noEmit",
-    "verify": "biome check . && tsc --noEmit && next build && pnpm run audit:dependencies",
-    "verify:ci": "biome check . && tsc --noEmit && pnpm run audit:dependencies"
+    "verify": "biome check . && tsc --noEmit && next build && pnpm run test:agent-readiness && pnpm run audit:dependencies",
+    "verify:ci": "pnpm run verify"
   },
   "dependencies": {
     "@base-ui/react": "^1.6.0",
