@@ -15,6 +15,13 @@
 * honor `[skip ci]` consistently in the website CI workflow
 * update Next.js and the dependency graph to patched releases and enforce a full audit in verification
 
+## [0.5.2](https://github.com/Open-Syria/website/compare/v0.5.1...v0.5.2) (2026-08-22)
+
+
+### Bug Fixes
+
+* **agent:** improve crawler and discovery readiness ([5dbd025](https://github.com/Open-Syria/website/commit/5dbd0252ce3e96346ec5bdfbfd6675486cda4f6f))
+
 ## [0.5.1](https://github.com/Open-Syria/website/compare/v0.5.0...v0.5.1) (2026-08-19)
 
 
