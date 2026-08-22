@@ -7,7 +7,6 @@ import { SiteControls } from "@/components/site-controls"
 import { buttonVariants } from "@/components/ui/button"
 import { OpenSyriaHorizontalLogo } from "@/components/ui/svgs/openSyriaHorizontalLogo"
 import { Link } from "@/i18n/navigation"
-import { getNotFoundRecoveryMarkdown } from "@/lib/not-found-recovery"
 
 export default function NotFoundPage() {
   const t = useTranslations("NotFoundPage")
@@ -62,28 +61,6 @@ export default function NotFoundPage() {
                 {t("developers")}
               </Link>
             </div>
-
-            <aside
-              aria-labelledby="agent-recovery-title"
-              className="mt-8 rounded-md border bg-background p-4 shadow-sm"
-            >
-              <h2
-                className="font-heading font-semibold text-lg"
-                id="agent-recovery-title"
-              >
-                {t("recoveryTitle")}
-              </h2>
-              <p className="mt-2 text-muted-foreground text-sm leading-6">
-                {t("recoveryDescription")}
-              </p>
-              <pre
-                className="mt-4 max-w-full overflow-x-auto whitespace-pre-wrap break-words rounded-md bg-foreground p-4 text-background text-xs leading-5"
-                data-agent-recovery="markdown"
-                dir="ltr"
-              >
-                <code>{getNotFoundRecoveryMarkdown()}</code>
-              </pre>
-            </aside>
           </div>
         </div>
       </section>

@@ -1,7 +1,4 @@
-import {
-  getNotFoundRecoveryMarkdown,
-  notFoundRecoveryLinks,
-} from "@/lib/not-found-recovery"
+import { notFoundRecoveryLinks } from "@/lib/not-found-recovery"
 
 export function NotFoundDocument() {
   return (
@@ -34,19 +31,6 @@ export function NotFoundDocument() {
               </li>
             ))}
           </ul>
-          <h2>Agent recovery</h2>
-          <pre
-            data-agent-recovery="markdown"
-            style={{
-              background: "#1e2219",
-              color: "#f8f7ef",
-              overflowWrap: "anywhere",
-              padding: "1rem",
-              whiteSpace: "pre-wrap",
-            }}
-          >
-            <code>{getNotFoundRecoveryMarkdown()}</code>
-          </pre>
         </main>
       </body>
     </html>

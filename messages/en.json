@@ -179,8 +179,6 @@
     "description": "We could not find that OpenSyria page. The public indexes and developer resources below can help you recover.",
     "developers": "Developer resources",
     "home": "Go home",
-    "recoveryDescription": "This short Markdown index gives people and automated clients stable places to continue.",
-    "recoveryTitle": "Where to look next",
     "title": "This page is not available"
   },
   "Error": {

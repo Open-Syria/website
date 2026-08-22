@@ -254,12 +254,25 @@ async function verifyNotFoundResponses(baseUrl) {
 
     assert.equal(response.status, 404, `${path} must return a real HTTP 404`)
     assert.match(response.headers.get("content-type") ?? "", /text\/html/i)
-    assert.match(html, /data-agent-recovery="markdown"/i)
-    assert.match(html, /# OpenSyria 404 recovery/i)
+    assert.doesNotMatch(html, /data-agent-recovery="markdown"/i)
+    assert.doesNotMatch(html, /# OpenSyria 404 recovery/i)
     assert.match(html, /https:\/\/opensyria\.org\/api/i)
     assert.match(html, /https:\/\/opensyria\.org\/sitemap\.xml/i)
     assert.match(html, /https:\/\/opensyria\.org\/llms\.txt/i)
   }
+
+  const localizedResponse = await fetch(
+    `${baseUrl}/datasets/this-dataset-does-not-exist`
+  )
+  const localizedHtml = await localizedResponse.text()
+
+  assert.equal(localizedResponse.status, 404)
+  assert.match(
+    localizedResponse.headers.get("content-type") ?? "",
+    /text\/html/i
+  )
+  assert.doesNotMatch(localizedHtml, /data-agent-recovery="markdown"/i)
+  assert.doesNotMatch(localizedHtml, /# OpenSyria 404 recovery/i)
 
   const markdownResponse = await fetch(
     `${baseUrl}/this-markdown-agent-path-does-not-exist`,
@@ -279,6 +292,7 @@ async function verifyNotFoundResponses(baseUrl) {
   )
   assert.match(markdown, /^# OpenSyria 404 recovery/)
   assert.match(markdown, /https:\/\/opensyria\.org\/sitemap\.xml/i)
+  assert.doesNotMatch(markdown, /<html/i)
 
   const headResponse = await fetch(
     `${baseUrl}/this-head-agent-path-does-not-exist`,
