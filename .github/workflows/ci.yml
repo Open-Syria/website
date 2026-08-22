@@ -18,7 +18,7 @@ jobs:
     name: Static validation
     if: ${{ github.event_name != 'push' || (!contains(github.event.head_commit.message, '[skip ci]') && !contains(github.event.head_commit.message, '[ci skip]')) }}
     runs-on: ubuntu-24.04
-    timeout-minutes: 10
+    timeout-minutes: 20
 
     steps:
       - name: Checkout
@@ -44,6 +44,12 @@ jobs:
 
       - name: Check types
         run: pnpm typecheck
+
+      - name: Build production app
+        run: pnpm build
+
+      - name: Test agent readiness endpoints
+        run: pnpm test:agent-readiness
 
       - name: Audit dependencies
         run: pnpm run audit:dependencies

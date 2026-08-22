@@ -79,10 +79,10 @@ export const openSyriaDatasetsSkillPath =
 
 export const openSyriaApiSkill = `---
 name: opensyria-api
-description: Discover and use the public OpenSyria read-only datasets API.
+description: Discover and use OpenSyria developer resources and the public read-only datasets API.
 ---
 
-# OpenSyria API
+# OpenSyria Developer Resources and API
 
 OpenSyria exposes public, read-only API access for Syrian datasets.
 
@@ -91,6 +91,9 @@ Use these resources:
 - Developer guide: ${siteConfig.url}/api
 - API documentation: ${siteLinks.docs}
 - OpenAPI description: ${siteLinks.openApi}
+- Authentication and access: ${siteConfig.url}/auth.md
+- Machine-readable API catalog: ${siteConfig.url}/.well-known/api-catalog
+- Agent discovery guide: ${siteConfig.url}/llms.txt
 - API health: ${siteLinks.datasetsApi}/health
 - Dataset catalog: ${siteConfig.url}/datasets
 
@@ -122,7 +125,7 @@ export const agentSkills = [
   {
     content: openSyriaApiSkill,
     description:
-      "Discover and use the public OpenSyria read-only datasets API.",
+      "Discover and use OpenSyria developer resources and the public read-only datasets API.",
     name: "opensyria-api",
     path: openSyriaApiSkillPath,
     type: "api-discovery",
@@ -142,14 +145,17 @@ export function getHomepageMarkdown() {
 
 ${siteConfig.defaultDescription}
 
-## Agent Discovery
+## OpenSyria Developer Resources
 
-- [Developer API guide](${siteConfig.url}/api)
-- [API catalog](${siteConfig.url}/.well-known/api-catalog)
-- [Agent skills](${siteConfig.url}/.well-known/agent-skills/index.json)
+- [OpenSyria developer API guide](${siteConfig.url}/api)
 - [API documentation](${siteLinks.docs})
-- [OpenAPI description](${siteLinks.openApi})
+- [OpenAPI 3.1 description](${siteLinks.openApi})
+- [Authentication and public-access guide](${siteConfig.url}/auth.md)
+- [Machine-readable API catalog](${siteConfig.url}/.well-known/api-catalog)
+- [OpenSyria agent skills index](${siteConfig.url}/.well-known/agent-skills/index.json)
 - [API health](${siteLinks.datasetsApi}/health)
+
+The public datasets API is read-only and does not require registration, OAuth, or an API key. OpenSyria does not currently offer webhooks or a public MCP server.
 
 ## Datasets
 

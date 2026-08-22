@@ -45,6 +45,28 @@
     "release": "Release",
     "title": "Syrian datasets for maps, research, journalism, and downloads"
   },
+  "HomeDevelopers": {
+    "description": "Use the human-readable guide or start from OpenSyria's machine-readable API and agent discovery files. Public dataset access is read-only and requires no API key.",
+    "eyebrow": "Developer resources",
+    "resources": {
+      "agents": {
+        "description": "Read llms.txt for stable links to datasets, access policy, the API catalog, and published agent skills.",
+        "link": "Read the agent guide",
+        "title": "Agent discovery files"
+      },
+      "guide": {
+        "description": "Review API access, dataset coverage, request examples, rate limits, provenance, and responsible reuse guidance.",
+        "link": "Open developer guide",
+        "title": "Developer API guide"
+      },
+      "openApi": {
+        "description": "Inspect the public OpenAPI 3.1 document for versioned paths, parameters, and JSON response schemas.",
+        "link": "View OpenAPI schema",
+        "title": "OpenAPI 3.1 schema"
+      }
+    },
+    "title": "OpenSyria developer resources for APIs and agents"
+  },
   "HomeFaq": {
     "description": "Short answers about OpenSyria data, downloads, API access, licensing, and contribution paths.",
     "eyebrow": "FAQ",
@@ -115,7 +137,7 @@
         "title": "Verify before reuse"
       }
     },
-    "title": "Build with OpenSyria's Syrian datasets API",
+    "title": "OpenSyria developer resources and Syrian datasets API",
     "workflowDescription": "The API and downloadable releases represent the same public data products. Use the API for querying and the dataset pages for context and verification.",
     "workflowEyebrow": "Recommended workflow",
     "workflowTitle": "From discovery to responsible reuse"
@@ -154,8 +176,11 @@
   },
   "NotFoundPage": {
     "datasets": "Browse datasets",
-    "description": "We could not find that OpenSyria page. The dataset catalog and homepage are still available.",
+    "description": "We could not find that OpenSyria page. The public indexes and developer resources below can help you recover.",
+    "developers": "Developer resources",
     "home": "Go home",
+    "recoveryDescription": "This short Markdown index gives people and automated clients stable places to continue.",
+    "recoveryTitle": "Where to look next",
     "title": "This page is not available"
   },
   "Error": {
