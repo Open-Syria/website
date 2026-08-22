@@ -47,8 +47,8 @@ The site publishes public, read-only discovery metadata for agents:
   Normal HTML responses expose the same public resources through those stable
   routes without injecting a render-wide response header.
 - OAuth/OIDC and MCP well-known routes return explicit `404 application/problem+json` responses until OpenSyria offers protected auth flows or a public MCP server. Both `/.well-known/mcp/server-card.json` and the scanner-compatible plural alias `/.well-known/mcp/server-cards.json` use that unsupported response.
-- Unknown paths keep a real `404` status. Browsers receive semantic HTML with a
-  compact recovery index; clients sending `Accept: text/markdown` receive that
+- Unknown paths keep a real `404` status. Browsers receive semantic HTML with
+  helpful recovery links; clients sending `Accept: text/markdown` receive the
   recovery index as a literal Markdown response pointing to the homepage,
   datasets, developer guide, sitemap, and `llms.txt`.
 - `robots.txt` explicitly allows ChatGPT-User, GPTBot, ClaudeBot,
