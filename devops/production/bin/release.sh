@@ -428,7 +428,7 @@ probe_private_route() {
   rm -f -- "${health_body}" "${homepage_headers}"
 }
 
-verify_public_route() {
+verify_private_route() {
   local expected_version="$1"
   local enforce_header_budget="${2:-true}"
   local started_at now
@@ -451,7 +451,7 @@ verify_public_route() {
 verify_previous_public_route() {
   [[ "${HAS_ROLLBACK}" == "true" ]] || return 1
   [[ "${PREVIOUS_VERSION}" =~ ^[0-9a-f]{40}$ ]] || return 1
-  verify_public_route "${PREVIOUS_VERSION}" false
+  verify_private_route "${PREVIOUS_VERSION}" false
 }
 
 restore_previous_route() {
@@ -464,7 +464,7 @@ restore_previous_route() {
   echo "Previous website route could not be verified; restoring the healthy candidate." >&2
   if (write_nginx_upstream "${TARGET_COLOR}") \
     && reload_nginx \
-    && verify_public_route "${DEPLOYMENT_VERSION}"; then
+    && verify_private_route "${DEPLOYMENT_VERSION}"; then
     echo "Restored and verified the candidate website route." >&2
   else
     echo "Candidate remains running, but automatic route recovery could not be verified." >&2
@@ -789,7 +789,7 @@ prepare_release() {
         "WEBSITE_${routed_color^^}_VERSION"
     )"
     if service_is_healthy "${routed_color}" \
-      && verify_public_route "${routed_version}" false; then
+      && verify_private_route "${routed_version}" false; then
       CURRENT_COLOR="${routed_color}"
       HAS_ROLLBACK="true"
       PREVIOUS_VERSION="${routed_version}"
@@ -829,7 +829,7 @@ switch_release() {
   write_pending_state switching
   write_nginx_upstream "${TARGET_COLOR}"
   write_pending_state switched
-  if ! reload_nginx || ! verify_public_route "${DEPLOYMENT_VERSION}"; then
+  if ! reload_nginx || ! verify_private_route "${DEPLOYMENT_VERSION}"; then
     echo "Website cutover verification failed." >&2
     if [[ "${HAS_ROLLBACK}" == "true" ]] && restore_previous_route; then
       write_pending_state prepared
@@ -850,12 +850,12 @@ finalize_release() {
     || fail "Shared nginx is no longer routed to ${TARGET_COLOR}"
 
   wait_for_service_health "${TARGET_COLOR}"
-  verify_public_route "${DEPLOYMENT_VERSION}"
+  verify_private_route "${DEPLOYMENT_VERSION}"
   sleep "${DRAIN_SECONDS}"
   [[ "$(current_upstream_color)" == "${TARGET_COLOR}" ]] \
     || fail "Shared nginx changed during the drain period"
   wait_for_service_health "${TARGET_COLOR}"
-  verify_public_route "${DEPLOYMENT_VERSION}"
+  verify_private_route "${DEPLOYMENT_VERSION}"
 
   if [[ "${HAS_ROLLBACK}" == "true" && "${CURRENT_COLOR}" != "${TARGET_COLOR}" ]]; then
     compose stop "$(service_for_color "${CURRENT_COLOR}")"
