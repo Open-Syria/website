@@ -15,6 +15,13 @@
 * honor `[skip ci]` consistently in the website CI workflow
 * update Next.js and the dependency graph to patched releases and enforce a full audit in verification
 
+## [0.5.4](https://github.com/Open-Syria/website/compare/v0.5.3...v0.5.4) (2026-09-17)
+
+
+### Bug Fixes
+
+* **deploy:** prepare bounded production deployment and patch dependencies ([#62](https://github.com/Open-Syria/website/issues/62)) ([06c050e](https://github.com/Open-Syria/website/commit/06c050e43521bae5a2e08f9c07944e6563c0af42))
+
 ## [0.5.3](https://github.com/Open-Syria/website/compare/v0.5.2...v0.5.3) (2026-08-22)
 
 
