@@ -1,6 +1,6 @@
 # Production Deployment
 
-The website runs on `syr-prod` as a standalone Next.js container. GitHub Actions
+The website runs on the configured production host as a standalone Next.js container. GitHub Actions
 builds one `linux/amd64` image, pushes it to GHCR, and deploys its immutable
 digest. The production host never installs pnpm dependencies or builds source.
 
@@ -68,8 +68,8 @@ NEXT_PUBLIC_GOOGLE_TAG_MANAGER_ID
 VERIFY_PUBLIC_DEPLOYMENT
 ```
 
-The deployment values are pinned to `syr-prod`, `mustafa`, and
-`/opt/syr/apps/opensyria/production/website`. Production build configuration
+The host and dedicated SSH account are selected by `DEPLOY_HOST` and
+`DEPLOY_USER`; the root remains pinned to `/opt/syr/apps/opensyria/production/website`. Production build configuration
 must use the following exact public values:
 
 ```dotenv
@@ -111,7 +111,7 @@ chmod 600 .infisical.env
 Configure immutable OpenSyria project ID
 `5922e0e7-9672-4195-a61f-90db3eb60ce5`, the `production` environment, and the
 `/website` secret path. The Universal Auth credentials remain only on
-`syr-prod`; they are not GitHub secrets.
+the production host; they are not GitHub secrets.
 
 During `prepare`, the host runs:
 
@@ -216,3 +216,19 @@ After cutover:
 - The two slots do not publish host ports.
 - A shared cache is unnecessary because only one website slot receives new
   traffic at a time.
+
+## Restricted production host deployment
+
+The production GitHub environment selects `DEPLOY_HOST`, `DEPLOY_USER`, the SSH
+key and its pinned known-hosts entry. The host must be provisioned in advance;
+CI only verifies the application directory and cannot create directories with
+unrestricted sudo. The deployment identity must have only the fixed Docker
+operations for this application. Keep automatic deployment paused while moving
+data and use `VERIFY_PUBLIC_DEPLOYMENT=false` for the private cutover checks.
+Set it back to `true` when the public route points to the prepared destination.
+
+The long-running application has a 1 CPU burst ceiling and 512 MiB memory/swap
+ceiling, with Node heap capped at 320 MiB. These limits apply to each blue/green
+slot; allow temporary overlap during a rollout.
+
+The host-side switch verifies the private ingress at `127.0.0.1:18080` using the production Host header. GitHub separately verifies the public HTTPS route; an old DNS destination therefore cannot accidentally validate or block a private candidate.

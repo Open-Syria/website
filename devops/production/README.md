@@ -82,7 +82,7 @@ drains old workers. Shared nginx changes wait on the cross-application lock
 instead of failing when another OpenSyria rollout is finishing. The previous
 slot is retained.
 
-`finalize` rechecks the public route, drains existing requests, stops the
+`finalize` rechecks the private ingress route, drains existing requests, stops the
 previous slot, and records the new active state.
 
 `rollback` restores the backed-up nginx include and previous slot. If no prior
@@ -96,3 +96,19 @@ bin/release.sh status
 ```
 
 See `docs/deployment.md` for GitHub configuration and Cloudflare cutover.
+
+## Restricted production host deployment
+
+The production GitHub environment selects `DEPLOY_HOST`, `DEPLOY_USER`, the SSH
+key and its pinned known-hosts entry. The host must be provisioned in advance;
+CI only verifies the application directory and cannot create directories with
+unrestricted sudo. The deployment identity must have only the fixed Docker
+operations for this application. Keep automatic deployment paused while moving
+data and use `VERIFY_PUBLIC_DEPLOYMENT=false` for the private cutover checks.
+Set it back to `true` when the public route points to the prepared destination.
+
+The long-running application has a 1 CPU burst ceiling and 512 MiB memory/swap
+ceiling, with Node heap capped at 320 MiB. These limits apply to each blue/green
+slot; allow temporary overlap during a rollout.
+
+The host-side switch verifies the private ingress at `127.0.0.1:18080` using the production Host header. GitHub separately verifies the public HTTPS route; an old DNS destination therefore cannot accidentally validate or block a private candidate.
