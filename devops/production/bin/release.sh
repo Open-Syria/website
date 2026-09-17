@@ -20,11 +20,11 @@ ACTIVE_VERSION_FILE="${STATE_DIR}/active-version"
 PENDING_FILE="${STATE_DIR}/pending.env"
 PREVIOUS_UPSTREAM_FILE="${STATE_DIR}/previous-upstream.conf"
 DEPLOY_LOCK_FILE="${ROOT_DIR}/.deploy.lock"
-NGINX_DEPLOY_LOCK_FILE="/opt/syr/services/staging/.nginx-deploy.lock"
-NGINX_ACTIVE_INCLUDE="/opt/syr/services/staging/infrastructure/nginx/conf.d/includes/opensyria-production-website-active.conf"
+NGINX_DEPLOY_LOCK_FILE="/opt/syr/services/staging/infrastructure/nginx/conf.d/includes/opensyria/.deploy.lock"
+NGINX_ACTIVE_INCLUDE="/opt/syr/services/staging/infrastructure/nginx/conf.d/includes/opensyria/opensyria-production-website-active.conf"
 NGINX_CONTAINER="infra-nginx"
 PUBLIC_HOST="opensyria.org"
-PUBLIC_URL="https://${PUBLIC_HOST}"
+PRIVATE_URL="http://127.0.0.1:18080"
 EDGE_NETWORK="syr-staging-edge"
 COMPOSE_PROJECT="opensyria-production-website"
 COMPOSE_PS_FORMAT='table {{.Name}}\t{{.Image}}\t{{.State}}\t{{.Health}}'
@@ -50,7 +50,7 @@ readonly COMPOSE_ENV_FILE RUNTIME_ENV_FILE RUNTIME_ENV_VALIDATOR
 readonly INFISICAL_CONFIG_FILE STATE_DIR ACTIVE_COLOR_FILE
 readonly ACTIVE_VERSION_FILE PENDING_FILE PREVIOUS_UPSTREAM_FILE DEPLOY_LOCK_FILE
 readonly NGINX_DEPLOY_LOCK_FILE NGINX_ACTIVE_INCLUDE NGINX_CONTAINER PUBLIC_HOST
-readonly PUBLIC_URL EDGE_NETWORK COMPOSE_PROJECT COMPOSE_PS_FORMAT
+readonly PRIVATE_URL EDGE_NETWORK COMPOSE_PROJECT COMPOSE_PS_FORMAT
 readonly MAX_HOMEPAGE_HEADER_BYTES NGINX_LOCK_TIMEOUT_SECONDS
 readonly NGINX_ROUTE_TIMEOUT_SECONDS
 
@@ -355,7 +355,7 @@ wait_for_service_health() {
   done
 }
 
-probe_public_route() {
+probe_private_route() {
   local expected_version="$1"
   local enforce_header_budget="$2"
   local health_body health_code homepage_headers homepage_code
@@ -370,11 +370,12 @@ probe_public_route() {
       --max-time 10 \
       --header 'Cache-Control: no-cache' \
       --header 'Pragma: no-cache' \
+      --header "Host: ${PUBLIC_HOST}" \
       --get \
       --data-urlencode "deployment_probe=${expected_version}" \
       --output "${health_body}" \
       --write-out '%{http_code}' \
-      "${PUBLIC_URL}/health" 2>/dev/null || true
+      "${PRIVATE_URL}/health" 2>/dev/null || true
   )"
   if [[ "${health_code}" != "200" ]] \
     || ! grep -Fq "\"version\":\"${expected_version}\"" "${health_body}"; then
@@ -388,12 +389,13 @@ probe_public_route() {
       --max-time 15 \
       --header 'Cache-Control: no-cache' \
       --header 'Pragma: no-cache' \
+      --header "Host: ${PUBLIC_HOST}" \
       --get \
       --data-urlencode "deployment_probe=${expected_version}" \
       --dump-header "${homepage_headers}" \
       --output /dev/null \
       --write-out '%{http_code}' \
-      "${PUBLIC_URL}/" 2>/dev/null || true
+      "${PRIVATE_URL}/" 2>/dev/null || true
   )"
   if [[ "${homepage_code}" != "200" ]]; then
     rm -f -- "${health_body}" "${homepage_headers}"
@@ -433,7 +435,7 @@ verify_public_route() {
 
   started_at="$(date +%s)"
   while true; do
-    if probe_public_route "${expected_version}" "${enforce_header_budget}"; then
+    if probe_private_route "${expected_version}" "${enforce_header_budget}"; then
       return 0
     fi
 

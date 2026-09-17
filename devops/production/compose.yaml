@@ -5,6 +5,13 @@ x-website: &website
   init: true
   user: "1001:1001"
   read_only: true
+  cpus: "1.0"
+  mem_limit: 512m
+  memswap_limit: 512m
+  pids_limit: 128
+  logging:
+    driver: json-file
+    options: {max-size: 10m, max-file: "3"}
   cap_drop:
     - ALL
   security_opt:
@@ -15,6 +22,7 @@ x-website: &website
     DEPLOYMENT_VERSION: ${DEPLOYMENT_VERSION:?DEPLOYMENT_VERSION is required}
     HOSTNAME: 0.0.0.0
     NEXT_TELEMETRY_DISABLED: "1"
+    NODE_OPTIONS: --max-old-space-size=320
     NODE_ENV: production
     PORT: "3000"
   expose:
@@ -43,6 +51,7 @@ services:
       DEPLOYMENT_VERSION: ${WEBSITE_BLUE_VERSION:?WEBSITE_BLUE_VERSION is required}
       HOSTNAME: 0.0.0.0
       NEXT_TELEMETRY_DISABLED: "1"
+      NODE_OPTIONS: --max-old-space-size=320
       NODE_ENV: production
       PORT: "3000"
     labels:
@@ -61,6 +70,7 @@ services:
       DEPLOYMENT_VERSION: ${WEBSITE_GREEN_VERSION:?WEBSITE_GREEN_VERSION is required}
       HOSTNAME: 0.0.0.0
       NEXT_TELEMETRY_DISABLED: "1"
+      NODE_OPTIONS: --max-old-space-size=320
       NODE_ENV: production
       PORT: "3000"
     labels:
