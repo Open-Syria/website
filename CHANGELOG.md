@@ -20,180 +20,180 @@
 
 ### Bug Fixes
 
-* **404:** hide agent markdown from browser pages ([9206c8d](https://github.com/Open-Syria/website/commit/9206c8d63451c6e10d68b65ed912ed4aa52ba73a))
+* **404:** hide agent markdown from browser pages ([9206c8d](https://github.com/Open-Syria/website/commit/12728838c0c6c8bf3ec8d9f6bf60ab3be38b7156))
 
 ## [0.5.2](https://github.com/Open-Syria/website/compare/v0.5.1...v0.5.2) (2026-08-22)
 
 
 ### Bug Fixes
 
-* **agent:** improve crawler and discovery readiness ([5dbd025](https://github.com/Open-Syria/website/commit/5dbd0252ce3e96346ec5bdfbfd6675486cda4f6f))
+* **agent:** improve crawler and discovery readiness ([5dbd025](https://github.com/Open-Syria/website/commit/ecc8c8109fe73c343e2364fbd313fdf9a084567b))
 
 ## [0.5.1](https://github.com/Open-Syria/website/compare/v0.5.0...v0.5.1) (2026-08-19)
 
 
 ### Bug Fixes
 
-* preserve GitHub metadata fallback during builds ([2eef306](https://github.com/Open-Syria/website/commit/2eef30626d0a88609c3599c175988b04eed37828))
-* preserve GitHub metadata fallback during builds ([c14a89f](https://github.com/Open-Syria/website/commit/c14a89fb814f77f06b369400ed02f9b45408ec71))
-* prevent dataset card action overflow ([e112ffd](https://github.com/Open-Syria/website/commit/e112ffd58fec94e654cc38ef980206921135d576))
-* prevent dataset card action overflow ([fcd7014](https://github.com/Open-Syria/website/commit/fcd701496c168da5ebff50a166ec8ed9fc7306be))
+* preserve GitHub metadata fallback during builds ([2eef306](https://github.com/Open-Syria/website/commit/e605d85f69afd4c5179c8bed0d2586adaab0589b))
+* preserve GitHub metadata fallback during builds ([c14a89f](https://github.com/Open-Syria/website/commit/9c16b785fa74e8fa6fb0aa952c2c0456d09b0503))
+* prevent dataset card action overflow ([e112ffd](https://github.com/Open-Syria/website/commit/2ae74101b23da0a1f585beeee019b8a457b0b57a))
+* prevent dataset card action overflow ([fcd7014](https://github.com/Open-Syria/website/commit/ff90edbd882af66b7e5640f2130ff9767c2bc514))
 
 ## [0.5.0](https://github.com/Open-Syria/website/compare/v0.4.1...v0.5.0) (2026-08-19)
 
 
 ### Features
 
-* add telecom dataset to website ([18632c9](https://github.com/Open-Syria/website/commit/18632c92e82add0744df2081daacc82795cd7a4d))
-* **deploy:** harden OpenSyria production website ([d13b47e](https://github.com/Open-Syria/website/commit/d13b47e96c29d0ea5e89a5698c7fd281ddc252da))
-* **deploy:** harden OpenSyria production website ([#34](https://github.com/Open-Syria/website/issues/34)) ([adeddc1](https://github.com/Open-Syria/website/commit/adeddc1a0ac9d518e17add13fb28ab09eb1b4447))
-* improve search visibility and developer discovery ([ffdc2f2](https://github.com/Open-Syria/website/commit/ffdc2f25b731a4bca65bebd41d1bbc0f280af1bc))
-* improve search visibility and developer discovery ([05cb313](https://github.com/Open-Syria/website/commit/05cb3136926b80aaf52c174cf513b6543a81d785))
+* add telecom dataset to website ([18632c9](https://github.com/Open-Syria/website/commit/ad79d6a1bca06d90954c0f903b81f5000b033356))
+* **deploy:** harden OpenSyria production website ([d13b47e](https://github.com/Open-Syria/website/commit/8f8b7b8755c6e1ac4ede26c2decef909ee8657d9))
+* **deploy:** harden OpenSyria production website ([#34](https://github.com/Open-Syria/website/issues/34)) ([adeddc1](https://github.com/Open-Syria/website/commit/af4090e97e2b7c8dd979e7107d69b8db90768ed8))
+* improve search visibility and developer discovery ([ffdc2f2](https://github.com/Open-Syria/website/commit/ccda3359dcf2229b2b8ed1f0d3987cdc7b2b5444))
+* improve search visibility and developer discovery ([05cb313](https://github.com/Open-Syria/website/commit/cdaaaa7fb386be44b5a1e35510b2093eb3693d47))
 
 
 ### Bug Fixes
 
-* align dataset discovery and dependencies ([47c72e2](https://github.com/Open-Syria/website/commit/47c72e2e81febc7077f506b1fb728de91a6697b9))
-* cache GitHub metadata requests ([1c76148](https://github.com/Open-Syria/website/commit/1c7614864c3934648813de06cacd497c451e083c))
-* **ci:** allow automatic production deploy job ([4fed41e](https://github.com/Open-Syria/website/commit/4fed41e4030f0962e8c0279b344c111a53bbe2d4))
-* **ci:** run automatic production deploy after image build ([442a6c7](https://github.com/Open-Syria/website/commit/442a6c7cd54d9d8c59b669f462b9399c00dcc37c))
-* **deploy:** align production rollout with gateway ([557840c](https://github.com/Open-Syria/website/commit/557840c46841f6c23831dbe1f51f0680e9314e13))
-* **deploy:** capture registry token before child tools ([c741f40](https://github.com/Open-Syria/website/commit/c741f4080b2c84364dedf32ca65fe729d8939b9f))
-* **deploy:** capture registry token before child tools ([1887ba3](https://github.com/Open-Syria/website/commit/1887ba304ebe9effc6f596376e6313b7594fc4dc))
-* **deploy:** clean failed prepare rollback backup ([79bb522](https://github.com/Open-Syria/website/commit/79bb522e32bf865d0e1926b7fb5a6834296d099d))
-* **deploy:** clean failed prepare rollback backup ([772492b](https://github.com/Open-Syria/website/commit/772492b8e2206ad3a68d4b6d179733a259ff52b9))
-* **deploy:** serialize and stabilize nginx cutovers ([4d7a0da](https://github.com/Open-Syria/website/commit/4d7a0da0a4a0f831bb36db1b63de64b59855cfd3))
-* **deploy:** stabilize nginx cutovers ([4dd9f27](https://github.com/Open-Syria/website/commit/4dd9f2705f635df1524438c49e677257688dba27))
-* include local dataset descriptors in catalog ([bc342d3](https://github.com/Open-Syria/website/commit/bc342d3dc842f8be71b3646a7bf203761dd6d016))
-* keep dataset endpoint routes in fallback catalog ([2bd2850](https://github.com/Open-Syria/website/commit/2bd2850bdbd068b6f0a829978baa26cfa44fa241))
-* move og logo metadata to layout ([2b698b6](https://github.com/Open-Syria/website/commit/2b698b63e10ffc1b00e85ae2978b28fae7e5d577))
-* prevent oversized homepage response headers ([e77f641](https://github.com/Open-Syria/website/commit/e77f641a4e0ab0ab9f61e557a87b83829c2357b0))
-* prevent oversized homepage response headers ([056f260](https://github.com/Open-Syria/website/commit/056f260fb2192982393fafc9345680a792bde2c6))
-* prevent oversized proxy headers ([dfbd10b](https://github.com/Open-Syria/website/commit/dfbd10bd5883a16c6c2bb9329b51ff01805bb5d4))
+* align dataset discovery and dependencies ([47c72e2](https://github.com/Open-Syria/website/commit/39750228d2139dc921a1289e2dfadb91634e0b02))
+* cache GitHub metadata requests ([1c76148](https://github.com/Open-Syria/website/commit/3f58d9f55010f5fc1cc23cc60e5b66b4b5a32193))
+* **ci:** allow automatic production deploy job ([4fed41e](https://github.com/Open-Syria/website/commit/f98867b7a79a13369506ee66befafe1cae3a3844))
+* **ci:** run automatic production deploy after image build ([442a6c7](https://github.com/Open-Syria/website/commit/1587e693878db3636461701dc8e8708c3117fb83))
+* **deploy:** align production rollout with gateway ([557840c](https://github.com/Open-Syria/website/commit/8236c39262cc866b36105c1a8c7ba388556edfb6))
+* **deploy:** capture registry token before child tools ([c741f40](https://github.com/Open-Syria/website/commit/f7525140cf79574feab72f8a6195a1b59c6f7573))
+* **deploy:** capture registry token before child tools ([1887ba3](https://github.com/Open-Syria/website/commit/a36cccca2c6adee9412450213cec36c03961684d))
+* **deploy:** clean failed prepare rollback backup ([79bb522](https://github.com/Open-Syria/website/commit/ebaea64fd6511c220b71842b8feaa15b76e5a199))
+* **deploy:** clean failed prepare rollback backup ([772492b](https://github.com/Open-Syria/website/commit/440f280a77f2019ba8236965a2257d036ec82e19))
+* **deploy:** serialize and stabilize nginx cutovers ([4d7a0da](https://github.com/Open-Syria/website/commit/80efacc9b25489d87c489c69f078a58bdf8d1905))
+* **deploy:** stabilize traffic cutovers ([4dd9f27](https://github.com/Open-Syria/website/commit/8c8361cd5386cdaf78b737bbb7b1306f6e6cc680))
+* include local dataset descriptors in catalog ([bc342d3](https://github.com/Open-Syria/website/commit/3df6c621cfe0f45fbb27d1ada8c489ddd0d6c48c))
+* keep dataset endpoint routes in fallback catalog ([2bd2850](https://github.com/Open-Syria/website/commit/07ce56bb04d1c060eab75ba954130f999b696889))
+* move og logo metadata to layout ([2b698b6](https://github.com/Open-Syria/website/commit/bf91bda983aa944086f61659cd60b887d40f9d32))
+* prevent oversized homepage response headers ([e77f641](https://github.com/Open-Syria/website/commit/e98d2335f078395f6b6028f2eda5f95dbb186200))
+* prevent oversized homepage response headers ([056f260](https://github.com/Open-Syria/website/commit/2898dbe52ce0cd545bcc0abf0d4ae8e320e511ba))
+* prevent oversized proxy headers ([dfbd10b](https://github.com/Open-Syria/website/commit/c913e17cf771acc7549bbf9643cc798a526fa8ff))
 
 ## [0.4.1](https://github.com/Open-Syria/website/compare/v0.4.0...v0.4.1) (2026-07-08)
 
 
 ### Bug Fixes
 
-* render dataset pages with runtime catalog data ([33f0abd](https://github.com/Open-Syria/website/commit/33f0abd663eae6745944fe4cc5e80dd262c82ce9))
-* restore stable dataset page rendering ([c71bc76](https://github.com/Open-Syria/website/commit/c71bc7610387123e713d5b1fd50835023d459ffe))
-* simplify footer repository links ([420f0bf](https://github.com/Open-Syria/website/commit/420f0bf0b392fe32ff75c3f4b89f745dc089694a))
+* render dataset pages with runtime catalog data ([33f0abd](https://github.com/Open-Syria/website/commit/e495a31750749a0209d67e503c63f2b2adcaa67c))
+* restore stable dataset page rendering ([c71bc76](https://github.com/Open-Syria/website/commit/3342afa5f73bc9d707d6171f87aba62ec05a3715))
+* simplify footer repository links ([420f0bf](https://github.com/Open-Syria/website/commit/2f6de701df97b790a1dfeaa3c5ab359fb8c602f4))
 
 ## [0.4.0](https://github.com/Open-Syria/website/compare/v0.3.4...v0.4.0) (2026-07-08)
 
 
 ### Features
 
-* add dataset breadcrumbs ([368abf2](https://github.com/Open-Syria/website/commit/368abf2818431e2e55f1e1730c663abefba400b3))
-* add transport dataset catalog ([a06ca75](https://github.com/Open-Syria/website/commit/a06ca7561bdba61e61aee213a1c40c48257d36ae))
+* add dataset breadcrumbs ([368abf2](https://github.com/Open-Syria/website/commit/3566b425563e5a3711f6bf774aafe47da20f1c60))
+* add transport dataset catalog ([a06ca75](https://github.com/Open-Syria/website/commit/7937e79ae323a261a73ed2c95f871f61e889d698))
 
 
 ### Bug Fixes
 
-* route public seed datasets ([b7fa10e](https://github.com/Open-Syria/website/commit/b7fa10ed38020eda13edd79f9427032d4f9bce5a))
-* stabilize locale redirects and clean README ([c2197c4](https://github.com/Open-Syria/website/commit/c2197c41809100839b8b13903e0078c80b84a4ca))
+* route public seed datasets ([b7fa10e](https://github.com/Open-Syria/website/commit/d8aa95cd291d030e4427064f81b3e8f6f4a7cff0))
+* stabilize locale redirects and clean README ([c2197c4](https://github.com/Open-Syria/website/commit/edbf41e9571bad51cad6db9a761b741d19a0f456))
 
 ## [0.3.4](https://github.com/Open-Syria/website/compare/v0.3.3...v0.3.4) (2026-07-07)
 
 
 ### Bug Fixes
 
-* align dataset keyword card ([a4a1fcf](https://github.com/Open-Syria/website/commit/a4a1fcf8f50f6de66132d4ae3bee96ec0dc14523))
+* align dataset keyword card ([a4a1fcf](https://github.com/Open-Syria/website/commit/3bb2c7c74371d0dbf07e3b11a0caae8ab41e7fa7))
 
 ## [0.3.3](https://github.com/Open-Syria/website/compare/v0.3.2...v0.3.3) (2026-07-06)
 
 
 ### Bug Fixes
 
-* repair pnpm lockfile ([b51cd44](https://github.com/Open-Syria/website/commit/b51cd44601baeeff4feae020735cbd1a11f496a0))
+* repair pnpm lockfile ([b51cd44](https://github.com/Open-Syria/website/commit/fb5ca644b060859f933764bf1f1336001a9d4fb0))
 
 ## [0.3.2](https://github.com/Open-Syria/website/compare/v0.3.1...v0.3.2) (2026-07-06)
 
 
 ### Bug Fixes
 
-* add landing faq and dataset schema metadata ([112bb1b](https://github.com/Open-Syria/website/commit/112bb1b07cae516be7b80dcfbad2cf9f244a3fcd))
-* normalize robots host directive ([9734a6f](https://github.com/Open-Syria/website/commit/9734a6fb36bd655075d8191af27e92d909ccd5ef))
+* add landing faq and dataset schema metadata ([112bb1b](https://github.com/Open-Syria/website/commit/53733101917f479589152db64f61414e06daab0e))
+* normalize robots host directive ([9734a6f](https://github.com/Open-Syria/website/commit/21abe394080087993011faef5ac966673099e5be))
 
 ## [0.3.1](https://github.com/Open-Syria/website/compare/v0.3.0...v0.3.1) (2026-07-05)
 
 
 ### Bug Fixes
 
-* restore favicon assets ([a47fdd5](https://github.com/Open-Syria/website/commit/a47fdd53b112405d6174d21108ce83842231c015))
+* restore favicon assets ([a47fdd5](https://github.com/Open-Syria/website/commit/8b4cc972d7a8eb8e0b70df05929fcd23ebad427a))
 
 ## [0.3.0](https://github.com/Open-Syria/website/compare/v0.2.1...v0.3.0) (2026-07-04)
 
 
 ### Features
 
-* improve website discovery and previews ([5afd533](https://github.com/Open-Syria/website/commit/5afd5338c76d4d5398cee3018b24ffcab9cbde3d))
+* improve website discovery and previews ([5afd533](https://github.com/Open-Syria/website/commit/213a66bcfd0944c3dc72f2ec2ca3956c0b207799))
 
 
 ### Bug Fixes
 
-* bust social preview caches ([99070f0](https://github.com/Open-Syria/website/commit/99070f0073867fb6a4ffa8629076bc875da7b3d1))
-* improve dataset SEO metadata ([34068d1](https://github.com/Open-Syria/website/commit/34068d115521b9e04776bb914d915d01b2d14c83))
-* refine brand preview layout ([cba45e5](https://github.com/Open-Syria/website/commit/cba45e564298e2f85252a98d815f7590b639950f))
-* refresh OpenSyria brand previews ([d8d8e7e](https://github.com/Open-Syria/website/commit/d8d8e7ee585a371358a1e84dcd774eb07d32512c))
-* restore website logo component ([00e8f60](https://github.com/Open-Syria/website/commit/00e8f6098daed1919f2686a5e189fd22b1bd8190))
+* bust social preview caches ([99070f0](https://github.com/Open-Syria/website/commit/a79a09dc283c32421acc3abd4a40e9002d36f943))
+* improve dataset SEO metadata ([34068d1](https://github.com/Open-Syria/website/commit/7394baddcef90bdbc6bc3aeb7d95b98584663f3d))
+* refine brand preview layout ([cba45e5](https://github.com/Open-Syria/website/commit/7dc3479a54648f797029e7558309d5420490507d))
+* refresh OpenSyria brand previews ([d8d8e7e](https://github.com/Open-Syria/website/commit/8569eaa180309c5d8262b48b1d04a54387f20c7d))
+* restore website logo component ([00e8f60](https://github.com/Open-Syria/website/commit/75593a6f3f1a5592946914195dfa8062f5c79a30))
 
 ## [0.2.1](https://github.com/Open-Syria/website/compare/v0.2.0...v0.2.1) (2026-07-03)
 
 
 ### Bug Fixes
 
-* clarify agent discovery metadata ([9aa5283](https://github.com/Open-Syria/website/commit/9aa52833bf160ba3199b4fb530dba59f20f7c72a))
-* format llms markdown links ([cfcc7e2](https://github.com/Open-Syria/website/commit/cfcc7e2acd3f73208d297b4b23c6cf73019ac755))
+* clarify agent discovery metadata ([9aa5283](https://github.com/Open-Syria/website/commit/a8282357065fd31d2a57c3ed6425daea6d9702d8))
+* format llms markdown links ([cfcc7e2](https://github.com/Open-Syria/website/commit/dd2bd520f31390019d4562e9ebf956a87e3b0433))
 
 ## [0.2.0](https://github.com/Open-Syria/website/compare/v0.1.1...v0.2.0) (2026-07-03)
 
 
 ### Features
 
-* add branded dataset home surface [skip ci] ([1817621](https://github.com/Open-Syria/website/commit/181762101ca71aa7eacf39d124413f235eb1f809))
-* add dataset catalog pages [skip ci] ([39e26d9](https://github.com/Open-Syria/website/commit/39e26d941f2fa76897fb873b6e6b83909c9e95a0))
-* add website agent discovery ([df285bf](https://github.com/Open-Syria/website/commit/df285bf849231000de8c2371af656a6ce105d510))
-* refresh website experience [skip ci] ([2d068e4](https://github.com/Open-Syria/website/commit/2d068e4d8ca93ad913a7f76d9af820f553dca6ec))
-* use base ui navigation menu [skip ci] ([f11e3d0](https://github.com/Open-Syria/website/commit/f11e3d09abf11ce8983afea0449c241a16a7c9f6))
+* add branded dataset home surface [skip ci] ([1817621](https://github.com/Open-Syria/website/commit/dd1499a4dcb937c8080efd66b1cf3db510a38175))
+* add dataset catalog pages [skip ci] ([39e26d9](https://github.com/Open-Syria/website/commit/6d894bf914f00156ec32ff2259664cb6ae6ab7e0))
+* add website agent discovery ([df285bf](https://github.com/Open-Syria/website/commit/88908329c03277ddc3058a545ea62aebff83f42a))
+* refresh website experience [skip ci] ([2d068e4](https://github.com/Open-Syria/website/commit/b93add55b50d497cc6cd0d05d41c474b0798b376))
+* use base ui navigation menu [skip ci] ([f11e3d0](https://github.com/Open-Syria/website/commit/ec6cfeaf18ac6b6aec338f7261bcccabc09840a9))
 
 
 ### Bug Fixes
 
-* add localized error routes [skip ci] ([9350f02](https://github.com/Open-Syria/website/commit/9350f028b4b138bb45645b9aa11e5f40af3fddc4))
-* harden website tracking query handling ([72c9915](https://github.com/Open-Syria/website/commit/72c9915815775e88df76c11cf323cff61a6c8c1d))
-* improve Arabic website copy ([78a7be1](https://github.com/Open-Syria/website/commit/78a7be19a566e225c83f024cf306645517e68c23))
-* polish external links and RTL API routes ([7769244](https://github.com/Open-Syria/website/commit/77692441af4b9238c9e61554bdd509edbba46dc8))
-* restore homepage controls ([afa4d05](https://github.com/Open-Syria/website/commit/afa4d05585c036f7db4fea15bc4704bd9e890dfb))
+* add localized error routes [skip ci] ([9350f02](https://github.com/Open-Syria/website/commit/0a251c2891be130b204182a4da5dd6a083149638))
+* harden website tracking query handling ([72c9915](https://github.com/Open-Syria/website/commit/c640cb2755000836ce9dd81aa84f5033977d66dc))
+* improve Arabic website copy ([78a7be1](https://github.com/Open-Syria/website/commit/0cc20eb20a65cb7d84d01fe0c07d056fb2e32522))
+* polish external links and RTL API routes ([7769244](https://github.com/Open-Syria/website/commit/e9bd6b2a60f7724d827ea829422a7069924fc27e))
+* restore homepage controls ([afa4d05](https://github.com/Open-Syria/website/commit/4def97f0b879171c948d19fb46c4fb563ca27251))
 
 ## [0.1.1](https://github.com/Open-Syria/website/compare/v0.1.0...v0.1.1) (2026-07-01)
 
 
 ### Bug Fixes
 
-* render robots flag as ascii ([b6f6552](https://github.com/Open-Syria/website/commit/b6f65525a785ff740adb32a5366040cc72ce2868))
+* render robots flag as ascii ([b6f6552](https://github.com/Open-Syria/website/commit/c195f67b6c6dda0e8033eeb9bab17beaf148b452))
 
 ## [0.1.0](https://github.com/Open-Syria/website/compare/v0.0.2...v0.1.0) (2026-07-01)
 
 
 ### Features
 
-* add branded robots route [skip ci] ([6242c99](https://github.com/Open-Syria/website/commit/6242c992959d204777158706f0e5ce254c88d386))
-* refine hero github button and robots branding ([98ab38b](https://github.com/Open-Syria/website/commit/98ab38be0c74236bc25842b88921243ab0c6a729))
+* add branded robots route [skip ci] ([6242c99](https://github.com/Open-Syria/website/commit/ce5a3540bd2fe225b3bdca9be2ef6f00523b0577))
+* refine hero github button and robots branding ([98ab38b](https://github.com/Open-Syria/website/commit/d7917776f85a2e972dfc66779eff2436d91bb667))
 
 
 ### Bug Fixes
 
-* restore static robots file [skip ci] ([71c184c](https://github.com/Open-Syria/website/commit/71c184c9b6eceb27c2307be11e9d6581b661a105))
+* restore static robots file [skip ci] ([71c184c](https://github.com/Open-Syria/website/commit/9519976404ac3c0586916acf6bcd0b1b1959b4ec))
 
 ## [0.0.2](https://github.com/Open-Syria/website/compare/v0.0.1...v0.0.2) (2026-06-30)
 
 
 ### Bug Fixes
 
-* install official Google Tag Manager snippet ([ec73ab3](https://github.com/Open-Syria/website/commit/ec73ab3b4b42790c909b60c610f15e697e6bc691))
-* support Google tag tracking ([b1ecb21](https://github.com/Open-Syria/website/commit/b1ecb21532570ec74cc600de839aa580204fabc3))
+* install official Google Tag Manager snippet ([ec73ab3](https://github.com/Open-Syria/website/commit/d8d9bca8ad04e5cc4dd308a22a42d0002b2c637c))
+* support Google tag tracking ([b1ecb21](https://github.com/Open-Syria/website/commit/ed0cdae0916ab991ec6005166f6a5f7a1f41534d))
 
 ## Changelog
 

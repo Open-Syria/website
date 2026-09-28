@@ -78,8 +78,7 @@ src/lib/                 Site config and GitHub data helpers
 messages/                English and Arabic translations
 public/                  Public static assets
 scripts/                 Reproducible asset generation scripts
-devops/production/       Production app bundle and blue/green lifecycle
-docs/                    Contributor and operational documentation
+docs/                    Contributor and reusable hosting documentation
 ```
 
 ## Local Development
@@ -109,6 +108,26 @@ http://localhost:3000
 ```
 
 Application source code lives under `src/`.
+
+## Environment
+
+Copy `.env.example` when local environment values are needed:
+
+```bash
+cp .env.example .env.local
+```
+
+| Variable | Required | Purpose |
+| --- | --- | --- |
+| `NEXT_PUBLIC_SITE_URL` | Build time | Canonical site URL; production must use the OpenSyria apex |
+| `NEXT_PUBLIC_DATASETS_API_URL` | Build time | Dataset API origin used by prerendering and cache refreshes |
+| `NEXT_PUBLIC_GOOGLE_TAG_MANAGER_ID` | Production build | Google tag or Tag Manager ID for analytics-enabled deployments |
+| `DEPLOYMENT_VERSION` | Runtime/build time | Non-secret commit SHA exposed by `/health` and used for Next.js deployment skew protection |
+
+Google tag and Tag Manager IDs are public build inputs. Configure your own
+analytics ID when analytics is enabled. Use your own site and API origins for
+self-hosted builds, and supply the release identifier for deployment skew
+protection.
 
 ## Internationalization
 
@@ -198,6 +217,11 @@ Apply Biome formatting and safe fixes:
 ```bash
 pnpm check:write
 ```
+
+## Deployment
+
+Reusable build and hosting instructions live in [docs/deployment.md](docs/deployment.md).
+Operations for the hosted service are documented privately outside public repositories.
 
 ## Repository Documents
 

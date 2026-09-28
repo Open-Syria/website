@@ -49,7 +49,9 @@ pnpm build
 Use `pnpm check:write` for Biome formatting and safe fixes. Use
 `pnpm check:write:unsafe` only when intentionally accepting unsafe Biome fixes.
 
-Public hosting requirements are documented in [Deployment](deployment.md).
+Changes to public build or hosting requirements should also update
+[Deployment](deployment.md). Keep live deployment tooling and operator
+procedures in private operational storage.
 
 ## Dependency Updates
 

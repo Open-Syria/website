@@ -23,6 +23,16 @@ Before handing off changes, run the smallest relevant command and prefer `pnpm v
 
 Do not commit local `.env` files, SSH keys, Cloudflare tokens, Tailscale credentials, generated local artifacts, or private infrastructure details.
 
+## Public Documentation
+
+Public docs may describe application behavior, public URLs, local setup, and
+reusable hosting requirements. Keep live host inventories, private addresses,
+deployment paths, provider resource IDs, access policies, credential sharing,
+relationships with unrelated projects, and backup/recovery records in private
+operator documentation outside public repositories. Use localhost, reserved
+example domains, or placeholders in examples. Documentation freshness rules
+below apply only to information suitable for public release.
+
 ## Documentation Freshness
 
 - Treat this `AGENTS.md` as living agent documentation. When adding, removing, or renaming a repo-local skill under `.agents/skills`, update the `Local Skill Selection` list in this file in the same change.
@@ -30,7 +40,7 @@ Do not commit local `.env` files, SSH keys, Cloudflare tokens, Tailscale credent
 - When changing SEO, metadata, Open Graph/Twitter images, canonical URLs, structured data, `src/app/sitemap.ts`, `src/app/robots.txt`, or copy in `src/lib/site.ts`, also check route-local metadata helpers under `src/app/[locale]/**/_utils`, `messages/*.json`, and the relevant README/docs wording.
 - When adding, removing, or renaming datasets shown by the website, update `src/lib/datasets.ts`, localized messages, dataset page metadata/structured data, `README.md`, and any public discovery links in `src/lib/agent-discovery.ts` that should mention the dataset.
 - When changing agent-facing discovery surfaces such as `/auth.md`, `/index.md`, `/llms.txt`, `/.well-known/api-catalog`, `/.well-known/agent-skills/**`, OAuth/OIDC placeholders, or MCP-related paths, update `src/lib/agent-discovery.ts`, `README.md`, and any scanner-facing route docs in the same change.
-- When deployment behavior, Docker Compose files, nginx assumptions, Cloudflare cutover behavior, health checks, or environment variables change, update `docs/deployment.md`, `devops/production/README.md`, `.env.example`, and the relevant deploy scripts together.
+- When public hosting requirements, Docker build behavior, health checks, or environment variable contracts change, update `docs/deployment.md` and `.env.example` as needed. Keep live deployment tooling, operations, and operator procedures in private operational storage.
 - When release flow, CI, provenance, or dependency/security posture changes, update `docs/releases.md`, `docs/pull-request-workflow.md`, `docs/supply-chain-security.md`, and `CHANGELOG.md` when the change is release-visible.
 
 ## Local Skill Selection
