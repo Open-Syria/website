@@ -198,7 +198,7 @@ export function MarksForm({
     onSubmit(parsed.input)
   }
   return (
-    <div className="grid items-start gap-8 lg:grid-cols-[minmax(0,1.2fr)_minmax(0,0.8fr)] lg:gap-14">
+    <div className="grid grid-cols-1 items-start gap-8 lg:grid-cols-[minmax(0,1.2fr)_minmax(0,0.8fr)] lg:gap-14">
       <form onSubmit={submit} noValidate autoComplete="off" aria-busy={loading}>
         <Card>
           <CardHeader>
@@ -509,7 +509,7 @@ export function MarksForm({
                 </Alert>
               ) : null}
               {maximum ? (
-                <FieldSet>
+                <FieldSet className="min-w-0">
                   <FieldLegend id="score-mode-label" variant="label">
                     {t("form.inputMode")}
                   </FieldLegend>
@@ -524,16 +524,19 @@ export function MarksForm({
                       }
                     }}
                     variant="outline"
-                    spacing={0}
-                    className="w-full"
+                    spacing={1}
+                    className="w-full flex-wrap items-stretch"
                   >
                     <ToggleGroupItem
                       value="percentage"
-                      className="min-h-11 flex-1"
+                      className="wrap-anywhere h-auto min-h-11 min-w-0 flex-1 basis-24 whitespace-normal py-2"
                     >
                       {t("form.percentage")}
                     </ToggleGroupItem>
-                    <ToggleGroupItem value="total" className="min-h-11 flex-1">
+                    <ToggleGroupItem
+                      value="total"
+                      className="wrap-anywhere h-auto min-h-11 min-w-0 flex-1 basis-24 whitespace-normal py-2"
+                    >
                       {t("form.total", { maximum })}
                     </ToggleGroupItem>
                   </ToggleGroup>
@@ -820,7 +823,7 @@ export function MarksForm({
             <Button
               type="submit"
               size="lg"
-              className="min-h-12"
+              className="h-auto min-h-12 whitespace-normal py-3"
               disabled={
                 loading ||
                 unsupportedSharia ||

@@ -38,12 +38,12 @@ export function AdmissionsSelect<Value extends string>({
     >
       <SelectTrigger
         disabled={disabled}
-        className="h-auto min-h-11 w-full min-w-0 whitespace-normal"
+        className="wrap-anywhere min-h-11 w-full min-w-0 whitespace-normal data-[size=default]:h-auto *:data-[slot=select-value]:line-clamp-none"
         {...props}
       >
         <SelectValue className="min-w-0" />
       </SelectTrigger>
-      <SelectContent alignItemWithTrigger={false}>
+      <SelectContent alignItemWithTrigger={false} className="wrap-anywhere">
         <SelectGroup>
           {items.map((item) => (
             <SelectItem

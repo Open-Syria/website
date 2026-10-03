@@ -13,6 +13,7 @@ import {
 } from "@/components/ui/card"
 import type { Locale } from "@/i18n/routing"
 import { trustedExternalLinkRel } from "@/lib/links"
+import { cn } from "@/lib/utils"
 import { faqItems, guideSections, sourceGroups } from "../_utils/content"
 import type { AdmissionsData } from "../_utils/types"
 import { SourceLinks } from "./source-links"
@@ -32,7 +33,7 @@ export async function AdmissionsGuide({
         aria-labelledby="admissions-guide-title"
         className="scroll-mt-6 border-t bg-background py-14 sm:py-20"
       >
-        <div className="page-content grid gap-10 lg:grid-cols-[0.7fr_1.3fr] lg:gap-16">
+        <div className="page-content grid grid-cols-1 gap-10 lg:grid-cols-[minmax(0,0.7fr)_minmax(0,1.3fr)] lg:gap-16">
           <div>
             <p className="flex items-center gap-2 font-medium text-primary text-sm">
               <BookOpen aria-hidden="true" className="size-4" />
@@ -93,7 +94,7 @@ export async function AdmissionsGuide({
         aria-labelledby="admissions-faq-title"
         className="scroll-mt-6 border-t bg-background-light py-14 sm:py-20"
       >
-        <div className="page-content grid items-start gap-10 lg:grid-cols-[0.7fr_1.3fr] lg:gap-16">
+        <div className="page-content grid grid-cols-1 items-start gap-10 lg:grid-cols-[minmax(0,0.7fr)_minmax(0,1.3fr)] lg:gap-16">
           <div>
             <p className="flex items-center gap-2 font-medium text-primary text-sm">
               <HelpCircle aria-hidden="true" className="size-4" />
@@ -181,7 +182,7 @@ export async function AdmissionsGuide({
               >
                 {t(`sourceGroups.${group.id}`)}
               </h3>
-              <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-4">
+              <div className="grid grid-cols-1 gap-4 md:grid-cols-2 xl:grid-cols-4">
                 {data.sources
                   .filter((source) =>
                     group.announcements.some(
@@ -214,10 +215,10 @@ export async function AdmissionsGuide({
                           href={source.url}
                           target="_blank"
                           rel={trustedExternalLinkRel}
-                          className={buttonVariants({
-                            variant: "outline",
-                            size: "sm",
-                          })}
+                          className={cn(
+                            buttonVariants({ variant: "outline", size: "sm" }),
+                            "wrap-anywhere h-auto min-h-8 max-w-full whitespace-normal py-1.5"
+                          )}
                         >
                           {t("readAnnouncement", {
                             number: source.announcement,
@@ -247,7 +248,10 @@ export async function AdmissionsGuide({
               href="https://mofa.education-syria.com/signup"
               target="_blank"
               rel={trustedExternalLinkRel}
-              className={buttonVariants({ variant: "outline", size: "lg" })}
+              className={cn(
+                buttonVariants({ variant: "outline", size: "lg" }),
+                "wrap-anywhere h-auto min-h-10 max-w-full whitespace-normal py-2"
+              )}
             >
               {t("applicationLink")}
               <ArrowUpRight

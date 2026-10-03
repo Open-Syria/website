@@ -23,11 +23,11 @@ export function FaqAccordion({ items }: FaqAccordionProps) {
       multiple
       defaultValue={items.slice(0, 1).map((item) => item.id)}
       hiddenUntilFound
-      className="rounded-xl border bg-card px-5 sm:px-6"
+      className="wrap-anywhere rounded-xl border bg-card px-5 sm:px-6"
     >
       {items.map((item) => (
         <AccordionItem value={item.id} key={item.id}>
-          <AccordionTrigger className="py-5 text-base leading-7">
+          <AccordionTrigger className="min-w-0 py-5 text-base leading-7">
             {item.question}
           </AccordionTrigger>
           <AccordionContent>

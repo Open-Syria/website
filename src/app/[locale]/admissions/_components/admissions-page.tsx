@@ -38,7 +38,7 @@ export async function AdmissionsPage({
       </SiteHeader>
       <main
         id="main-content"
-        className="min-h-svh bg-background-light text-foreground"
+        className="wrap-anywhere min-h-svh bg-background-light text-foreground"
       >
         <section
           className="page-hero-section"

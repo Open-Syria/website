@@ -19,7 +19,7 @@ export function SiteHeader({ children, className }: SiteHeaderProps) {
       <div
         className={cn(
           "page-content",
-          "flex items-center justify-between gap-4"
+          "flex flex-wrap items-center justify-between gap-4"
         )}
       >
         <Link
