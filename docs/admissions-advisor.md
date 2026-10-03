@@ -92,7 +92,7 @@ The extractors verify pinned hashes and resolve merged cells by geometric contai
 
 ## Performance and caching
 
-There is no admissions database, Redis service or matching API. Only the selected certificate route loads through a dynamic import emitted as a versioned Next.js asset. Syrian scientific JSON is about 846 KiB / 36 KiB gzip, literary 300 KiB / 15 KiB gzip, and vocational 820 KiB / 31 KiB gzip. Non-Syrian scientific is about 635 KiB / 29 KiB gzip and literary 217 KiB / 12 KiB gzip. The shared specialty configuration is about 10 KiB / 2 KiB gzip. The two Arab/foreign academic catalogues have sizes comparable to the non-Syrian academic catalogues. Non-Syrian vocational is about 711 KiB / 29 KiB gzip; Arab/foreign vocational is about 724 KiB / 29 KiB gzip. These are source JSON sizes; emitted JavaScript and transfer compression vary. Full catalogues are not serialized into initial HTML/RSC. Marks are evaluated in the browser. This size does not require SQLite or a matching server.
+Matching needs no admissions database, Redis service or matching API. The optional marks lookup uses a separate, bounded SQLite store for expiring abuse-control counters and tickets, never student records. Only the selected certificate route loads through a dynamic import emitted as a versioned Next.js asset. Syrian scientific JSON is about 846 KiB / 36 KiB gzip, literary 300 KiB / 15 KiB gzip, and vocational 820 KiB / 31 KiB gzip. Non-Syrian scientific is about 635 KiB / 29 KiB gzip and literary 217 KiB / 12 KiB gzip. The shared specialty configuration is about 10 KiB / 2 KiB gzip. The two Arab/foreign academic catalogues have sizes comparable to the non-Syrian academic catalogues. Non-Syrian vocational is about 711 KiB / 29 KiB gzip; Arab/foreign vocational is about 724 KiB / 29 KiB gzip. These are source JSON sizes; emitted JavaScript and transfer compression vary. Full catalogues are not serialized into initial HTML/RSC. Marks are evaluated in the browser. This size does not require SQLite or a matching server.
 
 Results paginate eight institution groups and six choices within each group. Every group starts closed, including after filter changes and reloads. An opened group's heading sticks to the top of the viewport until its content ends. Filtering searches the entire catalogue. Pagination and closed accordions keep the rendered DOM bounded. Padding inside accordion panels preserves card rings and shadows.
 
@@ -218,3 +218,29 @@ derived quota catalogues. Versions and dependent manifests were rebuilt.
 All thresholds, eligibility rules and 10,494 choices remain unchanged; the other
 18 catalogues and shared vocational options are byte-identical to the pre-review
 baseline. The source audit provides page-level findings and verification evidence.
+
+
+## Optional exam-marks import
+
+For Syrian 2026 scientific/literary certificates, the form can fill total and
+subject marks after the student chooses their exam governorate and exact
+certificate/curriculum and enters an authorized student number. The browser
+fetches the encrypted response. Server processing returns only supported marks;
+identity fields are discarded. Unsupported score scales, unknown subjects,
+inconsistent totals and non-passing results require manual entry. The initial
+live validation covered one authorized scientific result; other responses must
+pass the same strict checks. No certificate equivalence is inferred.
+
+Imported marks remain editable. Subject fractions survive display rounding and
+tab restoration; a changed subject value overrides its imported fraction.
+Applicant category, personal eligibility details and official approvals are
+never inferred from the result. The browser-supplied response is advisory input,
+not authenticated proof of a certificate. Manual entry always remains available.
+
+The optional endpoint uses a verified Turnstile challenge, a session-bound
+single-use ticket and shared per-session, per-address and global limits. Only
+expiring hashes/counters and public exam metadata are stored on the server.
+Student numbers, result bodies, names and decoder keys must never enter logs,
+analytics or public examples. Provider contracts and operator setup remain in
+private documentation. Run `pnpm test:results` for decoder, precision, replay,
+request-validation and shared-store checks.

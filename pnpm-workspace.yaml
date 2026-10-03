@@ -6,15 +6,15 @@ overrides:
   'browserslist@<=4.28.6': 4.28.7
   'qs@>=6.0.0 <6.16.0': 6.16.0
   '@hono/node-server': 2.0.11
-  brace-expansion: 5.0.9
-  fast-uri: 3.1.6
-  hono: 4.13.5
-  ip-address: 10.3.1
+  brace-expansion: 5.0.12
+  fast-uri: 3.1.8
+  hono: 4.13.7
+  ip-address: 10.7.1
   js-yaml: 4.3.2
   nanoid: 3.3.18
   postcss: 8.5.23
   sharp: 0.35.4
-  undici: 7.29.0
+  undici: 7.29.1
 
 minimumReleaseAge: 1440
 minimumReleaseAgeStrict: true

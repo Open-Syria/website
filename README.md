@@ -10,6 +10,9 @@ The website is intentionally focused: a localized landing page, dataset catalog 
 
 ## Public URLs
 
+The footer groups Platform, Community, and Partners links, including
+[Jobara: Jobs in Syria](https://jobara.sy) with its logo and localized link text.
+
 | URL | Purpose |
 | --- | --- |
 | <https://opensyria.org> | Public website |
@@ -128,6 +131,17 @@ institution. Results distinguish checked requirements, missing information, and
 unmet requirements for each general, parallel, Arab/foreign public, or private track. Filters and a
 saved shortlist help compare choices. A saved-choices button with a count sits above the results, outside the filters. Result groups start closed and keep their headings visible while their contents scroll. On mobile, filters open in a scrollable dialog with a fixed action footer. Applicable admission tracks open one shared eligibility dialog, with only the relevant questions and one field per answer. Answers update immediately with Undo; the list stays still during editing and restores the reading position after regrouping. Official approvals remain pending. A guide and FAQ below the tool link
 to the relevant Ministry PDF pages.
+
+For supported Syrian scientific/literary certificates from 2026, students can
+optionally import marks using their student number, exam governorate and exact
+certificate/curriculum. Their browser fetches the encrypted result; the server
+returns only normalized marks after a security check. Imported marks remain
+editable, and original subject fractions are preserved for comparisons.
+Manual entry remains available if lookup is unavailable or the result does not
+match the supported scale. Imported marks are advisory, not verified proof of
+identity, certificate authenticity or admission. Names and student numbers are
+not saved by the application. See [deployment requirements](docs/deployment.md)
+for enabling this optional feature; provider research and credentials are private.
 
 The catalogues contain **10,494 choices across twenty-four certificate/applicant catalogues**.
 For Syrian/equivalent applicants with 2026 certificates: 1,169 Syrian scientific,
@@ -261,7 +275,7 @@ Google recrawls; a local build cannot change the live index.
 
 ## Social Previews
 
-Open Graph and Twitter preview metadata explicitly reference the root social images:
+Most pages explicitly reference the root Open Graph and Twitter images:
 
 - `/opengraph-image.png`
 - `/twitter-image.png`
@@ -273,6 +287,25 @@ Regenerate social preview assets after brand changes:
 ```bash
 pnpm images:brand
 ```
+
+The admissions guide has dedicated Arabic and English covers: 1200×630 for
+Open Graph and 1200×600 for Twitter's large image card. Its route-local metadata
+selects the matching language, with image dimensions, PNG type, and translated
+alt text. The image imports produce content-hashed URLs so regenerated covers
+receive new URLs. The shared layout also emits `og:logo` as a `property` meta tag
+alongside the page's locale, URL, type, title, description, and preview image.
+
+Regenerate the admissions covers after changing `Admissions.social` in
+`messages/*.json` or their design:
+
+```bash
+pnpm images:admissions
+```
+
+The generator writes to `src/app/[locale]/admissions/_assets/social/` using
+bundled IBM Plex Sans Arabic fonts from [Google Fonts](https://github.com/google/fonts/tree/main/ofl/ibmplexsansarabic).
+Their SIL Open Font License is included in `scripts/assets/ibm-plex-sans-arabic/OFL.txt`;
+generation needs no font downloads or image-generation service at runtime.
 
 ## Analytics
 

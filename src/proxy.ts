@@ -4,7 +4,7 @@ import { NextResponse } from "next/server"
 const arabicLocalePrefix = "/ar"
 const englishLocalePrefix = "/en"
 const internalLocaleRewriteHeader = "x-opensyria-locale-rewrite"
-const directPublicPathPrefixes = ["/-/", "/.well-known/"] as const
+const directPublicPathPrefixes = ["/-/", "/.well-known/", "/api/"] as const
 const directPublicPaths = new Set([
   "/apple-icon.png",
   "/auth.md",

@@ -96,3 +96,8 @@ Use a fine-grained token or GitHub App token with permission to create pull requ
 The release config uses `bootstrap-sha` so the initial public website launch history is treated as already released at `0.0.1`.
 
 Future release PRs should only include release-worthy commits after that bootstrap point.
+
+
+Releases that change exam lookup must pass `pnpm test:results` and preserve the
+runtime key and shared-store contract in [deployment.md](deployment.md).
+Keep provider contracts, decoder credentials and real test records private.

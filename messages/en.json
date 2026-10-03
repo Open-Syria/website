@@ -5,6 +5,16 @@
       "title": "Syria University Admissions 2026–2027 by Score",
       "description": "Explore Syria university admissions 2026–2027 for Syrian and non-Syrian certificates. Compare program minimums, admission tracks and additional requirements."
     },
+    "social": {
+      "eyebrow": "FIND YOUR NEXT STEP",
+      "titleLine1": "University",
+      "titleLine2": "admissions guide",
+      "descriptionLine1": "Explore your options in Syria by score.",
+      "descriptionLine2": "Compare universities and institutes.",
+      "branches": "Scientific · Literary · Vocational",
+      "season": "2026–2027",
+      "alt": "OpenSyria university admissions guide for Syria, 2026–2027: explore scientific, literary and vocational options by score."
+    },
     "eyebrow": "ADMISSIONS GUIDE · 2026–2027",
     "description": "Start with your marks. Explore universities and institutes, understand their requirements, and build a shortlist that makes sense for you.",
     "home": "Home",
@@ -13,7 +23,7 @@
     "officialLink": "Official announcements",
     "previewTitle": "{count} choices across admission routes",
     "disclaimer": "These are application minimums, not acceptance guarantees. Competition, available places, and all additional conditions still apply.",
-    "privacy": "Calculations run in your browser. Filters and eligibility answers are included in the URL. Your main score stays in this tab; favourites stay for future visits.",
+    "privacy": "Calculations run in your browser. Filters and eligibility answers are included in the URL. Your main score is saved only in this tab; favourites stay for future visits. Optional exam import processes the result on our server without saving it.",
     "source": "Announcement {number}, PDF page {page}",
     "reviewed": "Source check: {date} · {version}",
     "form": {
@@ -262,7 +272,7 @@
         },
         "score": {
           "title": "Use the admission comparison score",
-          "body": "For ordinary admission with a 2026 Syrian certificate, use the comparison total out of 2400 for scientific or 2200 for literary, including religious education and excluding the lower foreign-language mark.\n\nVocational maximums vary by profession; enter the official percentage.\n\nFor non-Syrian academic certificates under announcement 8, enter the official certificate percentage without a deduction; individual subject marks are not considered.\n\nFor Arab/foreign admission, announcement 9 uses the same Syrian comparison denominators or the official non-Syrian certificate average and disregards subject marks for both.\n\nNon-Syrian vocational certificates use the official average without a deduction under announcement 10, with exact qualification matching.\n\nFor Arab/foreign vocational admission, announcement 11 uses the official percentage and exact vocational qualification; both 2025 and 2026 are supported.\n\nSyrian Sharia holders enter the official standard percentage with religious subjects averaged as one course, plus a separate official percentage after adding religious-subject marks for the 19 dedicated Sharia faculty choices.\n\nFor older private-only admission, use the official percentage for the certificate year; the calculator does not infer historical marking totals.\n\nFor defence and security admission, enter the official admission percentage for your certificate year, and check each choice?s year limits and conditions."
+          "body": "For ordinary admission with a 2026 Syrian certificate, use the comparison total out of 2400 for scientific or 2200 for literary, including religious education and excluding the lower foreign-language mark.\n\nVocational maximums vary by profession; enter the official percentage.\n\nFor non-Syrian academic certificates under announcement 8, enter the official certificate percentage without a deduction; individual subject marks are not considered.\n\nFor Arab/foreign admission, announcement 9 uses the same Syrian comparison denominators or the official non-Syrian certificate average and disregards subject marks for both.\n\nNon-Syrian vocational certificates use the official average without a deduction under announcement 10, with exact qualification matching.\n\nFor Arab/foreign vocational admission, announcement 11 uses the official percentage and exact vocational qualification; both 2025 and 2026 are supported.\n\nSyrian Sharia holders enter the official standard percentage with religious subjects averaged as one course, plus a separate official percentage after adding religious-subject marks for the 19 dedicated Sharia faculty choices.\n\nFor older private-only admission, use the official percentage for the certificate year; the calculator does not infer historical marking totals.\n\nFor defence and security admission, enter the official admission percentage for your certificate year, and check each choice’s year limits and conditions."
         },
         "conditions": {
           "title": "Read the conditions beside every minimum",
@@ -289,7 +299,7 @@
         },
         "score": {
           "question": "Which marks count towards my admission score?",
-          "answer": "For ordinary admission with a 2026 Syrian certificate, scientific and literary comparison totals are out of 2400 and 2200 respectively, including religious education and excluding the lower foreign-language mark.\n\nSyrian vocational certificates use the profession-specific percentage under announcement 6.\n\nNon-Syrian academic certificates use the official percentage without a deduction under announcement 8; for Turkish certificates, this is the diploma average.\n\nFor Arab/foreign admission, announcement 9 uses the same Syrian comparison denominators or the official non-Syrian certificate average and disregards subject marks for both.\n\nNon-Syrian vocational certificates use the official average without a deduction under announcement 10, with exact qualification matching.\n\nFor Arab/foreign vocational admission, announcement 11 uses the official percentage and exact vocational qualification; both 2025 and 2026 are supported.\n\nSyrian Sharia holders enter the official standard percentage with religious subjects averaged as one course, plus a separate official percentage after adding religious-subject marks for the 19 dedicated Sharia faculty choices.\n\nFor older private-only admission, use the official percentage for the certificate year; the calculator does not infer historical marking totals.\n\nFor defence and security admission, enter the official admission percentage for your certificate year, and check each choice?s year limits and conditions."
+          "answer": "For ordinary admission with a 2026 Syrian certificate, scientific and literary comparison totals are out of 2400 and 2200 respectively, including religious education and excluding the lower foreign-language mark.\n\nSyrian vocational certificates use the profession-specific percentage under announcement 6.\n\nNon-Syrian academic certificates use the official percentage without a deduction under announcement 8; for Turkish certificates, this is the diploma average.\n\nFor Arab/foreign admission, announcement 9 uses the same Syrian comparison denominators or the official non-Syrian certificate average and disregards subject marks for both.\n\nNon-Syrian vocational certificates use the official average without a deduction under announcement 10, with exact qualification matching.\n\nFor Arab/foreign vocational admission, announcement 11 uses the official percentage and exact vocational qualification; both 2025 and 2026 are supported.\n\nSyrian Sharia holders enter the official standard percentage with religious subjects averaged as one course, plus a separate official percentage after adding religious-subject marks for the 19 dedicated Sharia faculty choices.\n\nFor older private-only admission, use the official percentage for the certificate year; the calculator does not infer historical marking totals.\n\nFor defence and security admission, enter the official admission percentage for your certificate year, and check each choice’s year limits and conditions."
         },
         "channels": {
           "question": "Can I include general, parallel, and private options?",
@@ -297,7 +307,7 @@
         },
         "conditions": {
           "question": "Why does a result say “needs confirmation”?",
-          "answer": "A required detail or condition is still unconfirmed, such as your mathematics percentage, the separate Sharia faculty score, previous general-admission acceptance or an entrance-test result.\n\nUse ?Check your eligibility? in the relevant admission track to answer; your answer applies to all related choices. Official approvals and post-admission assessments still require confirmation by the responsible institution."
+          "answer": "A required detail or condition is still unconfirmed, such as your mathematics percentage, the separate Sharia faculty score, previous general-admission acceptance or an entrance-test result.\n\nUse “Check your eligibility” in the relevant admission track to answer; your answer applies to all related choices. Official approvals and post-admission assessments still require confirmation by the responsible institution."
         },
         "specialisations": {
           "question": "Can I apply directly to every institute specialisation?",
@@ -405,7 +415,7 @@
         },
         "entranceTests": {
           "question": "Do entrance tests have their own registration deadlines?",
-          "answer": "Yes. Register for and pass the required test before listing the choice; the main application deadline is not the test deadline. Announcement 1, pages 22–29, gives separate arrangements for fine arts, Damascus health-sciences specialties, political science, physical education, music, nursing schools, applied arts, Idlib media, archaeology and tourism institutes.\n\nFor example, fine-arts registration is 4–12 October 2026 and the test is 13 October at 10 am; its combined drawing pass mark is 50/100. Other tests have different dates, fees, documents and venues.\n\nPage 24 contradicts itself about the order of the political-science written test and interview: confirm the sequence and appointment with the faculty. Enter your test result through ?Check your eligibility? for the choice; a qualifying score does not replace passing the required test."
+          "answer": "Yes. Register for and pass the required test before listing the choice; the main application deadline is not the test deadline. Announcement 1, pages 22–29, gives separate arrangements for fine arts, Damascus health-sciences specialties, political science, physical education, music, nursing schools, applied arts, Idlib media, archaeology and tourism institutes.\n\nFor example, fine-arts registration is 4–12 October 2026 and the test is 13 October at 10 am; its combined drawing pass mark is 50/100. Other tests have different dates, fees, documents and venues.\n\nPage 24 contradicts itself about the order of the political-science written test and interview: confirm the sequence and appointment with the faculty. Enter your test result through “Check your eligibility” for the choice; a qualifying score does not replace passing the required test."
         },
         "privatePerformingArts": {
           "question": "What do the private acting and film programmes require?",
@@ -501,6 +511,30 @@
       "filteredOut": "Answer saved. This choice no longer matches your current filters.",
       "undone": "Your previous answer has been restored.",
       "undo": "Undo"
+    },
+    "lookup": {
+      "open": "Fill marks using my student number",
+      "title": "Import your exam marks",
+      "description": "Syrian 2026 scientific and literary certificates. Choose the exam governorate and the exact certificate and curriculum shown in the Ministry app.",
+      "directorate": "Exam governorate",
+      "certificate": "Certificate and curriculum",
+      "number": "Student number",
+      "choose": "Choose an option",
+      "privacy": "Use your own number or one you have permission to check. Your browser contacts the Ministry results service. OpenSyria processes the encrypted response to fill your marks; it does not retain your number or identity details. Cloudflare checks this request for abuse.",
+      "hint": "Manual entry is always available. Your exam governorate is separate from your preferred study location.",
+      "submit": "Fetch and fill marks",
+      "cancel": "Return to the form",
+      "retry": "Try again",
+      "loading": "Loading...",
+      "success": "Marks filled. Review them before showing your choices. You can edit any mark.",
+      "errors": {
+        "unavailable": "The lookup service could not be reached. Try again later or enter your marks manually.",
+        "limited": "Too many attempts. Wait 15 minutes before trying again, or enter your marks manually.",
+        "challenge": "Please complete the security check again. If it does not load, use manual entry.",
+        "session": "This lookup expired. Close this window and open it again.",
+        "result": "We could not import a matching passing result on the supported score scale. Check your exam details or enter your marks manually.",
+        "invalid": "Check the student number and exam selections."
+      }
     }
   },
   "Hero": {
@@ -533,11 +567,13 @@
     "description": "OpenSyria is an open source public data commons for reliable Syrian datasets, API access, and civic intelligence.",
     "github": "GitHub organization",
     "home": "Home",
+    "jobara": "Jobara: Jobs in Syria",
     "licenseNote": "Each repository defines its own license.",
     "linkedIn": "LinkedIn",
     "navigationLabel": "Footer navigation",
     "openApi": "OpenAPI document",
     "platformTitle": "Platform",
+    "partnersTitle": "Partners",
     "principle": "Public, non-personal, source-backed reference data only.",
     "repositoriesTitle": "Repositories",
     "admissions": "Admissions advisor"

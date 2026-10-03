@@ -1,8 +1,17 @@
 import type { Metadata } from "next"
 import { getTranslations } from "next-intl/server"
 
-import { indexableRobots, siteConfig, socialPreviewImages } from "@/lib/site"
+import { indexableRobots, siteConfig } from "@/lib/site"
+import arabicOpenGraph from "../_assets/social/admissions-og-ar.png"
+import englishOpenGraph from "../_assets/social/admissions-og-en.png"
+import arabicTwitter from "../_assets/social/admissions-twitter-ar.png"
+import englishTwitter from "../_assets/social/admissions-twitter-en.png"
 import { type LocaleParams, resolvePageLocale } from "./locale"
+
+const socialImages = {
+  ar: { openGraph: arabicOpenGraph, twitter: arabicTwitter },
+  en: { openGraph: englishOpenGraph, twitter: englishTwitter },
+} as const
 
 export async function generateMetadata({
   params,
@@ -12,6 +21,8 @@ export async function generateMetadata({
   const locale = await resolvePageLocale(params)
   const t = await getTranslations({ locale, namespace: "Admissions" })
   const path = locale === "ar" ? "/ar/admissions" : "/admissions"
+  const images = socialImages[locale]
+  const imageAlt = t("social.alt")
   return {
     title: t("seo.title"),
     description: t("seo.description"),
@@ -35,13 +46,28 @@ export async function generateMetadata({
       alternateLocale: [
         siteConfig.locales[locale === "ar" ? "en" : "ar"].ogLocale,
       ],
-      images: [socialPreviewImages.openGraph],
+      images: [
+        {
+          url: new URL(images.openGraph.src, siteConfig.url).toString(),
+          width: images.openGraph.width,
+          height: images.openGraph.height,
+          type: "image/png",
+          alt: imageAlt,
+        },
+      ],
     },
     twitter: {
       card: "summary_large_image",
       title: t("seo.title"),
       description: t("seo.description"),
-      images: [socialPreviewImages.twitter],
+      images: [
+        {
+          url: new URL(images.twitter.src, siteConfig.url).toString(),
+          width: images.twitter.width,
+          height: images.twitter.height,
+          alt: imageAlt,
+        },
+      ],
     },
   }
 }

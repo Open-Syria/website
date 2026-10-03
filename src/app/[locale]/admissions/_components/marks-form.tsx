@@ -1,5 +1,12 @@
 "use client"
 
+import dynamic from "next/dynamic"
+import { applyImportedMarks } from "../_utils/imported-marks"
+
+const ResultsLookup = dynamic(() =>
+  import("./results-lookup").then((module) => module.ResultsLookup)
+)
+
 import {
   ArrowRight,
   BookOpen,
@@ -468,6 +475,20 @@ export function MarksForm({
                     <FieldError>{t("form.admissionRouteError")}</FieldError>
                   ) : null}
                 </Field>
+              ) : null}
+              {!nonSyrian &&
+              !service &&
+              !olderPrivate &&
+              value.certificateYear === "2026" &&
+              (branch === "scientific" || branch === "literary") ? (
+                <ResultsLookup
+                  key={`${branch}:${value.certificateYear}`}
+                  branch={branch}
+                  onImport={(marks) => {
+                    onChange(applyImportedMarks(value, marks))
+                    setErrors({})
+                  }}
+                />
               ) : null}
               {olderPrivate ? (
                 <Alert>

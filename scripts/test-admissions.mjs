@@ -58,6 +58,27 @@ const raw = JSON.parse(
 )
 const data = validateAdmissionsData(raw)
 
+test("admissions translations preserve readable Unicode copy", () => {
+  for (const locale of ["ar", "en"]) {
+    const messages = JSON.parse(
+      readFileSync(
+        new URL(`../messages/${locale}.json`, import.meta.url),
+        "utf8"
+      )
+    )
+    function check(value, path) {
+      if (typeof value === "string") {
+        assert.doesNotMatch(value, /\?{2,}|\uFFFD|\w\?\w/, path)
+      } else if (value && typeof value === "object") {
+        for (const [key, item] of Object.entries(value)) {
+          check(item, `${path}.${key}`)
+        }
+      }
+    }
+    check(messages.Admissions, locale)
+  }
+})
+
 test("shared questions deduplicate student answers without merging distinct exams or official checks", () => {
   const before = {
     type: "exam",

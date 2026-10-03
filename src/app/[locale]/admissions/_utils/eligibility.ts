@@ -95,8 +95,10 @@ export function evaluateAdmissions(
     throw new RangeError("Invalid admission score")
   }
   for (const score of Object.values(student.subjects)) {
-    if (!score || !isValidScore(score) || score.maximum !== 10_000)
-      throw new RangeError("Invalid subject percentage")
+    // Manual percentages and imported course totals share the same exact-ratio
+    // comparisons. Bound totals to keep cross multiplication safely integral.
+    if (!score || !isValidScore(score) || score.maximum > 1_000_000)
+      throw new RangeError("Invalid subject score")
   }
   if (
     student.shariaFacultyScore != null &&

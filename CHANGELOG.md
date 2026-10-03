@@ -2,6 +2,10 @@
 
 ## Unreleased
 
+- Add optional protected exam-marks import for the admissions advisor, preserving exact subject scores and manual editing.
+- Align admissions source links, add the Jobara footer partnership, and provide localized admissions sharing covers.
+- Patch Next.js and transitive dependencies and retain licensed UI styles without the component CLI build dependency.
+
 ### Features
 
 * explain direct language registration in Arabic and English with applicant-specific certificate years, branches, study-language conditions, fees and English/French tests; distinguish direct Sharia/Arabic institute registration from separate vocational ministry competitions

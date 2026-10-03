@@ -9,6 +9,7 @@ import {
   supportsAdmissionRoute,
   vocationalOptions,
 } from "./certificates.ts"
+import { importedSubject } from "./imported-marks.ts"
 import { normaliseDigits, parseScore, type ScoreMode } from "./score.ts"
 import type { AdmissionRoute, StudentInput, Subject } from "./types"
 
@@ -25,6 +26,7 @@ export const additionalSubjects = [
 ] as const satisfies readonly Subject[]
 
 export type FormValues = {
+  importedMarks?: ImportedMarks
   admissionRoute: AdmissionRoute
   certificate: CertificateOption
   certificateYear: string
@@ -113,7 +115,10 @@ export function parseStudentForm(values: FormValues): {
     ? parseScore(shariaText, "percentage")
     : null
   if (shariaText && !shariaFacultyScore) errors.shariaFacultyScore = true
-  const math = values.math.trim() ? parseScore(values.math, "percentage") : null
+  const math = values.math.trim()
+    ? (importedSubject(values, "math", values.math) ??
+      parseScore(values.math, "percentage"))
+    : null
   const birthText = normaliseDigits(values.birthYear)
   const birthYear = birthText ? Number(birthText) : null
   if (values.certificate === "other") errors.certificate = true
@@ -139,7 +144,8 @@ export function parseStudentForm(values: FormValues): {
   for (const subject of needsSubjects ? additionalSubjects : []) {
     const value = values.subjectMarks[subject]?.trim()
     if (!value) continue
-    const mark = parseScore(value, "percentage")
+    const mark =
+      importedSubject(values, subject, value) ?? parseScore(value, "percentage")
     if (mark) subjects[subject] = mark
     else errors[subject] = true
   }
@@ -182,3 +188,5 @@ export function parseStudentForm(values: FormValues): {
     },
   }
 }
+
+import type { ImportedMarks } from "@/lib/exam-results/contracts"

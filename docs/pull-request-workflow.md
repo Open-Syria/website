@@ -43,6 +43,8 @@ For focused local work:
 ```bash
 pnpm check
 pnpm typecheck
+pnpm test:admissions
+pnpm test:results
 pnpm build
 ```
 

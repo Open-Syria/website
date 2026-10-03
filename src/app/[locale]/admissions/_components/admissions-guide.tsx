@@ -209,7 +209,7 @@ export async function AdmissionsGuide({
                           {t("pdfPages", { count: source.pageCount })}
                         </p>
                       </CardContent>
-                      <CardFooter>
+                      <CardFooter className="mt-auto">
                         <a
                           href={source.url}
                           target="_blank"

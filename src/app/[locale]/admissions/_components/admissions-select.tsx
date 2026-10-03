@@ -16,6 +16,7 @@ export function AdmissionsSelect<Value extends string>({
   value,
   onValueChange,
   placeholder,
+  disabled,
   ...props
 }: {
   items: { value: Value; label: string }[]
@@ -24,10 +25,11 @@ export function AdmissionsSelect<Value extends string>({
   placeholder: string
 } & Pick<
   ComponentProps<typeof SelectTrigger>,
-  "id" | "aria-invalid" | "aria-describedby"
+  "id" | "aria-invalid" | "aria-describedby" | "disabled"
 >) {
   return (
     <Select
+      disabled={disabled}
       items={[{ value: null, label: placeholder }, ...items]}
       value={value}
       onValueChange={(next) => {
@@ -35,6 +37,7 @@ export function AdmissionsSelect<Value extends string>({
       }}
     >
       <SelectTrigger
+        disabled={disabled}
         className="h-auto min-h-11 w-full min-w-0 whitespace-normal"
         {...props}
       >
