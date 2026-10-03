@@ -2,13 +2,62 @@
 
 ## Unreleased
 
+- Add optional protected exam-marks import for the admissions advisor, preserving exact subject scores and manual editing.
+- Align admissions source links, add the Jobara footer partnership, and provide localized admissions sharing covers.
+- Patch Next.js and transitive dependencies and retain licensed UI styles without the component CLI build dependency.
+
 ### Features
 
+* explain direct language registration in Arabic and English with applicant-specific certificate years, branches, study-language conditions, fees and English/French tests; distinguish direct Sharia/Arabic institute registration from separate vocational ministry competitions
+
+* support the Syrian 2026 vocational faculty-family quota with 291 source-mapped choices, engineering/other-college/institute thresholds, exact qualifications and preserved assessments; keep personnel eligibility and vacant scientific-quota places pending official confirmation
+
+* support 31 defence/security choices across four deferred branch catalogues, with programme-specific certificate years, official percentage input, exact maritime qualifications, gender/security birth-year checks and pending official eligibility requirements
+
+* support faculty-family and disability quotas for Syrian 2026 scientific, literary and Sharia certificates in three deferred catalogues with 1,031 route-specific choices; use quota-specific thresholds and retain official personnel/medical eligibility as pending confirmation
+
+* support older-certificate private admission for both certificate origins: 2025 and earlier for Syrian/equivalent applicants and 2024 and earlier for Arab/foreign applicants, across scientific/literary/vocational branches; preserve official percentages, specialty matching, entrance tests and year-aware result restoration
+
+* support Syrian 2026 Sharia certificates with 373 choices, a separate optional score for 19 dedicated faculty choices, pending results when that score is unknown, and direct-registration guidance for Sharia/Arabic institutes
+
+* add a localized admissions advisor with 10,494 choices across twenty-four certificate/applicant catalogues, with per-track eligibility and a source-linked guide and FAQ
+* support announcement 10 for 2026 non-Syrian vocational equivalents: 241 public parallel and 536 private choices, exact qualification matching, audited Arabic cell corrections, merged-grid deduplication and preserved entrance/railway conditions
+* support announcement 11 for Arab/foreign vocational applicants with Syrian or equivalent non-Syrian certificates from 2025 or 2026: 241 public and 536 private choices, exact qualifications, age/assessment rules and source references; merge one missed duplicate welding row in announcement 10
+* support announcement 9 for Arab/foreign scientific and literary applicants with Syrian or equivalent non-Syrian certificates from 2025 or 2026: 1,007 and 348 choices, a separate public track, explicit certificate year and category guidance, source-linked age/exam rules and route-aware storage/filtering
+* support announcement 8 for 2026 non-Syrian scientific and literary certificates held by Syrian/equivalent applicants: 1,007 and 348 parallel/private choices using the official percentage, with separate deferred catalogues and certificate-specific form fields
+* support literary totals out of 2200 and exact vocational certificate specialties, keeping branch catalogues in separate deferred assets
+* defer the versioned admissions catalogue until calculation, paginate institution groups and choices, and add positive career guidance with its sources and limitations
+* prioritize matching admissions options, faculties and general/parallel/private tracks; retain favourites locally, restore answers within the tab and preserve filters with short nuqs URL keys
+* catalog all eleven Ministry admissions announcements and the support-centre directory; add applicant-category and previous general-admission checks
+* use shadcn Select controls, revise Arabic admissions copy, and add permanent footer access plus a seasonal homepage section
+* cache fixed admissions data with Cache Components and add localized admissions SEO, complete social metadata, breadcrumbs, and FAQ structured data
 * add the transport dataset to the catalog, SEO metadata, and agent discovery surfaces
 * include API-backed seed datasets in public dataset catalog routing
 
 ### Bug Fixes
 
+* clarify pending eligibility and shared answers, align Arabic/English admission guidance, put common FAQ questions first, and correct source links and release-history placement
+
+* consolidate repeated eligibility inputs into one compact shared dialog opened from the applicable admission-track container, save answers globally through the URL, and restore reading position and focus after results regroup, including pagination and filtered-out choices
+
+* improve admissions readability in both languages with topic-based paragraph breaks and fewer repeated instructions, while retaining all scoring, eligibility and official-source guidance
+
+* simplify mobile admissions results with closed groups, sticky institution headings, a scrollable filter dialog, and compact eligibility questions with primary-color selections, URL-synced answers and Undo; use 75 as the percentage example
+* show questions only inside applicable admission tracks; evaluate reserved local/eastern quotas using the certificate-issuing governorate and remove unsupported origin checks from ordinary province rows
+* expose saved choices above the results with a count and a mobile shortcut outside the filters dialog
+
+* share one FAQ accordion across the homepage and admissions in both languages, with consistent styling, only the first question initially open, and every answer retained in the initial HTML
+
+* complete the final 24-page admissions source review (309/309 pages); repair 16 displayed names while preserving choice/exam IDs and eligibility rules, and clarify application documents, test registration, post-admission checks, cancellation and separate Education Ministry procedures in both languages
+
+* keep filtered and other parameterized page URLs out of search indexing with response-specific noindex headers, preserve clean canonicals and usable filters, and verify sitemap pages, language alternatives, metadata, structured data and social assets in the readiness checks
+
+* verify initial admissions JavaScript assets in both locales and document stopping production previews before rebuilding, preventing stale local previews from leaving the calculator on its loading message
+
+* correct literary/vocational Arabic course and campus names, institute grouping, and specialization filters without changing source thresholds or eligibility
+* match Arabic admissions searches across the ل + ال contraction, so الترجمة also finds للترجمة
+* preserve card rings inside admissions accordions and correct computing-institute mathematics to 60% for both public tracks
+* apply IBM Plex Sans Arabic consistently to Arabic text, headings, and form controls instead of falling back through Latin font utilities
 * align production rollout probes and registry authentication with the hardened Docker gateway
 * prevent duplicated discovery response headers from taking the homepage offline
 * include transport and telecom in the well-known API catalog from the shared discovery list

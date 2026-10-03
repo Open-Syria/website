@@ -1,0 +1,1955 @@
+[
+  {
+    "announcement": 8,
+    "page": 33,
+    "row": 3,
+    "name": "اللغة العربية",
+    "place": "دمشق",
+    "parallel": "50%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 8,
+    "page": 33,
+    "row": 4,
+    "name": "اللغة العربية",
+    "place": "القنيطرة",
+    "parallel": "50%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 8,
+    "page": 33,
+    "row": 5,
+    "name": "اللغة العربية",
+    "place": "درعا",
+    "parallel": "50%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 8,
+    "page": 33,
+    "row": 6,
+    "name": "اللغة العربية",
+    "place": "السويداء",
+    "parallel": "50%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 8,
+    "page": 33,
+    "row": 7,
+    "name": "اللغة العربية",
+    "place": "حلب",
+    "parallel": "50%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 8,
+    "page": 33,
+    "row": 8,
+    "name": "اللغة العربية الثانية",
+    "place": "حلب /اعزاز",
+    "parallel": "50%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 8,
+    "page": 33,
+    "row": 9,
+    "name": "اللغة العربية الثالثة بمنبج",
+    "place": "حلب",
+    "parallel": "50%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 8,
+    "page": 33,
+    "row": 10,
+    "name": "اللغة العربية -عي ن عرب",
+    "place": "حلب/عي ن عرب",
+    "parallel": "50%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 8,
+    "page": 33,
+    "row": 11,
+    "name": "اللغة العربية",
+    "place": "ادلب",
+    "parallel": "50%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 8,
+    "page": 33,
+    "row": 12,
+    "name": "اللغة العربية االثانية",
+    "place": "ادلب /الدانا",
+    "parallel": "50%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 8,
+    "page": 33,
+    "row": 13,
+    "name": "اللغة العربية",
+    "place": "الالذقية",
+    "parallel": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 8,
+    "page": 33,
+    "row": 14,
+    "name": "اللغة العربية",
+    "place": "حمص",
+    "parallel": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 8,
+    "page": 33,
+    "row": 15,
+    "name": "اللغة العربية",
+    "place": "حماه",
+    "parallel": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 8,
+    "page": 33,
+    "row": 16,
+    "name": "اللغة العربية",
+    "place": "طرطوس",
+    "parallel": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 8,
+    "page": 33,
+    "row": 17,
+    "name": "اللغة العربية",
+    "place": "دير الزور",
+    "parallel": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 8,
+    "page": 33,
+    "row": 18,
+    "name": "اللغة العربية",
+    "place": "الحسكة",
+    "parallel": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 8,
+    "page": 33,
+    "row": 19,
+    "name": "اللغة العربية",
+    "place": "الرقة",
+    "parallel": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 8,
+    "page": 33,
+    "row": 20,
+    "name": "اللغة العربية بالقامشلي",
+    "place": "الحسكة/قامشلي",
+    "parallel": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 8,
+    "page": 33,
+    "row": 21,
+    "name": "اللغة اإلنكلي نية",
+    "place": "دمشق",
+    "parallel": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 8,
+    "page": 33,
+    "row": 22,
+    "name": "اللغة اإلنكلي نية",
+    "place": "درعا",
+    "parallel": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 8,
+    "page": 33,
+    "row": 23,
+    "name": "اللغة اإلنكلي نية",
+    "place": "حلب",
+    "parallel": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 8,
+    "page": 33,
+    "row": 24,
+    "name": "اللغة اإلنكلي نية الثانية",
+    "place": "حلب/اعزاز",
+    "parallel": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 8,
+    "page": 33,
+    "row": 25,
+    "name": "اللغة اإلنكلي نية الثالثة بمنبج",
+    "place": "حلب",
+    "parallel": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 8,
+    "page": 33,
+    "row": 26,
+    "name": "اللغة اإلنكلي نية/عي ن عرب",
+    "place": "حلب/عي ن عرب",
+    "parallel": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 8,
+    "page": 33,
+    "row": 27,
+    "name": "اللغة اإلنكلي نية",
+    "place": "ادلب",
+    "parallel": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 8,
+    "page": 33,
+    "row": 28,
+    "name": "اللغة اإلنكلي نية الثانية",
+    "place": "ادلب/الدانا",
+    "parallel": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 8,
+    "page": 33,
+    "row": 29,
+    "name": "اللغة اإلنكلي نية",
+    "place": "الالذقية",
+    "parallel": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 8,
+    "page": 33,
+    "row": 30,
+    "name": "اللغة اإلنكلي نية",
+    "place": "طرطوس",
+    "parallel": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 8,
+    "page": 33,
+    "row": 31,
+    "name": "اللغة اإلنكلي نية",
+    "place": "حمص",
+    "parallel": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 8,
+    "page": 33,
+    "row": 32,
+    "name": "اللغة اإلنكلي نية",
+    "place": "حماه",
+    "parallel": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 8,
+    "page": 33,
+    "row": 33,
+    "name": "اللغة اإلنكلي نية",
+    "place": "دير الزور",
+    "parallel": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 8,
+    "page": 33,
+    "row": 34,
+    "name": "اللغة الفرنسية",
+    "place": "دمشق",
+    "parallel": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 8,
+    "page": 34,
+    "row": 3,
+    "name": "اللغة الفرنسية",
+    "place": "السويداء",
+    "parallel": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 8,
+    "page": 34,
+    "row": 4,
+    "name": "اللغة الفرنسية",
+    "place": "حلب",
+    "parallel": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 8,
+    "page": 34,
+    "row": 5,
+    "name": "اللغة الفرنسية",
+    "place": "الالذقية",
+    "parallel": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 8,
+    "page": 34,
+    "row": 6,
+    "name": "اللغة الفرنسية",
+    "place": "حمص",
+    "parallel": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 8,
+    "page": 34,
+    "row": 7,
+    "name": "اللغة الفرنسية",
+    "place": "طرطوس",
+    "parallel": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 8,
+    "page": 34,
+    "row": 8,
+    "name": "اللغة الفرنسية",
+    "place": "دير الزور",
+    "parallel": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 8,
+    "page": 34,
+    "row": 9,
+    "name": "اللغة الفرنسية",
+    "place": "الحسكة",
+    "parallel": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 8,
+    "page": 34,
+    "row": 10,
+    "name": "اللغة الير كية",
+    "place": "دمشق",
+    "parallel": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 8,
+    "page": 34,
+    "row": 11,
+    "name": "اللغة الير كية",
+    "place": "حلب",
+    "parallel": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 8,
+    "page": 34,
+    "row": 12,
+    "name": "اللغة الروسية",
+    "place": "دمشق",
+    "parallel": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 8,
+    "page": 34,
+    "row": 13,
+    "name": "اللغة الفارسية",
+    "place": "دمشق",
+    "parallel": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 8,
+    "page": 34,
+    "row": 14,
+    "name": "اللغة الفارسية",
+    "place": "حلب",
+    "parallel": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 8,
+    "page": 34,
+    "row": 15,
+    "name": "اللغة الفارسية",
+    "place": "حمص",
+    "parallel": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 8,
+    "page": 34,
+    "row": 16,
+    "name": "اللغة الكردية -القامشلي",
+    "place": "الحسكة/القامشلي",
+    "parallel": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 8,
+    "page": 34,
+    "row": 17,
+    "name": "اللغة الكردية-عي ن العرب",
+    "place": "حلب/عي ن العرب",
+    "parallel": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 8,
+    "page": 34,
+    "row": 18,
+    "name": "الير جمة -القامشلي",
+    "place": "الحسكة/القامشلي",
+    "parallel": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 8,
+    "page": 34,
+    "row": 19,
+    "name": "الفلســفة",
+    "place": "دمشق",
+    "parallel": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 8,
+    "page": 34,
+    "row": 20,
+    "name": "الفلســفة",
+    "place": "السويداء",
+    "parallel": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 8,
+    "page": 34,
+    "row": 21,
+    "name": "الفلســفة",
+    "place": "حلب",
+    "parallel": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 8,
+    "page": 34,
+    "row": 22,
+    "name": "الفلســفة -عي ن عرب",
+    "place": "حلب/عي ن عرب",
+    "parallel": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 8,
+    "page": 34,
+    "row": 23,
+    "name": "الفلســفة",
+    "place": "الالذقية",
+    "parallel": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 8,
+    "page": 34,
+    "row": 24,
+    "name": "الفلســفة",
+    "place": "حمص",
+    "parallel": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 8,
+    "page": 34,
+    "row": 25,
+    "name": "الفلسفة بالقامشلي",
+    "place": "الحسكة/القامشلي",
+    "parallel": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 8,
+    "page": 34,
+    "row": 26,
+    "name": "علم اجتماع",
+    "place": "دمشق",
+    "parallel": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 8,
+    "page": 34,
+    "row": 27,
+    "name": "علم اجتماع",
+    "place": "السويداء",
+    "parallel": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 8,
+    "page": 34,
+    "row": 28,
+    "name": "علم اجتماع",
+    "place": "درعا",
+    "parallel": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 8,
+    "page": 34,
+    "row": 29,
+    "name": "علم اجتماع",
+    "place": "حلب",
+    "parallel": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 8,
+    "page": 34,
+    "row": 30,
+    "name": "علم اجتماع الثانية",
+    "place": "حلب /اعزاز",
+    "parallel": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 8,
+    "page": 34,
+    "row": 31,
+    "name": "علم اجتماع/عي ن عرب",
+    "place": "حلب/عي ن عرب",
+    "parallel": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 8,
+    "page": 34,
+    "row": 32,
+    "name": "علم اجتماع",
+    "place": "الالذقية",
+    "parallel": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 8,
+    "page": 34,
+    "row": 33,
+    "name": "علم اجتماع",
+    "place": "دير الزور",
+    "parallel": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 8,
+    "page": 34,
+    "row": 34,
+    "name": "علم اجتماع-بالقامشلي",
+    "place": "الحسكة/القامشلي",
+    "parallel": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 8,
+    "page": 35,
+    "row": 3,
+    "name": "الجينولوجيا(علم المرأة) - عي ن العرب",
+    "place": "حلب/عي ن العرب",
+    "parallel": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 8,
+    "page": 35,
+    "row": 4,
+    "name": "الجينولوجيا(علم المرأة) - بالقامشلي",
+    "place": "الحسكة/القامشلي",
+    "parallel": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 8,
+    "page": 35,
+    "row": 5,
+    "name": "المكتبات والمعلومات",
+    "place": "دمشق",
+    "parallel": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 8,
+    "page": 35,
+    "row": 6,
+    "name": "المكتبات والمعلومات",
+    "place": "الالذقية",
+    "parallel": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 8,
+    "page": 35,
+    "row": 7,
+    "name": "الجغرافية",
+    "place": "دمشق",
+    "parallel": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 8,
+    "page": 35,
+    "row": 8,
+    "name": "الجغرافية",
+    "place": "السويداء",
+    "parallel": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 8,
+    "page": 35,
+    "row": 9,
+    "name": "الجغرافية",
+    "place": "حلب",
+    "parallel": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 8,
+    "page": 35,
+    "row": 10,
+    "name": "الجغرافية الثانية",
+    "place": "حلب /اعزاز",
+    "parallel": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 8,
+    "page": 35,
+    "row": 11,
+    "name": "الجغرافية/عي ن عرب",
+    "place": "حلب/عي ن العرب",
+    "parallel": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 8,
+    "page": 35,
+    "row": 12,
+    "name": "الجغرافية",
+    "place": "ادلب",
+    "parallel": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 8,
+    "page": 35,
+    "row": 13,
+    "name": "الجغرافية",
+    "place": "الالذقية",
+    "parallel": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 8,
+    "page": 35,
+    "row": 14,
+    "name": "الجغرافية",
+    "place": "طرطوس",
+    "parallel": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 8,
+    "page": 35,
+    "row": 15,
+    "name": "الجغرافية",
+    "place": "حماه",
+    "parallel": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 8,
+    "page": 35,
+    "row": 16,
+    "name": "الجغرافية",
+    "place": "دير الزور",
+    "parallel": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 8,
+    "page": 35,
+    "row": 17,
+    "name": "الجغرافية -القامشلي",
+    "place": "الحسكة/قامشلي",
+    "parallel": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 8,
+    "page": 35,
+    "row": 18,
+    "name": "التاريــخ",
+    "place": "دمشق",
+    "parallel": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 8,
+    "page": 35,
+    "row": 19,
+    "name": "التاريــخ",
+    "place": "السويداء",
+    "parallel": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 8,
+    "page": 35,
+    "row": 20,
+    "name": "التاريــخ",
+    "place": "حلب",
+    "parallel": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 8,
+    "page": 35,
+    "row": 21,
+    "name": "التاريــخ",
+    "place": "حلب -اعزاز",
+    "parallel": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 8,
+    "page": 35,
+    "row": 22,
+    "name": "التاريــخ -عي ن عرب",
+    "place": "حلب/عي ن العرب",
+    "parallel": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 8,
+    "page": 35,
+    "row": 23,
+    "name": "التاريــخ",
+    "place": "ادلب",
+    "parallel": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 8,
+    "page": 35,
+    "row": 24,
+    "name": "التاريــخ",
+    "place": "الالذقية",
+    "parallel": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 8,
+    "page": 35,
+    "row": 25,
+    "name": "التاريــخ",
+    "place": "حمص",
+    "parallel": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 8,
+    "page": 35,
+    "row": 26,
+    "name": "التاريــخ",
+    "place": "دير الزور",
+    "parallel": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 8,
+    "page": 35,
+    "row": 27,
+    "name": "التاريــخ",
+    "place": "الرقة",
+    "parallel": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 8,
+    "page": 35,
+    "row": 28,
+    "name": "التاريــخ -القامشلي",
+    "place": "الحسكة/قامشلي",
+    "parallel": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 8,
+    "page": 35,
+    "row": 29,
+    "name": "اآلثـــار",
+    "place": "دمشق",
+    "parallel": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 8,
+    "page": 35,
+    "row": 30,
+    "name": "اآلثـــار",
+    "place": "السويداء",
+    "parallel": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 8,
+    "page": 35,
+    "row": 31,
+    "name": "اآلثـــار",
+    "place": "حلب",
+    "parallel": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 8,
+    "page": 35,
+    "row": 32,
+    "name": "اآلثـــار",
+    "place": "الحسكة",
+    "parallel": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 8,
+    "page": 35,
+    "row": 33,
+    "name": "اإلعــالم",
+    "place": "دمشق",
+    "parallel": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 8,
+    "page": 35,
+    "row": 34,
+    "name": "الحقوق",
+    "place": "دمشق",
+    "parallel": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 8,
+    "page": 36,
+    "row": 3,
+    "name": "الحقوق",
+    "place": "درعا",
+    "parallel": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 8,
+    "page": 36,
+    "row": 4,
+    "name": "الحقوق",
+    "place": "القنيطرة",
+    "parallel": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 8,
+    "page": 36,
+    "row": 5,
+    "name": "الحقوق",
+    "place": "حلب",
+    "parallel": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 8,
+    "page": 36,
+    "row": 6,
+    "name": "الحقوق الثانية",
+    "place": "حلب /اعزاز",
+    "parallel": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 8,
+    "page": 36,
+    "row": 7,
+    "name": "الحقوق",
+    "place": "ادلب",
+    "parallel": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 8,
+    "page": 36,
+    "row": 8,
+    "name": "الحقوق",
+    "place": "الالذقية",
+    "parallel": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 8,
+    "page": 36,
+    "row": 9,
+    "name": "الحقوق",
+    "place": "حمص",
+    "parallel": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 8,
+    "page": 36,
+    "row": 10,
+    "name": "الحقوق",
+    "place": "دير الزور",
+    "parallel": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 8,
+    "page": 36,
+    "row": 11,
+    "name": "الحقوق",
+    "place": "الحسكة",
+    "parallel": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 8,
+    "page": 36,
+    "row": 12,
+    "name": "الحقوق",
+    "place": "الرقة",
+    "parallel": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 8,
+    "page": 36,
+    "row": 13,
+    "name": "الير بية المناهج وطرائق التدريس",
+    "place": "دمشق",
+    "parallel": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 8,
+    "page": 36,
+    "row": 14,
+    "name": "التـربية المناهج وطرائق التدريس",
+    "place": "حلب",
+    "parallel": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 8,
+    "page": 36,
+    "row": 15,
+    "name": "الير بية المناهج وتقنيات التعليم",
+    "place": "الالذقية",
+    "parallel": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 8,
+    "page": 36,
+    "row": 16,
+    "name": "الير بية المناهج وطرائق التدريس",
+    "place": "حمص",
+    "parallel": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 8,
+    "page": 36,
+    "row": 17,
+    "name": "الير بية المناهج وطرائق التدريس",
+    "place": "دير الزور",
+    "parallel": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 8,
+    "page": 36,
+    "row": 18,
+    "name": "الير بية المناهج وتقنيات التعليم -بالقامشلي محافظات",
+    "place": "الحسكة/قامشلي",
+    "parallel": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 8,
+    "page": 36,
+    "row": 19,
+    "name": "الير بية(علم النفس)",
+    "place": "دمشق",
+    "parallel": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 8,
+    "page": 36,
+    "row": 20,
+    "name": "الير بية(علم النفس)",
+    "place": "القنيطرة",
+    "parallel": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 8,
+    "page": 36,
+    "row": 21,
+    "name": "الير بية(علم النفس)",
+    "place": "حمص",
+    "parallel": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 8,
+    "page": 36,
+    "row": 22,
+    "name": "التــربية الخاصة",
+    "place": "دمشق",
+    "parallel": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 8,
+    "page": 36,
+    "row": 23,
+    "name": "التــربية الخاصة",
+    "place": "السويداء",
+    "parallel": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 8,
+    "page": 36,
+    "row": 24,
+    "name": "التــربية الثانية( الير بية الخاصة)",
+    "place": "حلب /اعزاز",
+    "parallel": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 8,
+    "page": 36,
+    "row": 25,
+    "name": "التــربية الخاصة",
+    "place": "حماه",
+    "parallel": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 8,
+    "page": 36,
+    "row": 26,
+    "name": "الير بية(اإلرشاد النفسي)",
+    "place": "دمشق",
+    "parallel": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 8,
+    "page": 36,
+    "row": 27,
+    "name": "الير بية(اإلرشاد النفسي)",
+    "place": "درعا",
+    "parallel": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 8,
+    "page": 36,
+    "row": 28,
+    "name": "الير بية(اإلرشاد النفسي)",
+    "place": "السويداء",
+    "parallel": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 8,
+    "page": 36,
+    "row": 29,
+    "name": "الير بية(اإلرشاد النفسي)",
+    "place": "حلب",
+    "parallel": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 8,
+    "page": 36,
+    "row": 30,
+    "name": "الير بية الثانية(اإلرشاد النفسي)",
+    "place": "حلب /اعزاز",
+    "parallel": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 8,
+    "page": 36,
+    "row": 31,
+    "name": "الير بية(اإلرشاد النفسي)",
+    "place": "ادلب",
+    "parallel": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 8,
+    "page": 36,
+    "row": 32,
+    "name": "الير بية(اإلرشاد النفسي)",
+    "place": "الالذقية",
+    "parallel": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 8,
+    "page": 36,
+    "row": 33,
+    "name": "الير بية(اإلرشاد النفسي)",
+    "place": "حمص",
+    "parallel": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 8,
+    "page": 36,
+    "row": 34,
+    "name": "الير بية(اإلرشاد النفسي)",
+    "place": "طرطوس",
+    "parallel": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 8,
+    "page": 37,
+    "row": 3,
+    "name": "الير بية(اإلرشاد النفسي)",
+    "place": "دير الزور",
+    "parallel": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 8,
+    "page": 37,
+    "row": 4,
+    "name": "الير بية(رياض األطفال) إناث فقط",
+    "place": "دمشق",
+    "parallel": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 8,
+    "page": 37,
+    "row": 5,
+    "name": "الير بية(رياض األطفال) إناث فقط",
+    "place": "درعا",
+    "parallel": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 8,
+    "page": 37,
+    "row": 6,
+    "name": "الير بية(رياض األطفال) إناث فقط",
+    "place": "القنيطرة",
+    "parallel": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 8,
+    "page": 37,
+    "row": 7,
+    "name": "الير بية(رياض األطفال) إناث فقط-عي ن عرب",
+    "place": "حلب/عي ن العرب",
+    "parallel": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 8,
+    "page": 37,
+    "row": 8,
+    "name": "الير بية(رياض األطفال) إناث فقط",
+    "place": "حمص",
+    "parallel": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 8,
+    "page": 37,
+    "row": 9,
+    "name": "الير بية(رياض األطفال) إناث فقط",
+    "place": "دير الزور",
+    "parallel": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 8,
+    "page": 37,
+    "row": 10,
+    "name": "الير بية(رياض األطفال) إناث فقط",
+    "place": "الحسكة",
+    "parallel": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 8,
+    "page": 37,
+    "row": 11,
+    "name": "الير بية(رياض األطفال) إناث فقط",
+    "place": "الرقة",
+    "parallel": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 8,
+    "page": 37,
+    "row": 12,
+    "name": "الشر يعة( القرآن والحديث)",
+    "place": "دمشق",
+    "parallel": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 8,
+    "page": 37,
+    "row": 13,
+    "name": "الشر يعة( الفقه اإلسالمي وأصوله)",
+    "place": "دمشق",
+    "parallel": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 8,
+    "page": 37,
+    "row": 14,
+    "name": "الشر يعة( الشر يعة والقانون)",
+    "place": "دمشق",
+    "parallel": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 8,
+    "page": 37,
+    "row": 15,
+    "name": "الشر يعة( اقتصاد ومصارف اسالمية)",
+    "place": "دمشق",
+    "parallel": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 8,
+    "page": 37,
+    "row": 16,
+    "name": "الشر يعة( العقيدة والفلسفة اإلسالمية واالديان)",
+    "place": "دمشق",
+    "parallel": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 8,
+    "page": 37,
+    "row": 17,
+    "name": "الشر يعة( الير بية االسالمية)",
+    "place": "دمشق",
+    "parallel": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 8,
+    "page": 37,
+    "row": 18,
+    "name": "الشر يعة(الفقه اإلسالمي وأصوله)",
+    "place": "حلب",
+    "parallel": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 8,
+    "page": 37,
+    "row": 19,
+    "name": "الشر يعة(الشر يعة والقانون)",
+    "place": "حلب",
+    "parallel": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 8,
+    "page": 37,
+    "row": 20,
+    "name": "الشر يعة(القرآن والحديث)",
+    "place": "حلب",
+    "parallel": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 8,
+    "page": 37,
+    "row": 21,
+    "name": "الشر يعة(الفقه اإلسالمي وأصوله)",
+    "place": "الالذقية",
+    "parallel": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 8,
+    "page": 37,
+    "row": 22,
+    "name": "الشر يعة(القرآن والحديث)",
+    "place": "حمص",
+    "parallel": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 8,
+    "page": 37,
+    "row": 23,
+    "name": "الشر يعة(الفقه اإلسالمي وأصوله)",
+    "place": "حماه",
+    "parallel": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 8,
+    "page": 37,
+    "row": 24,
+    "name": "الشر يعة(الفقه اإلسالمي وأصوله)",
+    "place": "دير الزور",
+    "parallel": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 8,
+    "page": 37,
+    "row": 25,
+    "name": "الشر يعة(الفقه اإلسالمي وأصوله)",
+    "place": "ادلب",
+    "parallel": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 8,
+    "page": 37,
+    "row": 26,
+    "name": "الشر يعة(القرآن والحديث)",
+    "place": "ادلب",
+    "parallel": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 8,
+    "page": 37,
+    "row": 27,
+    "name": "الشر يعة( الشر يعة والقانون)",
+    "place": "ادلب",
+    "parallel": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 8,
+    "page": 37,
+    "row": 28,
+    "name": "كلية الشر يعة الثانية( الفقه اإلسالمي واصوله)/الدانا",
+    "place": "ادلب",
+    "parallel": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 8,
+    "page": 37,
+    "row": 29,
+    "name": "كلية الشر يعة الثانية( القرآن والحديث)/الدانا",
+    "place": "ادلب",
+    "parallel": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 8,
+    "page": 37,
+    "row": 30,
+    "name": "العلوم السياسية",
+    "place": "دمشق",
+    "parallel": "50%",
+    "condition": "النجاح باالختبارشر ط لتدوين الرغبة"
+  },
+  {
+    "announcement": 8,
+    "page": 37,
+    "row": 31,
+    "name": "العلوم السياسية",
+    "place": "ادلب",
+    "parallel": "50%",
+    "condition": "النجاح باالختبارشر ط لتدوين الرغبة"
+  },
+  {
+    "announcement": 8,
+    "page": 37,
+    "row": 32,
+    "name": "الســـياحة",
+    "place": "دمشق",
+    "parallel": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 8,
+    "page": 37,
+    "row": 33,
+    "name": "الســـياحة",
+    "place": "حمص",
+    "parallel": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 8,
+    "page": 37,
+    "row": 34,
+    "name": "الســـياحة",
+    "place": "طرطوس",
+    "parallel": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 8,
+    "page": 38,
+    "row": 3,
+    "name": "الفنون الجميلة",
+    "place": "دمشق",
+    "parallel": "50%",
+    "condition": "النجاح باالختبارشر ط لتدوين الرغبة"
+  },
+  {
+    "announcement": 8,
+    "page": 38,
+    "row": 4,
+    "name": "الفنون الجميلة",
+    "place": "السويداء",
+    "parallel": "50%",
+    "condition": "النجاح باالختبارشر ط لتدوين الرغبة"
+  },
+  {
+    "announcement": 8,
+    "page": 38,
+    "row": 5,
+    "name": "الفنون الجميلة التطبيقية",
+    "place": "حلب",
+    "parallel": "50%",
+    "condition": "النجاح باالختبارشر ط لتدوين الرغبة"
+  },
+  {
+    "announcement": 8,
+    "page": 38,
+    "row": 6,
+    "name": "الفنون الجميلة",
+    "place": "الالذقية",
+    "parallel": "50%",
+    "condition": "النجاح باالختبارشر ط لتدوين الرغبة"
+  },
+  {
+    "announcement": 8,
+    "page": 38,
+    "row": 7,
+    "name": "الير بية الرياضية",
+    "place": "الالذقية",
+    "parallel": "50%",
+    "condition": "فحص طب ي ولياقة بدنية النجاح بالفحص شر ط لتدوين الرغبة"
+  },
+  {
+    "announcement": 8,
+    "page": 38,
+    "row": 8,
+    "name": "الير بية الرياضية",
+    "place": "حماه",
+    "parallel": "50%",
+    "condition": "فحص طب ي ولياقة بدنية النجاح بالفحص شر ط لتدوين الرغبة"
+  },
+  {
+    "announcement": 8,
+    "page": 38,
+    "row": 9,
+    "name": "الير بية الموسيقية",
+    "place": "حمص",
+    "parallel": "50%",
+    "condition": "النجاح باالختبار شر ط لتدوين الرغبة"
+  },
+  {
+    "announcement": 8,
+    "page": 38,
+    "row": 10,
+    "name": "ي الدارة االعمال والتسويق المعهد التقاب",
+    "place": "دمشق",
+    "parallel": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 8,
+    "page": 38,
+    "row": 11,
+    "name": "ي الدارة االعمال والتسويق المعهد التقاب",
+    "place": "حلب",
+    "parallel": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 8,
+    "page": 38,
+    "row": 12,
+    "name": "ي الدارة االعمال والتسويق المعهد التقاب",
+    "place": "الالذقية",
+    "parallel": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 8,
+    "page": 38,
+    "row": 13,
+    "name": "ي إلدارة المكاتب المعهد التقابن -جرابلس",
+    "place": "حلب/جرابلس",
+    "parallel": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 8,
+    "page": 38,
+    "row": 14,
+    "name": "ي للعلوم المالية واإلدارية المعهد التقاب",
+    "place": "ادلب",
+    "parallel": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 8,
+    "page": 38,
+    "row": 15,
+    "name": "ي للعلوم المالية واالدارية المعهد التقاب",
+    "place": "الحسكة",
+    "parallel": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 8,
+    "page": 38,
+    "row": 16,
+    "name": "ي للعلوم القانونية واإلدارية المعهد التقابن -عي ن عرب",
+    "place": "حلب",
+    "parallel": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 8,
+    "page": 38,
+    "row": 17,
+    "name": "ي للعلوم المالية واإلدارية الثابن المعهد التقابن",
+    "place": "ادلب -دانا",
+    "parallel": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 8,
+    "page": 38,
+    "row": 18,
+    "name": "ي لإلرشاد النفسي والير بوي التقاب",
+    "place": "حلب/اعزاز",
+    "parallel": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 8,
+    "page": 38,
+    "row": 19,
+    "name": "ي للير جمة التطبيقية التقاب",
+    "place": "ادلب/سلقي ن",
+    "parallel": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 8,
+    "page": 38,
+    "row": 20,
+    "name": "ي للخدمة االجتماعية المعهد التقاب",
+    "place": "دمشق",
+    "parallel": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 8,
+    "page": 38,
+    "row": 21,
+    "name": "ي للفنون التطبيقية المعهد التقاب",
+    "place": "دمشق",
+    "parallel": "50%",
+    "condition": "النجاح باالختبار شر ط لتدوين الرغبة"
+  },
+  {
+    "announcement": 8,
+    "page": 38,
+    "row": 22,
+    "name": "معهد اآلثار والمتاحف",
+    "place": "دمشق",
+    "parallel": "50%",
+    "condition": "النجاح باالختبار شر ط لتدوين الرغبة"
+  },
+  {
+    "announcement": 8,
+    "page": 38,
+    "row": 23,
+    "name": "ي لإلعالم والطباعة المعهد التقاب",
+    "place": "دمشق",
+    "parallel": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 8,
+    "page": 38,
+    "row": 24,
+    "name": "ي لإلعالم المعهد التقابن(تقديم الي امج اإلذاعية والتلفزيونية)",
+    "place": "إدلب",
+    "parallel": "50%",
+    "condition": "النجاح باالختبار شر ط لتدوين الرغبة"
+  },
+  {
+    "announcement": 8,
+    "page": 38,
+    "row": 25,
+    "name": "ي لإلعالم المعهد التقابن(التصميم والتسويق)",
+    "place": "إدلب",
+    "parallel": "50%",
+    "condition": "النجاح باالختبار شر ط لتدوين الرغبة"
+  },
+  {
+    "announcement": 8,
+    "page": 38,
+    "row": 26,
+    "name": "ي لإلعالم المعهد التقابن(ي اإلخراج اإلذاعي والتلفزيوبن) - ذكور فقط",
+    "place": "إدلب",
+    "parallel": "50%",
+    "condition": "النجاح باالختبار شر ط لتدوين الرغبة"
+  },
+  {
+    "announcement": 8,
+    "page": 38,
+    "row": 27,
+    "name": "ي للعلوم السياحية والفندقية المعهد التقاب",
+    "place": "دمشق",
+    "parallel": "50%",
+    "condition": "النجاح باالختبار شر ط لتدوين الرغبة"
+  },
+  {
+    "announcement": 8,
+    "page": 38,
+    "row": 28,
+    "name": "ي للعلوم السياحية والفندقية المعهد التقابن(ضاحية قدسيا)",
+    "place": "ريف دمشق",
+    "parallel": "50%",
+    "condition": "النجاح باالختبار شر ط لتدوين الرغبة"
+  },
+  {
+    "announcement": 8,
+    "page": 38,
+    "row": 29,
+    "name": "ي للعلوم السياحية والفندقية المعهد التقاب",
+    "place": "السويداء",
+    "parallel": "50%",
+    "condition": "النجاح باالختبار شر ط لتدوين الرغبة"
+  },
+  {
+    "announcement": 8,
+    "page": 39,
+    "row": 3,
+    "name": "ي للعلوم السياحية والفندقية المعهد التقاب",
+    "place": "حلب",
+    "parallel": "50%",
+    "condition": "النجاح باالختبار شر ط لتدوين الرغبة"
+  },
+  {
+    "announcement": 8,
+    "page": 39,
+    "row": 4,
+    "name": "ي للعلوم السياحية والفندقية المعهد التقاب",
+    "place": "الالذقية",
+    "parallel": "50%",
+    "condition": "النجاح باالختبار شر ط لتدوين الرغبة"
+  },
+  {
+    "announcement": 8,
+    "page": 39,
+    "row": 5,
+    "name": "ي للعلوم السياحية والفندقية المعهد التقاب",
+    "place": "حمص",
+    "parallel": "50%",
+    "condition": "النجاح باالختبار شر ط لتدوين الرغبة"
+  },
+  {
+    "announcement": 8,
+    "page": 39,
+    "row": 6,
+    "name": "ي للعلوم السياحية والفندقية المعهد التقاب",
+    "place": "طرطوس",
+    "parallel": "50%",
+    "condition": "النجاح باالختبار شر ط لتدوين الرغبة"
+  },
+  {
+    "announcement": 8,
+    "page": 39,
+    "row": 7,
+    "name": "ي للعلوم السياحية والفندقية المعهد التقاب",
+    "place": "حماه",
+    "parallel": "50%",
+    "condition": "النجاح باالختبار شر ط لتدوين الرغبة"
+  },
+  {
+    "announcement": 8,
+    "page": 39,
+    "row": 8,
+    "name": "ي للعلوم السياحية والفندقية المعهد التقاب",
+    "place": "دير الزور",
+    "parallel": "50%",
+    "condition": "النجاح باالختبار شر ط لتدوين الرغبة"
+  },
+  {
+    "announcement": 8,
+    "page": 39,
+    "row": 9,
+    "name": "ي القانوبن المعهد التقاب",
+    "place": "دمشق",
+    "parallel": "50%",
+    "condition": "مقابلة بعد القبول"
+  },
+  {
+    "announcement": 8,
+    "page": 39,
+    "row": 10,
+    "name": "المعهد المتوسط للعلوم الشر عية والعربية",
+    "place": "دمشق",
+    "parallel": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 8,
+    "page": 39,
+    "row": 11,
+    "name": "المعهد المتوسط للعلوم الشر عية والعربية",
+    "place": "ريف دمشق/عربي ن",
+    "parallel": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 8,
+    "page": 39,
+    "row": 12,
+    "name": "المعهد المتوسط للعلوم الشر عية والعربية",
+    "place": "ريف دمشق/القطيفة",
+    "parallel": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 8,
+    "page": 39,
+    "row": 13,
+    "name": "المعهد المتوسط للعلوم الشر عية والعربية",
+    "place": "درعا",
+    "parallel": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 8,
+    "page": 39,
+    "row": 14,
+    "name": "المعهد المتوسط للعلوم الشر عية والعربية",
+    "place": "القنيطرة",
+    "parallel": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 8,
+    "page": 39,
+    "row": 15,
+    "name": "المعهد المتوسط للعلوم الشر عية والعربية",
+    "place": "حلب",
+    "parallel": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 8,
+    "page": 39,
+    "row": 16,
+    "name": "المعهد المتوسط للعلوم الشر عية والعربية",
+    "place": "حلب/السفي ة",
+    "parallel": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 8,
+    "page": 39,
+    "row": 17,
+    "name": "المعهد المتوسط للعلوم الشر عية والعربية",
+    "place": "حلب/منبج",
+    "parallel": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 8,
+    "page": 39,
+    "row": 18,
+    "name": "المعهد المتوسط للعلوم الشر عية والعربية",
+    "place": "حلب/تركمان بارح",
+    "parallel": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 8,
+    "page": 39,
+    "row": 19,
+    "name": "المعهد المتوسط للعلوم الشر عية والعربية",
+    "place": "حلب/عفرين",
+    "parallel": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 8,
+    "page": 39,
+    "row": 20,
+    "name": "المعهد المتوسط للعلوم الشر عية والعربية",
+    "place": "حلب/ابي ن سمعان",
+    "parallel": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 8,
+    "page": 39,
+    "row": 21,
+    "name": "المعهد المتوسط للعلوم الشر عية والعربية",
+    "place": "الالذقية",
+    "parallel": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 8,
+    "page": 39,
+    "row": 22,
+    "name": "المعهد المتوسط للعلوم الشر عية والعربية",
+    "place": "طرطوس",
+    "parallel": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 8,
+    "page": 39,
+    "row": 23,
+    "name": "المعهد المتوسط للعلوم الشر عية والعربية",
+    "place": "حماة",
+    "parallel": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 8,
+    "page": 39,
+    "row": 24,
+    "name": "المعهد المتوسط للعلوم الشر عية والعربية",
+    "place": "حمص/الوعر",
+    "parallel": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 8,
+    "page": 39,
+    "row": 25,
+    "name": "المعهد المتوسط للعلوم الشر عية والعربية",
+    "place": "إدلب",
+    "parallel": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 8,
+    "page": 39,
+    "row": 26,
+    "name": "المعهد المتوسط للعلوم الشر عية والعربية",
+    "place": "إدلب/معرة النعمان",
+    "parallel": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 8,
+    "page": 39,
+    "row": 27,
+    "name": "المعهد المتوسط للعلوم الشر عية والعربية",
+    "place": "إدلب/جش الشغور",
+    "parallel": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 8,
+    "page": 39,
+    "row": 28,
+    "name": "المعهد المتوسط للعلوم الشر عية والعربية",
+    "place": "إدلب /سلقي ن",
+    "parallel": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 8,
+    "page": 39,
+    "row": 29,
+    "name": "المعهد المتوسط للعلوم الشر عية والعربية",
+    "place": "إدلب /شمدا",
+    "parallel": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 8,
+    "page": 39,
+    "row": 30,
+    "name": "المعهد المتوسط للعلوم الشر عية والعربية",
+    "place": "الحسكة/الشدادي",
+    "parallel": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 8,
+    "page": 39,
+    "row": 31,
+    "name": "المعهد المتوسط للعلوم الشر عية والعربية",
+    "place": "دير الزور",
+    "parallel": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 8,
+    "page": 39,
+    "row": 32,
+    "name": "المعهد المتوسط للعلوم الشر عية والعربية",
+    "place": "الرقة",
+    "parallel": "50%",
+    "condition": "ـــ"
+  }
+]

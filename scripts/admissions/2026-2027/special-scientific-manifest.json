@@ -1,0 +1,810 @@
+{
+  "version": "2026.1-special-scientific.2",
+  "scope": {
+    "branch": "scientific",
+    "certificateYear": 2026,
+    "certificate": "syrian",
+    "applicantCategory": "syrian_or_equivalent",
+    "admissionRoute": "special_quotas"
+  },
+  "programCount": 623,
+  "sourceRowCount": 780,
+  "channels": {
+    "faculty_family": 621,
+    "disability": 225
+  },
+  "prerequisiteCatalogue": "scientific.json",
+  "prerequisiteCatalogueSha256": "573a0db8128a605f5b5359a5b26e612736578f919864ea6ccc34d5fa6c5afcd7",
+  "extractedRowsSha256": "569aa00c52e4468a9404945486e658948fcddd5106052c09520a57a0a9ca0ffc",
+  "correctionsSha256": "ca5b6884de6f2956af4ebdd739262d1a607fc54e890e88a686449d4e27176b33",
+  "reviewedCellCorrections": 180,
+  "excluded": [
+    {
+      "page": 1,
+      "row": 5,
+      "reason": "Neither special quota is offered in the source columns."
+    },
+    {
+      "page": 1,
+      "row": 22,
+      "reason": "Neither special quota is offered in the source columns."
+    },
+    {
+      "page": 1,
+      "row": 24,
+      "reason": "Neither special quota is offered in the source columns."
+    },
+    {
+      "page": 1,
+      "row": 34,
+      "reason": "Neither special quota is offered in the source columns."
+    },
+    {
+      "page": 1,
+      "row": 44,
+      "reason": "Neither special quota is offered in the source columns."
+    },
+    {
+      "page": 2,
+      "row": 33,
+      "reason": "Neither special quota is offered in the source columns."
+    },
+    {
+      "page": 2,
+      "row": 47,
+      "reason": "Neither special quota is offered in the source columns."
+    },
+    {
+      "page": 2,
+      "row": 49,
+      "reason": "Neither special quota is offered in the source columns."
+    },
+    {
+      "page": 3,
+      "row": 20,
+      "reason": "Neither special quota is offered in the source columns."
+    },
+    {
+      "page": 3,
+      "row": 24,
+      "reason": "Neither special quota is offered in the source columns."
+    },
+    {
+      "page": 3,
+      "row": 27,
+      "reason": "Neither special quota is offered in the source columns."
+    },
+    {
+      "page": 3,
+      "row": 29,
+      "reason": "Neither special quota is offered in the source columns."
+    },
+    {
+      "page": 3,
+      "row": 37,
+      "reason": "Neither special quota is offered in the source columns."
+    },
+    {
+      "page": 3,
+      "row": 39,
+      "reason": "Neither special quota is offered in the source columns."
+    },
+    {
+      "page": 3,
+      "row": 41,
+      "reason": "Neither special quota is offered in the source columns."
+    },
+    {
+      "page": 3,
+      "row": 44,
+      "reason": "Neither special quota is offered in the source columns."
+    },
+    {
+      "page": 3,
+      "row": 46,
+      "reason": "Neither special quota is offered in the source columns."
+    },
+    {
+      "page": 3,
+      "row": 48,
+      "reason": "Neither special quota is offered in the source columns."
+    },
+    {
+      "page": 3,
+      "row": 57,
+      "reason": "Neither special quota is offered in the source columns."
+    },
+    {
+      "page": 3,
+      "row": 59,
+      "reason": "Neither special quota is offered in the source columns."
+    },
+    {
+      "page": 4,
+      "row": 4,
+      "reason": "Neither special quota is offered in the source columns."
+    },
+    {
+      "page": 4,
+      "row": 9,
+      "reason": "Neither special quota is offered in the source columns."
+    },
+    {
+      "page": 4,
+      "row": 10,
+      "reason": "Neither special quota is offered in the source columns."
+    },
+    {
+      "page": 4,
+      "row": 12,
+      "reason": "Neither special quota is offered in the source columns."
+    },
+    {
+      "page": 4,
+      "row": 13,
+      "reason": "Neither special quota is offered in the source columns."
+    },
+    {
+      "page": 4,
+      "row": 14,
+      "reason": "Neither special quota is offered in the source columns."
+    },
+    {
+      "page": 4,
+      "row": 16,
+      "reason": "Neither special quota is offered in the source columns."
+    },
+    {
+      "page": 4,
+      "row": 17,
+      "reason": "Neither special quota is offered in the source columns."
+    },
+    {
+      "page": 4,
+      "row": 19,
+      "reason": "Neither special quota is offered in the source columns."
+    },
+    {
+      "page": 4,
+      "row": 21,
+      "reason": "Neither special quota is offered in the source columns."
+    },
+    {
+      "page": 4,
+      "row": 23,
+      "reason": "Neither special quota is offered in the source columns."
+    },
+    {
+      "page": 4,
+      "row": 25,
+      "reason": "Neither special quota is offered in the source columns."
+    },
+    {
+      "page": 4,
+      "row": 27,
+      "reason": "Neither special quota is offered in the source columns."
+    },
+    {
+      "page": 4,
+      "row": 29,
+      "reason": "Neither special quota is offered in the source columns."
+    },
+    {
+      "page": 4,
+      "row": 30,
+      "reason": "Neither special quota is offered in the source columns."
+    },
+    {
+      "page": 4,
+      "row": 32,
+      "reason": "Neither special quota is offered in the source columns."
+    },
+    {
+      "page": 4,
+      "row": 33,
+      "reason": "Neither special quota is offered in the source columns."
+    },
+    {
+      "page": 4,
+      "row": 34,
+      "reason": "Neither special quota is offered in the source columns."
+    },
+    {
+      "page": 4,
+      "row": 36,
+      "reason": "Neither special quota is offered in the source columns."
+    },
+    {
+      "page": 4,
+      "row": 37,
+      "reason": "Neither special quota is offered in the source columns."
+    },
+    {
+      "page": 5,
+      "row": 3,
+      "reason": "Neither special quota is offered in the source columns."
+    },
+    {
+      "page": 5,
+      "row": 5,
+      "reason": "Neither special quota is offered in the source columns."
+    },
+    {
+      "page": 5,
+      "row": 6,
+      "reason": "Neither special quota is offered in the source columns."
+    },
+    {
+      "page": 5,
+      "row": 7,
+      "reason": "Neither special quota is offered in the source columns."
+    },
+    {
+      "page": 5,
+      "row": 9,
+      "reason": "Neither special quota is offered in the source columns."
+    },
+    {
+      "page": 5,
+      "row": 10,
+      "reason": "Neither special quota is offered in the source columns."
+    },
+    {
+      "page": 5,
+      "row": 15,
+      "reason": "Neither special quota is offered in the source columns."
+    },
+    {
+      "page": 5,
+      "row": 18,
+      "reason": "Neither special quota is offered in the source columns."
+    },
+    {
+      "page": 5,
+      "row": 19,
+      "reason": "Neither special quota is offered in the source columns."
+    },
+    {
+      "page": 5,
+      "row": 21,
+      "reason": "Neither special quota is offered in the source columns."
+    },
+    {
+      "page": 5,
+      "row": 22,
+      "reason": "Neither special quota is offered in the source columns."
+    },
+    {
+      "page": 5,
+      "row": 23,
+      "reason": "Neither special quota is offered in the source columns."
+    },
+    {
+      "page": 5,
+      "row": 25,
+      "reason": "Neither special quota is offered in the source columns."
+    },
+    {
+      "page": 5,
+      "row": 26,
+      "reason": "Neither special quota is offered in the source columns."
+    },
+    {
+      "page": 5,
+      "row": 28,
+      "reason": "Neither special quota is offered in the source columns."
+    },
+    {
+      "page": 6,
+      "row": 4,
+      "reason": "Neither special quota is offered in the source columns."
+    },
+    {
+      "page": 6,
+      "row": 6,
+      "reason": "Neither special quota is offered in the source columns."
+    },
+    {
+      "page": 6,
+      "row": 8,
+      "reason": "Neither special quota is offered in the source columns."
+    },
+    {
+      "page": 6,
+      "row": 10,
+      "reason": "Neither special quota is offered in the source columns."
+    },
+    {
+      "page": 6,
+      "row": 12,
+      "reason": "Neither special quota is offered in the source columns."
+    },
+    {
+      "page": 6,
+      "row": 14,
+      "reason": "Neither special quota is offered in the source columns."
+    },
+    {
+      "page": 6,
+      "row": 15,
+      "reason": "Neither special quota is offered in the source columns."
+    },
+    {
+      "page": 6,
+      "row": 16,
+      "reason": "Neither special quota is offered in the source columns."
+    },
+    {
+      "page": 6,
+      "row": 18,
+      "reason": "Neither special quota is offered in the source columns."
+    },
+    {
+      "page": 6,
+      "row": 19,
+      "reason": "Neither special quota is offered in the source columns."
+    },
+    {
+      "page": 6,
+      "row": 20,
+      "reason": "Neither special quota is offered in the source columns."
+    },
+    {
+      "page": 7,
+      "row": 4,
+      "reason": "Neither special quota is offered in the source columns."
+    },
+    {
+      "page": 7,
+      "row": 5,
+      "reason": "Neither special quota is offered in the source columns."
+    },
+    {
+      "page": 7,
+      "row": 6,
+      "reason": "Neither special quota is offered in the source columns."
+    },
+    {
+      "page": 7,
+      "row": 8,
+      "reason": "Neither special quota is offered in the source columns."
+    },
+    {
+      "page": 7,
+      "row": 9,
+      "reason": "Neither special quota is offered in the source columns."
+    },
+    {
+      "page": 7,
+      "row": 10,
+      "reason": "Neither special quota is offered in the source columns."
+    },
+    {
+      "page": 7,
+      "row": 12,
+      "reason": "Neither special quota is offered in the source columns."
+    },
+    {
+      "page": 7,
+      "row": 14,
+      "reason": "Neither special quota is offered in the source columns."
+    },
+    {
+      "page": 7,
+      "row": 16,
+      "reason": "Neither special quota is offered in the source columns."
+    },
+    {
+      "page": 7,
+      "row": 18,
+      "reason": "Neither special quota is offered in the source columns."
+    },
+    {
+      "page": 7,
+      "row": 20,
+      "reason": "Neither special quota is offered in the source columns."
+    },
+    {
+      "page": 7,
+      "row": 22,
+      "reason": "Neither special quota is offered in the source columns."
+    },
+    {
+      "page": 8,
+      "row": 4,
+      "reason": "Neither special quota is offered in the source columns."
+    },
+    {
+      "page": 8,
+      "row": 6,
+      "reason": "Neither special quota is offered in the source columns."
+    },
+    {
+      "page": 8,
+      "row": 8,
+      "reason": "Neither special quota is offered in the source columns."
+    },
+    {
+      "page": 8,
+      "row": 9,
+      "reason": "Neither special quota is offered in the source columns."
+    },
+    {
+      "page": 8,
+      "row": 10,
+      "reason": "Neither special quota is offered in the source columns."
+    },
+    {
+      "page": 8,
+      "row": 12,
+      "reason": "Neither special quota is offered in the source columns."
+    },
+    {
+      "page": 8,
+      "row": 13,
+      "reason": "Neither special quota is offered in the source columns."
+    },
+    {
+      "page": 8,
+      "row": 14,
+      "reason": "Neither special quota is offered in the source columns."
+    },
+    {
+      "page": 8,
+      "row": 16,
+      "reason": "Neither special quota is offered in the source columns."
+    },
+    {
+      "page": 8,
+      "row": 18,
+      "reason": "Neither special quota is offered in the source columns."
+    },
+    {
+      "page": 8,
+      "row": 20,
+      "reason": "Neither special quota is offered in the source columns."
+    },
+    {
+      "page": 8,
+      "row": 22,
+      "reason": "Neither special quota is offered in the source columns."
+    },
+    {
+      "page": 9,
+      "row": 4,
+      "reason": "Neither special quota is offered in the source columns."
+    },
+    {
+      "page": 9,
+      "row": 6,
+      "reason": "Neither special quota is offered in the source columns."
+    },
+    {
+      "page": 9,
+      "row": 8,
+      "reason": "Neither special quota is offered in the source columns."
+    },
+    {
+      "page": 9,
+      "row": 10,
+      "reason": "Neither special quota is offered in the source columns."
+    },
+    {
+      "page": 9,
+      "row": 11,
+      "reason": "Neither special quota is offered in the source columns."
+    },
+    {
+      "page": 9,
+      "row": 12,
+      "reason": "Neither special quota is offered in the source columns."
+    },
+    {
+      "page": 9,
+      "row": 14,
+      "reason": "Neither special quota is offered in the source columns."
+    },
+    {
+      "page": 9,
+      "row": 15,
+      "reason": "Neither special quota is offered in the source columns."
+    },
+    {
+      "page": 9,
+      "row": 16,
+      "reason": "Neither special quota is offered in the source columns."
+    },
+    {
+      "page": 9,
+      "row": 18,
+      "reason": "Neither special quota is offered in the source columns."
+    },
+    {
+      "page": 9,
+      "row": 19,
+      "reason": "Neither special quota is offered in the source columns."
+    },
+    {
+      "page": 9,
+      "row": 20,
+      "reason": "Neither special quota is offered in the source columns."
+    },
+    {
+      "page": 10,
+      "row": 4,
+      "reason": "Neither special quota is offered in the source columns."
+    },
+    {
+      "page": 10,
+      "row": 6,
+      "reason": "Neither special quota is offered in the source columns."
+    },
+    {
+      "page": 10,
+      "row": 8,
+      "reason": "Neither special quota is offered in the source columns."
+    },
+    {
+      "page": 10,
+      "row": 10,
+      "reason": "Neither special quota is offered in the source columns."
+    },
+    {
+      "page": 10,
+      "row": 12,
+      "reason": "Neither special quota is offered in the source columns."
+    },
+    {
+      "page": 10,
+      "row": 34,
+      "reason": "Neither special quota is offered in the source columns."
+    },
+    {
+      "page": 11,
+      "row": 4,
+      "reason": "Neither special quota is offered in the source columns."
+    },
+    {
+      "page": 11,
+      "row": 6,
+      "reason": "Neither special quota is offered in the source columns."
+    },
+    {
+      "page": 11,
+      "row": 8,
+      "reason": "Neither special quota is offered in the source columns."
+    },
+    {
+      "page": 11,
+      "row": 20,
+      "reason": "Neither special quota is offered in the source columns."
+    },
+    {
+      "page": 11,
+      "row": 22,
+      "reason": "Neither special quota is offered in the source columns."
+    },
+    {
+      "page": 11,
+      "row": 24,
+      "reason": "Neither special quota is offered in the source columns."
+    },
+    {
+      "page": 11,
+      "row": 26,
+      "reason": "Neither special quota is offered in the source columns."
+    },
+    {
+      "page": 11,
+      "row": 29,
+      "reason": "Neither special quota is offered in the source columns."
+    },
+    {
+      "page": 11,
+      "row": 41,
+      "reason": "Neither special quota is offered in the source columns."
+    },
+    {
+      "page": 12,
+      "row": 4,
+      "reason": "Neither special quota is offered in the source columns."
+    },
+    {
+      "page": 12,
+      "row": 10,
+      "reason": "Neither special quota is offered in the source columns."
+    },
+    {
+      "page": 12,
+      "row": 12,
+      "reason": "Neither special quota is offered in the source columns."
+    },
+    {
+      "page": 12,
+      "row": 20,
+      "reason": "Neither special quota is offered in the source columns."
+    },
+    {
+      "page": 12,
+      "row": 23,
+      "reason": "Neither special quota is offered in the source columns."
+    },
+    {
+      "page": 12,
+      "row": 26,
+      "reason": "Neither special quota is offered in the source columns."
+    },
+    {
+      "page": 12,
+      "row": 32,
+      "reason": "Neither special quota is offered in the source columns."
+    },
+    {
+      "page": 12,
+      "row": 35,
+      "reason": "Neither special quota is offered in the source columns."
+    },
+    {
+      "page": 12,
+      "row": 37,
+      "reason": "Neither special quota is offered in the source columns."
+    },
+    {
+      "page": 12,
+      "row": 43,
+      "reason": "Neither special quota is offered in the source columns."
+    },
+    {
+      "page": 12,
+      "row": 45,
+      "reason": "Neither special quota is offered in the source columns."
+    },
+    {
+      "page": 12,
+      "row": 48,
+      "reason": "Neither special quota is offered in the source columns."
+    },
+    {
+      "page": 13,
+      "row": 6,
+      "reason": "Neither special quota is offered in the source columns."
+    },
+    {
+      "page": 13,
+      "row": 15,
+      "reason": "Neither special quota is offered in the source columns."
+    },
+    {
+      "page": 13,
+      "row": 17,
+      "reason": "Neither special quota is offered in the source columns."
+    },
+    {
+      "page": 13,
+      "row": 20,
+      "reason": "Neither special quota is offered in the source columns."
+    },
+    {
+      "page": 13,
+      "row": 23,
+      "reason": "Neither special quota is offered in the source columns."
+    },
+    {
+      "page": 13,
+      "row": 27,
+      "reason": "Neither special quota is offered in the source columns."
+    },
+    {
+      "page": 13,
+      "row": 29,
+      "reason": "Neither special quota is offered in the source columns."
+    },
+    {
+      "page": 13,
+      "row": 36,
+      "reason": "Neither special quota is offered in the source columns."
+    },
+    {
+      "page": 13,
+      "row": 38,
+      "reason": "Neither special quota is offered in the source columns."
+    },
+    {
+      "page": 13,
+      "row": 40,
+      "reason": "Neither special quota is offered in the source columns."
+    },
+    {
+      "page": 13,
+      "row": 47,
+      "reason": "Neither special quota is offered in the source columns."
+    },
+    {
+      "page": 13,
+      "row": 49,
+      "reason": "Neither special quota is offered in the source columns."
+    },
+    {
+      "page": 13,
+      "row": 52,
+      "reason": "Neither special quota is offered in the source columns."
+    },
+    {
+      "page": 14,
+      "row": 11,
+      "reason": "Neither special quota is offered in the source columns."
+    },
+    {
+      "page": 14,
+      "row": 13,
+      "reason": "Neither special quota is offered in the source columns."
+    },
+    {
+      "page": 14,
+      "row": 21,
+      "reason": "Neither special quota is offered in the source columns."
+    },
+    {
+      "page": 14,
+      "row": 24,
+      "reason": "Neither special quota is offered in the source columns."
+    },
+    {
+      "page": 14,
+      "row": 26,
+      "reason": "Neither special quota is offered in the source columns."
+    },
+    {
+      "page": 14,
+      "row": 28,
+      "reason": "Neither special quota is offered in the source columns."
+    },
+    {
+      "page": 14,
+      "row": 41,
+      "reason": "Neither special quota is offered in the source columns."
+    },
+    {
+      "page": 14,
+      "row": 43,
+      "reason": "Neither special quota is offered in the source columns."
+    },
+    {
+      "page": 14,
+      "row": 45,
+      "reason": "Neither special quota is offered in the source columns."
+    },
+    {
+      "page": 14,
+      "row": 47,
+      "reason": "Neither special quota is offered in the source columns."
+    },
+    {
+      "page": 14,
+      "row": 50,
+      "reason": "Neither special quota is offered in the source columns."
+    },
+    {
+      "page": 14,
+      "row": 52,
+      "reason": "Neither special quota is offered in the source columns."
+    },
+    {
+      "page": 14,
+      "row": 56,
+      "reason": "Neither special quota is offered in the source columns."
+    },
+    {
+      "page": 14,
+      "row": 58,
+      "reason": "Neither special quota is offered in the source columns."
+    },
+    {
+      "page": 14,
+      "row": 60,
+      "reason": "Neither special quota is offered in the source columns."
+    }
+  ],
+  "manualVerification": "Personnel-directorate eligibility for faculty families; official medical committee approval for disability type/degree and chosen specialty. No ranking bonus is applied to application minima.",
+  "vocational": "Faculty-family vocational applicants follow their vocational announcement and vacant places in matching specialties; no unsupported lowered threshold is inferred."
+}

@@ -1,0 +1,320 @@
+{
+  "version": "2026.1-special-literary.2",
+  "scope": {
+    "branch": "literary",
+    "certificateYear": 2026,
+    "certificate": "syrian",
+    "applicantCategory": "syrian_or_equivalent",
+    "admissionRoute": "special_quotas"
+  },
+  "programCount": 225,
+  "sourceRowCount": 284,
+  "channels": {
+    "faculty_family": 220,
+    "disability": 160
+  },
+  "prerequisiteCatalogue": "literary.json",
+  "prerequisiteCatalogueSha256": "ecbd664d6103206c735477d5d55ddbb220870e0457c7384eb852e0ac6bd54d7f",
+  "extractedRowsSha256": "569aa00c52e4468a9404945486e658948fcddd5106052c09520a57a0a9ca0ffc",
+  "correctionsSha256": "ca5b6884de6f2956af4ebdd739262d1a607fc54e890e88a686449d4e27176b33",
+  "reviewedCellCorrections": 180,
+  "excluded": [
+    {
+      "page": 1,
+      "row": 5,
+      "reason": "Neither special quota is offered in the source columns."
+    },
+    {
+      "page": 1,
+      "row": 7,
+      "reason": "Neither special quota is offered in the source columns."
+    },
+    {
+      "page": 1,
+      "row": 9,
+      "reason": "Neither special quota is offered in the source columns."
+    },
+    {
+      "page": 1,
+      "row": 21,
+      "reason": "Neither special quota is offered in the source columns."
+    },
+    {
+      "page": 1,
+      "row": 23,
+      "reason": "Neither special quota is offered in the source columns."
+    },
+    {
+      "page": 1,
+      "row": 25,
+      "reason": "Neither special quota is offered in the source columns."
+    },
+    {
+      "page": 1,
+      "row": 27,
+      "reason": "Neither special quota is offered in the source columns."
+    },
+    {
+      "page": 1,
+      "row": 30,
+      "reason": "Neither special quota is offered in the source columns."
+    },
+    {
+      "page": 2,
+      "row": 5,
+      "reason": "Neither special quota is offered in the source columns."
+    },
+    {
+      "page": 2,
+      "row": 8,
+      "reason": "Neither special quota is offered in the source columns."
+    },
+    {
+      "page": 2,
+      "row": 14,
+      "reason": "Neither special quota is offered in the source columns."
+    },
+    {
+      "page": 2,
+      "row": 16,
+      "reason": "Neither special quota is offered in the source columns."
+    },
+    {
+      "page": 2,
+      "row": 30,
+      "reason": "Neither special quota is offered in the source columns."
+    },
+    {
+      "page": 2,
+      "row": 39,
+      "reason": "Neither special quota is offered in the source columns."
+    },
+    {
+      "page": 2,
+      "row": 41,
+      "reason": "Neither special quota is offered in the source columns."
+    },
+    {
+      "page": 3,
+      "row": 4,
+      "reason": "Neither special quota is offered in the source columns."
+    },
+    {
+      "page": 3,
+      "row": 14,
+      "reason": "Neither special quota is offered in the source columns."
+    },
+    {
+      "page": 3,
+      "row": 23,
+      "reason": "Neither special quota is offered in the source columns."
+    },
+    {
+      "page": 3,
+      "row": 25,
+      "reason": "Neither special quota is offered in the source columns."
+    },
+    {
+      "page": 3,
+      "row": 28,
+      "reason": "Neither special quota is offered in the source columns."
+    },
+    {
+      "page": 3,
+      "row": 36,
+      "reason": "Neither special quota is offered in the source columns."
+    },
+    {
+      "page": 3,
+      "row": 38,
+      "reason": "Neither special quota is offered in the source columns."
+    },
+    {
+      "page": 3,
+      "row": 40,
+      "reason": "Neither special quota is offered in the source columns."
+    },
+    {
+      "page": 3,
+      "row": 43,
+      "reason": "Neither special quota is offered in the source columns."
+    },
+    {
+      "page": 3,
+      "row": 46,
+      "reason": "Neither special quota is offered in the source columns."
+    },
+    {
+      "page": 4,
+      "row": 5,
+      "reason": "Neither special quota is offered in the source columns."
+    },
+    {
+      "page": 4,
+      "row": 7,
+      "reason": "Neither special quota is offered in the source columns."
+    },
+    {
+      "page": 4,
+      "row": 14,
+      "reason": "Neither special quota is offered in the source columns."
+    },
+    {
+      "page": 4,
+      "row": 16,
+      "reason": "Neither special quota is offered in the source columns."
+    },
+    {
+      "page": 4,
+      "row": 18,
+      "reason": "Neither special quota is offered in the source columns."
+    },
+    {
+      "page": 4,
+      "row": 30,
+      "reason": "Neither special quota is offered in the source columns."
+    },
+    {
+      "page": 4,
+      "row": 33,
+      "reason": "Neither special quota is offered in the source columns."
+    },
+    {
+      "page": 4,
+      "row": 38,
+      "reason": "Neither special quota is offered in the source columns."
+    },
+    {
+      "page": 4,
+      "row": 40,
+      "reason": "Neither special quota is offered in the source columns."
+    },
+    {
+      "page": 5,
+      "row": 7,
+      "reason": "Neither special quota is offered in the source columns."
+    },
+    {
+      "page": 5,
+      "row": 10,
+      "reason": "Neither special quota is offered in the source columns."
+    },
+    {
+      "page": 5,
+      "row": 12,
+      "reason": "Neither special quota is offered in the source columns."
+    },
+    {
+      "page": 5,
+      "row": 16,
+      "reason": "Neither special quota is offered in the source columns."
+    },
+    {
+      "page": 5,
+      "row": 18,
+      "reason": "Neither special quota is offered in the source columns."
+    },
+    {
+      "page": 5,
+      "row": 20,
+      "reason": "Neither special quota is offered in the source columns."
+    },
+    {
+      "page": 5,
+      "row": 41,
+      "reason": "Not in the matching certificate route (dedicated Sharia rows or direct-registration institutes)."
+    },
+    {
+      "page": 5,
+      "row": 42,
+      "reason": "Not in the matching certificate route (dedicated Sharia rows or direct-registration institutes)."
+    },
+    {
+      "page": 5,
+      "row": 43,
+      "reason": "Not in the matching certificate route (dedicated Sharia rows or direct-registration institutes)."
+    },
+    {
+      "page": 5,
+      "row": 44,
+      "reason": "Not in the matching certificate route (dedicated Sharia rows or direct-registration institutes)."
+    },
+    {
+      "page": 5,
+      "row": 45,
+      "reason": "Not in the matching certificate route (dedicated Sharia rows or direct-registration institutes)."
+    },
+    {
+      "page": 5,
+      "row": 46,
+      "reason": "Not in the matching certificate route (dedicated Sharia rows or direct-registration institutes)."
+    },
+    {
+      "page": 5,
+      "row": 47,
+      "reason": "Not in the matching certificate route (dedicated Sharia rows or direct-registration institutes)."
+    },
+    {
+      "page": 6,
+      "row": 3,
+      "reason": "Not in the matching certificate route (dedicated Sharia rows or direct-registration institutes)."
+    },
+    {
+      "page": 6,
+      "row": 4,
+      "reason": "Not in the matching certificate route (dedicated Sharia rows or direct-registration institutes)."
+    },
+    {
+      "page": 6,
+      "row": 5,
+      "reason": "Not in the matching certificate route (dedicated Sharia rows or direct-registration institutes)."
+    },
+    {
+      "page": 6,
+      "row": 6,
+      "reason": "Not in the matching certificate route (dedicated Sharia rows or direct-registration institutes)."
+    },
+    {
+      "page": 6,
+      "row": 7,
+      "reason": "Not in the matching certificate route (dedicated Sharia rows or direct-registration institutes)."
+    },
+    {
+      "page": 6,
+      "row": 8,
+      "reason": "Not in the matching certificate route (dedicated Sharia rows or direct-registration institutes)."
+    },
+    {
+      "page": 6,
+      "row": 9,
+      "reason": "Not in the matching certificate route (dedicated Sharia rows or direct-registration institutes)."
+    },
+    {
+      "page": 6,
+      "row": 10,
+      "reason": "Not in the matching certificate route (dedicated Sharia rows or direct-registration institutes)."
+    },
+    {
+      "page": 6,
+      "row": 11,
+      "reason": "Not in the matching certificate route (dedicated Sharia rows or direct-registration institutes)."
+    },
+    {
+      "page": 6,
+      "row": 12,
+      "reason": "Not in the matching certificate route (dedicated Sharia rows or direct-registration institutes)."
+    },
+    {
+      "page": 6,
+      "row": 13,
+      "reason": "Not in the matching certificate route (dedicated Sharia rows or direct-registration institutes)."
+    },
+    {
+      "page": 6,
+      "row": 14,
+      "reason": "Not in the matching certificate route (dedicated Sharia rows or direct-registration institutes)."
+    }
+  ],
+  "manualVerification": "Personnel-directorate eligibility for faculty families; official medical committee approval for disability type/degree and chosen specialty. No ranking bonus is applied to application minima.",
+  "vocational": "Faculty-family vocational applicants follow their vocational announcement and vacant places in matching specialties; no unsupported lowered threshold is inferred."
+}

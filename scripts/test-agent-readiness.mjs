@@ -7,6 +7,7 @@ import { tmpdir } from "node:os"
 import { join } from "node:path"
 import { setTimeout as delay } from "node:timers/promises"
 import { fileURLToPath } from "node:url"
+import { verifySeo } from "./verify-seo.mjs"
 
 const crawlerUserAgents = [
   "ChatGPT-User/1.0",
@@ -35,6 +36,8 @@ try {
   await verifyHomepage(baseUrl)
   await verifyArabicHomepage(baseUrl)
   await verifyDeveloperPage(baseUrl)
+  await verifyAdmissionsScripts(baseUrl)
+  await verifySeo(baseUrl)
   await verifyNotFoundResponses(baseUrl)
   await verifyMachineReadableFiles(baseUrl)
   await verifyPublicAssets(baseUrl)
@@ -241,6 +244,41 @@ async function verifyArabicHomepage(baseUrl) {
   assert.equal(response.status, 200)
   assert.match(html, /dir="rtl"/i)
   assert.match(html, /موارد OpenSyria للمطورين وواجهات API والوكلاء/)
+}
+
+async function verifyAdmissionsScripts(baseUrl) {
+  const scripts = new Set()
+  for (const path of ["/admissions", "/ar/admissions"]) {
+    const response = await fetch(`${baseUrl}${path}`)
+    const html = await response.text()
+    assert.equal(response.status, 200, `${path} must load`)
+    assert.match(html, /id="admissions-title"/)
+
+    const sources = Array.from(
+      html.matchAll(/<script\b[^>]*\bsrc="([^"\s]+)"/gi),
+      (match) => match[1].replaceAll("&amp;", "&")
+    ).filter((source) => source.startsWith("/_next/static/"))
+    assert.ok(sources.length > 0, `${path} must reference its client scripts`)
+    for (const source of sources) scripts.add(source)
+  }
+
+  // A successful HTML response can still leave Suspense stuck if its build's
+  // JavaScript files were replaced while an older preview kept running.
+  await Promise.all(
+    [...scripts].map(async (source) => {
+      const response = await fetch(`${baseUrl}${source}`)
+      assert.equal(response.status, 200, `Missing admissions script: ${source}`)
+      assert.match(
+        response.headers.get("content-type") ?? "",
+        /(?:application|text)\/javascript/i,
+        `Admissions script must be JavaScript: ${source}`
+      )
+      assert.ok(
+        (await response.arrayBuffer()).byteLength > 0,
+        `Empty admissions script: ${source}`
+      )
+    })
+  )
 }
 
 async function verifyNotFoundResponses(baseUrl) {

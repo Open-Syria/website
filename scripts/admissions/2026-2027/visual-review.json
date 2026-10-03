@@ -1,0 +1,487 @@
+{
+  "reviewedAt": "2026-10-03",
+  "reviewLevel": "single_visual_review",
+  "method": "Poppler rendering and visual inspection of complete pages, supported by text extraction and catalogue comparison.",
+  "sourceCurrentness": "Local PDF bytes match the recorded download hashes. The Ministry index was inaccessible during this pass; no live correction check is claimed.",
+  "totalPages": 309,
+  "previouslyReviewedPages": 285,
+  "pagesReviewedThisPass": 24,
+  "remainingPages": 0,
+  "documents": [
+    {
+      "announcement": 1,
+      "filename": "news_pdf_20260930155756_651_0.pdf",
+      "sha256": "19cbf7ff60d37c9b73a87c6d1e011a4558b20bdad72279b2733aaf8ced452493",
+      "pageCount": 30,
+      "previouslyReviewedPages": [
+        1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 19, 20, 21
+      ],
+      "reviewedPagesThisPass": [
+        {
+          "page": 17,
+          "disposition": "Application details, fee, edit/fixation, permanent cancellation, final-admission warning. Editing and cancellation clarified in FAQ."
+        },
+        {
+          "page": 18,
+          "disposition": "Category-specific documents and submission, annual parallel service-fee table, payment before registration. Source-linked FAQ added."
+        },
+        {
+          "page": 22,
+          "disposition": "Fine arts: 50% and entrance pass; registration 4–12 October, exam 13 October 10:00, drawing pass 50/100. Existing exam conditions retained."
+        },
+        {
+          "page": 23,
+          "disposition": "Damascus health-sciences assessments: 80% general, 70% parallel, 60% faculty-family, 50% equivalent/foreign; programme-specific assessments. Existing conditions agree."
+        },
+        {
+          "page": 24,
+          "disposition": "Political science minima and required test agree with catalogues. Source conflicts on written/interview order; FAQ directs applicant to faculty confirmation."
+        },
+        {
+          "page": 25,
+          "disposition": "Physical education 50%, pre-application medical/fitness assessment; registration and test windows checked. Existing conditions retained."
+        },
+        {
+          "page": 26,
+          "disposition": "Music entrance assessment and 50% minimum; defence/security require their tests before listing choices. Existing conditions retained."
+        },
+        {
+          "page": 27,
+          "disposition": "Female nursing schools: Syrian/equivalent, 2004 or later, fitness; accommodation only for single women if available. Applied-arts exams and vocational qualification scope agree with tables."
+        },
+        {
+          "page": 28,
+          "disposition": "Idlib media and archaeology entrance assessments. Media names corrected. Male-only restriction remains on directing, consistent with separate choice rows and PDF 5 p3, not all media departments."
+        },
+        {
+          "page": 29,
+          "disposition": "Tourism/hospitality entrance interview and language test; hospitality-certificate language-only exception. Existing assessment conditions retained."
+        },
+        {
+          "page": 30,
+          "disposition": "Rail/oil medical and legal interview are after admission; non-attendance, written rejection and next-choice procedure. Separate Education Ministry tests and later-admission restriction added to FAQ."
+        }
+      ],
+      "remainingPages": []
+    },
+    {
+      "announcement": 2,
+      "filename": "news_pdf_20260930155934_651_0.pdf",
+      "sha256": "1812ac613d9e0d9b178f6829af2455add52c6bdf34e82e8c5289107a046faad9",
+      "pageCount": 21,
+      "previouslyReviewedPages": [
+        1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
+        21
+      ],
+      "reviewedPagesThisPass": [],
+      "remainingPages": []
+    },
+    {
+      "announcement": 3,
+      "filename": "news_pdf_20260930160044_651_0.pdf",
+      "sha256": "00b1a9c6df967054ce0389a59a522878b23e3941ad8508fc600fde88844e740d",
+      "pageCount": 14,
+      "previouslyReviewedPages": [
+        1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14
+      ],
+      "reviewedPagesThisPass": [],
+      "remainingPages": []
+    },
+    {
+      "announcement": 4,
+      "filename": "news_pdf_20260930160200_651_0.pdf",
+      "sha256": "6c6211d1e6f0649c801fe8d12b6297685fbb6d9441344375d24f62edf51760e5",
+      "pageCount": 8,
+      "previouslyReviewedPages": [1, 2, 3, 4, 5, 6, 7, 8],
+      "reviewedPagesThisPass": [],
+      "remainingPages": []
+    },
+    {
+      "announcement": 5,
+      "filename": "news_pdf_20260930160241_651_0.pdf",
+      "sha256": "27f6ad5a9b40d99a6e7d6725d2432cded4769e37e33e13fe2f935eaac5c9d551",
+      "pageCount": 15,
+      "previouslyReviewedPages": [1, 12, 13, 14, 15],
+      "reviewedPagesThisPass": [
+        {
+          "page": 2,
+          "disposition": "Business, finance, digital administration, office, dental and engineering institute departments. No new independently scored choices."
+        },
+        {
+          "page": 3,
+          "disposition": "Mechanical/electrical, medical equipment, communications, media, renewables and veterinary departments. Media exam and directing-only gender scope confirmed; repaired display labels."
+        },
+        {
+          "page": 4,
+          "disposition": "Agriculture and related institute departments and temporary study locations. Department directory not expanded into choices."
+        },
+        {
+          "page": 5,
+          "disposition": "Medical/midwifery, maritime, computing, statistics, guidance and translation departments. Female-only midwifery is department-specific; scientific math 60% and English 70% conditions already present."
+        },
+        {
+          "page": 6,
+          "disposition": "Social service, archaeology, applied arts, printing/media and railway departments. Before/after-admission assessments and male-only railway rule agree."
+        },
+        {
+          "page": 7,
+          "disposition": "Health and industrial institute departments. Chemical industries requires 140/200 chemistry, already represented as 70%."
+        },
+        {
+          "page": 8,
+          "disposition": "Oil/gas, finance and legal institutes: male-only oil/gas, post-admission checks, Rmeilan location and separate Energy Ministry vocational competition. Existing rules retained."
+        },
+        {
+          "page": 9,
+          "disposition": "Tourism/hospitality departments and entrance requirements; hospitality-certificate assessment differs. Existing qualification and assessment rules retained."
+        },
+        {
+          "page": 10,
+          "disposition": "Sharia/Arabic institute locations and 60% religion requirement for academic certificates. Existing academic choices retained; Sharia holders follow direct registration."
+        },
+        {
+          "page": 11,
+          "disposition": "Remaining Sharia/Arabic institutes; security institutes with programme-specific gender, birth from 1 January 2005 and admission tests. Existing route conditions agree."
+        }
+      ],
+      "remainingPages": []
+    },
+    {
+      "announcement": 6,
+      "filename": "news_pdf_20260930160315_651_0.pdf",
+      "sha256": "ab03dd05c06227039b9721011a15f15120f695df237e692ff753368e82374ed9",
+      "pageCount": 28,
+      "previouslyReviewedPages": [
+        1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
+        21, 22, 23, 24, 25, 26, 27, 28
+      ],
+      "reviewedPagesThisPass": [],
+      "remainingPages": []
+    },
+    {
+      "announcement": 7,
+      "filename": "news_pdf_6abe5325b7e08.pdf",
+      "sha256": "3c77e01b253325f0bc77dc210b0c29982744db80d71a33ffac13375074f8c1ee",
+      "pageCount": 65,
+      "previouslyReviewedPages": [
+        1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
+        21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38,
+        39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56,
+        57, 58, 59, 60, 61, 62, 63
+      ],
+      "reviewedPagesThisPass": [
+        {
+          "page": 64,
+          "disposition": "Arab International University acting/film: academic 50%, vocational 55%, required entrance exam; registration 4–11 October, tests 10–14 October, programme-specific preparations. Existing choices; FAQ added."
+        },
+        {
+          "page": 65,
+          "disposition": "Al-Manara acting: academic 50%, vocational 55%, entrance exam; registration 4–11 October and tests 10–14 October. Existing choices; FAQ added."
+        }
+      ],
+      "remainingPages": []
+    },
+    {
+      "announcement": 8,
+      "filename": "news_pdf_20260930160533_651_0.pdf",
+      "sha256": "d572ad4e29293e5f88592478d2efb457ab833e55cb99085a5496121c39ec10ca",
+      "pageCount": 40,
+      "previouslyReviewedPages": [
+        1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
+        21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38,
+        39, 40
+      ],
+      "reviewedPagesThisPass": [],
+      "remainingPages": []
+    },
+    {
+      "announcement": 9,
+      "filename": "news_pdf_20260930160627_651_0.pdf",
+      "sha256": "b142a797e545d95fa8dc5d6b35a7c54bcf9fd4e6b83506db17f363a887e623be",
+      "pageCount": 37,
+      "previouslyReviewedPages": [
+        1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
+        21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37
+      ],
+      "reviewedPagesThisPass": [],
+      "remainingPages": []
+    },
+    {
+      "announcement": 10,
+      "filename": "news_pdf_20260930160657_651_0.pdf",
+      "sha256": "4b4cde82a8a95e74d0ef870416290bbcb0d246d707105097f0a0527298f2fb6c",
+      "pageCount": 25,
+      "previouslyReviewedPages": [
+        1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
+        21, 22, 23, 24, 25
+      ],
+      "reviewedPagesThisPass": [],
+      "remainingPages": []
+    },
+    {
+      "announcement": 11,
+      "filename": "news_pdf_20260930200556_651_0.pdf",
+      "sha256": "2fad31764c81bb80dfbc9f0e8761a6dd990938b0a3d91c0db67f9ff5e135ff33",
+      "pageCount": 24,
+      "previouslyReviewedPages": [
+        1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
+        21, 22, 23, 24
+      ],
+      "reviewedPagesThisPass": [],
+      "remainingPages": []
+    },
+    {
+      "announcement": null,
+      "filename": "news_pdf_20261001105425_651_0.pdf",
+      "sha256": "89a2348b62228006468bdcac309c00d75d25ffd58c22fd1d1c46fa2f96a20228",
+      "pageCount": 2,
+      "previouslyReviewedPages": [1],
+      "reviewedPagesThisPass": [
+        {
+          "page": 2,
+          "disposition": "Continuation of support-directory page 1 plus Idlib, Hama and Tartous. Technical, disability and Arab/foreign centres remain distinct; linked official directory retained."
+        }
+      ],
+      "remainingPages": []
+    }
+  ],
+  "catalogueChanges": [
+    {
+      "catalogue": "literary.json",
+      "version": "2026.1-literary.3",
+      "names": [
+        {
+          "id": "literary-public-07-014",
+          "before": {
+            "ar": "المعهد التقاني للإعلام ( تقديم الي امج الإذاعية والتلفزيونية )",
+            "en": "المعهد التقاني للإعلام ( تقديم الي امج الإذاعية والتلفزيونية )"
+          },
+          "after": {
+            "ar": "المعهد التقاني للإعلام ( تقديم البرامج الإذاعية والتلفزيونية )",
+            "en": "المعهد التقاني للإعلام ( تقديم البرامج الإذاعية والتلفزيونية )"
+          }
+        },
+        {
+          "id": "literary-public-07-016",
+          "before": {
+            "ar": "المعهد التقاني للإعلام ( ي الإخراج الإذاعي والتلفزيوني ) - ذكور فقط",
+            "en": "المعهد التقاني للإعلام ( ي الإخراج الإذاعي والتلفزيوني ) - ذكور فقط"
+          },
+          "after": {
+            "ar": "المعهد التقاني للإعلام ( الإخراج الإذاعي والتلفزيوني ) - ذكور فقط",
+            "en": "المعهد التقاني للإعلام ( الإخراج الإذاعي والتلفزيوني ) - ذكور فقط"
+          }
+        }
+      ]
+    },
+    {
+      "catalogue": "scientific.json",
+      "version": "2026.1-scientific.2",
+      "names": [
+        {
+          "id": "public-10-013",
+          "before": {
+            "ar": "العلوم الصحية ( تقويم الكالم واللغة )",
+            "en": "العلوم الصحية ( تقويم الكالم واللغة )"
+          },
+          "after": {
+            "ar": "العلوم الصحية ( تقويم الكلام واللغة )",
+            "en": "العلوم الصحية ( تقويم الكلام واللغة )"
+          }
+        },
+        {
+          "id": "public-10-017",
+          "before": {
+            "ar": "العلوم الصحية ( اأطراف الاصطناعية والأجهزة التقويمية )",
+            "en": "العلوم الصحية ( اأطراف الاصطناعية والأجهزة التقويمية )"
+          },
+          "after": {
+            "ar": "العلوم الصحية ( الأطراف الاصطناعية والأجهزة التقويمية )",
+            "en": "العلوم الصحية ( الأطراف الاصطناعية والأجهزة التقويمية )"
+          }
+        },
+        {
+          "id": "public-10-025",
+          "before": {
+            "ar": "العلوم الصحية ( التحليل المخبر ي )",
+            "en": "العلوم الصحية ( التحليل المخبر ي )"
+          },
+          "after": {
+            "ar": "العلوم الصحية ( التحليل المخبري )",
+            "en": "العلوم الصحية ( التحليل المخبري )"
+          }
+        },
+        {
+          "id": "public-20-015",
+          "before": {
+            "ar": "المعهد التقاني للإعلام ( ي الإخراج الإذاعي والتلفزيوني ) - ذكور فقط",
+            "en": "المعهد التقاني للإعلام ( ي الإخراج الإذاعي والتلفزيوني ) - ذكور فقط"
+          },
+          "after": {
+            "ar": "المعهد التقاني للإعلام ( الإخراج الإذاعي والتلفزيوني ) - ذكور فقط",
+            "en": "المعهد التقاني للإعلام ( الإخراج الإذاعي والتلفزيوني ) - ذكور فقط"
+          }
+        }
+      ]
+    },
+    {
+      "catalogue": "sharia.json",
+      "version": "2026.1-sharia.2",
+      "names": [
+        {
+          "id": "sharia-public-07-014",
+          "before": {
+            "ar": "المعهد التقاني للإعلام ( تقديم الي امج الإذاعية والتلفزيونية )",
+            "en": "المعهد التقاني للإعلام ( تقديم الي امج الإذاعية والتلفزيونية )"
+          },
+          "after": {
+            "ar": "المعهد التقاني للإعلام ( تقديم البرامج الإذاعية والتلفزيونية )",
+            "en": "المعهد التقاني للإعلام ( تقديم البرامج الإذاعية والتلفزيونية )"
+          }
+        },
+        {
+          "id": "sharia-public-07-016",
+          "before": {
+            "ar": "المعهد التقاني للإعلام ( ي الإخراج الإذاعي والتلفزيوني ) - ذكور فقط",
+            "en": "المعهد التقاني للإعلام ( ي الإخراج الإذاعي والتلفزيوني ) - ذكور فقط"
+          },
+          "after": {
+            "ar": "المعهد التقاني للإعلام ( الإخراج الإذاعي والتلفزيوني ) - ذكور فقط",
+            "en": "المعهد التقاني للإعلام ( الإخراج الإذاعي والتلفزيوني ) - ذكور فقط"
+          }
+        }
+      ]
+    },
+    {
+      "catalogue": "special-literary.json",
+      "version": "2026.1-special-literary.2",
+      "names": [
+        {
+          "id": "special-literary-public-07-014",
+          "before": {
+            "ar": "المعهد التقاني للإعلام ( تقديم الي امج الإذاعية والتلفزيونية )",
+            "en": "المعهد التقاني للإعلام ( تقديم الي امج الإذاعية والتلفزيونية )"
+          },
+          "after": {
+            "ar": "المعهد التقاني للإعلام ( تقديم البرامج الإذاعية والتلفزيونية )",
+            "en": "المعهد التقاني للإعلام ( تقديم البرامج الإذاعية والتلفزيونية )"
+          }
+        },
+        {
+          "id": "special-literary-public-07-016",
+          "before": {
+            "ar": "المعهد التقاني للإعلام ( ي الإخراج الإذاعي والتلفزيوني ) - ذكور فقط",
+            "en": "المعهد التقاني للإعلام ( ي الإخراج الإذاعي والتلفزيوني ) - ذكور فقط"
+          },
+          "after": {
+            "ar": "المعهد التقاني للإعلام ( الإخراج الإذاعي والتلفزيوني ) - ذكور فقط",
+            "en": "المعهد التقاني للإعلام ( الإخراج الإذاعي والتلفزيوني ) - ذكور فقط"
+          }
+        }
+      ]
+    },
+    {
+      "catalogue": "special-scientific.json",
+      "version": "2026.1-special-scientific.2",
+      "names": [
+        {
+          "id": "special-scientific-public-10-013",
+          "before": {
+            "ar": "العلوم الصحية ( تقويم الكالم واللغة )",
+            "en": "العلوم الصحية ( تقويم الكالم واللغة )"
+          },
+          "after": {
+            "ar": "العلوم الصحية ( تقويم الكلام واللغة )",
+            "en": "العلوم الصحية ( تقويم الكلام واللغة )"
+          }
+        },
+        {
+          "id": "special-scientific-public-10-017",
+          "before": {
+            "ar": "العلوم الصحية ( اأطراف الاصطناعية والأجهزة التقويمية )",
+            "en": "العلوم الصحية ( اأطراف الاصطناعية والأجهزة التقويمية )"
+          },
+          "after": {
+            "ar": "العلوم الصحية ( الأطراف الاصطناعية والأجهزة التقويمية )",
+            "en": "العلوم الصحية ( الأطراف الاصطناعية والأجهزة التقويمية )"
+          }
+        },
+        {
+          "id": "special-scientific-public-10-025",
+          "before": {
+            "ar": "العلوم الصحية ( التحليل المخبر ي )",
+            "en": "العلوم الصحية ( التحليل المخبر ي )"
+          },
+          "after": {
+            "ar": "العلوم الصحية ( التحليل المخبري )",
+            "en": "العلوم الصحية ( التحليل المخبري )"
+          }
+        },
+        {
+          "id": "special-scientific-public-20-015",
+          "before": {
+            "ar": "المعهد التقاني للإعلام ( ي الإخراج الإذاعي والتلفزيوني ) - ذكور فقط",
+            "en": "المعهد التقاني للإعلام ( ي الإخراج الإذاعي والتلفزيوني ) - ذكور فقط"
+          },
+          "after": {
+            "ar": "المعهد التقاني للإعلام ( الإخراج الإذاعي والتلفزيوني ) - ذكور فقط",
+            "en": "المعهد التقاني للإعلام ( الإخراج الإذاعي والتلفزيوني ) - ذكور فقط"
+          }
+        }
+      ]
+    },
+    {
+      "catalogue": "special-sharia.json",
+      "version": "2026.1-special-sharia.2",
+      "names": [
+        {
+          "id": "special-sharia-public-07-014",
+          "before": {
+            "ar": "المعهد التقاني للإعلام ( تقديم الي امج الإذاعية والتلفزيونية )",
+            "en": "المعهد التقاني للإعلام ( تقديم الي امج الإذاعية والتلفزيونية )"
+          },
+          "after": {
+            "ar": "المعهد التقاني للإعلام ( تقديم البرامج الإذاعية والتلفزيونية )",
+            "en": "المعهد التقاني للإعلام ( تقديم البرامج الإذاعية والتلفزيونية )"
+          }
+        },
+        {
+          "id": "special-sharia-public-07-016",
+          "before": {
+            "ar": "المعهد التقاني للإعلام ( ي الإخراج الإذاعي والتلفزيوني ) - ذكور فقط",
+            "en": "المعهد التقاني للإعلام ( ي الإخراج الإذاعي والتلفزيوني ) - ذكور فقط"
+          },
+          "after": {
+            "ar": "المعهد التقاني للإعلام ( الإخراج الإذاعي والتلفزيوني ) - ذكور فقط",
+            "en": "المعهد التقاني للإعلام ( الإخراج الإذاعي والتلفزيوني ) - ذكور فقط"
+          }
+        }
+      ]
+    }
+  ],
+  "unchangedRuntimeFiles": [
+    "foreign-literary.json",
+    "foreign-scientific.json",
+    "foreign-vocational.json",
+    "non-syrian-literary.json",
+    "non-syrian-scientific.json",
+    "non-syrian-vocational.json",
+    "older-foreign-literary.json",
+    "older-foreign-scientific.json",
+    "older-foreign-vocational.json",
+    "older-literary.json",
+    "older-scientific.json",
+    "older-vocational.json",
+    "service-literary.json",
+    "service-scientific.json",
+    "service-sharia.json",
+    "service-vocational.json",
+    "special-vocational.json",
+    "vocational-options.json",
+    "vocational.json"
+  ],
+  "choiceCount": 10494,
+  "additionalRecheck": "PDF 2 p10 was rendered again to confirm health-sciences labels: speech/language therapy, prosthetics/orthotics and laboratory analysis.",
+  "preserved": "All programme IDs, exam IDs, thresholds, eligibility conditions, source references and saved-result formats are unchanged. Only sixteen display names across six catalogues and their versions changed.",
+  "limits": "Not an independent second review. Unpublished routes, including older Sharia private admission and unallocated vocational security choices, are not inferred."
+}

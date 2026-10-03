@@ -26,6 +26,10 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     {
       getPath: (locale) => getLocalizedPath(locale, "api"),
     },
+    {
+      getPath: (locale) => getLocalizedPath(locale, "admissions"),
+      lastModified: new Date("2026-10-03T00:00:00Z"),
+    },
     ...datasets.map((dataset) => ({
       getPath: (locale: Locale) => getDatasetPath(locale, dataset.slug),
       lastModified: getValidDate(dataset.updatedAt),

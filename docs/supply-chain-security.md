@@ -50,3 +50,10 @@ Approved:
 - `unrs-resolver`
 
 Review build-script changes before approving new entries.
+
+
+The application uses checked-in shadcn components and a licensed copy of its
+4.14.1 Tailwind helpers in `src/styles/shadcn.css`. The component-generation CLI
+is not a build dependency; this avoids retaining its unrelated dependency tree.
+Review the upstream stylesheet and license when updating those helpers. Runtime
+and transitive security patches remain pinned in the manifest and pnpm overrides.

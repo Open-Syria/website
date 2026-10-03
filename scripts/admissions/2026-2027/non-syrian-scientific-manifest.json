@@ -1,0 +1,49 @@
+{
+  "version": "2026.1-non-syrian-scientific.1",
+  "extractedRowsSha256": "0db1130fe0320d67de98ef42a1776fced9e0e5dc41d11d0bf7b80bfe2f9c3ec5",
+  "privateCatalogueSha256": "573a0db8128a605f5b5359a5b26e612736578f919864ea6ccc34d5fa6c5afcd7",
+  "programCount": 1007,
+  "publicCount": 618,
+  "privateCount": 389,
+  "rowsPerPage": {
+    "14": 41,
+    "15": 40,
+    "16": 36,
+    "17": 36,
+    "18": 36,
+    "19": 37,
+    "20": 37,
+    "21": 37,
+    "22": 37,
+    "23": 37,
+    "24": 37,
+    "25": 36,
+    "26": 36,
+    "27": 36,
+    "28": 32,
+    "29": 31,
+    "30": 32,
+    "31": 4
+  },
+  "channels": {
+    "parallel": 618,
+    "private": 389
+  },
+  "conditions": {
+    "exam": 72,
+    "gender": 16,
+    "birth_year": 5
+  },
+  "excludedSections": [
+    {
+      "announcement": 8,
+      "pages": "4\u20136; security conditions at the start of 7; 32; 40",
+      "reason": "defence_and_security_admission"
+    },
+    {
+      "announcement": 8,
+      "page": 3,
+      "reason": "older_certificates_and_direct_language_registration"
+    }
+  ]
+}

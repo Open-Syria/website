@@ -1,0 +1,72 @@
+{
+  "version": "2026.1-vocational.2",
+  "extractedRowsSha256": "a42bd838004f244c2486423bfeea42c2acbb5885a742faa103fd43111c92d21a",
+  "extractedRows": 829,
+  "programCount": 827,
+  "excludedRows": [
+    {
+      "id": "vocational-public-11-002",
+      "reason": "military_admission"
+    },
+    {
+      "id": "vocational-public-11-003",
+      "reason": "military_admission"
+    }
+  ],
+  "sourceRowsPerPage": {
+    "private-41": 25,
+    "private-42": 25,
+    "private-43": 25,
+    "private-44": 25,
+    "private-45": 25,
+    "private-46": 25,
+    "private-47": 25,
+    "private-48": 25,
+    "private-49": 25,
+    "private-50": 25,
+    "private-51": 25,
+    "private-52": 25,
+    "private-53": 25,
+    "private-54": 25,
+    "private-55": 25,
+    "private-56": 21,
+    "private-57": 21,
+    "private-58": 21,
+    "private-59": 21,
+    "private-60": 21,
+    "private-61": 21,
+    "private-62": 23,
+    "private-63": 12,
+    "public-05": 18,
+    "public-06": 20,
+    "public-07": 17,
+    "public-08": 16,
+    "public-09": 17,
+    "public-10": 13,
+    "public-11": 7,
+    "public-12": 21,
+    "public-13": 19,
+    "public-14": 11,
+    "public-15": 14,
+    "public-16": 16,
+    "public-17": 11,
+    "public-18": 10,
+    "public-19": 16,
+    "public-20": 14,
+    "public-21": 18,
+    "public-22": 13,
+    "public-23": 9,
+    "public-24": 13
+  },
+  "channels": {
+    "general": 291,
+    "parallel": 291,
+    "private": 536
+  },
+  "conditions": {
+    "vocational_specialty": 1118,
+    "exam": 81,
+    "gender": 6,
+    "birth_year": 6
+  }
+}

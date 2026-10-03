@@ -70,6 +70,14 @@ Dataset pages cache API metadata and may be prerendered into the image. After a
 dataset release, rebuild the website or allow the configured cache lifetime to
 expire when a short delay is acceptable.
 
+SEO verification covers clean sitemap URLs and parameterized page responses.
+Keep query variants separate in any upstream HTML cache: filtered pages carry
+`X-Robots-Tag: noindex, follow`, while clean pages must remain indexable. Preserve
+this response header through the hosting layer. After deployment, verify both
+admissions languages and the sitemap, then submit the sitemap and inspect the
+clean/filtered URLs in Google Search Console. See the README's search-indexing
+policy for tracking redirects and the internal `_rsc` exception.
+
 ## Hosted Service Operations
 
 Hosted service deployment tooling and operator procedures are maintained
@@ -84,3 +92,39 @@ setup, and reusable hosting requirements. Keep host inventories, private
 addresses, account identifiers, access rules, credential arrangements,
 relationships with unrelated projects, and recovery records in private operator
 documentation outside public repositories.
+
+
+## Optional Exam Lookup
+
+The site works with manual mark entry when `EXAM_RESULTS_ENABLED` is unset or
+false. Enabling import requires Node.js 24 with `node:sqlite`, a private decoder
+key, a Turnstile widget restricted to your site, and runtime variables from
+`.env.example`. These values are not build arguments or `NEXT_PUBLIC_*` secrets.
+
+- `EXAM_RESULTS_SITE_ORIGIN`: exact HTTPS browser origin (localhost is supported
+  for development).
+- `EXAM_RESULTS_TURNSTILE_SITE_KEY` and `EXAM_RESULTS_TURNSTILE_SECRET`: widget
+  credentials. Only the site key is returned to the browser.
+- `EXAM_RESULTS_SIGNING_KEY` and `EXAM_RESULTS_DECODER_KEY`: distinct, Base64
+  encoded 32-byte keys, supplied through private runtime configuration.
+- `EXAM_RESULTS_STORE_PATH`: writable SQLite file on a protected local volume.
+  Every website deployment slot must mount the same directory and use the same
+  signing key. The directory must also permit SQLite WAL/SHM files. Do not use
+  ephemeral container storage, a network filesystem, or separate per-slot copies.
+- `EXAM_RESULTS_TRUST_PROXY`: enable only behind a trusted Cloudflare ingress
+  that supplies `CF-Connecting-IP` and cannot be reached directly by untrusted
+  clients. Without a trusted client address, public lookup fails closed.
+
+The current store supports replicas on one host only. Use a shared transactional
+store before distributing application instances across hosts. Endpoint responses
+are private/no-store; never cache `/api/admissions/results`, log request bodies,
+or capture student numbers in analytics. Preserve the browser Origin and client
+address at ingress. Allow the Turnstile script/frame at
+`https://challenges.cloudflare.com` and the configured provider's browser fetches
+in your Content Security Policy. Cookie, challenge and ticket failures must not
+fall back to an unrestricted decoding or server-fetch endpoint.
+
+Production checks should cover the real widget, expected hostname/action,
+manual-entry fallback, both languages, narrow-screen dialogs, private response
+headers and an explicitly authorized result. Automated tests use synthetic
+records and injected test services, with no production challenge bypass.

@@ -1,0 +1,37 @@
+{
+  "version": "2026.1-non-syrian-literary.1",
+  "extractedRowsSha256": "ea555374a8a53a60d9e04205522b77d6f0521388b9979c0769625bcd3ac4f58a",
+  "privateCatalogueSha256": "ecbd664d6103206c735477d5d55ddbb220870e0457c7384eb852e0ac6bd54d7f",
+  "programCount": 348,
+  "publicCount": 217,
+  "privateCount": 131,
+  "rowsPerPage": {
+    "33": 32,
+    "34": 32,
+    "35": 32,
+    "36": 32,
+    "37": 32,
+    "38": 27,
+    "39": 30
+  },
+  "channels": {
+    "parallel": 217,
+    "private": 131
+  },
+  "conditions": {
+    "gender": 9,
+    "exam": 32
+  },
+  "excludedSections": [
+    {
+      "announcement": 8,
+      "pages": "4\u20136; security conditions at the start of 7; 32; 40",
+      "reason": "defence_and_security_admission"
+    },
+    {
+      "announcement": 8,
+      "page": 3,
+      "reason": "older_certificates_and_direct_language_registration"
+    }
+  ]
+}

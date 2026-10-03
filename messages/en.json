@@ -1,4 +1,542 @@
 {
+  "Admissions": {
+    "title": "Find your university options",
+    "seo": {
+      "title": "Syria University Admissions 2026–2027 by Score",
+      "description": "Explore Syria university admissions 2026–2027 for Syrian and non-Syrian certificates. Compare program minimums, admission tracks and additional requirements."
+    },
+    "social": {
+      "eyebrow": "FIND YOUR NEXT STEP",
+      "titleLine1": "University",
+      "titleLine2": "admissions guide",
+      "descriptionLine1": "Explore your options in Syria by score.",
+      "descriptionLine2": "Compare universities and institutes.",
+      "branches": "Scientific · Literary · Vocational",
+      "season": "2026–2027",
+      "alt": "OpenSyria university admissions guide for Syria, 2026–2027: explore scientific, literary and vocational options by score."
+    },
+    "eyebrow": "ADMISSIONS GUIDE · 2026–2027",
+    "description": "Start with your marks. Explore universities and institutes, understand their requirements, and build a shortlist that makes sense for you.",
+    "home": "Home",
+    "guideLink": "How admissions work",
+    "faqLink": "Common questions",
+    "officialLink": "Official announcements",
+    "previewTitle": "{count} choices across admission routes",
+    "disclaimer": "These are application minimums, not acceptance guarantees. Competition, available places, and all additional conditions still apply.",
+    "privacy": "Calculations run in your browser. Filters and eligibility answers are included in the URL. Your main score is saved only in this tab; favourites stay for future visits. Optional exam import processes the result on our server without saving it.",
+    "source": "Announcement {number}, PDF page {page}",
+    "reviewed": "Source check: {date} · {version}",
+    "form": {
+      "title": "Start with your marks",
+      "certificate": "Your certificate",
+      "supported": "Syrian scientific certificate",
+      "otherCertificate": "Another certificate",
+      "unsupported": "This certificate or special admission route is not yet supported. Use the official announcements for its requirements.",
+      "inputMode": "How would you like to enter your marks?",
+      "percentage": "Percentage",
+      "total": "Total out of {maximum}",
+      "scoreLabel": "Admission percentage (%)",
+      "totalLabel": "Admission comparison total (out of {maximum})",
+      "percentageHint": "Arabic and Western digits both work.",
+      "totalHint": "Enter the comparison total including religious education and excluding the lower foreign-language mark. Do not enter an unadjusted certificate total.",
+      "calculated": "Calculated percentage: {percent}%",
+      "scoreError": "Enter a valid number between 0 and {max}, with up to two decimal places.",
+      "more": "Additional requirements (optional)",
+      "moreHint": "Leave unknown details blank; related requirements will need confirmation.",
+      "math": "Mathematics percentage (%)",
+      "mathHint": "The computing-institute table requires 60% in mathematics for both general and parallel tracks. Other programmes have their own subject requirements.",
+      "gender": "Gender, for restricted programs",
+      "unknown": "Not provided",
+      "female": "Female",
+      "male": "Male",
+      "birthYear": "Year of birth",
+      "birthHint": "Used for choices with a published birth-year limit. Age on the application date still needs official confirmation.",
+      "birthError": "Enter a valid four-digit birth year, no later than 2026.",
+      "architecture": "Have you passed the architecture entrance exam?",
+      "examUnknown": "Not taken or result not yet available",
+      "examPassed": "Yes, I passed the required exam",
+      "examFailed": "I took the exam and did not pass",
+      "submit": "Explore my options",
+      "step1": "Enter your marks",
+      "step1Body": "Add your certificate, marks and any additional details you know.",
+      "step2": "Compare your options",
+      "step2Body": "Compare minimums, admission tracks, requirements, location and costs.",
+      "step3": "Keep what interests you",
+      "step3Body": "Save your favourites to return to later; check official sources before applying.",
+      "helpTitle": "A clearer place to start",
+      "certificatePlaceholder": "Select your certificate",
+      "applicantCategory": "Applicant category",
+      "applicantPlaceholder": "Select your admission category",
+      "syrianApplicant": "Syrian or treated as Syrian under the rules",
+      "otherApplicant": "Another admission category",
+      "applicantHint": "Syrian citizens, including dual nationals, use Syrian/equivalent admission. Nationality and certificate origin are separate.",
+      "applicantError": "Select the applicant category that applies to you.",
+      "unsupportedApplicant": "This category is not yet covered by the calculator. Check its official announcement below.",
+      "mathPlaceholder": "For example: 60",
+      "genderPlaceholder": "Select gender",
+      "birthPlaceholder": "For example: 2008",
+      "examPlaceholder": "Select your exam result",
+      "previousAdmission": "Were you previously accepted through general admission using an older certificate?",
+      "previousPlaceholder": "Select an answer",
+      "previousNo": "No previous acceptance",
+      "previousYes": "Yes, with an older certificate",
+      "previousHint": "This restriction applies to general admission even with a new 2026 certificate. Parallel and private conditions are assessed separately.",
+      "loading": "Loading admission choices…",
+      "loadError": "The catalogue could not be loaded. Check your connection and try again; your answers are still here.",
+      "subjectMarks": "Other subject marks (optional)",
+      "subjectMarksHint": "Enter each subject as a percentage; leave unknown marks blank. For foreign language, use the language chosen for your official admission comparison.",
+      "subjectPlaceholder": "For example: 75",
+      "literary": "Syrian literary certificate",
+      "vocational": "Syrian vocational certificate",
+      "vocationalSpecialty": "Vocational certificate and specialty",
+      "vocationalPlaceholder": "Select the specialty on your certificate",
+      "vocationalHint": "Match your certificate exactly; dual education is separate where listed. If yours is missing, select Another vocational specialty to see only choices open to all professions.",
+      "vocationalError": "Select your vocational certificate and specialty.",
+      "vocationalScoreHint": "Enter your official admission percentage, based on the maximum for your profession, including religious education and excluding the lower foreign-language mark, under announcement 6.",
+      "nonSyrianScientific": "Non-Syrian scientific equivalent",
+      "nonSyrianLiterary": "Non-Syrian literary equivalent",
+      "equivalenceHint": "Your certificate must be recognised as equivalent to the Syrian branch you select. Complete equivalence and data registration through the Education Directorate’s examinations office before applying.",
+      "nonSyrianScoreHint": "Enter the official certificate percentage recorded for your application, without a deduction. For Turkish certificates, use the diploma average. Subject marks are not used for this route.",
+      "certificateYear": "Certificate year",
+      "otherYear": "Another year",
+      "yearHint": "Enter the actual certificate year. Ordinary public/private admission uses 2026, and older certificates use private admission.\n\nDefence choices accept 2024–2026 or 2025–2026 depending on the programme; security choices accept 2025–2026. Maritime vocational defence admission uses 2026 only.",
+      "foreignYearHint": "Enter the year on your certificate. For Arab/foreign applicants, 2025–2026 supports public and private choices; 2024 and earlier supports private choices only.",
+      "yearError": "Enter a four-digit certificate year no later than 2026.",
+      "foreignApplicant": "Arab and foreign applicants route",
+      "foreignHint": "For applicants without Syrian citizenship. Arab/foreign holders of a Syrian 2026 certificate who studied continuously in Syria from grade 9 through their secondary certificate may instead choose Syrian/equivalent admission under announcement 9, page 4.\n\nThis route compares overall scores without subject-mark requirements.",
+      "foreignNonSyrianScoreHint": "Enter the official certificate percentage registered for your application. If your certificate has no average, the Education Directorate’s examinations office calculates it. Subject marks are not used.",
+      "syrianCertificate": "Syrian certificate",
+      "nonSyrianCertificate": "Non-Syrian certificate",
+      "nonSyrianVocational": "Non-Syrian vocational equivalent",
+      "nonSyrianVocationalHint": "Select the corresponding Syrian qualification on your official equivalence record, including its profession and regular/dual education category. Do not infer equivalence from similar names.\n\nIf it is not listed, Another vocational specialty shows only choices explicitly open to all professions.",
+      "nonSyrianVocationalScoreHint": "Enter the official certificate percentage registered after equivalence, without any percentage deduction, under announcement 10. Your exact equivalent vocational qualification determines which choices you can apply for.",
+      "foreignVocationalHint": "For applicants without Syrian citizenship. Select your exact Syrian vocational qualification or its official equivalent.\n\nHolders who studied continuously in Syria from grade 9 through a Syrian vocational certificate may qualify for Syrian/equivalent admission under announcement 11, page 3; that route in this calculator covers 2026 certificates.",
+      "foreignVocationalScoreHint": "Enter the official vocational percentage registered for your application under announcement 11. Non-Syrian certificates require official equivalence and use the certificate average. Select the exact profession and regular/dual education category.",
+      "sharia": "Syrian Sharia certificate",
+      "shariaScoreHint": "Enter your official standard admission percentage. Under announcement 3, religious subjects are averaged and counted as one course, with the lower foreign-language mark excluded.\n\nThe dedicated Sharia faculty choices use the separate percentage below.",
+      "shariaQuotaScoreHint": "Enter your official standard admission percentage. Under announcement 3, religious subjects are averaged and counted as one course, with the lower foreign-language mark excluded.",
+      "shariaFacultyScore": "Sharia faculty admission percentage (%) — optional",
+      "shariaFacultyScoreHint": "For the 19 dedicated Sharia choices, enter the official percentage after adding religious-subject marks (announcement 4, pages 5–6). This is a separate score. Leave it blank if unknown; those choices will need confirmation.",
+      "shariaScopeHint": "Sharia support currently covers Syrian 2026 certificates for Syrian/equivalent applicants. Other Sharia applicant routes require checking the official announcements.",
+      "shariaYearHint": "Ordinary Sharia admission and special quotas use Syrian 2026 certificates. The two defence law/social-sciences choices accept Syrian Sharia certificates from 2024–2026.",
+      "shariaYearError": "Use 2026 for ordinary Sharia admission or its quotas, or select defence admission for 2024–2026.",
+      "olderPrivateHint": "Your certificate year uses private-only admission under announcement 7. Public admission choices will not appear. Enter your official admission percentage for that certificate year.",
+      "olderPrivateScoreHint": "Enter the official percentage registered for your certificate and year. Older marking totals can differ, so do not use the 2026 denominator.\n\nSyrian certificates use the applicable comparison total and higher comparison-language mark; non-Syrian certificates require official equivalence and a registered average.",
+      "admissionRoute": "Admission route",
+      "standardRoute": "General, parallel and private",
+      "admissionRouteHint": "Available routes depend on your certificate, year and applicant category.",
+      "admissionRouteError": "This admission route is unavailable for the selected certificate, category or year.",
+      "facultyFamilyHint": "These results use the faculty-family quota thresholds. The university or higher institute personnel directorate must verify the parent’s eligibility.\n\nSubject and entrance-test requirements still apply where listed; results remain pending official verification.",
+      "disabilityHint": "Use your ordinary comparison score, without adding a disability percentage.\n\nThe official medical committee must approve the disability type, degree and suitability of each choice. Results remain pending that assessment and required documents; the calculator does not predict the quota ranking.",
+      "defenceHint": "Compare the published defence-university requirements. Military colleges require official entrance, age-on-application, fitness and service-commitment checks.\n\nThe Higher Institute for Applied Sciences and Technology has separate rules and accepts men and women. Results remain pending official verification.",
+      "securityHint": "This route requires Syrian nationality held for at least five years, the university entrance assessments, official fitness and administrative approval, and a service commitment after graduation: 20 years for faculties or 10 for technical institutes.\n\nEquivalent treatment alone is insufficient. Results remain pending official verification.",
+      "serviceScoreHint": "Enter the official admission percentage for your certificate and year. The calculator does not infer historical totals or certificate equivalence. Each choice has its own certificate-year limits; passing the published score is only one requirement.",
+      "vocationalFacultyFamilyHint": "For Syrian vocational certificates from 2026: 60% for matching engineering faculties, 50% for other colleges (including applied colleges), and no separate overall minimum for matching institutes.\n\nExact qualifications and any exams still apply. Admission depends on vacant places left from the scientific faculty-family quota and the choices shown in your official application; family eligibility and vacancies require official confirmation."
+    },
+    "results": {
+      "title": "Your university options",
+      "score": "Your admission percentage",
+      "meets": "Meet checked requirements",
+      "pending": "Need confirmation",
+      "saved": "Saved choices",
+      "edit": "Edit my details",
+      "reset": "Clear my answers",
+      "summary": "{programs} admission choices match your filters",
+      "programCount": "{count} programs shown",
+      "search": "Search universities or programs",
+      "searchPlaceholder": "Try nursing, Damascus, or a university name",
+      "governorate": "Study governorate",
+      "allGovernorates": "All study locations",
+      "field": "Field of study",
+      "allFields": "All fields",
+      "channel": "Admission track",
+      "allChannels": "All tracks",
+      "status": "Show",
+      "available": "Matches and conditional options",
+      "allStatuses": "All options, including unmet minimums",
+      "savedOnly": "My saved choices",
+      "savedShort": "Saved",
+      "filtersShort": "Filters",
+      "noSaved": "No saved choices yet",
+      "noSavedBody": "Tap the bookmark on a choice to add it here.",
+      "browseChoices": "Browse choices",
+      "savedHint": "Saved choices for this certificate stay in this browser, not with the Ministry. Filters may hide some.",
+      "storageError": "This browser could not save your favourites. They will remain available only on the current page.",
+      "save": "Save {program}",
+      "unsave": "Remove {program} from saved choices",
+      "saveNotice": "{count} saved choices.",
+      "minimum": "Application minimum",
+      "allApplicants": "All applicants",
+      "noResults": "No options match these filters",
+      "noResultsBody": "Try a different location or admission track, or show all choices to review their requirements. You can also check your entered details.",
+      "clearFilters": "Clear filters",
+      "sources": "Official requirements",
+      "programDetails": "View programs and conditions",
+      "conditionFailed": "This condition is not met:",
+      "conditionMissing": "Still needs confirmation:",
+      "minimumFailed": "Your score is below the {minimum}% application minimum.",
+      "subjectCondition": "At least {minimum}% in {subject}.",
+      "genderCondition": "This program is restricted to {gender} applicants.",
+      "birthCondition": "Born in {year} or later.",
+      "originCondition": "Confirm eligibility under the program's governorate-origin rule.",
+      "scopeCondition": "This certificate or applicant category is outside the supported scope.",
+      "previousAdmissionCondition": "No previous general-admission acceptance using an older secondary certificate.",
+      "sort": "Sort choices",
+      "sortCareer": "Career guidance",
+      "sortName": "Name",
+      "institutes": "Institutes · view choices and requirements",
+      "universities": "Faculties · view choices and requirements",
+      "previous": "Previous",
+      "next": "Next",
+      "pageRange": "{start}–{end} of {total}",
+      "programPagination": "Browse choices at {name}",
+      "institutionPagination": "Browse university and institute groups",
+      "profile": "Results: {branch} · {year}",
+      "shariaScoreMissing": "Enter or confirm the separate Sharia faculty admission percentage to check this minimum.",
+      "shariaScoreBasis": "Uses the official percentage after adding religious-subject marks.",
+      "certificateYearsCondition": "The certificate must be from one of these years: {years}.",
+      "filters": "Filters and sorting",
+      "closeFilters": "Close filters",
+      "showFiltered": "Show {count} choices"
+    },
+    "statuses": {
+      "meets_requirements": "Meets checked requirements",
+      "needs_confirmation": "Needs confirmation",
+      "not_eligible": "Requirements not met"
+    },
+    "channels": {
+      "general": "Public · general",
+      "parallel": "Public · parallel",
+      "private": "Private",
+      "arab_foreign": "Public · Arab and foreign applicants",
+      "faculty_family": "Faculty-family quota",
+      "disability": "Disability quota",
+      "defence": "Defence university admission",
+      "security": "Security university admission"
+    },
+    "fields": {
+      "technology": "Computing & technology",
+      "engineering": "Engineering",
+      "health": "Health & medicine",
+      "business": "Business",
+      "agriculture": "Agriculture, food & veterinary",
+      "science": "Sciences",
+      "languages": "Languages & translation",
+      "education": "Education",
+      "law": "Law & political science",
+      "arts": "Arts & design",
+      "media": "Media",
+      "tourism": "Tourism & hospitality",
+      "humanities": "Humanities",
+      "religion": "Religious studies"
+    },
+    "subjects": {
+      "math": "mathematics",
+      "physics": "physics",
+      "chemistry": "chemistry",
+      "biology": "biology",
+      "arabic": "Arabic",
+      "foreign_language": "the foreign language",
+      "english": "English",
+      "french": "French",
+      "russian": "Russian",
+      "religion": "religious education"
+    },
+    "governorates": {
+      "damascus": "Damascus",
+      "rural-damascus": "Rif Dimashq",
+      "aleppo": "Aleppo",
+      "homs": "Homs",
+      "hama": "Hama",
+      "latakia": "Latakia",
+      "tartous": "Tartus",
+      "idlib": "Idlib",
+      "daraa": "Daraa",
+      "sweida": "As-Suwayda",
+      "quneitra": "Quneitra",
+      "deir-ez-zor": "Deir ez-Zor",
+      "hasakah": "Al-Hasakah",
+      "raqqa": "Raqqa",
+      "multiple": "Multiple governorates",
+      "rif-dimashq": "Rif Dimashq",
+      "unspecified": "Location to be confirmed"
+    },
+    "guide": {
+      "eyebrow": "BEFORE YOU ARRANGE YOUR CHOICES",
+      "title": "Understand your options, then choose",
+      "description": "A practical guide to reading the 2026–2027 announcements. The original Ministry documents remain the reference for your application.",
+      "sections": {
+        "compare": {
+          "title": "Look beyond the program name",
+          "body": "Compare the program, admission track, and current campus together. Public general and parallel admission can have different minimums and subject requirements for the same program.\n\nPrivate university fees are set by each institution. Some private universities use temporary campuses, so check where you would actually study before adding a choice."
+        },
+        "score": {
+          "title": "Use the admission comparison score",
+          "body": "For ordinary admission with a 2026 Syrian certificate, use the comparison total out of 2400 for scientific or 2200 for literary, including religious education and excluding the lower foreign-language mark.\n\nVocational maximums vary by profession; enter the official percentage.\n\nFor non-Syrian academic certificates under announcement 8, enter the official certificate percentage without a deduction; individual subject marks are not considered.\n\nFor Arab/foreign admission, announcement 9 uses the same Syrian comparison denominators or the official non-Syrian certificate average and disregards subject marks for both.\n\nNon-Syrian vocational certificates use the official average without a deduction under announcement 10, with exact qualification matching.\n\nFor Arab/foreign vocational admission, announcement 11 uses the official percentage and exact vocational qualification; both 2025 and 2026 are supported.\n\nSyrian Sharia holders enter the official standard percentage with religious subjects averaged as one course, plus a separate official percentage after adding religious-subject marks for the 19 dedicated Sharia faculty choices.\n\nFor older private-only admission, use the official percentage for the certificate year; the calculator does not infer historical marking totals.\n\nFor defence and security admission, enter the official admission percentage for your certificate year, and check each choice’s year limits and conditions."
+        },
+        "conditions": {
+          "title": "Read the conditions beside every minimum",
+          "body": "Some choices require a subject percentage, a particular gender or birth year, or a successful entrance exam. ?All applicants? removes the separate overall-score minimum, but does not waive other requirements.\n\nFor Syrian academic general admission, previous acceptance using an older certificate prevents reapplication even with a new certificate. Check the outstanding conditions beside each result; official approvals and post-admission assessments still require the responsible institution."
+        },
+        "choices": {
+          "title": "Choose programs you would actually study",
+          "body": "Build your shortlist around your interests, study location, and costs. The announcements allow multiple choices across admission tracks, provided you meet their requirements. Read the rules before fixing your official application.\n\nA specialisation listed within an institute is not always a separate application choice: some departments allocate places after admission. Saving an option here does not register or submit it."
+        },
+        "directRegistration": {
+          "title": "Check whether you register through the application or directly",
+          "body": "Some routes have a separate registration process. Eligible non-Syrian academic certificate holders can register directly with a university for a matching foreign-language department; the rules differ by applicant category.\n\nSharia-certificate holders must contact the Sharia/Arabic intermediate institute directly.\n\nSome vocational routes instead require a separate Education or Energy Ministry admission announcement.\n\nThe questions below explain who each route covers, the published conditions, fees and timing. These routes are guidance only and do not appear as scored calculator results. Confirm the required documents and registration arrangements with the receiving institution."
+        }
+      }
+    },
+    "faq": {
+      "eyebrow": "QUESTIONS STUDENTS ASK",
+      "title": "A little clarity before you apply",
+      "description": "Answers drawn from the supplied Ministry announcements, with links to the relevant PDF pages. Check the Ministry for later corrections or changes.",
+      "items": {
+        "minimum": {
+          "question": "Does meeting the minimum mean I will be accepted?",
+          "answer": "No. A minimum allows you to apply through the relevant track when its other conditions are also met. Applicants are then compared under the admissions rules. This page checks published requirements; it does not predict a final acceptance result or a probability of admission."
+        },
+        "score": {
+          "question": "Which marks count towards my admission score?",
+          "answer": "For ordinary admission with a 2026 Syrian certificate, scientific and literary comparison totals are out of 2400 and 2200 respectively, including religious education and excluding the lower foreign-language mark.\n\nSyrian vocational certificates use the profession-specific percentage under announcement 6.\n\nNon-Syrian academic certificates use the official percentage without a deduction under announcement 8; for Turkish certificates, this is the diploma average.\n\nFor Arab/foreign admission, announcement 9 uses the same Syrian comparison denominators or the official non-Syrian certificate average and disregards subject marks for both.\n\nNon-Syrian vocational certificates use the official average without a deduction under announcement 10, with exact qualification matching.\n\nFor Arab/foreign vocational admission, announcement 11 uses the official percentage and exact vocational qualification; both 2025 and 2026 are supported.\n\nSyrian Sharia holders enter the official standard percentage with religious subjects averaged as one course, plus a separate official percentage after adding religious-subject marks for the 19 dedicated Sharia faculty choices.\n\nFor older private-only admission, use the official percentage for the certificate year; the calculator does not infer historical marking totals.\n\nFor defence and security admission, enter the official admission percentage for your certificate year, and check each choice’s year limits and conditions."
+        },
+        "channels": {
+          "question": "Can I include general, parallel, and private options?",
+          "answer": "Syrian/equivalent applicants with 2026 Syrian certificates can combine general, parallel and private choices, subject to each choice’s rules.\n\nThose with non-Syrian academic certificates use parallel and private admission under announcement 8.\n\nArab and foreign applicants use their separate public track and private choices under announcements 9 (academic) and 11 (vocational), with either certificate origin.\n\nDefence and security choices use separate routes with their own published requirements.\n\nNon-Syrian vocational equivalents for Syrian/equivalent applicants also use parallel and private admission under announcements 10 and 7.\n\nOlder scientific, literary and vocational certificates also support private-only admission: 2025 and earlier for Syrian/equivalent applicants, or 2024 and earlier for Arab/foreign applicants, for both certificate origins."
+        },
+        "conditions": {
+          "question": "Why does a result say “needs confirmation”?",
+          "answer": "A required detail or condition is still unconfirmed, such as your mathematics percentage, the separate Sharia faculty score, previous general-admission acceptance or an entrance-test result.\n\nUse “Check your eligibility” in the relevant admission track to answer; your answer applies to all related choices. Official approvals and post-admission assessments still require confirmation by the responsible institution."
+        },
+        "specialisations": {
+          "question": "Can I apply directly to every institute specialisation?",
+          "answer": "Not necessarily. Announcement 5 distinguishes specialisations listed as application choices from departments that allocate students after admission according to institute rules. We show separate choices only where the threshold announcement identifies them as such.\n\nDepartment-specific restrictions must also stay with that department: for example, Jarablus midwifery admits women, and Idlib radio/TV directing admits men. They do not restrict every department at the parent institute."
+        },
+        "dates": {
+          "question": "When is the application window?",
+          "answer": "Announcements 1 and 7 state that electronic applications run from the morning of 4 October 2026 until the end of official working hours on 19 October 2026. Check the Ministry for any later extension or change."
+        },
+        "fees": {
+          "question": "Is there an application fee?",
+          "answer": "The announcements specify an application fee of 500 new Syrian pounds through Sham Cash. This is the application fee, not university tuition. Private-university tuition and other fees must be checked with the institution.\n\nArab/foreign public tuition and first-registration fees are specified separately in announcement 9, page 7, and announcement 11, page 23, in US dollars.\n\nAnnouncement 1, page 18, separately lists annual public parallel service fees by faculty/institute category; registration is not complete until the required fees are paid. Check the linked fee table and receiving institution for the amount applicable to your route."
+        },
+        "edit": {
+          "question": "Can I change my official choices after confirming the application?",
+          "answer": "Before confirming the application, you can edit your choices during the application period. Changes after confirmation require reopening the application, paying the 500-new-pound reapplication fee, then confirming it again. Applications are treated as confirmed at the deadline.\n\nReopening an application is different from permanently cancelling it: announcement 1, page 17, describes a separate one-day cancellation window after applications close, without giving its calendar date. A cancelled application cannot later be used to claim admission or a change of admission status. Confirm the current procedure and dates in the official system."
+        },
+        "submission": {
+          "question": "Does saving a choice here submit an application?",
+          "answer": "No. OpenSyria helps you compare options and save favourites in this browser. They survive reloads but are not submitted to the Ministry or synced to other devices. You must apply and confirm your choices through the official Ministry system."
+        },
+        "announcement": {
+          "question": "Which announcement applies to my certificate?",
+          "answer": "For Syrian scientific certificates, start with announcements 1 and 2, plus 5 for institutes and 7 for private universities.\n\nSyrian literary and Sharia certificates use 3 and 4; Syrian vocational certificates use 6.\n\nAnnouncements 8 and 10 cover non-Syrian certificates held by Syrian or equivalent applicants; 9 and 11 cover the Arab and foreign applicants route.\n\nCheck each document’s title and conditions, including the certificate year."
+        },
+        "previousAdmission": {
+          "question": "Can I apply for general admission again after getting a new certificate?",
+          "answer": "Announcements 1 and 3 exclude applicants previously accepted through general admission using an older certificate, even with a new 2026 certificate. This does not automatically exclude parallel or private admission; each track has its own conditions."
+        },
+        "architecture": {
+          "question": "When is the architecture entrance exam?",
+          "answer": "Announcement 1 gives registration dates of 4–8 October 2026 and an exam on 11 October at 10 am. The pass mark is 50 out of 100. Passing is required before listing architecture as a choice, alongside its score minimum and other conditions. Check the announcement for exam centres and any later changes."
+        },
+        "tieBreak": {
+          "question": "How are equal admission scores handled?",
+          "answer": "For Syrian/equivalent admission with Syrian certificates, announcement 1 lists subject-mark tiebreaks at the final acceptance threshold; private universities have a table in announcement 7. Announcement 8 disregards specialist subject marks for non-Syrian academic certificates. Announcement 9 disregards them for all Arab/foreign academic applicants, including Syrian certificate holders. This tool checks application minimums and does not predict final selection."
+        },
+        "support": {
+          "question": "Where can I get help registering my application?",
+          "answer": "The Ministry has published a directory of support and special-admission centres, linked in the sources below. Announcement 1 lists registration-centre hours as 9 am to 2:30 pm, except Fridays and Saturdays, during the application period. Check the location and instructions before visiting.\n\nUse both pages of the directory and the centre for your applicant category: general technical support, disability admission and Arab/foreign admission may use different locations."
+        },
+        "vocational": {
+          "question": "Is the score alone enough for a vocational certificate?",
+          "answer": "No. Your certificate specialty must be one of those allowed for the choice. Two industrial specialties can have different options, and an entrance test, interview, gender or birth-year condition may also apply. Select the exact certificate and specialty, then check the linked source."
+        },
+        "coverage": {
+          "question": "Which certificates does the advisor currently support?",
+          "answer": "For Syrian/equivalent applicants: 2026 Syrian or equivalent non-Syrian scientific, literary and vocational certificates.\n\nFor Arab and foreign applicants: Syrian or equivalent non-Syrian scientific, literary and vocational certificates from 2025 or 2026.\n\nSyrian 2026 Sharia certificates are also covered for Syrian/equivalent applicants.\n\nOlder scientific, literary and vocational certificates also support private-only admission: 2025 and earlier for Syrian/equivalent applicants, or 2024 and earlier for Arab/foreign applicants, for both certificate origins.\n\nFaculty-family and disability quotas are also covered for Syrian 2026 academic certificates. Syrian 2026 vocational certificates have a separate faculty-family route for matching specialties and vacant places. Official quota eligibility remains pending.\n\nDefence/security choices are covered separately with their published year limits and official verification requirements. Other older Sharia routes remain outside the calculator.\n\nThe guide explains direct registration and separate ministry applications; these do not produce scored results."
+        },
+        "nonSyrian": {
+          "question": "What should I enter for a non-Syrian academic certificate?",
+          "answer": "For Syrian/equivalent applicants, choose the scientific or literary equivalent for your 2026 certificate under announcement 8. Arab/foreign applicants can use 2025 or 2026 certificates under announcement 9.\n\nEnter the official average recorded for your application after equivalence and data registration at an Education Directorate’s examinations office. The office calculates the average if none is printed. Announcement 8 specifies no deduction and uses the diploma average for Turkish certificates.\n\nBoth routes disregard subject marks and include equivalent certificates issued by licensed non-Syrian schools inside Syria."
+        },
+        "foreignApplicants": {
+          "question": "Who can use the Arab and foreign applicants route?",
+          "answer": "Announcements 9 and 11 cover applicants without Syrian citizenship holding Syrian or accepted non-Syrian scientific, literary or vocational certificates from 2025 or 2026. Dual nationals with Syrian citizenship use Syrian admission.\n\nApplicants who studied continuously in Syria from grade 9 through their Syrian certificate should check the Syrian/equivalent route rules in announcement 9, page 4, or announcement 11, page 3; the calculator supports 2026 certificates in that route.\n\nPublic choices use the separate Arab/foreign track; private choices follow announcement 7. Academic Syrian certificates use comparison totals out of 2400 or 2200; vocational and non-Syrian certificates use the official percentage. Vocational choices also require an exact qualification match.\n\nCertificates from 2024 and earlier use private-only admission under announcement 7. The direct-registration questions explain the separate language-department route; it does not produce scored results."
+        },
+        "nonSyrianVocational": {
+          "question": "How do non-Syrian vocational certificates work?",
+          "answer": "Announcement 10 covers Syrian/equivalent applicants with a 2026 non-Syrian certificate officially equivalent to a Syrian vocational qualification. Complete equivalence and data registration at the Education Directorate’s examinations office, then enter the official percentage without a deduction. Select the exact equivalent Syrian profession and regular/dual education category.\n\nOrdinary public choices use parallel admission; private choices follow announcement 7, page 6. “All applicants” removes the total-score minimum but keeps the required qualification and any assessments.\n\nRailway choices require male applicants born in 2003 or later and a post-admission medical check.\n\nThe two maritime qualifications also have a separate defence route for 2026 at 70%. Older certificates use the private-only route."
+        },
+        "foreignVocational": {
+          "question": "How do vocational certificates work for Arab and foreign applicants?",
+          "answer": "Announcement 11 accepts Syrian vocational certificates and official non-Syrian equivalents from 2025 or 2026. Enter the official percentage and exact profession, keeping regular and dual education distinct.\n\nPublic choices use the Arab/foreign track; private choices use Table 3 under announcement 7, pages 6–7. “All applicants” waives only the overall minimum, not the qualification or assessments.\n\nArts, music, applied arts and tourism require assessments before applying. Railway choices require male applicants born in 2000 or later, with a medical check and interview after admission.\n\nArab/foreign students at committed institutes have no state-employment obligation."
+        },
+        "sharia": {
+          "question": "Can I use a Syrian Sharia certificate?",
+          "answer": "Yes, for Syrian/equivalent applicants with a 2026 Syrian Sharia certificate: 242 public and 131 private choices. Announcement 3 treats Sharia certificates as literary equivalents and averages religious subjects as one course for standard admission. Enter that official percentage first.\n\nThe 19 dedicated Sharia faculty choices require a separate official percentage after adding religious-subject marks under announcement 4, pages 5–6; if unknown, they remain pending. General admission requires 55% and parallel 50% for those choices, plus any applicable quota conditions.\n\nSharia and Arabic intermediate institutes require direct contact and registration with the institute under announcement 3, page 4, so their 23 table rows are excluded here.\n\nA separate defence route covers legal and social sciences for Syrian Sharia certificates from 2024–2026 at 70%. Older Sharia private admission and other applicant categories remain outside the calculator."
+        },
+        "olderPrivate": {
+          "question": "Can I apply with a certificate from an earlier year?",
+          "answer": "Yes. Announcement 7 accepts scientific, literary and vocational certificates from 2025 or earlier for Syrian/equivalent applicants, and 2024 or earlier for Arab/foreign applicants, for private-only admission. Both Syrian and officially equivalent non-Syrian certificates are covered.\n\nEnter the actual certificate year and its official admission percentage; do not assume that the current 2400/2200 totals apply to an older certificate.\n\nThe private tables provide 389 scientific, 131 literary and 536 vocational choices for each applicant category, with exact vocational qualifications and entrance tests still required. These are the same private programme tables, not additional degrees.\n\nArab/foreign 2025–2026 certificates retain their combined public/private route.\n\nOlder Sharia private admission and transfer/change-of-admission procedures are outside the calculator. Defence legal and social sciences separately accept Syrian Sharia certificates from 2024–2026."
+        },
+        "facultyFamily": {
+          "question": "Who can use faculty-family admission?",
+          "answer": "Announcements 1 and 3 reserve an additional 1% of places for eligible children of faculty members, ranked as one group across universities. Eligibility includes current members, qualifying former members with at least ten years of teaching or research service who left for non-disciplinary reasons, and members who died in service. The university or higher institute personnel directorate must verify the records.\n\nSelect this route for a Syrian 2026 academic or vocational certificate to compare the applicable thresholds and conditions; Sharia faculty subject conditions are waived for this quota where a quota column is offered.\n\nScientific applicants who meet the final general-admission cutoff are excluded from its quota allocation; the calculator cannot determine that final cutoff.\n\nThe vocational catalogue covers 291 source-mapped choices under announcement 6, page 4: 60% for engineering faculties, 50% for other colleges including applied colleges, and no separate overall minimum for matching institutes. Exact certificate specialties, regular/dual distinctions, tests and railway restrictions still apply.\n\nFor vocational applicants, admission depends on vacant places remaining from the scientific faculty-family quota and choices shown in the official application. This does not extend vocational disability admission or the quota to non-Syrian certificates."
+        },
+        "disability": {
+          "question": "How does disability admission differ?",
+          "answer": "Only choices offered in the disability columns are shown. The permitted disability types and degrees vary by choice; some engineering and computing choices are limited to software or telecommunications.\n\nThe official medical committee must assess the applicant and approve the selected choices, and the approved report must accompany the official application. The pinned announcements list assessments from 4 to 19 October 2026 at the designated university centres.\n\nThe highest assessed degree is used when more than one disability is present. Ranking combines the approved disability degree with the comparison total, but the calculator checks the published academic minimums without applying a guessed bonus. A score alone never confirms quota eligibility.\n\nDedicated Sharia-certificate faculty rows have no quota columns; direct-registration institutes remain outside this calculator."
+        },
+        "serviceAdmission": {
+          "question": "How do defence and security university choices work?",
+          "answer": "Defence admission includes military colleges at 70% for 2024–2026 academic certificates, and the Higher Institute for Applied Sciences and Technology at 85% for scientific certificates from 2025 or 2026. The latter accepts men and women and has its own entrance examination and registration fee; military-college rules must not be applied to it. Literary and Syrian Sharia holders can compare legal and social sciences.\n\nMaritime navigation and marine-mechanics vocational certificates or accepted equivalents from 2026 can apply to naval engineering at 70%. The naval campus is Damascus this year and Latakia in subsequent years.\n\nMilitary colleges require men who are unmarried, no older than 23 at application, at least 165 cm tall, fit, successful in the entrance examination, and able to meet the official administrative, financial and service obligations.\n\nSecurity admission accepts scientific/literary certificates or equivalents from 2025 or 2026. Syrian nationality for at least five years, birth on or after 1 January 2005, the printed gender restrictions, examinations/interviews, fitness and administrative conditions apply. Published height minimums are 170 cm for men and 160 cm for women, with BMI 18–28. Service after graduation is 20 years for faculties or 10 for institutes.\n\nThe top ten Syrian 2026 computer-technologies vocational graduates may enter the security competition, but these PDFs do not specify their programme allocation or minimum score, so the calculator does not invent them.\n\nOfficials must confirm eligibility; no health, political-affiliation or criminal-history details are requested here."
+        },
+        "directLanguageSyrian": {
+          "question": "When can Syrian/equivalent applicants register directly for a foreign-language department?",
+          "answer": "Announcement 8, page 3, item 20 covers Syrian/equivalent applicants with an accepted non-Syrian scientific certificate from 2026 and an average of at least 50%. More than half the certificate subjects must have been studied in a foreign language, and the department must match the language in which the certificate was awarded.\n\nRegister directly at the university during the registration period for students accepted through the admission competition. The fees are those for non-Syrian-certificate parallel admission.\n\nThis clause is specific to scientific certificates; it does not establish the same route for literary or vocational certificates. Ask the university to verify your certificate, language of study, documents and registration arrangements. The calculator does not assess this route."
+        },
+        "directLanguageForeign": {
+          "question": "When can Arab/foreign applicants register directly for a foreign-language department?",
+          "answer": "Announcement 9, page 3, item 15 covers Arab/foreign applicants with an accepted non-Syrian scientific or literary certificate from 2025 or 2026 and an average of at least 50%. More than half the certificate subjects must have been studied in a foreign language, and the department must match the language in which the certificate was awarded. English and French departments also require a successful language entrance test.\n\nRegister directly during the registration period for students accepted through this admission competition, and pay the fees applicable to Arab/foreign admission. Contact the receiving university to verify eligibility, documents, test arrangements and registration dates.\n\nThis clause does not cover Syrian or vocational certificates, and the calculator does not assess it."
+        },
+        "directSharia": {
+          "question": "How do Sharia-certificate holders register for Sharia and Arabic intermediate institutes?",
+          "answer": "Announcement 3, page 4, item 10 directs Sharia-certificate holders to the institute administration for direct registration in intermediate institutes of Sharia and Arabic sciences; they cannot register for those institutes under this announcement.\n\nContact the intended institute for its registration conditions, documents, fees and dates. The clause gives no separate timetable or numerical admission minimum.\n\nThe 23 institute rows in announcement 4, page 7 are therefore excluded from Sharia calculator results. This instruction is specific to Sharia-certificate holders and does not remove the ordinary literary application choices."
+        },
+        "separateVocational": {
+          "question": "Which vocational routes require a separate ministry announcement?",
+          "answer": "For the Syrian vocational route, announcement 6, page 3, item 11 tells vocational-certificate holders seeking technical institutes under the Ministry of Education to apply under that ministry’s forthcoming admission announcement.\n\nItem 13 directs petroleum vocational-certificate holders seeking Energy Ministry oil and gas technical institutes to the competition announced by the Ministry of Energy.\n\nThese are separate admission competitions, not an automatic right to direct registration. Follow the responsible ministry’s announcement for eligibility, choices, dates and fees; this page does not supply or infer those details. Entrance tests mentioned in the Higher Education PDFs do not replace the separate application."
+        },
+        "applicationDocuments": {
+          "question": "What documents and personal details should I check?",
+          "answer": "Announcement 1, pages 17–18, requires checking your name, parents’ names, nationality, gender and score in the official system; report errors to a support centre during applications.\n\nSyrian citizens with Syrian certificates apply remotely using their examination number under this procedure. Palestinian and other applicants seeking equivalent treatment must follow their category’s document and verification requirements.\n\nFaculty-family applicants need their parent’s records entered by the university or higher institute personnel directorate.\n\nDisability applicants apply through their designated centre after medical assessment, with documents uploaded by the responsible official.\n\nThese instructions do not replace the separate equivalence and document requirements for non-Syrian certificates. Download and check the official application PDF before confirming it."
+        },
+        "entranceTests": {
+          "question": "Do entrance tests have their own registration deadlines?",
+          "answer": "Yes. Register for and pass the required test before listing the choice; the main application deadline is not the test deadline. Announcement 1, pages 22–29, gives separate arrangements for fine arts, Damascus health-sciences specialties, political science, physical education, music, nursing schools, applied arts, Idlib media, archaeology and tourism institutes.\n\nFor example, fine-arts registration is 4–12 October 2026 and the test is 13 October at 10 am; its combined drawing pass mark is 50/100. Other tests have different dates, fees, documents and venues.\n\nPage 24 contradicts itself about the order of the political-science written test and interview: confirm the sequence and appointment with the faculty. Enter your test result through “Check your eligibility” for the choice; a qualifying score does not replace passing the required test."
+        },
+        "privatePerformingArts": {
+          "question": "What do the private acting and film programmes require?",
+          "answer": "Announcement 7, PDF pages 64–65, requires 50% for Syrian scientific/literary certificates or equivalents and 55% for vocational certificates or equivalents, plus a successful entrance exam. This covers theatre and film directing at Arab International University and acting at Al-Manara University.\n\nRegistration through the application is 4–11 October 2026; tests run 10–14 October at the respective university.\n\nActing and directing have different preparation requirements: page 64 describes performance exercises and, for directing, a short film, a scenario and photographs. Confirm your appointment and required materials with the university."
+        },
+        "afterAdmission": {
+          "question": "Which assessments take place after admission?",
+          "answer": "Announcement 1, page 30, places railway and oil/gas medical checks and legal-institute interviews after admission results, during the institute’s registration period. Missing the required assessment is treated as declining registration.\n\nIf the institute rejects an applicant on these grounds, the published procedure requires a written institute decision before considering the next eligible choice on the official application. Contact the institute and admissions staff; the calculator cannot reassign a place or treat an application-time declaration as a completed post-admission assessment."
+        },
+        "educationInstitutes": {
+          "question": "Are Education Ministry teacher-training institute tests included here?",
+          "answer": "Announcement 1, page 30, says the Ministry of Education announces its own tests and dates for teacher-training, art education, music education and physical education institutes. Applicants must follow that ministry’s separate announcement.\n\nThe same note says a student accepted through the Ministry of Higher Education competition cannot subsequently be accepted at those institutes. Check these separate procedures before finalising your choices. Their deadlines and admission rules are not inferred from the Higher Education calculator."
+        }
+      }
+    },
+    "sourcesTitle": "Go back to the source",
+    "sourcesBody": "All eleven announcements and the support-centre directory from the Ministry page are linked here. Choose the document for your certificate and applicant category. Links use PDF viewer page numbers, which may differ from the numbering printed in the tables.",
+    "announcement": "Announcement {number}",
+    "readAnnouncement": "Read announcement {number}",
+    "pdfPages": "PDF · {count} pages",
+    "applicationLink": "Open the official application system",
+    "sourceGroups": {
+      "scientific": "Scientific certificates, institutes & private universities",
+      "otherBranches": "Literary & vocational certificates",
+      "otherApplicants": "Non-Syrian certificates & Arab or foreign applicants"
+    },
+    "ministryLink": "View the Ministry announcement page",
+    "supportLink": "Support and registration centres",
+    "careers": {
+      "title": "How to read the career guidance",
+      "body": "OpenSyria provides an editorial ordering informed by Syrian sector needs and recovery priorities. It is not an official degree ranking or a forecast of employment when you graduate. Sources were reviewed on 3 October 2026.",
+      "badges": {
+        "promising": "Promising paths",
+        "diverse": "Varied career paths",
+        "specialist": "Specialist paths"
+      },
+      "definitions": {
+        "promising": "Fields linked to documented production, reconstruction or selected healthcare needs. Turning those needs into jobs depends on funding and recovery.",
+        "diverse": "Skills with applications across sectors or types of work. Training and practical experience help you find a suitable path.",
+        "specialist": "Paths with a specific professional focus, sometimes requiring licensing or further study. This is not a judgment of a degree or a student’s value."
+      },
+      "limits": "These sources do not provide reliable graduation-year forecasts for every degree. We show no employment probabilities or salary estimates. Career examples describe the wider field; actual roles depend on your qualification, skills and licensing. You can switch to sorting by name.",
+      "sources": {
+        "industry": "ILO: industrial skills (2025)",
+        "agriculture": "ILO: recovery sectors (2026)",
+        "reconstruction": "World Bank: reconstruction needs (2025)",
+        "health": "WHO: health sector (2026)"
+      }
+    },
+    "branches": {
+      "scientific": "Scientific",
+      "literary": "Literary",
+      "vocational": "Vocational",
+      "non-syrian-scientific": "non-Syrian scientific",
+      "non-syrian-literary": "non-Syrian literary",
+      "foreign-scientific": "scientific · Arab/foreign route",
+      "foreign-literary": "literary · Arab/foreign route",
+      "non-syrian-vocational": "non-Syrian vocational",
+      "foreign-vocational": "vocational · Arab/foreign route",
+      "sharia": "Syrian Sharia certificate",
+      "older-scientific": "Scientific · older certificate · private only",
+      "older-foreign-scientific": "Scientific · Arab/foreign · older certificate · private only",
+      "older-literary": "Literary · older certificate · private only",
+      "older-foreign-literary": "Literary · Arab/foreign · older certificate · private only",
+      "older-vocational": "Vocational · older certificate · private only",
+      "older-foreign-vocational": "Vocational · Arab/foreign · older certificate · private only",
+      "special-scientific": "Scientific · special quotas",
+      "special-literary": "Literary · special quotas",
+      "special-sharia": "Sharia · special quotas",
+      "service-scientific": "Scientific · defence/security",
+      "service-literary": "Literary · defence/security",
+      "service-sharia": "Sharia · defence/security",
+      "service-vocational": "Vocational · defence/security",
+      "special-vocational": "Vocational · faculty-family quota"
+    },
+    "questions": {
+      "title": "Check your eligibility",
+      "edit": "Edit answers",
+      "subject": "{subject} (%)",
+      "birthYear": "Year of birth",
+      "shariaScore": "Sharia faculty percentage (%)",
+      "exam": "Have you passed this required test?",
+      "yes": "Yes",
+      "no": "No",
+      "examNo": "No, failed",
+      "notYet": "Not yet",
+      "governorate": "Which governorate issued your secondary certificate?",
+      "originHint": "Required certificate origin: {governorates}.",
+      "done": "Back to choices",
+      "close": "Close eligibility questions",
+      "sharedHint": "Answers are saved for all relevant choices.",
+      "updated": "Answer saved; related choices updated.",
+      "filteredOut": "Answer saved. This choice no longer matches your current filters.",
+      "undone": "Your previous answer has been restored.",
+      "undo": "Undo"
+    },
+    "lookup": {
+      "open": "Fill marks using my student number",
+      "title": "Import your exam marks",
+      "description": "Syrian 2026 scientific and literary certificates. Choose the exam governorate and the exact certificate and curriculum shown in the Ministry app.",
+      "directorate": "Exam governorate",
+      "certificate": "Certificate and curriculum",
+      "number": "Student number",
+      "choose": "Choose an option",
+      "privacy": "Use your own number or one you have permission to check. Your browser contacts the Ministry results service. OpenSyria processes the encrypted response to fill your marks; it does not retain your number or identity details. Cloudflare checks this request for abuse.",
+      "hint": "Manual entry is always available. Your exam governorate is separate from your preferred study location.",
+      "submit": "Fetch and fill marks",
+      "cancel": "Return to the form",
+      "retry": "Try again",
+      "loading": "Loading...",
+      "success": "Marks filled. Review them before showing your choices. You can edit any mark.",
+      "errors": {
+        "unavailable": "The lookup service could not be reached. Try again later or enter your marks manually.",
+        "limited": "Too many attempts. Wait 15 minutes before trying again, or enter your marks manually.",
+        "challenge": "Please complete the security check again. If it does not load, use manual entry.",
+        "session": "This lookup expired. Close this window and open it again.",
+        "result": "We could not import a matching passing result on the supported score scale. Check your exam details or enter your marks manually.",
+        "invalid": "Check the student number and exam selections."
+      }
+    }
+  },
   "Hero": {
     "contributionCount": "{count, plural, one {# contribution} other {# contributions}}",
     "contributors": "Contributors",
@@ -29,13 +567,16 @@
     "description": "OpenSyria is an open source public data commons for reliable Syrian datasets, API access, and civic intelligence.",
     "github": "GitHub organization",
     "home": "Home",
+    "jobara": "Jobara: Jobs in Syria",
     "licenseNote": "Each repository defines its own license.",
     "linkedIn": "LinkedIn",
     "navigationLabel": "Footer navigation",
     "openApi": "OpenAPI document",
     "platformTitle": "Platform",
+    "partnersTitle": "Partners",
     "principle": "Public, non-personal, source-backed reference data only.",
-    "repositoriesTitle": "Repositories"
+    "repositoriesTitle": "Repositories",
+    "admissions": "Admissions advisor"
   },
   "HomeDatasets": {
     "description": "Download source-backed Syrian datasets for cities, governorates, universities, transport, telecom, maps, research, journalism, civic tools, and reusable reference data.",
@@ -186,5 +727,13 @@
     "home": "Go home",
     "retry": "Try again",
     "title": "Something went wrong"
+  },
+  "HomeAdmissions": {
+    "eyebrow": "2026–2027 ADMISSIONS",
+    "title": "Explore university options for your marks",
+    "description": "Compare university and institute requirements, read the Ministry announcements, and find answers before arranging your application choices.",
+    "preview": "Scientific, literary and vocational options across general, parallel and private admission.",
+    "action": "Explore programs",
+    "guide": "Read the application guide"
   }
 }

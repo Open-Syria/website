@@ -15,6 +15,7 @@ import { getGithubOverview } from "@/lib/github"
 import { trustedExternalLinkRel } from "@/lib/links"
 import { siteLinks } from "@/lib/site"
 import { cn } from "@/lib/utils"
+import { AdmissionsPromotion } from "./admissions-promotion"
 import { DatasetHighlights } from "./dataset-highlights"
 import { DeveloperResources } from "./developer-resources"
 import { LandingFaq } from "./landing-faq"
@@ -207,6 +208,8 @@ export async function LandingHero({ locale }: LandingHeroProps) {
           </div>
         </div>
       </section>
+      {/* TODO: Remove this seasonal section after 2026–2027 admissions close. Keep the permanent admissions link in SiteFooter. */}
+      <AdmissionsPromotion locale={locale} />
       <DatasetHighlights locale={locale} />
       <DeveloperResources locale={locale} />
       <LandingFaq locale={locale} />

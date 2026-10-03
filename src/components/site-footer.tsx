@@ -2,6 +2,7 @@ import { ArrowUpRight, Mail } from "lucide-react"
 import { getTranslations } from "next-intl/server"
 
 import { GithubDark } from "@/components/ui/svgs/githubDark"
+import { JobaraIcon } from "@/components/ui/svgs/jobaraIcon"
 import { OpenSyriaHorizontalLogo } from "@/components/ui/svgs/openSyriaHorizontalLogo"
 import { Link } from "@/i18n/navigation"
 import type { Locale } from "@/i18n/routing"
@@ -24,7 +25,7 @@ export async function SiteFooter({ locale }: SiteFooterProps) {
   return (
     <footer className="border-t bg-background py-10 text-foreground sm:py-12">
       <div className={cn("page-content", "grid gap-9")}>
-        <div className="grid gap-8 lg:grid-cols-[minmax(0,1fr)_minmax(24rem,0.8fr)]">
+        <div className="grid gap-8 lg:grid-cols-[minmax(0,1fr)_minmax(36rem,1.5fr)]">
           <div>
             <Link
               aria-label="OpenSyria"
@@ -42,7 +43,7 @@ export async function SiteFooter({ locale }: SiteFooterProps) {
           </div>
 
           <nav aria-label={t("navigationLabel")}>
-            <div className="grid gap-7 sm:grid-cols-2">
+            <div className="grid gap-7 sm:grid-cols-3">
               <FooterLinkGroup title={t("platformTitle")}>
                 <li>
                   <Link className={footerLinkClassName} href="/">
@@ -52,6 +53,11 @@ export async function SiteFooter({ locale }: SiteFooterProps) {
                 <li>
                   <Link className={footerLinkClassName} href="/datasets">
                     {t("datasets")}
+                  </Link>
+                </li>
+                <li>
+                  <Link className={footerLinkClassName} href="/admissions">
+                    {t("admissions")}
                   </Link>
                 </li>
                 <li>
@@ -108,6 +114,26 @@ export async function SiteFooter({ locale }: SiteFooterProps) {
                   >
                     <Mail aria-hidden="true" className="size-4" />
                     {contactEmail}
+                  </a>
+                </li>
+              </FooterLinkGroup>
+              <FooterLinkGroup title={t("partnersTitle")}>
+                <li>
+                  <a
+                    className={footerLinkClassName}
+                    href={
+                      locale === "en"
+                        ? `${siteLinks.jobara}/en`
+                        : siteLinks.jobara
+                    }
+                    rel={trustedExternalLinkRel}
+                    target="_blank"
+                  >
+                    <JobaraIcon
+                      aria-hidden="true"
+                      className="size-4 shrink-0"
+                    />
+                    <span>{t("jobara")}</span>
                   </a>
                 </li>
               </FooterLinkGroup>

@@ -35,6 +35,7 @@ export const siteLinks = {
   docs: "https://api.opensyria.org/docs",
   geographyRepository: "https://github.com/Open-Syria/data-geography",
   githubOrganization: "https://github.com/Open-Syria",
+  jobara: "https://jobara.sy",
   linkedIn: "https://www.linkedin.com/company/OpenSyria",
   openApi: "https://api.opensyria.org/openapi.json",
   telecomRepository: "https://github.com/Open-Syria/data-telecom",

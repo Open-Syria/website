@@ -45,6 +45,9 @@ jobs:
       - name: Check types
         run: pnpm typecheck
 
+      - name: Test admissions and result lookup
+        run: pnpm test:admissions && pnpm test:results
+
       - name: Build production app
         run: pnpm build
 

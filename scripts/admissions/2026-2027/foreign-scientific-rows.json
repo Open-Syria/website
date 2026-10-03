@@ -1,0 +1,5564 @@
+[
+  {
+    "announcement": 9,
+    "page": 9,
+    "row": 4,
+    "name": "السنة التحضير ية",
+    "place": "الجامعة الت ي يرغب بها الطالب",
+    "minimum": "80%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 9,
+    "page": 9,
+    "row": 5,
+    "name": "الهندسة المعلوماتية",
+    "place": "دمشق",
+    "minimum": "75%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 9,
+    "page": 9,
+    "row": 6,
+    "name": "الهندسة المعلوماتية",
+    "place": "حلب",
+    "minimum": "75%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 9,
+    "page": 9,
+    "row": 7,
+    "name": "الهندسة المعلوماتية",
+    "place": "الالذقية",
+    "minimum": "75%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 9,
+    "page": 9,
+    "row": 8,
+    "name": "الهندسة المعلوماتية",
+    "place": "ادلب",
+    "minimum": "75%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 9,
+    "page": 9,
+    "row": 9,
+    "name": "الهندسة المعلوماتية",
+    "place": "حماة",
+    "minimum": "75%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 9,
+    "page": 9,
+    "row": 10,
+    "name": "الهندسة المعلوماتية",
+    "place": "دير الزور",
+    "minimum": "75%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 9,
+    "page": 9,
+    "row": 11,
+    "name": "الهندسة المعلوماتية(هندسة الير مجيات)",
+    "place": "حمص",
+    "minimum": "75%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 9,
+    "page": 9,
+    "row": 12,
+    "name": "الهندسة المعلوماتية(هندسة الشبكات والنظم الحاسوبية)",
+    "place": "حمص",
+    "minimum": "75%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 9,
+    "page": 9,
+    "row": 13,
+    "name": "الهندسة المعلوماتية(هندسة الذكاء االصطناعي)",
+    "place": "حمص",
+    "minimum": "75%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 9,
+    "page": 9,
+    "row": 14,
+    "name": "الهندسة المدنية",
+    "place": "دمشق",
+    "minimum": "75%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 9,
+    "page": 9,
+    "row": 15,
+    "name": "الهندسة المدنية",
+    "place": "حلب",
+    "minimum": "75%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 9,
+    "page": 9,
+    "row": 16,
+    "name": "الهندسة المدنية",
+    "place": "الالذقية",
+    "minimum": "75%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 9,
+    "page": 9,
+    "row": 17,
+    "name": "الهندسة المدنية",
+    "place": "حمص",
+    "minimum": "75%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 9,
+    "page": 9,
+    "row": 18,
+    "name": "الهندسة المدنية",
+    "place": "حماه",
+    "minimum": "75%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 9,
+    "page": 9,
+    "row": 19,
+    "name": "الهندسة المدنية",
+    "place": "ادلب",
+    "minimum": "75%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 9,
+    "page": 9,
+    "row": 20,
+    "name": "الهندسة المدنية",
+    "place": "الحسكة",
+    "minimum": "75%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 9,
+    "page": 9,
+    "row": 21,
+    "name": "الهندسة المدنية",
+    "place": "الرقة",
+    "minimum": "75%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 9,
+    "page": 9,
+    "row": 22,
+    "name": "الهندسة المساحية والجيوماتية",
+    "place": "الالذقية",
+    "minimum": "75%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 9,
+    "page": 9,
+    "row": 23,
+    "name": "الهندسة المعمارية",
+    "place": "دمشق",
+    "minimum": "75%",
+    "condition": "النجاح باالختبار شر ط لتدوين الرغبة"
+  },
+  {
+    "announcement": 9,
+    "page": 9,
+    "row": 24,
+    "name": "الهندسة المعمارية",
+    "place": "حلب",
+    "minimum": "75%",
+    "condition": "النجاح باالختبار شر ط لتدوين الرغبة"
+  },
+  {
+    "announcement": 9,
+    "page": 9,
+    "row": 25,
+    "name": "الهندسة المعمارية",
+    "place": "الالذقية",
+    "minimum": "75%",
+    "condition": "النجاح باالختبار شر ط لتدوين الرغبة"
+  },
+  {
+    "announcement": 9,
+    "page": 9,
+    "row": 26,
+    "name": "الهندسة المعمارية",
+    "place": "حمص",
+    "minimum": "75%",
+    "condition": "النجاح باالختبار شر ط لتدوين الرغبة"
+  },
+  {
+    "announcement": 9,
+    "page": 9,
+    "row": 27,
+    "name": "الهندسة المعمارية /السلمية",
+    "place": "حماه",
+    "minimum": "75%",
+    "condition": "النجاح باالختبار شر ط لتدوين الرغبة"
+  },
+  {
+    "announcement": 9,
+    "page": 9,
+    "row": 28,
+    "name": "الهندسة المعمارية",
+    "place": "طرطوس",
+    "minimum": "75%",
+    "condition": "النجاح باالختبار شر ط لتدوين الرغبة"
+  },
+  {
+    "announcement": 9,
+    "page": 9,
+    "row": 29,
+    "name": "الهندسة المعمارية",
+    "place": "ادلب",
+    "minimum": "75%",
+    "condition": "النجاح باالختبار شر ط لتدوين الرغبة"
+  },
+  {
+    "announcement": 9,
+    "page": 9,
+    "row": 30,
+    "name": "الهندسة المعمارية",
+    "place": "دير الزور",
+    "minimum": "75%",
+    "condition": "النجاح باالختبار شر ط لتدوين الرغبة"
+  },
+  {
+    "announcement": 9,
+    "page": 9,
+    "row": 31,
+    "name": "هندسة اإللكي ونيات واالتصاالت",
+    "place": "دمشق",
+    "minimum": "75%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 9,
+    "page": 10,
+    "row": 3,
+    "name": "هندسة الحواسيب واألتمتة",
+    "place": "دمشق",
+    "minimum": "75%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 9,
+    "page": 10,
+    "row": 4,
+    "name": "هندسة الطاقة الكهربائية",
+    "place": "دمشق",
+    "minimum": "75%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 9,
+    "page": 10,
+    "row": 5,
+    "name": "هندسة التصميم الميكانيكي",
+    "place": "دمشق",
+    "minimum": "75%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 9,
+    "page": 10,
+    "row": 6,
+    "name": "الهندسة الطبية",
+    "place": "دمشق",
+    "minimum": "75%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 9,
+    "page": 10,
+    "row": 7,
+    "name": "هندسة الميكانيك العام",
+    "place": "دمشق",
+    "minimum": "75%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 9,
+    "page": 10,
+    "row": 8,
+    "name": "هندسة ميكانيك الصناعات النسيجية وتقاناتها",
+    "place": "دمشق",
+    "minimum": "75%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 9,
+    "page": 10,
+    "row": 9,
+    "name": "هندسة السيارات واآلليات الثقيلة",
+    "place": "دمشق",
+    "minimum": "75%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 9,
+    "page": 10,
+    "row": 10,
+    "name": "هندسة الطاقة الكهربائية",
+    "place": "السويداء",
+    "minimum": "75%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 9,
+    "page": 10,
+    "row": 11,
+    "name": "هندسة القوى الميكانيكية",
+    "place": "السويداء",
+    "minimum": "75%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 9,
+    "page": 10,
+    "row": 12,
+    "name": "هندسة االتصاالت",
+    "place": "حلب",
+    "minimum": "75%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 9,
+    "page": 10,
+    "row": 13,
+    "name": "هندسة الحواسيب",
+    "place": "حلب",
+    "minimum": "75%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 9,
+    "page": 10,
+    "row": 14,
+    "name": "هندسة التحكم اآللي واألتمتة الصناعية",
+    "place": "حلب",
+    "minimum": "75%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 9,
+    "page": 10,
+    "row": 15,
+    "name": "هندسة إلكي ونية",
+    "place": "حلب",
+    "minimum": "75%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 9,
+    "page": 10,
+    "row": 16,
+    "name": "هندسة نظم القدرة الكهربائية",
+    "place": "حلب",
+    "minimum": "75%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 9,
+    "page": 10,
+    "row": 17,
+    "name": "هندسة القيادة الكهربائية",
+    "place": "حلب",
+    "minimum": "75%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 9,
+    "page": 10,
+    "row": 18,
+    "name": "هندسة الميكاترونيك",
+    "place": "حلب",
+    "minimum": "75%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 9,
+    "page": 10,
+    "row": 19,
+    "name": "الهندسة النووية",
+    "place": "حلب",
+    "minimum": "75%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 9,
+    "page": 10,
+    "row": 20,
+    "name": "هندسة اإلنتاج",
+    "place": "حلب",
+    "minimum": "75%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 9,
+    "page": 10,
+    "row": 21,
+    "name": "هندسة الطير ان",
+    "place": "حلب",
+    "minimum": "75%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 9,
+    "page": 10,
+    "row": 22,
+    "name": "هندسة الطاقة(الميكانيكية)",
+    "place": "حلب",
+    "minimum": "75%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 9,
+    "page": 10,
+    "row": 23,
+    "name": "هندسة علم المواد الهندسية",
+    "place": "حلب",
+    "minimum": "75%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 9,
+    "page": 10,
+    "row": 24,
+    "name": "هندسة اآلالت الزراعية",
+    "place": "حلب",
+    "minimum": "75%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 9,
+    "page": 10,
+    "row": 25,
+    "name": "هندسة صناعية",
+    "place": "حلب",
+    "minimum": "75%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 9,
+    "page": 10,
+    "row": 26,
+    "name": "هندسة ميكانيك الغزل والنسيج",
+    "place": "حلب",
+    "minimum": "75%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 9,
+    "page": 10,
+    "row": 27,
+    "name": "الهندسة الميكانيكية /الميكاترونيكس",
+    "place": "ادلب",
+    "minimum": "75%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 9,
+    "page": 10,
+    "row": 28,
+    "name": "الهندسة الميكانيكية /الميكانيك العام",
+    "place": "ادلب",
+    "minimum": "75%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 9,
+    "page": 10,
+    "row": 29,
+    "name": "الهندسة الكهربائية /االتصاالت وااللكي ون",
+    "place": "ادلب",
+    "minimum": "75%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 9,
+    "page": 10,
+    "row": 30,
+    "name": "الهندسة الكهربائية /القدرة الكهربائية",
+    "place": "ادلب",
+    "minimum": "75%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 9,
+    "page": 10,
+    "row": 31,
+    "name": "هندسة الطاقة الكهربائية",
+    "place": "الالذقية",
+    "minimum": "75%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 9,
+    "page": 10,
+    "row": 32,
+    "name": "هندسة االتصاالت واإللكي ونيات",
+    "place": "الالذقية",
+    "minimum": "75%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 9,
+    "page": 11,
+    "row": 3,
+    "name": "هندسة الحاسبات والتحكم اآللي",
+    "place": "الالذقية",
+    "minimum": "75%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 9,
+    "page": 11,
+    "row": 4,
+    "name": "هندسة الميكاترونيك",
+    "place": "الالذقية",
+    "minimum": "75%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 9,
+    "page": 11,
+    "row": 5,
+    "name": "هندسة القوى الميكانيكية",
+    "place": "الالذقية",
+    "minimum": "75%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 9,
+    "page": 11,
+    "row": 6,
+    "name": "هندسة التصميم واإلنتاج",
+    "place": "الالذقية",
+    "minimum": "75%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 9,
+    "page": 11,
+    "row": 7,
+    "name": "الهندسة البحرية",
+    "place": "الالذقية",
+    "minimum": "75%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 9,
+    "page": 11,
+    "row": 8,
+    "name": "الهندسة الطبية",
+    "place": "الالذقية",
+    "minimum": "75%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 9,
+    "page": 11,
+    "row": 9,
+    "name": "هندسة اإللكي ونيات واالتصاالت",
+    "place": "حمص",
+    "minimum": "75%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 9,
+    "page": 11,
+    "row": 10,
+    "name": "هندسة التحكم اآللي والحواسيب",
+    "place": "حمص",
+    "minimum": "75%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 9,
+    "page": 11,
+    "row": 11,
+    "name": "هندسة الطاقة الكهربائية",
+    "place": "حمص",
+    "minimum": "75%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 9,
+    "page": 11,
+    "row": 12,
+    "name": "هندسة القوى الميكانيكية",
+    "place": "حمص",
+    "minimum": "75%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 9,
+    "page": 11,
+    "row": 13,
+    "name": "هندسة التصميم واإلنتاج",
+    "place": "حمص",
+    "minimum": "75%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 9,
+    "page": 11,
+    "row": 14,
+    "name": "هندسة الميكاترونيك",
+    "place": "حمص",
+    "minimum": "75%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 9,
+    "page": 11,
+    "row": 15,
+    "name": "هندسة المعادن",
+    "place": "حمص",
+    "minimum": "75%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 9,
+    "page": 11,
+    "row": 16,
+    "name": "هندسة الطاقة الكهربائية",
+    "place": "حماه",
+    "minimum": "75%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 9,
+    "page": 11,
+    "row": 17,
+    "name": "هندسة التصميم واإلنتاج",
+    "place": "حماه",
+    "minimum": "75%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 9,
+    "page": 11,
+    "row": 18,
+    "name": "هندسة التصميم الميكانيكي واإلنتاج",
+    "place": "دير الزور",
+    "minimum": "75%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 9,
+    "page": 11,
+    "row": 19,
+    "name": "الهندسة التقنية(تقانات الهندسة البيئية)",
+    "place": "حلب",
+    "minimum": "75%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 9,
+    "page": 11,
+    "row": 20,
+    "name": "الهندسة التقنية(تكنولوجيا األغذية)",
+    "place": "حلب",
+    "minimum": "75%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 9,
+    "page": 11,
+    "row": 21,
+    "name": "الهندسة التقنية(تقانات الهندسة الحيوية)",
+    "place": "حلب",
+    "minimum": "75%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 9,
+    "page": 11,
+    "row": 22,
+    "name": "الهندسة التقنية(المكننة الزراعية)",
+    "place": "طرطوس",
+    "minimum": "75%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 9,
+    "page": 11,
+    "row": 23,
+    "name": "الهندسة التقنية(تقانة األغذية)",
+    "place": "طرطوس",
+    "minimum": "75%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 9,
+    "page": 11,
+    "row": 24,
+    "name": "الهندسة التقنية(معدات وآليات)",
+    "place": "طرطوس",
+    "minimum": "75%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 9,
+    "page": 11,
+    "row": 25,
+    "name": "الهندسة التقنية(أتمتة صناعية)",
+    "place": "طرطوس",
+    "minimum": "75%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 9,
+    "page": 11,
+    "row": 26,
+    "name": "الهندسة التقنية(طاقات متجددة)",
+    "place": "طرطوس",
+    "minimum": "75%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 9,
+    "page": 11,
+    "row": 27,
+    "name": "الهندسة البي ولية",
+    "place": "حمص",
+    "minimum": "75%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 9,
+    "page": 11,
+    "row": 28,
+    "name": "الهندسة الكيميائية",
+    "place": "حمص",
+    "minimum": "75%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 9,
+    "page": 11,
+    "row": 29,
+    "name": "الهندسة الغذائية",
+    "place": "حمص",
+    "minimum": "75%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 9,
+    "page": 11,
+    "row": 30,
+    "name": "هندسة الغزل والنسيج",
+    "place": "حمص",
+    "minimum": "75%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 9,
+    "page": 11,
+    "row": 31,
+    "name": "الهندسة البي ولية",
+    "place": "دير الزور",
+    "minimum": "75%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 9,
+    "page": 11,
+    "row": 32,
+    "name": "هندسة الصناعات البي وكيميائية",
+    "place": "دير الزور",
+    "minimum": "75%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 9,
+    "page": 12,
+    "row": 3,
+    "name": "هندسة تكنولوجيا المعلومات واالتصاالت",
+    "place": "طرطوس",
+    "minimum": "75%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 9,
+    "page": 12,
+    "row": 4,
+    "name": "الكلية التطبيقية(تقنيات حاسوب)",
+    "place": "دمشق",
+    "minimum": "50%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 9,
+    "page": 12,
+    "row": 5,
+    "name": "الكلية التطبيقية(ميكاترونكس)",
+    "place": "دمشق",
+    "minimum": "50%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 9,
+    "page": 12,
+    "row": 6,
+    "name": "الكلية التطبيقية( طاقات متجددة -طاقة شمسية)",
+    "place": "دمشق",
+    "minimum": "50%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 9,
+    "page": 12,
+    "row": 7,
+    "name": "الكلية التطبيقية(تقنيات الكي ونية)",
+    "place": "حلب",
+    "minimum": "50%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 9,
+    "page": 12,
+    "row": 8,
+    "name": "الكلية التطبيقية(تدفئة وتير يد وتكييف)",
+    "place": "حلب",
+    "minimum": "50%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 9,
+    "page": 12,
+    "row": 9,
+    "name": "الكلية التطبيقية(اتصاالت)",
+    "place": "الالذقية",
+    "minimum": "50%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 9,
+    "page": 12,
+    "row": 10,
+    "name": "الكلية التطبيقية(التغذية الكهربائية للمنشآت الصناعية والمدن)",
+    "place": "الالذقية",
+    "minimum": "50%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 9,
+    "page": 12,
+    "row": 11,
+    "name": "الكلية التطبيقية(تقنيات حاسوب)",
+    "place": "الالذقية",
+    "minimum": "50%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 9,
+    "page": 12,
+    "row": 12,
+    "name": "الكلية التطبيقية(تدفئة وتير يد وتكييف)",
+    "place": "الالذقية",
+    "minimum": "50%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 9,
+    "page": 12,
+    "row": 13,
+    "name": "الكلية التطبيقية(ميكانيك مركبات)",
+    "place": "الالذقية",
+    "minimum": "50%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 9,
+    "page": 12,
+    "row": 14,
+    "name": "الكلية التطبيقية(تصنيع ميكانيكي)",
+    "place": "الالذقية",
+    "minimum": "50%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 9,
+    "page": 12,
+    "row": 15,
+    "name": "الكلية التطبيقية(تقانات األجهزة الطبية)",
+    "place": "الالذقية",
+    "minimum": "50%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 9,
+    "page": 12,
+    "row": 16,
+    "name": "الكلية التطبيقية(تقنيات حاسوب)",
+    "place": "حمص",
+    "minimum": "50%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 9,
+    "page": 12,
+    "row": 17,
+    "name": "الكلية التطبيقية(تدفئة وتكييف وتير يد)",
+    "place": "حمص",
+    "minimum": "50%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 9,
+    "page": 12,
+    "row": 18,
+    "name": "الكلية التطبيقية(التغذية الكهربائية للمنشآت الصناعية والمدن)",
+    "place": "حماة",
+    "minimum": "50%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 9,
+    "page": 12,
+    "row": 19,
+    "name": "الكلية التطبيقية(تقنيات حاسوب)",
+    "place": "حماة",
+    "minimum": "50%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 9,
+    "page": 12,
+    "row": 20,
+    "name": "الطب البيطري",
+    "place": "درعا",
+    "minimum": "60%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 9,
+    "page": 12,
+    "row": 21,
+    "name": "الطب البيطري",
+    "place": "ادلب",
+    "minimum": "60%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 9,
+    "page": 12,
+    "row": 22,
+    "name": "الطب البيطري",
+    "place": "حماه",
+    "minimum": "60%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 9,
+    "page": 12,
+    "row": 23,
+    "name": "الطب البيطري",
+    "place": "دير الزور",
+    "minimum": "60%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 9,
+    "page": 12,
+    "row": 24,
+    "name": "الهندسة الزراعية",
+    "place": "دمشق",
+    "minimum": "60%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 9,
+    "page": 12,
+    "row": 25,
+    "name": "الهندسة الزراعية",
+    "place": "السويداء",
+    "minimum": "60%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 9,
+    "page": 12,
+    "row": 26,
+    "name": "الهندسة الزراعية",
+    "place": "القنيطرة",
+    "minimum": "60%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 9,
+    "page": 12,
+    "row": 27,
+    "name": "الهندسة الزراعية",
+    "place": "حلب",
+    "minimum": "60%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 9,
+    "page": 12,
+    "row": 28,
+    "name": "الهندسة الزراعية",
+    "place": "ادلب",
+    "minimum": "60%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 9,
+    "page": 12,
+    "row": 29,
+    "name": "الهندسة الزراعية",
+    "place": "الالذقية",
+    "minimum": "60%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 9,
+    "page": 12,
+    "row": 30,
+    "name": "الهندسة الزراعية",
+    "place": "طرطوس",
+    "minimum": "60%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 9,
+    "page": 12,
+    "row": 31,
+    "name": "الهندسة الزراعية",
+    "place": "حمص",
+    "minimum": "60%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 9,
+    "page": 12,
+    "row": 32,
+    "name": "الهندسة الزراعية",
+    "place": "حماه /السلمية",
+    "minimum": "60%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 9,
+    "page": 13,
+    "row": 3,
+    "name": "الهندسة الزراعية",
+    "place": "دير الزور",
+    "minimum": "60%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 9,
+    "page": 13,
+    "row": 4,
+    "name": "الهندسة الزراعية",
+    "place": "الحسكة",
+    "minimum": "60%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 9,
+    "page": 13,
+    "row": 5,
+    "name": "الهندسة الزراعية",
+    "place": "الرقة",
+    "minimum": "60%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 9,
+    "page": 13,
+    "row": 6,
+    "name": "االقتصــاد",
+    "place": "دمشق",
+    "minimum": "50%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 9,
+    "page": 13,
+    "row": 7,
+    "name": "االقتصــاد",
+    "place": "درعا",
+    "minimum": "50%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 9,
+    "page": 13,
+    "row": 8,
+    "name": "االقتصــاد",
+    "place": "القنيطرة",
+    "minimum": "50%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 9,
+    "page": 13,
+    "row": 9,
+    "name": "االقتصــاد",
+    "place": "السويداء",
+    "minimum": "50%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 9,
+    "page": 13,
+    "row": 10,
+    "name": "االقتصــاد",
+    "place": "حلب",
+    "minimum": "50%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 9,
+    "page": 13,
+    "row": 11,
+    "name": "االقتصــاد الثانية",
+    "place": "حلب /اعزاز",
+    "minimum": "50%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 9,
+    "page": 13,
+    "row": 12,
+    "name": "االقتصاد الثالثة بمنبج",
+    "place": "حلب",
+    "minimum": "50%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 9,
+    "page": 13,
+    "row": 13,
+    "name": "االقتصــاد",
+    "place": "الالذقية",
+    "minimum": "50%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 9,
+    "page": 13,
+    "row": 14,
+    "name": "االقتصــاد",
+    "place": "حمص",
+    "minimum": "50%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 9,
+    "page": 13,
+    "row": 15,
+    "name": "االقتصــاد",
+    "place": "طرطوس",
+    "minimum": "50%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 9,
+    "page": 13,
+    "row": 16,
+    "name": "االقتصــاد(تمويل ومصارف)",
+    "place": "حماه",
+    "minimum": "50%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 9,
+    "page": 13,
+    "row": 17,
+    "name": "االقتصــاد",
+    "place": "دير الزور",
+    "minimum": "50%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 9,
+    "page": 13,
+    "row": 18,
+    "name": "االقتصــاد",
+    "place": "الحسكة",
+    "minimum": "50%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 9,
+    "page": 13,
+    "row": 19,
+    "name": "االقتصــاد",
+    "place": "الرقة",
+    "minimum": "50%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 9,
+    "page": 13,
+    "row": 20,
+    "name": "االقتصاد واالدارة",
+    "place": "ادلب",
+    "minimum": "50%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 9,
+    "page": 13,
+    "row": 21,
+    "name": "االقتصاد واالدارة الثانية",
+    "place": "ادلب /الدانا",
+    "minimum": "50%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 9,
+    "page": 13,
+    "row": 22,
+    "name": "العلوم(علم الحياة)",
+    "place": "دمشق",
+    "minimum": "50%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 9,
+    "page": 13,
+    "row": 23,
+    "name": "العلوم(علم الحياة)",
+    "place": "درعا",
+    "minimum": "50%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 9,
+    "page": 13,
+    "row": 24,
+    "name": "العلوم(علم الحياة)",
+    "place": "السويداء",
+    "minimum": "50%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 9,
+    "page": 13,
+    "row": 25,
+    "name": "العلوم(علم الحياة)",
+    "place": "حلب",
+    "minimum": "50%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 9,
+    "page": 13,
+    "row": 26,
+    "name": "العلوم(علم الحياة) / عير ن عرب",
+    "place": "حلب/عير ن العرب",
+    "minimum": "50%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 9,
+    "page": 13,
+    "row": 27,
+    "name": "العلوم(علم الحياة)",
+    "place": "ادلب",
+    "minimum": "50%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 9,
+    "page": 13,
+    "row": 28,
+    "name": "العلوم(علم الحياة)",
+    "place": "الالذقية",
+    "minimum": "50%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 9,
+    "page": 13,
+    "row": 29,
+    "name": "العلوم(علم الحياة)",
+    "place": "حمص",
+    "minimum": "50%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 9,
+    "page": 13,
+    "row": 30,
+    "name": "العلوم(علم الحياة)",
+    "place": "طرطوس",
+    "minimum": "50%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 9,
+    "page": 13,
+    "row": 31,
+    "name": "العلوم(علم الحياة)",
+    "place": "دير الزور",
+    "minimum": "50%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 9,
+    "page": 13,
+    "row": 32,
+    "name": "العلوم(علم الحياة)",
+    "place": "الحسكة",
+    "minimum": "50%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 9,
+    "page": 14,
+    "row": 3,
+    "name": "العلوم(علم الحياة) / قامشلي",
+    "place": "الحسكة/القامشلي",
+    "minimum": "50%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 9,
+    "page": 14,
+    "row": 4,
+    "name": "العلوم(علم الحياة)",
+    "place": "الرقة",
+    "minimum": "50%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 9,
+    "page": 14,
+    "row": 5,
+    "name": "العلوم(الجيولوجيا)",
+    "place": "دمشق",
+    "minimum": "50%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 9,
+    "page": 14,
+    "row": 6,
+    "name": "العلوم(الجيولوجيا)",
+    "place": "حلب",
+    "minimum": "50%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 9,
+    "page": 14,
+    "row": 7,
+    "name": "العلوم(الجيولوجيا)",
+    "place": "الالذقية",
+    "minimum": "50%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 9,
+    "page": 14,
+    "row": 8,
+    "name": "العلوم(الجيولوجيا)",
+    "place": "حمص",
+    "minimum": "50%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 9,
+    "page": 14,
+    "row": 9,
+    "name": "العلوم(الجيولوجيا)",
+    "place": "دير الزور",
+    "minimum": "50%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 9,
+    "page": 14,
+    "row": 10,
+    "name": "العلوم(الرياضيات)",
+    "place": "دمشق",
+    "minimum": "50%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 9,
+    "page": 14,
+    "row": 11,
+    "name": "العلوم(الرياضيات)",
+    "place": "القنيطرة",
+    "minimum": "50%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 9,
+    "page": 14,
+    "row": 12,
+    "name": "العلوم(الرياضيات)",
+    "place": "درعا",
+    "minimum": "50%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 9,
+    "page": 14,
+    "row": 13,
+    "name": "العلوم(الرياضيات)",
+    "place": "حلب",
+    "minimum": "50%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 9,
+    "page": 14,
+    "row": 14,
+    "name": "العلوم(الرياضيات) / عير ن عرب",
+    "place": "حلب/عير ن العرب",
+    "minimum": "50%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 9,
+    "page": 14,
+    "row": 15,
+    "name": "العلوم(الرياضيات)",
+    "place": "ادلب",
+    "minimum": "50%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 9,
+    "page": 14,
+    "row": 16,
+    "name": "العلوم(الرياضيات)",
+    "place": "الالذقية",
+    "minimum": "50%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 9,
+    "page": 14,
+    "row": 17,
+    "name": "العلوم(الرياضيات)",
+    "place": "حمص",
+    "minimum": "50%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 9,
+    "page": 14,
+    "row": 18,
+    "name": "العلوم(الرياضيات)",
+    "place": "حماه -مصياف",
+    "minimum": "50%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 9,
+    "page": 14,
+    "row": 19,
+    "name": "العلوم(الرياضيات)",
+    "place": "طرطوس",
+    "minimum": "50%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 9,
+    "page": 14,
+    "row": 20,
+    "name": "العلوم(الرياضيات)",
+    "place": "دير الزور",
+    "minimum": "50%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 9,
+    "page": 14,
+    "row": 21,
+    "name": "العلوم(الرياضيات)",
+    "place": "الحسكة",
+    "minimum": "50%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 9,
+    "page": 14,
+    "row": 22,
+    "name": "العلوم(الرياضيات) - قامشلي",
+    "place": "الحسكة/القامشلي",
+    "minimum": "50%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 9,
+    "page": 14,
+    "row": 23,
+    "name": "العلوم(الرياضيات)",
+    "place": "الرقة",
+    "minimum": "50%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 9,
+    "page": 14,
+    "row": 24,
+    "name": "العلوم(الفير نياء)",
+    "place": "دمشق",
+    "minimum": "50%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 9,
+    "page": 14,
+    "row": 25,
+    "name": "العلوم(الفير نياء)",
+    "place": "حلب",
+    "minimum": "50%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 9,
+    "page": 14,
+    "row": 26,
+    "name": "العلوم(الفير نياء) / عير ن عرب",
+    "place": "حلب/عير ن العرب",
+    "minimum": "50%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 9,
+    "page": 14,
+    "row": 27,
+    "name": "العلوم(الفير نياء)",
+    "place": "ادلب",
+    "minimum": "50%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 9,
+    "page": 14,
+    "row": 28,
+    "name": "العلوم(الفير نياء)",
+    "place": "الالذقية",
+    "minimum": "50%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 9,
+    "page": 14,
+    "row": 29,
+    "name": "العلوم(الفير نياء)",
+    "place": "حمص",
+    "minimum": "50%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 9,
+    "page": 14,
+    "row": 30,
+    "name": "العلوم(الفير نياء)",
+    "place": "مصياف",
+    "minimum": "50%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 9,
+    "page": 14,
+    "row": 31,
+    "name": "العلوم(الفير نياء)",
+    "place": "طرطوس",
+    "minimum": "50%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 9,
+    "page": 14,
+    "row": 32,
+    "name": "العلوم(الفير نياء)",
+    "place": "دير الزور",
+    "minimum": "50%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 9,
+    "page": 15,
+    "row": 3,
+    "name": "العلوم(الفير نياء) / القامشلي",
+    "place": "الحسكة/القامشلي",
+    "minimum": "50%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 9,
+    "page": 15,
+    "row": 4,
+    "name": "العلوم(الكيمياء)",
+    "place": "دمشق",
+    "minimum": "50%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 9,
+    "page": 15,
+    "row": 5,
+    "name": "العلوم(الكيمياء)",
+    "place": "حلب",
+    "minimum": "50%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 9,
+    "page": 15,
+    "row": 6,
+    "name": "العلوم(الكيمياء) - عير ن عرب",
+    "place": "حلب/عير ن العرب",
+    "minimum": "50%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 9,
+    "page": 15,
+    "row": 7,
+    "name": "العلوم(الكيمياء)",
+    "place": "ادلب",
+    "minimum": "50%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 9,
+    "page": 15,
+    "row": 8,
+    "name": "العلوم(الكيمياء)",
+    "place": "الالذقية",
+    "minimum": "50%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 9,
+    "page": 15,
+    "row": 9,
+    "name": "العلوم(الكيمياء)",
+    "place": "حمص",
+    "minimum": "50%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 9,
+    "page": 15,
+    "row": 10,
+    "name": "العلوم(الكيمياء)",
+    "place": "طرطوس",
+    "minimum": "50%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 9,
+    "page": 15,
+    "row": 11,
+    "name": "العلوم(الكيمياء)",
+    "place": "دير الزور",
+    "minimum": "50%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 9,
+    "page": 15,
+    "row": 12,
+    "name": "العلوم(الكيمياء) / القامشلي",
+    "place": "الحسكة/قامشلي",
+    "minimum": "50%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 9,
+    "page": 15,
+    "row": 13,
+    "name": "العلوم(الكيمياء)",
+    "place": "الرقة",
+    "minimum": "50%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 9,
+    "page": 15,
+    "row": 14,
+    "name": "العلوم(ن اإلحصاء الرياض)",
+    "place": "دمشق",
+    "minimum": "50%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 9,
+    "page": 15,
+    "row": 15,
+    "name": "العلوم(ن اإلحصاء الرياض)",
+    "place": "حلب",
+    "minimum": "50%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 9,
+    "page": 15,
+    "row": 16,
+    "name": "العلوم(ن اإلحصاء الرياض)",
+    "place": "الالذقية",
+    "minimum": "50%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 9,
+    "page": 15,
+    "row": 17,
+    "name": "العلوم(ن اإلحصاء الرياض)",
+    "place": "حمص",
+    "minimum": "50%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 9,
+    "page": 15,
+    "row": 18,
+    "name": "العلوم الصحية(تقويم الكالم واللغة)",
+    "place": "دمشق",
+    "minimum": "50%",
+    "condition": "ي االختبار شر ط لتدوين الرغبة النجاح ف"
+  },
+  {
+    "announcement": 9,
+    "page": 15,
+    "row": 19,
+    "name": "العلوم الصحية(السمعيات)",
+    "place": "دمشق",
+    "minimum": "50%",
+    "condition": "ي االختبار شر ط لتدوين الرغبة النجاح ف"
+  },
+  {
+    "announcement": 9,
+    "page": 15,
+    "row": 20,
+    "name": "العلوم الصحية( عالج وظيفن ي)",
+    "place": "دمشق",
+    "minimum": "50%",
+    "condition": "ي االختبار شر ط لتدوين الرغبة النجاح ف"
+  },
+  {
+    "announcement": 9,
+    "page": 15,
+    "row": 21,
+    "name": "العلوم الصحية(علم النفس الشيري)",
+    "place": "دمشق",
+    "minimum": "50%",
+    "condition": "ي االختبار شر ط لتدوين الرغبة النجاح ف"
+  },
+  {
+    "announcement": 9,
+    "page": 15,
+    "row": 22,
+    "name": "العلوم الصحية(األطراف االصطناعية واألجهزة التقويمية)",
+    "place": "دمشق",
+    "minimum": "50%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 9,
+    "page": 15,
+    "row": 23,
+    "name": "العلوم الصحية(التشخيص والعالج الشعاعي)",
+    "place": "دمشق",
+    "minimum": "50%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 9,
+    "page": 15,
+    "row": 24,
+    "name": "العلوم الصحية(ادارة معلومات صحية)",
+    "place": "دمشق",
+    "minimum": "50%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 9,
+    "page": 15,
+    "row": 25,
+    "name": "العلوم الصحية",
+    "place": "حلب",
+    "minimum": "50%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 9,
+    "page": 15,
+    "row": 26,
+    "name": "العلوم الصحية(تغذية)",
+    "place": "حمص",
+    "minimum": "50%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 9,
+    "page": 15,
+    "row": 27,
+    "name": "العلوم الصحية(مخابر)",
+    "place": "حمص",
+    "minimum": "50%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 9,
+    "page": 15,
+    "row": 28,
+    "name": "العلوم الصحية(معالجة فير نيائية)",
+    "place": "حمص",
+    "minimum": "50%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 9,
+    "page": 15,
+    "row": 29,
+    "name": "العلوم الصحية(التخدير)",
+    "place": "ادلب",
+    "minimum": "50%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 9,
+    "page": 15,
+    "row": 30,
+    "name": "العلوم الصحية(التحليل المخير ي)",
+    "place": "ادلب",
+    "minimum": "50%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 9,
+    "page": 15,
+    "row": 31,
+    "name": "العلوم الصحية(الطوارئ)",
+    "place": "ادلب",
+    "minimum": "50%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 9,
+    "page": 15,
+    "row": 32,
+    "name": "العلوم الصحية(التمريض)",
+    "place": "ادلب",
+    "minimum": "50%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 9,
+    "page": 16,
+    "row": 3,
+    "name": "العلوم الصحية(ي العالج الفير نيائ )",
+    "place": "ادلب",
+    "minimum": "50%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 9,
+    "page": 16,
+    "row": 4,
+    "name": "العلوم الصحية(القبالة) إناث فقط",
+    "place": "ادلب",
+    "minimum": "50%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 9,
+    "page": 16,
+    "row": 5,
+    "name": "العلوم البيئية",
+    "place": "دمشق",
+    "minimum": "50%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 9,
+    "page": 16,
+    "row": 6,
+    "name": "التمريض",
+    "place": "حلب",
+    "minimum": "60%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 9,
+    "page": 16,
+    "row": 7,
+    "name": "التمريض",
+    "place": "الالذقية",
+    "minimum": "60%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 9,
+    "page": 16,
+    "row": 8,
+    "name": "التمريض",
+    "place": "حماه",
+    "minimum": "60%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 9,
+    "page": 16,
+    "row": 9,
+    "name": "التمريض",
+    "place": "دير الزور",
+    "minimum": "60%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 9,
+    "page": 16,
+    "row": 10,
+    "name": "اللغة العربية",
+    "place": "دمشق",
+    "minimum": "50%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 9,
+    "page": 16,
+    "row": 11,
+    "name": "اللغة العربية",
+    "place": "القنيطرة",
+    "minimum": "50%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 9,
+    "page": 16,
+    "row": 12,
+    "name": "اللغة العربية",
+    "place": "درعا",
+    "minimum": "50%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 9,
+    "page": 16,
+    "row": 13,
+    "name": "اللغة العربية",
+    "place": "السويداء",
+    "minimum": "50%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 9,
+    "page": 16,
+    "row": 14,
+    "name": "اللغة العربية",
+    "place": "حلب",
+    "minimum": "50%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 9,
+    "page": 16,
+    "row": 15,
+    "name": "اللغة العربية الثانية",
+    "place": "حلب /اعزاز",
+    "minimum": "50%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 9,
+    "page": 16,
+    "row": 16,
+    "name": "اللغة العربية الثالثة-منبج",
+    "place": "حلب",
+    "minimum": "50%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 9,
+    "page": 16,
+    "row": 17,
+    "name": "اللغة العربية-عير ن عرب",
+    "place": "حلب /عير ن عرب",
+    "minimum": "50%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 9,
+    "page": 16,
+    "row": 18,
+    "name": "اللغة العربية",
+    "place": "ادلب",
+    "minimum": "50%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 9,
+    "page": 16,
+    "row": 19,
+    "name": "اللغة العربية",
+    "place": "ادلب /الدانا",
+    "minimum": "50%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 9,
+    "page": 16,
+    "row": 20,
+    "name": "اللغة العربية",
+    "place": "الالذقية",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 16,
+    "row": 21,
+    "name": "اللغة العربية",
+    "place": "حمص",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 16,
+    "row": 22,
+    "name": "اللغة العربية",
+    "place": "حماه",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 16,
+    "row": 23,
+    "name": "اللغة العربية",
+    "place": "طرطوس",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 16,
+    "row": 24,
+    "name": "اللغة العربية",
+    "place": "دير الزور",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 16,
+    "row": 25,
+    "name": "اللغة العربية",
+    "place": "الحسكة",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 16,
+    "row": 26,
+    "name": "اللغة العربية -بالقامشلي",
+    "place": "الحسكة/القامشلي",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 16,
+    "row": 27,
+    "name": "اللغة العربية",
+    "place": "الرقة",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 16,
+    "row": 28,
+    "name": "اللغة اإلنكلير نية",
+    "place": "دمشق",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 16,
+    "row": 29,
+    "name": "اللغة اإلنكلير نية",
+    "place": "درعا",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 16,
+    "row": 30,
+    "name": "اللغة اإلنكلير نية",
+    "place": "حلب",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 16,
+    "row": 31,
+    "name": "اللغة اإلنكلير نية الثانية",
+    "place": "حلب/اعزاز",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 16,
+    "row": 32,
+    "name": "اللغة اإلنكلير نية الثالثة -منبج",
+    "place": "حلب",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 17,
+    "row": 3,
+    "name": "اللغة اإلنكلير نية -عير ن عرب",
+    "place": "حلب/عير ن العرب",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 17,
+    "row": 4,
+    "name": "اللغة اإلنكلير نية",
+    "place": "ادلب",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 17,
+    "row": 5,
+    "name": "اللغة اإلنكلير نية الثانية",
+    "place": "ادلب/الدانا",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 17,
+    "row": 6,
+    "name": "اللغة اإلنكلير نية",
+    "place": "الالذقية",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 17,
+    "row": 7,
+    "name": "اللغة اإلنكلير نية",
+    "place": "طرطوس",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 17,
+    "row": 8,
+    "name": "اللغة اإلنكلير نية",
+    "place": "حمص",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 17,
+    "row": 9,
+    "name": "اللغة اإلنكلير نية",
+    "place": "حماه",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 17,
+    "row": 10,
+    "name": "اللغة اإلنكلير نية",
+    "place": "دير الزور",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 17,
+    "row": 11,
+    "name": "اللغة الفرنسية",
+    "place": "دمشق",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 17,
+    "row": 12,
+    "name": "اللغة الفرنسية",
+    "place": "السويداء",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 17,
+    "row": 13,
+    "name": "اللغة الفرنسية",
+    "place": "حلب",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 17,
+    "row": 14,
+    "name": "اللغة الفرنسية",
+    "place": "الالذقية",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 17,
+    "row": 15,
+    "name": "اللغة الفرنسية",
+    "place": "حمص",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 17,
+    "row": 16,
+    "name": "اللغة الفرنسية",
+    "place": "طرطوس",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 17,
+    "row": 17,
+    "name": "اللغة الفرنسية",
+    "place": "دير الزور",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 17,
+    "row": 18,
+    "name": "اللغة الفرنسية",
+    "place": "الحسكة",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 17,
+    "row": 19,
+    "name": "اللغة الي كية",
+    "place": "دمشق",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 17,
+    "row": 20,
+    "name": "اللغة الي كية",
+    "place": "حلب",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 17,
+    "row": 21,
+    "name": "اللغة الروسية",
+    "place": "دمشق",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 17,
+    "row": 22,
+    "name": "اللغة الفارسية",
+    "place": "دمشق",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 17,
+    "row": 23,
+    "name": "اللغة الفارسية",
+    "place": "حلب",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 17,
+    "row": 24,
+    "name": "اللغة الفارسية",
+    "place": "حمص",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 17,
+    "row": 25,
+    "name": "اللغة الكردية بالقامشلي",
+    "place": "الحسكة/القامشلي",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 17,
+    "row": 26,
+    "name": "اللغة الكردية-عير ن العرب",
+    "place": "حلب/عير ن العرب",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 17,
+    "row": 27,
+    "name": "الي جمة بالقامشلي",
+    "place": "الحسكة/القامشلي",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 17,
+    "row": 28,
+    "name": "الفلســفة",
+    "place": "دمشق",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 17,
+    "row": 29,
+    "name": "الفلســفة",
+    "place": "السويداء",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 17,
+    "row": 30,
+    "name": "الفلســفة",
+    "place": "حلب",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 17,
+    "row": 31,
+    "name": "الفلسفة-عير ن العرب",
+    "place": "حلب/عير ن العرب",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 17,
+    "row": 32,
+    "name": "الفلســفة",
+    "place": "الالذقية",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 18,
+    "row": 3,
+    "name": "الفلســفة",
+    "place": "حمص",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 18,
+    "row": 4,
+    "name": "الفلسفة بالقامشلي",
+    "place": "الحسكة/القامشلي",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 18,
+    "row": 5,
+    "name": "علم اجتماع",
+    "place": "دمشق",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 18,
+    "row": 6,
+    "name": "علم اجتماع",
+    "place": "السويداء",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 18,
+    "row": 7,
+    "name": "علم اجتماع",
+    "place": "درعا",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 18,
+    "row": 8,
+    "name": "علم اجتماع",
+    "place": "حلب",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 18,
+    "row": 9,
+    "name": "علم اجتماع الثانية",
+    "place": "حلب /اعزاز",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 18,
+    "row": 10,
+    "name": "علم اجتماع /عير ن عرب",
+    "place": "حلب/عير ن العرب",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 18,
+    "row": 11,
+    "name": "علم اجتماع",
+    "place": "الالذقية",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 18,
+    "row": 12,
+    "name": "علم اجتماع",
+    "place": "دير الزور",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 18,
+    "row": 13,
+    "name": "علم اجتماع بالقامشلي",
+    "place": "الحسكة/قامشلي",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 18,
+    "row": 14,
+    "name": "الجينولوجيا(علم المرأة) / عير ن العرب",
+    "place": "حلب/عير ن العرب",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 18,
+    "row": 15,
+    "name": "الجينولوجيا(علم المرأة) بالقامشلي",
+    "place": "الحسكة/قامشلي",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 18,
+    "row": 16,
+    "name": "المكتبات والمعلومات",
+    "place": "دمشق",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 18,
+    "row": 17,
+    "name": "المكتبات والمعلومات",
+    "place": "الالذقية",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 18,
+    "row": 18,
+    "name": "الجغرافية",
+    "place": "دمشق",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 18,
+    "row": 19,
+    "name": "الجغرافية",
+    "place": "السويداء",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 18,
+    "row": 20,
+    "name": "الجغرافية",
+    "place": "حلب",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 18,
+    "row": 21,
+    "name": "الجغرافية /عير ن عرب",
+    "place": "حلب/عير ن العرب",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 18,
+    "row": 22,
+    "name": "الجغرافية الثانية",
+    "place": "حلب /اعزاز",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 18,
+    "row": 23,
+    "name": "الجغرافية",
+    "place": "ادلب",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 18,
+    "row": 24,
+    "name": "الجغرافية",
+    "place": "الالذقية",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 18,
+    "row": 25,
+    "name": "الجغرافية",
+    "place": "طرطوس",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 18,
+    "row": 26,
+    "name": "الجغرافية",
+    "place": "حماه",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 18,
+    "row": 27,
+    "name": "الجغرافية",
+    "place": "دير الزور",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 18,
+    "row": 28,
+    "name": "الجغرافية بالقامشلي",
+    "place": "الحسكة/قامشلي",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 18,
+    "row": 29,
+    "name": "اآلثـــار",
+    "place": "دمشق",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 18,
+    "row": 30,
+    "name": "اآلثـــار",
+    "place": "السويداء",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 18,
+    "row": 31,
+    "name": "اآلثـــار",
+    "place": "حلب",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 18,
+    "row": 32,
+    "name": "اآلثـــار",
+    "place": "الحسكة",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 19,
+    "row": 3,
+    "name": "اإلعــالم",
+    "place": "دمشق",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 19,
+    "row": 4,
+    "name": "الحقوق",
+    "place": "دمشق",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 19,
+    "row": 5,
+    "name": "الحقوق",
+    "place": "درعا",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 19,
+    "row": 6,
+    "name": "الحقوق",
+    "place": "القنيطرة",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 19,
+    "row": 7,
+    "name": "الحقوق",
+    "place": "حلب",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 19,
+    "row": 8,
+    "name": "الحقوق الثانية",
+    "place": "حلب /اعزاز",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 19,
+    "row": 9,
+    "name": "الحقوق",
+    "place": "ادلب",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 19,
+    "row": 10,
+    "name": "الحقوق",
+    "place": "الالذقية",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 19,
+    "row": 11,
+    "name": "الحقوق",
+    "place": "حمص",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 19,
+    "row": 12,
+    "name": "الحقوق",
+    "place": "دير الزور",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 19,
+    "row": 13,
+    "name": "الحقوق",
+    "place": "الحسكة",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 19,
+    "row": 14,
+    "name": "الحقوق",
+    "place": "الرقة",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 19,
+    "row": 15,
+    "name": "الي بية(رياضيات) بعفرين",
+    "place": "حلب",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 19,
+    "row": 16,
+    "name": "الي بية المناهج وطرائق التدريس",
+    "place": "دمشق",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 19,
+    "row": 17,
+    "name": "التـربية المناهج وطرائق التدريس",
+    "place": "حلب",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 19,
+    "row": 18,
+    "name": "الي بية المناهج وتقنيات التعليم",
+    "place": "الالذقية",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 19,
+    "row": 19,
+    "name": "الي بية المناهج وطرائق التدريس",
+    "place": "حمص",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 19,
+    "row": 20,
+    "name": "الي بية المناهج وطرائق التدريس",
+    "place": "دير الزور",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 19,
+    "row": 21,
+    "name": "الي بية المناهج وتقنيات التعليم/القامشلي",
+    "place": "الحسكة/قامشلي",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 19,
+    "row": 22,
+    "name": "الي بية(علم النفس)",
+    "place": "دمشق",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 19,
+    "row": 23,
+    "name": "الي بية(علم النفس)",
+    "place": "القنيطرة",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 19,
+    "row": 24,
+    "name": "الي بية(علم النفس)",
+    "place": "حمص",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 19,
+    "row": 25,
+    "name": "التــربية الخاصة",
+    "place": "دمشق",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 19,
+    "row": 26,
+    "name": "التــربية الخاصة",
+    "place": "السويداء",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 19,
+    "row": 27,
+    "name": "التــربية الثانية( الي بية الخاصة)",
+    "place": "حلب /اعزاز",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 19,
+    "row": 28,
+    "name": "التــربية الخاصة",
+    "place": "حماه",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 19,
+    "row": 29,
+    "name": "الي بية(اإلرشاد النفسي)",
+    "place": "دمشق",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 19,
+    "row": 30,
+    "name": "الي بية(اإلرشاد النفسي)",
+    "place": "درعا",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 19,
+    "row": 31,
+    "name": "الي بية(اإلرشاد النفسي)",
+    "place": "السويداء",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 19,
+    "row": 32,
+    "name": "الي بية(اإلرشاد النفسي)",
+    "place": "حلب",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 20,
+    "row": 3,
+    "name": "الي بية الثانية(اإلرشاد النفسي)",
+    "place": "حلب /اعزاز",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 20,
+    "row": 4,
+    "name": "الي بية(اإلرشاد النفسي)",
+    "place": "ادلب",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 20,
+    "row": 5,
+    "name": "الي بية(اإلرشاد النفسي)",
+    "place": "الالذقية",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 20,
+    "row": 6,
+    "name": "الي بية(اإلرشاد النفسي)",
+    "place": "حمص",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 20,
+    "row": 7,
+    "name": "الي بية(اإلرشاد النفسي)",
+    "place": "طرطوس",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 20,
+    "row": 8,
+    "name": "الي بية(اإلرشاد النفسي)",
+    "place": "دير الزور",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 20,
+    "row": 9,
+    "name": "الي بية(معلم صف)",
+    "place": "دمشق",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 20,
+    "row": 10,
+    "name": "الي بية(معلم صف)",
+    "place": "القنيطرة",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 20,
+    "row": 11,
+    "name": "الي بية(معلم صف)",
+    "place": "درعا",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 20,
+    "row": 12,
+    "name": "الي بية(معلم صف)",
+    "place": "السويداء",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 20,
+    "row": 13,
+    "name": "الي بية(معلم صف)",
+    "place": "حلب",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 20,
+    "row": 14,
+    "name": "الي بية الثانية(معلم صف)",
+    "place": "حلب /اعزاز",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 20,
+    "row": 15,
+    "name": "الي بية(معلم صف)",
+    "place": "ادلب",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 20,
+    "row": 16,
+    "name": "الي بية الثانية(معلم صف)",
+    "place": "ادلب /الدانا",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 20,
+    "row": 17,
+    "name": "الي بية الثالثة( معلم صف) - منبج",
+    "place": "حلب",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 20,
+    "row": 18,
+    "name": "الي بية(معلم صف) -عير ن عرب",
+    "place": "حلب/عير ن عرب",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 20,
+    "row": 19,
+    "name": "الي بية(معلم صف) - بعفرين",
+    "place": "حلب/عفرين",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 20,
+    "row": 20,
+    "name": "الي بية(معلم صف)",
+    "place": "الالذقية",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 20,
+    "row": 21,
+    "name": "الي بية(معلم صف)",
+    "place": "حمص",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 20,
+    "row": 22,
+    "name": "الي بية(معلم صف)",
+    "place": "حماه",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 20,
+    "row": 23,
+    "name": "الي بية(معلم صف)",
+    "place": "طرطوس",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 20,
+    "row": 24,
+    "name": "الي بية(معلم صف)",
+    "place": "دير الزور",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 20,
+    "row": 25,
+    "name": "الي بية(معلم صف)",
+    "place": "الحسكة",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 20,
+    "row": 26,
+    "name": "الي بية(معلم صف) - بالقامشلي",
+    "place": "الحسكة",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 20,
+    "row": 27,
+    "name": "الي بية(معلم صف)",
+    "place": "الرقة",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 20,
+    "row": 28,
+    "name": "الي بية(رياض األطفال) إناث فقط",
+    "place": "دمشق",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 20,
+    "row": 29,
+    "name": "الي بية(رياض األطفال) إناث فقط",
+    "place": "درعا",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 20,
+    "row": 30,
+    "name": "الي بية(رياض األطفال) إناث فقط",
+    "place": "القنيطرة",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 20,
+    "row": 31,
+    "name": "الي بية(رياض األطفال) إناث فقط",
+    "place": "حمص",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 20,
+    "row": 32,
+    "name": "الي بية(رياض األطفال) إناث فقط -عير ن عرب",
+    "place": "حلب/عير ن العرب",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 21,
+    "row": 3,
+    "name": "الي بية(رياض األطفال) إناث فقط",
+    "place": "دير الزور",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 21,
+    "row": 4,
+    "name": "الي بية(رياض األطفال) إناث فقط",
+    "place": "الحسكة",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 21,
+    "row": 5,
+    "name": "الي بية(رياض األطفال) إناث فقط",
+    "place": "الرقة",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 21,
+    "row": 6,
+    "name": "الشر يعة( القرآن والحديث)",
+    "place": "دمشق",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 21,
+    "row": 7,
+    "name": "الشر يعة( الفقه اإلسالمي وأصوله)",
+    "place": "دمشق",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 21,
+    "row": 8,
+    "name": "الشر يعة( الشر يعة والقانون)",
+    "place": "دمشق",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 21,
+    "row": 9,
+    "name": "الشر يعة( اقتصاد ومصارف اسالمية)",
+    "place": "دمشق",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 21,
+    "row": 10,
+    "name": "الشر يعة( العقيدة والفلسفة اإلسالمية واالديان)",
+    "place": "دمشق",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 21,
+    "row": 11,
+    "name": "الشر يعة( الي بية االسالمية)",
+    "place": "دمشق",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 21,
+    "row": 12,
+    "name": "الشر يعة(الفقه اإلسالمي وأصوله)",
+    "place": "حلب",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 21,
+    "row": 13,
+    "name": "الشر يعة(الشر يعة والقانون)",
+    "place": "حلب",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 21,
+    "row": 14,
+    "name": "الشر يعة(القرآن والحديث)",
+    "place": "حلب",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 21,
+    "row": 15,
+    "name": "الشر يعة(الفقه اإلسالمي وأصوله)",
+    "place": "الالذقية",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 21,
+    "row": 16,
+    "name": "الشر يعة(القرآن والحديث)",
+    "place": "حمص",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 21,
+    "row": 17,
+    "name": "الشر يعة(الفقه اإلسالمي وأصوله)",
+    "place": "حماة",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 21,
+    "row": 18,
+    "name": "الشر يعة(الفقه اإلسالمي وأصوله)",
+    "place": "دير الزور",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 21,
+    "row": 19,
+    "name": "الشر يعة(الفقه اإلسالمي وأصوله)",
+    "place": "إدلب",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 21,
+    "row": 20,
+    "name": "الشر يعة(القرآن والحديث)",
+    "place": "إدلب",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 21,
+    "row": 21,
+    "name": "الشر يعة( الشر يعة والقانون)",
+    "place": "إدلب",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 21,
+    "row": 22,
+    "name": "الشر يعة الثانية( الفقه اإلسالمي وأصوله)/الدانا",
+    "place": "إدلب",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 21,
+    "row": 23,
+    "name": "الشر يعة الثانية( القرآن والحديث)/الدانا",
+    "place": "إدلب",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 21,
+    "row": 24,
+    "name": "العلوم السياسية",
+    "place": "دمشق",
+    "minimum": "50%",
+    "condition": "النجاح باالختبارشر ط لتدوين الرغبة"
+  },
+  {
+    "announcement": 9,
+    "page": 21,
+    "row": 25,
+    "name": "العلوم السياسية",
+    "place": "ادلب",
+    "minimum": "50%",
+    "condition": "النجاح باالختبارشر ط لتدوين الرغبة"
+  },
+  {
+    "announcement": 9,
+    "page": 21,
+    "row": 26,
+    "name": "الســـياحة",
+    "place": "دمشق",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 21,
+    "row": 27,
+    "name": "الســـياحة",
+    "place": "حمص",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 21,
+    "row": 28,
+    "name": "الســـياحة",
+    "place": "طرطوس",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 21,
+    "row": 29,
+    "name": "الفنون الجميلة",
+    "place": "دمشق",
+    "minimum": "50%",
+    "condition": "النجاح باالختبارشر ط لتدوين الرغبة"
+  },
+  {
+    "announcement": 9,
+    "page": 21,
+    "row": 30,
+    "name": "الفنون الجميلة",
+    "place": "السويداء",
+    "minimum": "50%",
+    "condition": "النجاح باالختبارشر ط لتدوين الرغبة"
+  },
+  {
+    "announcement": 9,
+    "page": 21,
+    "row": 31,
+    "name": "الفنون الجميلة التطبيقية",
+    "place": "حلب",
+    "minimum": "50%",
+    "condition": "النجاح باالختبارشر ط لتدوين الرغبة"
+  },
+  {
+    "announcement": 9,
+    "page": 21,
+    "row": 32,
+    "name": "الفنون الجميلة",
+    "place": "الالذقية",
+    "minimum": "50%",
+    "condition": "النجاح باالختبارشر ط لتدوين الرغبة"
+  },
+  {
+    "announcement": 9,
+    "page": 22,
+    "row": 3,
+    "name": "الي بية الرياضية",
+    "place": "الالذقية",
+    "minimum": "50%",
+    "condition": "النجاح بالفحص شر ط لتدوين الرغبة"
+  },
+  {
+    "announcement": 9,
+    "page": 22,
+    "row": 4,
+    "name": "الي بية الرياضية",
+    "place": "حماه",
+    "minimum": "50%",
+    "condition": "النجاح بالفحص شر ط لتدوين الرغبة"
+  },
+  {
+    "announcement": 9,
+    "page": 22,
+    "row": 5,
+    "name": "الي بية الموسيقية",
+    "place": "حمص",
+    "minimum": "50%",
+    "condition": "النجاح باالختبار شر ط لتدوين الرغبة"
+  },
+  {
+    "announcement": 9,
+    "page": 22,
+    "row": 6,
+    "name": "ي الهندسي المعهد التقائن(االنشاءات العامة)",
+    "place": "دمشق",
+    "minimum": "50%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 9,
+    "page": 22,
+    "row": 7,
+    "name": "ي الهندسي المعهد التقائن(المساحة)",
+    "place": "دمشق",
+    "minimum": "50%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 9,
+    "page": 22,
+    "row": 8,
+    "name": "ي الهندسي المعهد التقائن(الصحية والمائية)",
+    "place": "دمشق",
+    "minimum": "50%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 9,
+    "page": 22,
+    "row": 9,
+    "name": "ي الهندسي المعهد التقائن(العمارة)",
+    "place": "دمشق",
+    "minimum": "50%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 9,
+    "page": 22,
+    "row": 10,
+    "name": "ي الهندسي المعهد التقائن(االنشاءات العامة)",
+    "place": "درعا",
+    "minimum": "50%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 9,
+    "page": 22,
+    "row": 11,
+    "name": "ي الهندسي المعهد التقائن(المساحة)",
+    "place": "درعا",
+    "minimum": "50%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 9,
+    "page": 22,
+    "row": 12,
+    "name": "ي الهندسي المعهد التقائن(االنشاءات العامة)",
+    "place": "حلب",
+    "minimum": "50%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 9,
+    "page": 22,
+    "row": 13,
+    "name": "ي الهندسي المعهد التقائن(الصحية والمائية)",
+    "place": "حلب",
+    "minimum": "50%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 9,
+    "page": 22,
+    "row": 14,
+    "name": "ي الهندسي المعهد التقائن(العمارة)",
+    "place": "حلب",
+    "minimum": "50%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 9,
+    "page": 22,
+    "row": 15,
+    "name": "ي الهندسي المعهد التقائن(االنشاءات العامة)",
+    "place": "الالذقية",
+    "minimum": "50%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 9,
+    "page": 22,
+    "row": 16,
+    "name": "ي الهندسي المعهد التقائن(المساحة)",
+    "place": "الالذقية",
+    "minimum": "50%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 9,
+    "page": 22,
+    "row": 17,
+    "name": "ي الهندسي المعهد التقائن(الصحية والمائية)",
+    "place": "الالذقية",
+    "minimum": "50%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 9,
+    "page": 22,
+    "row": 18,
+    "name": "ي الهندسي المعهد التقائن(العمارة)",
+    "place": "الالذقية",
+    "minimum": "50%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 9,
+    "page": 22,
+    "row": 19,
+    "name": "ي الهندسي المعهد التقائن(االنشاءات العامة)",
+    "place": "حمص",
+    "minimum": "50%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 9,
+    "page": 22,
+    "row": 20,
+    "name": "ي الهندسي المعهد التقائن(المساحة)",
+    "place": "حمص",
+    "minimum": "50%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 9,
+    "page": 22,
+    "row": 21,
+    "name": "ي الهندسي المعهد التقائن(الصحية والمائية)",
+    "place": "حمص",
+    "minimum": "50%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 9,
+    "page": 22,
+    "row": 22,
+    "name": "ي الهندسي المعهد التقائن(العمارة)",
+    "place": "حمص",
+    "minimum": "50%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 9,
+    "page": 22,
+    "row": 23,
+    "name": "ي الهندسي المعهد التقائن(االنشاءات العامة)",
+    "place": "دير الزور",
+    "minimum": "50%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 9,
+    "page": 22,
+    "row": 24,
+    "name": "ي الهندسي المعهد التقائن(المساحة)",
+    "place": "دير الزور",
+    "minimum": "50%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 9,
+    "page": 22,
+    "row": 25,
+    "name": "ي الهندسي المعهد التقائن(االنشاءات العامة)",
+    "place": "الحسكة",
+    "minimum": "50%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 9,
+    "page": 22,
+    "row": 26,
+    "name": "ي الهندسي المعهد التقائن(المساحة)",
+    "place": "الحسكة",
+    "minimum": "50%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 9,
+    "page": 22,
+    "row": 27,
+    "name": "ي الهندسي المعهد التقائن(االنشاءات العامة)",
+    "place": "الرقة",
+    "minimum": "50%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 9,
+    "page": 22,
+    "row": 28,
+    "name": "ي الهندسي المعهد التقائن(المساحة)",
+    "place": "حماة",
+    "minimum": "50%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 9,
+    "page": 22,
+    "row": 29,
+    "name": "ي الهندسي المعهد التقائن(العمارة)",
+    "place": "حماة",
+    "minimum": "50%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 9,
+    "page": 22,
+    "row": 30,
+    "name": "ي الهندسي المعهد التقائن(االنشاءات العامة)",
+    "place": "حماة",
+    "minimum": "50%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 9,
+    "page": 22,
+    "row": 31,
+    "name": "ي الهندسي المعهد التقائن(االنشاءات العامة)",
+    "place": "طرطوس",
+    "minimum": "50%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 9,
+    "page": 22,
+    "row": 32,
+    "name": "ي الهندسي المعهد التقائن(المساحة)",
+    "place": "طرطوس",
+    "minimum": "50%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 9,
+    "page": 22,
+    "row": 33,
+    "name": "ي الهندسي المعهد التقائن(الصحية والمائية)",
+    "place": "طرطوس",
+    "minimum": "50%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 9,
+    "page": 23,
+    "row": 3,
+    "name": "ي الهندسي المعهد التقائن(االنشاءات العامة)",
+    "place": "إدلب",
+    "minimum": "50%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 9,
+    "page": 23,
+    "row": 4,
+    "name": "ي الهندسي المعهد التقائن(المساحة)",
+    "place": "إدلب",
+    "minimum": "50%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 9,
+    "page": 23,
+    "row": 5,
+    "name": "ي الهندسي المعهد التقائن(العمارة)",
+    "place": "إدلب",
+    "minimum": "50%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 9,
+    "page": 23,
+    "row": 6,
+    "name": "ي للهندسة الميكانيكية والكهربائية المعهد التقائ",
+    "place": "دمشق",
+    "minimum": "50%",
+    "condition": "ــ"
+  },
+  {
+    "announcement": 9,
+    "page": 23,
+    "row": 7,
+    "name": "ي للهندسة الميكانيكية والكهربائية المعهد التقائ",
+    "place": "حلب",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 23,
+    "row": 8,
+    "name": "ي للهندسة الميكانيكية والكهربائية المعهد التقائ",
+    "place": "الالذقية",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 23,
+    "row": 9,
+    "name": "ي لالتصاالت المعهد التقائ",
+    "place": "ادلب",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 23,
+    "row": 10,
+    "name": "ي للتجهير نات الطبية المعهد التقائ",
+    "place": "ادلب",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 23,
+    "row": 11,
+    "name": "ي لطب أسنان المعهد التقائن(تعويضات)",
+    "place": "دمشق",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 23,
+    "row": 12,
+    "name": "ي لطب أسنان المعهد التقائن(تعويضات)",
+    "place": "حلب",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 23,
+    "row": 13,
+    "name": "ي لطب أسنان المعهد التقائن(تعويضات)",
+    "place": "الالذقية",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 23,
+    "row": 14,
+    "name": "ي لطب أسنان المعهد التقائن(تعويضات)",
+    "place": "حماه",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 23,
+    "row": 15,
+    "name": "ي لطب أسنان المعهد التقائن(مساعد طبيب أسنان)",
+    "place": "دمشق",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 23,
+    "row": 16,
+    "name": "ي لطب أسنان المعهد التقائن(مساعد طبيب أسنان)",
+    "place": "حلب",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 23,
+    "row": 17,
+    "name": "ي لطب أسنان المعهد التقائن(مساعد طبيب أسنان)",
+    "place": "حمص",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 23,
+    "row": 18,
+    "name": "ي لطب أسنان المعهد التقائن(مساعد طبيب أسنان)",
+    "place": "الالذقية",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 23,
+    "row": 19,
+    "name": "ي لطب أسنان المعهد التقائن(مساعد طبيب أسنان)",
+    "place": "حماه",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 23,
+    "row": 20,
+    "name": "ي للعلوم المالية والمرصفية المعهد التقائ",
+    "place": "دمشق",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 23,
+    "row": 21,
+    "name": "ي للعلوم المالية والمرصفية المعهد التقائ",
+    "place": "درعا",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 23,
+    "row": 22,
+    "name": "ي للعلوم المالية والمرصفية المعهد التقائ",
+    "place": "حلب",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 23,
+    "row": 23,
+    "name": "ي للعلوم المالية والمرصفية المعهد التقائ",
+    "place": "الالذقية",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 23,
+    "row": 24,
+    "name": "ي للعلوم المالية والمرصفية المعهدالتقائ",
+    "place": "دير الزور",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 23,
+    "row": 25,
+    "name": "ي للعلوم المالية والمرصفية المعهدالتقائ",
+    "place": "الرقة",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 23,
+    "row": 26,
+    "name": "ي للعلوم المالية واالدارية المعهد التقائ",
+    "place": "ادلب",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 23,
+    "row": 27,
+    "name": "ي للعلوم المالية واإلدارية الثائن المعهد التقائن",
+    "place": "إدلب /الدانا",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 23,
+    "row": 28,
+    "name": "ي للعلوم المالية واالدارية المعهد التقائن",
+    "place": "ادلب/سلقير ن",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 23,
+    "row": 29,
+    "name": "ي للعلوم المالية واالدارية المعهد التقائ",
+    "place": "الحسكة",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 23,
+    "row": 30,
+    "name": "ي للعلوم القانونية واإلدارية المعهد التقائن -عير ن عرب",
+    "place": "حلب",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 23,
+    "row": 31,
+    "name": "ي لإلدارة الرقمية ونظم المعلومات المعهد التقائن",
+    "place": "إدلب/سلقير ن",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 23,
+    "row": 32,
+    "name": "ي إلدارة المكاتب المعهد التقائن -جرابلس",
+    "place": "حلب/جرابلس",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 24,
+    "row": 3,
+    "name": "ي إلدارة األعمال والتسويق المعهد التقائ",
+    "place": "دمشق",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 24,
+    "row": 4,
+    "name": "ي إلدارة األعمال والتسويق المعهد التقائ",
+    "place": "حلب",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 24,
+    "row": 5,
+    "name": "ي إلدارة األعمال والتسويق المعهد التقائ",
+    "place": "الالذقية",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 24,
+    "row": 6,
+    "name": "ي الزراعي المعهد التقائن(خرابو)",
+    "place": "دمشق",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 24,
+    "row": 7,
+    "name": "ي الزراع المعهد التقائ",
+    "place": "القنيطرة",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 24,
+    "row": 8,
+    "name": "ي الزراع المعهد التقائ",
+    "place": "درعا",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 24,
+    "row": 9,
+    "name": "ي الزراع المعهد التقائ",
+    "place": "السويداء",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 24,
+    "row": 10,
+    "name": "ي الزراع المعهد التقائ",
+    "place": "حلب",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 24,
+    "row": 11,
+    "name": "ي الزراعي بجرابلس المعهد التقائ",
+    "place": "حلب/جرابلس",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 24,
+    "row": 12,
+    "name": "ي الزراع المعهد التقائ",
+    "place": "حمص",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 24,
+    "row": 13,
+    "name": "ي الزراع المعهد التقائ",
+    "place": "حماه/السقيلبية",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 24,
+    "row": 14,
+    "name": "ي الزراع المعهد التقائ",
+    "place": "طرطوس",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 24,
+    "row": 15,
+    "name": "ي الزراع المعهد التقائ",
+    "place": "دير الزور",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 24,
+    "row": 16,
+    "name": "ي الزراع المعهد التقائ",
+    "place": "الحسكة",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 24,
+    "row": 17,
+    "name": "ي الزراع المعهد التقائ",
+    "place": "الرقة",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 24,
+    "row": 18,
+    "name": "ي الزراع المعهد التقائ",
+    "place": "إدلب/حارم",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 24,
+    "row": 19,
+    "name": "ي للزراعات المتوسطية المعهد التقائ",
+    "place": "الالذقية",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 24,
+    "row": 20,
+    "name": "ي للري الحديث المعهد التقائ",
+    "place": "الرقة",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 24,
+    "row": 21,
+    "name": "ي للمكننة الزراعية التقائن",
+    "place": "دير الزور/القامشلي",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 24,
+    "row": 22,
+    "name": "ي لشؤون البادية والتصحر المعهد التقائن -تدمر(ي حمص الدوام فن)",
+    "place": "حمص /تدمر",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 24,
+    "row": 23,
+    "name": "ي الطتر المعهد التقائن/مخابر",
+    "place": "دمشق",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 24,
+    "row": 24,
+    "name": "ي الطتر المعهد التقائن/تخدير",
+    "place": "دمشق",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 24,
+    "row": 25,
+    "name": "ي الطتر المعهد التقائن /اشعة",
+    "place": "دمشق",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 24,
+    "row": 26,
+    "name": "ي الطتر المعهد التقائن /برصيات",
+    "place": "دمشق",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 24,
+    "row": 27,
+    "name": "ي الطتر المعهد التقائن /طب الطوارئ",
+    "place": "دمشق",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 24,
+    "row": 28,
+    "name": "ي الطتر المعهد التقائن /معالجة فير نيائية",
+    "place": "دمشق",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 24,
+    "row": 29,
+    "name": "ي الطتر المعهد التقائن /تخدير",
+    "place": "ريف دمشق /النبك",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 24,
+    "row": 30,
+    "name": "ي الطتر المعهد التقائن /اشعة",
+    "place": "ريف دمشق /النبك",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 24,
+    "row": 31,
+    "name": "ي الطتر المعهد التقائن /معالجة فير نيائية",
+    "place": "ريف دمشق /النبك",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 24,
+    "row": 32,
+    "name": "ي الطتر المعهد التقائن /طب الطوارئ",
+    "place": "ريف دمشق /النبك",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 25,
+    "row": 3,
+    "name": "ي الطتر المعهد التقائن /مخابر",
+    "place": "حلب",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 25,
+    "row": 4,
+    "name": "ي الطتر المعهد التقائن /تخدير",
+    "place": "حلب",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 25,
+    "row": 5,
+    "name": "ي الطتر المعهد التقائن /اشعة",
+    "place": "حلب",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 25,
+    "row": 6,
+    "name": "ي الطتر المعهد التقائن /معالجة فير نيائية",
+    "place": "حلب",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 25,
+    "row": 7,
+    "name": "ي الطتر المعهد التقائن /طب الطوارئ",
+    "place": "حلب",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 25,
+    "row": 8,
+    "name": "ي الطتر المعهد التقائن /صيدلة",
+    "place": "حلب",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 25,
+    "row": 9,
+    "name": "ي الطتر المعهد التقائن / تمريض -بجرابلس",
+    "place": "حلب/جرابلس",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 25,
+    "row": 10,
+    "name": "ي الطتر المعهد التقائن / قبالة(إناث فقط) - بجرابلس",
+    "place": "حلب/جرابلس",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 25,
+    "row": 11,
+    "name": "ي الطتر المعهد التقائن / طب طوارئ -بجرابلس",
+    "place": "حلب/جرابلس",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 25,
+    "row": 12,
+    "name": "ي الطتر المعهد التقائن / معالجة فير نيائية -بجرابلس",
+    "place": "حلب/جرابلس",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 25,
+    "row": 13,
+    "name": "ي الطتر المعهد التقائن / فتن ي عمليات -بجرابلس",
+    "place": "حلب/جرابلس",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 25,
+    "row": 14,
+    "name": "ي الطتر المعهد التقائن /مخابر",
+    "place": "الالذقية",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 25,
+    "row": 15,
+    "name": "ي الطتر المعهد التقائن /تخدير",
+    "place": "الالذقية",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 25,
+    "row": 16,
+    "name": "ي الطتر المعهد التقائن /اشعة",
+    "place": "الالذقية",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 25,
+    "row": 17,
+    "name": "ي الطتر المعهد التقائن /معالجة فير نيائية",
+    "place": "الالذقية",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 25,
+    "row": 18,
+    "name": "ي الطتر المعهد التقائن /طب الطوارئ",
+    "place": "الالذقية",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 25,
+    "row": 19,
+    "name": "ي الطتر المعهد التقائن /صيدلة",
+    "place": "الالذقية",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 25,
+    "row": 20,
+    "name": "ي الطتر المعهد التقائن /طب الطوارئ",
+    "place": "حماه",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 25,
+    "row": 21,
+    "name": "ي الطتر المعهد التقائن /تخدير",
+    "place": "حماه",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 25,
+    "row": 22,
+    "name": "ي للحاسوب المعهد التقائ",
+    "place": "دمشق",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 25,
+    "row": 23,
+    "name": "ي للحاسوب المعهد التقائ",
+    "place": "درعا",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 25,
+    "row": 24,
+    "name": "ي للحاسوب المعهد التقائ",
+    "place": "القنيطرة",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 25,
+    "row": 25,
+    "name": "ي للحاسوب المعهد التقائ",
+    "place": "حلب",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 25,
+    "row": 26,
+    "name": "ي للحاسوب بجرابلس المعهد التقائ",
+    "place": "حلب/جرابلس",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 25,
+    "row": 27,
+    "name": "ي للحاسوب المعهد التقائ",
+    "place": "ادلب",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 25,
+    "row": 28,
+    "name": "ي للحاسوب المعهد التقائ",
+    "place": "الالذقية",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 25,
+    "row": 29,
+    "name": "ي للحاسوب المعهد التقائ",
+    "place": "حمص",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 25,
+    "row": 30,
+    "name": "ي للحاسوب المعهد التقائ",
+    "place": "حماه",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 25,
+    "row": 31,
+    "name": "ي للحاسوب المعهد التقائ",
+    "place": "الرقة",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 25,
+    "row": 32,
+    "name": "ي للطب البيطري المعهد التقائ",
+    "place": "الالذقية",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 26,
+    "row": 3,
+    "name": "ي للطب البيطري المعهد التقائ",
+    "place": "حماه",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 26,
+    "row": 4,
+    "name": "ي للطب البيطري المعهد التقائ",
+    "place": "دير الزور",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 26,
+    "row": 5,
+    "name": "ي للطب البيطري المعهد التقائ",
+    "place": "الحسكة",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 26,
+    "row": 6,
+    "name": "ي للطب البيطري المعهد التقائ",
+    "place": "الرقة",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 26,
+    "row": 7,
+    "name": "ي للطب البيطري المعهد التقائ",
+    "place": "إدلب/حارم",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 26,
+    "row": 8,
+    "name": "ي للطاقات المتجددة المعهد التقائن/الطاقة الشمسية",
+    "place": "طرطوس",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 26,
+    "row": 9,
+    "name": "ي للنقل البحري المعهد التقائ",
+    "place": "طرطوس",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 26,
+    "row": 10,
+    "name": "ي لالعالم والطبــاعة المعهد التقائ",
+    "place": "دمشق",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 26,
+    "row": 11,
+    "name": "ي للصناعات الكيميائية المعهد التقائ",
+    "place": "دمشق",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 26,
+    "row": 12,
+    "name": "ي للصناعات التطبيقية المعهد التقائ",
+    "place": "دمشق",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 26,
+    "row": 13,
+    "name": "ي للصناعات التطبيقية المعهد التقائ",
+    "place": "حلب",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 26,
+    "row": 14,
+    "name": "ي للصناعات التطبيقية المعهد التقائ",
+    "place": "حمص",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 26,
+    "row": 15,
+    "name": "ي للصناعات النسيجية المعهد التقائ",
+    "place": "دمشق",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 26,
+    "row": 16,
+    "name": "ي الصحــي المعهد التقائن /مخابر",
+    "place": "دمشق",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 26,
+    "row": 17,
+    "name": "ي الصحــي المعهد التقائن /صيدلة",
+    "place": "دمشق",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 26,
+    "row": 18,
+    "name": "ي الصحــي المعهد التقائن /تخدير",
+    "place": "دمشق",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 26,
+    "row": 19,
+    "name": "ي الصحــي المعهد التقائن /اشعة",
+    "place": "دمشق",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 26,
+    "row": 20,
+    "name": "ي الصحــي المعهد التقائن /معالجة فير نيائية",
+    "place": "دمشق",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 26,
+    "row": 21,
+    "name": "ي الصحــي المعهد التقائن /صحة عامة",
+    "place": "دمشق",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 26,
+    "row": 22,
+    "name": "ي الصحــي المعهد التقائن /اطراف صناعية",
+    "place": "دمشق",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 26,
+    "row": 23,
+    "name": "ي الصحــي المعهد التقائن /احصاء صحي وحيوي",
+    "place": "دمشق",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 26,
+    "row": 24,
+    "name": "ي الصحــي المعهد التقائن /اشعة",
+    "place": "حلب",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 26,
+    "row": 25,
+    "name": "ي الصحــي المعهد التقائن /تخدير",
+    "place": "حلب",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 26,
+    "row": 26,
+    "name": "ي الصحــي المعهد التقائن /صيدلة",
+    "place": "حلب",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 26,
+    "row": 27,
+    "name": "ي الصحــي المعهد التقائن /برصيات",
+    "place": "حلب",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 26,
+    "row": 28,
+    "name": "ي الصحــي المعهد التقائن /معالجة فير نيائية",
+    "place": "حلب",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 26,
+    "row": 29,
+    "name": "ي الصحــي المعهد التقائن /مخابر",
+    "place": "حلب",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 26,
+    "row": 30,
+    "name": "ي الصحــي المعهد التقائن /طب الطوارئ",
+    "place": "حلب",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 26,
+    "row": 31,
+    "name": "ي الصحــي المعهد التقائن /صيدلة",
+    "place": "حلب/مارع",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 26,
+    "row": 32,
+    "name": "ي الصحــي المعهد التقائن /برصيات",
+    "place": "حلب/مارع",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 27,
+    "row": 3,
+    "name": "ي الصحــي المعهد التقائن /تمريض",
+    "place": "حلب/مارع",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 27,
+    "row": 4,
+    "name": "ي الصحــي المعهد التقائن /تخدير",
+    "place": "حلب/مارع",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 27,
+    "row": 5,
+    "name": "ي الصحــي المعهد التقائن /طوارئ",
+    "place": "حلب/مارع",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 27,
+    "row": 6,
+    "name": "ي الصحــي المعهد التقائن /مخابر",
+    "place": "حلب/مارع",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 27,
+    "row": 7,
+    "name": "ي الصحــي المعهد التقائن /صيدلة",
+    "place": "حلب /جرابلس",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 27,
+    "row": 8,
+    "name": "ي الصحــي المعهد التقائن /مخابر",
+    "place": "حمص",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 27,
+    "row": 9,
+    "name": "ي الصحــي المعهد التقائن /صيدلة",
+    "place": "حمص",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 27,
+    "row": 10,
+    "name": "ي الصحــي المعهد التقائن /تخدير",
+    "place": "حمص",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 27,
+    "row": 11,
+    "name": "ي الصحــي المعهد التقائن /اشعة",
+    "place": "حمص",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 27,
+    "row": 12,
+    "name": "ي الصحــي المعهد التقائن /معالجة فير نيائية",
+    "place": "حمص",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 27,
+    "row": 13,
+    "name": "ي الصحــي المعهد التقائن /طب طوارئ",
+    "place": "حمص",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 27,
+    "row": 14,
+    "name": "ي الصحــي المعهد التقائن /اطراف صناعية",
+    "place": "حمص",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 27,
+    "row": 15,
+    "name": "ي الصحــي المعهد التقائن /مخابر",
+    "place": "طرطوس",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 27,
+    "row": 16,
+    "name": "ي الصحــي المعهد التقائن /صيدلة",
+    "place": "طرطوس",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 27,
+    "row": 17,
+    "name": "ي الصحــي المعهد التقائن /تخدير",
+    "place": "طرطوس",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 27,
+    "row": 18,
+    "name": "ي الصحــي المعهد التقائن /اشعة",
+    "place": "طرطوس",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 27,
+    "row": 19,
+    "name": "ي الصحــي المعهد التقائن /معالجة فير نيائية",
+    "place": "طرطوس",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 27,
+    "row": 20,
+    "name": "ي الصحــي المعهد التقائن /طب طوارئ",
+    "place": "طرطوس",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 27,
+    "row": 21,
+    "name": "ي الصحــي المعهد التقائن /اطراف صناعية",
+    "place": "طرطوس",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 27,
+    "row": 22,
+    "name": "ي الصحــي المعهد التقائن/صيانة أجهزة طبية",
+    "place": "طرطوس",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 27,
+    "row": 23,
+    "name": "ي الصحــي المعهد التقائن /مخابر",
+    "place": "دير الزور",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 27,
+    "row": 24,
+    "name": "ي الصحــي المعهد التقائن /صيدلة",
+    "place": "دير الزور",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 27,
+    "row": 25,
+    "name": "ي الصحــي المعهد التقائن /تخدير",
+    "place": "دير الزور",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 27,
+    "row": 26,
+    "name": "ي الصحــي المعهد التقائن /اشعة",
+    "place": "دير الزور",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 27,
+    "row": 27,
+    "name": "ي الصحــي المعهد التقائن /معالجة فير نيائية",
+    "place": "دير الزور",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 27,
+    "row": 28,
+    "name": "ي الصحــي المعهد التقائن /اشعة",
+    "place": "الحسكة",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 27,
+    "row": 29,
+    "name": "ي الصحــي المعهد التقائن /تخدير",
+    "place": "الحسكة",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 27,
+    "row": 30,
+    "name": "ي الصحــي المعهد التقائن /صيدلة",
+    "place": "الحسكة",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 27,
+    "row": 31,
+    "name": "ي الصحــي المعهد التقائن /معالجة فير نيائية",
+    "place": "الحسكة",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 27,
+    "row": 32,
+    "name": "ي الصحــي المعهد التقائن /مخابر",
+    "place": "الحسكة",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 28,
+    "row": 3,
+    "name": "ي الصحــي المعهد التقائن /طب الطوارئ",
+    "place": "الحسكة",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 28,
+    "row": 4,
+    "name": "ي للخطوط الحديدية ذكور فقط المعهد التقائن(غير ملي نم)",
+    "place": "حلب",
+    "minimum": "50%",
+    "condition": "شر يطة النجاح باالختبار بعد القبول وأن يكون من مواليد2000 وما بعد"
+  },
+  {
+    "announcement": 9,
+    "page": 28,
+    "row": 5,
+    "name": "ي للنفط والغاز ذكور فقط المعهد التقائن(غير ملي نم)",
+    "place": "حمص",
+    "minimum": "50%",
+    "condition": "شر يطة النجاح باالختبار بعد القبول وأن يكون من مواليد2000 وما بعد"
+  },
+  {
+    "announcement": 9,
+    "page": 28,
+    "row": 6,
+    "name": "ي للنفط والغاز ذكور فقط المعهد التقائن(غير ملي نم)",
+    "place": "دير الزور",
+    "minimum": "50%",
+    "condition": "شر يطة النجاح باالختبار بعد القبول وأن يكون من مواليد2000 وما بعد"
+  },
+  {
+    "announcement": 9,
+    "page": 28,
+    "row": 7,
+    "name": "ي للنفط والغاز ذكور فقط المعهد التقائن(غير ملي نم)",
+    "place": "طرطوس/بانياس",
+    "minimum": "50%",
+    "condition": "شر يطة النجاح باالختبار بعد القبول وأن يكون من مواليد2000 وما بعد"
+  },
+  {
+    "announcement": 9,
+    "page": 28,
+    "row": 8,
+    "name": "ي للنفط والغاز ذكور فقط المعهد التقائن(غير ملي نم)",
+    "place": "الرميالن/الحسكة",
+    "minimum": "50%",
+    "condition": "شر يطة النجاح باالختبار بعد القبول وأن يكون من مواليد2000 وما بعد"
+  },
+  {
+    "announcement": 9,
+    "page": 28,
+    "row": 9,
+    "name": "ي للفنون التطبيقية المعهد التقائ",
+    "place": "دمشق",
+    "minimum": "50%",
+    "condition": "النجاح باالختبار شر ط لتدوين الرغبة"
+  },
+  {
+    "announcement": 9,
+    "page": 28,
+    "row": 10,
+    "name": "معهد اآلثار والمتاحف",
+    "place": "دمشق",
+    "minimum": "50%",
+    "condition": "النجاح باالختبار شر ط لتدوين الرغبة"
+  },
+  {
+    "announcement": 9,
+    "page": 28,
+    "row": 11,
+    "name": "ي اإلحصـائ المعهد التقائ",
+    "place": "دمشق",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 28,
+    "row": 12,
+    "name": "ي اإلحصـائ المعهد التقائ",
+    "place": "الالذقية",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 28,
+    "row": 13,
+    "name": "ي لإلرشاد النفسي والي بوي المعهد التقائ",
+    "place": "حلب/اعزاز",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 28,
+    "row": 14,
+    "name": "ي للي جمة التطبيقية المعهد التقائ",
+    "place": "إدلب/سلقير ن",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 28,
+    "row": 15,
+    "name": "ي المالـــــي المعهد التقائ",
+    "place": "دمشق",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 28,
+    "row": 16,
+    "name": "ي للعلوم السياحية والفندقية المعهد التقائ",
+    "place": "دمشق",
+    "minimum": "50%",
+    "condition": "النجاح باالختبار شر ط لتدوين الرغبة"
+  },
+  {
+    "announcement": 9,
+    "page": 28,
+    "row": 17,
+    "name": "ي للعلوم السياحية والفندقية المعهد التقائن(ضاحية قدسيا)",
+    "place": "ريف دمشق",
+    "minimum": "50%",
+    "condition": "النجاح باالختبار شر ط لتدوين الرغبة"
+  },
+  {
+    "announcement": 9,
+    "page": 28,
+    "row": 18,
+    "name": "ي للعلوم السياحية والفندقية المعهد التقائ",
+    "place": "السويداء",
+    "minimum": "50%",
+    "condition": "النجاح باالختبار شر ط لتدوين الرغبة"
+  },
+  {
+    "announcement": 9,
+    "page": 28,
+    "row": 19,
+    "name": "ي للعلوم السياحية والفندقية المعهد التقائ",
+    "place": "حلب",
+    "minimum": "50%",
+    "condition": "النجاح باالختبار شر ط لتدوين الرغبة"
+  },
+  {
+    "announcement": 9,
+    "page": 28,
+    "row": 20,
+    "name": "ي للعلوم السياحية والفندقية المعهد التقائ",
+    "place": "الالذقية",
+    "minimum": "50%",
+    "condition": "النجاح باالختبار شر ط لتدوين الرغبة"
+  },
+  {
+    "announcement": 9,
+    "page": 28,
+    "row": 21,
+    "name": "ي للعلوم السياحية والفندقية المعهد التقائ",
+    "place": "حمص",
+    "minimum": "50%",
+    "condition": "النجاح باالختبار شر ط لتدوين الرغبة"
+  },
+  {
+    "announcement": 9,
+    "page": 28,
+    "row": 22,
+    "name": "ي للعلوم السياحية والفندقية المعهد التقائ",
+    "place": "طرطوس",
+    "minimum": "50%",
+    "condition": "النجاح باالختبار شر ط لتدوين الرغبة"
+  },
+  {
+    "announcement": 9,
+    "page": 28,
+    "row": 23,
+    "name": "ي للعلوم السياحية والفندقية المعهد التقائ",
+    "place": "حماه",
+    "minimum": "50%",
+    "condition": "النجاح باالختبار شر ط لتدوين الرغبة"
+  },
+  {
+    "announcement": 9,
+    "page": 28,
+    "row": 24,
+    "name": "ي للعلوم السياحية والفندقية المعهد التقائ",
+    "place": "دير الزور",
+    "minimum": "50%",
+    "condition": "النجاح باالختبار شر ط لتدوين الرغبة"
+  },
+  {
+    "announcement": 9,
+    "page": 28,
+    "row": 25,
+    "name": "ي لإلعالم المعهد التقائن(تقديم الير امج اإلذاعية والتلفزيونية)",
+    "place": "إدلب",
+    "minimum": "50%",
+    "condition": "النجاح باالختبار شر ط لتدوين الرغبة"
+  },
+  {
+    "announcement": 9,
+    "page": 28,
+    "row": 26,
+    "name": "ي لإلعالم المعهد التقائن(التصميم والتسويق)",
+    "place": "إدلب",
+    "minimum": "50%",
+    "condition": "النجاح باالختبار شر ط لتدوين الرغبة"
+  },
+  {
+    "announcement": 9,
+    "page": 28,
+    "row": 27,
+    "name": "ي لإلعالم المعهد التقائن(ي اإلخراج اإلذاعي والتلفزيوئن) -ذكور فقط",
+    "place": "إدلب",
+    "minimum": "50%",
+    "condition": "النجاح باالختبار شر ط لتدوين الرغبة"
+  },
+  {
+    "announcement": 9,
+    "page": 28,
+    "row": 28,
+    "name": "ي القانوئن المعهد التقائ",
+    "place": "دمشق",
+    "minimum": "50%",
+    "condition": "اختبار بعد القبول"
+  },
+  {
+    "announcement": 9,
+    "page": 28,
+    "row": 29,
+    "name": "المعهد المتوسط للعلوم الشر عية والعربية",
+    "place": "دمشق",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 28,
+    "row": 30,
+    "name": "المعهد المتوسط للعلوم الشر عية والعربية",
+    "place": "ريف دمشق/عربير ن",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 28,
+    "row": 31,
+    "name": "المعهد المتوسط للعلوم الشر عية والعربية",
+    "place": "ريف دمشق/القطيفة",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 28,
+    "row": 32,
+    "name": "المعهد المتوسط للعلوم الشر عية والعربية",
+    "place": "درعا",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 28,
+    "row": 33,
+    "name": "المعهد المتوسط للعلوم الشر عية والعربية",
+    "place": "القنيطرة",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 29,
+    "row": 3,
+    "name": "المعهد المتوسط للعلوم الشر عية والعربية",
+    "place": "حلب",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 29,
+    "row": 4,
+    "name": "المعهد المتوسط للعلوم الشر عية والعربية",
+    "place": "حلب/السفير ة",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 29,
+    "row": 5,
+    "name": "المعهد المتوسط للعلوم الشر عية والعربية",
+    "place": "حلب/منبج",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 29,
+    "row": 6,
+    "name": "المعهد المتوسط للعلوم الشر عية والعربية",
+    "place": "حلب/تركمان بارح",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 29,
+    "row": 7,
+    "name": "المعهد المتوسط للعلوم الشر عية والعربية",
+    "place": "حلب/عفرين",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 29,
+    "row": 8,
+    "name": "المعهد المتوسط للعلوم الشر عية والعربية",
+    "place": "حلب/ابير ن سمعان",
+    "minimum": "50%",
+    "condition": "ـــ"
+  },
+  {
+    "announcement": 9,
+    "page": 29,
+    "row": 9,
+    "name": "المعهد المتوسط للعلوم الشر عية والعربية",
+    "place": "الالذقية",
+    "minimum": "50%",
+    "condition": ""
+  },
+  {
+    "announcement": 9,
+    "page": 29,
+    "row": 10,
+    "name": "المعهد المتوسط للعلوم الشر عية والعربية",
+    "place": "طرطوس",
+    "minimum": "50%",
+    "condition": ""
+  },
+  {
+    "announcement": 9,
+    "page": 29,
+    "row": 11,
+    "name": "المعهد المتوسط للعلوم الشر عية والعربية",
+    "place": "حماة",
+    "minimum": "50%",
+    "condition": ""
+  },
+  {
+    "announcement": 9,
+    "page": 29,
+    "row": 12,
+    "name": "المعهد المتوسط للعلوم الشر عية والعربية",
+    "place": "حمص/الوعر",
+    "minimum": "50%",
+    "condition": ""
+  },
+  {
+    "announcement": 9,
+    "page": 29,
+    "row": 13,
+    "name": "المعهد المتوسط للعلوم الشر عية والعربية",
+    "place": "إدلب",
+    "minimum": "50%",
+    "condition": ""
+  },
+  {
+    "announcement": 9,
+    "page": 29,
+    "row": 14,
+    "name": "المعهد المتوسط للعلوم الشر عية والعربية",
+    "place": "إدلب/معرة النعمان",
+    "minimum": "50%",
+    "condition": ""
+  },
+  {
+    "announcement": 9,
+    "page": 29,
+    "row": 15,
+    "name": "المعهد المتوسط للعلوم الشر عية والعربية",
+    "place": "إدلب/جش الشغور",
+    "minimum": "50%",
+    "condition": ""
+  },
+  {
+    "announcement": 9,
+    "page": 29,
+    "row": 16,
+    "name": "المعهد المتوسط للعلوم الشر عية والعربية",
+    "place": "إدلب /سلقير ن",
+    "minimum": "50%",
+    "condition": ""
+  },
+  {
+    "announcement": 9,
+    "page": 29,
+    "row": 17,
+    "name": "المعهد المتوسط للعلوم الشر عية والعربية",
+    "place": "إدلب /شمدا",
+    "minimum": "50%",
+    "condition": ""
+  },
+  {
+    "announcement": 9,
+    "page": 29,
+    "row": 18,
+    "name": "المعهد المتوسط للعلوم الشر عية والعربية",
+    "place": "الحسكة/الشدادي",
+    "minimum": "50%",
+    "condition": ""
+  },
+  {
+    "announcement": 9,
+    "page": 29,
+    "row": 19,
+    "name": "المعهد المتوسط للعلوم الشر عية والعربية",
+    "place": "دير الزور",
+    "minimum": "50%",
+    "condition": ""
+  },
+  {
+    "announcement": 9,
+    "page": 29,
+    "row": 20,
+    "name": "المعهد المتوسط للعلوم الشر عية والعربية",
+    "place": "الرقة",
+    "minimum": "50%",
+    "condition": ""
+  }
+]

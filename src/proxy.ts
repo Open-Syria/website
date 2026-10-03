@@ -4,7 +4,7 @@ import { NextResponse } from "next/server"
 const arabicLocalePrefix = "/ar"
 const englishLocalePrefix = "/en"
 const internalLocaleRewriteHeader = "x-opensyria-locale-rewrite"
-const directPublicPathPrefixes = ["/-/", "/.well-known/"] as const
+const directPublicPathPrefixes = ["/-/", "/.well-known/", "/api/"] as const
 const directPublicPaths = new Set([
   "/apple-icon.png",
   "/auth.md",
@@ -46,7 +46,7 @@ const trackingSearchParamPrefixes = ["utm_", "hsa_", "mtm_", "pk_"] as const
 
 export default function proxy(request: NextRequest) {
   if (request.headers.get(internalLocaleRewriteHeader) === "en") {
-    return NextResponse.next()
+    return withPageIndexing(request, NextResponse.next())
   }
 
   if (isDirectPublicPath(request.nextUrl.pathname)) {
@@ -75,7 +75,7 @@ export default function proxy(request: NextRequest) {
   }
 
   if (isArabicPath(request.nextUrl.pathname)) {
-    return NextResponse.next()
+    return withPageIndexing(request, NextResponse.next())
   }
 
   const englishUrl = request.nextUrl.clone()
@@ -86,11 +86,24 @@ export default function proxy(request: NextRequest) {
   const requestHeaders = new Headers(request.headers)
   requestHeaders.set(internalLocaleRewriteHeader, "en")
 
-  return NextResponse.rewrite(englishUrl, {
-    request: {
-      headers: requestHeaders,
-    },
-  })
+  return withPageIndexing(
+    request,
+    NextResponse.rewrite(englishUrl, {
+      request: {
+        headers: requestHeaders,
+      },
+    })
+  )
+}
+
+function withPageIndexing(request: NextRequest, response: NextResponse) {
+  // Filters and other query variants are application state, not search landing
+  // pages. Apply this per response without changing the cached clean-page HTML.
+  // Next.js uses _rsc for transport; it is not a user-facing page filter.
+  if ([...request.nextUrl.searchParams.keys()].some((key) => key !== "_rsc")) {
+    response.headers.set("X-Robots-Tag", "noindex, follow")
+  }
+  return response
 }
 
 function getCanonicalEnglishUrl(request: NextRequest) {

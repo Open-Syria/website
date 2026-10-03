@@ -20,6 +20,20 @@
       "!.claude",
       "!public",
       "!src/app/icon*.svg",
+      // Generated catalogue: validated against its source rows by test:admissions.
+      "!src/app/**/admissions/_data/**/scientific.json",
+      "!src/app/**/admissions/_data/**/literary.json",
+      "!src/app/**/admissions/_data/**/sharia.json",
+      "!src/app/**/admissions/_data/**/older-*.json",
+      "!src/app/**/admissions/_data/**/special-*.json",
+      "!src/app/**/admissions/_data/**/service-*.json",
+      "!src/app/**/admissions/_data/**/vocational.json",
+      "!src/app/**/admissions/_data/**/non-syrian-scientific.json",
+      "!src/app/**/admissions/_data/**/non-syrian-literary.json",
+      "!src/app/**/admissions/_data/**/foreign-scientific.json",
+      "!src/app/**/admissions/_data/**/foreign-literary.json",
+      "!src/app/**/admissions/_data/**/foreign-vocational.json",
+      "!src/app/**/admissions/_data/**/non-syrian-vocational.json",
       "!pnpm-lock.yaml"
     ]
   },

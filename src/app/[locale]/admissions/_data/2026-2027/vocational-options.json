@@ -1,0 +1,386 @@
+[
+  {
+    "id": "agricultural-b51145dc9cbb",
+    "category": "agricultural",
+    "name": {
+      "ar": "الزراعية — الآلات الزراعية",
+      "en": "Agricultural — Agricultural machinery"
+    }
+  },
+  {
+    "id": "agricultural-c86592db37c3",
+    "category": "agricultural",
+    "name": {
+      "ar": "الزراعية — البيطرية",
+      "en": "Agricultural — Veterinary"
+    }
+  },
+  {
+    "id": "agricultural-899b5cc0a4e1",
+    "category": "agricultural",
+    "name": {
+      "ar": "الزراعية",
+      "en": "Agricultural"
+    }
+  },
+  {
+    "id": "commercial-bc7becc86e9e",
+    "category": "commercial",
+    "name": {
+      "ar": "التجارية",
+      "en": "Commercial"
+    }
+  },
+  {
+    "id": "communications-cf4bc508eabb",
+    "category": "communications",
+    "name": {
+      "ar": "المهنية للاتصالات — اتصالات سلكية",
+      "en": "Telecommunications vocational — Wired communications"
+    }
+  },
+  {
+    "id": "communications-9d4a4211a30c",
+    "category": "communications",
+    "name": {
+      "ar": "المهنية للاتصالات — اتصالات لاسلكية",
+      "en": "Telecommunications vocational — Wireless communications"
+    }
+  },
+  {
+    "id": "communications-16a0656e0c3f",
+    "category": "communications",
+    "name": {
+      "ar": "المهنية للاتصالات — مقاسم هاتفية",
+      "en": "Telecommunications vocational — Telephone exchanges"
+    }
+  },
+  {
+    "id": "hospitality-5eed69891b42",
+    "category": "hospitality",
+    "name": {
+      "ar": "الفندقية — مطبخ",
+      "en": "Hospitality — Kitchen"
+    }
+  },
+  {
+    "id": "hospitality-9209e5540063",
+    "category": "hospitality",
+    "name": {
+      "ar": "الفندقية — مطعم",
+      "en": "Hospitality — Restaurant"
+    }
+  },
+  {
+    "id": "industrial-1ab30c763cc7",
+    "category": "industrial",
+    "name": {
+      "ar": "الصناعية — أنظمة التشغيل والبرمجة",
+      "en": "Industrial — Operating systems and programming"
+    }
+  },
+  {
+    "id": "industrial-8a8454b8ef9e",
+    "category": "industrial",
+    "name": {
+      "ar": "الصناعية — الإلكترونيات",
+      "en": "Industrial — Electronics"
+    }
+  },
+  {
+    "id": "industrial-2381b7d6f739",
+    "category": "industrial",
+    "name": {
+      "ar": "الصناعية — الاتصالات",
+      "en": "Industrial — Communications"
+    }
+  },
+  {
+    "id": "industrial-d47231a04dda",
+    "category": "industrial",
+    "name": {
+      "ar": "الصناعية — البرمجة",
+      "en": "Industrial — Programming"
+    }
+  },
+  {
+    "id": "industrial-18e30c338eb1",
+    "category": "industrial",
+    "name": {
+      "ar": "الصناعية — التبريد والتكييف",
+      "en": "Industrial — Refrigeration and air conditioning"
+    }
+  },
+  {
+    "id": "industrial-7bdc757f810d",
+    "category": "industrial",
+    "name": {
+      "ar": "الصناعية — التجهيزات الحاسوبية",
+      "en": "Industrial — Computer equipment"
+    }
+  },
+  {
+    "id": "industrial-5e6e5dbda4b5",
+    "category": "industrial",
+    "name": {
+      "ar": "الصناعية — التحكم الآلي",
+      "en": "Industrial — Automatic control"
+    }
+  },
+  {
+    "id": "industrial-ac91906c5d53",
+    "category": "industrial",
+    "name": {
+      "ar": "الصناعية — التدفئة والتمديدات",
+      "en": "Industrial — Heating and installations"
+    }
+  },
+  {
+    "id": "industrial-52418e86b216",
+    "category": "industrial",
+    "name": {
+      "ar": "الصناعية — التصنيع الميكانيكي",
+      "en": "Industrial — Mechanical manufacturing"
+    }
+  },
+  {
+    "id": "industrial-bebe66e767c7",
+    "category": "industrial",
+    "name": {
+      "ar": "الصناعية — التصنيع الميكانيكي (تعليم مزدوج)",
+      "en": "Industrial — Mechanical manufacturing (dual education)"
+    }
+  },
+  {
+    "id": "industrial-a5f5bab81485",
+    "category": "industrial",
+    "name": {
+      "ar": "الصناعية — التقنيات الإلكترونية",
+      "en": "Industrial — Electronic technologies"
+    }
+  },
+  {
+    "id": "industrial-ff28e91247d7",
+    "category": "industrial",
+    "name": {
+      "ar": "الصناعية — التقنيات الكهربائية",
+      "en": "Industrial — Electrical technologies"
+    }
+  },
+  {
+    "id": "industrial-31993d6e9955",
+    "category": "industrial",
+    "name": {
+      "ar": "الصناعية — الشبكات الحاسوبية",
+      "en": "Industrial — Computer networks"
+    }
+  },
+  {
+    "id": "industrial-bb1931a654ca",
+    "category": "industrial",
+    "name": {
+      "ar": "الصناعية — اللحام وتشكيل المعادن",
+      "en": "Industrial — Welding and metal forming"
+    }
+  },
+  {
+    "id": "industrial-ef540f63b7eb",
+    "category": "industrial",
+    "name": {
+      "ar": "الصناعية — اللحام وتشكيل المعادن (تعليم مزدوج)",
+      "en": "Industrial — Welding and metal forming (dual education)"
+    }
+  },
+  {
+    "id": "industrial-9ebba7edfeb7",
+    "category": "industrial",
+    "name": {
+      "ar": "الصناعية — الميكاترونيكس",
+      "en": "Industrial — Mechatronics"
+    }
+  },
+  {
+    "id": "industrial-9fdbcbef5208",
+    "category": "industrial",
+    "name": {
+      "ar": "الصناعية — الميكاترونيكس (تعليم مزدوج)",
+      "en": "Industrial — Mechatronics (dual education)"
+    }
+  },
+  {
+    "id": "industrial-7df0ef4f0278",
+    "category": "industrial",
+    "name": {
+      "ar": "الصناعية — النسيج",
+      "en": "Industrial — Textiles"
+    }
+  },
+  {
+    "id": "industrial-8e12b3ed2260",
+    "category": "industrial",
+    "name": {
+      "ar": "الصناعية — النماذج والسباكة",
+      "en": "Industrial — Patterns and casting"
+    }
+  },
+  {
+    "id": "industrial-10d6bf41f05b",
+    "category": "industrial",
+    "name": {
+      "ar": "الصناعية — تقنيات الحاسوب",
+      "en": "Industrial — Computer technologies"
+    }
+  },
+  {
+    "id": "industrial-b7c93f049f17",
+    "category": "industrial",
+    "name": {
+      "ar": "الصناعية — صناعة الألبسة (تعليم مزدوج)",
+      "en": "Industrial — Clothing production (dual education)"
+    }
+  },
+  {
+    "id": "industrial-da96775934c4",
+    "category": "industrial",
+    "name": {
+      "ar": "الصناعية — صيانة الأجهزة الطبية",
+      "en": "Industrial — Medical equipment maintenance"
+    }
+  },
+  {
+    "id": "industrial-dd5626e44c79",
+    "category": "industrial",
+    "name": {
+      "ar": "الصناعية — صيانة الحاسوب والطرفيات",
+      "en": "Industrial — Computer and peripheral maintenance"
+    }
+  },
+  {
+    "id": "industrial-c950eb928a0f",
+    "category": "industrial",
+    "name": {
+      "ar": "الصناعية — صيانة الحواسيب",
+      "en": "Industrial — Computer maintenance"
+    }
+  },
+  {
+    "id": "industrial-abcbd3bedcf8",
+    "category": "industrial",
+    "name": {
+      "ar": "الصناعية — ميكانيك الآليات والمعدات الزراعية",
+      "en": "Industrial — Agricultural machinery and equipment mechanics"
+    }
+  },
+  {
+    "id": "industrial-04fbc0cd8ec3",
+    "category": "industrial",
+    "name": {
+      "ar": "الصناعية — ميكانيك المركبات",
+      "en": "Industrial — Vehicle mechanics"
+    }
+  },
+  {
+    "id": "industrial-42ba3c6415ef",
+    "category": "industrial",
+    "name": {
+      "ar": "الصناعية — ميكانيك وكهرباء المركبات",
+      "en": "Industrial — Vehicle mechanics and electrics"
+    }
+  },
+  {
+    "id": "industrial-e0bb31ce7f0b",
+    "category": "industrial",
+    "name": {
+      "ar": "الصناعية — نجارة الأثاث والزخرفة",
+      "en": "Industrial — Furniture carpentry and decoration"
+    }
+  },
+  {
+    "id": "maritime-830da4ff90c9",
+    "category": "maritime",
+    "name": {
+      "ar": "النقل البحري — ملاحة بحرية",
+      "en": "Maritime transport — Marine navigation"
+    }
+  },
+  {
+    "id": "maritime-9528df3eb4aa",
+    "category": "maritime",
+    "name": {
+      "ar": "النقل البحري — ميكانيك بحري",
+      "en": "Maritime transport — Marine mechanics"
+    }
+  },
+  {
+    "id": "petroleum-0972a5369281",
+    "category": "petroleum",
+    "name": {
+      "ar": "المهنية النفطية — أجهزة القياس والتحكم",
+      "en": "Petroleum vocational — Measurement and control equipment"
+    }
+  },
+  {
+    "id": "petroleum-2e3a5f122173",
+    "category": "petroleum",
+    "name": {
+      "ar": "المهنية النفطية — إنتاج نفط وغاز",
+      "en": "Petroleum vocational — Oil and gas production"
+    }
+  },
+  {
+    "id": "petroleum-bb1931a654ca",
+    "category": "petroleum",
+    "name": {
+      "ar": "المهنية النفطية — اللحام وتشكيل المعادن",
+      "en": "Petroleum vocational — Welding and metal forming"
+    }
+  },
+  {
+    "id": "petroleum-330776aa43ae",
+    "category": "petroleum",
+    "name": {
+      "ar": "المهنية النفطية — حفر آبار",
+      "en": "Petroleum vocational — Well drilling"
+    }
+  },
+  {
+    "id": "petroleum-58442ee645b1",
+    "category": "petroleum",
+    "name": {
+      "ar": "المهنية النفطية — كهرباء صناعية",
+      "en": "Petroleum vocational — Industrial electricity"
+    }
+  },
+  {
+    "id": "petroleum-926e0ef70964",
+    "category": "petroleum",
+    "name": {
+      "ar": "المهنية النفطية — ميكانيك آلات منجمية",
+      "en": "Petroleum vocational — Mining machinery mechanics"
+    }
+  },
+  {
+    "id": "women-204d2d9db015",
+    "category": "women",
+    "name": {
+      "ar": "المهنية النسوية — حلاقة وتجميل",
+      "en": "Women's vocational — Hairdressing and beauty"
+    }
+  },
+  {
+    "id": "women-e7e1b3a1c302",
+    "category": "women",
+    "name": {
+      "ar": "المهنية النسوية — خياطة الملابس",
+      "en": "Women's vocational — Garment sewing"
+    }
+  },
+  {
+    "id": "other-vocational-specialty",
+    "category": "other",
+    "name": {
+      "ar": "اختصاص مهني آخر",
+      "en": "Another vocational specialty"
+    }
+  }
+]

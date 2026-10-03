@@ -1,6 +1,7 @@
 "use client"
 
 import { Languages, Moon, Sun } from "lucide-react"
+import { useSearchParams } from "next/navigation"
 import { useLocale, useTranslations } from "next-intl"
 import { useTheme } from "next-themes"
 import * as React from "react"
@@ -30,18 +31,50 @@ function SiteControls({ className }: SiteControlsProps) {
 
   return (
     <div className={cn("flex items-center gap-2", className)}>
-      <Link
-        aria-label={languageLabel}
-        className={cn(buttonVariants({ size: "icon", variant: "outline" }))}
-        href={pathname}
-        locale={otherLocale}
-        title={languageLabel}
+      <React.Suspense
+        fallback={
+          <LanguageLink
+            href={pathname}
+            locale={otherLocale}
+            label={languageLabel}
+          />
+        }
       >
-        <Languages aria-hidden="true" />
-        <span className="sr-only">{languageLabel}</span>
-      </Link>
+        <LanguageLinkWithQuery
+          href={pathname}
+          locale={otherLocale}
+          label={languageLabel}
+        />
+      </React.Suspense>
       <ThemeToggle />
     </div>
+  )
+}
+
+type LanguageLinkProps = { href: string; locale: Locale; label: string }
+
+function LanguageLinkWithQuery(props: LanguageLinkProps) {
+  const query = useSearchParams().toString()
+  return (
+    <LanguageLink
+      {...props}
+      href={`${props.href}${query ? `?${query}` : ""}`}
+    />
+  )
+}
+
+function LanguageLink({ href, locale, label }: LanguageLinkProps) {
+  return (
+    <Link
+      aria-label={label}
+      className={cn(buttonVariants({ size: "icon", variant: "outline" }))}
+      href={href}
+      locale={locale}
+      title={label}
+    >
+      <Languages aria-hidden="true" />
+      <span className="sr-only">{label}</span>
+    </Link>
   )
 }
 

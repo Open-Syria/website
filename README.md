@@ -10,6 +10,9 @@ The website is intentionally focused: a localized landing page, dataset catalog 
 
 ## Public URLs
 
+The footer groups Platform, Community, and Partners links, including
+[Jobara: Jobs in Syria](https://jobara.sy) with its logo and localized link text.
+
 | URL | Purpose |
 | --- | --- |
 | <https://opensyria.org> | Public website |
@@ -19,6 +22,8 @@ The website is intentionally focused: a localized landing page, dataset catalog 
 | <https://opensyria.org/datasets/transport> | Transport dataset page |
 | <https://opensyria.org/datasets/telecom> | Telecom dataset page |
 | <https://opensyria.org/api> | OpenSyria developer resources and Syrian data API guide |
+| <https://opensyria.org/admissions> | English university admissions advisor |
+| <https://opensyria.org/ar/admissions> | Arabic university admissions advisor |
 | <https://opensyria.org/llms.txt> | Plain-text project and agent discovery guide |
 | <https://opensyria.org/index.md> | Markdown project and developer-resource index |
 | <https://opensyria.org/auth.md> | Authentication and public-access policy |
@@ -109,6 +114,106 @@ http://localhost:3000
 
 Application source code lives under `src/`.
 
+For a production preview, stop all preview servers using this checkout before
+running `pnpm build`, then start the new build with `pnpm start`. Keep one preview
+URL per checkout. Rebuilding while an older server is running can leave cached
+pages pointing to removed JavaScript files and keep the admissions form on its
+loading message. Recover by stopping those servers, rebuilding, restarting and
+reloading the page. `pnpm test:agent-readiness` checks the JavaScript assets used
+by both admissions locales as well as the discovery routes.
+
+## Admissions Advisor
+
+`/admissions` and `/ar/admissions` provide an English/Arabic admissions advisor
+using the site's shadcn components. Enter an admission percentage or comparison
+total, add optional eligibility details, and compare programs grouped by
+institution. Results distinguish checked requirements, missing information, and
+unmet requirements for each general, parallel, Arab/foreign public, or private track. Filters and a
+saved shortlist help compare choices. A saved-choices button with a count sits above the results, outside the filters. Result groups start closed and keep their headings visible while their contents scroll. On mobile, filters open in a scrollable dialog with a fixed action footer. Applicable admission tracks open one shared eligibility dialog, with only the relevant questions and one field per answer. Answers update immediately with Undo; the list stays still during editing and restores the reading position after regrouping. Official approvals remain pending. A guide and FAQ below the tool link
+to the relevant Ministry PDF pages.
+
+For supported Syrian scientific/literary certificates from 2026, students can
+optionally import marks using their student number, exam governorate and exact
+certificate/curriculum. Their browser fetches the encrypted result; the server
+returns only normalized marks after a security check. Imported marks remain
+editable, and original subject fractions are preserved for comparisons.
+Manual entry remains available if lookup is unavailable or the result does not
+match the supported scale. Imported marks are advisory, not verified proof of
+identity, certificate authenticity or admission. Names and student numbers are
+not saved by the application. See [deployment requirements](docs/deployment.md)
+for enabling this optional feature; provider research and credentials are private.
+
+The catalogues contain **10,494 choices across twenty-four certificate/applicant catalogues**.
+For Syrian/equivalent applicants with 2026 certificates: 1,169 Syrian scientific,
+396 Syrian literary, 373 Syrian Sharia, 827 Syrian vocational, 1,007 non-Syrian scientific,
+348 non-Syrian literary and 777 non-Syrian vocational. Arab/foreign applicants
+have 1,007 scientific, 348 literary and 777 vocational choices for Syrian or
+equivalent non-Syrian certificates from 2025 or 2026. Shared private choices
+appear in each applicable route; these are not
+counts of distinct degrees. Arab/foreign public admission has a separate track;
+both certificate origins disregard subject marks, while Syrian academic totals
+retain the 2400/2200 denominators. Syrian citizens, including dual nationals, use the
+Syrian/equivalent category. Non-Syrian vocational applicants select their exact
+official equivalent qualification and use the registered percentage for parallel
+and private admission. Arab/foreign vocational admission uses its own public
+track and private choices, with exact qualification matching. Syrian Sharia
+admission includes 242 public and 131 private choices; 19 dedicated faculty choices
+use a separate official percentage after adding religious-subject marks.
+Sharia/Arabic institutes require direct registration. Older scientific, literary
+and vocational certificates support private-only admission: 2025 and earlier for
+Syrian/equivalent applicants, and 2024 and earlier for Arab/foreign applicants.
+Each category reuses 389 scientific, 131 literary and 536 vocational private choices
+for both certificate origins. The form accepts the actual year and official
+percentage, preserving qualification and entrance-test rules. Older Sharia
+private admission remains outside the calculator. Faculty-family and disability quotas
+add 623 scientific, 225 literary and 183 Sharia choices for Syrian/equivalent
+applicants with Syrian 2026 certificates. Each quota uses its own thresholds;
+personnel-directorate or medical-committee eligibility remains pending.
+Four defence/security catalogues add 31 choices: 23 scientific, four literary,
+two Syrian Sharia and two maritime vocational qualifications. Both certificate
+origins are supported where specified; programme-specific years, gender,
+security birth-year and exact vocational qualifications are checked using the
+official percentage. Military defence accepts academic certificates from 2024–2026;
+HIAST and security use 2025–2026, and naval vocational admission uses 2026.
+Official examinations, fitness, nationality and service conditions remain pending.
+A separate faculty-family catalogue adds 291 choices for Syrian 2026 vocational
+certificates: 46 engineering faculty entries at 60%, 60 other college entries at
+50%, and 185 institute entries without a separate overall minimum. Exact
+qualifications and assessments remain required, and family eligibility and vacant
+scientific-quota places require official confirmation. Source-linked guidance
+explains direct language registration separately for Syrian/equivalent and
+Arab/foreign applicants, direct Sharia/Arabic institute registration, and the
+vocational routes requiring a separate Education or Energy Ministry announcement.
+These procedures appear in the guide and FAQ, outside scored calculator results.
+Paginated results include positive career
+guidance with sources and limitations. Both languages are indexable and in the
+sitemap. Keep the permanent footer link; remove the seasonal homepage section
+after the 2026–2027 admissions period. Application minimums are not acceptance predictions.
+
+The route owns its versioned source data in
+`src/app/[locale]/admissions/_data/2026-2027/`, split by certificate branch. Reproducible imports
+and source rows live in `scripts/admissions`. Data is validated at build time
+and only the selected branch loads as a separate versioned asset on calculation. No admissions
+database or Redis service is needed.
+Favourites persist in local storage; submitted answers stay in this tab's session
+storage until cleared or the tab closes. nuqs preserves filters, ordering,
+pagination and optional eligibility answers in the URL. Main certificate scores
+stay in the tab. Answer changes, Undo and reset stay synchronized with the URL.
+The fixed dataset uses `use cache` with `cacheLife("max")`, and both languages
+are prerendered. Localized titles, descriptions, canonical/language links,
+social previews, and breadcrumb/FAQ structured data accompany the guide.
+The advisor does not submit an application.
+Existing site analytics still applies.
+
+See [admissions data and release notes](docs/admissions-advisor.md) for scope,
+source provenance, verification, career methodology and supported scope.
+
+All 309 pages of the 12 pinned Ministry PDFs have completed one visual review,
+including the final 24 instruction, examination and directory pages. The source
+audit records findings and limitations; the guide now has 34 source-linked FAQs
+per language. This does not claim independent validation or a live check for
+later Ministry changes.
+
 ## Environment
 
 Copy `.env.example` when local environment values are needed:
@@ -142,9 +247,35 @@ The site supports English and Arabic.
 
 Translations live in `messages/en.json` and `messages/ar.json`.
 
+Arabic pages use IBM Plex Sans Arabic at weights 400, 500, 600, and 700.
+English uses Inter for body text and Sora for headings. Locale-specific font
+variables feed both Tailwind's `font-sans` and `font-heading` utilities, so
+headings and form controls keep the correct script's font.
+
+## Search Indexing
+
+The sitemap lists only clean English and Arabic page URLs. Each page has a
+self-referencing canonical, matching language alternatives, localized title and
+description, and structured data. Admissions filters, searches, saved-only
+views and pagination are application state, not separate search landing pages.
+
+- Clean page URLs remain indexable.
+- Tracking parameters such as `utm_*` and `gclid` redirect permanently to the
+  cleaned URL; functional filters survive that redirect.
+- Other page query variants return `X-Robots-Tag: noindex, follow` and retain
+  their clean canonical. This is set on each response, leaving cached clean
+  pages indexable. Next.js's internal `_rsc` transport parameter is exempt.
+- `robots.txt` permits crawling so search engines can read the indexing header
+  and canonical. Static assets and versioned social-image URLs stay accessible.
+
+See [Google's noindex guidance](https://developers.google.com/search/docs/crawling-indexing/block-indexing).
+After deployment, submit `/sitemap.xml` in Google Search Console and inspect both
+clean admissions URLs plus a filtered URL. Existing search listings update when
+Google recrawls; a local build cannot change the live index.
+
 ## Social Previews
 
-Open Graph and Twitter preview metadata explicitly reference the root social images:
+Most pages explicitly reference the root Open Graph and Twitter images:
 
 - `/opengraph-image.png`
 - `/twitter-image.png`
@@ -156,6 +287,25 @@ Regenerate social preview assets after brand changes:
 ```bash
 pnpm images:brand
 ```
+
+The admissions guide has dedicated Arabic and English covers: 1200×630 for
+Open Graph and 1200×600 for Twitter's large image card. Its route-local metadata
+selects the matching language, with image dimensions, PNG type, and translated
+alt text. The image imports produce content-hashed URLs so regenerated covers
+receive new URLs. The shared layout also emits `og:logo` as a `property` meta tag
+alongside the page's locale, URL, type, title, description, and preview image.
+
+Regenerate the admissions covers after changing `Admissions.social` in
+`messages/*.json` or their design:
+
+```bash
+pnpm images:admissions
+```
+
+The generator writes to `src/app/[locale]/admissions/_assets/social/` using
+bundled IBM Plex Sans Arabic fonts from [Google Fonts](https://github.com/google/fonts/tree/main/ofl/ibmplexsansarabic).
+Their SIL Open Font License is included in `scripts/assets/ibm-plex-sans-arabic/OFL.txt`;
+generation needs no font downloads or image-generation service at runtime.
 
 ## Analytics
 
@@ -172,7 +322,7 @@ cta_id=docs
 cta_id=github_stars
 ```
 
-The implementation keeps the landing page server-rendered and uses small client boundaries for tracked links and interactive FAQ controls.
+The implementation keeps the landing page server-rendered and uses small client boundaries for tracked links and interactive FAQ controls. Homepage and admissions FAQs share `src/components/faq-accordion.tsx` for consistent appearance and behavior in both languages: only the first question opens initially, and all answers are included in the initial HTML. Base UI's `hiddenUntilFound` keeps collapsed answers mounted and searchable through find-in-page in supported browsers.
 
 ## Checks
 
@@ -182,7 +332,7 @@ Run all CI checks:
 pnpm verify:ci
 ```
 
-CI runs formatting/lint checks, TypeScript, a production build, the agent
+CI runs formatting/lint checks, TypeScript, admissions validation, a production build, the agent
 readiness endpoint suite, and the dependency audit.
 
 Run the complete local release check, including a production build:
@@ -196,6 +346,7 @@ Focused commands:
 ```bash
 pnpm check
 pnpm typecheck
+pnpm run test:admissions
 pnpm build
 pnpm run test:agent-readiness
 pnpm run audit:dependencies
@@ -205,8 +356,11 @@ pnpm run audit:dependencies
 reachability, raw server-rendered homepage content and heading structure,
 localized developer resources, real and recoverable 404s, `robots.txt`, the
 discovery files, unsupported MCP/OAuth responses, sitemap, website health, and
-the public API documentation, OpenAPI, and health endpoints. To check an
-already deployed website instead, set `AGENT_READINESS_BASE_URL`, for example:
+the public API documentation, OpenAPI, and health endpoints. SEO checks walk
+every sitemap URL and verify canonicals, language alternatives, titles,
+descriptions, structured data, social images, redirects and query indexing
+without contaminating clean-page responses. To check an already deployed
+website instead, set `AGENT_READINESS_BASE_URL`, for example:
 
 ```bash
 AGENT_READINESS_BASE_URL=https://opensyria.org pnpm run test:agent-readiness
@@ -234,6 +388,7 @@ Operations for the hosted service are documented privately outside public reposi
 - [Supply Chain Security](docs/supply-chain-security.md)
 - [Deployment](docs/deployment.md)
 - [Releases](docs/releases.md)
+- [Admissions Advisor](docs/admissions-advisor.md)
 
 ## Contribution Model
 

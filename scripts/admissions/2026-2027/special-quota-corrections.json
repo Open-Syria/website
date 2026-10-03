@@ -1,0 +1,1802 @@
+[
+  {
+    "branch": "scientific",
+    "announcement": 2,
+    "page": 11,
+    "row": 3,
+    "field": "disability",
+    "original": "جميع المتقدين لمن حصل",
+    "replacement": "جميع المتقدمين الحاصلين على 50% في اللغة العربية",
+    "reason": "PDF 2 p11: clipped Arabic-subject cell; complete condition confirmed in PDF 1 p12."
+  },
+  {
+    "branch": "scientific",
+    "announcement": 2,
+    "page": 11,
+    "row": 5,
+    "field": "disability",
+    "original": "جميع المتقدين لمن حصل",
+    "replacement": "جميع المتقدمين الحاصلين على 50% في اللغة العربية",
+    "reason": "PDF 2 p11: clipped Arabic-subject cell; complete condition confirmed in PDF 1 p12."
+  },
+  {
+    "branch": "scientific",
+    "announcement": 2,
+    "page": 11,
+    "row": 7,
+    "field": "disability",
+    "original": "جميع المتقدين لمن حصل",
+    "replacement": "جميع المتقدمين الحاصلين على 50% في اللغة العربية",
+    "reason": "PDF 2 p11: clipped Arabic-subject cell; complete condition confirmed in PDF 1 p12."
+  },
+  {
+    "branch": "literary",
+    "announcement": 4,
+    "page": 1,
+    "row": 4,
+    "field": "disabilityCondition",
+    "original": "",
+    "replacement": "سمعية لا تزيد عن 80%، أو بصرية مهما كانت درجتها، أو حركية مهما كانت درجتها.",
+    "reason": "Complete merged medical cell, visually checked against PDF 4 and PDF 3 pp9–10."
+  },
+  {
+    "branch": "literary",
+    "announcement": 4,
+    "page": 1,
+    "row": 6,
+    "field": "disabilityCondition",
+    "original": "",
+    "replacement": "سمعية لا تزيد عن 80%، أو بصرية مهما كانت درجتها، أو حركية مهما كانت درجتها.",
+    "reason": "Complete merged medical cell, visually checked against PDF 4 and PDF 3 pp9–10."
+  },
+  {
+    "branch": "literary",
+    "announcement": 4,
+    "page": 1,
+    "row": 8,
+    "field": "disabilityCondition",
+    "original": "",
+    "replacement": "سمعية لا تزيد عن 80%، أو بصرية مهما كانت درجتها، أو حركية مهما كانت درجتها.",
+    "reason": "Complete merged medical cell, visually checked against PDF 4 and PDF 3 pp9–10."
+  },
+  {
+    "branch": "literary",
+    "announcement": 4,
+    "page": 1,
+    "row": 10,
+    "field": "disability",
+    "original": "",
+    "replacement": "جميع المتقدمين الحاصلين على 50% في اللغة العربية",
+    "reason": "Visually reviewed merged language cell fragmented by detected grid lines."
+  },
+  {
+    "branch": "literary",
+    "announcement": 4,
+    "page": 1,
+    "row": 10,
+    "field": "disabilityCondition",
+    "original": "",
+    "replacement": "سمعية لا تزيد عن 80%، أو بصرية مهما كانت درجتها، أو حركية مهما كانت درجتها.",
+    "reason": "Complete merged medical cell, visually checked against PDF 4 and PDF 3 pp9–10."
+  },
+  {
+    "branch": "literary",
+    "announcement": 4,
+    "page": 1,
+    "row": 11,
+    "field": "disability",
+    "original": "",
+    "replacement": "جميع المتقدمين الحاصلين على 50% في اللغة العربية",
+    "reason": "Visually reviewed merged language cell fragmented by detected grid lines."
+  },
+  {
+    "branch": "literary",
+    "announcement": 4,
+    "page": 1,
+    "row": 11,
+    "field": "disabilityCondition",
+    "original": "",
+    "replacement": "سمعية لا تزيد عن 80%، أو بصرية مهما كانت درجتها، أو حركية مهما كانت درجتها.",
+    "reason": "Complete merged medical cell, visually checked against PDF 4 and PDF 3 pp9–10."
+  },
+  {
+    "branch": "literary",
+    "announcement": 4,
+    "page": 1,
+    "row": 12,
+    "field": "disability",
+    "original": "",
+    "replacement": "جميع المتقدمين الحاصلين على 50% في اللغة العربية",
+    "reason": "Visually reviewed merged language cell fragmented by detected grid lines."
+  },
+  {
+    "branch": "literary",
+    "announcement": 4,
+    "page": 1,
+    "row": 12,
+    "field": "disabilityCondition",
+    "original": "",
+    "replacement": "سمعية لا تزيد عن 80%، أو بصرية مهما كانت درجتها، أو حركية مهما كانت درجتها.",
+    "reason": "Complete merged medical cell, visually checked against PDF 4 and PDF 3 pp9–10."
+  },
+  {
+    "branch": "literary",
+    "announcement": 4,
+    "page": 1,
+    "row": 13,
+    "field": "disability",
+    "original": "جميع المتقدمي ى للقبول وفق",
+    "replacement": "جميع المتقدمين الحاصلين على 50% في اللغة العربية",
+    "reason": "Visually reviewed merged language cell fragmented by detected grid lines."
+  },
+  {
+    "branch": "literary",
+    "announcement": 4,
+    "page": 1,
+    "row": 13,
+    "field": "disabilityCondition",
+    "original": "",
+    "replacement": "سمعية لا تزيد عن 80%، أو بصرية مهما كانت درجتها، أو حركية مهما كانت درجتها.",
+    "reason": "Complete merged medical cell, visually checked against PDF 4 and PDF 3 pp9–10."
+  },
+  {
+    "branch": "literary",
+    "announcement": 4,
+    "page": 1,
+    "row": 14,
+    "field": "disability",
+    "original": "العالمة",
+    "replacement": "جميع المتقدمين الحاصلين على 50% في اللغة العربية",
+    "reason": "Visually reviewed merged language cell fragmented by detected grid lines."
+  },
+  {
+    "branch": "literary",
+    "announcement": 4,
+    "page": 1,
+    "row": 14,
+    "field": "disabilityCondition",
+    "original": "",
+    "replacement": "سمعية لا تزيد عن 80%، أو بصرية مهما كانت درجتها، أو حركية مهما كانت درجتها.",
+    "reason": "Complete merged medical cell, visually checked against PDF 4 and PDF 3 pp9–10."
+  },
+  {
+    "branch": "literary",
+    "announcement": 4,
+    "page": 1,
+    "row": 15,
+    "field": "disability",
+    "original": "االختصاصية لمن حصل فى",
+    "replacement": "جميع المتقدمين الحاصلين على 50% في اللغة العربية",
+    "reason": "Visually reviewed merged language cell fragmented by detected grid lines."
+  },
+  {
+    "branch": "literary",
+    "announcement": 4,
+    "page": 1,
+    "row": 15,
+    "field": "disabilityCondition",
+    "original": "",
+    "replacement": "سمعية لا تزيد عن 80%، أو بصرية مهما كانت درجتها، أو حركية مهما كانت درجتها.",
+    "reason": "Complete merged medical cell, visually checked against PDF 4 and PDF 3 pp9–10."
+  },
+  {
+    "branch": "literary",
+    "announcement": 4,
+    "page": 1,
+    "row": 16,
+    "field": "disability",
+    "original": "مادة اللغة",
+    "replacement": "جميع المتقدمين الحاصلين على 50% في اللغة العربية",
+    "reason": "Visually reviewed merged language cell fragmented by detected grid lines."
+  },
+  {
+    "branch": "literary",
+    "announcement": 4,
+    "page": 1,
+    "row": 16,
+    "field": "disabilityCondition",
+    "original": "",
+    "replacement": "سمعية لا تزيد عن 80%، أو بصرية مهما كانت درجتها، أو حركية مهما كانت درجتها.",
+    "reason": "Complete merged medical cell, visually checked against PDF 4 and PDF 3 pp9–10."
+  },
+  {
+    "branch": "literary",
+    "announcement": 4,
+    "page": 1,
+    "row": 17,
+    "field": "disability",
+    "original": "العربية عىل 50% درجة",
+    "replacement": "جميع المتقدمين الحاصلين على 50% في اللغة العربية",
+    "reason": "Visually reviewed merged language cell fragmented by detected grid lines."
+  },
+  {
+    "branch": "literary",
+    "announcement": 4,
+    "page": 1,
+    "row": 17,
+    "field": "disabilityCondition",
+    "original": "",
+    "replacement": "سمعية لا تزيد عن 80%، أو بصرية مهما كانت درجتها، أو حركية مهما كانت درجتها.",
+    "reason": "Complete merged medical cell, visually checked against PDF 4 and PDF 3 pp9–10."
+  },
+  {
+    "branch": "literary",
+    "announcement": 4,
+    "page": 1,
+    "row": 18,
+    "field": "disability",
+    "original": "",
+    "replacement": "جميع المتقدمين الحاصلين على 50% في اللغة العربية",
+    "reason": "Visually reviewed merged language cell fragmented by detected grid lines."
+  },
+  {
+    "branch": "literary",
+    "announcement": 4,
+    "page": 1,
+    "row": 18,
+    "field": "disabilityCondition",
+    "original": "",
+    "replacement": "سمعية لا تزيد عن 80%، أو بصرية مهما كانت درجتها، أو حركية مهما كانت درجتها.",
+    "reason": "Complete merged medical cell, visually checked against PDF 4 and PDF 3 pp9–10."
+  },
+  {
+    "branch": "literary",
+    "announcement": 4,
+    "page": 1,
+    "row": 19,
+    "field": "disability",
+    "original": "",
+    "replacement": "جميع المتقدمين الحاصلين على 50% في اللغة العربية",
+    "reason": "Visually reviewed merged language cell fragmented by detected grid lines."
+  },
+  {
+    "branch": "literary",
+    "announcement": 4,
+    "page": 1,
+    "row": 19,
+    "field": "disabilityCondition",
+    "original": "",
+    "replacement": "سمعية لا تزيد عن 80%، أو بصرية مهما كانت درجتها، أو حركية مهما كانت درجتها.",
+    "reason": "Complete merged medical cell, visually checked against PDF 4 and PDF 3 pp9–10."
+  },
+  {
+    "branch": "literary",
+    "announcement": 4,
+    "page": 1,
+    "row": 20,
+    "field": "disability",
+    "original": "",
+    "replacement": "جميع المتقدمين الحاصلين على 50% في اللغة العربية",
+    "reason": "Visually reviewed merged language cell fragmented by detected grid lines."
+  },
+  {
+    "branch": "literary",
+    "announcement": 4,
+    "page": 1,
+    "row": 20,
+    "field": "disabilityCondition",
+    "original": "",
+    "replacement": "سمعية لا تزيد عن 80%، أو بصرية مهما كانت درجتها، أو حركية مهما كانت درجتها.",
+    "reason": "Complete merged medical cell, visually checked against PDF 4 and PDF 3 pp9–10."
+  },
+  {
+    "branch": "literary",
+    "announcement": 4,
+    "page": 1,
+    "row": 22,
+    "field": "disabilityCondition",
+    "original": "سمعية( ال تزيد عن80 ٪ )",
+    "replacement": "سمعية لا تزيد عن 80%، أو بصرية مهما كانت درجتها، أو حركية مهما كانت درجتها.",
+    "reason": "Complete merged medical cell, visually checked against PDF 4 and PDF 3 pp9–10."
+  },
+  {
+    "branch": "literary",
+    "announcement": 4,
+    "page": 1,
+    "row": 24,
+    "field": "disabilityCondition",
+    "original": "اإلعاقة)",
+    "replacement": "سمعية لا تزيد عن 80%، أو بصرية مهما كانت درجتها، أو حركية مهما كانت درجتها.",
+    "reason": "Complete merged medical cell, visually checked against PDF 4 and PDF 3 pp9–10."
+  },
+  {
+    "branch": "literary",
+    "announcement": 4,
+    "page": 1,
+    "row": 26,
+    "field": "disabilityCondition",
+    "original": "",
+    "replacement": "سمعية لا تزيد عن 80%، أو بصرية مهما كانت درجتها، أو حركية مهما كانت درجتها.",
+    "reason": "Complete merged medical cell, visually checked against PDF 4 and PDF 3 pp9–10."
+  },
+  {
+    "branch": "literary",
+    "announcement": 4,
+    "page": 1,
+    "row": 28,
+    "field": "disabilityCondition",
+    "original": "",
+    "replacement": "سمعية لا تزيد عن 80%، أو بصرية مهما كانت درجتها، أو حركية مهما كانت درجتها.",
+    "reason": "Complete merged medical cell, visually checked against PDF 4 and PDF 3 pp9–10."
+  },
+  {
+    "branch": "literary",
+    "announcement": 4,
+    "page": 1,
+    "row": 29,
+    "field": "disability",
+    "original": "جميع المتقدمي لمن حصل عىل 50% ي مادة درجة ف اللغة اإلنكلي نية",
+    "replacement": "جميع المتقدمين لمن حصل على 50% ي مادة درجة ف اللغة الإنكليزية",
+    "reason": "Visually checked English-language font-map correction."
+  },
+  {
+    "branch": "literary",
+    "announcement": 4,
+    "page": 1,
+    "row": 29,
+    "field": "disabilityCondition",
+    "original": "",
+    "replacement": "سمعية لا تزيد عن 80%، أو بصرية مهما كانت درجتها، أو حركية مهما كانت درجتها.",
+    "reason": "Complete merged medical cell, visually checked against PDF 4 and PDF 3 pp9–10."
+  },
+  {
+    "branch": "literary",
+    "announcement": 4,
+    "page": 1,
+    "row": 31,
+    "field": "disability",
+    "original": "",
+    "replacement": "جميع المتقدمين الحاصلين على 50% في اللغة الإنكليزية",
+    "reason": "Visually reviewed merged language cell fragmented by detected grid lines."
+  },
+  {
+    "branch": "literary",
+    "announcement": 4,
+    "page": 1,
+    "row": 31,
+    "field": "disabilityCondition",
+    "original": "",
+    "replacement": "سمعية لا تزيد عن 80%، أو بصرية مهما كانت درجتها، أو حركية مهما كانت درجتها.",
+    "reason": "Complete merged medical cell, visually checked against PDF 4 and PDF 3 pp9–10."
+  },
+  {
+    "branch": "literary",
+    "announcement": 4,
+    "page": 1,
+    "row": 32,
+    "field": "disability",
+    "original": "",
+    "replacement": "جميع المتقدمين الحاصلين على 50% في اللغة الإنكليزية",
+    "reason": "Visually reviewed merged language cell fragmented by detected grid lines."
+  },
+  {
+    "branch": "literary",
+    "announcement": 4,
+    "page": 1,
+    "row": 32,
+    "field": "disabilityCondition",
+    "original": "",
+    "replacement": "سمعية لا تزيد عن 80%، أو بصرية مهما كانت درجتها، أو حركية مهما كانت درجتها.",
+    "reason": "Complete merged medical cell, visually checked against PDF 4 and PDF 3 pp9–10."
+  },
+  {
+    "branch": "literary",
+    "announcement": 4,
+    "page": 1,
+    "row": 33,
+    "field": "disability",
+    "original": "",
+    "replacement": "جميع المتقدمين الحاصلين على 50% في اللغة الإنكليزية",
+    "reason": "Visually reviewed merged language cell fragmented by detected grid lines."
+  },
+  {
+    "branch": "literary",
+    "announcement": 4,
+    "page": 1,
+    "row": 33,
+    "field": "disabilityCondition",
+    "original": "",
+    "replacement": "سمعية لا تزيد عن 80%، أو بصرية مهما كانت درجتها، أو حركية مهما كانت درجتها.",
+    "reason": "Complete merged medical cell, visually checked against PDF 4 and PDF 3 pp9–10."
+  },
+  {
+    "branch": "literary",
+    "announcement": 4,
+    "page": 1,
+    "row": 34,
+    "field": "disability",
+    "original": "جميع ن",
+    "replacement": "جميع المتقدمين الحاصلين على 50% في اللغة الإنكليزية",
+    "reason": "Visually reviewed merged language cell fragmented by detected grid lines."
+  },
+  {
+    "branch": "literary",
+    "announcement": 4,
+    "page": 1,
+    "row": 34,
+    "field": "disabilityCondition",
+    "original": "",
+    "replacement": "سمعية لا تزيد عن 80%، أو بصرية مهما كانت درجتها، أو حركية مهما كانت درجتها.",
+    "reason": "Complete merged medical cell, visually checked against PDF 4 and PDF 3 pp9–10."
+  },
+  {
+    "branch": "literary",
+    "announcement": 4,
+    "page": 1,
+    "row": 35,
+    "field": "disability",
+    "original": "المتقدمي لمن حصل عىل",
+    "replacement": "جميع المتقدمين الحاصلين على 50% في اللغة الإنكليزية",
+    "reason": "Visually reviewed merged language cell fragmented by detected grid lines."
+  },
+  {
+    "branch": "literary",
+    "announcement": 4,
+    "page": 1,
+    "row": 35,
+    "field": "disabilityCondition",
+    "original": "",
+    "replacement": "سمعية لا تزيد عن 80%، أو بصرية مهما كانت درجتها، أو حركية مهما كانت درجتها.",
+    "reason": "Complete merged medical cell, visually checked against PDF 4 and PDF 3 pp9–10."
+  },
+  {
+    "branch": "literary",
+    "announcement": 4,
+    "page": 1,
+    "row": 36,
+    "field": "disability",
+    "original": "50% ي درجة ف",
+    "replacement": "جميع المتقدمين الحاصلين على 50% في اللغة الإنكليزية",
+    "reason": "Visually reviewed merged language cell fragmented by detected grid lines."
+  },
+  {
+    "branch": "literary",
+    "announcement": 4,
+    "page": 1,
+    "row": 36,
+    "field": "disabilityCondition",
+    "original": "",
+    "replacement": "سمعية لا تزيد عن 80%، أو بصرية مهما كانت درجتها، أو حركية مهما كانت درجتها.",
+    "reason": "Complete merged medical cell, visually checked against PDF 4 and PDF 3 pp9–10."
+  },
+  {
+    "branch": "literary",
+    "announcement": 4,
+    "page": 1,
+    "row": 37,
+    "field": "disability",
+    "original": "مادة اللغة اإلنكلي نية",
+    "replacement": "جميع المتقدمين الحاصلين على 50% في اللغة الإنكليزية",
+    "reason": "Visually reviewed merged language cell fragmented by detected grid lines."
+  },
+  {
+    "branch": "literary",
+    "announcement": 4,
+    "page": 1,
+    "row": 37,
+    "field": "disabilityCondition",
+    "original": "",
+    "replacement": "سمعية لا تزيد عن 80%، أو بصرية مهما كانت درجتها، أو حركية مهما كانت درجتها.",
+    "reason": "Complete merged medical cell, visually checked against PDF 4 and PDF 3 pp9–10."
+  },
+  {
+    "branch": "literary",
+    "announcement": 4,
+    "page": 1,
+    "row": 38,
+    "field": "disability",
+    "original": "",
+    "replacement": "جميع المتقدمين الحاصلين على 50% في اللغة الإنكليزية",
+    "reason": "Visually reviewed merged language cell fragmented by detected grid lines."
+  },
+  {
+    "branch": "literary",
+    "announcement": 4,
+    "page": 1,
+    "row": 38,
+    "field": "disabilityCondition",
+    "original": "",
+    "replacement": "سمعية لا تزيد عن 80%، أو بصرية مهما كانت درجتها، أو حركية مهما كانت درجتها.",
+    "reason": "Complete merged medical cell, visually checked against PDF 4 and PDF 3 pp9–10."
+  },
+  {
+    "branch": "literary",
+    "announcement": 4,
+    "page": 1,
+    "row": 39,
+    "field": "disability",
+    "original": "",
+    "replacement": "جميع المتقدمين الحاصلين على 50% في اللغة الإنكليزية",
+    "reason": "Visually reviewed merged language cell fragmented by detected grid lines."
+  },
+  {
+    "branch": "literary",
+    "announcement": 4,
+    "page": 1,
+    "row": 39,
+    "field": "disabilityCondition",
+    "original": "",
+    "replacement": "سمعية لا تزيد عن 80%، أو بصرية مهما كانت درجتها، أو حركية مهما كانت درجتها.",
+    "reason": "Complete merged medical cell, visually checked against PDF 4 and PDF 3 pp9–10."
+  },
+  {
+    "branch": "literary",
+    "announcement": 4,
+    "page": 2,
+    "row": 3,
+    "field": "disability",
+    "original": "جميع المتقدمي ن لمن حصل عىل50 % درجة ي مادة اللغة اإلنكلي نية نف",
+    "replacement": "جميع المتقدمين ن لمن حصل على50 % درجة ي مادة اللغة الإنكليزية نف",
+    "reason": "Visually checked English-language font-map correction."
+  },
+  {
+    "branch": "literary",
+    "announcement": 4,
+    "page": 2,
+    "row": 3,
+    "field": "disabilityCondition",
+    "original": "",
+    "replacement": "سمعية لا تزيد عن 80%، أو بصرية مهما كانت درجتها، أو حركية مهما كانت درجتها.",
+    "reason": "Complete merged medical cell, visually checked against PDF 4 and PDF 3 pp9–10."
+  },
+  {
+    "branch": "literary",
+    "announcement": 4,
+    "page": 2,
+    "row": 4,
+    "field": "disability",
+    "original": "جميع المتقدمي ن لمن حصل عىل50 % درجة ي مادة اللغة اإلنكلي نية نف",
+    "replacement": "جميع المتقدمين ن لمن حصل على50 % درجة ي مادة اللغة الإنكليزية نف",
+    "reason": "Visually checked English-language font-map correction."
+  },
+  {
+    "branch": "literary",
+    "announcement": 4,
+    "page": 2,
+    "row": 4,
+    "field": "disabilityCondition",
+    "original": "",
+    "replacement": "سمعية لا تزيد عن 80%، أو بصرية مهما كانت درجتها، أو حركية مهما كانت درجتها.",
+    "reason": "Complete merged medical cell, visually checked against PDF 4 and PDF 3 pp9–10."
+  },
+  {
+    "branch": "literary",
+    "announcement": 4,
+    "page": 2,
+    "row": 6,
+    "field": "disability",
+    "original": "جميع المتقدمي ن لمن حصل عىل50 % ي درجة ف مادة اللغة اإلنكلي نية",
+    "replacement": "جميع المتقدمين ن لمن حصل على50 % ي درجة ف مادة اللغة الإنكليزية",
+    "reason": "Visually checked English-language font-map correction."
+  },
+  {
+    "branch": "literary",
+    "announcement": 4,
+    "page": 2,
+    "row": 6,
+    "field": "disabilityCondition",
+    "original": "",
+    "replacement": "سمعية لا تزيد عن 80%، أو بصرية مهما كانت درجتها، أو حركية مهما كانت درجتها.",
+    "reason": "Complete merged medical cell, visually checked against PDF 4 and PDF 3 pp9–10."
+  },
+  {
+    "branch": "literary",
+    "announcement": 4,
+    "page": 2,
+    "row": 7,
+    "field": "disabilityCondition",
+    "original": "",
+    "replacement": "سمعية لا تزيد عن 80%، أو بصرية مهما كانت درجتها، أو حركية مهما كانت درجتها.",
+    "reason": "Complete merged medical cell, visually checked against PDF 4 and PDF 3 pp9–10."
+  },
+  {
+    "branch": "literary",
+    "announcement": 4,
+    "page": 2,
+    "row": 9,
+    "field": "disability",
+    "original": "جميع",
+    "replacement": "جميع المتقدمين الحاصلين على 50% في اللغة الفرنسية",
+    "reason": "Visually reviewed merged language cell fragmented by detected grid lines."
+  },
+  {
+    "branch": "literary",
+    "announcement": 4,
+    "page": 2,
+    "row": 9,
+    "field": "disabilityCondition",
+    "original": "",
+    "replacement": "سمعية لا تزيد عن 80%، أو بصرية مهما كانت درجتها، أو حركية مهما كانت درجتها.",
+    "reason": "Complete merged medical cell, visually checked against PDF 4 and PDF 3 pp9–10."
+  },
+  {
+    "branch": "literary",
+    "announcement": 4,
+    "page": 2,
+    "row": 10,
+    "field": "disability",
+    "original": "المتقدمي ى لمن",
+    "replacement": "جميع المتقدمين الحاصلين على 50% في اللغة الفرنسية",
+    "reason": "Visually reviewed merged language cell fragmented by detected grid lines."
+  },
+  {
+    "branch": "literary",
+    "announcement": 4,
+    "page": 2,
+    "row": 10,
+    "field": "disabilityCondition",
+    "original": "- سمعية( ال تزيد عن80 ٪ )",
+    "replacement": "سمعية لا تزيد عن 80%، أو بصرية مهما كانت درجتها، أو حركية مهما كانت درجتها.",
+    "reason": "Complete merged medical cell, visually checked against PDF 4 and PDF 3 pp9–10."
+  },
+  {
+    "branch": "literary",
+    "announcement": 4,
+    "page": 2,
+    "row": 11,
+    "field": "disability",
+    "original": "حصل عىل 50% ي درجة ف",
+    "replacement": "جميع المتقدمين الحاصلين على 50% في اللغة الفرنسية",
+    "reason": "Visually reviewed merged language cell fragmented by detected grid lines."
+  },
+  {
+    "branch": "literary",
+    "announcement": 4,
+    "page": 2,
+    "row": 11,
+    "field": "disabilityCondition",
+    "original": "- برصية(مهما كانت درجة",
+    "replacement": "سمعية لا تزيد عن 80%، أو بصرية مهما كانت درجتها، أو حركية مهما كانت درجتها.",
+    "reason": "Complete merged medical cell, visually checked against PDF 4 and PDF 3 pp9–10."
+  },
+  {
+    "branch": "literary",
+    "announcement": 4,
+    "page": 2,
+    "row": 12,
+    "field": "disability",
+    "original": "مادة اللغة",
+    "replacement": "جميع المتقدمين الحاصلين على 50% في اللغة الفرنسية",
+    "reason": "Visually reviewed merged language cell fragmented by detected grid lines."
+  },
+  {
+    "branch": "literary",
+    "announcement": 4,
+    "page": 2,
+    "row": 12,
+    "field": "disabilityCondition",
+    "original": "اإلعاقة) - حركية(مهما كانت درجة",
+    "replacement": "سمعية لا تزيد عن 80%، أو بصرية مهما كانت درجتها، أو حركية مهما كانت درجتها.",
+    "reason": "Complete merged medical cell, visually checked against PDF 4 and PDF 3 pp9–10."
+  },
+  {
+    "branch": "literary",
+    "announcement": 4,
+    "page": 2,
+    "row": 13,
+    "field": "disability",
+    "original": "الفرنسية",
+    "replacement": "جميع المتقدمين الحاصلين على 50% في اللغة الفرنسية",
+    "reason": "Visually reviewed merged language cell fragmented by detected grid lines."
+  },
+  {
+    "branch": "literary",
+    "announcement": 4,
+    "page": 2,
+    "row": 13,
+    "field": "disabilityCondition",
+    "original": "اإلعاقة)",
+    "replacement": "سمعية لا تزيد عن 80%، أو بصرية مهما كانت درجتها، أو حركية مهما كانت درجتها.",
+    "reason": "Complete merged medical cell, visually checked against PDF 4 and PDF 3 pp9–10."
+  },
+  {
+    "branch": "literary",
+    "announcement": 4,
+    "page": 2,
+    "row": 15,
+    "field": "disabilityCondition",
+    "original": "",
+    "replacement": "سمعية لا تزيد عن 80%، أو بصرية مهما كانت درجتها، أو حركية مهما كانت درجتها.",
+    "reason": "Complete merged medical cell, visually checked against PDF 4 and PDF 3 pp9–10."
+  },
+  {
+    "branch": "literary",
+    "announcement": 4,
+    "page": 2,
+    "row": 17,
+    "field": "disabilityCondition",
+    "original": "",
+    "replacement": "سمعية لا تزيد عن 80%، أو بصرية مهما كانت درجتها، أو حركية مهما كانت درجتها.",
+    "reason": "Complete merged medical cell, visually checked against PDF 4 and PDF 3 pp9–10."
+  },
+  {
+    "branch": "literary",
+    "announcement": 4,
+    "page": 2,
+    "row": 19,
+    "field": "disabilityCondition",
+    "original": "",
+    "replacement": "سمعية لا تزيد عن 80%، أو بصرية مهما كانت درجتها، أو حركية مهما كانت درجتها.",
+    "reason": "Complete merged medical cell, visually checked against PDF 4 and PDF 3 pp9–10."
+  },
+  {
+    "branch": "literary",
+    "announcement": 4,
+    "page": 2,
+    "row": 20,
+    "field": "disabilityCondition",
+    "original": "",
+    "replacement": "سمعية لا تزيد عن 80%، أو بصرية مهما كانت درجتها، أو حركية مهما كانت درجتها.",
+    "reason": "Complete merged medical cell, visually checked against PDF 4 and PDF 3 pp9–10."
+  },
+  {
+    "branch": "literary",
+    "announcement": 4,
+    "page": 2,
+    "row": 21,
+    "field": "disabilityCondition",
+    "original": "",
+    "replacement": "سمعية لا تزيد عن 80%، أو بصرية مهما كانت درجتها، أو حركية مهما كانت درجتها.",
+    "reason": "Complete merged medical cell, visually checked against PDF 4 and PDF 3 pp9–10."
+  },
+  {
+    "branch": "literary",
+    "announcement": 4,
+    "page": 2,
+    "row": 22,
+    "field": "disabilityCondition",
+    "original": "",
+    "replacement": "سمعية لا تزيد عن 80%، أو بصرية مهما كانت درجتها، أو حركية مهما كانت درجتها.",
+    "reason": "Complete merged medical cell, visually checked against PDF 4 and PDF 3 pp9–10."
+  },
+  {
+    "branch": "literary",
+    "announcement": 4,
+    "page": 2,
+    "row": 23,
+    "field": "disabilityCondition",
+    "original": "",
+    "replacement": "سمعية لا تزيد عن 80%، أو بصرية مهما كانت درجتها، أو حركية مهما كانت درجتها.",
+    "reason": "Complete merged medical cell, visually checked against PDF 4 and PDF 3 pp9–10."
+  },
+  {
+    "branch": "literary",
+    "announcement": 4,
+    "page": 2,
+    "row": 29,
+    "field": "disability",
+    "original": "",
+    "replacement": "جميع المتقدمين",
+    "reason": "Visually reviewed merged all-applicant cell; retain regional eligibility where the row names a quota."
+  },
+  {
+    "branch": "literary",
+    "announcement": 4,
+    "page": 2,
+    "row": 29,
+    "field": "disabilityCondition",
+    "original": "",
+    "replacement": "سمعية لا تزيد عن 80%، أو بصرية مهما كانت درجتها، أو حركية مهما كانت درجتها.",
+    "reason": "Complete merged medical cell, visually checked against PDF 4 and PDF 3 pp9–10."
+  },
+  {
+    "branch": "literary",
+    "announcement": 4,
+    "page": 2,
+    "row": 31,
+    "field": "disabilityCondition",
+    "original": "برصية( مهما كانت درجة اإلعاقة) حركية( مهما كانت درجة اإلعاقة)",
+    "replacement": "سمعية لا تزيد عن 80%، أو بصرية مهما كانت درجتها، أو حركية مهما كانت درجتها.",
+    "reason": "Complete merged medical cell, visually checked against PDF 4 and PDF 3 pp9–10."
+  },
+  {
+    "branch": "literary",
+    "announcement": 4,
+    "page": 2,
+    "row": 32,
+    "field": "disabilityCondition",
+    "original": "برصية( مهما كانت درجة اإلعاقة) حركية( مهما كانت درجة اإلعاقة)",
+    "replacement": "سمعية لا تزيد عن 80%، أو بصرية مهما كانت درجتها، أو حركية مهما كانت درجتها.",
+    "reason": "Complete merged medical cell, visually checked against PDF 4 and PDF 3 pp9–10."
+  },
+  {
+    "branch": "literary",
+    "announcement": 4,
+    "page": 2,
+    "row": 33,
+    "field": "disabilityCondition",
+    "original": "برصية( مهما كانت درجة اإلعاقة) حركية( مهما كانت درجة اإلعاقة)",
+    "replacement": "سمعية لا تزيد عن 80%، أو بصرية مهما كانت درجتها، أو حركية مهما كانت درجتها.",
+    "reason": "Complete merged medical cell, visually checked against PDF 4 and PDF 3 pp9–10."
+  },
+  {
+    "branch": "literary",
+    "announcement": 4,
+    "page": 2,
+    "row": 34,
+    "field": "disabilityCondition",
+    "original": "برصية( مهما كانت درجة اإلعاقة) حركية( مهما كانت درجة اإلعاقة)",
+    "replacement": "سمعية لا تزيد عن 80%، أو بصرية مهما كانت درجتها، أو حركية مهما كانت درجتها.",
+    "reason": "Complete merged medical cell, visually checked against PDF 4 and PDF 3 pp9–10."
+  },
+  {
+    "branch": "literary",
+    "announcement": 4,
+    "page": 2,
+    "row": 35,
+    "field": "disabilityCondition",
+    "original": "برصية( مهما كانت درجة اإلعاقة) حركية( مهما كانت درجة اإلعاقة)",
+    "replacement": "سمعية لا تزيد عن 80%، أو بصرية مهما كانت درجتها، أو حركية مهما كانت درجتها.",
+    "reason": "Complete merged medical cell, visually checked against PDF 4 and PDF 3 pp9–10."
+  },
+  {
+    "branch": "literary",
+    "announcement": 4,
+    "page": 2,
+    "row": 36,
+    "field": "disabilityCondition",
+    "original": "برصية( مهما كانت درجة اإلعاقة) حركية( مهما كانت درجة اإلعاقة)",
+    "replacement": "سمعية لا تزيد عن 80%، أو بصرية مهما كانت درجتها، أو حركية مهما كانت درجتها.",
+    "reason": "Complete merged medical cell, visually checked against PDF 4 and PDF 3 pp9–10."
+  },
+  {
+    "branch": "literary",
+    "announcement": 4,
+    "page": 2,
+    "row": 37,
+    "field": "disabilityCondition",
+    "original": "برصية( مهما كانت درجة اإلعاقة) حركية( مهما كانت درجة اإلعاقة)",
+    "replacement": "سمعية لا تزيد عن 80%، أو بصرية مهما كانت درجتها، أو حركية مهما كانت درجتها.",
+    "reason": "Complete merged medical cell, visually checked against PDF 4 and PDF 3 pp9–10."
+  },
+  {
+    "branch": "literary",
+    "announcement": 4,
+    "page": 2,
+    "row": 38,
+    "field": "disabilityCondition",
+    "original": "برصية( مهما كانت درجة اإلعاقة) حركية( مهما كانت درجة اإلعاقة)",
+    "replacement": "سمعية لا تزيد عن 80%، أو بصرية مهما كانت درجتها، أو حركية مهما كانت درجتها.",
+    "reason": "Complete merged medical cell, visually checked against PDF 4 and PDF 3 pp9–10."
+  },
+  {
+    "branch": "literary",
+    "announcement": 4,
+    "page": 2,
+    "row": 40,
+    "field": "disabilityCondition",
+    "original": "",
+    "replacement": "سمعية لا تزيد عن 80%، أو بصرية مهما كانت درجتها، أو حركية مهما كانت درجتها.",
+    "reason": "Complete merged medical cell, visually checked against PDF 4 and PDF 3 pp9–10."
+  },
+  {
+    "branch": "literary",
+    "announcement": 4,
+    "page": 2,
+    "row": 42,
+    "field": "disabilityCondition",
+    "original": "",
+    "replacement": "سمعية لا تزيد عن 80%، أو بصرية مهما كانت درجتها، أو حركية مهما كانت درجتها.",
+    "reason": "Complete merged medical cell, visually checked against PDF 4 and PDF 3 pp9–10."
+  },
+  {
+    "branch": "literary",
+    "announcement": 4,
+    "page": 2,
+    "row": 43,
+    "field": "disabilityCondition",
+    "original": "",
+    "replacement": "سمعية لا تزيد عن 80%، أو بصرية مهما كانت درجتها، أو حركية مهما كانت درجتها.",
+    "reason": "Complete merged medical cell, visually checked against PDF 4 and PDF 3 pp9–10."
+  },
+  {
+    "branch": "literary",
+    "announcement": 4,
+    "page": 2,
+    "row": 44,
+    "field": "disabilityCondition",
+    "original": "",
+    "replacement": "سمعية لا تزيد عن 80%، أو بصرية مهما كانت درجتها، أو حركية مهما كانت درجتها.",
+    "reason": "Complete merged medical cell, visually checked against PDF 4 and PDF 3 pp9–10."
+  },
+  {
+    "branch": "literary",
+    "announcement": 4,
+    "page": 2,
+    "row": 45,
+    "field": "disabilityCondition",
+    "original": "",
+    "replacement": "سمعية لا تزيد عن 80%، أو بصرية مهما كانت درجتها، أو حركية مهما كانت درجتها.",
+    "reason": "Complete merged medical cell, visually checked against PDF 4 and PDF 3 pp9–10."
+  },
+  {
+    "branch": "literary",
+    "announcement": 4,
+    "page": 3,
+    "row": 3,
+    "field": "disabilityCondition",
+    "original": "",
+    "replacement": "سمعية لا تزيد عن 80%، أو بصرية مهما كانت درجتها، أو حركية مهما كانت درجتها.",
+    "reason": "Complete merged medical cell, visually checked against PDF 4 and PDF 3 pp9–10."
+  },
+  {
+    "branch": "literary",
+    "announcement": 4,
+    "page": 3,
+    "row": 5,
+    "field": "disabilityCondition",
+    "original": "سمعية( ال تزيد عن80 ٪ ) برصية( مهما كانت درجة",
+    "replacement": "سمعية لا تزيد عن 80%، أو بصرية مهما كانت درجتها، أو حركية مهما كانت درجتها.",
+    "reason": "Complete merged medical cell, visually checked against PDF 4 and PDF 3 pp9–10."
+  },
+  {
+    "branch": "literary",
+    "announcement": 4,
+    "page": 3,
+    "row": 6,
+    "field": "disabilityCondition",
+    "original": "اإلعاقة) حركية( مهما كانت درجة",
+    "replacement": "سمعية لا تزيد عن 80%، أو بصرية مهما كانت درجتها، أو حركية مهما كانت درجتها.",
+    "reason": "Complete merged medical cell, visually checked against PDF 4 and PDF 3 pp9–10."
+  },
+  {
+    "branch": "literary",
+    "announcement": 4,
+    "page": 3,
+    "row": 7,
+    "field": "disabilityCondition",
+    "original": "اإلعاقة)",
+    "replacement": "سمعية لا تزيد عن 80%، أو بصرية مهما كانت درجتها، أو حركية مهما كانت درجتها.",
+    "reason": "Complete merged medical cell, visually checked against PDF 4 and PDF 3 pp9–10."
+  },
+  {
+    "branch": "literary",
+    "announcement": 4,
+    "page": 3,
+    "row": 27,
+    "field": "disabilityCondition",
+    "original": "",
+    "replacement": "سمعية لا تزيد عن 80%، أو بصرية مهما كانت درجتها، أو حركية مهما كانت درجتها.",
+    "reason": "Complete merged medical cell, visually checked against PDF 4 and PDF 3 pp9–10."
+  },
+  {
+    "branch": "literary",
+    "announcement": 4,
+    "page": 3,
+    "row": 29,
+    "field": "disabilityCondition",
+    "original": "سمعية( ال تزيد عن80 ٪ ) - برصية( مهما كانت درجة اإلعاقة) - حركية( مهما كانت درجة",
+    "replacement": "سمعية لا تزيد عن 80%، أو بصرية مهما كانت درجتها، أو حركية مهما كانت درجتها.",
+    "reason": "Complete merged medical cell, visually checked against PDF 4 and PDF 3 pp9–10."
+  },
+  {
+    "branch": "literary",
+    "announcement": 4,
+    "page": 3,
+    "row": 30,
+    "field": "disabilityCondition",
+    "original": "سمعية( ال تزيد عن80 ٪ ) - برصية( مهما كانت درجة اإلعاقة) - حركية( مهما كانت درجة",
+    "replacement": "سمعية لا تزيد عن 80%، أو بصرية مهما كانت درجتها، أو حركية مهما كانت درجتها.",
+    "reason": "Complete merged medical cell, visually checked against PDF 4 and PDF 3 pp9–10."
+  },
+  {
+    "branch": "literary",
+    "announcement": 4,
+    "page": 3,
+    "row": 31,
+    "field": "disabilityCondition",
+    "original": "سمعية( ال تزيد عن80 ٪ ) - برصية( مهما كانت درجة اإلعاقة) - حركية( مهما كانت درجة",
+    "replacement": "سمعية لا تزيد عن 80%، أو بصرية مهما كانت درجتها، أو حركية مهما كانت درجتها.",
+    "reason": "Complete merged medical cell, visually checked against PDF 4 and PDF 3 pp9–10."
+  },
+  {
+    "branch": "literary",
+    "announcement": 4,
+    "page": 3,
+    "row": 32,
+    "field": "disabilityCondition",
+    "original": "سمعية( ال تزيد عن80 ٪ ) - برصية( مهما كانت درجة اإلعاقة) - حركية( مهما كانت درجة",
+    "replacement": "سمعية لا تزيد عن 80%، أو بصرية مهما كانت درجتها، أو حركية مهما كانت درجتها.",
+    "reason": "Complete merged medical cell, visually checked against PDF 4 and PDF 3 pp9–10."
+  },
+  {
+    "branch": "literary",
+    "announcement": 4,
+    "page": 3,
+    "row": 33,
+    "field": "disabilityCondition",
+    "original": "سمعية( ال تزيد عن80 ٪ ) - برصية( مهما كانت درجة اإلعاقة) - حركية( مهما كانت درجة",
+    "replacement": "سمعية لا تزيد عن 80%، أو بصرية مهما كانت درجتها، أو حركية مهما كانت درجتها.",
+    "reason": "Complete merged medical cell, visually checked against PDF 4 and PDF 3 pp9–10."
+  },
+  {
+    "branch": "literary",
+    "announcement": 4,
+    "page": 3,
+    "row": 34,
+    "field": "disabilityCondition",
+    "original": "سمعية( ال تزيد عن80 ٪ ) - برصية( مهما كانت درجة اإلعاقة) - حركية( مهما كانت درجة",
+    "replacement": "سمعية لا تزيد عن 80%، أو بصرية مهما كانت درجتها، أو حركية مهما كانت درجتها.",
+    "reason": "Complete merged medical cell, visually checked against PDF 4 and PDF 3 pp9–10."
+  },
+  {
+    "branch": "literary",
+    "announcement": 4,
+    "page": 3,
+    "row": 35,
+    "field": "disabilityCondition",
+    "original": "سمعية( ال تزيد عن80 ٪ ) - برصية( مهما كانت درجة اإلعاقة) - حركية( مهما كانت درجة",
+    "replacement": "سمعية لا تزيد عن 80%، أو بصرية مهما كانت درجتها، أو حركية مهما كانت درجتها.",
+    "reason": "Complete merged medical cell, visually checked against PDF 4 and PDF 3 pp9–10."
+  },
+  {
+    "branch": "literary",
+    "announcement": 4,
+    "page": 3,
+    "row": 37,
+    "field": "disabilityCondition",
+    "original": "",
+    "replacement": "سمعية لا تزيد عن 80%، أو بصرية مهما كانت درجتها، أو حركية مهما كانت درجتها.",
+    "reason": "Complete merged medical cell, visually checked against PDF 4 and PDF 3 pp9–10."
+  },
+  {
+    "branch": "literary",
+    "announcement": 4,
+    "page": 3,
+    "row": 39,
+    "field": "disabilityCondition",
+    "original": "",
+    "replacement": "سمعية لا تزيد عن 80%، أو بصرية مهما كانت درجتها، أو حركية مهما كانت درجتها.",
+    "reason": "Complete merged medical cell, visually checked against PDF 4 and PDF 3 pp9–10."
+  },
+  {
+    "branch": "literary",
+    "announcement": 4,
+    "page": 3,
+    "row": 41,
+    "field": "disabilityCondition",
+    "original": "",
+    "replacement": "سمعية لا تزيد عن 80%، أو بصرية مهما كانت درجتها، أو حركية مهما كانت درجتها.",
+    "reason": "Complete merged medical cell, visually checked against PDF 4 and PDF 3 pp9–10."
+  },
+  {
+    "branch": "literary",
+    "announcement": 4,
+    "page": 4,
+    "row": 4,
+    "field": "disabilityCondition",
+    "original": "",
+    "replacement": "سمعية لا تزيد عن 80%، أو بصرية مهما كانت درجتها، أو حركية مهما كانت درجتها.",
+    "reason": "Complete merged medical cell, visually checked against PDF 4 and PDF 3 pp9–10."
+  },
+  {
+    "branch": "literary",
+    "announcement": 4,
+    "page": 4,
+    "row": 6,
+    "field": "disabilityCondition",
+    "original": "",
+    "replacement": "سمعية لا تزيد عن 80%، أو بصرية مهما كانت درجتها، أو حركية مهما كانت درجتها.",
+    "reason": "Complete merged medical cell, visually checked against PDF 4 and PDF 3 pp9–10."
+  },
+  {
+    "branch": "literary",
+    "announcement": 4,
+    "page": 4,
+    "row": 8,
+    "field": "disabilityCondition",
+    "original": "سمعية( ال تزيد عن80 ٪ ) - برصية( مهما كانت درجة اإلعاقة) – حركية( مهما كانت درجة اإلعاقة",
+    "replacement": "سمعية لا تزيد عن 80%، أو بصرية مهما كانت درجتها، أو حركية مهما كانت درجتها.",
+    "reason": "Complete merged medical cell, visually checked against PDF 4 and PDF 3 pp9–10."
+  },
+  {
+    "branch": "literary",
+    "announcement": 4,
+    "page": 4,
+    "row": 9,
+    "field": "disabilityCondition",
+    "original": "سمعية( ال تزيد عن80 ٪ ) - برصية( مهما كانت درجة اإلعاقة) – حركية( مهما كانت درجة اإلعاقة",
+    "replacement": "سمعية لا تزيد عن 80%، أو بصرية مهما كانت درجتها، أو حركية مهما كانت درجتها.",
+    "reason": "Complete merged medical cell, visually checked against PDF 4 and PDF 3 pp9–10."
+  },
+  {
+    "branch": "literary",
+    "announcement": 4,
+    "page": 4,
+    "row": 10,
+    "field": "disabilityCondition",
+    "original": "سمعية( ال تزيد عن80 ٪ ) - برصية( مهما كانت درجة اإلعاقة) – حركية( مهما كانت درجة اإلعاقة",
+    "replacement": "سمعية لا تزيد عن 80%، أو بصرية مهما كانت درجتها، أو حركية مهما كانت درجتها.",
+    "reason": "Complete merged medical cell, visually checked against PDF 4 and PDF 3 pp9–10."
+  },
+  {
+    "branch": "literary",
+    "announcement": 4,
+    "page": 4,
+    "row": 11,
+    "field": "disabilityCondition",
+    "original": "سمعية( ال تزيد عن80 ٪ ) - برصية( مهما كانت درجة اإلعاقة) – حركية( مهما كانت درجة اإلعاقة",
+    "replacement": "سمعية لا تزيد عن 80%، أو بصرية مهما كانت درجتها، أو حركية مهما كانت درجتها.",
+    "reason": "Complete merged medical cell, visually checked against PDF 4 and PDF 3 pp9–10."
+  },
+  {
+    "branch": "literary",
+    "announcement": 4,
+    "page": 4,
+    "row": 12,
+    "field": "disabilityCondition",
+    "original": "سمعية( ال تزيد عن80 ٪ ) - برصية( مهما كانت درجة اإلعاقة) – حركية( مهما كانت درجة اإلعاقة",
+    "replacement": "سمعية لا تزيد عن 80%، أو بصرية مهما كانت درجتها، أو حركية مهما كانت درجتها.",
+    "reason": "Complete merged medical cell, visually checked against PDF 4 and PDF 3 pp9–10."
+  },
+  {
+    "branch": "literary",
+    "announcement": 4,
+    "page": 4,
+    "row": 13,
+    "field": "disabilityCondition",
+    "original": "سمعية( ال تزيد عن80 ٪ ) - برصية( مهما كانت درجة اإلعاقة) – حركية( مهما كانت درجة اإلعاقة",
+    "replacement": "سمعية لا تزيد عن 80%، أو بصرية مهما كانت درجتها، أو حركية مهما كانت درجتها.",
+    "reason": "Complete merged medical cell, visually checked against PDF 4 and PDF 3 pp9–10."
+  },
+  {
+    "branch": "literary",
+    "announcement": 4,
+    "page": 4,
+    "row": 15,
+    "field": "disabilityCondition",
+    "original": "",
+    "replacement": "سمعية لا تزيد عن 80%، أو بصرية مهما كانت درجتها، أو حركية مهما كانت درجتها.",
+    "reason": "Complete merged medical cell, visually checked against PDF 4 and PDF 3 pp9–10."
+  },
+  {
+    "branch": "literary",
+    "announcement": 4,
+    "page": 4,
+    "row": 17,
+    "field": "disabilityCondition",
+    "original": "",
+    "replacement": "سمعية لا تزيد عن 80%، أو بصرية مهما كانت درجتها، أو حركية مهما كانت درجتها.",
+    "reason": "Complete merged medical cell, visually checked against PDF 4 and PDF 3 pp9–10."
+  },
+  {
+    "branch": "literary",
+    "announcement": 4,
+    "page": 4,
+    "row": 19,
+    "field": "disabilityCondition",
+    "original": "",
+    "replacement": "سمعية لا تزيد عن 80%، أو بصرية مهما كانت درجتها، أو حركية مهما كانت درجتها.",
+    "reason": "Complete merged medical cell, visually checked against PDF 4 and PDF 3 pp9–10."
+  },
+  {
+    "branch": "literary",
+    "announcement": 4,
+    "page": 4,
+    "row": 20,
+    "field": "disability",
+    "original": "",
+    "replacement": "جميع المتقدمين",
+    "reason": "Visually reviewed merged all-applicant cell; retain regional eligibility where the row names a quota."
+  },
+  {
+    "branch": "literary",
+    "announcement": 4,
+    "page": 4,
+    "row": 20,
+    "field": "disabilityCondition",
+    "original": "",
+    "replacement": "سمعية لا تزيد عن 80%، أو بصرية مهما كانت درجتها، أو حركية مهما كانت درجتها.",
+    "reason": "Complete merged medical cell, visually checked against PDF 4 and PDF 3 pp9–10."
+  },
+  {
+    "branch": "literary",
+    "announcement": 4,
+    "page": 4,
+    "row": 21,
+    "field": "disability",
+    "original": "",
+    "replacement": "جميع المتقدمين",
+    "reason": "Visually reviewed merged all-applicant cell; retain regional eligibility where the row names a quota."
+  },
+  {
+    "branch": "literary",
+    "announcement": 4,
+    "page": 4,
+    "row": 21,
+    "field": "disabilityCondition",
+    "original": "",
+    "replacement": "سمعية لا تزيد عن 80%، أو بصرية مهما كانت درجتها، أو حركية مهما كانت درجتها.",
+    "reason": "Complete merged medical cell, visually checked against PDF 4 and PDF 3 pp9–10."
+  },
+  {
+    "branch": "literary",
+    "announcement": 4,
+    "page": 4,
+    "row": 22,
+    "field": "disability",
+    "original": "",
+    "replacement": "جميع المتقدمين",
+    "reason": "Visually reviewed merged all-applicant cell; retain regional eligibility where the row names a quota."
+  },
+  {
+    "branch": "literary",
+    "announcement": 4,
+    "page": 4,
+    "row": 22,
+    "field": "disabilityCondition",
+    "original": "",
+    "replacement": "سمعية لا تزيد عن 80%، أو بصرية مهما كانت درجتها، أو حركية مهما كانت درجتها.",
+    "reason": "Complete merged medical cell, visually checked against PDF 4 and PDF 3 pp9–10."
+  },
+  {
+    "branch": "literary",
+    "announcement": 4,
+    "page": 4,
+    "row": 23,
+    "field": "disability",
+    "original": "",
+    "replacement": "جميع المتقدمين",
+    "reason": "Visually reviewed merged all-applicant cell; retain regional eligibility where the row names a quota."
+  },
+  {
+    "branch": "literary",
+    "announcement": 4,
+    "page": 4,
+    "row": 23,
+    "field": "disabilityCondition",
+    "original": "",
+    "replacement": "سمعية لا تزيد عن 80%، أو بصرية مهما كانت درجتها، أو حركية مهما كانت درجتها.",
+    "reason": "Complete merged medical cell, visually checked against PDF 4 and PDF 3 pp9–10."
+  },
+  {
+    "branch": "literary",
+    "announcement": 4,
+    "page": 4,
+    "row": 24,
+    "field": "disability",
+    "original": "",
+    "replacement": "جميع المتقدمين",
+    "reason": "Visually reviewed merged all-applicant cell; retain regional eligibility where the row names a quota."
+  },
+  {
+    "branch": "literary",
+    "announcement": 4,
+    "page": 4,
+    "row": 24,
+    "field": "disabilityCondition",
+    "original": "",
+    "replacement": "سمعية لا تزيد عن 80%، أو بصرية مهما كانت درجتها، أو حركية مهما كانت درجتها.",
+    "reason": "Complete merged medical cell, visually checked against PDF 4 and PDF 3 pp9–10."
+  },
+  {
+    "branch": "literary",
+    "announcement": 4,
+    "page": 4,
+    "row": 25,
+    "field": "disability",
+    "original": "جميع المتقدمي",
+    "replacement": "جميع المتقدمين",
+    "reason": "Visually reviewed merged all-applicant cell; retain regional eligibility where the row names a quota."
+  },
+  {
+    "branch": "literary",
+    "announcement": 4,
+    "page": 4,
+    "row": 25,
+    "field": "disabilityCondition",
+    "original": "سمعية( ال تزيد عن80 ٪ )",
+    "replacement": "سمعية لا تزيد عن 80%، أو بصرية مهما كانت درجتها، أو حركية مهما كانت درجتها.",
+    "reason": "Complete merged medical cell, visually checked against PDF 4 and PDF 3 pp9–10."
+  },
+  {
+    "branch": "literary",
+    "announcement": 4,
+    "page": 4,
+    "row": 26,
+    "field": "disability",
+    "original": "",
+    "replacement": "جميع المتقدمين",
+    "reason": "Visually reviewed merged all-applicant cell; retain regional eligibility where the row names a quota."
+  },
+  {
+    "branch": "literary",
+    "announcement": 4,
+    "page": 4,
+    "row": 26,
+    "field": "disabilityCondition",
+    "original": "- برصية( مهما كانت درجة اإلعاقة) – حركية( مهما كانت درجة",
+    "replacement": "سمعية لا تزيد عن 80%، أو بصرية مهما كانت درجتها، أو حركية مهما كانت درجتها.",
+    "reason": "Complete merged medical cell, visually checked against PDF 4 and PDF 3 pp9–10."
+  },
+  {
+    "branch": "literary",
+    "announcement": 4,
+    "page": 4,
+    "row": 27,
+    "field": "disability",
+    "original": "",
+    "replacement": "جميع المتقدمين",
+    "reason": "Visually reviewed merged all-applicant cell; retain regional eligibility where the row names a quota."
+  },
+  {
+    "branch": "literary",
+    "announcement": 4,
+    "page": 4,
+    "row": 27,
+    "field": "disabilityCondition",
+    "original": "اإلعاقة",
+    "replacement": "سمعية لا تزيد عن 80%، أو بصرية مهما كانت درجتها، أو حركية مهما كانت درجتها.",
+    "reason": "Complete merged medical cell, visually checked against PDF 4 and PDF 3 pp9–10."
+  },
+  {
+    "branch": "literary",
+    "announcement": 4,
+    "page": 4,
+    "row": 28,
+    "field": "disability",
+    "original": "",
+    "replacement": "جميع المتقدمين",
+    "reason": "Visually reviewed merged all-applicant cell; retain regional eligibility where the row names a quota."
+  },
+  {
+    "branch": "literary",
+    "announcement": 4,
+    "page": 4,
+    "row": 28,
+    "field": "disabilityCondition",
+    "original": "اإلعاقة",
+    "replacement": "سمعية لا تزيد عن 80%، أو بصرية مهما كانت درجتها، أو حركية مهما كانت درجتها.",
+    "reason": "Complete merged medical cell, visually checked against PDF 4 and PDF 3 pp9–10."
+  },
+  {
+    "branch": "literary",
+    "announcement": 4,
+    "page": 4,
+    "row": 29,
+    "field": "disability",
+    "original": "",
+    "replacement": "جميع المتقدمين",
+    "reason": "Visually reviewed merged all-applicant cell; retain regional eligibility where the row names a quota."
+  },
+  {
+    "branch": "literary",
+    "announcement": 4,
+    "page": 4,
+    "row": 29,
+    "field": "disabilityCondition",
+    "original": "اإلعاقة",
+    "replacement": "سمعية لا تزيد عن 80%، أو بصرية مهما كانت درجتها، أو حركية مهما كانت درجتها.",
+    "reason": "Complete merged medical cell, visually checked against PDF 4 and PDF 3 pp9–10."
+  },
+  {
+    "branch": "literary",
+    "announcement": 4,
+    "page": 4,
+    "row": 31,
+    "field": "disabilityCondition",
+    "original": "",
+    "replacement": "سمعية لا تزيد عن 80%، أو بصرية مهما كانت درجتها، أو حركية مهما كانت درجتها.",
+    "reason": "Complete merged medical cell, visually checked against PDF 4 and PDF 3 pp9–10."
+  },
+  {
+    "branch": "literary",
+    "announcement": 4,
+    "page": 4,
+    "row": 32,
+    "field": "disabilityCondition",
+    "original": "سمعية( ال تزيد عن80 ٪ ) - برصية( مهما كانت درجة اإلعاقة) – حركية( مهما كانت درجة اإلعاقة",
+    "replacement": "سمعية لا تزيد عن 80%، أو بصرية مهما كانت درجتها، أو حركية مهما كانت درجتها.",
+    "reason": "Complete merged medical cell, visually checked against PDF 4 and PDF 3 pp9–10."
+  },
+  {
+    "branch": "literary",
+    "announcement": 4,
+    "page": 4,
+    "row": 34,
+    "field": "disabilityCondition",
+    "original": "سمعية( ال تزيد عن80 ٪ ) - برصية( مهما كانت درجة اإلعاقة) – حركية( مهما كانت درجة اإلعاقة",
+    "replacement": "سمعية لا تزيد عن 80%، أو بصرية مهما كانت درجتها، أو حركية مهما كانت درجتها.",
+    "reason": "Complete merged medical cell, visually checked against PDF 4 and PDF 3 pp9–10."
+  },
+  {
+    "branch": "literary",
+    "announcement": 4,
+    "page": 4,
+    "row": 35,
+    "field": "disabilityCondition",
+    "original": "سمعية( ال تزيد عن80 ٪ ) - برصية( مهما كانت درجة اإلعاقة) – حركية( مهما كانت درجة اإلعاقة",
+    "replacement": "سمعية لا تزيد عن 80%، أو بصرية مهما كانت درجتها، أو حركية مهما كانت درجتها.",
+    "reason": "Complete merged medical cell, visually checked against PDF 4 and PDF 3 pp9–10."
+  },
+  {
+    "branch": "literary",
+    "announcement": 4,
+    "page": 4,
+    "row": 36,
+    "field": "disabilityCondition",
+    "original": "سمعية( ال تزيد عن80 ٪ ) - برصية( مهما كانت درجة اإلعاقة) – حركية( مهما كانت درجة اإلعاقة",
+    "replacement": "سمعية لا تزيد عن 80%، أو بصرية مهما كانت درجتها، أو حركية مهما كانت درجتها.",
+    "reason": "Complete merged medical cell, visually checked against PDF 4 and PDF 3 pp9–10."
+  },
+  {
+    "branch": "literary",
+    "announcement": 4,
+    "page": 5,
+    "row": 22,
+    "field": "disability",
+    "original": "",
+    "replacement": "جميع المتقدمين شريطة حيازة 60% في التربية الدينية و60% في اللغة العربية",
+    "reason": "PDF 4 p5: one merged disability cell across the ordinary Sharia faculty rows, distinct from dedicated Sharia-certificate rows."
+  },
+  {
+    "branch": "literary",
+    "announcement": 4,
+    "page": 5,
+    "row": 22,
+    "field": "disabilityCondition",
+    "original": "",
+    "replacement": "سمعية لا تزيد عن 80%، أو بصرية مهما كانت درجتها، أو حركية مهما كانت درجتها.",
+    "reason": "Complete merged medical cell, visually checked against PDF 4 and PDF 3 pp9–10."
+  },
+  {
+    "branch": "literary",
+    "announcement": 4,
+    "page": 5,
+    "row": 23,
+    "field": "disability",
+    "original": "",
+    "replacement": "جميع المتقدمين شريطة حيازة 60% في التربية الدينية و60% في اللغة العربية",
+    "reason": "PDF 4 p5: one merged disability cell across the ordinary Sharia faculty rows, distinct from dedicated Sharia-certificate rows."
+  },
+  {
+    "branch": "literary",
+    "announcement": 4,
+    "page": 5,
+    "row": 23,
+    "field": "disabilityCondition",
+    "original": "",
+    "replacement": "سمعية لا تزيد عن 80%، أو بصرية مهما كانت درجتها، أو حركية مهما كانت درجتها.",
+    "reason": "Complete merged medical cell, visually checked against PDF 4 and PDF 3 pp9–10."
+  },
+  {
+    "branch": "literary",
+    "announcement": 4,
+    "page": 5,
+    "row": 24,
+    "field": "disability",
+    "original": "",
+    "replacement": "جميع المتقدمين شريطة حيازة 60% في التربية الدينية و60% في اللغة العربية",
+    "reason": "PDF 4 p5: one merged disability cell across the ordinary Sharia faculty rows, distinct from dedicated Sharia-certificate rows."
+  },
+  {
+    "branch": "literary",
+    "announcement": 4,
+    "page": 5,
+    "row": 24,
+    "field": "disabilityCondition",
+    "original": "",
+    "replacement": "سمعية لا تزيد عن 80%، أو بصرية مهما كانت درجتها، أو حركية مهما كانت درجتها.",
+    "reason": "Complete merged medical cell, visually checked against PDF 4 and PDF 3 pp9–10."
+  },
+  {
+    "branch": "literary",
+    "announcement": 4,
+    "page": 5,
+    "row": 25,
+    "field": "disability",
+    "original": "",
+    "replacement": "جميع المتقدمين شريطة حيازة 60% في التربية الدينية و60% في اللغة العربية",
+    "reason": "PDF 4 p5: one merged disability cell across the ordinary Sharia faculty rows, distinct from dedicated Sharia-certificate rows."
+  },
+  {
+    "branch": "literary",
+    "announcement": 4,
+    "page": 5,
+    "row": 25,
+    "field": "disabilityCondition",
+    "original": "",
+    "replacement": "سمعية لا تزيد عن 80%، أو بصرية مهما كانت درجتها، أو حركية مهما كانت درجتها.",
+    "reason": "Complete merged medical cell, visually checked against PDF 4 and PDF 3 pp9–10."
+  },
+  {
+    "branch": "literary",
+    "announcement": 4,
+    "page": 5,
+    "row": 26,
+    "field": "disability",
+    "original": "",
+    "replacement": "جميع المتقدمين شريطة حيازة 60% في التربية الدينية و60% في اللغة العربية",
+    "reason": "PDF 4 p5: one merged disability cell across the ordinary Sharia faculty rows, distinct from dedicated Sharia-certificate rows."
+  },
+  {
+    "branch": "literary",
+    "announcement": 4,
+    "page": 5,
+    "row": 26,
+    "field": "disabilityCondition",
+    "original": "",
+    "replacement": "سمعية لا تزيد عن 80%، أو بصرية مهما كانت درجتها، أو حركية مهما كانت درجتها.",
+    "reason": "Complete merged medical cell, visually checked against PDF 4 and PDF 3 pp9–10."
+  },
+  {
+    "branch": "literary",
+    "announcement": 4,
+    "page": 5,
+    "row": 27,
+    "field": "disability",
+    "original": "",
+    "replacement": "جميع المتقدمين شريطة حيازة 60% في التربية الدينية و60% في اللغة العربية",
+    "reason": "PDF 4 p5: one merged disability cell across the ordinary Sharia faculty rows, distinct from dedicated Sharia-certificate rows."
+  },
+  {
+    "branch": "literary",
+    "announcement": 4,
+    "page": 5,
+    "row": 27,
+    "field": "disabilityCondition",
+    "original": "",
+    "replacement": "سمعية لا تزيد عن 80%، أو بصرية مهما كانت درجتها، أو حركية مهما كانت درجتها.",
+    "reason": "Complete merged medical cell, visually checked against PDF 4 and PDF 3 pp9–10."
+  },
+  {
+    "branch": "literary",
+    "announcement": 4,
+    "page": 5,
+    "row": 28,
+    "field": "disability",
+    "original": "",
+    "replacement": "جميع المتقدمين شريطة حيازة 60% في التربية الدينية و60% في اللغة العربية",
+    "reason": "PDF 4 p5: one merged disability cell across the ordinary Sharia faculty rows, distinct from dedicated Sharia-certificate rows."
+  },
+  {
+    "branch": "literary",
+    "announcement": 4,
+    "page": 5,
+    "row": 28,
+    "field": "disabilityCondition",
+    "original": "",
+    "replacement": "سمعية لا تزيد عن 80%، أو بصرية مهما كانت درجتها، أو حركية مهما كانت درجتها.",
+    "reason": "Complete merged medical cell, visually checked against PDF 4 and PDF 3 pp9–10."
+  },
+  {
+    "branch": "literary",
+    "announcement": 4,
+    "page": 5,
+    "row": 29,
+    "field": "disability",
+    "original": "جميع المتقدمي",
+    "replacement": "جميع المتقدمين شريطة حيازة 60% في التربية الدينية و60% في اللغة العربية",
+    "reason": "PDF 4 p5: one merged disability cell across the ordinary Sharia faculty rows, distinct from dedicated Sharia-certificate rows."
+  },
+  {
+    "branch": "literary",
+    "announcement": 4,
+    "page": 5,
+    "row": 29,
+    "field": "disabilityCondition",
+    "original": "",
+    "replacement": "سمعية لا تزيد عن 80%، أو بصرية مهما كانت درجتها، أو حركية مهما كانت درجتها.",
+    "reason": "Complete merged medical cell, visually checked against PDF 4 and PDF 3 pp9–10."
+  },
+  {
+    "branch": "literary",
+    "announcement": 4,
+    "page": 5,
+    "row": 30,
+    "field": "disability",
+    "original": "شر يطة حيازة",
+    "replacement": "جميع المتقدمين شريطة حيازة 60% في التربية الدينية و60% في اللغة العربية",
+    "reason": "PDF 4 p5: one merged disability cell across the ordinary Sharia faculty rows, distinct from dedicated Sharia-certificate rows."
+  },
+  {
+    "branch": "literary",
+    "announcement": 4,
+    "page": 5,
+    "row": 30,
+    "field": "disabilityCondition",
+    "original": "",
+    "replacement": "سمعية لا تزيد عن 80%، أو بصرية مهما كانت درجتها، أو حركية مهما كانت درجتها.",
+    "reason": "Complete merged medical cell, visually checked against PDF 4 and PDF 3 pp9–10."
+  },
+  {
+    "branch": "literary",
+    "announcement": 4,
+    "page": 5,
+    "row": 31,
+    "field": "disability",
+    "original": "الطالب عىل / 60% / ي ىف",
+    "replacement": "جميع المتقدمين شريطة حيازة 60% في التربية الدينية و60% في اللغة العربية",
+    "reason": "PDF 4 p5: one merged disability cell across the ordinary Sharia faculty rows, distinct from dedicated Sharia-certificate rows."
+  },
+  {
+    "branch": "literary",
+    "announcement": 4,
+    "page": 5,
+    "row": 31,
+    "field": "disabilityCondition",
+    "original": "سمعية( ال تزيد عن80 ٪ ) - برصية(مهما كانت درجة اإلعاقة)",
+    "replacement": "سمعية لا تزيد عن 80%، أو بصرية مهما كانت درجتها، أو حركية مهما كانت درجتها.",
+    "reason": "Complete merged medical cell, visually checked against PDF 4 and PDF 3 pp9–10."
+  },
+  {
+    "branch": "literary",
+    "announcement": 4,
+    "page": 5,
+    "row": 32,
+    "field": "disability",
+    "original": "الير بية الدينية و/ 60 /% ىف",
+    "replacement": "جميع المتقدمين شريطة حيازة 60% في التربية الدينية و60% في اللغة العربية",
+    "reason": "PDF 4 p5: one merged disability cell across the ordinary Sharia faculty rows, distinct from dedicated Sharia-certificate rows."
+  },
+  {
+    "branch": "literary",
+    "announcement": 4,
+    "page": 5,
+    "row": 32,
+    "field": "disabilityCondition",
+    "original": "– حركية(مهما كانت درجة اإلعاقة",
+    "replacement": "سمعية لا تزيد عن 80%، أو بصرية مهما كانت درجتها، أو حركية مهما كانت درجتها.",
+    "reason": "Complete merged medical cell, visually checked against PDF 4 and PDF 3 pp9–10."
+  },
+  {
+    "branch": "literary",
+    "announcement": 4,
+    "page": 5,
+    "row": 33,
+    "field": "disability",
+    "original": "ي اللغة العربية",
+    "replacement": "جميع المتقدمين شريطة حيازة 60% في التربية الدينية و60% في اللغة العربية",
+    "reason": "PDF 4 p5: one merged disability cell across the ordinary Sharia faculty rows, distinct from dedicated Sharia-certificate rows."
+  },
+  {
+    "branch": "literary",
+    "announcement": 4,
+    "page": 5,
+    "row": 33,
+    "field": "disabilityCondition",
+    "original": "",
+    "replacement": "سمعية لا تزيد عن 80%، أو بصرية مهما كانت درجتها، أو حركية مهما كانت درجتها.",
+    "reason": "Complete merged medical cell, visually checked against PDF 4 and PDF 3 pp9–10."
+  },
+  {
+    "branch": "literary",
+    "announcement": 4,
+    "page": 5,
+    "row": 34,
+    "field": "disability",
+    "original": "",
+    "replacement": "جميع المتقدمين شريطة حيازة 60% في التربية الدينية و60% في اللغة العربية",
+    "reason": "PDF 4 p5: one merged disability cell across the ordinary Sharia faculty rows, distinct from dedicated Sharia-certificate rows."
+  },
+  {
+    "branch": "literary",
+    "announcement": 4,
+    "page": 5,
+    "row": 34,
+    "field": "disabilityCondition",
+    "original": "",
+    "replacement": "سمعية لا تزيد عن 80%، أو بصرية مهما كانت درجتها، أو حركية مهما كانت درجتها.",
+    "reason": "Complete merged medical cell, visually checked against PDF 4 and PDF 3 pp9–10."
+  },
+  {
+    "branch": "literary",
+    "announcement": 4,
+    "page": 5,
+    "row": 35,
+    "field": "disability",
+    "original": "",
+    "replacement": "جميع المتقدمين شريطة حيازة 60% في التربية الدينية و60% في اللغة العربية",
+    "reason": "PDF 4 p5: one merged disability cell across the ordinary Sharia faculty rows, distinct from dedicated Sharia-certificate rows."
+  },
+  {
+    "branch": "literary",
+    "announcement": 4,
+    "page": 5,
+    "row": 35,
+    "field": "disabilityCondition",
+    "original": "",
+    "replacement": "سمعية لا تزيد عن 80%، أو بصرية مهما كانت درجتها، أو حركية مهما كانت درجتها.",
+    "reason": "Complete merged medical cell, visually checked against PDF 4 and PDF 3 pp9–10."
+  },
+  {
+    "branch": "literary",
+    "announcement": 4,
+    "page": 5,
+    "row": 36,
+    "field": "disability",
+    "original": "",
+    "replacement": "جميع المتقدمين شريطة حيازة 60% في التربية الدينية و60% في اللغة العربية",
+    "reason": "PDF 4 p5: one merged disability cell across the ordinary Sharia faculty rows, distinct from dedicated Sharia-certificate rows."
+  },
+  {
+    "branch": "literary",
+    "announcement": 4,
+    "page": 5,
+    "row": 36,
+    "field": "disabilityCondition",
+    "original": "",
+    "replacement": "سمعية لا تزيد عن 80%، أو بصرية مهما كانت درجتها، أو حركية مهما كانت درجتها.",
+    "reason": "Complete merged medical cell, visually checked against PDF 4 and PDF 3 pp9–10."
+  },
+  {
+    "branch": "literary",
+    "announcement": 4,
+    "page": 5,
+    "row": 37,
+    "field": "disability",
+    "original": "",
+    "replacement": "جميع المتقدمين شريطة حيازة 60% في التربية الدينية و60% في اللغة العربية",
+    "reason": "PDF 4 p5: one merged disability cell across the ordinary Sharia faculty rows, distinct from dedicated Sharia-certificate rows."
+  },
+  {
+    "branch": "literary",
+    "announcement": 4,
+    "page": 5,
+    "row": 37,
+    "field": "disabilityCondition",
+    "original": "",
+    "replacement": "سمعية لا تزيد عن 80%، أو بصرية مهما كانت درجتها، أو حركية مهما كانت درجتها.",
+    "reason": "Complete merged medical cell, visually checked against PDF 4 and PDF 3 pp9–10."
+  },
+  {
+    "branch": "literary",
+    "announcement": 4,
+    "page": 5,
+    "row": 38,
+    "field": "disability",
+    "original": "",
+    "replacement": "جميع المتقدمين شريطة حيازة 60% في التربية الدينية و60% في اللغة العربية",
+    "reason": "PDF 4 p5: one merged disability cell across the ordinary Sharia faculty rows, distinct from dedicated Sharia-certificate rows."
+  },
+  {
+    "branch": "literary",
+    "announcement": 4,
+    "page": 5,
+    "row": 38,
+    "field": "disabilityCondition",
+    "original": "",
+    "replacement": "سمعية لا تزيد عن 80%، أو بصرية مهما كانت درجتها، أو حركية مهما كانت درجتها.",
+    "reason": "Complete merged medical cell, visually checked against PDF 4 and PDF 3 pp9–10."
+  },
+  {
+    "branch": "literary",
+    "announcement": 4,
+    "page": 5,
+    "row": 39,
+    "field": "disability",
+    "original": "",
+    "replacement": "جميع المتقدمين شريطة حيازة 60% في التربية الدينية و60% في اللغة العربية",
+    "reason": "PDF 4 p5: one merged disability cell across the ordinary Sharia faculty rows, distinct from dedicated Sharia-certificate rows."
+  },
+  {
+    "branch": "literary",
+    "announcement": 4,
+    "page": 5,
+    "row": 39,
+    "field": "disabilityCondition",
+    "original": "",
+    "replacement": "سمعية لا تزيد عن 80%، أو بصرية مهما كانت درجتها، أو حركية مهما كانت درجتها.",
+    "reason": "Complete merged medical cell, visually checked against PDF 4 and PDF 3 pp9–10."
+  },
+  {
+    "branch": "literary",
+    "announcement": 4,
+    "page": 5,
+    "row": 40,
+    "field": "disability",
+    "original": "",
+    "replacement": "جميع المتقدمين شريطة حيازة 60% في التربية الدينية و60% في اللغة العربية",
+    "reason": "PDF 4 p5: one merged disability cell across the ordinary Sharia faculty rows, distinct from dedicated Sharia-certificate rows."
+  },
+  {
+    "branch": "literary",
+    "announcement": 4,
+    "page": 5,
+    "row": 40,
+    "field": "disabilityCondition",
+    "original": "",
+    "replacement": "سمعية لا تزيد عن 80%، أو بصرية مهما كانت درجتها، أو حركية مهما كانت درجتها.",
+    "reason": "Complete merged medical cell, visually checked against PDF 4 and PDF 3 pp9–10."
+  }
+]

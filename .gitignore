@@ -42,3 +42,7 @@ next-env.d.ts
 # package managers
 package-lock.json
 yarn.lock
+
+# admissions Python tooling
+__pycache__/
+*.py[cod]

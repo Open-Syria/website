@@ -1,0 +1,21 @@
+{
+  "version": "2026.1-service.1",
+  "sourceRowCount": 58,
+  "extractedRowsSha256": "a1d17eccab6f72dbc438e372fe97307605b68ae6577ce40fa2c5e0243e897ebd",
+  "vocationalOptionsSha256": "7d80fa1b513f7975259780b60f308b5db0ef8d71df829a9f085a535474eb904f",
+  "catalogues": {
+    "service-scientific": 23,
+    "service-literary": 4,
+    "service-sharia": 2,
+    "service-vocational": 2
+  },
+  "sourceReview": "All 58 table rows visually checked; curated bilingual names follow the rendered tables. Both origins share matching rows, with both source references retained. Syrian Sharia defence eligibility is explicit in PDF 1 p7.",
+  "exclusions": [
+    {
+      "announcement": 1,
+      "page": 9,
+      "reason": "Top-ten Syrian 2026 computer-technologies vocational graduates may enter the security competition, but no programme allocation or application minimum is supplied; guidance only."
+    }
+  ],
+  "verification": "Entrance, health, age-on-application, nationality, administrative and service-commitment conditions require official confirmation. No medical, political-affiliation or criminal-record data is collected."
+}

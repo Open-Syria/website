@@ -1,0 +1,61 @@
+{
+  "version": "2026.1-older-foreign-vocational.1",
+  "scope": {
+    "branch": "vocational",
+    "certificateYear": 2026,
+    "certificate": "syrian_or_non_syrian",
+    "certificateYearMaximum": 2024,
+    "applicantCategory": "arab_and_foreign"
+  },
+  "prerequisiteCatalogue": "vocational.json",
+  "prerequisiteCatalogueSha256": "54799c1eea7b10683f33e39d6d81f39edb65465de9b16588a65e0174b7cecc45",
+  "extractedRowsFile": "vocational-rows.json",
+  "extractedRowsSha256": "a42bd838004f244c2486423bfeea42c2acbb5885a742faa103fd43111c92d21a",
+  "privateRows": 536,
+  "programCount": 536,
+  "sourceRowsPerPage": {
+    "41": 25,
+    "42": 25,
+    "43": 25,
+    "44": 25,
+    "45": 25,
+    "46": 25,
+    "47": 25,
+    "48": 25,
+    "49": 25,
+    "50": 25,
+    "51": 25,
+    "52": 25,
+    "53": 25,
+    "54": 25,
+    "55": 25,
+    "56": 21,
+    "57": 21,
+    "58": 21,
+    "59": 21,
+    "60": 21,
+    "61": 21,
+    "62": 23,
+    "63": 12
+  },
+  "conditions": {
+    "vocational_specialty": 536,
+    "exam": 7
+  },
+  "scopeReferences": [
+    {
+      "announcement": 7,
+      "page": 5
+    },
+    {
+      "announcement": 7,
+      "page": 7
+    }
+  ],
+  "score": "Use the official admission percentage for the certificate year; do not infer a historical denominator from 2026 totals. Vocational qualifications and all entrance tests remain required.",
+  "excluded": [
+    "Public admission",
+    "Transfer/change-of-admission processes (PDF 7 p2)",
+    "Older Sharia certificates: the reviewed equivalence rule is explicitly scoped to 2026 in PDF 3"
+  ]
+}
