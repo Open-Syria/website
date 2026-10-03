@@ -80,3 +80,4 @@ chore: update dependencies
 Release automation reads Conventional Commits from `main`. Release-worthy
 changes such as `feat:`, `fix:`, `perf:`, and breaking changes are collected by
 release-please into a release pull request. See [Releases](releases.md).
+`pnpm typecheck` generates Next.js route and image declarations before running TypeScript, so clean checkouts receive the same checks as local builds.

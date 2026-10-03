@@ -21,8 +21,8 @@
     "test:admissions": "node --test scripts/test-admissions.mjs scripts/test-admissions-domestic.mjs scripts/test-admissions-non-syrian.mjs scripts/test-admissions-foreign.mjs scripts/test-admissions-non-syrian-vocational.mjs scripts/test-admissions-foreign-vocational.mjs scripts/test-admissions-sharia.mjs scripts/test-admissions-older-private.mjs scripts/test-admissions-special-quotas.mjs scripts/test-admissions-service.mjs scripts/test-admissions-vocational-family.mjs",
     "test:agent-readiness": "node scripts/test-agent-readiness.mjs",
     "test:results": "node --test scripts/test-exam-results.mjs",
-    "typecheck": "tsc --noEmit",
-    "verify": "biome check . && tsc --noEmit && pnpm run test:admissions && pnpm run test:results && next build && pnpm run test:agent-readiness && pnpm run audit:dependencies",
+    "typecheck": "next typegen && tsc --noEmit",
+    "verify": "biome check . && pnpm run typecheck && pnpm run test:admissions && pnpm run test:results && next build && pnpm run test:agent-readiness && pnpm run audit:dependencies",
     "verify:ci": "pnpm run verify"
   },
   "dependencies": {
