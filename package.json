@@ -52,7 +52,7 @@
     "husky": "^9.1.7",
     "lint-staged": "^17.0.8",
     "schema-dts": "^2.0.0",
-    "sharp": "0.35.3",
+    "sharp": "0.35.4",
     "tailwindcss": "4.3.2",
     "typescript": "^6"
   },
