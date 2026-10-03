@@ -114,6 +114,12 @@ key, a Turnstile widget restricted to your site, and runtime variables from
 - `EXAM_RESULTS_TRUST_PROXY`: enable only behind a trusted Cloudflare ingress
   that supplies `CF-Connecting-IP` and cannot be reached directly by untrusted
   clients. Without a trusted client address, public lookup fails closed.
+- `EXAM_RESULTS_METADATA_PATH`: optional read-only JSON snapshot of the public
+  exam governorate/curriculum lists for networks that cannot fetch provider
+  metadata. The server validates the fixed exam year and complete governorate
+  coverage before accepting it. Mount it in every slot, review/refresh it when
+  the provider changes its lists, and restart the app after replacing it. Keep
+  snapshot collection procedures and provider-specific payloads private.
 
 The current store supports replicas on one host only. Use a shared transactional
 store before distributing application instances across hosts. Endpoint responses

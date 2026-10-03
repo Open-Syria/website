@@ -1,6 +1,6 @@
 import assert from "node:assert/strict"
 import { createCipheriv, randomBytes } from "node:crypto"
-import { mkdtempSync, readFileSync, rmSync } from "node:fs"
+import { mkdtempSync, readFileSync, rmSync, writeFileSync } from "node:fs"
 import { tmpdir } from "node:os"
 import { join } from "node:path"
 import { test } from "node:test"
@@ -249,8 +249,72 @@ function setup(overrides = {}) {
       "x-exam-csrf": data.csrf,
     }
   }
-  return { store, service, request, session, calls: () => calls }
+  return { config, store, service, request, session, calls: () => calls }
 }
+
+test("private public-metadata snapshots avoid upstream fetches and reject incomplete or wrong-year lists", async () => {
+  const s = setup()
+  const directory = mkdtempSync(join(tmpdir(), "exam-metadata-"))
+  const metadataPath = join(directory, "metadata.json")
+  const snapshot = {
+    academicYearId: 5,
+    examYear: 2026,
+    fetchedAt: new Date().toISOString(),
+    directorates: { success: true, data: [{ id: 1, name: "Test" }] },
+    certificates: {
+      1: { success: true, data: [{ id: 313, name: certificate, rc_id: 3 }] },
+    },
+  }
+  const create = () =>
+    new ResultsService({ ...s.config, metadataPath }, s.store, async () => {
+      throw new Error("Upstream must not be called")
+    })
+  try {
+    writeFileSync(metadataPath, JSON.stringify(snapshot))
+    const service = create()
+    const response = await service.handle(s.request({ action: "session" }))
+    assert.equal(response.status, 200)
+    const session = await response.json()
+    const headers = {
+      cookie: response.headers.get("set-cookie").split(";")[0],
+      "x-exam-csrf": session.csrf,
+    }
+    const options = await service.handle(
+      s.request({ action: "certificates", directorateId: 1 }, headers)
+    )
+    assert.deepEqual((await options.json()).certificates, [
+      { id: 313, name: certificate, branch: "scientific" },
+    ])
+    assert.equal(
+      (
+        await service.handle(
+          s.request({ action: "certificates", directorateId: 2 }, headers)
+        )
+      ).status,
+      400
+    )
+    for (const invalid of [
+      { ...snapshot, examYear: 2025 },
+      { ...snapshot, certificates: {} },
+      {
+        ...snapshot,
+        directorates: {
+          success: true,
+          data: [
+            { id: 1, name: "Test" },
+            { id: 1, name: "Duplicate" },
+          ],
+        },
+      },
+    ]) {
+      writeFileSync(metadataPath, JSON.stringify(invalid))
+      assert.throws(create)
+    }
+  } finally {
+    s.store.close()
+    rmSync(directory, { recursive: true, force: true })
+  }
+})
 test("lookup requires origin, trusted client address, session, CSRF and validated Turnstile", async () => {
   const s = setup()
   try {

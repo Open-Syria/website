@@ -3,6 +3,7 @@
 ## Unreleased
 
 - Add optional protected exam-marks import for the admissions advisor, preserving exact subject scores and manual editing.
+- Support validated operator-supplied public exam metadata when the provider rejects server connections.
 - Align admissions source links, add the Jobara footer partnership, and provide localized admissions sharing covers.
 - Patch Next.js and transitive dependencies and retain licensed UI styles without the component CLI build dependency.
 
