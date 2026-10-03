@@ -1,4 +1,5 @@
 import { createHmac, randomBytes, timingSafeEqual } from "node:crypto"
+import { readFileSync } from "node:fs"
 import { isIP } from "node:net"
 import { z } from "zod"
 import {
@@ -21,6 +22,7 @@ type Config = {
   decoderKey: Buffer
   storePath: string
   trustProxy: boolean
+  metadataPath?: string
 }
 class LookupError extends Error {
   readonly code: string
@@ -57,6 +59,7 @@ function configuration(): Config {
     turnstileSecret,
     storePath,
     trustProxy: process.env.EXAM_RESULTS_TRUST_PROXY === "true",
+    metadataPath: process.env.EXAM_RESULTS_METADATA_PATH || undefined,
   }
 }
 
@@ -111,10 +114,24 @@ const certificatesSchema = z.object({
   data: z.array(optionSchema.extend({ rc_id: z.number().int() })).max(100),
 })
 
+const metadataSnapshotSchema = z
+  .object({
+    academicYearId: z.literal(5),
+    examYear: z.literal(2026),
+    fetchedAt: z.iso.datetime(),
+    directorates: directoratesSchema,
+    certificates: z.record(
+      z.string().regex(/^[1-9][0-9]*$/),
+      certificatesSchema
+    ),
+  })
+  .strict()
+
 export class ResultsService {
   private config: Config
   private store: ResultsStore
   private fetcher: typeof fetch
+  private snapshot?: z.infer<typeof metadataSnapshotSchema>
   constructor(
     config: Config,
     store: ResultsStore,
@@ -123,6 +140,20 @@ export class ResultsService {
     this.config = config
     this.store = store
     this.fetcher = fetcher
+    if (config.metadataPath) {
+      this.snapshot = metadataSnapshotSchema.parse(
+        JSON.parse(readFileSync(config.metadataPath, "utf8"))
+      )
+      const ids = this.snapshot.directorates.data.map((value) =>
+        String(value.id)
+      )
+      if (
+        new Set(ids).size !== ids.length ||
+        Object.keys(this.snapshot.certificates).length !== ids.length ||
+        ids.some((id) => !this.snapshot?.certificates[id])
+      )
+        throw new LookupError("unavailable", 503)
+    }
   }
   private hash(value: string) {
     return createHmac("sha256", this.config.signingKey)
@@ -167,6 +198,16 @@ export class ResultsService {
     return this.hash(`challenge:${session}`)
   }
   private async metadata(path: string) {
+    // Some provider networks reject data-centre connections. Operators may
+    // supply a validated public metadata snapshot for this fixed exam year.
+    // The browser still fetches every individual result directly.
+    if (this.snapshot) {
+      if (path === "/directorateResultsNew/5") return this.snapshot.directorates
+      const id = /^\/directorateCertificates\/([1-9][0-9]*)\/5$/.exec(path)?.[1]
+      if (id && this.snapshot.certificates[id])
+        return this.snapshot.certificates[id]
+      throw new LookupError("invalid", 400)
+    }
     const cached = this.store.cached(path)
     if (cached) return cached
     if (!this.store.take([{ key: "metadata:global", limit: 45, seconds: 60 }]))
