@@ -38,6 +38,7 @@
 ### Bug Fixes
 
 * keep admissions controls and the header usable with larger text, and clear recovered verification errors without hiding lookup failures
+* focus the results or marks field after the new view renders, including when a previous language page is cached
 
 * clarify pending eligibility and shared answers, align Arabic/English admission guidance, put common FAQ questions first, and correct source links and release-history placement
 

@@ -42,6 +42,7 @@ export function AdmissionsAdvisor({ locale }: { locale: Locale }) {
   )
   const [editing, setEditing] = useState(true)
   const [undoValues, setUndoValues] = useState<FormValues | null>(null)
+  const pendingFocus = useRef<string | null>(null)
   const { saved, toggle, storageError } = useFavourites()
   const [, setQueryState] = useQueryStates(resultParsers, resultQueryOptions)
   const [{ answers }, setAnswerQuery] = useQueryStates(
@@ -127,12 +128,21 @@ export function AdmissionsAdvisor({ locale }: { locale: Locale }) {
       /* Answers remain usable in memory when storage is unavailable. */
     }
   }, [currentValues])
+  // Wait for the requested form/results view to commit before finding its target.
+  // A cached, hidden locale can contain the same IDs as the active page.
+  useLayoutEffect(() => {
+    const id = pendingFocus.current
+    if (!id) return
+    const element = Array.from(
+      document.querySelectorAll<HTMLElement>(`[id="${id}"]`)
+    ).find((candidate) => candidate.getClientRects().length > 0)
+    if (!element) return
+    pendingFocus.current = null
+    element.focus({ preventScroll: true })
+    element.scrollIntoView({ block: "start" })
+  })
   function focus(id: string) {
-    requestAnimationFrame(() => {
-      const element = document.getElementById(id)
-      element?.focus({ preventScroll: true })
-      element?.scrollIntoView({ block: "start" })
-    })
+    pendingFocus.current = id
   }
   function answerCondition(answer: ConfirmationAnswer) {
     const previous = answerValues.current
