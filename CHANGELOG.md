@@ -37,6 +37,8 @@
 
 ### Bug Fixes
 
+* keep admissions controls and the header usable with larger text, and clear recovered verification errors without hiding lookup failures
+
 * clarify pending eligibility and shared answers, align Arabic/English admission guidance, put common FAQ questions first, and correct source links and release-history placement
 
 * consolidate repeated eligibility inputs into one compact shared dialog opened from the applicable admission-track container, save answers globally through the URL, and restore reading position and focus after results regroup, including pagination and filtered-out choices

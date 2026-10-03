@@ -24,8 +24,8 @@ export async function SiteFooter({ locale }: SiteFooterProps) {
 
   return (
     <footer className="border-t bg-background py-10 text-foreground sm:py-12">
-      <div className={cn("page-content", "grid gap-9")}>
-        <div className="grid gap-8 lg:grid-cols-[minmax(0,1fr)_minmax(36rem,1.5fr)]">
+      <div className={cn("page-content", "grid grid-cols-1 gap-9")}>
+        <div className="grid grid-cols-1 gap-8 lg:grid-cols-[minmax(0,1fr)_minmax(0,1.5fr)]">
           <div>
             <Link
               aria-label="OpenSyria"
@@ -43,7 +43,7 @@ export async function SiteFooter({ locale }: SiteFooterProps) {
           </div>
 
           <nav aria-label={t("navigationLabel")}>
-            <div className="grid gap-7 sm:grid-cols-3">
+            <div className="grid grid-cols-1 gap-7 sm:grid-cols-3">
               <FooterLinkGroup title={t("platformTitle")}>
                 <li>
                   <Link className={footerLinkClassName} href="/">
@@ -149,7 +149,7 @@ export async function SiteFooter({ locale }: SiteFooterProps) {
             <h2 className="font-heading font-semibold text-sm">
               {t("repositoriesTitle")}
             </h2>
-            <ul className="mt-4 grid list-none gap-x-9 gap-y-5 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+            <ul className="mt-4 grid list-none grid-cols-1 gap-x-9 gap-y-5 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
               {github.repositories.map((repository) => (
                 <li key={repository.name} className="min-w-0">
                   <a
@@ -196,10 +196,10 @@ function FooterLinkGroup({
   return (
     <section aria-label={title}>
       <h2 className="font-heading font-semibold text-sm">{title}</h2>
-      <ul className="mt-4 grid list-none gap-3">{children}</ul>
+      <ul className="mt-4 grid list-none grid-cols-1 gap-3">{children}</ul>
     </section>
   )
 }
 
 const footerLinkClassName =
-  "inline-flex items-center gap-1.5 rounded-md text-muted-foreground text-sm transition hover:text-primary focus-visible:outline-none focus-visible:ring-3 focus-visible:ring-ring/50"
+  "inline-flex max-w-full items-center gap-1.5 rounded-md text-muted-foreground text-sm wrap-anywhere transition hover:text-primary focus-visible:outline-none focus-visible:ring-3 focus-visible:ring-ring/50"

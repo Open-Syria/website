@@ -196,7 +196,10 @@ export function ResultsLookup({
         size,
         appearance: "interaction-only",
         language: locale,
-        callback: setToken,
+        callback: (nextToken) => {
+          setToken(nextToken)
+          setError((current) => (current === "challenge" ? "" : current))
+        },
         "expired-callback": () => setToken(""),
         "error-callback": () => {
           setToken("")
@@ -403,7 +406,7 @@ export function ResultsLookup({
               ) : null}
               {error ? (
                 <Alert variant="destructive">
-                  <AlertDescription role="alert">
+                  <AlertDescription>
                     {t(`errors.${error as "unavailable"}`)}
                   </AlertDescription>
                 </Alert>
