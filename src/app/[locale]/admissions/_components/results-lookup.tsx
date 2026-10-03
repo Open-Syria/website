@@ -16,12 +16,7 @@ import {
   DialogTitle,
   DialogTrigger,
 } from "@/components/ui/dialog"
-import {
-  Field,
-  FieldDescription,
-  FieldGroup,
-  FieldLabel,
-} from "@/components/ui/field"
+import { Field, FieldGroup, FieldLabel } from "@/components/ui/field"
 import { Input } from "@/components/ui/input"
 import {
   type CertificateOption,
@@ -46,7 +41,8 @@ type Turnstile = {
       sitekey: string
       action: string
       cData: string
-      size: "compact"
+      size: "compact" | "flexible"
+      appearance: "interaction-only"
       language: string
       callback: (token: string) => void
       "expired-callback": () => void
@@ -183,21 +179,37 @@ export function ResultsLookup({
       !window.turnstile
     )
       return
-    widget.current = window.turnstile.render(challengeRef.current, {
-      sitekey: session.siteKey,
-      action: "admissions_lookup",
-      cData: session.challenge,
-      size: "compact",
-      language: locale,
-      callback: setToken,
-      "expired-callback": () => setToken(""),
-      "error-callback": () => {
-        setToken("")
-        setError("challenge")
-      },
-    })
+    const container = challengeRef.current
+    const turnstile = window.turnstile
+    const { siteKey, challenge } = session
+    let size: "compact" | "flexible" | undefined
+    function render() {
+      const nextSize = container.clientWidth < 300 ? "compact" : "flexible"
+      if (size === nextSize) return
+      size = nextSize
+      if (widget.current) turnstile.remove(widget.current)
+      setToken("")
+      widget.current = turnstile.render(container, {
+        sitekey: siteKey,
+        action: "admissions_lookup",
+        cData: challenge,
+        size,
+        appearance: "interaction-only",
+        language: locale,
+        callback: setToken,
+        "expired-callback": () => setToken(""),
+        "error-callback": () => {
+          setToken("")
+          setError("challenge")
+        },
+      })
+    }
+    render()
+    const observer = new ResizeObserver(render)
+    observer.observe(container)
     return () => {
-      if (widget.current) window.turnstile?.remove(widget.current)
+      observer.disconnect()
+      if (widget.current) turnstile.remove(widget.current)
       widget.current = undefined
     }
   }, [open, session, ready, locale])
@@ -373,12 +385,8 @@ export function ResultsLookup({
                   autoComplete="off"
                   maxLength={12}
                   aria-invalid={error === "invalid"}
-                  aria-describedby="exam-privacy"
                 />
               </Field>
-              <FieldDescription id="exam-privacy">
-                {t("privacy")}
-              </FieldDescription>
               {session ? (
                 <>
                   <Script
@@ -387,7 +395,10 @@ export function ResultsLookup({
                     onReady={() => setReady(true)}
                     onError={() => setError("challenge")}
                   />
-                  <div ref={challengeRef} className="flex justify-center" />
+                  <div
+                    ref={challengeRef}
+                    className="flex w-full min-w-0 justify-center"
+                  />
                 </>
               ) : null}
               {error ? (
@@ -426,7 +437,6 @@ export function ResultsLookup({
           </DialogFooter>
         </DialogContent>
       </Dialog>
-      <FieldDescription>{t("hint")}</FieldDescription>
       {imported ? (
         <p role="status" className="text-sm">
           {t("success")}
