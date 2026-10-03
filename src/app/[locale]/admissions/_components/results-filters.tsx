@@ -103,13 +103,13 @@ export function ResultsFilters({
             <DialogFooter className="grid shrink-0 grid-cols-2 border-t bg-popover p-4">
               <Button
                 variant="outline"
-                className="min-h-11"
+                className="h-auto min-h-11 whitespace-normal"
                 onClick={() => setDraft(initialFilters)}
               >
                 {t("clearFilters")}
               </Button>
               <Button
-                className="min-h-11"
+                className="h-auto min-h-11 whitespace-normal"
                 onClick={() => {
                   props.onChange(draft)
                   setOpen(false)
