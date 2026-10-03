@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from "next"
-import { Geist_Mono, Inter, Noto_Sans_Arabic, Sora } from "next/font/google"
+import { Geist_Mono, IBM_Plex_Sans_Arabic, Inter, Sora } from "next/font/google"
 import { notFound } from "next/navigation"
 import { hasLocale, NextIntlClientProvider } from "next-intl"
 import { getTranslations, setRequestLocale } from "next-intl/server"
@@ -56,8 +56,10 @@ const inter = Inter({ subsets: ["latin"], variable: "--font-body" })
 
 const sora = Sora({ subsets: ["latin"], variable: "--font-display" })
 
-const notoSansArabic = Noto_Sans_Arabic({
+const ibmPlexArabic = IBM_Plex_Sans_Arabic({
   subsets: ["arabic"],
+  weight: ["400", "500", "600", "700"],
+  display: "swap",
   variable: "--font-arabic",
 })
 
@@ -130,7 +132,7 @@ export default async function LocaleLayout({
         "antialiased",
         inter.variable,
         sora.variable,
-        notoSansArabic.variable,
+        ibmPlexArabic.variable,
         fontMono.variable,
         "font-sans"
       )}

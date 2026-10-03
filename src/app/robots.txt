@@ -39,4 +39,6 @@ Allow: /
 User-agent: *
 Allow: /
 
+# Query variants carry X-Robots-Tag: noindex, follow.
+# Allow crawling so search engines can read that header and the canonical URL.
 Sitemap: https://opensyria.org/sitemap.xml

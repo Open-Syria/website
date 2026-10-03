@@ -1,0 +1,78 @@
+{
+  "version": "2026.1-non-syrian-vocational.2",
+  "extractedRowsSha256": "42a12bda1e3b64548da6740114c5eba781a8f5db9e0f651f1883e060644f1429",
+  "correctionsSha256": "5ea7fe8cde9c72844b90f4f0bb42f3f4b622b885b1705805b9da98787471a030",
+  "privateCatalogueSha256": "54799c1eea7b10683f33e39d6d81f39edb65465de9b16588a65e0174b7cecc45",
+  "optionsSha256": "7d80fa1b513f7975259780b60f308b5db0ef8d71df829a9f085a535474eb904f",
+  "extractedRows": 247,
+  "programCount": 777,
+  "publicCount": 241,
+  "privateCount": 536,
+  "excludedRows": [
+    {
+      "id": "non-syrian-vocational-public-06-002",
+      "reason": "military_general_admission"
+    },
+    {
+      "id": "non-syrian-vocational-public-06-003",
+      "reason": "military_general_admission"
+    },
+    {
+      "id": "non-syrian-vocational-public-09-003",
+      "reason": "merged_grid_continuation",
+      "mergedInto": "non-syrian-vocational-public-09-002"
+    },
+    {
+      "id": "non-syrian-vocational-public-11-013",
+      "reason": "merged_grid_continuation",
+      "mergedInto": "non-syrian-vocational-public-11-012"
+    },
+    {
+      "id": "non-syrian-vocational-public-12-009",
+      "reason": "merged_grid_continuation",
+      "mergedInto": "non-syrian-vocational-public-12-008"
+    },
+    {
+      "id": "non-syrian-vocational-public-15-007",
+      "reason": "merged_grid_continuation",
+      "mergedInto": "non-syrian-vocational-public-15-006"
+    }
+  ],
+  "rowsPerPage": {
+    "10": 11,
+    "11": 14,
+    "12": 16,
+    "13": 11,
+    "14": 10,
+    "15": 16,
+    "16": 14,
+    "17": 18,
+    "18": 13,
+    "19": 9,
+    "20": 13,
+    "3": 18,
+    "4": 20,
+    "5": 17,
+    "6": 7,
+    "7": 15,
+    "8": 12,
+    "9": 13
+  },
+  "channels": {
+    "parallel": 241,
+    "private": 536
+  },
+  "conditions": {
+    "vocational_specialty": 777,
+    "exam": 44,
+    "gender": 3,
+    "birth_year": 3
+  },
+  "excludedSections": [
+    {
+      "announcement": 7,
+      "page": 6,
+      "reason": "older_vocational_certificates"
+    }
+  ]
+}

@@ -55,6 +55,11 @@ export async function SiteFooter({ locale }: SiteFooterProps) {
                   </Link>
                 </li>
                 <li>
+                  <Link className={footerLinkClassName} href="/admissions">
+                    {t("admissions")}
+                  </Link>
+                </li>
+                <li>
                   <Link className={footerLinkClassName} href="/api">
                     {t("apiDocs")}
                   </Link>

@@ -1,0 +1,113 @@
+{
+  "version": "2026.1-literary.3",
+  "extractedRowsSha256": "1392de521611e685c19ff3da01c40ef36e6721385263d7cbd6376815d8af53e6",
+  "extractedRows": 415,
+  "programCount": 396,
+  "excludedRows": [
+    {
+      "id": "literary-public-05-041",
+      "reason": "sharia_certificate"
+    },
+    {
+      "id": "literary-public-05-042",
+      "reason": "sharia_certificate"
+    },
+    {
+      "id": "literary-public-05-043",
+      "reason": "sharia_certificate"
+    },
+    {
+      "id": "literary-public-05-044",
+      "reason": "sharia_certificate"
+    },
+    {
+      "id": "literary-public-05-045",
+      "reason": "sharia_certificate"
+    },
+    {
+      "id": "literary-public-05-046",
+      "reason": "sharia_certificate"
+    },
+    {
+      "id": "literary-public-05-047",
+      "reason": "sharia_certificate"
+    },
+    {
+      "id": "literary-public-06-003",
+      "reason": "sharia_certificate"
+    },
+    {
+      "id": "literary-public-06-004",
+      "reason": "sharia_certificate"
+    },
+    {
+      "id": "literary-public-06-005",
+      "reason": "sharia_certificate"
+    },
+    {
+      "id": "literary-public-06-006",
+      "reason": "sharia_certificate"
+    },
+    {
+      "id": "literary-public-06-007",
+      "reason": "sharia_certificate"
+    },
+    {
+      "id": "literary-public-06-008",
+      "reason": "sharia_certificate"
+    },
+    {
+      "id": "literary-public-06-009",
+      "reason": "sharia_certificate"
+    },
+    {
+      "id": "literary-public-06-010",
+      "reason": "sharia_certificate"
+    },
+    {
+      "id": "literary-public-06-011",
+      "reason": "sharia_certificate"
+    },
+    {
+      "id": "literary-public-06-012",
+      "reason": "sharia_certificate"
+    },
+    {
+      "id": "literary-public-06-013",
+      "reason": "sharia_certificate"
+    },
+    {
+      "id": "literary-public-06-014",
+      "reason": "sharia_certificate"
+    }
+  ],
+  "sourceRowsPerPage": {
+    "private-33": 18,
+    "private-34": 18,
+    "private-35": 18,
+    "private-36": 17,
+    "private-37": 16,
+    "private-38": 18,
+    "private-39": 15,
+    "private-40": 11,
+    "public-01": 36,
+    "public-02": 43,
+    "public-03": 45,
+    "public-04": 41,
+    "public-05": 45,
+    "public-06": 36,
+    "public-07": 38
+  },
+  "channels": {
+    "general": 265,
+    "parallel": 265,
+    "private": 131
+  },
+  "conditions": {
+    "no_previous_general_admission": 265,
+    "subject": 246,
+    "governorate": 96,
+    "gender": 28,
+    "exam": 58
+  }
+}

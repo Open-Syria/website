@@ -1,0 +1,72 @@
+{
+  "version": "2026.1-vocational-faculty-family.1",
+  "sources": [
+    { "announcement": 6, "page": 4 },
+    { "announcement": 1, "page": 11 }
+  ],
+  "scope": {
+    "branch": "vocational",
+    "certificateYear": 2026,
+    "certificate": "syrian",
+    "applicantCategory": "syrian_or_equivalent",
+    "admissionRoute": "special_quotas"
+  },
+  "thresholdGroups": [
+    {
+      "id": "applied-colleges",
+      "pages": [5, 6, 7],
+      "kind": "applied_college",
+      "minPercent": 50,
+      "expectedCount": 55,
+      "review": "Applied colleges are other colleges under PDF 6 p4, including engineering-related fields; they are not engineering faculties."
+    },
+    {
+      "id": "engineering-faculties",
+      "pages": [8, 9, 10],
+      "kind": "faculty",
+      "minPercent": 60,
+      "expectedCount": 46,
+      "review": "All these rows belong to technical engineering faculties, including food and agricultural mechanisation departments; classification follows the source faculty, not the career field."
+    },
+    {
+      "id": "arts-and-music-faculties",
+      "pages": [11],
+      "kind": "faculty",
+      "minPercent": 50,
+      "expectedCount": 5,
+      "review": "Fine arts, applied fine arts and music education retain their entrance tests. The two naval defence rows are separately excluded."
+    },
+    {
+      "id": "matching-institutes",
+      "pages": [12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24],
+      "kind": "institute",
+      "minPercent": null,
+      "expectedCount": 185,
+      "review": "All applicants for matching institutes means no separate overall score minimum. Exact qualification, gender, birth year and examinations still apply."
+    }
+  ],
+  "excludedPublicRows": [
+    {
+      "announcement": 6,
+      "page": 11,
+      "row": 2,
+      "reason": "Naval defence admission uses its separate service route, not the vacant scientific faculty-family quota."
+    },
+    {
+      "announcement": 6,
+      "page": 11,
+      "row": 3,
+      "reason": "Naval defence admission uses its separate service route, not the vacant scientific faculty-family quota."
+    }
+  ],
+  "verification": [
+    {
+      "ar": "يلزم إثبات صفة ابن أو ابنة عضو هيئة تدريس مستوفٍ لشروط الإعلان ١، بالبيانات المعتمدة من مديرية شؤون العاملين في الجامعة أو المعهد العالي.",
+      "en": "The university or higher institute personnel directorate must verify that you are the child of a faculty member eligible under announcement 1."
+    },
+    {
+      "ar": "يتوقف القبول على الشواغر المتبقية من حصة أبناء الهيئة التدريسية للفرع العلمي، ومطابقة اختصاص الشهادة للرغبة وظهورها لك في نظام التقدم الرسمي. الحدود المعروضة لا تثبت وجود مقعد شاغر أو استحقاق القبول.",
+      "en": "Admission depends on places remaining from the scientific faculty-family quota, an officially matching certificate specialty, and this choice appearing in your official application. These minimums do not establish a vacancy or entitlement to admission."
+    }
+  ]
+}

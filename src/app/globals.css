@@ -6,8 +6,8 @@
 
 @theme inline {
   --color-background-light: var(--background-light);
-  --font-heading: var(--font-display);
-  --font-sans: var(--font-body);
+  --font-heading: var(--font-heading-family);
+  --font-sans: var(--font-sans-family);
   --font-mono: var(--font-code);
   --color-sidebar-ring: var(--sidebar-ring);
   --color-sidebar-border: var(--sidebar-border);
@@ -164,13 +164,14 @@
     cursor: pointer;
   }
   html {
+    --font-heading-family: var(--font-display);
+    --font-sans-family: var(--font-body);
     @apply font-sans;
   }
-  html[dir="rtl"] {
-    --font-heading: var(--font-arabic);
-    --font-sans: var(--font-arabic);
-
-    font-family: var(--font-arabic), var(--font-body), sans-serif;
+  html[lang="ar"] {
+    /* Override the values used by the inline Tailwind font utilities. */
+    --font-heading-family: var(--font-arabic);
+    --font-sans-family: var(--font-arabic);
   }
 }
 

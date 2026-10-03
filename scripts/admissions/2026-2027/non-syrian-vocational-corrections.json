@@ -1,0 +1,1401 @@
+{
+  "announcement": 10,
+  "reviewedAt": "2026-10-03",
+  "method": "Exact cell transcriptions checked against rendered PDF pages; original extracted rows remain unchanged.",
+  "corrections": [
+    {
+      "field": "name",
+      "original": ")الكلية التطبيقية (ميكاترونيكس ا",
+      "corrected": "الكلية التطبيقية (ميكاترونيكس)",
+      "cells": [
+        {
+          "page": 3,
+          "row": 6
+        },
+        {
+          "page": 3,
+          "row": 7
+        },
+        {
+          "page": 3,
+          "row": 8
+        },
+        {
+          "page": 3,
+          "row": 9
+        },
+        {
+          "page": 3,
+          "row": 10
+        },
+        {
+          "page": 3,
+          "row": 11
+        },
+        {
+          "page": 3,
+          "row": 12
+        },
+        {
+          "page": 3,
+          "row": 13
+        },
+        {
+          "page": 3,
+          "row": 14
+        }
+      ]
+    },
+    {
+      "field": "name",
+      "original": "كل عمايل عمل ل ع",
+      "corrected": "كلية الفنون الجميلة",
+      "cells": [
+        {
+          "page": 6,
+          "row": 4
+        },
+        {
+          "page": 6,
+          "row": 5
+        },
+        {
+          "page": 6,
+          "row": 7
+        }
+      ]
+    },
+    {
+      "field": "name",
+      "original": "كل عمايل عمل ل عمال ب ع",
+      "corrected": "كلية الفنون الجميلة التطبيقية",
+      "cells": [
+        {
+          "page": 6,
+          "row": 6
+        }
+      ]
+    },
+    {
+      "field": "name",
+      "original": "كل عماق عم",
+      "corrected": "كلية التربية الموسيقية",
+      "cells": [
+        {
+          "page": 6,
+          "row": 8
+        }
+      ]
+    },
+    {
+      "field": "name",
+      "original": "م ع عمال عال ل عم ن ع لما ية ئ ع",
+      "corrected": "المعهد التقاني للهندسة الميكانيكية والكهربائية",
+      "cells": [
+        {
+          "page": 9,
+          "row": 2
+        },
+        {
+          "page": 9,
+          "row": 3
+        },
+        {
+          "page": 9,
+          "row": 4
+        },
+        {
+          "page": 9,
+          "row": 5
+        },
+        {
+          "page": 9,
+          "row": 6
+        },
+        {
+          "page": 9,
+          "row": 7
+        },
+        {
+          "page": 9,
+          "row": 8
+        },
+        {
+          "page": 9,
+          "row": 9
+        },
+        {
+          "page": 9,
+          "row": 10
+        },
+        {
+          "page": 9,
+          "row": 11
+        },
+        {
+          "page": 9,
+          "row": 12
+        },
+        {
+          "page": 9,
+          "row": 13
+        },
+        {
+          "page": 9,
+          "row": 14
+        }
+      ]
+    },
+    {
+      "field": "name",
+      "original": "املعهد الوقاني للصناعات النسياية",
+      "corrected": "المعهد التقاني للصناعات النسيجية",
+      "cells": [
+        {
+          "page": 11,
+          "row": 12
+        },
+        {
+          "page": 11,
+          "row": 13
+        },
+        {
+          "page": 11,
+          "row": 14
+        },
+        {
+          "page": 11,
+          "row": 15
+        }
+      ]
+    },
+    {
+      "field": "name",
+      "original": "م ع عمال عال لل عماز مع ع",
+      "corrected": "المعهد التقاني للمكننة الزراعية",
+      "cells": [
+        {
+          "page": 15,
+          "row": 5
+        },
+        {
+          "page": 15,
+          "row": 6
+        },
+        {
+          "page": 15,
+          "row": 7
+        },
+        {
+          "page": 15,
+          "row": 8
+        },
+        {
+          "page": 15,
+          "row": 9
+        }
+      ]
+    },
+    {
+      "field": "name",
+      "original": "م ع عمال عا ع ع لعما ب ع ع",
+      "corrected": "المعهد التقاني للإعلام والطباعة",
+      "cells": [
+        {
+          "page": 15,
+          "row": 10
+        },
+        {
+          "page": 15,
+          "row": 11
+        },
+        {
+          "page": 15,
+          "row": 12
+        },
+        {
+          "page": 15,
+          "row": 13
+        },
+        {
+          "page": 15,
+          "row": 14
+        },
+        {
+          "page": 15,
+          "row": 15
+        },
+        {
+          "page": 15,
+          "row": 16
+        },
+        {
+          "page": 15,
+          "row": 17
+        }
+      ]
+    },
+    {
+      "field": "place",
+      "original": "ي",
+      "corrected": "دمشق",
+      "cells": [
+        {
+          "page": 6,
+          "row": 4
+        },
+        {
+          "page": 15,
+          "row": 10
+        },
+        {
+          "page": 15,
+          "row": 11
+        },
+        {
+          "page": 15,
+          "row": 12
+        },
+        {
+          "page": 15,
+          "row": 13
+        },
+        {
+          "page": 15,
+          "row": 14
+        },
+        {
+          "page": 15,
+          "row": 15
+        },
+        {
+          "page": 15,
+          "row": 16
+        },
+        {
+          "page": 15,
+          "row": 17
+        }
+      ]
+    },
+    {
+      "field": "place",
+      "original": "ماس مم",
+      "corrected": "السويداء",
+      "cells": [
+        {
+          "page": 6,
+          "row": 5
+        }
+      ]
+    },
+    {
+      "field": "place",
+      "original": "ل ع",
+      "corrected": "حلب",
+      "cells": [
+        {
+          "page": 6,
+          "row": 6
+        },
+        {
+          "page": 9,
+          "row": 2
+        },
+        {
+          "page": 9,
+          "row": 3
+        }
+      ]
+    },
+    {
+      "field": "place",
+      "original": "ما ذن ع",
+      "corrected": "اللاذقية",
+      "cells": [
+        {
+          "page": 6,
+          "row": 7
+        }
+      ]
+    },
+    {
+      "field": "place",
+      "original": "",
+      "corrected": "حمص",
+      "cells": [
+        {
+          "page": 6,
+          "row": 8
+        }
+      ]
+    },
+    {
+      "field": "place",
+      "original": "حل",
+      "corrected": "حلب",
+      "cells": [
+        {
+          "page": 9,
+          "row": 4
+        },
+        {
+          "page": 9,
+          "row": 5
+        },
+        {
+          "page": 9,
+          "row": 6
+        },
+        {
+          "page": 9,
+          "row": 7
+        },
+        {
+          "page": 9,
+          "row": 8
+        },
+        {
+          "page": 9,
+          "row": 9
+        },
+        {
+          "page": 9,
+          "row": 10
+        },
+        {
+          "page": 9,
+          "row": 11
+        },
+        {
+          "page": 9,
+          "row": 12
+        },
+        {
+          "page": 9,
+          "row": 13
+        },
+        {
+          "page": 9,
+          "row": 14
+        }
+      ]
+    },
+    {
+      "field": "place",
+      "original": "ن ي ع",
+      "corrected": "قامشلي",
+      "cells": [
+        {
+          "page": 15,
+          "row": 5
+        },
+        {
+          "page": 15,
+          "row": 6
+        },
+        {
+          "page": 15,
+          "row": 7
+        },
+        {
+          "page": 15,
+          "row": 8
+        },
+        {
+          "page": 15,
+          "row": 9
+        }
+      ]
+    },
+    {
+      "field": "institution",
+      "original": "ج ع ع ي",
+      "corrected": "جامعة دمشق",
+      "cells": [
+        {
+          "page": 6,
+          "row": 4
+        },
+        {
+          "page": 6,
+          "row": 5
+        }
+      ]
+    },
+    {
+      "field": "institution",
+      "original": "ج ع ع ل",
+      "corrected": "جامعة حلب",
+      "cells": [
+        {
+          "page": 6,
+          "row": 6
+        },
+        {
+          "page": 9,
+          "row": 2
+        },
+        {
+          "page": 9,
+          "row": 3
+        }
+      ]
+    },
+    {
+      "field": "institution",
+      "original": "ج ع عما ذن ع",
+      "corrected": "جامعة اللاذقية",
+      "cells": [
+        {
+          "page": 6,
+          "row": 7
+        }
+      ]
+    },
+    {
+      "field": "institution",
+      "original": "ج ع ع",
+      "corrected": "جامعة حمص",
+      "cells": [
+        {
+          "page": 6,
+          "row": 8
+        }
+      ]
+    },
+    {
+      "field": "institution",
+      "original": "جامعة حل",
+      "corrected": "جامعة حلب",
+      "cells": [
+        {
+          "page": 9,
+          "row": 4
+        },
+        {
+          "page": 9,
+          "row": 5
+        },
+        {
+          "page": 9,
+          "row": 6
+        },
+        {
+          "page": 9,
+          "row": 7
+        },
+        {
+          "page": 9,
+          "row": 8
+        },
+        {
+          "page": 9,
+          "row": 9
+        },
+        {
+          "page": 9,
+          "row": 10
+        },
+        {
+          "page": 9,
+          "row": 11
+        },
+        {
+          "page": 9,
+          "row": 12
+        },
+        {
+          "page": 9,
+          "row": 13
+        },
+        {
+          "page": 9,
+          "row": 14
+        }
+      ]
+    },
+    {
+      "field": "institution",
+      "original": "ج ع عماييم ع",
+      "corrected": "جامعة الفرات",
+      "cells": [
+        {
+          "page": 15,
+          "row": 5
+        },
+        {
+          "page": 15,
+          "row": 6
+        },
+        {
+          "page": 15,
+          "row": 7
+        },
+        {
+          "page": 15,
+          "row": 8
+        },
+        {
+          "page": 15,
+          "row": 9
+        }
+      ]
+    },
+    {
+      "field": "institution",
+      "original": "ليم اعمالع",
+      "corrected": "وزارة الإعلام",
+      "cells": [
+        {
+          "page": 15,
+          "row": 10
+        },
+        {
+          "page": 15,
+          "row": 11
+        },
+        {
+          "page": 15,
+          "row": 12
+        },
+        {
+          "page": 15,
+          "row": 13
+        },
+        {
+          "page": 15,
+          "row": 14
+        },
+        {
+          "page": 15,
+          "row": 15
+        },
+        {
+          "page": 15,
+          "row": 16
+        },
+        {
+          "page": 15,
+          "row": 17
+        }
+      ]
+    },
+    {
+      "field": "certificate",
+      "original": "م ل عماص اععتعليم اع ماق علعمالعل ع",
+      "corrected": "المهنية الصادرة عن وزارة التربية والتعليم",
+      "cells": [
+        {
+          "page": 9,
+          "row": 2
+        },
+        {
+          "page": 9,
+          "row": 3
+        },
+        {
+          "page": 9,
+          "row": 4
+        },
+        {
+          "page": 9,
+          "row": 5
+        },
+        {
+          "page": 9,
+          "row": 6
+        },
+        {
+          "page": 9,
+          "row": 7
+        },
+        {
+          "page": 9,
+          "row": 8
+        },
+        {
+          "page": 9,
+          "row": 10
+        },
+        {
+          "page": 9,
+          "row": 11
+        },
+        {
+          "page": 15,
+          "row": 10
+        },
+        {
+          "page": 15,
+          "row": 11
+        },
+        {
+          "page": 15,
+          "row": 12
+        },
+        {
+          "page": 15,
+          "row": 13
+        },
+        {
+          "page": 15,
+          "row": 14
+        },
+        {
+          "page": 15,
+          "row": 15
+        },
+        {
+          "page": 15,
+          "row": 16
+        },
+        {
+          "page": 15,
+          "row": 17
+        }
+      ]
+    },
+    {
+      "field": "certificate",
+      "original": "م ل عماص اععتعليم اع مال جع",
+      "corrected": "المهنية الصادرة عن وزارة النقل",
+      "cells": [
+        {
+          "page": 9,
+          "row": 9
+        }
+      ]
+    },
+    {
+      "field": "certificate",
+      "original": "م ل عماص اععتعليم اع ما ن",
+      "corrected": "المهنية الصادرة عن وزارة الطاقة",
+      "cells": [
+        {
+          "page": 9,
+          "row": 12
+        },
+        {
+          "page": 9,
+          "row": 13
+        },
+        {
+          "page": 9,
+          "row": 14
+        }
+      ]
+    },
+    {
+      "field": "certificate",
+      "original": "م ل عماص اععتعليم اعماز مع",
+      "corrected": "المهنية الصادرة عن وزارة الزراعة",
+      "cells": [
+        {
+          "page": 15,
+          "row": 5
+        }
+      ]
+    },
+    {
+      "field": "certificate",
+      "original": "م ل عماص اععتعليم اعماق ع لعمالعل",
+      "corrected": "المهنية الصادرة عن وزارة التربية والتعليم",
+      "cells": [
+        {
+          "page": 15,
+          "row": 6
+        },
+        {
+          "page": 15,
+          "row": 7
+        },
+        {
+          "page": 15,
+          "row": 8
+        },
+        {
+          "page": 15,
+          "row": 9
+        }
+      ]
+    },
+    {
+      "field": "profession",
+      "original": "مالتص ال ع",
+      "corrected": "الاتصالات",
+      "cells": [
+        {
+          "page": 7,
+          "row": 2
+        },
+        {
+          "page": 15,
+          "row": 10
+        }
+      ]
+    },
+    {
+      "field": "profession",
+      "original": "مالب ي علمال فع",
+      "corrected": "التبريد والتكييف",
+      "cells": [
+        {
+          "page": 7,
+          "row": 3
+        }
+      ]
+    },
+    {
+      "field": "profession",
+      "original": "مال لئ علمال ي م",
+      "corrected": "التدفئة والتمديدات",
+      "cells": [
+        {
+          "page": 7,
+          "row": 4
+        }
+      ]
+    },
+    {
+      "field": "profession",
+      "original": "مالصن ععم ن ع",
+      "corrected": "التصنيع الميكانيكي",
+      "cells": [
+        {
+          "page": 7,
+          "row": 5
+        }
+      ]
+    },
+    {
+      "field": "profession",
+      "original": "مالصن ععم ن ع(تعل ع ز ل ع",
+      "corrected": "التصنيع الميكانيكي (تعليم مزدوج)",
+      "cells": [
+        {
+          "page": 7,
+          "row": 6
+        },
+        {
+          "page": 15,
+          "row": 15
+        }
+      ]
+    },
+    {
+      "field": "profession",
+      "original": "مال ل عمالا ق لن",
+      "corrected": "التقنيات الإلكترونية",
+      "cells": [
+        {
+          "page": 7,
+          "row": 7
+        }
+      ]
+    },
+    {
+      "field": "profession",
+      "original": "مال ل عما ية ئ",
+      "corrected": "التقنيات الكهربائية",
+      "cells": [
+        {
+          "page": 7,
+          "row": 8
+        },
+        {
+          "page": 9,
+          "row": 2
+        },
+        {
+          "page": 9,
+          "row": 3
+        }
+      ]
+    },
+    {
+      "field": "profession",
+      "original": "مالح علتي جعم ع ع",
+      "corrected": "اللحام وتشكيل المعادن",
+      "cells": [
+        {
+          "page": 7,
+          "row": 9
+        }
+      ]
+    },
+    {
+      "field": "profession",
+      "original": "مالح علتي جعم ع (تعل ع ز ل ع",
+      "corrected": "اللحام وتشكيل المعادن (تعليم مزدوج)",
+      "cells": [
+        {
+          "page": 7,
+          "row": 10
+        }
+      ]
+    },
+    {
+      "field": "profession",
+      "original": "م تيلن ع",
+      "corrected": "الميكاترونيكس",
+      "cells": [
+        {
+          "page": 7,
+          "row": 11
+        },
+        {
+          "page": 9,
+          "row": 6
+        },
+        {
+          "page": 15,
+          "row": 16
+        }
+      ]
+    },
+    {
+      "field": "profession",
+      "original": "م تيلن ع(تعل ع ز ل ع",
+      "corrected": "الميكاترونيكس (تعليم مزدوج)",
+      "cells": [
+        {
+          "page": 7,
+          "row": 12
+        },
+        {
+          "page": 9,
+          "row": 7
+        },
+        {
+          "page": 15,
+          "row": 17
+        }
+      ]
+    },
+    {
+      "field": "profession",
+      "original": "مالح ع لتي جعم ع",
+      "corrected": "اللحام وتشكيل المعادن",
+      "cells": [
+        {
+          "page": 9,
+          "row": 4
+        }
+      ]
+    },
+    {
+      "field": "profession",
+      "original": "مالح علتي جعم ع (تعل ع ز ل",
+      "corrected": "اللحام وتشكيل المعادن (تعليم مزدوج)",
+      "cells": [
+        {
+          "page": 9,
+          "row": 5
+        }
+      ]
+    },
+    {
+      "field": "profession",
+      "original": "مانس ج",
+      "corrected": "النسيج",
+      "cells": [
+        {
+          "page": 9,
+          "row": 8
+        }
+      ]
+    },
+    {
+      "field": "profession",
+      "original": "مال جع مابحييع( ع حي",
+      "corrected": "النقل البحري (ملاحة بحرية)",
+      "cells": [
+        {
+          "page": 9,
+          "row": 9
+        }
+      ]
+    },
+    {
+      "field": "profession",
+      "original": "مال ذ علماسب ك ع",
+      "corrected": "النماذج والسباكة",
+      "cells": [
+        {
+          "page": 9,
+          "row": 10
+        }
+      ]
+    },
+    {
+      "field": "profession",
+      "original": "ص ن عم ج زاعما ب ع",
+      "corrected": "صيانة الأجهزة الطبية",
+      "cells": [
+        {
+          "page": 9,
+          "row": 11
+        }
+      ]
+    },
+    {
+      "field": "profession",
+      "original": "تعني عأج زاعما سع لمالح",
+      "corrected": "مهن نفطية أجهزة القياس والتحكم",
+      "cells": [
+        {
+          "page": 9,
+          "row": 12
+        }
+      ]
+    },
+    {
+      "field": "profession",
+      "original": "تعني عمالح علتي جع م ع",
+      "corrected": "مهن نفطية اللحام وتشكيل المعادن",
+      "cells": [
+        {
+          "page": 9,
+          "row": 13
+        }
+      ]
+    },
+    {
+      "field": "profession",
+      "original": "تعني عك ية معصل ع ع",
+      "corrected": "مهن نفطية كهرباء صناعية",
+      "cells": [
+        {
+          "page": 9,
+          "row": 14
+        }
+      ]
+    },
+    {
+      "field": "profession",
+      "original": "مال عي مع ع",
+      "corrected": "الآلات الزراعية",
+      "cells": [
+        {
+          "page": 15,
+          "row": 5
+        }
+      ]
+    },
+    {
+      "field": "profession",
+      "original": "ن كعمآلا علم ع م عماز مع ع",
+      "corrected": "ميكانيك الآليات والمعدات الزراعية",
+      "cells": [
+        {
+          "page": 15,
+          "row": 6
+        },
+        {
+          "page": 15,
+          "row": 7
+        }
+      ]
+    },
+    {
+      "field": "profession",
+      "original": "ن كعلك ية معم يكب ع",
+      "corrected": "ميكانيك وكهرباء المركبات",
+      "cells": [
+        {
+          "page": 15,
+          "row": 8
+        }
+      ]
+    },
+    {
+      "field": "profession",
+      "original": "ن كعم يكب ع",
+      "corrected": "ميكانيك المركبات",
+      "cells": [
+        {
+          "page": 15,
+          "row": 9
+        }
+      ]
+    },
+    {
+      "field": "profession",
+      "original": "ت ل ع ع",
+      "corrected": "تقنيات حاسوب",
+      "cells": [
+        {
+          "page": 15,
+          "row": 11
+        }
+      ]
+    },
+    {
+      "field": "profession",
+      "original": "مال ل عمالا ق لن ع",
+      "corrected": "التقنيات الإلكترونية",
+      "cells": [
+        {
+          "page": 15,
+          "row": 12
+        }
+      ]
+    },
+    {
+      "field": "profession",
+      "original": "مال ل عما ية ئ ع",
+      "corrected": "التقنيات الكهربائية",
+      "cells": [
+        {
+          "page": 15,
+          "row": 13
+        }
+      ]
+    },
+    {
+      "field": "profession",
+      "original": "مالصن عع م ن ع",
+      "corrected": "التصنيع الميكانيكي",
+      "cells": [
+        {
+          "page": 15,
+          "row": 14
+        }
+      ]
+    },
+    {
+      "field": "parallel",
+      "original": "ج عع م ل ع",
+      "corrected": "جميع المتقدمين",
+      "cells": [
+        {
+          "page": 12,
+          "row": 2
+        },
+        {
+          "page": 12,
+          "row": 3
+        },
+        {
+          "page": 12,
+          "row": 10
+        },
+        {
+          "page": 20,
+          "row": 8
+        }
+      ]
+    },
+    {
+      "field": "parallel",
+      "original": "ج ععم ل ع",
+      "corrected": "جميع المتقدمين",
+      "cells": [
+        {
+          "page": 12,
+          "row": 4
+        },
+        {
+          "page": 12,
+          "row": 5
+        },
+        {
+          "page": 12,
+          "row": 6
+        },
+        {
+          "page": 12,
+          "row": 7
+        },
+        {
+          "page": 12,
+          "row": 8
+        },
+        {
+          "page": 12,
+          "row": 9
+        },
+        {
+          "page": 12,
+          "row": 11
+        },
+        {
+          "page": 12,
+          "row": 12
+        },
+        {
+          "page": 12,
+          "row": 13
+        },
+        {
+          "page": 12,
+          "row": 14
+        },
+        {
+          "page": 12,
+          "row": 15
+        },
+        {
+          "page": 12,
+          "row": 16
+        },
+        {
+          "page": 12,
+          "row": 17
+        },
+        {
+          "page": 13,
+          "row": 2
+        },
+        {
+          "page": 13,
+          "row": 3
+        },
+        {
+          "page": 15,
+          "row": 5
+        },
+        {
+          "page": 15,
+          "row": 6
+        },
+        {
+          "page": 15,
+          "row": 7
+        },
+        {
+          "page": 15,
+          "row": 8
+        },
+        {
+          "page": 15,
+          "row": 9
+        },
+        {
+          "page": 15,
+          "row": 10
+        },
+        {
+          "page": 15,
+          "row": 11
+        },
+        {
+          "page": 15,
+          "row": 12
+        },
+        {
+          "page": 15,
+          "row": 13
+        },
+        {
+          "page": 15,
+          "row": 14
+        },
+        {
+          "page": 15,
+          "row": 15
+        },
+        {
+          "page": 15,
+          "row": 16
+        },
+        {
+          "page": 15,
+          "row": 17
+        },
+        {
+          "page": 20,
+          "row": 2
+        },
+        {
+          "page": 20,
+          "row": 3
+        },
+        {
+          "page": 20,
+          "row": 4
+        },
+        {
+          "page": 20,
+          "row": 5
+        },
+        {
+          "page": 20,
+          "row": 6
+        },
+        {
+          "page": 20,
+          "row": 7
+        },
+        {
+          "page": 20,
+          "row": 9
+        }
+      ]
+    },
+    {
+      "field": "conditions",
+      "original": "مال حع عمال لب ع مل صع عكل عمايل ع شيطعال ل تعماي ب ع لل عمع ع ن عع ي1ي عععععع",
+      "corrected": "النجاح في الاختبار الخاص في كلية الفنون شرط لتدوين الرغبة وفق إعلان رقم 1",
+      "cells": [
+        {
+          "page": 6,
+          "row": 4
+        },
+        {
+          "page": 6,
+          "row": 5
+        },
+        {
+          "page": 6,
+          "row": 6
+        },
+        {
+          "page": 6,
+          "row": 7
+        }
+      ]
+    },
+    {
+      "field": "conditions",
+      "original": "مال حع عمال لب عمل صع عكل ع ماق عم ع شيطعال ل تعماي ب علل ع مع ع ن ع ي1ععع ي",
+      "corrected": "النجاح في الاختبار الخاص في كلية التربية الموسيقية شرط لتدوين الرغبة وفق الإعلان رقم 1",
+      "cells": [
+        {
+          "page": 6,
+          "row": 8
+        }
+      ]
+    },
+    {
+      "field": "conditions",
+      "original": "ذكور - مواليد2003 و ما بعد -م ال حع عمايح عما ب ع بع عص ل عنل ئجعما ب ع ي لل علل ع عة ع ح ع عإع ع ع ن عي ععع1ي",
+      "corrected": "ذكور - مواليد 2003 وما بعد - النجاح في الفحص الطبي بعد صدور نتائج القبول بالمفاضلة وفق ما هو محدد في إعلان رقم 1",
+      "cells": [
+        {
+          "page": 15,
+          "row": 2
+        },
+        {
+          "page": 15,
+          "row": 3
+        },
+        {
+          "page": 15,
+          "row": 4
+        }
+      ]
+    },
+    {
+      "field": "conditions",
+      "original": "ع بع عمال حع لب ع مالغ ع م جلب ععم ح ع لل ععملع ع ن ي1عي",
+      "corrected": "بعد النجاح باختبار اللغة الأجنبية المحدد وفق الإعلان رقم 1",
+      "cells": [
+        {
+          "page": 17,
+          "row": 2
+        },
+        {
+          "page": 17,
+          "row": 3
+        },
+        {
+          "page": 17,
+          "row": 4
+        },
+        {
+          "page": 17,
+          "row": 5
+        },
+        {
+          "page": 17,
+          "row": 6
+        },
+        {
+          "page": 17,
+          "row": 7
+        },
+        {
+          "page": 17,
+          "row": 8
+        },
+        {
+          "page": 17,
+          "row": 9
+        },
+        {
+          "page": 17,
+          "row": 10
+        },
+        {
+          "page": 17,
+          "row": 11
+        },
+        {
+          "page": 17,
+          "row": 12
+        },
+        {
+          "page": 17,
+          "row": 13
+        },
+        {
+          "page": 17,
+          "row": 14
+        },
+        {
+          "page": 17,
+          "row": 15
+        },
+        {
+          "page": 17,
+          "row": 16
+        },
+        {
+          "page": 17,
+          "row": 17
+        },
+        {
+          "page": 17,
+          "row": 18
+        },
+        {
+          "page": 17,
+          "row": 19
+        }
+      ]
+    },
+    {
+      "field": "conditions",
+      "original": "مجيممع ل ع تلر تع تع ا ع ع مجيممع م لب ع الغ عم جلب ع ع ك عة ع ح ع ع ملع ع ن ي1عي",
+      "corrected": "إجراء مقابلة تتضمن من خلالها إجراء اختبار باللغة الأجنبية كما هو محدد في الإعلان رقم 1",
+      "cells": [
+        {
+          "page": 18,
+          "row": 2
+        },
+        {
+          "page": 18,
+          "row": 3
+        },
+        {
+          "page": 18,
+          "row": 4
+        },
+        {
+          "page": 18,
+          "row": 5
+        },
+        {
+          "page": 18,
+          "row": 6
+        },
+        {
+          "page": 18,
+          "row": 7
+        }
+      ]
+    }
+  ]
+}

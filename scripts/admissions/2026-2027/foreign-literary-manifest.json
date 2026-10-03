@@ -1,0 +1,38 @@
+{
+  "version": "2026.1-foreign-literary.1",
+  "extractedRowsSha256": "123fcb5b9fc497e024b1275c1449927d402fa004d2ed453e2e7102d0477bd9f8",
+  "privateCatalogueSha256": "ecbd664d6103206c735477d5d55ddbb220870e0457c7384eb852e0ac6bd54d7f",
+  "programCount": 348,
+  "publicCount": 217,
+  "privateCount": 131,
+  "rowsPerPage": {
+    "30": 28,
+    "31": 30,
+    "32": 30,
+    "33": 30,
+    "34": 30,
+    "35": 30,
+    "36": 30,
+    "37": 9
+  },
+  "channels": {
+    "arab_foreign": 217,
+    "private": 131
+  },
+  "conditions": {
+    "gender": 9,
+    "exam": 32
+  },
+  "excludedSections": [
+    {
+      "announcement": 9,
+      "page": 2,
+      "reason": "older_certificates_private_route"
+    },
+    {
+      "announcement": 9,
+      "page": 3,
+      "reason": "direct_language_registration"
+    }
+  ]
+}

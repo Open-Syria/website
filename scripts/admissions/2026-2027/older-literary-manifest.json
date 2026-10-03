@@ -1,0 +1,49 @@
+{
+  "version": "2026.1-older-literary.1",
+  "scope": {
+    "branch": "literary",
+    "certificateYear": 2026,
+    "certificate": "syrian_or_non_syrian",
+    "certificateYearMaximum": 2025,
+    "applicantCategory": "syrian_or_equivalent"
+  },
+  "prerequisiteCatalogue": "literary.json",
+  "prerequisiteCatalogueSha256": "ecbd664d6103206c735477d5d55ddbb220870e0457c7384eb852e0ac6bd54d7f",
+  "extractedRowsFile": "literary-rows.json",
+  "extractedRowsSha256": "1392de521611e685c19ff3da01c40ef36e6721385263d7cbd6376815d8af53e6",
+  "privateRows": 131,
+  "programCount": 131,
+  "sourceRowsPerPage": {
+    "33": 18,
+    "34": 18,
+    "35": 18,
+    "36": 17,
+    "37": 16,
+    "38": 18,
+    "39": 15,
+    "40": 11
+  },
+  "conditions": {
+    "exam": 8
+  },
+  "scopeReferences": [
+    {
+      "announcement": 7,
+      "page": 4
+    },
+    {
+      "announcement": 7,
+      "page": 5
+    },
+    {
+      "announcement": 7,
+      "page": 6
+    }
+  ],
+  "score": "Use the official admission percentage for the certificate year; do not infer a historical denominator from 2026 totals. Vocational qualifications and all entrance tests remain required.",
+  "excluded": [
+    "Public admission",
+    "Transfer/change-of-admission processes (PDF 7 p2)",
+    "Older Sharia certificates: the reviewed equivalence rule is explicitly scoped to 2026 in PDF 3"
+  ]
+}

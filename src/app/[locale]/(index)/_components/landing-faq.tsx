@@ -1,12 +1,7 @@
 import { HelpCircle } from "lucide-react"
 import { cacheLife } from "next/cache"
 
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion"
+import { FaqAccordion } from "@/components/faq-accordion"
 import type { Locale } from "@/i18n/routing"
 import { cn } from "@/lib/utils"
 import { getLandingFaqContent } from "../_utils/faq"
@@ -21,7 +16,6 @@ export async function LandingFaq({ locale }: LandingFaqProps) {
   cacheLife("hours")
 
   const faq = await getLandingFaqContent(locale)
-  const defaultValue = faq.items[0] ? [faq.items[0].id] : undefined
 
   return (
     <section
@@ -50,22 +44,7 @@ export async function LandingFaq({ locale }: LandingFaqProps) {
           </p>
         </div>
 
-        <Accordion
-          className="rounded-md border bg-background px-4 shadow-sm sm:px-6"
-          defaultValue={defaultValue}
-          hiddenUntilFound
-        >
-          {faq.items.map((item) => (
-            <AccordionItem key={item.id} value={item.id}>
-              <AccordionTrigger className="py-5 text-base leading-6">
-                {item.question}
-              </AccordionTrigger>
-              <AccordionContent className="text-muted-foreground leading-7">
-                {item.answer}
-              </AccordionContent>
-            </AccordionItem>
-          ))}
-        </Accordion>
+        <FaqAccordion items={faq.items} />
       </div>
     </section>
   )

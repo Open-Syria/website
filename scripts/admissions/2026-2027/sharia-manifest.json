@@ -1,0 +1,286 @@
+{
+  "version": "2026.1-sharia.2",
+  "extractedRowsFile": "literary-rows.json",
+  "extractedRowsSha256": "1392de521611e685c19ff3da01c40ef36e6721385263d7cbd6376815d8af53e6",
+  "literaryCatalogueSha256": "ecbd664d6103206c735477d5d55ddbb220870e0457c7384eb852e0ac6bd54d7f",
+  "extractedRows": 415,
+  "programCount": 373,
+  "excludedRows": [
+    {
+      "id": "sharia-public-05-022",
+      "reason": "replaced_by_sharia_certificate_row"
+    },
+    {
+      "id": "sharia-public-05-023",
+      "reason": "replaced_by_sharia_certificate_row"
+    },
+    {
+      "id": "sharia-public-05-024",
+      "reason": "replaced_by_sharia_certificate_row"
+    },
+    {
+      "id": "sharia-public-05-025",
+      "reason": "replaced_by_sharia_certificate_row"
+    },
+    {
+      "id": "sharia-public-05-026",
+      "reason": "replaced_by_sharia_certificate_row"
+    },
+    {
+      "id": "sharia-public-05-027",
+      "reason": "replaced_by_sharia_certificate_row"
+    },
+    {
+      "id": "sharia-public-05-028",
+      "reason": "replaced_by_sharia_certificate_row"
+    },
+    {
+      "id": "sharia-public-05-029",
+      "reason": "replaced_by_sharia_certificate_row"
+    },
+    {
+      "id": "sharia-public-05-030",
+      "reason": "replaced_by_sharia_certificate_row"
+    },
+    {
+      "id": "sharia-public-05-031",
+      "reason": "replaced_by_sharia_certificate_row"
+    },
+    {
+      "id": "sharia-public-05-032",
+      "reason": "replaced_by_sharia_certificate_row"
+    },
+    {
+      "id": "sharia-public-05-033",
+      "reason": "replaced_by_sharia_certificate_row"
+    },
+    {
+      "id": "sharia-public-05-034",
+      "reason": "replaced_by_sharia_certificate_row"
+    },
+    {
+      "id": "sharia-public-05-035",
+      "reason": "replaced_by_sharia_certificate_row"
+    },
+    {
+      "id": "sharia-public-05-036",
+      "reason": "replaced_by_sharia_certificate_row"
+    },
+    {
+      "id": "sharia-public-05-037",
+      "reason": "replaced_by_sharia_certificate_row"
+    },
+    {
+      "id": "sharia-public-05-038",
+      "reason": "replaced_by_sharia_certificate_row"
+    },
+    {
+      "id": "sharia-public-05-039",
+      "reason": "replaced_by_sharia_certificate_row"
+    },
+    {
+      "id": "sharia-public-05-040",
+      "reason": "replaced_by_sharia_certificate_row"
+    },
+    {
+      "id": "sharia-public-07-018",
+      "reason": "direct_institute_registration_pdf3_p4"
+    },
+    {
+      "id": "sharia-public-07-019",
+      "reason": "direct_institute_registration_pdf3_p4"
+    },
+    {
+      "id": "sharia-public-07-020",
+      "reason": "direct_institute_registration_pdf3_p4"
+    },
+    {
+      "id": "sharia-public-07-021",
+      "reason": "direct_institute_registration_pdf3_p4"
+    },
+    {
+      "id": "sharia-public-07-022",
+      "reason": "direct_institute_registration_pdf3_p4"
+    },
+    {
+      "id": "sharia-public-07-023",
+      "reason": "direct_institute_registration_pdf3_p4"
+    },
+    {
+      "id": "sharia-public-07-024",
+      "reason": "direct_institute_registration_pdf3_p4"
+    },
+    {
+      "id": "sharia-public-07-025",
+      "reason": "direct_institute_registration_pdf3_p4"
+    },
+    {
+      "id": "sharia-public-07-026",
+      "reason": "direct_institute_registration_pdf3_p4"
+    },
+    {
+      "id": "sharia-public-07-027",
+      "reason": "direct_institute_registration_pdf3_p4"
+    },
+    {
+      "id": "sharia-public-07-028",
+      "reason": "direct_institute_registration_pdf3_p4"
+    },
+    {
+      "id": "sharia-public-07-029",
+      "reason": "direct_institute_registration_pdf3_p4"
+    },
+    {
+      "id": "sharia-public-07-030",
+      "reason": "direct_institute_registration_pdf3_p4"
+    },
+    {
+      "id": "sharia-public-07-031",
+      "reason": "direct_institute_registration_pdf3_p4"
+    },
+    {
+      "id": "sharia-public-07-032",
+      "reason": "direct_institute_registration_pdf3_p4"
+    },
+    {
+      "id": "sharia-public-07-033",
+      "reason": "direct_institute_registration_pdf3_p4"
+    },
+    {
+      "id": "sharia-public-07-034",
+      "reason": "direct_institute_registration_pdf3_p4"
+    },
+    {
+      "id": "sharia-public-07-035",
+      "reason": "direct_institute_registration_pdf3_p4"
+    },
+    {
+      "id": "sharia-public-07-036",
+      "reason": "direct_institute_registration_pdf3_p4"
+    },
+    {
+      "id": "sharia-public-07-037",
+      "reason": "direct_institute_registration_pdf3_p4"
+    },
+    {
+      "id": "sharia-public-07-038",
+      "reason": "direct_institute_registration_pdf3_p4"
+    },
+    {
+      "id": "sharia-public-07-039",
+      "reason": "direct_institute_registration_pdf3_p4"
+    },
+    {
+      "id": "sharia-public-07-040",
+      "reason": "direct_institute_registration_pdf3_p4"
+    }
+  ],
+  "dedicatedShariaRows": [
+    {
+      "page": 5,
+      "row": 41
+    },
+    {
+      "page": 5,
+      "row": 42
+    },
+    {
+      "page": 5,
+      "row": 43
+    },
+    {
+      "page": 5,
+      "row": 44
+    },
+    {
+      "page": 5,
+      "row": 45
+    },
+    {
+      "page": 5,
+      "row": 46
+    },
+    {
+      "page": 5,
+      "row": 47
+    },
+    {
+      "page": 6,
+      "row": 3
+    },
+    {
+      "page": 6,
+      "row": 4
+    },
+    {
+      "page": 6,
+      "row": 5
+    },
+    {
+      "page": 6,
+      "row": 6
+    },
+    {
+      "page": 6,
+      "row": 7
+    },
+    {
+      "page": 6,
+      "row": 8
+    },
+    {
+      "page": 6,
+      "row": 9
+    },
+    {
+      "page": 6,
+      "row": 10
+    },
+    {
+      "page": 6,
+      "row": 11
+    },
+    {
+      "page": 6,
+      "row": 12
+    },
+    {
+      "page": 6,
+      "row": 13
+    },
+    {
+      "page": 6,
+      "row": 14
+    }
+  ],
+  "sourceRowsPerPage": {
+    "private-33": 18,
+    "private-34": 18,
+    "private-35": 18,
+    "private-36": 17,
+    "private-37": 16,
+    "private-38": 18,
+    "private-39": 15,
+    "private-40": 11,
+    "public-01": 36,
+    "public-02": 43,
+    "public-03": 45,
+    "public-04": 41,
+    "public-05": 45,
+    "public-06": 36,
+    "public-07": 38
+  },
+  "channels": {
+    "general": 242,
+    "parallel": 242,
+    "private": 131
+  },
+  "conditions": {
+    "no_previous_general_admission": 242,
+    "subject": 124,
+    "governorate": 96,
+    "gender": 28,
+    "exam": 58
+  },
+  "scoreBasis": "Standard choices: PDF 3 p2 religious subjects averaged as one course. Dedicated Sharia choices: PDF 4 p5 after adding religious-subject marks, continued on p6. Enter the official percentages separately; no unpublished formula is inferred."
+}

@@ -1,0 +1,2126 @@
+{
+  "announcement": 11,
+  "reviewedAt": "2026-10-03",
+  "method": "Exact cell transcriptions checked against rendered PDF pages 4–20. Missing glyphs can have different values in different cells; apply only to the listed coordinates.",
+  "corrections": [
+    {
+      "field": "name",
+      "original": "( الكلية التطبيقية )ميكاترونيكس ا",
+      "corrected": "الكلية التطبيقية (ميكاترونيكس)",
+      "cells": [
+        {
+          "page": 4,
+          "row": 6
+        },
+        {
+          "page": 4,
+          "row": 7
+        },
+        {
+          "page": 4,
+          "row": 8
+        },
+        {
+          "page": 4,
+          "row": 9
+        },
+        {
+          "page": 4,
+          "row": 10
+        },
+        {
+          "page": 4,
+          "row": 11
+        },
+        {
+          "page": 4,
+          "row": 12
+        },
+        {
+          "page": 4,
+          "row": 13
+        },
+        {
+          "page": 4,
+          "row": 14
+        }
+      ]
+    },
+    {
+      "field": "place",
+      "original": "لر",
+      "corrected": "دمشق",
+      "cells": [
+        {
+          "page": 7,
+          "row": 2
+        },
+        {
+          "page": 15,
+          "row": 10
+        },
+        {
+          "page": 15,
+          "row": 11
+        },
+        {
+          "page": 15,
+          "row": 12
+        },
+        {
+          "page": 15,
+          "row": 13
+        },
+        {
+          "page": 15,
+          "row": 14
+        },
+        {
+          "page": 15,
+          "row": 15
+        },
+        {
+          "page": 15,
+          "row": 16
+        },
+        {
+          "page": 15,
+          "row": 17
+        }
+      ]
+    },
+    {
+      "field": "place",
+      "original": "يع ياي",
+      "corrected": "السويداء",
+      "cells": [
+        {
+          "page": 7,
+          "row": 3
+        }
+      ]
+    },
+    {
+      "field": "place",
+      "original": "ل ت",
+      "corrected": "حلب",
+      "cells": [
+        {
+          "page": 7,
+          "row": 4
+        },
+        {
+          "page": 9,
+          "row": 2
+        },
+        {
+          "page": 9,
+          "row": 3
+        },
+        {
+          "page": 9,
+          "row": 4
+        },
+        {
+          "page": 9,
+          "row": 5
+        },
+        {
+          "page": 9,
+          "row": 6
+        },
+        {
+          "page": 9,
+          "row": 7
+        },
+        {
+          "page": 9,
+          "row": 8
+        },
+        {
+          "page": 9,
+          "row": 9
+        },
+        {
+          "page": 9,
+          "row": 10
+        },
+        {
+          "page": 9,
+          "row": 11
+        },
+        {
+          "page": 9,
+          "row": 12
+        },
+        {
+          "page": 9,
+          "row": 13
+        }
+      ]
+    },
+    {
+      "field": "place",
+      "original": "يعشذم ت",
+      "corrected": "اللاذقية",
+      "cells": [
+        {
+          "page": 7,
+          "row": 5
+        },
+        {
+          "page": 17,
+          "row": 8
+        },
+        {
+          "page": 17,
+          "row": 9
+        },
+        {
+          "page": 18,
+          "row": 4
+        },
+        {
+          "page": 18,
+          "row": 5
+        }
+      ]
+    },
+    {
+      "field": "place",
+      "original": "",
+      "corrected": "حمص",
+      "cells": [
+        {
+          "page": 7,
+          "row": 6
+        },
+        {
+          "page": 17,
+          "row": 12
+        },
+        {
+          "page": 17,
+          "row": 13
+        },
+        {
+          "page": 18,
+          "row": 2
+        },
+        {
+          "page": 18,
+          "row": 3
+        }
+      ]
+    },
+    {
+      "field": "institution",
+      "original": "رع تلر",
+      "corrected": "جامعة دمشق",
+      "cells": [
+        {
+          "page": 7,
+          "row": 2
+        },
+        {
+          "page": 7,
+          "row": 3
+        }
+      ]
+    },
+    {
+      "field": "institution",
+      "original": "رع ت ل",
+      "corrected": "جامعة حلب",
+      "cells": [
+        {
+          "page": 7,
+          "row": 4
+        }
+      ]
+    },
+    {
+      "field": "institution",
+      "original": "رع تيعشذم ت",
+      "corrected": "جامعة اللاذقية",
+      "cells": [
+        {
+          "page": 7,
+          "row": 5
+        }
+      ]
+    },
+    {
+      "field": "institution",
+      "original": "رع ت",
+      "corrected": "جامعة حمص",
+      "cells": [
+        {
+          "page": 7,
+          "row": 6
+        }
+      ]
+    },
+    {
+      "field": "name",
+      "original": "كل تيعل شتيو ل ت ت",
+      "corrected": "كلية الفنون الجميلة",
+      "cells": [
+        {
+          "page": 7,
+          "row": 2
+        },
+        {
+          "page": 7,
+          "row": 3
+        },
+        {
+          "page": 7,
+          "row": 5
+        }
+      ]
+    },
+    {
+      "field": "name",
+      "original": "كل تيعل شتيو ل تيعاةب ت ت",
+      "corrected": "كلية الفنون الجميلة التطبيقية",
+      "cells": [
+        {
+          "page": 7,
+          "row": 4
+        }
+      ]
+    },
+    {
+      "field": "name",
+      "original": "كل تيعس تير ت",
+      "corrected": "كلية التربية الموسيقية",
+      "cells": [
+        {
+          "page": 7,
+          "row": 6
+        }
+      ]
+    },
+    {
+      "field": "conditions",
+      "original": "يع حت تيحخاب مت يوع صت تكل تيعل شت طتعااعيلتيع هب ت عف تيعششتمم تتت/1/تتتتتت",
+      "corrected": "النجاح في الاختبار الخاص في كلية الفنون شرط لتدوين الرغبة وفق إعلان رقم 1",
+      "cells": [
+        {
+          "page": 7,
+          "row": 2
+        },
+        {
+          "page": 7,
+          "row": 3
+        },
+        {
+          "page": 7,
+          "row": 4
+        },
+        {
+          "page": 7,
+          "row": 5
+        }
+      ]
+    },
+    {
+      "field": "conditions",
+      "original": "يع حت تيحخاب مت يوع صت تكل ت يعس ت ير ت طتعااعيلت يع هب تعف تيعششتمم/1/ت",
+      "corrected": "النجاح في الاختبار الخاص في كلية التربية الموسيقية شرط لتدوين الرغبة وفق إعلان رقم 1",
+      "cells": [
+        {
+          "page": 7,
+          "row": 6
+        }
+      ]
+    },
+    {
+      "field": "profession",
+      "original": "يحت ح ت ت",
+      "corrected": "الاتصالات",
+      "cells": [
+        {
+          "page": 7,
+          "row": 7
+        }
+      ]
+    },
+    {
+      "field": "profession",
+      "original": "يعاب ياتعيعاك ف ت",
+      "corrected": "التبريد والتكييف",
+      "cells": [
+        {
+          "page": 7,
+          "row": 8
+        }
+      ]
+    },
+    {
+      "field": "profession",
+      "original": "يعاافئ تعيعا اياي ت ت",
+      "corrected": "التدفئة والتمديدات",
+      "cells": [
+        {
+          "page": 7,
+          "row": 9
+        }
+      ]
+    },
+    {
+      "field": "profession",
+      "original": "يعا ن عتير ن ت ت",
+      "corrected": "التصنيع الميكانيكي",
+      "cells": [
+        {
+          "page": 7,
+          "row": 10
+        }
+      ]
+    },
+    {
+      "field": "profession",
+      "original": "يعا ن عتير ن ت(تعل ترزلعت ت ت",
+      "corrected": "التصنيع الميكانيكي (تعليم مزدوج)",
+      "cells": [
+        {
+          "page": 7,
+          "row": 11
+        },
+        {
+          "page": 15,
+          "row": 15
+        }
+      ]
+    },
+    {
+      "field": "profession",
+      "original": "يعا تيحعكس عن ت ت",
+      "corrected": "التقنيات الإلكترونية",
+      "cells": [
+        {
+          "page": 7,
+          "row": 12
+        },
+        {
+          "page": 15,
+          "row": 12
+        }
+      ]
+    },
+    {
+      "field": "profession",
+      "original": "يعا تيعك ئ ت ت",
+      "corrected": "التقنيات الكهربائية",
+      "cells": [
+        {
+          "page": 7,
+          "row": 13
+        }
+      ]
+    },
+    {
+      "field": "profession",
+      "original": "يعلا تعت ك لتيرع لشت ت",
+      "corrected": "اللحام وتشكيل المعادن",
+      "cells": [
+        {
+          "page": 7,
+          "row": 14
+        }
+      ]
+    },
+    {
+      "field": "profession",
+      "original": "يعلا تعت ك لتيرع لش(تعل ترزلعت ت ت",
+      "corrected": "اللحام وتشكيل المعادن (تعليم مزدوج)",
+      "cells": [
+        {
+          "page": 7,
+          "row": 15
+        }
+      ]
+    },
+    {
+      "field": "profession",
+      "original": "ير ت عن ك ت ت",
+      "corrected": "الميكاترونيكس",
+      "cells": [
+        {
+          "page": 7,
+          "row": 16
+        },
+        {
+          "page": 9,
+          "row": 5
+        },
+        {
+          "page": 15,
+          "row": 16
+        }
+      ]
+    },
+    {
+      "field": "profession",
+      "original": "ير ت عن ك ت(تعل ترزلعت ت ت",
+      "corrected": "الميكاترونيكس (تعليم مزدوج)",
+      "cells": [
+        {
+          "page": 7,
+          "row": 17
+        },
+        {
+          "page": 9,
+          "row": 6
+        },
+        {
+          "page": 15,
+          "row": 17
+        }
+      ]
+    },
+    {
+      "field": "institution",
+      "original": "رع ت ل ت",
+      "corrected": "جامعة حلب",
+      "cells": [
+        {
+          "page": 9,
+          "row": 2
+        },
+        {
+          "page": 9,
+          "row": 3
+        },
+        {
+          "page": 9,
+          "row": 4
+        },
+        {
+          "page": 9,
+          "row": 5
+        },
+        {
+          "page": 9,
+          "row": 6
+        },
+        {
+          "page": 9,
+          "row": 7
+        },
+        {
+          "page": 9,
+          "row": 8
+        },
+        {
+          "page": 9,
+          "row": 9
+        },
+        {
+          "page": 9,
+          "row": 10
+        },
+        {
+          "page": 9,
+          "row": 11
+        },
+        {
+          "page": 9,
+          "row": 12
+        },
+        {
+          "page": 9,
+          "row": 13
+        }
+      ]
+    },
+    {
+      "field": "name",
+      "original": "يرع اتيعا تعل ا تير ن ك ت عيعك ئ ت",
+      "corrected": "المعهد التقاني للهندسة الميكانيكية والكهربائية",
+      "cells": [
+        {
+          "page": 9,
+          "row": 2
+        },
+        {
+          "page": 9,
+          "row": 3
+        },
+        {
+          "page": 9,
+          "row": 4
+        },
+        {
+          "page": 9,
+          "row": 5
+        },
+        {
+          "page": 9,
+          "row": 6
+        },
+        {
+          "page": 9,
+          "row": 7
+        },
+        {
+          "page": 9,
+          "row": 8
+        },
+        {
+          "page": 9,
+          "row": 9
+        },
+        {
+          "page": 9,
+          "row": 10
+        },
+        {
+          "page": 9,
+          "row": 11
+        },
+        {
+          "page": 9,
+          "row": 12
+        },
+        {
+          "page": 9,
+          "row": 13
+        }
+      ]
+    },
+    {
+      "field": "certificate",
+      "original": "ير تيع لم تعلتعليم ت يعس تعتيعاعل ت",
+      "corrected": "المهنية الصادرة عن وزارة التربية و التعليم",
+      "cells": [
+        {
+          "page": 9,
+          "row": 2
+        },
+        {
+          "page": 9,
+          "row": 3
+        },
+        {
+          "page": 9,
+          "row": 4
+        },
+        {
+          "page": 9,
+          "row": 5
+        },
+        {
+          "page": 9,
+          "row": 6
+        },
+        {
+          "page": 9,
+          "row": 7
+        }
+      ]
+    },
+    {
+      "field": "certificate",
+      "original": "ير تيع لم تعلتعليم ت يعس تعتيعاعل ت ت",
+      "corrected": "المهنية الصادرة عن وزارة التربية و التعليم",
+      "cells": [
+        {
+          "page": 9,
+          "row": 9
+        },
+        {
+          "page": 9,
+          "row": 10
+        },
+        {
+          "page": 15,
+          "row": 6
+        },
+        {
+          "page": 15,
+          "row": 7
+        },
+        {
+          "page": 15,
+          "row": 8
+        },
+        {
+          "page": 15,
+          "row": 9
+        },
+        {
+          "page": 15,
+          "row": 10
+        },
+        {
+          "page": 15,
+          "row": 11
+        },
+        {
+          "page": 15,
+          "row": 12
+        },
+        {
+          "page": 15,
+          "row": 13
+        },
+        {
+          "page": 15,
+          "row": 14
+        },
+        {
+          "page": 15,
+          "row": 15
+        },
+        {
+          "page": 15,
+          "row": 16
+        },
+        {
+          "page": 15,
+          "row": 17
+        },
+        {
+          "page": 18,
+          "row": 2
+        },
+        {
+          "page": 18,
+          "row": 3
+        },
+        {
+          "page": 18,
+          "row": 4
+        },
+        {
+          "page": 18,
+          "row": 5
+        },
+        {
+          "page": 18,
+          "row": 6
+        },
+        {
+          "page": 18,
+          "row": 7
+        }
+      ]
+    },
+    {
+      "field": "certificate",
+      "original": "ير تيع لم تعلتعليم ت يع لت ت",
+      "corrected": "المهنية الصادرة عن وزارة النقل",
+      "cells": [
+        {
+          "page": 9,
+          "row": 8
+        }
+      ]
+    },
+    {
+      "field": "certificate",
+      "original": "ير تيع لم تعلتعليم ت يعة م ت",
+      "corrected": "المهنية الصادرة عن وزارة الطاقة",
+      "cells": [
+        {
+          "page": 9,
+          "row": 11
+        },
+        {
+          "page": 9,
+          "row": 12
+        },
+        {
+          "page": 9,
+          "row": 13
+        }
+      ]
+    },
+    {
+      "field": "profession",
+      "original": "يعا تيعك ئ ت",
+      "corrected": "التقنيات الكهربائية",
+      "cells": [
+        {
+          "page": 9,
+          "row": 2
+        },
+        {
+          "page": 15,
+          "row": 13
+        }
+      ]
+    },
+    {
+      "field": "profession",
+      "original": "يعلا تعت ك لتيرع لش ت",
+      "corrected": "اللحام وتشكيل المعادن",
+      "cells": [
+        {
+          "page": 9,
+          "row": 3
+        }
+      ]
+    },
+    {
+      "field": "profession",
+      "original": "يعلا تعت ك لتيرع لش(تعل ت رزلعت ت",
+      "corrected": "اللحام وتشكيل المعادن (تعليم مزدوج)",
+      "cells": [
+        {
+          "page": 9,
+          "row": 4
+        }
+      ]
+    },
+    {
+      "field": "profession",
+      "original": "يعن ج ت",
+      "corrected": "النسيج",
+      "cells": [
+        {
+          "page": 9,
+          "row": 7
+        }
+      ]
+    },
+    {
+      "field": "profession",
+      "original": "يع لتيعبح يت(رش ت ح ي ت",
+      "corrected": "النقل البحري (ملاحة بحرية)",
+      "cells": [
+        {
+          "page": 9,
+          "row": 8
+        }
+      ]
+    },
+    {
+      "field": "profession",
+      "original": "يع ذتتعيع ب ك ت ت",
+      "corrected": "النماذج والسباكة",
+      "cells": [
+        {
+          "page": 9,
+          "row": 9
+        }
+      ]
+    },
+    {
+      "field": "profession",
+      "original": "ص ن تي ز تيعةب ت ت",
+      "corrected": "صيانة الأجهزة الطبية",
+      "cells": [
+        {
+          "page": 9,
+          "row": 10
+        }
+      ]
+    },
+    {
+      "field": "profession",
+      "original": "ر لتنلة ت ز تيع ست عيعاحك ت",
+      "corrected": "مهن نفطية أجهزة القياس والتحكم",
+      "cells": [
+        {
+          "page": 9,
+          "row": 11
+        }
+      ]
+    },
+    {
+      "field": "profession",
+      "original": "ر لتنلة تيعلا تعت ك لت يرع لش ت",
+      "corrected": "مهن نفطية اللحام وتشكيل المعادن",
+      "cells": [
+        {
+          "page": 9,
+          "row": 12
+        }
+      ]
+    },
+    {
+      "field": "profession",
+      "original": "ر لتنلة تك تص ع ت ت",
+      "corrected": "مهن نفطية كهرباء صناعية",
+      "cells": [
+        {
+          "page": 9,
+          "row": 13
+        }
+      ]
+    },
+    {
+      "field": "name",
+      "original": "يرع اتتيعا ت عل ع تيعن ت",
+      "corrected": "المعهد التقاني للصناعات النسيجية",
+      "cells": [
+        {
+          "page": 11,
+          "row": 12
+        },
+        {
+          "page": 11,
+          "row": 13
+        },
+        {
+          "page": 11,
+          "row": 14
+        },
+        {
+          "page": 11,
+          "row": 15
+        }
+      ]
+    },
+    {
+      "field": "place",
+      "original": "ل",
+      "corrected": "حلب",
+      "cells": [
+        {
+          "page": 12,
+          "row": 2
+        },
+        {
+          "page": 12,
+          "row": 3
+        },
+        {
+          "page": 12,
+          "row": 4
+        },
+        {
+          "page": 12,
+          "row": 5
+        },
+        {
+          "page": 12,
+          "row": 6
+        },
+        {
+          "page": 12,
+          "row": 7
+        },
+        {
+          "page": 12,
+          "row": 8
+        },
+        {
+          "page": 12,
+          "row": 9
+        },
+        {
+          "page": 12,
+          "row": 10
+        },
+        {
+          "page": 12,
+          "row": 11
+        },
+        {
+          "page": 12,
+          "row": 12
+        },
+        {
+          "page": 12,
+          "row": 13
+        },
+        {
+          "page": 12,
+          "row": 14
+        },
+        {
+          "page": 12,
+          "row": 15
+        },
+        {
+          "page": 12,
+          "row": 16
+        },
+        {
+          "page": 12,
+          "row": 17
+        },
+        {
+          "page": 17,
+          "row": 4
+        },
+        {
+          "page": 17,
+          "row": 5
+        }
+      ]
+    },
+    {
+      "field": "conditions",
+      "original": "ذكور - مواليد2000 و ما بعد -ي ع حت تيعلح تيعةب ت بعاتصاعمتنا ئجتيع ب أت رل يل تعف تر ته ترحالت تإعششت ت/مم ت تت1ت/",
+      "corrected": "ذكور - مواليد 2000 وما بعد - النجاح في الفحص الطبي بعد صدور نتائج القبول بالمفاضلة وفق ما هو محدد في إعلان رقم 1",
+      "cells": [
+        {
+          "page": 15,
+          "row": 2
+        },
+        {
+          "page": 15,
+          "row": 3
+        },
+        {
+          "page": 15,
+          "row": 4
+        }
+      ]
+    },
+    {
+      "field": "name",
+      "original": "يرع اتيعا تعل ك تيعزميع ت ت ت",
+      "corrected": "المعهد التقاني للمكننة الزراعية",
+      "cells": [
+        {
+          "page": 15,
+          "row": 5
+        },
+        {
+          "page": 15,
+          "row": 6
+        },
+        {
+          "page": 15,
+          "row": 7
+        },
+        {
+          "page": 15,
+          "row": 8
+        },
+        {
+          "page": 15,
+          "row": 9
+        }
+      ]
+    },
+    {
+      "field": "place",
+      "original": "م ر ت",
+      "corrected": "قامشلي",
+      "cells": [
+        {
+          "page": 15,
+          "row": 5
+        },
+        {
+          "page": 15,
+          "row": 6
+        },
+        {
+          "page": 15,
+          "row": 7
+        },
+        {
+          "page": 15,
+          "row": 8
+        },
+        {
+          "page": 15,
+          "row": 9
+        }
+      ]
+    },
+    {
+      "field": "institution",
+      "original": "رع ت يعل ي ت",
+      "corrected": "جامعة الفرات",
+      "cells": [
+        {
+          "page": 15,
+          "row": 5
+        },
+        {
+          "page": 15,
+          "row": 6
+        },
+        {
+          "page": 15,
+          "row": 7
+        },
+        {
+          "page": 15,
+          "row": 8
+        },
+        {
+          "page": 15,
+          "row": 9
+        }
+      ]
+    },
+    {
+      "field": "certificate",
+      "original": "ير تيع لم تعلتعليم تيعزميع ت ت",
+      "corrected": "المهنية الصادرة عن وزارة الزراعة",
+      "cells": [
+        {
+          "page": 15,
+          "row": 5
+        }
+      ]
+    },
+    {
+      "field": "name",
+      "original": "يرع اتيعا تعشعش ت عتيعةب ع ت ت",
+      "corrected": "المعهد التقاني للإعلام والطباعة",
+      "cells": [
+        {
+          "page": 15,
+          "row": 10
+        },
+        {
+          "page": 15,
+          "row": 11
+        },
+        {
+          "page": 15,
+          "row": 12
+        },
+        {
+          "page": 15,
+          "row": 13
+        },
+        {
+          "page": 15,
+          "row": 14
+        },
+        {
+          "page": 15,
+          "row": 15
+        },
+        {
+          "page": 15,
+          "row": 16
+        },
+        {
+          "page": 15,
+          "row": 17
+        }
+      ]
+    },
+    {
+      "field": "institution",
+      "original": "عليم تيحعش",
+      "corrected": "وزارة الإعلام",
+      "cells": [
+        {
+          "page": 15,
+          "row": 10
+        },
+        {
+          "page": 15,
+          "row": 11
+        },
+        {
+          "page": 15,
+          "row": 12
+        },
+        {
+          "page": 15,
+          "row": 13
+        },
+        {
+          "page": 15,
+          "row": 14
+        },
+        {
+          "page": 15,
+          "row": 15
+        },
+        {
+          "page": 15,
+          "row": 16
+        },
+        {
+          "page": 15,
+          "row": 17
+        }
+      ]
+    },
+    {
+      "field": "profession",
+      "original": "يح تلميع ت",
+      "corrected": "الآلات الزراعية",
+      "cells": [
+        {
+          "page": 15,
+          "row": 5
+        }
+      ]
+    },
+    {
+      "field": "profession",
+      "original": "ر ن كتيآلع تعيرعاي تيعزميع ت",
+      "corrected": "ميكانيك الآليات والمعدات الزراعية",
+      "cells": [
+        {
+          "page": 15,
+          "row": 6
+        },
+        {
+          "page": 15,
+          "row": 7
+        }
+      ]
+    },
+    {
+      "field": "profession",
+      "original": "ر ن كتعك تير كب ت",
+      "corrected": "ميكانيك وكهرباء المركبات",
+      "cells": [
+        {
+          "page": 15,
+          "row": 8
+        }
+      ]
+    },
+    {
+      "field": "profession",
+      "original": "ر ن كتير كب ت",
+      "corrected": "ميكانيك المركبات",
+      "cells": [
+        {
+          "page": 15,
+          "row": 9
+        }
+      ]
+    },
+    {
+      "field": "profession",
+      "original": "يحت ح ت",
+      "corrected": "الاتصالات",
+      "cells": [
+        {
+          "page": 15,
+          "row": 10
+        }
+      ]
+    },
+    {
+      "field": "profession",
+      "original": "ت ت هت ت",
+      "corrected": "تقنيات الحاسوب",
+      "cells": [
+        {
+          "page": 15,
+          "row": 11
+        }
+      ]
+    },
+    {
+      "field": "profession",
+      "original": "يعا ن عت ير ن ت ت",
+      "corrected": "التصنيع الميكانيكي",
+      "cells": [
+        {
+          "page": 15,
+          "row": 14
+        }
+      ]
+    },
+    {
+      "field": "name",
+      "original": "يرع اتيعا تعلعل تيع تعيعل ام ت",
+      "corrected": "المعهد التقاني للعلوم السياحية والفندقية",
+      "cells": [
+        {
+          "page": 17,
+          "row": 2
+        },
+        {
+          "page": 17,
+          "row": 3
+        },
+        {
+          "page": 17,
+          "row": 4
+        },
+        {
+          "page": 17,
+          "row": 5
+        },
+        {
+          "page": 17,
+          "row": 6
+        },
+        {
+          "page": 17,
+          "row": 7
+        },
+        {
+          "page": 17,
+          "row": 8
+        },
+        {
+          "page": 17,
+          "row": 9
+        },
+        {
+          "page": 17,
+          "row": 10
+        },
+        {
+          "page": 17,
+          "row": 11
+        },
+        {
+          "page": 17,
+          "row": 12
+        },
+        {
+          "page": 17,
+          "row": 13
+        },
+        {
+          "page": 17,
+          "row": 14
+        },
+        {
+          "page": 17,
+          "row": 15
+        },
+        {
+          "page": 17,
+          "row": 16
+        },
+        {
+          "page": 17,
+          "row": 17
+        },
+        {
+          "page": 17,
+          "row": 18
+        },
+        {
+          "page": 17,
+          "row": 19
+        },
+        {
+          "page": 18,
+          "row": 2
+        },
+        {
+          "page": 18,
+          "row": 3
+        },
+        {
+          "page": 18,
+          "row": 4
+        },
+        {
+          "page": 18,
+          "row": 5
+        },
+        {
+          "page": 18,
+          "row": 6
+        },
+        {
+          "page": 18,
+          "row": 7
+        }
+      ]
+    },
+    {
+      "field": "institution",
+      "original": "عليم تيع ت",
+      "corrected": "وزارة السياحة",
+      "cells": [
+        {
+          "page": 17,
+          "row": 2
+        },
+        {
+          "page": 17,
+          "row": 3
+        },
+        {
+          "page": 17,
+          "row": 4
+        },
+        {
+          "page": 17,
+          "row": 5
+        },
+        {
+          "page": 17,
+          "row": 6
+        },
+        {
+          "page": 17,
+          "row": 7
+        },
+        {
+          "page": 17,
+          "row": 8
+        },
+        {
+          "page": 17,
+          "row": 9
+        },
+        {
+          "page": 17,
+          "row": 10
+        },
+        {
+          "page": 17,
+          "row": 11
+        },
+        {
+          "page": 17,
+          "row": 12
+        },
+        {
+          "page": 17,
+          "row": 13
+        },
+        {
+          "page": 17,
+          "row": 15
+        },
+        {
+          "page": 17,
+          "row": 16
+        },
+        {
+          "page": 17,
+          "row": 17
+        },
+        {
+          "page": 17,
+          "row": 18
+        },
+        {
+          "page": 17,
+          "row": 19
+        },
+        {
+          "page": 18,
+          "row": 2
+        },
+        {
+          "page": 18,
+          "row": 4
+        },
+        {
+          "page": 18,
+          "row": 5
+        },
+        {
+          "page": 18,
+          "row": 6
+        }
+      ]
+    },
+    {
+      "field": "institution",
+      "original": "عليم ت يع ت",
+      "corrected": "وزارة السياحة",
+      "cells": [
+        {
+          "page": 17,
+          "row": 14
+        },
+        {
+          "page": 18,
+          "row": 3
+        },
+        {
+          "page": 18,
+          "row": 7
+        }
+      ]
+    },
+    {
+      "field": "conditions",
+      "original": "ت بعاتيع حت خاب مت يعلغ ت ي تتي االت عف تتيععششتمم/1/ت",
+      "corrected": "بعد النجاح باختبار اللغة الأجنبية المحدد وفق الإعلان رقم 1",
+      "cells": [
+        {
+          "page": 17,
+          "row": 2
+        },
+        {
+          "page": 17,
+          "row": 3
+        },
+        {
+          "page": 17,
+          "row": 4
+        },
+        {
+          "page": 17,
+          "row": 5
+        },
+        {
+          "page": 17,
+          "row": 6
+        },
+        {
+          "page": 17,
+          "row": 7
+        },
+        {
+          "page": 17,
+          "row": 8
+        },
+        {
+          "page": 17,
+          "row": 9
+        },
+        {
+          "page": 17,
+          "row": 10
+        },
+        {
+          "page": 17,
+          "row": 11
+        },
+        {
+          "page": 17,
+          "row": 12
+        },
+        {
+          "page": 17,
+          "row": 13
+        },
+        {
+          "page": 17,
+          "row": 14
+        },
+        {
+          "page": 17,
+          "row": 15
+        },
+        {
+          "page": 17,
+          "row": 16
+        },
+        {
+          "page": 17,
+          "row": 17
+        },
+        {
+          "page": 17,
+          "row": 18
+        },
+        {
+          "page": 17,
+          "row": 19
+        }
+      ]
+    },
+    {
+      "field": "place",
+      "original": "لر ت",
+      "corrected": "دمشق",
+      "cells": [
+        {
+          "page": 17,
+          "row": 2
+        },
+        {
+          "page": 17,
+          "row": 3
+        }
+      ]
+    },
+    {
+      "field": "place",
+      "original": "لي تيعزعمت",
+      "corrected": "دير الزور",
+      "cells": [
+        {
+          "page": 17,
+          "row": 6
+        },
+        {
+          "page": 17,
+          "row": 7
+        }
+      ]
+    },
+    {
+      "field": "place",
+      "original": "ط ط ست",
+      "corrected": "طرطوس",
+      "cells": [
+        {
+          "page": 17,
+          "row": 10
+        },
+        {
+          "page": 17,
+          "row": 11
+        },
+        {
+          "page": 18,
+          "row": 6
+        },
+        {
+          "page": 18,
+          "row": 7
+        }
+      ]
+    },
+    {
+      "field": "place",
+      "original": "يع ياي ت",
+      "corrected": "السويداء",
+      "cells": [
+        {
+          "page": 17,
+          "row": 14
+        },
+        {
+          "page": 17,
+          "row": 15
+        }
+      ]
+    },
+    {
+      "field": "place",
+      "original": "ميفتلر",
+      "corrected": "ريف دمشق",
+      "cells": [
+        {
+          "page": 17,
+          "row": 16
+        },
+        {
+          "page": 17,
+          "row": 17
+        }
+      ]
+    },
+    {
+      "field": "place",
+      "original": "",
+      "corrected": "حماة",
+      "cells": [
+        {
+          "page": 17,
+          "row": 18
+        },
+        {
+          "page": 17,
+          "row": 19
+        }
+      ]
+    },
+    {
+      "field": "profession",
+      "original": "(ف اق ترةبخ ت ت",
+      "corrected": "سياحة (فندقي مطبخ)",
+      "cells": [
+        {
+          "page": 17,
+          "row": 2
+        },
+        {
+          "page": 17,
+          "row": 4
+        },
+        {
+          "page": 17,
+          "row": 6
+        },
+        {
+          "page": 17,
+          "row": 8
+        },
+        {
+          "page": 17,
+          "row": 12
+        },
+        {
+          "page": 17,
+          "row": 14
+        },
+        {
+          "page": 17,
+          "row": 16
+        },
+        {
+          "page": 17,
+          "row": 18
+        }
+      ]
+    },
+    {
+      "field": "profession",
+      "original": "(ف اق ترةع ت ت",
+      "corrected": "سياحة (فندقي مطعم)",
+      "cells": [
+        {
+          "page": 17,
+          "row": 3
+        },
+        {
+          "page": 17,
+          "row": 5
+        },
+        {
+          "page": 17,
+          "row": 7
+        },
+        {
+          "page": 17,
+          "row": 9
+        },
+        {
+          "page": 17,
+          "row": 11
+        },
+        {
+          "page": 17,
+          "row": 13
+        },
+        {
+          "page": 17,
+          "row": 15
+        },
+        {
+          "page": 17,
+          "row": 17
+        },
+        {
+          "page": 17,
+          "row": 19
+        }
+      ]
+    },
+    {
+      "field": "profession",
+      "original": "( ف اق ترةبخ ت ت",
+      "corrected": "سياحة (فندقي مطبخ)",
+      "cells": [
+        {
+          "page": 17,
+          "row": 10
+        }
+      ]
+    },
+    {
+      "field": "profession",
+      "original": "ي ت( شم تعت ل ت ت",
+      "corrected": "نسوية (حلاقة وتجميل)",
+      "cells": [
+        {
+          "page": 18,
+          "row": 2
+        },
+        {
+          "page": 18,
+          "row": 4
+        },
+        {
+          "page": 18,
+          "row": 6
+        }
+      ]
+    },
+    {
+      "field": "profession",
+      "original": "ي ت(خ ط تيرشب ت ت",
+      "corrected": "نسوية (خياطة الملابس)",
+      "cells": [
+        {
+          "page": 18,
+          "row": 3
+        },
+        {
+          "page": 18,
+          "row": 5
+        },
+        {
+          "page": 18,
+          "row": 7
+        }
+      ]
+    },
+    {
+      "field": "conditions",
+      "original": "ي ي تر ل ت تار لت رلتخشع ت ت ي ي ت يخاب مت علغ تي ت ت ك ته ترحالت ت يععششتمم/1/ت",
+      "corrected": "إجراء مقابلة تتضمن من خلالها إجراء اختبار باللغة الأجنبية كما هو محدد في الإعلان رقم 1",
+      "cells": [
+        {
+          "page": 18,
+          "row": 2
+        },
+        {
+          "page": 18,
+          "row": 3
+        },
+        {
+          "page": 18,
+          "row": 4
+        },
+        {
+          "page": 18,
+          "row": 5
+        },
+        {
+          "page": 18,
+          "row": 6
+        },
+        {
+          "page": 18,
+          "row": 7
+        }
+      ]
+    },
+    {
+      "field": "minimum",
+      "original": "عتيرا اراشت",
+      "corrected": "جميع المتقدمين",
+      "cells": [
+        {
+          "page": 12,
+          "row": 2
+        },
+        {
+          "page": 12,
+          "row": 3
+        },
+        {
+          "page": 12,
+          "row": 4
+        },
+        {
+          "page": 12,
+          "row": 6
+        },
+        {
+          "page": 12,
+          "row": 7
+        },
+        {
+          "page": 12,
+          "row": 8
+        },
+        {
+          "page": 12,
+          "row": 9
+        },
+        {
+          "page": 12,
+          "row": 10
+        },
+        {
+          "page": 12,
+          "row": 11
+        },
+        {
+          "page": 12,
+          "row": 12
+        },
+        {
+          "page": 12,
+          "row": 13
+        },
+        {
+          "page": 12,
+          "row": 14
+        },
+        {
+          "page": 12,
+          "row": 15
+        },
+        {
+          "page": 12,
+          "row": 16
+        },
+        {
+          "page": 12,
+          "row": 17
+        },
+        {
+          "page": 13,
+          "row": 8
+        },
+        {
+          "page": 13,
+          "row": 9
+        },
+        {
+          "page": 13,
+          "row": 10
+        },
+        {
+          "page": 13,
+          "row": 11
+        },
+        {
+          "page": 15,
+          "row": 5
+        },
+        {
+          "page": 15,
+          "row": 6
+        },
+        {
+          "page": 15,
+          "row": 7
+        },
+        {
+          "page": 15,
+          "row": 8
+        },
+        {
+          "page": 15,
+          "row": 9
+        },
+        {
+          "page": 15,
+          "row": 10
+        },
+        {
+          "page": 15,
+          "row": 11
+        },
+        {
+          "page": 15,
+          "row": 12
+        },
+        {
+          "page": 15,
+          "row": 13
+        },
+        {
+          "page": 15,
+          "row": 14
+        },
+        {
+          "page": 15,
+          "row": 15
+        },
+        {
+          "page": 15,
+          "row": 16
+        },
+        {
+          "page": 15,
+          "row": 17
+        },
+        {
+          "page": 17,
+          "row": 2
+        },
+        {
+          "page": 17,
+          "row": 3
+        },
+        {
+          "page": 17,
+          "row": 4
+        },
+        {
+          "page": 17,
+          "row": 5
+        },
+        {
+          "page": 17,
+          "row": 6
+        },
+        {
+          "page": 17,
+          "row": 7
+        },
+        {
+          "page": 17,
+          "row": 8
+        },
+        {
+          "page": 17,
+          "row": 9
+        },
+        {
+          "page": 17,
+          "row": 10
+        },
+        {
+          "page": 17,
+          "row": 11
+        },
+        {
+          "page": 17,
+          "row": 12
+        },
+        {
+          "page": 17,
+          "row": 13
+        },
+        {
+          "page": 17,
+          "row": 14
+        },
+        {
+          "page": 17,
+          "row": 15
+        },
+        {
+          "page": 17,
+          "row": 16
+        },
+        {
+          "page": 17,
+          "row": 17
+        },
+        {
+          "page": 17,
+          "row": 18
+        },
+        {
+          "page": 17,
+          "row": 19
+        },
+        {
+          "page": 18,
+          "row": 2
+        },
+        {
+          "page": 18,
+          "row": 3
+        },
+        {
+          "page": 18,
+          "row": 4
+        },
+        {
+          "page": 18,
+          "row": 5
+        },
+        {
+          "page": 18,
+          "row": 6
+        },
+        {
+          "page": 18,
+          "row": 7
+        },
+        {
+          "page": 20,
+          "row": 2
+        },
+        {
+          "page": 20,
+          "row": 3
+        },
+        {
+          "page": 20,
+          "row": 5
+        },
+        {
+          "page": 20,
+          "row": 6
+        },
+        {
+          "page": 20,
+          "row": 8
+        },
+        {
+          "page": 20,
+          "row": 9
+        }
+      ]
+    },
+    {
+      "field": "minimum",
+      "original": "عت يرا اراشت",
+      "corrected": "جميع المتقدمين",
+      "cells": [
+        {
+          "page": 12,
+          "row": 5
+        },
+        {
+          "page": 18,
+          "row": 8
+        },
+        {
+          "page": 18,
+          "row": 9
+        },
+        {
+          "page": 18,
+          "row": 10
+        },
+        {
+          "page": 18,
+          "row": 11
+        },
+        {
+          "page": 18,
+          "row": 12
+        },
+        {
+          "page": 18,
+          "row": 13
+        },
+        {
+          "page": 18,
+          "row": 14
+        },
+        {
+          "page": 19,
+          "row": 2
+        },
+        {
+          "page": 19,
+          "row": 3
+        },
+        {
+          "page": 19,
+          "row": 4
+        },
+        {
+          "page": 19,
+          "row": 5
+        },
+        {
+          "page": 19,
+          "row": 6
+        },
+        {
+          "page": 19,
+          "row": 7
+        },
+        {
+          "page": 19,
+          "row": 8
+        },
+        {
+          "page": 19,
+          "row": 9
+        },
+        {
+          "page": 19,
+          "row": 10
+        }
+      ]
+    },
+    {
+      "field": "minimum",
+      "original": "عتيرا اراشت ت",
+      "corrected": "جميع المتقدمين",
+      "cells": [
+        {
+          "page": 20,
+          "row": 4
+        },
+        {
+          "page": 20,
+          "row": 7
+        }
+      ]
+    }
+  ]
+}

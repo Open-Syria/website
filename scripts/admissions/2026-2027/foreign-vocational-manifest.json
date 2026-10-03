@@ -1,0 +1,71 @@
+{
+  "version": "2026.1-foreign-vocational.1",
+  "extractedRowsSha256": "d95de589ad66929991f59ee36a0bcffa142477908642139299b2cd0bbb926e3e",
+  "correctionsSha256": "96f5cbdd4a9e8f103d13680f12b4f1cea32597a81242d25d8a1c2be2dc448ae9",
+  "privateCatalogueSha256": "54799c1eea7b10683f33e39d6d81f39edb65465de9b16588a65e0174b7cecc45",
+  "optionsSha256": "7d80fa1b513f7975259780b60f308b5db0ef8d71df829a9f085a535474eb904f",
+  "extractedRows": 244,
+  "programCount": 777,
+  "publicCount": 241,
+  "privateCount": 536,
+  "excludedRows": [
+    {
+      "id": "foreign-vocational-public-11-013",
+      "reason": "merged_grid_continuation",
+      "mergedInto": "foreign-vocational-public-11-012"
+    },
+    {
+      "id": "foreign-vocational-public-12-007",
+      "reason": "merged_grid_continuation",
+      "mergedInto": "foreign-vocational-public-12-006"
+    },
+    {
+      "id": "foreign-vocational-public-15-007",
+      "reason": "merged_grid_continuation",
+      "mergedInto": "foreign-vocational-public-15-006"
+    }
+  ],
+  "rowsPerPage": {
+    "10": 11,
+    "11": 14,
+    "12": 16,
+    "13": 11,
+    "14": 10,
+    "15": 16,
+    "16": 14,
+    "17": 18,
+    "18": 13,
+    "19": 9,
+    "20": 13,
+    "4": 18,
+    "5": 20,
+    "6": 17,
+    "7": 16,
+    "8": 16,
+    "9": 12
+  },
+  "channels": {
+    "arab_foreign": 241,
+    "private": 536
+  },
+  "conditions": {
+    "vocational_specialty": 777,
+    "exam": 44,
+    "gender": 3,
+    "birth_year": 3
+  },
+  "excludedSections": [
+    {
+      "announcement": 7,
+      "page": 7,
+      "reason": "2024_and_older_vocational_certificates"
+    }
+  ],
+  "sourceNotes": [
+    {
+      "announcement": 11,
+      "page": 3,
+      "note": "The table introduction repeats PDF 10 wording; the cover and p2 define the Arab/foreign 2025/2026 scope."
+    }
+  ]
+}

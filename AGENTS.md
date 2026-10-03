@@ -21,6 +21,17 @@ Before handing off changes, run the smallest relevant command and prefer `pnpm v
 - `pnpm build`
 - `pnpm verify`
 
+## Local Preview Lifecycle
+
+Before running `pnpm build` or `pnpm verify`, stop every production preview
+serving this checkout's `.next` directory, including previews on other ports.
+An older `next start` process can reference removed chunks and write stale ISR
+pages into the new build. Restart the preview only after the build completes,
+then verify both admissions locales and their JavaScript requests. Prefer one
+preview URL per checkout; use `pnpm dev` for ongoing source edits. An isolated
+standalone copy, such as the agent-readiness test runtime, does not share this
+build directory and can stay running.
+
 Do not commit local `.env` files, SSH keys, Cloudflare tokens, Tailscale credentials, generated local artifacts, or private infrastructure details.
 
 ## Public Documentation
@@ -70,3 +81,13 @@ Use these local skills as follows:
 - `tailwind-css-patterns`: use when styling components with Tailwind utilities, responsive layout, grid/flex patterns, spacing, typography, colors, or design-system utility choices.
 - `tailwind-v4-shadcn`: use when working with Tailwind CSS v4 plus shadcn/ui, theme tokens, CSS variables, dark mode, or Tailwind v4 migration/debugging issues.
 - `typescript-advanced-types`: use when introducing or simplifying generics, conditional types, mapped types, template literal types, reusable type utilities, or compile-time type constraints.
+
+<!-- BEGIN:nextjs-agent-rules -->
+
+# This is NOT the Next.js you know
+
+This version has breaking changes — APIs, conventions, and file structure may all differ from your training data. Read the relevant guide in `node_modules/next/dist/docs/` (resolved from this file's directory; in monorepos the `next` package may not be visible from the repo root) before writing any code. Heed deprecation notices.
+
+This block is written and re-added by `next dev` — verify at `node_modules/next/dist/server/lib/generate-agent-files.js`. Removing it from a diff only re-creates the uncommitted change; committing it with your work keeps the tree clean.
+
+<!-- END:nextjs-agent-rules -->

@@ -70,6 +70,14 @@ Dataset pages cache API metadata and may be prerendered into the image. After a
 dataset release, rebuild the website or allow the configured cache lifetime to
 expire when a short delay is acceptable.
 
+SEO verification covers clean sitemap URLs and parameterized page responses.
+Keep query variants separate in any upstream HTML cache: filtered pages carry
+`X-Robots-Tag: noindex, follow`, while clean pages must remain indexable. Preserve
+this response header through the hosting layer. After deployment, verify both
+admissions languages and the sitemap, then submit the sitemap and inspect the
+clean/filtered URLs in Google Search Console. See the README's search-indexing
+policy for tracking redirects and the internal `_rsc` exception.
+
 ## Hosted Service Operations
 
 Hosted service deployment tooling and operator procedures are maintained

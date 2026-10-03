@@ -1,0 +1,42 @@
+{
+  "version": "2026.1-special-vocational.1",
+  "scope": {
+    "branch": "vocational",
+    "certificateYear": 2026,
+    "certificate": "syrian",
+    "applicantCategory": "syrian_or_equivalent",
+    "admissionRoute": "special_quotas"
+  },
+  "programCount": 291,
+  "sourcePublicRowCount": 293,
+  "privateRowsExcluded": 536,
+  "thresholdGroups": {
+    "applied-colleges": 55,
+    "engineering-faculties": 46,
+    "arts-and-music-faculties": 5,
+    "matching-institutes": 185
+  },
+  "excludedPublicRows": [
+    {
+      "announcement": 6,
+      "page": 11,
+      "row": 2,
+      "reason": "Naval defence admission uses its separate service route, not the vacant scientific faculty-family quota."
+    },
+    {
+      "announcement": 6,
+      "page": 11,
+      "row": 3,
+      "reason": "Naval defence admission uses its separate service route, not the vacant scientific faculty-family quota."
+    }
+  ],
+  "dependencies": {
+    "vocational.json": "54799c1eea7b10683f33e39d6d81f39edb65465de9b16588a65e0174b7cecc45",
+    "vocational-rows.json": "a42bd838004f244c2486423bfeea42c2acbb5885a742faa103fd43111c92d21a",
+    "vocational-faculty-family-rules.json": "7410a6e0b9898066442943e21e8de4b84fa8744e7e6a3705c738eb0918fdd7f6",
+    "vocational-options.json": "7d80fa1b513f7975259780b60f308b5db0ef8d71df829a9f085a535474eb904f",
+    "source-catalogue.json": "ac1d195ca511a3b3aa2a298a0898dfa23d8400c85dda742b52528f5b64bc8342"
+  },
+  "sourceReview": "PDF 6 p4 establishes quota thresholds, exact specialty matching and vacant scientific-quota places; PDF 1 p11 establishes family eligibility. Reuses visually reviewed PDF 6 pp5-24 programme/qualification mappings and their conditions.",
+  "boundaries": "Syrian vocational certificates from 2026 only. No vocational disability, non-Syrian certificate or Arab/foreign quota is inferred. Family status, official choice availability and vacancies remain pending."
+}
