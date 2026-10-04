@@ -70,6 +70,23 @@
 * honor `[skip ci]` consistently in the website CI workflow
 * update Next.js and the dependency graph to patched releases and enforce a full audit in verification
 
+## [0.6.0](https://github.com/Open-Syria/website/compare/v0.5.3...v0.6.0) (2026-10-04)
+
+
+### Features
+
+* **admissions:** launch the 2026–2027 advisor with protected marks import ([#65](https://github.com/Open-Syria/website/issues/65)) ([0b1f643](https://github.com/Open-Syria/website/commit/0b1f6432e807bf3f7eea1c012729cb7517b2361c))
+
+
+### Bug Fixes
+
+* **admissions:** clarify lookup errors and simplify form guidance ([#71](https://github.com/Open-Syria/website/issues/71)) ([0754506](https://github.com/Open-Syria/website/commit/07545062e6a0f06fde4540a7f1dc460ae2f7932e))
+* **admissions:** simplify lookup verification layout ([#69](https://github.com/Open-Syria/website/issues/69)) ([d3dd5f1](https://github.com/Open-Syria/website/commit/d3dd5f1f1a547c898fb3b4c9862535ef9de552ba))
+* **admissions:** support public metadata on restricted server networks ([#66](https://github.com/Open-Syria/website/issues/66)) ([500d416](https://github.com/Open-Syria/website/commit/500d4168b75769834231998e5ba9ddf4efd8b91e))
+* **admissions:** wrap mobile filter action labels ([#68](https://github.com/Open-Syria/website/issues/68)) ([dec6368](https://github.com/Open-Syria/website/commit/dec636849db14db8da32845ded871befcfbfece2))
+* **deploy:** prepare bounded production deployment and patch dependencies ([#62](https://github.com/Open-Syria/website/issues/62)) ([f12fe58](https://github.com/Open-Syria/website/commit/f12fe58109244529c4c6b3e7ed85f2e6a8c1e682))
+* repair admissions focus and mobile layout ([#70](https://github.com/Open-Syria/website/issues/70)) ([36079d6](https://github.com/Open-Syria/website/commit/36079d6012039df4c1569766d88e6e0c2e340cf4))
+
 ## [0.5.3](https://github.com/Open-Syria/website/compare/v0.5.2...v0.5.3) (2026-08-22)
 
 
