@@ -218,12 +218,19 @@ export class ResultsService {
       redirect: "error",
       signal: AbortSignal.timeout(10_000),
     })
+    if (response.status === 429) throw new LookupError("limited", 429)
     if (!response.ok) throw new LookupError("unavailable", 503)
-    const body = await boundedJson(response, 48_000)
-    // Validate before storing; metadata contains no individual results.
-    if (path.startsWith("/directorateResultsNew/"))
-      directoratesSchema.parse(body)
-    else certificatesSchema.parse(body)
+    let body: unknown
+    try {
+      body = await boundedJson(response, 48_000)
+      // Validate before storing; metadata contains no individual results.
+      if (path.startsWith("/directorateResultsNew/"))
+        directoratesSchema.parse(body)
+      else certificatesSchema.parse(body)
+    } catch {
+      // A malformed provider response is not an error in the student's input.
+      throw new LookupError("unavailable", 503)
+    }
     this.store.cache(path, body)
     return body
   }

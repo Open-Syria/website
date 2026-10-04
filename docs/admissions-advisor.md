@@ -237,6 +237,19 @@ Applicant category, personal eligibility details and official approvals are
 never inferred from the result. The browser-supplied response is advisory input,
 not authenticated proof of a certificate. Manual entry always remains available.
 
+Lookup failures distinguish an incorrect student number (Ministry response code
+419), temporary service errors, timeouts, rate limits, unavailable certificates
+and results whose marks cannot be imported. The Ministry's application code is
+checked separately from HTTP status and the local session/challenge errors.
+Editing the number or certificate clears its validation message. Unexpected
+provider payloads never become claims that the student's details are incorrect.
+Messages remain localized; raw provider error bodies are not displayed or logged.
+
+The Other certificate option explains that the certificate is outside calculator
+coverage and directs holders of officially equivalent non-Syrian certificates to
+the corresponding branch. The explanatory paragraph beneath the main submit
+button has been removed to keep the form compact.
+
 The optional endpoint uses a verified Turnstile challenge, a session-bound
 single-use ticket and shared per-session, per-address and global limits. Only
 expiring hashes/counters and public exam metadata are stored on the server.

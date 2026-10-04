@@ -7,13 +7,7 @@ const ResultsLookup = dynamic(() =>
   import("./results-lookup").then((module) => module.ResultsLookup)
 )
 
-import {
-  ArrowRight,
-  BookOpen,
-  CircleCheck,
-  Compass,
-  ShieldCheck,
-} from "lucide-react"
+import { ArrowRight, BookOpen, CircleCheck, Compass } from "lucide-react"
 import { useLocale, useTranslations } from "next-intl"
 import { type FormEvent, useState } from "react"
 
@@ -838,10 +832,6 @@ export function MarksForm({
                 className="rtl-icon-mirror"
               />
             </Button>
-            <p className="flex items-center justify-center gap-2 text-muted-foreground text-xs">
-              <ShieldCheck aria-hidden="true" className="size-4 shrink-0" />
-              {t("privacy")}
-            </p>
           </CardFooter>
         </Card>
       </form>

@@ -25,6 +25,12 @@ import {
   importedMarksSchema,
   ministryHeaders,
 } from "@/lib/exam-results/contracts"
+import {
+  LookupError,
+  type LookupErrorCode,
+  lookupErrorCode,
+  readLookupResponse,
+} from "../_utils/lookup-response"
 import { normaliseDigits } from "../_utils/score"
 import { AdmissionsSelect } from "./admissions-select"
 
@@ -58,39 +64,6 @@ declare global {
   }
 }
 
-async function readResponse(
-  response: Response
-): Promise<Record<string, unknown>> {
-  const reader = response.body?.getReader()
-  if (!reader) throw new Error("unavailable")
-  const chunks: Uint8Array[] = []
-  let size = 0
-  try {
-    while (true) {
-      const { done, value } = await reader.read()
-      if (done) break
-      size += value.length
-      if (size > 40_000) throw new Error("result")
-      chunks.push(value)
-    }
-  } finally {
-    await reader.cancel().catch(() => {})
-  }
-  const bytes = new Uint8Array(size)
-  let offset = 0
-  for (const chunk of chunks) {
-    bytes.set(chunk, offset)
-    offset += chunk.length
-  }
-  const body = JSON.parse(new TextDecoder().decode(bytes)) as Record<
-    string,
-    unknown
-  >
-  if (!response.ok)
-    throw new Error(typeof body.error === "string" ? body.error : "unavailable")
-  return body
-}
-
 export function ResultsLookup({
   branch,
   onImport,
@@ -109,14 +82,14 @@ export function ResultsLookup({
   const [token, setToken] = useState("")
   const [ready, setReady] = useState(false)
   const [busy, setBusy] = useState(false)
-  const [error, setError] = useState("")
+  const [error, setError] = useState<LookupErrorCode | "">("")
   const [imported, setImported] = useState(false)
   const challengeRef = useRef<HTMLDivElement>(null)
   const widget = useRef<string | undefined>(undefined)
   const controller = useRef<AbortController | null>(null)
   const generation = useRef(0)
   async function api(body: unknown, csrf?: string, signal?: AbortSignal) {
-    return readResponse(
+    return readLookupResponse(
       await fetch("/api/admissions/results", {
         method: "POST",
         headers: {
@@ -133,12 +106,7 @@ export function ResultsLookup({
     )
   }
   function failure(reason: unknown) {
-    const code = reason instanceof Error ? reason.message : "unavailable"
-    setError(
-      ["limited", "challenge", "session", "result", "invalid"].includes(code)
-        ? code
-        : "unavailable"
-    )
+    setError(lookupErrorCode(reason))
   }
   function cancel() {
     generation.current++
@@ -246,7 +214,7 @@ export function ResultsLookup({
       )
       setCertificates(options)
       if (options.length === 1) setCertificate(String(options[0].id))
-      if (!options.length) setError("result")
+      if (!options.length) setError("noCertificates")
     } catch (reason) {
       if (current === generation.current) failure(reason)
     } finally {
@@ -279,7 +247,7 @@ export function ResultsLookup({
         session.csrf,
         abort.signal
       )
-      const upstream = await readResponse(
+      const upstream = await readLookupResponse(
         await fetch(String(issued.url), {
           headers: ministryHeaders,
           credentials: "omit",
@@ -287,14 +255,9 @@ export function ResultsLookup({
           redirect: "error",
           referrerPolicy: "no-referrer",
           signal: AbortSignal.any([abort.signal, AbortSignal.timeout(15_000)]),
-        })
+        }),
+        "ministry"
       )
-      if (
-        upstream.success !== true ||
-        typeof upstream.iv !== "string" ||
-        typeof upstream.data !== "string"
-      )
-        throw new Error("result")
       const result = await api(
         {
           action: "decode",
@@ -305,9 +268,10 @@ export function ResultsLookup({
         session.csrf,
         abort.signal
       )
-      const marks = importedMarksSchema.parse(result.marks)
+      const parsed = importedMarksSchema.safeParse(result.marks)
+      if (!parsed.success) throw new LookupError("result")
       if (current !== generation.current) return
-      onImport(marks)
+      onImport(parsed.data)
       setImported(true)
       await changeOpen(false)
     } catch (reason) {
@@ -368,7 +332,14 @@ export function ResultsLookup({
                   id="exam-certificate"
                   disabled={busy || !certificates.length}
                   value={certificate}
-                  onValueChange={setCertificate}
+                  onValueChange={(next) => {
+                    setCertificate(next)
+                    setError((current) =>
+                      current === "studentNumber" || current === "invalid"
+                        ? ""
+                        : current
+                    )
+                  }}
                   placeholder={t("choose")}
                   items={certificates.map((value) => ({
                     value: String(value.id),
@@ -376,18 +347,30 @@ export function ResultsLookup({
                   }))}
                 />
               </Field>
-              <Field data-invalid={error === "invalid"}>
+              <Field
+                data-invalid={error === "invalid" || error === "studentNumber"}
+              >
                 <FieldLabel htmlFor="exam-number">{t("number")}</FieldLabel>
                 <Input
                   id="exam-number"
                   disabled={busy}
                   value={studentNumber}
-                  onChange={(event) => setStudentNumber(event.target.value)}
+                  onChange={(event) => {
+                    setStudentNumber(event.target.value)
+                    setError((current) =>
+                      current === "studentNumber" || current === "invalid"
+                        ? ""
+                        : current
+                    )
+                  }}
                   inputMode="numeric"
                   dir="ltr"
                   autoComplete="off"
                   maxLength={12}
-                  aria-invalid={error === "invalid"}
+                  aria-invalid={
+                    error === "invalid" || error === "studentNumber"
+                  }
+                  aria-describedby={error ? "exam-lookup-error" : undefined}
                 />
               </Field>
               {session ? (
@@ -405,10 +388,8 @@ export function ResultsLookup({
                 </>
               ) : null}
               {error ? (
-                <Alert variant="destructive">
-                  <AlertDescription>
-                    {t(`errors.${error as "unavailable"}`)}
-                  </AlertDescription>
+                <Alert id="exam-lookup-error" variant="destructive">
+                  <AlertDescription>{t(`errors.${error}`)}</AlertDescription>
                 </Alert>
               ) : null}
               {busy ? (
