@@ -11,6 +11,11 @@ import {
   parseStudentForm,
 } from "../src/app/[locale]/admissions/_utils/form.ts"
 import { applyImportedMarks } from "../src/app/[locale]/admissions/_utils/imported-marks.ts"
+import {
+  LookupError,
+  lookupErrorCode,
+  readLookupResponse,
+} from "../src/app/[locale]/admissions/_utils/lookup-response.ts"
 import { validateAdmissionsData } from "../src/app/[locale]/admissions/_utils/schema.ts"
 import { decodeMarks } from "../src/lib/exam-results/decoder.ts"
 import { boundedJson, ResultsService } from "../src/lib/exam-results/service.ts"
@@ -25,6 +30,107 @@ const context = {
 }
 const certificate = "الثانوي - علمي - منهاج إدلب"
 const key = randomBytes(32)
+
+test("Ministry code 419 identifies an incorrect student number, independently of HTTP status", async () => {
+  for (const status of [200, 400, 419]) {
+    for (const code of [419, "419"]) {
+      await assert.rejects(
+        readLookupResponse(
+          Response.json(
+            { success: false, code, message: "رقم الاكتتاب خاطئ", data: null },
+            { status }
+          ),
+          "ministry"
+        ),
+        (error) =>
+          error instanceof LookupError && error.code === "studentNumber"
+      )
+    }
+  }
+})
+
+test("lookup readers preserve rate limits and timeouts for non-JSON error responses", async () => {
+  for (const source of ["app", "ministry"]) {
+    for (const [status, code] of [
+      [429, "limited"],
+      [504, "timeout"],
+      [408, "timeout"],
+    ]) {
+      await assert.rejects(
+        readLookupResponse(
+          new Response("<html>Try later</html>", { status }),
+          source
+        ),
+        (error) => error.code === code
+      )
+    }
+  }
+  await assert.rejects(
+    readLookupResponse(
+      Response.json({ success: false, code: 429 }),
+      "ministry"
+    ),
+    (error) => error.code === "limited"
+  )
+  assert.equal(
+    lookupErrorCode(new DOMException("Timed out", "TimeoutError")),
+    "timeout"
+  )
+  assert.equal(lookupErrorCode(new TypeError("Failed to fetch")), "unavailable")
+})
+
+test("local API errors remain distinct from Ministry codes and unknown provider messages", async () => {
+  for (const code of [
+    "invalid",
+    "session",
+    "challenge",
+    "result",
+    "unavailable",
+    "limited",
+  ]) {
+    await assert.rejects(
+      readLookupResponse(Response.json({ error: code }, { status: 400 })),
+      (error) => error.code === code
+    )
+  }
+  for (const body of [
+    { success: false, code: 500, message: "PRIVATE UPSTREAM DETAIL" },
+    { success: false, error: "session", message: "PRIVATE UPSTREAM DETAIL" },
+    { success: true, code: 419, data: null },
+  ]) {
+    await assert.rejects(
+      readLookupResponse(Response.json(body), "ministry"),
+      (error) => error.code === "ministry" && !error.message.includes("PRIVATE")
+    )
+  }
+})
+
+test("only valid successful Ministry envelopes can proceed to decoding", async () => {
+  const envelope = encrypt(fixture())
+  assert.deepEqual(
+    await readLookupResponse(
+      Response.json({ success: true, ...envelope }),
+      "ministry"
+    ),
+    { success: true, ...envelope }
+  )
+  for (const body of [
+    null,
+    [],
+    { success: false },
+    { success: true, iv: "bad", data: "bad" },
+  ]) {
+    await assert.rejects(
+      readLookupResponse(Response.json(body), "ministry"),
+      (error) => error.code === "ministry"
+    )
+  }
+  await assert.rejects(
+    readLookupResponse(new Response(`"${"a".repeat(40_000)}"`), "ministry"),
+    (error) => error.code === "ministry"
+  )
+})
+
 function fixture() {
   const rows = [
     ["اللغة العربية", 350, 400],
@@ -251,6 +357,41 @@ function setup(overrides = {}) {
   }
   return { config, store, service, request, session, calls: () => calls }
 }
+
+test("provider metadata errors never blame the student's input and do not get cached", async () => {
+  for (const [reply, expectedStatus, code] of [
+    [() => new Response("Too many requests", { status: 429 }), 429, "limited"],
+    [
+      () => new Response("<html>Unavailable</html>", { status: 503 }),
+      503,
+      "unavailable",
+    ],
+    [() => new Response("not JSON"), 503, "unavailable"],
+    [() => Response.json({ success: false }), 503, "unavailable"],
+    [() => new Response(`"${"a".repeat(48_000)}"`), 503, "unavailable"],
+  ]) {
+    const s = setup()
+    let calls = 0
+    const service = new ResultsService(s.config, s.store, async () => {
+      calls++
+      return calls === 1
+        ? reply()
+        : Response.json({ success: true, data: [{ id: 1, name: "Test" }] })
+    })
+    try {
+      const failed = await service.handle(s.request({ action: "session" }))
+      assert.equal(failed.status, expectedStatus)
+      assert.deepEqual(await failed.json(), { error: code })
+      assert.equal(
+        (await service.handle(s.request({ action: "session" }))).status,
+        200
+      )
+      assert.equal(calls, 2)
+    } finally {
+      s.store.close()
+    }
+  }
+})
 
 test("private public-metadata snapshots avoid upstream fetches and reject incomplete or wrong-year lists", async () => {
   const s = setup()

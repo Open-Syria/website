@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+- Interpret Ministry lookup code 419 as an incorrect student number, distinguish service and response failures, and clear validation messages when lookup details change.
+- Clarify the Other certificate guidance and remove the explanatory paragraph beneath the admissions submit button.
 - Add optional protected exam-marks import for the admissions advisor, preserving exact subject scores and manual editing.
 - Support validated operator-supplied public exam metadata when the provider rejects server connections.
 - Align admissions source links, add the Jobara footer partnership, and provide localized admissions sharing covers.
